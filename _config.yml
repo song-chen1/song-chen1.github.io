@@ -7,9 +7,9 @@ affiliation_logo: ./assets/img/university-logo-small-horizontal-white-156eae9527
 email: song.chen (at) spin-ion.com or song.chen (at) universite-paris-saclay.fr
 
 # Search Engine Optimization (SEO)
-keywords: yaoyao liu, liu yaoyao, yaoyaoliu, liuyaoyao
+keywords: song chen, chen song, songchen, chensong
 canonical: https://www.cs.jhu.edu/~yyliu/
-description: Yaoyao Liu is a postdoctoral fellow at Johns Hopkins University. His research lies in meta-learning, incremental learning, and image generation.
+description: Song Chen is a Ph.D. canditate at Spin-Ion Technologies and Université Paris-Saclay. His research lies at using magneto-ionics to develop new concepts for magnetic data storage, spintronic devices and magnonics, always with the aim of improving energy efficiency with respect to currently available technologies - with a special focus on the boosting magneto-ionic effect using ion irradiation & ion implantation.
 
 # The option is used to enable the Johns Hopkins template.
 enable_hopkins_logo: true
