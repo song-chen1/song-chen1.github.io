@@ -25,7 +25,7 @@ linkedin:
 twitter: 
 
 # Images 
-avatar: https://hermes.universite-paris-saclay.fr/home/song.chen@universite-paris-saclay.fr/Briefcase/IMG_3909.JPG
+avatar: ./assets/img/avatar.jpg
 favicon: ./assets/img/favicon.png
 favicon_dark: ./assets/img/favicon-dark.png
 
