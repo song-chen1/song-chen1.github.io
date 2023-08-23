@@ -13,7 +13,6 @@ I am currently a Physics Ph.D. candidate at [Spin-Ion Technologies](https://www.
 - **E-field controlled magnetization** VCMA, Strain-mediated ME (Magnetoelectric) Effects, Straintronic, iontronic, E-filed induced spin reorientation, SOT.
 - **Micro-, Nanofabrication**
 - **Neuromorphic Computing** Neuromorphic Sensing and Perception, Hybrid Computing Systems, Brain-Inspired Robotics
-
 {% include_relative _includes/news.md %}
 
 {% include_relative _includes/contact.md %}
