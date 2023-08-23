@@ -105,8 +105,18 @@
         <position style="font-size:1.10rem;">{{ site.position }}</position>
         <br>
         {% endif %}
+        {% if site.subaffiliation %}
+        <a href="{{ site.subaffiliation_link }}" rel="noopener" target="_blank">
+        <autocolor>{{ site.subaffiliation }},</autocolor>
+        </a>
+        <br>
+        {% endif %}
         {% if site.affiliation %}
         <a href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a>
+        <br>
+        {% endif %}
+        {% if site.address %}
+        <a href="{{ site.address_link }}" rel="noopener"><autocolor>{{ site.address }}</autocolor></a>
         <br>
         {% endif %}
         {% if site.email %}

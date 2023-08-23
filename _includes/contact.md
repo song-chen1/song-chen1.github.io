@@ -2,10 +2,10 @@
 
 <h2 style="margin: 60px 0px 10px;">Contact</h2>
 
-<p><strong>Address:</strong> <a href="https://www.google.com/maps/place/Malone+Hall,+3400+N+Charles+St,+Baltimore,+MD+21218/@39.3262085,-76.6253679,17z/data=!3m1!4b1!4m6!3m5!1s0x89c804de59b4d18d:0x2d92398f0946a9ad!8m2!3d39.3262044!4d-76.6208832!16s%2Fg%2F11b6g45l_1?coh=164777&amp;entry=tt">3400 N. Charles St., Baltimore, MD 21218-2625</a>
+<p><strong>Address:</strong> <a href="https://www.google.fr/maps/place/10+Bd+Thomas+Gobert,+91120+Palaiseau/@48.7124352,2.194429,17z/data=!3m1!4b1!4m6!3m5!1s0x47e678bdc3c9eee5:0xb68bc1fb5222c860!8m2!3d48.7124317!4d2.1970093!16s%2Fg%2F11h2c29d0k?entry=ttu">10 Bd Thomas Gobert, 91120 Palaiseau</a>
 <br />
-<strong>Office Location:</strong> Malone Hall 248
+<strong>Office Location:</strong> Centre de Nanosciences et de Nanotechnologies
 <br />
-<strong>Email:</strong> <email>yliu538 (at) jhu.edu</email>
+<strong>Email:</strong> <email>song.chen (at) spin-ion.com</email>
 <br />
-<strong>Phone:</strong> (857) 209-8688</p>
+<strong>Phone:</strong> +330669750839</p>
