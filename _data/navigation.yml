@@ -16,8 +16,8 @@ main:
   - title: "Publications"
     url: ./#publications
 
-  #- title: "News"
-  #  url: ./#news
+  - title: "News"
+   url: ./#news
 
   - title: "Bio"
     url: ./#about-me

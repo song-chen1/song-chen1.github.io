@@ -6,7 +6,7 @@ main:
     conference: 13th Joint European Magnetic Symposia
     pdf: ./assets/files/JEMS2023_Song.pdf
     page: https://www.jems2023.es/
-    image: ./assets/files/JEMS2023.jpg
+    image: ./assets/files/JEMS2023_2.jpg
     notes: Accepted
 
   - title: Multi-target electrochemical malaria aptasensor on flexible multielectrode arrays for detection in malaria parasite blood samples
