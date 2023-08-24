@@ -2,12 +2,32 @@ main:
 
   - title: Multi-target electrochemical malaria aptasensor on flexible multielectrode arrays for detection in malaria parasite blood samples
     authors: Gabriela Figueroa-Miranda, <strong>Song Chen</strong>, Marc Neis, Lei Zhou, Yuting Zhang, Young Lo, Julian Alexander Tanner, Andrea Kreidenweiss, Andreas Offenhäusser, Dirk Mayer
-    conference_short: Sensors and Actuators B Chemical
+    conference_short: Sens. Actuators B Chem.
     conference: Sensors and Actuators B Chemical
     pdf: ./assets/files/Multi-target\ Electrochemical\ Malaria\ Aptasensor\ on\ Flexible\ Multielectrode\ Arrays\ for\ Detection\ in\ Malaria\ Parasite\ Blood\ Samples.pdf
     page: https://www.sciencedirect.com/science/article/abs/pii/S0925400521013800?via%3Dihub
     bibtex: ./assets/files/multi.txt
     image: ./assets/files/multi.jpg
+    notes: Published
+
+  - title: Magneto‐Ionics in Annealed W/CoFeB/HfO2 Thin Films
+    authors: Rohit Pachat, Djoudi Ourdani, Maria‐andromachi Syskaki, Alessio Lamperti, Subhajit Roy, <strong>Song Chen</strong>, Adriano Di Pietro, Ludovic Largeau, Roméo Juge, Maryam Massouras, Cristina Balan, Johannes Wilhelmus van der Jagt, Guillaume Agnus, Yves Roussigné, Mihai Gabor, Salim Mourad Chérif, Gianfranco Durin, Shimpei Ono, Jürgen Langer, Damien Querlioz, Dafiné Ravelosona, Mohamed Belmeguenai, Liza Herrera Diez
+    conference_short: Adv. Mater. Interfaces
+    conference: Advanced Materials Interfaces
+    pdf: https://onlinelibrary.wiley.com/doi/pdf/10.1002/admi.202200690
+    page: https://www.sciencedirect.com/science/article/abs/pii/S0925400521013800?via%3Dihub
+    bibtex: ./assets/files/magnetoionic.txt
+    image: ./assets/files/admi202270196-gra-0001-m.jpg
+    notes: Published
+
+  - title: Flexible multielectrode arrays based electrochemical aptasensor for glycated human serum albumin detection
+    authors: Lei Zhou, Gabriela Figueroa-Miranda, <strong>Song Chen</strong>, Marc Neis, Ziheng Hu, Ruifeng Zhu, Yaqi Li, Michael Prömpers, Andreas Offenhäusser, Dirk Mayer
+    conference_short: Sens. Actuators B Chem.
+    conference: Sensors and Actuators B Chemical
+    pdf: ./assets/files/SSRN-id4328224.pdf
+    page: https://www.sciencedirect.com/science/article/abs/pii/S0925400523004458
+    bibtex: ./assets/files/flexible.txt
+    image: ./assets/files/1-s2.0-S0925400523004458-ga1_lrg.jpg
     notes: Published
 
   # - title: Class-Incremental Exemplar Compression for Class-Incremental Learning
