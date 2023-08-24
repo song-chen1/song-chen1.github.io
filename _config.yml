@@ -26,8 +26,9 @@ enable_last_update: false
 google_scholar: https://scholar.google.com/citations?user=sf-0AGoAAAAJ&hl=de
 cv_link: 
 github_link: https://github.com/song-chen1/
-linkedin: 
+linkedin: https://www.linkedin.com/in/song-chen-3449b9278/
 twitter: 
+researchgate: https://www.researchgate.net/profile/Song-Chen-60
 
 # Images 
 avatar: ./assets/img/avatar.jpg
