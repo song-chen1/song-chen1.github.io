@@ -1,0 +1,15 @@
+@article{https://doi.org/10.1002/admi.202200690,
+author = {Pachat, Rohit and Ourdani, Djoudi and Syskaki, Maria-Andromachi and Lamperti, Alessio and Roy, Subhajit and Chen, Song and Pietro, Adriano Di and Largeau, Ludovic and Juge, Roméo and Massouras, Maryam and Balan, Cristina and van der Jagt, Johannes Wilhelmus and Agnus, Guillaume and Roussigné, Yves and Gabor, Mihai and Chérif, Salim Mourad and Durin, Gianfranco and Ono, Shimpei and Langer, Jürgen and Querlioz, Damien and Ravelosona, Dafiné and Belmeguenai, Mohamed and Herrera Diez, Liza},
+title = {Magneto-Ionics in Annealed W/CoFeB/HfO2 Thin Films},
+journal = {Advanced Materials Interfaces},
+volume = {9},
+number = {36},
+pages = {2200690},
+keywords = {annealing, Dzyaloshinskii-Moriya interaction, magneto-ionics, magneto-ionic reversibility},
+doi = {https://doi.org/10.1002/admi.202200690},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/admi.202200690},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/admi.202200690},
+abstract = {Abstract The magneto-ionic modulation of the Dzyaloshinskii–Moriya interaction (DMI) and the perpendicular magnetic anisotropy (PMA), in W/CoFeB/HfO2 stacks annealed at different temperatures and for varying annealing times, are presented in this work. A large modulation of PMA and DMI is observed in the systems annealed at 390 and 350 °C, whereas no response to voltage is observed in the as-grown samples. A strong DMI is only observed in the samples annealed at 390 °C for 1 h, while PMA is present for all annealing times at temperatures of 390 and 350 °C. Magnetic properties including domain wall velocity improve drastically with increasing the annealing temperature and time, while the magneto-ionic reversibility is increasingly compromised. The changes in PMA and DMI induced by the gate voltages in the samples annealed at 390 °C are permanent, while partial reversibility is only observed for the samples annealed at 350 °C for short times. This dependence of reversibility on post-grown annealing has been associated to the influence of crystallization on ion mobility. These results show that a compromise between the enhancement of the magnetic properties and the magneto-ionic performance could be needed in systems requiring annealing to develop PMA and DMI.},
+year = {2022}
+}
+

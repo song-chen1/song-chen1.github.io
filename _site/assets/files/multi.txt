@@ -1,0 +1,24 @@
+
+@article{figueroa-miranda_multi-target_2021,
+	title = {Multi-target electrochemical malaria aptasensor on flexible multielectrode arrays for detection in malaria parasite blood samples},
+	volume = {349},
+	copyright = {7.2002},
+	issn = {09254005},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S0925400521013800},
+	doi = {10.1016/j.snb.2021.130812},
+	abstract = {Despite all efforts, malaria is still highly prevalent in tropical and developing countries. The “test, treat and track” policy of the World Health Organization (WHO) demands the development of affordable and highly sensitive malaria tests that discriminate between the two common malaria parasites, Plasmodium falciparum and Plasmodium vivax, to guide appropriate treatments. In response, we developed a flexible and disposable multi­ electrode array utilized as electrochemical malaria aptasensor. This multi-target aptasensor was modified by four different aptamer receptors, discriminating between P. falciparum and P. vivax infections via Plasmodium lactate dehydrogenase, expressed by both species, and histidine-rich protein 2, exclusively expressed by P. falciparum. The multi-target aptasensor detection was tested in blood samples spiked with target proteins, whole human blood spiked with P. falciparum, and P. falciparum in vitro cultures. A rigorous analysis revealed sensitivities of {\textgreater}75.0\% for 0.001\% parasitemia (50 parasites/µL) and a logic gate-based discrimination of Plasmodium in­ fections, overcoming WHO standards. A cost analysis further substantiated the applicability of this multi-target aptasensor as a disposable point-of-care test for remote areas dealing with prevalent malaria parasite infections.},
+	language = {en},
+	urldate = {2023-08-24},
+	journal = {Sensors and Actuators B: Chemical},
+	author = {Figueroa-Miranda, Gabriela and Chen, Song and Neis, Marc and Zhou, Lei and Zhang, Yuting and Lo, Young and Tanner, Julian Alexander and Kreidenweiss, Andrea and Offenhäusser, Andreas and Mayer, Dirk},
+	month = dec,
+	year = {2021},
+	note = {JCR分区: Q1
+中科院分区升级版: 化学1区
+影响因子: 8.4
+5年影响因子: 7.2
+EI: 是},
+	keywords = {/unread},
+	pages = {130812},
+	file = {Figueroa-Miranda et al. - 2021 - Multi-target electrochemical malaria aptasensor on.pdf:/Users/songchen/Zotero/storage/IYVUP59A/Figueroa-Miranda et al. - 2021 - Multi-target electrochemical malaria aptasensor on.pdf:application/pdf},
+}
