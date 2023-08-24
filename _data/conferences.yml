@@ -1,34 +1,29 @@
 main:
 
-  - title: Multi-target electrochemical malaria aptasensor on flexible multielectrode arrays for detection in malaria parasite blood samples
-    authors: Gabriela Figueroa-Miranda, <strong>Song Chen</strong>, Marc Neis, Lei Zhou, Yuting Zhang, Young Lo, Julian Alexander Tanner, Andrea Kreidenweiss, Andreas Offenhäusser, Dirk Mayer
-    conference_short: Sens. Actuators B Chem.
-    conference: Sensors and Actuators B Chemical
-    pdf: ./assets/files/Multi-target\ Electrochemical\ Malaria\ Aptasensor\ on\ Flexible\ Multielectrode\ Arrays\ for\ Detection\ in\ Malaria\ Parasite\ Blood\ Samples.pdf
-    page: https://www.sciencedirect.com/science/article/abs/pii/S0925400521013800?via%3Dihub
-    bibtex: ./assets/files/multi.txt
-    image: ./assets/files/multi.jpg
-    notes: Published
+  - title: Reversible and Non-volatile Magneto-ionic effect in W-CoFeB-MgO-HfO2 ultra-thin films with Perpendicular Anisotropy
+    authors: Song Chen, Elmer Monteblanco, Rohit Pachat, Liza Herrera Diez, Dafiné Ravelosona
+    conference_short: JEMS
+    conference: 13th Joint European Magnetic Symposia
+    pdf: ./assets/files/JEMS2023_Song.pdf
+    web: https://www.jems2023.es/
+    image: ./assets/files/JEMS2023_2.jpg
+    notes: Accepted
 
-  - title: Magneto‐Ionics in Annealed W/CoFeB/HfO2 Thin Films
-    authors: Rohit Pachat, Djoudi Ourdani, Maria‐andromachi Syskaki, Alessio Lamperti, Subhajit Roy, <strong>Song Chen</strong>, Adriano Di Pietro, Ludovic Largeau, Roméo Juge, Maryam Massouras, Cristina Balan, Johannes Wilhelmus van der Jagt, Guillaume Agnus, Yves Roussigné, Mihai Gabor, Salim Mourad Chérif, Gianfranco Durin, Shimpei Ono, Jürgen Langer, Damien Querlioz, Dafiné Ravelosona, Mohamed Belmeguenai, Liza Herrera Diez
-    conference_short: Adv. Mater. Interfaces
-    conference: Advanced Materials Interfaces
-    pdf: https://onlinelibrary.wiley.com/doi/pdf/10.1002/admi.202200690
-    page: https://www.sciencedirect.com/science/article/abs/pii/S0925400521013800?via%3Dihub
-    bibtex: ./assets/files/magnetoionic.txt
-    image: ./assets/files/admi202270196-gra-0001-m.jpg
-    notes: Published
+  - title: BeMAGIC CONFERENCE IN TORINO – POST EVENT
+    conference_short: BeMAGIC
+    conference: BeMAGIC CONFERENCE IN TORINO
+    abstract: The BeMAGIC conference in Torino, entitled “Beyond Magnetoelectric Materials”, was successfully organized by the network ESRs (Early Stage Researchers). This event took place on 12-15 June 2023 at the Starhotel Majestic, Torino, Italy. The programme included 15 top-class experts in the magnetoelectric field, who delivered lectures on the following topics&#58; multiferroics, surface charging, magnetoionics and applications in healthcare, energy efficiency and cybersecurity.
+    pdf: https://bemagic-etn.eu/images/files2023/BeMAGIC_Conference_Torino_2023.pdf
+    web: https://bemagic-etn.eu/news/79-bemagic-conference-in-torino-2023-post-event
+    image: ./assets/img/Group_picture.jpg
 
-  - title: Flexible multielectrode arrays based electrochemical aptasensor for glycated human serum albumin detection
-    authors: Lei Zhou, Gabriela Figueroa-Miranda, <strong>Song Chen</strong>, Marc Neis, Ziheng Hu, Ruifeng Zhu, Yaqi Li, Michael Prömpers, Andreas Offenhäusser, Dirk Mayer
-    conference_short: Sens. Actuators B Chem.
-    conference: Sensors and Actuators B Chemical
-    pdf: ./assets/files/SSRN-id4328224.pdf
-    page: https://www.sciencedirect.com/science/article/abs/pii/S0925400523004458
-    bibtex: ./assets/files/flexible.txt
-    image: ./assets/files/1-s2.0-S0925400523004458-ga1_lrg.jpg
-    notes: Published
+  - title: BeMAGIC Winter School - ETH Zürich
+    conference_short: BeMAGIC
+    conference:  BeMAGIC Winter School&#58; Magnetoelectricity in biomedicine healthcare for the 21st century ETH Zürich
+    abstract: The BeMAGIC Winter School, entitled&#58 “Magnetoelectricity in biomedicine&#58; healthcare for the 21st century”, took place in Zurich from November 8 to 12, 2021. 
+    #pdf: https://bemagic-etn.eu/images/files2021/BeMAGIC_Winter_School_ETHZ_agenda.pdf
+    web: https://bemagic-etn.eu/news/68-bemagic-winter-school-post-event
+    image: ./assets/img/eth.jpg
 
   # - title: Class-Incremental Exemplar Compression for Class-Incremental Learning
   #   authors: Zilin Luo, <strong>Yaoyao Liu</strong>, Bernt Schiele, Qianru Sun
