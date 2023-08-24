@@ -25,6 +25,22 @@ main:
     web: https://bemagic-etn.eu/news/68-bemagic-winter-school-post-event
     image: ./assets/img/eth.jpg
 
+  - title: JOINT WORKSHOP BEMAGIC / MAGNEFI AT AALTO UNIVERSITY
+    conference_short: BeMAGIC
+    conference:  BeMAGIC Winter School&#58; Magnetoelectricity in biomedicine healthcare for the 21st century ETH Zürich
+    abstract: The BeMAGIC workshop at AALTO University (Helsinki, Finland), co-organized with the MagnEFi network, took place from 13 to 17 June 2022.  
+    #pdf: https://bemagic-etn.eu/images/files2021/BeMAGIC_Winter_School_ETHZ_agenda.pdf
+    web: https://bemagic-etn.eu/news/73-joint-workshop-bemagic-magnefi-at-aalto-university-post-event
+    image: ./assets/img/joint.jpg
+
+  - title: BeMAGIC Summer School&#58; Setting gateway to academia (UCAM)
+    conference_short: BeMAGIC
+    conference:  BeMAGIC Winter School&#58; Magnetoelectricity in biomedicine healthcare for the 21st century ETH Zürich
+    abstract: The next BeMAGIC workshop, organized by the University of Cambridge, will take place online on 7-9 April 2021 (workshop) and 10-11 May 2021 (training in soft skills).   
+    #pdf: https://bemagic-etn.eu/images/files2021/BeMAGIC_Winter_School_ETHZ_agenda.pdf
+    web: https://bemagic-etn.eu/news/62-bemagic-summer-school-post-event
+    image: ./assets/img/Portada-cc58d654.jpg
+
   # - title: Class-Incremental Exemplar Compression for Class-Incremental Learning
   #   authors: Zilin Luo, <strong>Yaoyao Liu</strong>, Bernt Schiele, Qianru Sun
   #   conference_short: CVPR
