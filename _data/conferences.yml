@@ -41,6 +41,16 @@ main:
     web: https://bemagic-etn.eu/news/62-bemagic-summer-school-post-event
     image: ./assets/img/Portada-cc58d654.jpg
 
+  - title: BeMAGIC WORKSHOP AT GTECM
+    conference_short: BeMAGIC
+    conference:  BEMAGIC Workshop - Gateway to industry&#58;innovation, entrepreneurship and marketable products using ME technology
+    abstract: The BeMAGIC Workshop at GTECM was successfuly organized in Innsbruck, Austria, from 13 to 16 December 2022.
+    pdf: https://bemagic-etn.eu/images/files2022/BeMagic_Workshop_GTECM_agenda.pdf
+    web: https://bemagic-etn.eu/news/77-bemagic-workshop-at-gtecm-post-event
+    image: ./assets/img/lF0ulCNA.jpeg
+
+
+
   # - title: Class-Incremental Exemplar Compression for Class-Incremental Learning
   #   authors: Zilin Luo, <strong>Yaoyao Liu</strong>, Bernt Schiele, Qianru Sun
   #   conference_short: CVPR
