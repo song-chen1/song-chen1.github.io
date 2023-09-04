@@ -20,7 +20,7 @@ main:
   - title: BeMAGIC Winter School - ETH Zürich
     conference_short: BeMAGIC
     conference:  BeMAGIC Winter School&#58; Magnetoelectricity in biomedicine healthcare for the 21st century ETH Zürich
-    abstract: The BeMAGIC Winter School, entitled&#58 “Magnetoelectricity in biomedicine&#58; healthcare for the 21st century”, took place in Zurich from November 8 to 12, 2021. 
+    abstract: The BeMAGIC Winter School, entitled&#58; “Magnetoelectricity in biomedicine&#58; healthcare for the 21st century”, took place in Zurich from November 8 to 12, 2021. 
     #pdf: https://bemagic-etn.eu/images/files2021/BeMAGIC_Winter_School_ETHZ_agenda.pdf
     web: https://bemagic-etn.eu/news/68-bemagic-winter-school-post-event
     image: ./assets/img/eth.jpg
