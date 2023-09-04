@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# store custom attributes of a folder
+.DS_Store
+
+
 # C extensions
 *.so
 
@@ -11,7 +15,7 @@ __pycache__/
 build/
 develop-eggs/
 dist/
-downloads/
+ownloads/
 eggs/
 .eggs/
 lib/
