@@ -1,0 +1,12 @@
+############################## Contact #############################
+
+
+# Contact form
+contact_form:
+  enable : true
+  form_action : "#" #contact form works with https://formspree.io
+  name : "votre nom"
+  email : "Votre email"
+  subject : "Matière"
+  message : "Message"
+  submit : "Soumettre"
