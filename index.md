@@ -15,6 +15,8 @@ I am currently a Physics Ph.D. candidate at [Spin-Ion Technologies](https://www.
 - **Neuromorphic Computing** Neuromorphic Sensing and Perception, Hybrid Computing Systems, Brain-Inspired Robotics
 {% include_relative _includes/news.md %}
 
+{% include_relative _includes/projects.md %}
+
 {% include_relative _includes/publications.md %}
 
 {% include_relative _includes/conference.md %}
