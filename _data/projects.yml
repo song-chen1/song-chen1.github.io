@@ -7,5 +7,6 @@ main:
     pdf: ./assets/files/AutoVA.pdf
     web: 
     image: ./assets/img/autova.png
+    notes: Non-Open Source
 
 
