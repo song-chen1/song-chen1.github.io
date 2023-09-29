@@ -49,7 +49,7 @@ enable_footnote: false
 
 # Google Analytics ID
 # Please remove this if you don't use Google Analytics
-google_analytics: G-SDFXL7GGYS
+#google_analytics: G-SDFXL7GGYS
 
 # Use this project as a remote theme for GitHub Pages
 # See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
