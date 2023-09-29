@@ -1,12 +1,12 @@
 main:
 
-  - title: Reversible and Non-volatile Magneto-ionic effect in W-CoFeB-MgO-HfO2 ultra-thin films with Perpendicular Anisotropy
-    authors: Song Chen, Elmer Monteblanco, Rohit Pachat, Liza Herrera Diez, Dafiné Ravelosona
-    conference_short: JEMS
-    conference: 13th Joint European Magnetic Symposia
-    pdf: ./assets/files/JEMS2023_Song.pdf
-    web: https://www.jems2023.es/
-    image: ./assets/files/JEMS2023_2.jpg
+  - title: Effects of Heat and Mass Flux on Heat Transfer Characteristics in a 64-element Fuel Bundle via CFD Analysis
+    authors: Huirui Han, Chao Zhang, Jing Jiang
+    conference_short: M&C 2023
+    conference: International Conference on Mathematics and Computational Methods Applied to Nuclear Science and Engineering
+    pdf: ./assets/files/M&C2023_Han.pdf
+    web: https://mc2023.com/
+    image: ./assets/files/M&C2023.png
     notes: Accepted
 
   - title: BeMAGIC CONFERENCE IN TORINO – POST EVENT
