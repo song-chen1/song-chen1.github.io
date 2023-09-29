@@ -45,7 +45,7 @@ enable_footnote: false
 # Analytics
 # Please remove the following lines about analytics services if you fork my project. 
 # Otherwise, the analytics information of your website will be recorded to my ClustrMaps accounts.
-clustrmaps_id: LTWZqBYr9s2OPIQ_fArLjKld7T2K1HlQjSmT1yWWXlE
+#clustrmaps_id: LTWZqBYr9s2OPIQ_fArLjKld7T2K1HlQjSmT1yWWXlE
 
 # Google Analytics ID
 # Please remove this if you don't use Google Analytics
