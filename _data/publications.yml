@@ -3,7 +3,7 @@ main:
   - title: Construction of a feedback control system based on CFD simulations for the 64-element Canadian SCWR
     authors: <strong>Huirui Han</strong>, Chao Zhang
     conference_short: Prog. Nucl. Energy
-    Journal: Progress in Nuclear Energy
+    conference: Progress in Nuclear Energy
     pdf: ./assets/files/PNE_2023.pdf
     page: https://www.sciencedirect.com/science/article/abs/pii/S0149197023003293?via%3Dihub
     #bibtex: ./assets/files/multi.txt
@@ -13,7 +13,7 @@ main:
   - title: Numerical simulation of the fluid flow and heat transfer of the supercritical water in the 64-element Canadian SCWR fuel bundle
     authors: <strong>Huirui Han</strong>, Chao Zhang
     conference_short: J. Nucl. Sci. Technol.
-    Journal: Journal of Nuclear Science and Technology
+    conference: Journal of Nuclear Science and Technology
     pdf: ./assets/files/JNST_2023.pdf
     page: https://www.tandfonline.com/doi/full/10.1080/00223131.2023.2188269
     image: ./assets/files/JNST.jpg
