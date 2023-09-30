@@ -9,7 +9,7 @@ main:
     image: ./assets/files/PNE.jpg
     notes: Published
 
-  - title: Magneto‐Ionics in Annealed W/CoFeB/HfO2 Thin Films
+  - title: Numerical simulation of the fluid flow and heat transfer of the supercritical water in the 64-element Canadian SCWR fuel bundle
     authors: Rohit Pachat, Djoudi Ourdani, Maria‐andromachi Syskaki, Alessio Lamperti, Subhajit Roy, <strong>Song Chen</strong>, Adriano Di Pietro, Ludovic Largeau, Roméo Juge, Maryam Massouras, Cristina Balan, Johannes Wilhelmus van der Jagt, Guillaume Agnus, Yves Roussigné, Mihai Gabor, Salim Mourad Chérif, Gianfranco Durin, Shimpei Ono, Jürgen Langer, Damien Querlioz, Dafiné Ravelosona, Mohamed Belmeguenai, Liza Herrera Diez
     conference_short: Adv. Mater. Interfaces
     conference: Advanced Materials Interfaces
