@@ -3,7 +3,7 @@ main:
   - title: Effects of Heat and Mass Flux on Heat Transfer Characteristics in a 64-element Fuel Bundle via CFD Analysis
     authors: Huirui Han, Chao Zhang, Jing Jiang
     conference_short: M&C 2023
-    conference: International Conference on Mathematics and Computational Methods Applied to Nuclear Science and Engineering
+    conference: International Conference on Mathematics and Computational Methods Applied to Nuclear Science and Engineering, Niagra Falls, Canada, August 13 - 17.
     pdf: ./assets/files/M&C2023_Han.pdf
     web: https://mc2023.com/
     image: ./assets/files/M&C2023.png
@@ -17,7 +17,7 @@ main:
     image: ./assets/img/ISSF2022.jpg
 
   - title: Canadian Society for Mechanical Engineering International Congress
-    conference_short: BeMAGIC
+    conference_short: CSME
     conference:  BeMAGIC Winter School&#58; Magnetoelectricity in biomedicine healthcare for the 21st century ETH Zürich
     abstract: The BeMAGIC Winter School, entitled&#58; “Magnetoelectricity in biomedicine&#58; healthcare for the 21st century”, took place in Zurich from November 8 to 12, 2021. 
     #pdf: https://bemagic-etn.eu/images/files2021/BeMAGIC_Winter_School_ETHZ_agenda.pdf
