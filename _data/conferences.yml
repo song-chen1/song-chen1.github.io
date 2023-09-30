@@ -18,7 +18,7 @@ main:
     image: ./assets/files/ISSF2022.jpg
 
   - title: Numerical simulation of the supercritical water flow in the Canadian SCWR fuel bundle
-    conference_short: CSME
+    conference_short: CSME2021
     conference:  Canadian Society for Mechanical Engineering International Congress, Charlottetown, PE, Canada, June 27-30, 2021 (Online).
     pdf: ./assets/files/CSME2021_Abstract_Han.pdf
     web: https://www.csmecongress.org/
@@ -31,13 +31,12 @@ main:
     web: https://www.eng.uwo.ca/csme-cfdsc/
     image: ./assets/files/CSME-CFDSC2019.png
 
-  - title: BeMAGIC Summer School&#58; Setting gateway to academia (UCAM)
-    conference_short: BeMAGIC
-    conference:  BeMAGIC Winter School&#58; Magnetoelectricity in biomedicine healthcare for the 21st century ETH Zürich
-    abstract: The next BeMAGIC workshop, organized by the University of Cambridge, will take place online on 7-9 April 2021 (workshop) and 10-11 May 2021 (training in soft skills).   
-    #pdf: https://bemagic-etn.eu/images/files2021/BeMAGIC_Winter_School_ETHZ_agenda.pdf
-    web: https://bemagic-etn.eu/news/62-bemagic-summer-school-post-event
-    image: ./assets/img/Portada-cc58d654.jpg
+  - title: Numerical simulation of fluid flow and heat transfer of the supercritical water in different fuel rod channels
+    conference_short: CSME2018
+    conference:  Canadian Society for Mechanical Engineering International Congress, Toronto, Canada, May 27-30, 2018.
+    pdf: ./assets/files/CSME2018_ Han.pdf
+    web: https://www.csmecongress.org/
+    image: ./assets/files/CSME2018.jpg
 
   - title: BeMAGIC WORKSHOP AT GTECM
     conference_short: BeMAGIC
