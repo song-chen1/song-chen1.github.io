@@ -19,7 +19,7 @@ main:
 
   - title: Numerical simulation of the supercritical water flow in the Canadian SCWR fuel bundle
     conference_short: CSME2021
-    conference:  Canadian Society for Mechanical Engineering International Congress, Charlottetown, PE, Canada, June 27-30, 2021 (Online).
+    conference:  Canadian Society for Mechanical Engineering International Congress, Charlottetown, PE, Canada, June 27 - 30, 2021 (Online).
     pdf: ./assets/files/CSME2021_Abstract_Han.pdf
     web: https://www.csmecongress.org/
     image: ./assets/files/CSME2021.png
@@ -33,16 +33,15 @@ main:
 
   - title: Numerical simulation of fluid flow and heat transfer of the supercritical water in different fuel rod channels
     conference_short: CSME2018
-    conference:  Canadian Society for Mechanical Engineering International Congress, Toronto, Canada, May 27-30, 2018.
+    conference:  Canadian Society for Mechanical Engineering International Congress, Toronto, Canada, May 27 - 30, 2018.
     pdf: ./assets/files/CSME2018_ Han.pdf
     web: https://www.csmecongress.org/
     image: ./assets/files/CSME2018.jpg
 
-  - title: BeMAGIC WORKSHOP AT GTECM
-    conference_short: BeMAGIC
-    conference:  BEMAGIC Workshop - Gateway to industry&#58;innovation, entrepreneurship and marketable products using ME technology
-    abstract: The BeMAGIC Workshop at GTECM was successfuly organized in Innsbruck, Austria, from 13 to 16 December 2022.
-    pdf: https://bemagic-etn.eu/images/files2022/BeMagic_Workshop_GTECM_agenda.pdf
-    web: https://bemagic-etn.eu/news/77-bemagic-workshop-at-gtecm-post-event
-    image: ./assets/img/lF0ulCNA.jpeg
+  - title: Numerical Simulation of Heat Transfer in Vertical Fuel Bundles of 37-element Canadian SCWR
+    conference_short: CFD2017
+    conference:  25th Annual Conference of the CFD Society of Canada, Windsor, Canada, May 27 - 30, 2017.
+    pdf: ./assets/files/CFDSC2017_Han.pdf
+    web: https://web2.uwindsor.ca/research/fdri/cfd2017/
+    image: ./assets/files/CFDSC2017.png
 
