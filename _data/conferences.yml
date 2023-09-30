@@ -16,7 +16,7 @@ main:
     web: https://issf2022.ca/
     image: ./assets/img/ISSF2022.jpg
 
-  - title: BeMAGIC Winter School - ETH Zürich
+  - title: Canadian Society for Mechanical Engineering International Congress
     conference_short: BeMAGIC
     conference:  BeMAGIC Winter School&#58; Magnetoelectricity in biomedicine healthcare for the 21st century ETH Zürich
     abstract: The BeMAGIC Winter School, entitled&#58; “Magnetoelectricity in biomedicine&#58; healthcare for the 21st century”, took place in Zurich from November 8 to 12, 2021. 
