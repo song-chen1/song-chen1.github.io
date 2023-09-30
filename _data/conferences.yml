@@ -29,7 +29,7 @@ main:
     conference:  Joint Congress of the Canadian Society for Mechanical Engineering and CFD Society of Canada, London, Canada, June 2-5, 2019.
     pdf: ./assets/files/CSME-CFDSC2019_Han.pdf
     web: https://www.eng.uwo.ca/csme-cfdsc/
-    image: ./assets/files/CSME-CFDSC2019.png
+    image: ./assets/files/CSME-CFDSC2019.jpg
 
   - title: Numerical simulation of fluid flow and heat transfer of the supercritical water in different fuel rod channels
     conference_short: CSME2018
