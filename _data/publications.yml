@@ -19,14 +19,13 @@ main:
     image: ./assets/files/JNST.jpg
     notes: Published
 
-  - title: Flexible multielectrode arrays based electrochemical aptasensor for glycated human serum albumin detection
-    authors: Lei Zhou, Gabriela Figueroa-Miranda, <strong>Song Chen</strong>, Marc Neis, Ziheng Hu, Ruifeng Zhu, Yaqi Li, Michael Prömpers, Andreas Offenhäusser, Dirk Mayer
-    conference_short: Sens. Actuators B Chem.
-    conference: Sensors and Actuators B Chemical
-    pdf: ./assets/files/SSRN-id4328224.pdf
-    page: https://www.sciencedirect.com/science/article/abs/pii/S0925400523004458
-    bibtex: ./assets/files/flexible.txt
-    image: ./assets/files/1-s2.0-S0925400523004458-ga1_lrg.jpg
+  - title: Numerical investigations of the effect of operation conditions on the heat transfer of the supercritical water in the Canadian SCWR fuel bundle
+    authors: <strong>Huirui Han</strong>, Chao Zhang
+    conference_short: J. Supercrit. Fluids
+    conference: The Journal of Supercritical Fluids
+    pdf: ./assets/files/JSF2_2022.pdf
+    page: https://www.sciencedirect.com/science/article/pii/S0896844622002431?via%3Dihub
+    image: ./assets/files/JSF2_2022.jpg
     notes: Published
 
   
