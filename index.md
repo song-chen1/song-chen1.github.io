@@ -6,7 +6,7 @@ layout: homepage
 
 <h2 style="margin: 60px 0px 10px;">Short Bio</h2>
 
-I am currently a Postdoctoral Associate Physics Ph.D. candidate at [Spin-Ion Technologies](https://www.spin-ion.com/) and [Université Paris-Saclay](https://www.universite-paris-saclay.fr/), working under the mentorship of Dr. [Ravelosona dafiné](https://www.spin-ion.com/about-us/), the director of research [CNRS](https://www.cnrs.fr/fr) and CTO of [Spin-Ion Technologies](https://www.spin-ion.com/). My research involves magnetoelectric ("ME") materials for energy-efficient information technology and "ME" materials for data security in information technology using Multiferroics/Magneto-ionics/Surface charging, with a special focus on the boosting magneto-ionic effect using ion irradiation and implantation.
+I am currently a Postdoctoral Associate [Western University](https://www.uwo.ca/), working under the mentorship of Dr. [Chao Zhang](https://www.eng.uwo.ca/mechanical/faculty/zhang_c/), Professor of Department of Mechanical and Material Engineering [MME](https://www.eng.uwo.ca/mechanical/) and Dr. Jing(Jin) Jiang(https://www.eng.uwo.ca/electrical/faculty/jiang_j/), Professor of Department of Electrical and Computer Engineering [ECE](https://www.eng.uwo.ca/electrical/). My research involves magnetoelectric ("ME") materials for energy-efficient information technology and "ME" materials for data security in information technology using Multiferroics/Magneto-ionics/Surface charging, with a special focus on the boosting magneto-ionic effect using ion irradiation and implantation.
 ## Research Interest:
 - **Ion-material Simulation:** SRIM, iradina, IMSIL, CORETO, TRIDYN, MARLOWE, RustBCA
 - **Machine Learning:** fairness AI, penalization and augmentation methods
