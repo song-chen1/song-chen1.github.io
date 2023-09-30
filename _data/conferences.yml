@@ -12,7 +12,7 @@ main:
 
   - title: Numerical analysis of heat transfer of supercritical water in multiple rod channels
     conference_short: ISSF2022
-    conference: 13th International Symposium on Supercritical Fluids, Montreal, Canada, May 15 - 18, 2022
+    conference: 13th International Symposium on Supercritical Fluids, Montreal, Canada, May 15 - 18, 2022.
     pdf: ./assets/files/ISSF2022abstract_Han.pdf
     web: https://issf2022.ca/
     image: ./assets/files/ISSF2022.jpg
@@ -24,13 +24,12 @@ main:
     web: https://www.csmecongress.org/
     image: ./assets/files/CSME2021.png
     
-  - title: JOINT WORKSHOP BEMAGIC / MAGNEFI AT AALTO UNIVERSITY
-    conference_short: BeMAGIC
-    conference:  BeMAGIC Winter School&#58; Magnetoelectricity in biomedicine healthcare for the 21st century ETH Zürich
-    abstract: The BeMAGIC workshop at AALTO University (Helsinki, Finland), co-organized with the MagnEFi network, took place from 13 to 17 June 2022.  
-    #pdf: https://bemagic-etn.eu/images/files2021/BeMAGIC_Winter_School_ETHZ_agenda.pdf
-    web: https://bemagic-etn.eu/news/73-joint-workshop-bemagic-magnefi-at-aalto-university-post-event
-    image: ./assets/img/joint.jpg
+  - title: Numerical investigation of the thermodynamics behaviors in the central downward circular tube of the 64-element Canadian SCWR fuel bundle
+    conference_short: CSME-CFDSC Congress 2019
+    conference:  Joint Congress of the Canadian Society for Mechanical Engineering and CFD Society of Canada, London, Canada, June 2 - 5, 2019.
+    pdf: ./assets/files/CSME-CFDSC2019_Han.pdf
+    web: https://www.eng.uwo.ca/csme-cfdsc/
+    image: ./assets/files/CSME-CFDSC2019.png
 
   - title: BeMAGIC Summer School&#58; Setting gateway to academia (UCAM)
     conference_short: BeMAGIC
