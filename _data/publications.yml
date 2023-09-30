@@ -2,6 +2,7 @@ main:
 
   - title: Construction of a feedback control system based on CFD simulations for the 64-element Canadian SCWR
     authors: <strong>Huirui Han</strong>, Chao Zhang
+    Journal_short: Prog. Nucl. Energy
     Journal: Progress in Nuclear Energy
     pdf: ./assets/files/PNE_2023.pdf
     page: https://www.sciencedirect.com/science/article/abs/pii/S0149197023003293?via%3Dihub
