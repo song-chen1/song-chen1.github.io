@@ -3,7 +3,7 @@ main:
   - title: Effects of Heat and Mass Flux on Heat Transfer Characteristics in a 64-element Fuel Bundle via CFD Analysis
     authors: Huirui Han, Chao Zhang, Jing Jiang
     conference_short: M&C 2023
-    conference: International Conference on Mathematics and Computational Methods Applied to Nuclear Science and Engineering, Niagra Falls, Canada, August 13 - 17.
+    conference: International Conference on Mathematics and Computational Methods Applied to Nuclear Science and Engineering, Niagra Falls, Canada, August 13 - 17, 2023.
     pdf: ./assets/files/M&C2023_Han.pdf
     web: https://mc2023.com/
     image: ./assets/files/M&C2023.png
@@ -11,7 +11,7 @@ main:
 
   - title: Numerical analysis of heat transfer of supercritical water in multiple rod channels
     conference_short: ISSF2022
-    conference: 13th International Symposium on Supercritical Fluids
+    conference: 13th International Symposium on Supercritical Fluids, Montreal, Canada, May 15 - 18, 2022
     pdf: ./assets/files/ISSF2022abstract_Han.pdf
     web: https://issf2022.ca/
     image: ./assets/img/ISSF2022.jpg
