@@ -3,7 +3,7 @@ main:
   - title: Effects of Heat and Mass Flux on Heat Transfer Characteristics in a 64-element Fuel Bundle via CFD Analysis
     authors: Huirui Han, Chao Zhang, Jing Jiang
     conference_short: M&C 2023
-    conference: International Conference on Mathematics and Computational Methods Applied to Nuclear Science and Engineering, Niagra Falls, Canada, August 13 - 17, 2023.
+    conference: International Conference on Mathematics and Computational Methods Applied to Nuclear Science and Engineering, Niagra Falls, Canada, August 13-17, 2023.
     pdf: ./assets/files/M&C2023_Han.pdf
     web: https://mc2023.com/
     image: ./assets/files/M&C2023.png
@@ -12,35 +12,35 @@ main:
 
   - title: Numerical analysis of heat transfer of supercritical water in multiple rod channels
     conference_short: ISSF2022
-    conference: 13th International Symposium on Supercritical Fluids, Montreal, Canada, May 15 - 18, 2022.
+    conference: 13th International Symposium on Supercritical Fluids, Montreal, Canada, May 15-18, 2022.
     pdf: ./assets/files/ISSF2022abstract_Han.pdf
     web: https://issf2022.ca/
     image: ./assets/files/ISSF2022.jpg
 
   - title: Numerical simulation of the supercritical water flow in the Canadian SCWR fuel bundle
     conference_short: CSME2021
-    conference:  Canadian Society for Mechanical Engineering International Congress, Charlottetown, PE, Canada, June 27 - 30, 2021 (Online).
+    conference:  Canadian Society for Mechanical Engineering International Congress, Charlottetown, PE, Canada, June 27-30, 2021 (Online).
     pdf: ./assets/files/CSME2021_Abstract_Han.pdf
     web: https://www.csmecongress.org/
     image: ./assets/files/CSME2021.png
     
   - title: Numerical investigation of the thermodynamics behaviors in the central downward circular tube of the 64-element Canadian SCWR fuel bundle
     conference_short: CSME-CFDSC Congress 2019
-    conference:  Joint Congress of the Canadian Society for Mechanical Engineering and CFD Society of Canada, London, Canada, June 2 - 5, 2019.
+    conference:  Joint Congress of the Canadian Society for Mechanical Engineering and CFD Society of Canada, London, Canada, June 2-5, 2019.
     pdf: ./assets/files/CSME-CFDSC2019_Han.pdf
     web: https://www.eng.uwo.ca/csme-cfdsc/
     image: ./assets/files/CSME-CFDSC2019.png
 
   - title: Numerical simulation of fluid flow and heat transfer of the supercritical water in different fuel rod channels
     conference_short: CSME2018
-    conference:  Canadian Society for Mechanical Engineering International Congress, Toronto, Canada, May 27 - 30, 2018.
+    conference:  Canadian Society for Mechanical Engineering International Congress, Toronto, Canada, May 27-30, 2018.
     pdf: ./assets/files/CSME2018_ Han.pdf
     web: https://www.csmecongress.org/
     image: ./assets/files/CSME2018.jpg
 
   - title: Numerical Simulation of Heat Transfer in Vertical Fuel Bundles of 37-element Canadian SCWR
     conference_short: CFD2017
-    conference:  25th Annual Conference of the CFD Society of Canada, Windsor, Canada, May 27 - 30, 2017.
+    conference:  25th Annual Conference of the CFD Society of Canada, Windsor, Canada, June 18-20, 2017.
     pdf: ./assets/files/CFDSC2017_Han.pdf
     web: https://web2.uwindsor.ca/research/fdri/cfd2017/
     image: ./assets/files/CFDSC2017.png
