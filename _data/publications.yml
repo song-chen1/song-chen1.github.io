@@ -1,13 +1,12 @@
 main:
 
-  - title: Multi-target electrochemical malaria aptasensor on flexible multielectrode arrays for detection in malaria parasite blood samples
-    authors: Gabriela Figueroa-Miranda, <strong>Song Chen</strong>, Marc Neis, Lei Zhou, Yuting Zhang, Young Lo, Julian Alexander Tanner, Andrea Kreidenweiss, Andreas Offenhäusser, Dirk Mayer
-    conference_short: Sens. Actuators B Chem.
-    conference: Sensors and Actuators B Chemical
-    pdf: ./assets/files/multi.pdf
-    page: https://www.sciencedirect.com/science/article/abs/pii/S0925400521013800?via%3Dihub
-    bibtex: ./assets/files/multi.txt
-    image: ./assets/files/multi.jpg
+  - title: Construction of a feedback control system based on CFD simulations for the 64-element Canadian SCWR
+    authors: <strong>Huirui Han</strong>, Chao Zhang
+    Journal: Progress in Nuclear Energy
+    #pdf: ./assets/files/multi.pdf
+    page: https://www.sciencedirect.com/science/article/abs/pii/S0149197023003293?via%3Dihub
+    #bibtex: ./assets/files/multi.txt
+    #image: ./assets/files/multi.jpg
     notes: Published
 
   - title: Magneto‐Ionics in Annealed W/CoFeB/HfO2 Thin Films
