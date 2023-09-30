@@ -28,22 +28,22 @@ main:
     image: ./assets/files/JSF2_2022.jpg
     notes: Published
 
-     - title: Numerical investigations of the effect of operation conditions on the heat transfer of the supercritical water in the Canadian SCWR fuel bundle
+  - title: A Modified Turbulent Model for the Supercritical Water Flows in the Vertical Upward Channels
     authors: <strong>Huirui Han</strong>, Chao Zhang
     conference_short: J. Supercrit. Fluids
     conference: The Journal of Supercritical Fluids
-    pdf: ./assets/files/JSF2_2022.pdf
-    page: https://www.sciencedirect.com/science/article/pii/S0896844622002431?via%3Dihub
-    image: ./assets/files/JSF2_2022.jpg
+    pdf: ./assets/files/JSF1_2022.pdf
+    page: https://www.sciencedirect.com/science/article/pii/S0896844622001176?via%3Dihub
+    image: ./assets/files/JSF1_2022.jpg
     notes: Published
 
-     - title: Numerical investigations of the effect of operation conditions on the heat transfer of the supercritical water in the Canadian SCWR fuel bundle
+  - title: Numerical investigations of the effect of operation conditions on the heat transfer of the supercritical water in the Canadian SCWR fuel bundle
     authors: <strong>Huirui Han</strong>, Chao Zhang
-    conference_short: J. Supercrit. Fluids
-    conference: The Journal of Supercritical Fluids
-    pdf: ./assets/files/JSF2_2022.pdf
-    page: https://www.sciencedirect.com/science/article/pii/S0896844622002431?via%3Dihub
-    image: ./assets/files/JSF2_2022.jpg
+    conference_short: Ann. Nucl. Energy
+    conference: Annals of Nuclear Energy
+    pdf: ./assets/files/ANE_2021.pdf
+    page: https://www.sciencedirect.com/science/article/pii/S0306454920306691?via%3Dihub
+    image: ./assets/files/ANE.jpg
     notes: Published
 
   
