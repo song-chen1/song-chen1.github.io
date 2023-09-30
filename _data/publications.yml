@@ -12,6 +12,7 @@ main:
 
   - title: Numerical simulation of the fluid flow and heat transfer of the supercritical water in the 64-element Canadian SCWR fuel bundle
     authors: <strong>Huirui Han</strong>, Chao Zhang
+    Journal_short: J. Nucl. Sci. Technol.
     Journal: Journal of Nuclear Science and Technology
     pdf: ./assets/files/JNST_2023.pdf
     page: https://www.tandfonline.com/doi/full/10.1080/00223131.2023.2188269
