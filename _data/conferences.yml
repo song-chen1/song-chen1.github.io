@@ -16,7 +16,7 @@ main:
     web: https://issf2022.ca/
     image: ./assets/files/ISSF2022.jpg
 
-  - title: Canadian Society for Mechanical Engineering International Congress
+  - title: Numerical simulation of the supercritical water flow in the Canadian SCWR fuel bundle
     conference_short: CSME
     conference:  Canadian Society for Mechanical Engineering International Congress, Charlottetown, PE, Canada, June 27-30, 2021 (Online).
     abstract: The BeMAGIC Winter School, entitled&#58; “Magnetoelectricity in biomedicine&#58; healthcare for the 21st century”, took place in Zurich from November 8 to 12, 2021. 
