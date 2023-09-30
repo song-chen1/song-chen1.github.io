@@ -14,7 +14,7 @@ main:
     conference: 13th International Symposium on Supercritical Fluids, Montreal, Canada, May 15 - 18, 2022
     pdf: ./assets/files/ISSF2022abstract_Han.pdf
     web: https://issf2022.ca/
-    image: ./assets/img/ISSF2022.jpg
+    image: ./assets/files/ISSF2022.jpg
 
   - title: Canadian Society for Mechanical Engineering International Congress
     conference_short: CSME
