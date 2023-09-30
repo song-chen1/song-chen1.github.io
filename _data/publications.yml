@@ -10,13 +10,11 @@ main:
     notes: Published
 
   - title: Numerical simulation of the fluid flow and heat transfer of the supercritical water in the 64-element Canadian SCWR fuel bundle
-    authors: Rohit Pachat, Djoudi Ourdani, Maria‐andromachi Syskaki, Alessio Lamperti, Subhajit Roy, <strong>Song Chen</strong>, Adriano Di Pietro, Ludovic Largeau, Roméo Juge, Maryam Massouras, Cristina Balan, Johannes Wilhelmus van der Jagt, Guillaume Agnus, Yves Roussigné, Mihai Gabor, Salim Mourad Chérif, Gianfranco Durin, Shimpei Ono, Jürgen Langer, Damien Querlioz, Dafiné Ravelosona, Mohamed Belmeguenai, Liza Herrera Diez
-    conference_short: Adv. Mater. Interfaces
-    conference: Advanced Materials Interfaces
-    pdf: https://onlinelibrary.wiley.com/doi/pdf/10.1002/admi.202200690
-    page: https://www.sciencedirect.com/science/article/abs/pii/S0925400521013800?via%3Dihub
-    bibtex: ./assets/files/magnetoionic.txt
-    image: ./assets/files/admi202270196-gra-0001-m.jpg
+    authors: <strong>Huirui Han</strong>, Chao Zhang
+    Journal: Journal of Nuclear Science and Technology
+    pdf: ./assets/files/JNST_2023.pdf
+    page: https://www.tandfonline.com/doi/full/10.1080/00223131.2023.2188269
+    image: ./assets/files/JNST.jpg
     notes: Published
 
   - title: Flexible multielectrode arrays based electrochemical aptasensor for glycated human serum albumin detection
