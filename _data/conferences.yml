@@ -7,7 +7,8 @@ main:
     pdf: ./assets/files/M&C2023_Han.pdf
     web: https://mc2023.com/
     image: ./assets/files/M&C2023.png
-    notes: Accepted
+    #Notes: Accepted
+
 
   - title: Numerical analysis of heat transfer of supercritical water in multiple rod channels
     conference_short: ISSF2022
@@ -19,11 +20,10 @@ main:
   - title: Numerical simulation of the supercritical water flow in the Canadian SCWR fuel bundle
     conference_short: CSME
     conference:  Canadian Society for Mechanical Engineering International Congress, Charlottetown, PE, Canada, June 27-30, 2021 (Online).
-    abstract: The BeMAGIC Winter School, entitled&#58; “Magnetoelectricity in biomedicine&#58; healthcare for the 21st century”, took place in Zurich from November 8 to 12, 2021. 
-    #pdf: https://bemagic-etn.eu/images/files2021/BeMAGIC_Winter_School_ETHZ_agenda.pdf
-    web: https://bemagic-etn.eu/news/68-bemagic-winter-school-post-event
-    image: ./assets/img/eth.jpg
-
+    pdf: ./assets/files/CSME2021_Abstract_Han.pdf
+    web: https://www.csmecongress.org/
+    image: ./assets/files/CSME2021.png
+    
   - title: JOINT WORKSHOP BEMAGIC / MAGNEFI AT AALTO UNIVERSITY
     conference_short: BeMAGIC
     conference:  BeMAGIC Winter School&#58; Magnetoelectricity in biomedicine healthcare for the 21st century ETH Zürich
