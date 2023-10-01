@@ -14,6 +14,6 @@
 
 <li> <a href="javascript:toggle_vis('newsmore')">Show more</a> </li>
 <div id="newsmore" style="display:none">
-<li><strong>[May. 2018]</strong> Join the <a href="https://www.spin-ion.com/">Western University</a>, involved in the <a href="https://bemagic-etn.eu/">Mechanical and Materials Engineering</a> PhD program (Research area: Thermofluids).</li>
+<li><strong>[May. 2018]</strong> Join the <a href="https://www.uwo.ca/">Western University</a>, involved in the <a href="https://www.eng.uwo.ca/mechanical/">Mechanical and Materials Engineering</a> PhD program (Research area: Thermofluids).</li>
 </div>
 </ul>
