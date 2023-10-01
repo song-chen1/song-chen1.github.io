@@ -13,6 +13,6 @@
 
 <li> <a href="javascript:toggle_vis('newsmore')">Show more</a> </li>
 <div id="newsmore" style="display:none">
-<li><strong>[JUN. 2021]</strong> Join the <a href="https://www.spin-ion.com/">Spin-Ion Technologies</a>, involved in the <a href="https://bemagic-etn.eu/">BeMAGIC</a> program (Marie Sklodowska-Curie European Training Network).</li>
+<li><strong>[May. 2018]</strong> Join the <a href="https://www.spin-ion.com/">Western University</a>, involved in the <a href="https://bemagic-etn.eu/">Mechanical and Materials Engineering</a> PhD program (Research area: Thermofluids).</li>
 </div>
 </ul>
