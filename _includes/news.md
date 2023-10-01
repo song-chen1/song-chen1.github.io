@@ -20,4 +20,4 @@
 <div id="newsmore" style="display:none">
 <li><strong>[May. 2018]</strong> Joined the <a href="https://www.uwo.ca/">Western University</a>, involved in the <a href="https://www.eng.uwo.ca/mechanical/">Mechanical and Materials Engineering</a> PhD program (Research area: Thermofluids).</li>
 </div>
-</ul>
+
