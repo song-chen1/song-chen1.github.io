@@ -16,8 +16,6 @@ I am currently a Postdoctoral Associate [Western University](https://www.uwo.ca/
 
 {% include_relative _includes/news.md %}
 
-# {% include_relative _includes/projects.md %}
-
 {% include_relative _includes/publications.md %}
 
 {% include_relative _includes/conference.md %}
