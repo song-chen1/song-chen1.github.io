@@ -64,7 +64,7 @@
       }
     }).catch(function (err) {
       console.error(err);
-      twikooNewEl.innerHTML = 'Failed to load';
+      twikooNewEl.innerHTML = '加载失败';
     });
   }
 
