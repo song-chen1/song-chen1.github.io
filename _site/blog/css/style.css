@@ -10983,7 +10983,7 @@ a.article-nav-next span {
   }
 }
 .navbar-logo img {
-  max-height: 1.75rem;
+  max-height: 3.5rem;
 }
 @media screen and (min-width: 1088px) {
   .navbar > .container .navbar-menu,
@@ -11007,7 +11007,7 @@ footer.footer .level-end .field {
   }
 }
 .footer-logo img {
-  max-height: 1.75rem;
+  max-height: 3.5rem;
 }
 .pagination {
   margin-top: 1.5rem;
