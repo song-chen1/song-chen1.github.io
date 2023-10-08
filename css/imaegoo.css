@@ -1,0 +1,220 @@
+@media screen and (min-width: 1700px) {
+  .container {
+    max-width: 1600px;
+    width: 1600px;
+  }
+  .container .column.is-3-widescreen {
+    width: 22%;
+  }
+  .container .column.is-6-widescreen {
+    width: 56%;
+  }
+}
+body {
+  background-color: transparent;
+}
+body:before {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.3;
+  background: url("/img/cute.webp") repeat;
+}
+.navbar {
+  background-color: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.navbar-main .navbar-menu {
+  background-color: transparent;
+}
+.navbar-main .navbar-item.is-active {
+  color: inherit;
+  font-weight: bold;
+}
+.navbar-main .navbar-item:hover {
+  color: #fff;
+  background-color: #5d93db;
+}
+@media screen and (min-width: 1088px) {
+  .navbar-main .navbar-menu .navbar-start {
+    margin-left: 2em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-main .navbar-menu {
+    flex-direction: column;
+  }
+  .navbar-main .navbar-menu .navbar-start,
+  .navbar-main .navbar-menu .navbar-end {
+    justify-content: center;
+    overflow-x: auto;
+  }
+  .navbar-main .navbar-menu .navbar-start .navbar-item,
+  .navbar-main .navbar-menu .navbar-end .navbar-item {
+    padding: 0.5rem;
+  }
+  .navbar-main .navbar-menu .navbar-end {
+    padding-bottom: 0.5rem;
+  }
+}
+.card {
+  overflow: visible;
+  transition: background-color 0.5s ease;
+  background-color: rgba(255,255,255,0.95);
+}
+.card:hover {
+  background-color: #fff;
+}
+.card.card-transparent {
+  background-color: transparent !important;
+}
+.card.card-transparent .level-start,
+.card.card-transparent .level-end {
+  overflow: hidden;
+}
+@media screen and (min-width: 769px) {
+  .column-main.is-sticky,
+  .column-left.is-sticky,
+  .column-right.is-sticky,
+  .column-right-shadow.is-sticky {
+    top: 70px;
+  }
+  .navbar {
+    z-index: 100;
+    position: sticky;
+    top: 0;
+  }
+}
+.article .content {
+  overflow: auto;
+}
+footer.footer {
+  background-color: transparent;
+}
+.footer {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+}
+.footer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.7);
+}
+.footer-logo img {
+  max-height: 2rem;
+}
+.footer a:not(.button) {
+  color: inherit;
+}
+.footer a:not(.button):hover {
+  text-decoration: underline;
+}
+.section .container .columns {
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+::selection {
+  color: #fff;
+  background-color: rgba(93,147,219,0.8);
+}
+::-moz-selection {
+  color: #fff;
+  background-color: rgba(93,147,219,0.8);
+}
+a {
+  color: #449bff;
+}
+.button.is-link {
+  background-color: #5d93db;
+}
+article.article .article-meta {
+  overflow-y: hidden;
+}
+article.article .title {
+  width: fit-content;
+}
+article.article img {
+  max-height: 800px;
+}
+article .title a {
+  background-image: linear-gradient(transparent calc(100% - 1px), #5d93db 1px);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: all 0.25s ease-in-out;
+}
+article .title:hover a {
+  color: #5d93db !important;
+  background-size: 100% 100%;
+}
+.button.is-link:hover,
+.button.is-link.is-hovered {
+  background-color: #71a1e0;
+}
+.button.is-link:active,
+.button.is-link.is-active {
+  background-color: #4382d6;
+}
+.pagination-link.is-current {
+  background-color: #5d93db;
+  border-color: #4382d6;
+}
+.navbar-main .navbar-menu .navbar-end .navbar-item {
+  min-width: 35px;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.article-licensing {
+  z-index: 0;
+}
+#busuanzi_container_page_pv {
+  display: none !important;
+}
+.card .v .vlist .vcard .vcontent {
+  text-align: inherit;
+}
+.searchbox .searchbox-pinyin {
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+.searchbox .searchbox-pinyin input {
+  vertical-align: middle;
+}
+.searchbox .searchbox-pinyin span {
+  position: relative;
+  top: 1px;
+}
+.button.link-more {
+  margin-top: 0.75rem;
+}
+.post-navigation .level-item {
+  flex-shrink: 1;
+}
+.twikoo-new-content {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.twikoo code .tag {
+  display: inline;
+  padding: 0;
+}
+.widget .tags .tag:first-child {
+  background: $white-ter;
+  color: $black-ter;
+}
+.widget .tags .tag:last-child {
+  background: $white-bis;
+  color: $black-ter;
+}
