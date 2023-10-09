@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Project Geeker</title>
+  
+  <subtitle>Song&#39;s Blog</subtitle>
+  <link href="https://songchen.science/blog/atom.xml" rel="self"/>
+  
+  <link href="https://songchen.science/blog/"/>
+  <updated>2023-10-08T14:36:32.294Z</updated>
+  <id>https://songchen.science/blog/</id>
+  
+  <author>
+    <name>Song Chen</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Basic Usage of Hexo</title>
+    <link href="https://songchen.science/blog/2023/10/06/second-post/"/>
+    <id>https://songchen.science/blog/2023/10/06/second-post/</id>
+    <published>2023-10-06T00:24:52.000Z</published>
+    <updated>2023-10-08T14:36:32.294Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Writing&quot;&gt;&lt;a href=&quot;#Writing&quot; class=&quot;headerlink&quot; title=&quot;Writing&quot;&gt;&lt;/a&gt;Writing&lt;/h1&gt;&lt;p&gt;To create a new post or new page, run the</summary>
+        
+      
+    
+    
+    
+    <category term="Webblog" scheme="https://songchen.science/blog/categories/Webblog/"/>
+    
+    <category term="Documentation" scheme="https://songchen.science/blog/categories/Documentation/"/>
+    
+    <category term="Hexo" scheme="https://songchen.science/blog/categories/Documentation/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://songchen.science/blog/tags/Hexo/"/>
+    
+    <category term="Documentation" scheme="https://songchen.science/blog/tags/Documentation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>My New Post</title>
+    <link href="https://songchen.science/blog/2023/10/04/My-New-Post/"/>
+    <id>https://songchen.science/blog/2023/10/04/My-New-Post/</id>
+    <published>2023-10-04T19:30:45.000Z</published>
+    <updated>2023-10-04T19:30:45.880Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://songchen.science/blog/2023/10/03/hello-world/"/>
+    <id>https://songchen.science/blog/2023/10/03/hello-world/</id>
+    <published>2023-10-03T20:16:13.639Z</published>
+    <updated>2023-10-08T09:48:49.887Z</updated>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    
+    <category term="encryptAsDiary" scheme="https://songchen.science/blog/tags/encryptAsDiary/"/>
+    
+  </entry>
+  
+</feed>
