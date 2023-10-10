@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-08T14:36:32.294Z</updated>
+  <updated>2023-10-09T22:23:11.499Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -17,11 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Creating a Neural Network and Making Predictions with Python&#39;s AI</title>
+    <link href="https://songchen.science/blog/2023/10/10/Creating-a-Neural-Network-and-Making-Predictions-with-Python-s-AI/"/>
+    <id>https://songchen.science/blog/2023/10/10/Creating-a-Neural-Network-and-Making-Predictions-with-Python-s-AI/</id>
+    <published>2023-10-09T22:06:29.000Z</published>
+    <updated>2023-10-09T22:23:11.499Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;If you’re new to the field of artificial intelligence (AI), Python is an excellent language to begin with because it serves as the</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
+    
+    <category term="Data-science" scheme="https://songchen.science/blog/categories/Data-science/"/>
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    
+    <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
+    
+    <category term="data-science" scheme="https://songchen.science/blog/tags/data-science/"/>
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Basic Usage of Hexo</title>
     <link href="https://songchen.science/blog/2023/10/06/second-post/"/>
     <id>https://songchen.science/blog/2023/10/06/second-post/</id>
     <published>2023-10-06T00:24:52.000Z</published>
-    <updated>2023-10-08T14:36:32.294Z</updated>
+    <updated>2023-10-09T20:57:00.998Z</updated>
     
     
       
