@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Project Geeker</title>
+  
+  <subtitle>Song&#39;s Blog</subtitle>
+  <link href="https://songchen.science/blog/zh-CN/atom.xml" rel="self"/>
+  
+  <link href="https://songchen.science/blog/zh-CN/"/>
+  <updated>2023-10-11T18:50:06.305Z</updated>
+  <id>https://songchen.science/blog/zh-CN/</id>
+  
+  <author>
+    <name>Song Chen</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>BCA Simulations</title>
+    <link href="https://songchen.science/blog/zh-CN/2023/10/11/BCA-Simulations/"/>
+    <id>https://songchen.science/blog/zh-CN/2023/10/11/BCA-Simulations/</id>
+    <published>2023-10-11T16:57:14.000Z</published>
+    <updated>2023-10-11T18:50:06.305Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Binary_collision_approximation&quot;&gt;Binary Appriximation Collison&lt;/a&gt; (BCA), serves as a pragmatic approach to enhance the efficiency of simulating how high-energy ions, typically with kinetic energies in the kilo-electronvolt (keV) range or beyond, interact with solid materials in terms of their penetration depth and defect generation. In this method, the ion’s trajectory is simplified by assuming that it traverses through the material via a series of discrete, independent interactions with individual sample atoms (nuclei). In the intervals between these collisions, the ion is presumed to move along a straight path, experiencing electronic stopping power but not dissipating any energy during its interactions with the nuclei. &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Condensed-matter physics" scheme="https://songchen.science/blog/zh-CN/categories/Condensed-matter-physics/"/>
+    
+    <category term="Computational Simulations" scheme="https://songchen.science/blog/zh-CN/categories/Condensed-matter-physics/Computational-Simulations/"/>
+    
+    
+    <category term="condensed-matter physics" scheme="https://songchen.science/blog/zh-CN/tags/condensed-matter-physics/"/>
+    
+    <category term="computational simulation" scheme="https://songchen.science/blog/zh-CN/tags/computational-simulation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Finding An Effective Python Environment</title>
+    <link href="https://songchen.science/blog/zh-CN/2023/10/11/Finding-An-Effective-Python-Environment/"/>
+    <id>https://songchen.science/blog/zh-CN/2023/10/11/Finding-An-Effective-Python-Environment/</id>
+    <published>2023-10-10T22:55:14.000Z</published>
+    <updated>2023-10-11T18:50:46.522Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Python-Version-Management-Tools&quot;&gt;&lt;a href=&quot;#Python-Version-Management-Tools&quot; class=&quot;headerlink&quot; title=&quot;Python Version Management Tools&quot;&gt;&lt;/a&gt;Python Version Management Tools&lt;/h2&gt;&lt;h3 id=&quot;pyenv&quot;&gt;&lt;a href=&quot;#pyenv&quot; class=&quot;headerlink&quot; title=&quot;pyenv&quot;&gt;&lt;/a&gt;pyenv&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pyenv/pyenv&quot;&gt;&lt;code&gt;pyenv&lt;/code&gt;&lt;/a&gt; is a polular and marture open-source tool used in the Python development ecosystem on MacOS. (It is &lt;a href=&quot;https://github.com/pyenv-win/pyenv-win#installation&quot;&gt;pyenv-win&lt;/a&gt; on windows). It allows developers to manage multiple Python installations on their system and easily switch between different Python versions. This is especially useful when you’re working on various Python projects that may have different version requirements.&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ pyenv verison&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* system&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  3.7.9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  3.8.13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ python --version&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	Python 3.10.0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ pyenv install 3.12.0 &lt;span class=&quot;comment&quot;&gt;# this command takes time&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ pyenv versions&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* system&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	3.7.9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	3.8.13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	3.12.0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
+    
+    <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
+    
+    <category term="Editors" scheme="https://songchen.science/blog/zh-CN/categories/Python/Editors/"/>
+    
+    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
+    
+    
+    <category term="python" scheme="https://songchen.science/blog/zh-CN/tags/python/"/>
+    
+    <category term="python_tools" scheme="https://songchen.science/blog/zh-CN/tags/python-tools/"/>
+    
+    <category term="python_editors" scheme="https://songchen.science/blog/zh-CN/tags/python-editors/"/>
+    
+    <category term="python_configuration" scheme="https://songchen.science/blog/zh-CN/tags/python-configuration/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Creating a Neural Network and Making Predictions with Python&#39;s AI</title>
+    <link href="https://songchen.science/blog/zh-CN/2023/10/10/Creating-a-Neural-Network-and-Making-Predictions-with-Python-s-AI/"/>
+    <id>https://songchen.science/blog/zh-CN/2023/10/10/Creating-a-Neural-Network-and-Making-Predictions-with-Python-s-AI/</id>
+    <published>2023-10-09T22:06:29.000Z</published>
+    <updated>2023-10-11T18:50:54.757Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;If you’re new to the field of artificial intelligence (AI), Python is an excellent language to begin with because it serves as the foundation for many AI tools and libraries. &lt;strong&gt;Deep learning&lt;/strong&gt;, a method for making predictions based on data, heavily depends on neural networks. This blog will show you through the process of constructing a &lt;a href=&quot;https://en.wikipedia.org/wiki/Neural_network&quot;&gt;neural network&lt;/a&gt; from the ground up.&lt;/p&gt;
+&lt;p&gt;In practical applications, rather than creating neural networks from scratch, you would typically utilize deep learning frameworks like &lt;a href=&quot;https://www.tensorflow.org/?hl=zh-cn&quot;&gt;TensorFlow&lt;/a&gt; or &lt;a href=&quot;https://pytorch.org/&quot;&gt;PyTorch&lt;/a&gt;. Nevertheless, understanding the inner workings of neural networks can be advantageous as it allows you to design more effective architectures for your deep learning models.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
+    
+    <category term="Data-science" scheme="https://songchen.science/blog/zh-CN/categories/Data-science/"/>
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/zh-CN/categories/Machine-learning/"/>
+    
+    
+    <category term="python" scheme="https://songchen.science/blog/zh-CN/tags/python/"/>
+    
+    <category term="data-science" scheme="https://songchen.science/blog/zh-CN/tags/data-science/"/>
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/zh-CN/tags/machine-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Basic Usage of Hexo</title>
+    <link href="https://songchen.science/blog/zh-CN/2023/10/06/second-post/"/>
+    <id>https://songchen.science/blog/zh-CN/2023/10/06/second-post/</id>
+    <published>2023-10-06T00:24:52.000Z</published>
+    <updated>2023-10-11T18:51:30.154Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Writing&quot;&gt;&lt;a href=&quot;#Writing&quot; class=&quot;headerlink&quot; title=&quot;Writing&quot;&gt;&lt;/a&gt;Writing&lt;/h1&gt;&lt;p&gt;To create a new post or new page, run the following command:&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new [layout] &amp;lt;title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Webblog" scheme="https://songchen.science/blog/zh-CN/categories/Webblog/"/>
+    
+    <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/"/>
+    
+    <category term="Hexo" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://songchen.science/blog/zh-CN/tags/Hexo/"/>
+    
+    <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/tags/Documentation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>My New Post</title>
+    <link href="https://songchen.science/blog/zh-CN/2023/10/04/My-New-Post/"/>
+    <id>https://songchen.science/blog/zh-CN/2023/10/04/My-New-Post/</id>
+    <published>2023-10-04T19:30:45.000Z</published>
+    <updated>2023-10-04T19:30:45.880Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://songchen.science/blog/zh-CN/2023/10/03/hello-world/"/>
+    <id>https://songchen.science/blog/zh-CN/2023/10/03/hello-world/</id>
+    <published>2023-10-03T20:16:13.639Z</published>
+    <updated>2023-10-08T09:48:49.887Z</updated>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    
+    <category term="encryptAsDiary" scheme="https://songchen.science/blog/zh-CN/tags/encryptAsDiary/"/>
+    
+  </entry>
+  
+</feed>
