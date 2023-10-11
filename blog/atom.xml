@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-11T10:54:52.617Z</updated>
+  <updated>2023-10-11T17:04:22.389Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>BCA Simulations</title>
+    <link href="https://songchen.science/blog/2023/10/11/BCA-Simulations/"/>
+    <id>https://songchen.science/blog/2023/10/11/BCA-Simulations/</id>
+    <published>2023-10-11T16:57:14.000Z</published>
+    <updated>2023-10-11T17:04:22.389Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Binary_collision_approximation&quot;&gt;Binary Appriximation Collison&lt;/a&gt; (BCA), serves as a pragmatic</summary>
+        
+      
+    
+    
+    
+    <category term="Condensed-matter physics" scheme="https://songchen.science/blog/categories/Condensed-matter-physics/"/>
+    
+    <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
+    
+    
+    <category term="condensed-matter physics" scheme="https://songchen.science/blog/tags/condensed-matter-physics/"/>
+    
+    <category term="computational simulation" scheme="https://songchen.science/blog/tags/computational-simulation/"/>
+    
+  </entry>
   
   <entry>
     <title>Finding An Effective Python Environment</title>
