@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-10T23:05:49.447Z</updated>
+  <updated>2023-10-11T10:54:52.617Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://songchen.science/blog/2023/10/11/Finding-An-Effective-Python-Environment/"/>
     <id>https://songchen.science/blog/2023/10/11/Finding-An-Effective-Python-Environment/</id>
     <published>2023-10-10T22:55:14.000Z</published>
-    <updated>2023-10-10T23:05:49.447Z</updated>
+    <updated>2023-10-11T10:54:52.617Z</updated>
     
     
       
@@ -45,9 +45,11 @@
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
     
-    <category term="data-science" scheme="https://songchen.science/blog/tags/data-science/"/>
+    <category term="python_tools" scheme="https://songchen.science/blog/tags/python-tools/"/>
     
-    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    <category term="python_editors" scheme="https://songchen.science/blog/tags/python-editors/"/>
+    
+    <category term="python_configuration" scheme="https://songchen.science/blog/tags/python-configuration/"/>
     
   </entry>
   
