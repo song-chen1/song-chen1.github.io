@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-12T19:12:31.678Z</updated>
+  <updated>2023-10-12T21:37:58.955Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Busuu_French</title>
+    <link href="https://songchen.science/blog/2023/10/12/Busuu-French/"/>
+    <id>https://songchen.science/blog/2023/10/12/Busuu-French/</id>
+    <published>2023-10-12T21:21:10.000Z</published>
+    <updated>2023-10-12T21:37:58.955Z</updated>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    
+    <category term="French" scheme="https://songchen.science/blog/tags/French/"/>
+    
+    <category term="Language" scheme="https://songchen.science/blog/tags/Language/"/>
+    
+  </entry>
   
   <entry>
     <title>BCA Simulations</title>
@@ -76,7 +95,7 @@
     <link href="https://songchen.science/blog/2023/10/10/Creating-a-Neural-Network-and-Making-Predictions-with-Python-s-AI/"/>
     <id>https://songchen.science/blog/2023/10/10/Creating-a-Neural-Network-and-Making-Predictions-with-Python-s-AI/</id>
     <published>2023-10-09T22:06:29.000Z</published>
-    <updated>2023-10-12T21:11:05.216Z</updated>
+    <updated>2023-10-12T21:32:54.547Z</updated>
     
     
     <summary type="html">&lt;div class=&quot;post-summary&quot;&gt;
@@ -107,7 +126,7 @@
     <link href="https://songchen.science/blog/2023/10/06/second-post/"/>
     <id>https://songchen.science/blog/2023/10/06/second-post/</id>
     <published>2023-10-06T00:24:52.000Z</published>
-    <updated>2023-10-12T16:00:48.605Z</updated>
+    <updated>2023-10-12T21:22:28.637Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Basic-Writing-Syntax&quot;&gt;&lt;a href=&quot;#Basic-Writing-Syntax&quot; class=&quot;headerlink&quot; title=&quot;Basic Writing Syntax&quot;&gt;&lt;/a&gt;Basic Writing Syntax&lt;/h2&gt;&lt;p&gt;To create a new post or new page, run the following command:&lt;/p&gt;
