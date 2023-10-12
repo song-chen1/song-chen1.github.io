@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/lib/hbe.surge</loc>
+    <loc>https://songchen.science/blog/zh-CN/lib/hbe.shrink</loc>
     
     <lastmod>2023-10-12</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/lib/hbe.wave</loc>
+    <loc>https://songchen.science/blog/zh-CN/lib/hbe.surge</loc>
     
     <lastmod>2023-10-12</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/lib/hbe.shrink</loc>
+    <loc>https://songchen.science/blog/zh-CN/lib/hbe.wave</loc>
     
     <lastmod>2023-10-12</lastmod>
     
@@ -194,27 +194,6 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/tags/data-science/</loc>
-    <lastmod>2023-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/tags/machine-learning/</loc>
-    <lastmod>2023-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/tags/encryptAsDiary/</loc>
-    <lastmod>2023-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://songchen.science/blog/zh-CN/tags/python-tools/</loc>
     <lastmod>2023-10-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -230,6 +209,27 @@
   
   <url>
     <loc>https://songchen.science/blog/zh-CN/tags/python-configuration/</loc>
+    <lastmod>2023-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/tags/data-science/</loc>
+    <lastmod>2023-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/tags/machine-learning/</loc>
+    <lastmod>2023-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/tags/encryptAsDiary/</loc>
     <lastmod>2023-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -273,6 +273,13 @@
   </url>
   
   <url>
+    <loc>https://songchen.science/blog/zh-CN/categories/Python/Tools/</loc>
+    <lastmod>2023-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://songchen.science/blog/zh-CN/categories/Webblog/</loc>
     <lastmod>2023-10-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -287,7 +294,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Python/Tools/</loc>
+    <loc>https://songchen.science/blog/zh-CN/categories/Python/Editors/</loc>
     <lastmod>2023-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -308,7 +315,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Python/Editors/</loc>
+    <loc>https://songchen.science/blog/zh-CN/categories/Python/Configuration/</loc>
     <lastmod>2023-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -316,13 +323,6 @@
   
   <url>
     <loc>https://songchen.science/blog/zh-CN/categories/Documentation/Hexo/</loc>
-    <lastmod>2023-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Python/Configuration/</loc>
     <lastmod>2023-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
