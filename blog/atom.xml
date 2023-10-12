@@ -104,11 +104,11 @@
     <link href="https://songchen.science/blog/2023/10/06/second-post/"/>
     <id>https://songchen.science/blog/2023/10/06/second-post/</id>
     <published>2023-10-06T00:24:52.000Z</published>
-    <updated>2023-10-11T18:51:30.154Z</updated>
+    <updated>2023-10-12T15:48:18.675Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;Writing&quot;&gt;&lt;a href=&quot;#Writing&quot; class=&quot;headerlink&quot; title=&quot;Writing&quot;&gt;&lt;/a&gt;Writing&lt;/h1&gt;&lt;p&gt;To create a new post or new page, run the following command:&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new [layout] &amp;lt;title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;Basic-Writing-Syntax&quot;&gt;&lt;a href=&quot;#Basic-Writing-Syntax&quot; class=&quot;headerlink&quot; title=&quot;Basic Writing Syntax&quot;&gt;&lt;/a&gt;Basic Writing Syntax&lt;/h2&gt;&lt;p&gt;To create a new post or new page, run the following command:&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;figcaption&gt;&lt;span&gt;click to expand the code &gt;folded&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new [layout] &amp;lt;title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
