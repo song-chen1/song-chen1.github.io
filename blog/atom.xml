@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-13T14:13:34.688Z</updated>
+  <updated>2023-10-13T14:52:40.411Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -21,16 +21,10 @@
     <link href="https://songchen.science/blog/2023/10/13/Alfred-Documentation/"/>
     <id>https://songchen.science/blog/2023/10/13/Alfred-Documentation/</id>
     <published>2023-10-13T13:34:30.017Z</published>
-    <updated>2023-10-13T14:13:34.688Z</updated>
+    <updated>2023-10-13T14:52:40.411Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Tips-and-Tricks&quot;&gt;&lt;a href=&quot;#Tips-and-Tricks&quot; class=&quot;headerlink&quot; title=&quot;Tips and Tricks&quot;&gt;&lt;/a&gt;Tips and Tricks&lt;/h1&gt;&lt;h2</summary>
-        
-      
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
     
     
     
@@ -39,9 +33,11 @@
     <category term="Documentation" scheme="https://songchen.science/blog/categories/Alfred/Documentation/"/>
     
     
+    <category term="Alfred" scheme="https://songchen.science/blog/tags/Alfred/"/>
+    
     <category term="Documentation" scheme="https://songchen.science/blog/tags/Documentation/"/>
     
-    <category term="Alfred" scheme="https://songchen.science/blog/tags/Alfred/"/>
+    <category term="encryptAsDiary" scheme="https://songchen.science/blog/tags/encryptAsDiary/"/>
     
   </entry>
   
@@ -170,9 +166,9 @@
     <category term="Hexo" scheme="https://songchen.science/blog/categories/Documentation/Hexo/"/>
     
     
-    <category term="Hexo" scheme="https://songchen.science/blog/tags/Hexo/"/>
-    
     <category term="Documentation" scheme="https://songchen.science/blog/tags/Documentation/"/>
+    
+    <category term="Hexo" scheme="https://songchen.science/blog/tags/Hexo/"/>
     
   </entry>
   
