@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-12T22:06:00.685Z</updated>
+  <updated>2023-10-13T14:13:34.688Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Alfred Documentation</title>
+    <link href="https://songchen.science/blog/2023/10/13/Alfred-Documentation/"/>
+    <id>https://songchen.science/blog/2023/10/13/Alfred-Documentation/</id>
+    <published>2023-10-13T13:34:30.017Z</published>
+    <updated>2023-10-13T14:13:34.688Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Tips-and-Tricks&quot;&gt;&lt;a href=&quot;#Tips-and-Tricks&quot; class=&quot;headerlink&quot; title=&quot;Tips and Tricks&quot;&gt;&lt;/a&gt;Tips and Tricks&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Alfred" scheme="https://songchen.science/blog/categories/Alfred/"/>
+    
+    <category term="Documentation" scheme="https://songchen.science/blog/categories/Alfred/Documentation/"/>
+    
+    
+    <category term="Documentation" scheme="https://songchen.science/blog/tags/Documentation/"/>
+    
+    <category term="Alfred" scheme="https://songchen.science/blog/tags/Alfred/"/>
+    
+  </entry>
   
   <entry>
     <title>Busuu_French</title>
@@ -40,7 +69,7 @@
     <link href="https://songchen.science/blog/2023/10/11/BCA-Simulations/"/>
     <id>https://songchen.science/blog/2023/10/11/BCA-Simulations/</id>
     <published>2023-10-11T16:57:14.000Z</published>
-    <updated>2023-10-12T19:12:31.678Z</updated>
+    <updated>2023-10-13T11:25:05.512Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Binary_collision_approximation&quot;&gt;Binary Appriximation Collison&lt;/a&gt; (BCA), serves as a pragmatic approach to enhance the efficiency of simulating how high-energy ions, typically with kinetic energies in the kilo-electronvolt (keV) range or beyond, interact with solid materials in terms of their penetration depth and defect generation. In this method, the ion’s trajectory is simplified by assuming that it traverses through the material via a series of discrete, independent interactions with individual sample atoms (nuclei). In the intervals between these collisions, the ion is presumed to move along a straight path, experiencing electronic stopping power but not dissipating any energy during its interactions with the nuclei. &lt;/p&gt;</summary>
