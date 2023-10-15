@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-15T19:05:05.578Z</updated>
+  <updated>2023-10-15T19:41:45.918Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://songchen.science/blog/2023/10/15/AutoVA-Automated-VCMA-AHE-Measurement-System/"/>
     <id>https://songchen.science/blog/2023/10/15/AutoVA-Automated-VCMA-AHE-Measurement-System/</id>
     <published>2023-10-15T18:41:05.000Z</published>
-    <updated>2023-10-15T19:05:05.578Z</updated>
+    <updated>2023-10-15T19:41:45.918Z</updated>
     
     
     <summary type="html">AutoVA - Automated VCMA/(magnetoelectric coupling) - Anomalous Hall effect Measurement System. The software is used to control 1. The E-field applied for the VCMA/Magnetoelectric coupling. (with the ramping function). 2. The E-fields can have multi-variants - (dwelling, pulser). 3. The electromagnetic filed. 4. The Soure Measure Unit (SMU) to apply one bias-current, and meanwhile measuring the Hall Voltage. Hysteresis loops can be obtained by looping the electromagnetic field.</summary>
