@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-13T14:52:40.411Z</updated>
+  <updated>2023-10-14T12:33:20.664Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Alfred Documentation</title>
-    <link href="https://songchen.science/blog/2023/10/13/Alfred-Documentation/"/>
-    <id>https://songchen.science/blog/2023/10/13/Alfred-Documentation/</id>
-    <published>2023-10-13T13:34:30.017Z</published>
-    <updated>2023-10-13T14:52:40.411Z</updated>
+    <link href="https://songchen.science/blog/2023/10/14/Alfred-Documentation/"/>
+    <id>https://songchen.science/blog/2023/10/14/Alfred-Documentation/</id>
+    <published>2023-10-14T12:31:57.228Z</published>
+    <updated>2023-10-14T12:33:20.664Z</updated>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
@@ -49,7 +49,7 @@
     <updated>2023-10-13T11:25:05.512Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Binary_collision_approximation&quot;&gt;Binary Appriximation Collison&lt;/a&gt; (BCA), serves as a pragmatic approach to enhance the efficiency of simulating how high-energy ions, typically with kinetic energies in the kilo-electronvolt (keV) range or beyond, interact with solid materials in terms of their penetration depth and defect generation. In this method, the ion’s trajectory is simplified by assuming that it traverses through the material via a series of discrete, independent interactions with individual sample atoms (nuclei). In the intervals between these collisions, the ion is presumed to move along a straight path, experiencing electronic stopping power but not dissipating any energy during its interactions with the nuclei. &lt;/p&gt;</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Binary_collision_approximation&quot;&gt;Binary Appriximation Collison&lt;/a&gt; (BCA), serves as a pragmatic approach to enhance the efficiency of simulating how high-energy ions, typically with kinetic energies in the kilo-electronvolt (keV) range or beyond, interact with solid materials in terms of their penetration depth and defect generation. In this method, the ion’s trajectory is simplified by assuming that it traverses through the material via a series of discrete, independent interactions with individual sample atoms (nuclei). In the intervals between these collisions, the ion is presumed to move along a straight path, experiencing electronic stopping power but not dissipating any energy during its interactions with the nuclei. &lt;/p&gt;</summary>
     
     
     
@@ -72,7 +72,7 @@
     <updated>2023-10-11T18:50:46.522Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;Python-Version-Management-Tools&quot;&gt;&lt;a href=&quot;#Python-Version-Management-Tools&quot; class=&quot;headerlink&quot; title=&quot;Python Version Management Tools&quot;&gt;&lt;/a&gt;Python Version Management Tools&lt;/h2&gt;&lt;h3 id=&quot;pyenv&quot;&gt;&lt;a href=&quot;#pyenv&quot; class=&quot;headerlink&quot; title=&quot;pyenv&quot;&gt;&lt;/a&gt;pyenv&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pyenv/pyenv&quot;&gt;&lt;code&gt;pyenv&lt;/code&gt;&lt;/a&gt; is a polular and marture open-source tool used in the Python development ecosystem on MacOS. (It is &lt;a href=&quot;https://github.com/pyenv-win/pyenv-win#installation&quot;&gt;pyenv-win&lt;/a&gt; on windows). It allows developers to manage multiple Python installations on their system and easily switch between different Python versions. This is especially useful when you’re working on various Python projects that may have different version requirements.&lt;/p&gt;
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&gt;&lt;h2 id=&quot;Python-Version-Management-Tools&quot;&gt;&lt;a href=&quot;#Python-Version-Management-Tools&quot; class=&quot;headerlink&quot; title=&quot;Python Version Management Tools&quot;&gt;&lt;/a&gt;Python Version Management Tools&lt;/h2&gt;&lt;h3 id=&quot;pyenv&quot;&gt;&lt;a href=&quot;#pyenv&quot; class=&quot;headerlink&quot; title=&quot;pyenv&quot;&gt;&lt;/a&gt;pyenv&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pyenv/pyenv&quot;&gt;&lt;code&gt;pyenv&lt;/code&gt;&lt;/a&gt; is a polular and marture open-source tool used in the Python development ecosystem on MacOS. (It is &lt;a href=&quot;https://github.com/pyenv-win/pyenv-win#installation&quot;&gt;pyenv-win&lt;/a&gt; on windows). It allows developers to manage multiple Python installations on their system and easily switch between different Python versions. This is especially useful when you’re working on various Python projects that may have different version requirements.&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ pyenv verison&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* system&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  3.7.9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  3.8.13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ python --version&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	Python 3.10.0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ pyenv install 3.12.0 &lt;span class=&quot;comment&quot;&gt;# this command takes time&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ pyenv versions&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* system&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	3.7.9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	3.8.13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	3.12.0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
@@ -104,7 +104,7 @@
     <updated>2023-10-12T21:32:54.547Z</updated>
     
     
-    <summary type="html">&lt;div class=&quot;post-summary&quot;&gt;
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&gt;&lt;div class=&quot;post-summary&quot;&gt;
 
 &lt;p&gt;If you’re new to the field of artificial intelligence (AI), Python is an excellent language to begin with because it serves as the foundation for many AI tools and libraries. &lt;strong&gt;Deep learning&lt;/strong&gt;, a method for making predictions based on data, heavily depends on neural networks. This blog will show you through the process of constructing a &lt;a href=&quot;https://en.wikipedia.org/wiki/Neural_network&quot;&gt;neural network&lt;/a&gt; from the ground up.&lt;/p&gt;
 &lt;p&gt;In practical applications, rather than creating neural networks from scratch, you would typically utilize deep learning frameworks like &lt;a href=&quot;https://www.tensorflow.org/?hl=zh-cn&quot;&gt;TensorFlow&lt;/a&gt; or &lt;a href=&quot;https://pytorch.org/&quot;&gt;PyTorch&lt;/a&gt;. Nevertheless, understanding the inner workings of neural networks can be advantageous as it allows you to design more effective architectures for your deep learning models.&lt;/p&gt;
@@ -135,7 +135,7 @@
     <updated>2023-10-12T21:43:02.003Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;Basic-Writing-Syntax&quot;&gt;&lt;a href=&quot;#Basic-Writing-Syntax&quot; class=&quot;headerlink&quot; title=&quot;Basic Writing Syntax&quot;&gt;&lt;/a&gt;Basic Writing Syntax&lt;/h2&gt;&lt;p&gt;To create a new post or new page, run the following command:&lt;/p&gt;
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&gt;&lt;h2 id=&quot;Basic-Writing-Syntax&quot;&gt;&lt;a href=&quot;#Basic-Writing-Syntax&quot; class=&quot;headerlink&quot; title=&quot;Basic Writing Syntax&quot;&gt;&lt;/a&gt;Basic Writing Syntax&lt;/h2&gt;&lt;p&gt;To create a new post or new page, run the following command:&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;figcaption&gt;&lt;span&gt;click to expand the code &gt;folded&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new [layout] &amp;lt;title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
