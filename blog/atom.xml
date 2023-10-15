@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-14T12:33:20.664Z</updated>
+  <updated>2023-10-15T18:51:59.652Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AutoVA - Automated VCMA &amp; AHE Measurement System</title>
+    <link href="https://songchen.science/blog/2023/10/15/AutoVA-Automated-VCMA-AHE-Measurement-System/"/>
+    <id>https://songchen.science/blog/2023/10/15/AutoVA-Automated-VCMA-AHE-Measurement-System/</id>
+    <published>2023-10-15T18:41:05.000Z</published>
+    <updated>2023-10-15T18:51:59.652Z</updated>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&gt;&lt;div class=&quot;post-summary&quot;&gt;
+
+
+&lt;p&gt;AutoVA - Automated VCMA&amp;#x2F;(magnetoelectric coupling) - Anomalous Hall effect Measurement System.&lt;/p&gt;
+&lt;p&gt;The software is used to control :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The E-field applied for the VCMA&amp;#x2F;Magnetoelectric coupling. (with the ramping function).&lt;ol&gt;
+&lt;li&gt;The E-fields can have multi-variants - (dwelling, pulser).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;The electromagnetic filed. &lt;/li&gt;
+&lt;li&gt;The Soure Measure Unit (SMU) to apply one bias-current, and meanwhile measuring the Hall Voltage. Hysteresis loops can be obtained by looping the electromagnetic field.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The software has following features:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AutoVA_1.0.0&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Compatible with a large amount of SMUs, and instruments&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Experiments procudures visualised&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;GUI for graphing live data&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;managing queues of experiments.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Data auto-generation&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;AutoVA_1.0.1&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The automated experiment time can be estimated and updated in real time.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;AutoVA_1.0.2&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The progressbar for single meaurement will be shown&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;/div&gt;</summary>
+    
+    
+    
+    <category term="Software" scheme="https://songchen.science/blog/categories/Software/"/>
+    
+    <category term="Automation" scheme="https://songchen.science/blog/categories/Software/Automation/"/>
+    
+    
+    <category term="Software" scheme="https://songchen.science/blog/tags/Software/"/>
+    
+    <category term="Automation" scheme="https://songchen.science/blog/tags/Automation/"/>
+    
+    <category term="physics experiment" scheme="https://songchen.science/blog/tags/physics-experiment/"/>
+    
+  </entry>
   
   <entry>
     <title>Alfred Documentation</title>
@@ -101,7 +155,7 @@
     <link href="https://songchen.science/blog/2023/10/10/Creating-a-Neural-Network-and-Making-Predictions-with-Python-s-AI/"/>
     <id>https://songchen.science/blog/2023/10/10/Creating-a-Neural-Network-and-Making-Predictions-with-Python-s-AI/</id>
     <published>2023-10-09T22:06:29.000Z</published>
-    <updated>2023-10-12T21:32:54.547Z</updated>
+    <updated>2023-10-15T18:46:23.587Z</updated>
     
     
     <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&gt;&lt;div class=&quot;post-summary&quot;&gt;
