@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-15T19:41:45.918Z</updated>
+  <updated>2023-10-16T18:29:01.942Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to create charts that adhere to the publication requirements using Matplotlib.</title>
+    <link href="https://songchen.science/blog/2023/10/16/How-to-create-charts-that-adhere-to-the-publication-requirements-using-Matplotlib/"/>
+    <id>https://songchen.science/blog/2023/10/16/How-to-create-charts-that-adhere-to-the-publication-requirements-using-Matplotlib/</id>
+    <published>2023-10-16T18:28:05.201Z</published>
+    <updated>2023-10-16T18:29:01.942Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
+    
+    <category term="matplotlib" scheme="https://songchen.science/blog/categories/Python/matplotlib/"/>
+    
+    
+    <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
+    
+    <category term="matplotlib" scheme="https://songchen.science/blog/tags/matplotlib/"/>
+    
+    <category term="chart" scheme="https://songchen.science/blog/tags/chart/"/>
+    
+    <category term="data analysis" scheme="https://songchen.science/blog/tags/data-analysis/"/>
+    
+  </entry>
   
   <entry>
     <title>AutoVA - Automated VCMA &amp; AHE Measurement System</title>
