@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-16T18:29:01.942Z</updated>
+  <updated>2023-10-16T18:54:36.199Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -21,16 +21,15 @@
     <link href="https://songchen.science/blog/2023/10/16/How-to-create-charts-that-adhere-to-the-publication-requirements-using-Matplotlib/"/>
     <id>https://songchen.science/blog/2023/10/16/How-to-create-charts-that-adhere-to-the-publication-requirements-using-Matplotlib/</id>
     <published>2023-10-16T18:28:05.201Z</published>
-    <updated>2023-10-16T18:29:01.942Z</updated>
+    <updated>2023-10-16T18:54:36.199Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&gt;&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://zhuanlan.zhihu.com/p/629348960&quot; target=&quot;_blank&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;
+从Nature到普通SCI：如何使用matplotlib绘制符合期刊要求的图表 &lt;/a&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.songchen.science/en/How-to-create-charts-that-adhere-to-the-publication-requirements-using-Matplotlib/Solarize_Light2.png&quot; title=&quot;Solarize_Light2:&quot; class=&quot;gallery-item&quot;&gt;&lt;img src=&quot;https://blog.songchen.science/en/How-to-create-charts-that-adhere-to-the-publication-requirements-using-Matplotlib/Solarize_Light2.png&quot; alt=&quot;Solarize_Light2:&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.songchen.science/en/How-to-create-charts-that-adhere-to-the-publication-requirements-using-Matplotlib/_classic_test_patch.png&quot; title=&quot;_classic_test_patch:&quot; class=&quot;gallery-item&quot;&gt;&lt;img src=&quot;https://blog.songchen.science/en/How-to-create-charts-that-adhere-to-the-publication-requirements-using-Matplotlib/_classic_test_patch.png&quot; alt=&quot;_classic_test_patch:&quot;&gt;&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
