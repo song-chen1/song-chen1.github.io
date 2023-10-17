@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-16T18:54:36.199Z</updated>
+  <updated>2023-10-17T08:12:00.025Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://songchen.science/blog/2023/10/16/How-to-create-charts-that-adhere-to-the-publication-requirements-using-Matplotlib/"/>
     <id>https://songchen.science/blog/2023/10/16/How-to-create-charts-that-adhere-to-the-publication-requirements-using-Matplotlib/</id>
     <published>2023-10-16T18:28:05.201Z</published>
-    <updated>2023-10-16T18:54:36.199Z</updated>
+    <updated>2023-10-17T08:12:00.025Z</updated>
     
     
     <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&gt;&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://zhuanlan.zhihu.com/p/629348960&quot; target=&quot;_blank&quot;&gt;
@@ -78,16 +78,16 @@
     <link href="https://songchen.science/blog/2023/10/14/Alfred-Documentation/"/>
     <id>https://songchen.science/blog/2023/10/14/Alfred-Documentation/</id>
     <published>2023-10-14T12:31:57.228Z</published>
-    <updated>2023-10-14T12:33:20.664Z</updated>
+    <updated>2023-10-17T08:11:39.427Z</updated>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
     
     
     
-    <category term="Alfred" scheme="https://songchen.science/blog/categories/Alfred/"/>
+    <category term="Documentation" scheme="https://songchen.science/blog/categories/Documentation/"/>
     
-    <category term="Documentation" scheme="https://songchen.science/blog/categories/Alfred/Documentation/"/>
+    <category term="Alfred" scheme="https://songchen.science/blog/categories/Documentation/Alfred/"/>
     
     
     <category term="Alfred" scheme="https://songchen.science/blog/tags/Alfred/"/>
@@ -103,7 +103,7 @@
     <link href="https://songchen.science/blog/2023/10/11/BCA-Simulations/"/>
     <id>https://songchen.science/blog/2023/10/11/BCA-Simulations/</id>
     <published>2023-10-11T16:57:14.000Z</published>
-    <updated>2023-10-13T11:25:05.512Z</updated>
+    <updated>2023-10-17T08:10:36.161Z</updated>
     
     
     <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Binary_collision_approximation&quot;&gt;Binary Appriximation Collison&lt;/a&gt; (BCA), serves as a pragmatic approach to enhance the efficiency of simulating how high-energy ions, typically with kinetic energies in the kilo-electronvolt (keV) range or beyond, interact with solid materials in terms of their penetration depth and defect generation. In this method, the ion’s trajectory is simplified by assuming that it traverses through the material via a series of discrete, independent interactions with individual sample atoms (nuclei). In the intervals between these collisions, the ion is presumed to move along a straight path, experiencing electronic stopping power but not dissipating any energy during its interactions with the nuclei. &lt;/p&gt;</summary>
@@ -112,7 +112,7 @@
     
     <category term="Condensed-matter physics" scheme="https://songchen.science/blog/categories/Condensed-matter-physics/"/>
     
-    <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Condensed-matter-physics/Computational-Simulations/"/>
+    <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
     
     
     <category term="condensed-matter physics" scheme="https://songchen.science/blog/tags/condensed-matter-physics/"/>
@@ -197,9 +197,9 @@
     
     
     
-    <category term="Webblog" scheme="https://songchen.science/blog/categories/Webblog/"/>
-    
     <category term="Documentation" scheme="https://songchen.science/blog/categories/Documentation/"/>
+    
+    <category term="Webblog" scheme="https://songchen.science/blog/categories/Webblog/"/>
     
     <category term="Hexo" scheme="https://songchen.science/blog/categories/Documentation/Hexo/"/>
     
