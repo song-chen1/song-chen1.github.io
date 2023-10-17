@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/zh-CN/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/zh-CN/"/>
-  <updated>2023-10-16T19:54:34.880Z</updated>
+  <updated>2023-10-17T22:35:10.727Z</updated>
   <id>https://songchen.science/blog/zh-CN/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>推荐常用的Hexo插件 (转载)</title>
+    <link href="https://songchen.science/blog/zh-CN/2023/10/17/%E6%8E%A8%E8%8D%90%E5%B8%B8%E7%94%A8%E7%9A%84Hexo%E6%8F%92%E4%BB%B6-%E8%BD%AC%E8%BD%BD/"/>
+    <id>https://songchen.science/blog/zh-CN/2023/10/17/%E6%8E%A8%E8%8D%90%E5%B8%B8%E7%94%A8%E7%9A%84Hexo%E6%8F%92%E4%BB%B6-%E8%BD%AC%E8%BD%BD/</id>
+    <published>2023-10-17T19:18:33.000Z</published>
+    <updated>2023-10-17T22:35:10.727Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://github.com/TenviLi/awesome-hexo-plugins/tree/master&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;Awesome-hexo-plugins&lt;/a&gt;
+
+&lt;h1 id=&quot;Awesome-hexo-plugins&quot;&gt;&lt;a href=&quot;#Awesome-hexo-plugins&quot; class=&quot;headerlink&quot; title=&quot;Awesome-hexo-plugins &quot;&gt;&lt;/a&gt;Awesome-hexo-plugins &lt;a href=&quot;https://github.com/sindresorhus/awesome&quot;&gt;&lt;img src=&quot;https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg&quot; alt=&quot;Awesome&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;👓 推荐常用的 Hexo 插件&lt;/p&gt;
+&lt;p&gt;如果你有好的插件推荐，欢迎 pull requests 或 提出 Issues。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#%E6%96%87%E7%AB%A0&quot;&gt;文章&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#hexo-auto-category-%E6%A0%B9%E6%8D%AE%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB&quot;&gt;&lt;code&gt;hexo-auto-category&lt;/code&gt; 根据文件目录自动生成文章分类&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#hexo-renderer-markdown-it-%E4%BD%BF%E7%94%A8-markdown-it-%E4%BD%9C%E6%B8%B2%E6%9F%93%E5%99%A8&quot;&gt;&lt;code&gt;hexo-renderer-markdown-it&lt;/code&gt; 使用 markdown-it 作渲染器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#hexo-related-popular-posts-%E7%94%9F%E6%88%90%E7%9B%B8%E5%85%B3%E7%83%AD%E9%97%A8%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8&quot;&gt;&lt;code&gt;hexo-related-popular-posts&lt;/code&gt; 生成相关热门文章列表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#hexo-description-%E6%A0%B9%E6%8D%AE%E6%A0%87%E8%AE%B0%E4%BD%8D%E7%BD%AE%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E7%AB%A0%E7%AE%80%E4%BB%8B&quot;&gt;&lt;code&gt;hexo-description&lt;/code&gt; 根据标记位置自动生成文章简介&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/"/>
+    
+    <category term="Hexo" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://songchen.science/blog/zh-CN/tags/Hexo/"/>
+    
+    <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/tags/Documentation/"/>
+    
+    <category term="Hexo plugins" scheme="https://songchen.science/blog/zh-CN/tags/Hexo-plugins/"/>
+    
+  </entry>
   
   <entry>
     <title>用Python打造精美二维码，传递无限可能</title>
