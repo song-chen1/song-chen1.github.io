@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-17T16:20:38.136Z</updated>
+  <updated>2023-10-18T13:52:37.056Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://songchen.science/blog/2023/10/17/Plasma-Material-Interactions/"/>
     <id>https://songchen.science/blog/2023/10/17/Plasma-Material-Interactions/</id>
     <published>2023-10-17T15:35:32.000Z</published>
-    <updated>2023-10-17T16:20:38.136Z</updated>
+    <updated>2023-10-18T13:52:37.056Z</updated>
     
     
     <summary type="html">Plasma-Material Interactions (PMI) are a set of complex and rich interactions and reactions between a bulk plasma and any materials in contact with the plasma. When a plasma comes into contact with a material, it forms a plasma sheath. The voltage drop across a plasma sheath is often many volts, and charged particles from the plasma passing through the sheath can be accelerated to many electron-Volts of potential energy before they impact the surface.</summary>
@@ -117,11 +117,11 @@
     <category term="Alfred" scheme="https://songchen.science/blog/categories/Documentation/Alfred/"/>
     
     
-    <category term="encryptAsDiary" scheme="https://songchen.science/blog/tags/encryptAsDiary/"/>
-    
     <category term="Alfred" scheme="https://songchen.science/blog/tags/Alfred/"/>
     
     <category term="Documentation" scheme="https://songchen.science/blog/tags/Documentation/"/>
+    
+    <category term="encryptAsDiary" scheme="https://songchen.science/blog/tags/encryptAsDiary/"/>
     
   </entry>
   
@@ -130,7 +130,7 @@
     <link href="https://songchen.science/blog/2023/10/11/BCA-Simulations/"/>
     <id>https://songchen.science/blog/2023/10/11/BCA-Simulations/</id>
     <published>2023-10-11T16:57:14.000Z</published>
-    <updated>2023-10-17T20:56:38.270Z</updated>
+    <updated>2023-10-18T07:52:45.900Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Binary_collision_approximation&quot;&gt;Binary Appriximation Collison&lt;/a&gt; (BCA), serves as a pragmatic approach to enhance the efficiency of simulating how high-energy ions, typically with kinetic energies in the kilo-electronvolt (keV) range or beyond, interact with solid materials in terms of their penetration depth and defect generation. In this method, the ion’s trajectory is simplified by assuming that it traverses through the material via a series of discrete, independent interactions with individual sample atoms (nuclei). In the intervals between these collisions, the ion is presumed to move along a straight path, experiencing electronic stopping power but not dissipating any energy during its interactions with the nuclei. &lt;/p&gt;</summary>
@@ -148,6 +148,8 @@
     
     <category term="computational simulation" scheme="https://songchen.science/blog/tags/computational-simulation/"/>
     
+    <category term="physics" scheme="https://songchen.science/blog/tags/physics/"/>
+    
   </entry>
   
   <entry>
@@ -155,7 +157,7 @@
     <link href="https://songchen.science/blog/2023/10/11/Finding-An-Effective-Python-Environment/"/>
     <id>https://songchen.science/blog/2023/10/11/Finding-An-Effective-Python-Environment/</id>
     <published>2023-10-10T22:55:14.000Z</published>
-    <updated>2023-10-11T18:50:46.522Z</updated>
+    <updated>2023-10-18T10:17:59.286Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Python-Version-Management-Tools&quot;&gt;&lt;a href=&quot;#Python-Version-Management-Tools&quot; class=&quot;headerlink&quot; title=&quot;Python Version Management Tools&quot;&gt;&lt;/a&gt;Python Version Management Tools&lt;/h2&gt;&lt;h3 id=&quot;pyenv&quot;&gt;&lt;a href=&quot;#pyenv&quot; class=&quot;headerlink&quot; title=&quot;pyenv&quot;&gt;&lt;/a&gt;pyenv&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pyenv/pyenv&quot;&gt;&lt;code&gt;pyenv&lt;/code&gt;&lt;/a&gt; is a polular and marture open-source tool used in the Python development ecosystem on MacOS. (It is &lt;a href=&quot;https://github.com/pyenv-win/pyenv-win#installation&quot;&gt;pyenv-win&lt;/a&gt; on windows). It allows developers to manage multiple Python installations on their system and easily switch between different Python versions. This is especially useful when you’re working on various Python projects that may have different version requirements.&lt;/p&gt;
@@ -218,7 +220,7 @@
     <link href="https://songchen.science/blog/2023/10/06/second-post/"/>
     <id>https://songchen.science/blog/2023/10/06/second-post/</id>
     <published>2023-10-06T00:24:52.000Z</published>
-    <updated>2023-10-12T21:43:02.003Z</updated>
+    <updated>2023-10-18T19:51:03.527Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Basic-Writing-Syntax&quot;&gt;&lt;a href=&quot;#Basic-Writing-Syntax&quot; class=&quot;headerlink&quot; title=&quot;Basic Writing Syntax&quot;&gt;&lt;/a&gt;Basic Writing Syntax&lt;/h2&gt;&lt;p&gt;To create a new post or new page, run the following command:&lt;/p&gt;
