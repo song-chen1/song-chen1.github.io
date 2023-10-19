@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/zh-CN/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/zh-CN/"/>
-  <updated>2023-10-18T22:06:43.637Z</updated>
+  <updated>2023-10-19T21:39:53.311Z</updated>
   <id>https://songchen.science/blog/zh-CN/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python的F-String用于字符串插值和格式化</title>
+    <link href="https://songchen.science/blog/zh-CN/2023/10/19/Python-F-Strings/"/>
+    <id>https://songchen.science/blog/zh-CN/2023/10/19/Python-F-Strings/</id>
+    <published>2023-10-19T20:05:37.000Z</published>
+    <updated>2023-10-19T21:39:53.311Z</updated>
+    
+    
+    <summary type="html">Python的f-strings提供了一种快速的方式来进行字符串插值和格式化。它们具有可读性，简洁，比传统的字符串插值和格式化工具如.format()方法和百分号操作符(%)更不容易出错。与这些工具相比，f-strings还稍微更快！在本教程结束时，您将了解为什么f-strings是一种强大的工具，作为Python开发人员，您应该学习和掌握它。在本教程中，您将学到如何：1.使用f-strings将值、对象和表达式插入到字符串中。 2.使用Python的字符串格式化迷你语言格式化f-strings。3.利用Python 3.12及更高版本中f-strings的一些有趣特性。4.决定何时使用传统的插值工具而不是f-strings。要充分利用本教程，您应该熟悉Python的字符串数据类型。对于其他字符串插值工具如百分号操作符(%)和.format()方法也有经验将是有益的。</summary>
+    
+    
+    
+    <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
+    
+    <category term="Python_basic" scheme="https://songchen.science/blog/zh-CN/categories/Python/Python-basic/"/>
+    
+    
+    <category term="Python" scheme="https://songchen.science/blog/zh-CN/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>多版本Python管理，轻松应对不同需求</title>
     <link href="https://songchen.science/blog/zh-CN/2023/10/18/%E5%A4%9A%E7%89%88%E6%9C%ACPython%E7%AE%A1%E7%90%86%EF%BC%8C%E8%BD%BB%E6%9D%BE%E5%BA%94%E5%AF%B9%E4%B8%8D%E5%90%8C%E9%9C%80%E6%B1%82/"/>
     <id>https://songchen.science/blog/zh-CN/2023/10/18/%E5%A4%9A%E7%89%88%E6%9C%ACPython%E7%AE%A1%E7%90%86%EF%BC%8C%E8%BD%BB%E6%9D%BE%E5%BA%94%E5%AF%B9%E4%B8%8D%E5%90%8C%E9%9C%80%E6%B1%82/</id>
     <published>2023-10-18T19:25:44.000Z</published>
-    <updated>2023-10-18T22:06:43.637Z</updated>
+    <updated>2023-10-18T22:56:09.947Z</updated>
     
     
     <summary type="html">您是否曾想过为支持多个Python版本的项目贡献自己的力量，但却不确定如何轻松测试所有这些版本？您是否对Python的最新和最出色的版本感到好奇？也许您想尝试这些新功能，但又不希望担心损害您的开发环境。幸运的是，如果您使用pyenv，管理多个Python版本将不再令人困惑。本博客将为您提供一个精彩的概述，展示如何最大程度地提高您在项目上的工作效率，同时将头痛的时间减到最低，让您可以专注于使用正确的Python版本。</summary>
@@ -30,9 +51,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
     
-    <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
-    
     <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
+    
+    <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
     
     
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/tags/Python/"/>
@@ -107,7 +128,7 @@
     <link href="https://songchen.science/blog/zh-CN/2023/10/12/Busuu-French/"/>
     <id>https://songchen.science/blog/zh-CN/2023/10/12/Busuu-French/</id>
     <published>2023-10-12T21:21:10.000Z</published>
-    <updated>2023-10-16T21:25:01.786Z</updated>
+    <updated>2023-10-19T20:06:01.381Z</updated>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
@@ -163,9 +184,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
     
-    <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
-    
     <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
+    
+    <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
     
     <category term="Editors" scheme="https://songchen.science/blog/zh-CN/categories/Python/Editors/"/>
     
