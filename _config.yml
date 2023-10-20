@@ -49,7 +49,7 @@ clustrmaps_id: ${{ secrets.CLUSTRMAPS_ID }}
 
 # Google Analytics ID
 # Please remove this if you don't use Google Analytics
-google_analytics: G-SDFXL7GGYS
+google_analytics: ${{ secrets.GOOGLE_SCHOLAR_ID }}
 
 # Use this project as a remote theme for GitHub Pages
 # See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
@@ -58,17 +58,7 @@ remote_theme: yaoyao-liu/minimal-light
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
-# Gittalk comments system
-comments:
-  disqus: false
-  disqus: 'https://weijunzii.disqus.com/embed.js'
-  gitalk: true
-  gitalk_clientID: 'b24113b6fa80cb32f97e'
-  gitalk_Secret: 'cc8405a638612ed79abe54f7f45cfa222b29e592'
-  gitalk_repo: 'song-chen1.github.io'
-  gitalk_owner: 'song-chen1'
-  gitalk_admin: 'song-chen1'
-  distractionFreeMode: true
+
 
 
 # The following files will be removed from the generated website.
