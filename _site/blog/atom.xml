@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-18T13:52:37.056Z</updated>
+  <updated>2023-10-21T12:37:42.308Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python Libraries and Frameworks</title>
+    <link href="https://songchen.science/blog/2023/10/21/Python-Libraries-and-Frameworks/"/>
+    <id>https://songchen.science/blog/2023/10/21/Python-Libraries-and-Frameworks/</id>
+    <published>2023-10-21T11:15:06.000Z</published>
+    <updated>2023-10-21T12:37:42.308Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;MACHINE-LEARNING&quot;&gt;&lt;a href=&quot;#MACHINE-LEARNING&quot; class=&quot;headerlink&quot; title=&quot;MACHINE LEARNING&quot;&gt;&lt;/a&gt;MACHINE LEARNING&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://numpy.org/&quot;&gt;NumPy&lt;/a&gt; is a powerful Python library for numerical and scientific computing that provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays efficiently.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.tensorflow.org/&quot;&gt;TensorFlow&lt;/a&gt; is an open-source machine learning framework developed by Google that enables the creation and training of deep learning models through the use of computational graphs and a wide range of neural network layers and optimizers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://pypi.org/project/Theano/&quot;&gt;Theano&lt;/a&gt; was an open-source numerical computation library for Python that was widely used for deep learning and scientific computing but has been largely replaced by more modern deep learning frameworks like TensorFlow and PyTorch.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
+    
+    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
+    
+    <category term="Library" scheme="https://songchen.science/blog/categories/Python/Library/"/>
+    
+    
+    <category term="Python" scheme="https://songchen.science/blog/tags/Python/"/>
+    
+    <category term="Python_library" scheme="https://songchen.science/blog/tags/Python-library/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Zotero Plugins</title>
+    <link href="https://songchen.science/blog/2023/10/20/Zotero-Plugins/"/>
+    <id>https://songchen.science/blog/2023/10/20/Zotero-Plugins/</id>
+    <published>2023-10-20T16:10:35.000Z</published>
+    <updated>2023-10-20T22:23:30.460Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote id=&#39;97991&#39;&gt;&lt;script&gt;
+    window.addEventListener(&#39;load&#39;, function() {
+     </summary>
+        
+      
+    
+    
+    
+    <category term="Software" scheme="https://songchen.science/blog/categories/Software/"/>
+    
+    <category term="Zotero" scheme="https://songchen.science/blog/categories/Zotero/"/>
+    
+    <category term="Plugins" scheme="https://songchen.science/blog/categories/Zotero/Plugins/"/>
+    
+    
+    <category term="zotero" scheme="https://songchen.science/blog/tags/zotero/"/>
+    
+    <category term="plugins" scheme="https://songchen.science/blog/tags/plugins/"/>
+    
+  </entry>
   
   <entry>
     <title>Plasma-Material Interactions</title>
@@ -48,7 +111,7 @@
     <link href="https://songchen.science/blog/2023/10/16/How-to-create-charts-that-adhere-to-the-publication-requirements-using-Matplotlib/"/>
     <id>https://songchen.science/blog/2023/10/16/How-to-create-charts-that-adhere-to-the-publication-requirements-using-Matplotlib/</id>
     <published>2023-10-16T18:28:05.201Z</published>
-    <updated>2023-10-17T08:12:00.025Z</updated>
+    <updated>2023-10-21T12:34:59.274Z</updated>
     
     
     <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://zhuanlan.zhihu.com/p/629348960&quot; target=&quot;_blank&quot;&gt;
@@ -65,9 +128,9 @@
     <category term="matplotlib" scheme="https://songchen.science/blog/categories/Python/matplotlib/"/>
     
     
-    <category term="matplotlib" scheme="https://songchen.science/blog/tags/matplotlib/"/>
-    
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
+    
+    <category term="matplotlib" scheme="https://songchen.science/blog/tags/matplotlib/"/>
     
     <category term="chart" scheme="https://songchen.science/blog/tags/chart/"/>
     
