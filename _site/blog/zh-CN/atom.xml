@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/zh-CN/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/zh-CN/"/>
-  <updated>2023-10-19T21:39:53.311Z</updated>
+  <updated>2023-10-22T11:35:09.964Z</updated>
   <id>https://songchen.science/blog/zh-CN/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://songchen.science/blog/zh-CN/2023/10/19/Python-F-Strings/"/>
     <id>https://songchen.science/blog/zh-CN/2023/10/19/Python-F-Strings/</id>
     <published>2023-10-19T20:05:37.000Z</published>
-    <updated>2023-10-19T21:39:53.311Z</updated>
+    <updated>2023-10-22T11:35:09.964Z</updated>
     
     
     <summary type="html">Python的f-strings提供了一种快速的方式来进行字符串插值和格式化。它们具有可读性，简洁，比传统的字符串插值和格式化工具如.format()方法和百分号操作符(%)更不容易出错。与这些工具相比，f-strings还稍微更快！在本教程结束时，您将了解为什么f-strings是一种强大的工具，作为Python开发人员，您应该学习和掌握它。在本教程中，您将学到如何：1.使用f-strings将值、对象和表达式插入到字符串中。 2.使用Python的字符串格式化迷你语言格式化f-strings。3.利用Python 3.12及更高版本中f-strings的一些有趣特性。4.决定何时使用传统的插值工具而不是f-strings。要充分利用本教程，您应该熟悉Python的字符串数据类型。对于其他字符串插值工具如百分号操作符(%)和.format()方法也有经验将是有益的。</summary>
@@ -51,9 +51,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
     
-    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
-    
     <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
+    
+    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
     
     
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/tags/Python/"/>
@@ -128,7 +128,7 @@
     <link href="https://songchen.science/blog/zh-CN/2023/10/12/Busuu-French/"/>
     <id>https://songchen.science/blog/zh-CN/2023/10/12/Busuu-French/</id>
     <published>2023-10-12T21:21:10.000Z</published>
-    <updated>2023-10-19T20:06:01.381Z</updated>
+    <updated>2023-10-22T13:49:17.899Z</updated>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
@@ -184,9 +184,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
     
-    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
-    
     <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
+    
+    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
     
     <category term="Editors" scheme="https://songchen.science/blog/zh-CN/categories/Python/Editors/"/>
     
