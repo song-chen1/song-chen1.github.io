@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/zh-CN/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/zh-CN/"/>
-  <updated>2023-10-22T11:35:09.964Z</updated>
+  <updated>2023-10-22T22:28:56.543Z</updated>
   <id>https://songchen.science/blog/zh-CN/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Interview_Python (转载)</title>
+    <link href="https://songchen.science/blog/zh-CN/2023/10/23/Interview-Python-%E8%BD%AC%E8%BD%BD/"/>
+    <id>https://songchen.science/blog/zh-CN/2023/10/23/Interview-Python-%E8%BD%AC%E8%BD%BD/</id>
+    <published>2023-10-22T22:23:41.000Z</published>
+    <updated>2023-10-22T22:28:56.543Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;!-- markdown-toc start - Don&#39;t edit this section. Run M-x markdown-toc-generate-toc again --&gt;
+
+&lt;a class=&quot;tag is-dark is-medium&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
+    
+    <category term="Bibliography" scheme="https://songchen.science/blog/zh-CN/categories/Python/Bibliography/"/>
+    
+    
+    <category term="python" scheme="https://songchen.science/blog/zh-CN/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Python的F-String用于字符串插值和格式化</title>
@@ -51,9 +80,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
     
-    <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
-    
     <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
+    
+    <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
     
     
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/tags/Python/"/>
@@ -184,11 +213,11 @@
     
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
     
+    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
+    
     <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
     
     <category term="Editors" scheme="https://songchen.science/blog/zh-CN/categories/Python/Editors/"/>
-    
-    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/zh-CN/tags/python/"/>
@@ -242,9 +271,9 @@
     
     
     
-    <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/"/>
-    
     <category term="Webblog" scheme="https://songchen.science/blog/zh-CN/categories/Webblog/"/>
+    
+    <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/"/>
     
     <category term="Hexo" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/Hexo/"/>
     

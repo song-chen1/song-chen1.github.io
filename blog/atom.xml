@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-22T21:36:36.921Z</updated>
+  <updated>2023-10-22T22:22:54.811Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://songchen.science/blog/2023/10/22/Utilizing-Functional-Programming-Paradigms-in-Python-Best-Practices-and-Applications/"/>
     <id>https://songchen.science/blog/2023/10/22/Utilizing-Functional-Programming-Paradigms-in-Python-Best-Practices-and-Applications/</id>
     <published>2023-10-22T21:36:36.000Z</published>
-    <updated>2023-10-22T21:36:36.921Z</updated>
+    <updated>2023-10-22T22:22:54.811Z</updated>
     
     
     <summary type="html">Functional programming is a programming paradigm that revolves around the central idea of function evaluation. This tutorial will delve into the realm of functional programming within the Python ecosystem. Functional programming, although less prominent in Python, remains a valuable concept to grasp. While it might not be the primary approach in Python, having a foundational understanding of functional programming is beneficial. You may encounter it occasionally when inspecting code authored by others, and there might be instances where leveraging Python&#39;s functional programming features proves advantageous in your own projects.</summary>
@@ -81,7 +81,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;36955&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;29032&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
