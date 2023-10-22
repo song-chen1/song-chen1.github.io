@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/zh-CN/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/zh-CN/"/>
-  <updated>2023-10-22T22:28:56.543Z</updated>
+  <updated>2023-10-22T22:35:02.026Z</updated>
   <id>https://songchen.science/blog/zh-CN/</id>
   
   <author>
@@ -21,18 +21,13 @@
     <link href="https://songchen.science/blog/zh-CN/2023/10/23/Interview-Python-%E8%BD%AC%E8%BD%BD/"/>
     <id>https://songchen.science/blog/zh-CN/2023/10/23/Interview-Python-%E8%BD%AC%E8%BD%BD/</id>
     <published>2023-10-22T22:23:41.000Z</published>
-    <updated>2023-10-22T22:28:56.543Z</updated>
+    <updated>2023-10-22T22:35:02.026Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;!-- markdown-toc start - Don&#39;t edit this section. Run M-x markdown-toc-generate-toc again --&gt;
 
-&lt;a class=&quot;tag is-dark is-medium&quot;</summary>
-        
-      
+&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://github.com/taizilongxu/interview_python/tree/master&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;Interview_Python&lt;/a&gt;</summary>
     
     
     
@@ -80,9 +75,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
     
-    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
-    
     <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
+    
+    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
     
     
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/tags/Python/"/>
@@ -213,11 +208,11 @@
     
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
     
-    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
-    
     <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
     
     <category term="Editors" scheme="https://songchen.science/blog/zh-CN/categories/Python/Editors/"/>
+    
+    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/zh-CN/tags/python/"/>
