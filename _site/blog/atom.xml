@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-23T22:26:37.828Z</updated>
+  <updated>2023-10-24T09:41:22.225Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://songchen.science/blog/2023/10/24/Cooking-with-ARDUINO-and-Python/"/>
     <id>https://songchen.science/blog/2023/10/24/Cooking-with-ARDUINO-and-Python/</id>
     <published>2023-10-23T22:17:30.000Z</published>
-    <updated>2023-10-23T22:26:37.828Z</updated>
+    <updated>2023-10-24T09:41:22.225Z</updated>
     
     
     
@@ -104,7 +104,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;38537&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;44883&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
@@ -253,11 +253,11 @@
     <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
     
     
+    <category term="physics" scheme="https://songchen.science/blog/tags/physics/"/>
+    
     <category term="condensed-matter physics" scheme="https://songchen.science/blog/tags/condensed-matter-physics/"/>
     
     <category term="computational simulation" scheme="https://songchen.science/blog/tags/computational-simulation/"/>
-    
-    <category term="physics" scheme="https://songchen.science/blog/tags/physics/"/>
     
   </entry>
   
