@@ -18,8 +18,8 @@
   
   <entry>
     <title>Interview_Python (转载)</title>
-    <link href="https://songchen.science/blog/zh-CN/2023/10/23/Interview-Python-%E8%BD%AC%E8%BD%BD/"/>
-    <id>https://songchen.science/blog/zh-CN/2023/10/23/Interview-Python-%E8%BD%AC%E8%BD%BD/</id>
+    <link href="https://songchen.science/blog/zh-CN/posts/890959d7/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/890959d7/</id>
     <published>2023-10-22T22:23:41.000Z</published>
     <updated>2023-10-22T22:35:02.026Z</updated>
     
@@ -42,8 +42,8 @@
   
   <entry>
     <title>Python的F-String用于字符串插值和格式化</title>
-    <link href="https://songchen.science/blog/zh-CN/2023/10/19/Python-F-Strings/"/>
-    <id>https://songchen.science/blog/zh-CN/2023/10/19/Python-F-Strings/</id>
+    <link href="https://songchen.science/blog/zh-CN/posts/ac0deb15/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/ac0deb15/</id>
     <published>2023-10-19T20:05:37.000Z</published>
     <updated>2023-10-22T11:35:09.964Z</updated>
     
@@ -63,8 +63,8 @@
   
   <entry>
     <title>多版本Python管理，轻松应对不同需求</title>
-    <link href="https://songchen.science/blog/zh-CN/2023/10/18/%E5%A4%9A%E7%89%88%E6%9C%ACPython%E7%AE%A1%E7%90%86%EF%BC%8C%E8%BD%BB%E6%9D%BE%E5%BA%94%E5%AF%B9%E4%B8%8D%E5%90%8C%E9%9C%80%E6%B1%82/"/>
-    <id>https://songchen.science/blog/zh-CN/2023/10/18/%E5%A4%9A%E7%89%88%E6%9C%ACPython%E7%AE%A1%E7%90%86%EF%BC%8C%E8%BD%BB%E6%9D%BE%E5%BA%94%E5%AF%B9%E4%B8%8D%E5%90%8C%E9%9C%80%E6%B1%82/</id>
+    <link href="https://songchen.science/blog/zh-CN/posts/dea9e976/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/dea9e976/</id>
     <published>2023-10-18T19:25:44.000Z</published>
     <updated>2023-10-18T22:56:09.947Z</updated>
     
@@ -75,9 +75,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
     
-    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
-    
     <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
+    
+    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
     
     
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/tags/Python/"/>
@@ -88,8 +88,8 @@
   
   <entry>
     <title>推荐常用的Hexo插件 (转载)</title>
-    <link href="https://songchen.science/blog/zh-CN/2023/10/17/%E6%8E%A8%E8%8D%90%E5%B8%B8%E7%94%A8%E7%9A%84Hexo%E6%8F%92%E4%BB%B6-%E8%BD%AC%E8%BD%BD/"/>
-    <id>https://songchen.science/blog/zh-CN/2023/10/17/%E6%8E%A8%E8%8D%90%E5%B8%B8%E7%94%A8%E7%9A%84Hexo%E6%8F%92%E4%BB%B6-%E8%BD%AC%E8%BD%BD/</id>
+    <link href="https://songchen.science/blog/zh-CN/posts/346eb830/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/346eb830/</id>
     <published>2023-10-17T19:18:33.000Z</published>
     <updated>2023-10-17T22:35:10.727Z</updated>
     
@@ -128,8 +128,8 @@
   
   <entry>
     <title>用Python打造精美二维码，传递无限可能</title>
-    <link href="https://songchen.science/blog/zh-CN/2023/10/13/%E7%94%A8Python%E6%89%93%E9%80%A0%E7%B2%BE%E7%BE%8E%E4%BA%8C%E7%BB%B4%E7%A0%81%EF%BC%8C%E4%BC%A0%E9%80%92%E6%97%A0%E9%99%90%E5%8F%AF%E8%83%BD/"/>
-    <id>https://songchen.science/blog/zh-CN/2023/10/13/%E7%94%A8Python%E6%89%93%E9%80%A0%E7%B2%BE%E7%BE%8E%E4%BA%8C%E7%BB%B4%E7%A0%81%EF%BC%8C%E4%BC%A0%E9%80%92%E6%97%A0%E9%99%90%E5%8F%AF%E8%83%BD/</id>
+    <link href="https://songchen.science/blog/zh-CN/posts/5dbadbbd/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/5dbadbbd/</id>
     <published>2023-10-13T14:13:17.000Z</published>
     <updated>2023-10-16T19:54:34.880Z</updated>
     
@@ -149,8 +149,8 @@
   
   <entry>
     <title>Busuu_法语学习</title>
-    <link href="https://songchen.science/blog/zh-CN/2023/10/12/Busuu-French/"/>
-    <id>https://songchen.science/blog/zh-CN/2023/10/12/Busuu-French/</id>
+    <link href="https://songchen.science/blog/zh-CN/posts/b2a36a01/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/b2a36a01/</id>
     <published>2023-10-12T21:21:10.000Z</published>
     <updated>2023-10-24T09:43:13.646Z</updated>
     
@@ -172,8 +172,8 @@
   
   <entry>
     <title>BCA Simulations</title>
-    <link href="https://songchen.science/blog/zh-CN/2023/10/11/BCA-Simulations/"/>
-    <id>https://songchen.science/blog/zh-CN/2023/10/11/BCA-Simulations/</id>
+    <link href="https://songchen.science/blog/zh-CN/posts/c1550b35/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/c1550b35/</id>
     <published>2023-10-11T16:57:14.000Z</published>
     <updated>2023-10-18T08:50:57.147Z</updated>
     
@@ -195,8 +195,8 @@
   
   <entry>
     <title>Finding An Effective Python Environment</title>
-    <link href="https://songchen.science/blog/zh-CN/2023/10/11/Finding-An-Effective-Python-Environment/"/>
-    <id>https://songchen.science/blog/zh-CN/2023/10/11/Finding-An-Effective-Python-Environment/</id>
+    <link href="https://songchen.science/blog/zh-CN/posts/28115c/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/28115c/</id>
     <published>2023-10-10T22:55:14.000Z</published>
     <updated>2023-10-11T18:50:46.522Z</updated>
     
@@ -208,11 +208,11 @@
     
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
     
-    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
-    
     <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
     
     <category term="Editors" scheme="https://songchen.science/blog/zh-CN/categories/Python/Editors/"/>
+    
+    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/zh-CN/tags/python/"/>
@@ -227,8 +227,8 @@
   
   <entry>
     <title>Creating a Neural Network and Making Predictions with Python&#39;s AI</title>
-    <link href="https://songchen.science/blog/zh-CN/2023/10/10/Creating-a-Neural-Network-and-Making-Predictions-with-Python-s-AI/"/>
-    <id>https://songchen.science/blog/zh-CN/2023/10/10/Creating-a-Neural-Network-and-Making-Predictions-with-Python-s-AI/</id>
+    <link href="https://songchen.science/blog/zh-CN/posts/b1a039fb/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/b1a039fb/</id>
     <published>2023-10-09T22:06:29.000Z</published>
     <updated>2023-10-11T18:50:54.757Z</updated>
     
@@ -255,8 +255,8 @@
   
   <entry>
     <title>Basic Usage of Hexo</title>
-    <link href="https://songchen.science/blog/zh-CN/2023/10/06/second-post/"/>
-    <id>https://songchen.science/blog/zh-CN/2023/10/06/second-post/</id>
+    <link href="https://songchen.science/blog/zh-CN/posts/e44932a0/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/e44932a0/</id>
     <published>2023-10-06T00:24:52.000Z</published>
     <updated>2023-10-11T18:51:30.154Z</updated>
     
@@ -281,8 +281,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://songchen.science/blog/zh-CN/2023/10/03/hello-world/"/>
-    <id>https://songchen.science/blog/zh-CN/2023/10/03/hello-world/</id>
+    <link href="https://songchen.science/blog/zh-CN/posts/4a17b156/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/4a17b156/</id>
     <published>2023-10-03T20:16:13.639Z</published>
     <updated>2023-10-08T09:48:49.887Z</updated>
     

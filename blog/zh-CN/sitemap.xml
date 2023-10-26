@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/2023/10/12/Busuu-French/</loc>
+    <loc>https://songchen.science/blog/zh-CN/posts/b2a36a01/</loc>
     
     <lastmod>2023-10-24</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/2023/10/23/Interview-Python-%E8%BD%AC%E8%BD%BD/</loc>
+    <loc>https://songchen.science/blog/zh-CN/posts/890959d7/</loc>
     
     <lastmod>2023-10-22</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/2023/10/19/Python-F-Strings/</loc>
+    <loc>https://songchen.science/blog/zh-CN/posts/ac0deb15/</loc>
     
     <lastmod>2023-10-22</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/2023/10/18/%E5%A4%9A%E7%89%88%E6%9C%ACPython%E7%AE%A1%E7%90%86%EF%BC%8C%E8%BD%BB%E6%9D%BE%E5%BA%94%E5%AF%B9%E4%B8%8D%E5%90%8C%E9%9C%80%E6%B1%82/</loc>
+    <loc>https://songchen.science/blog/zh-CN/posts/dea9e976/</loc>
     
     <lastmod>2023-10-18</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/2023/10/11/BCA-Simulations/</loc>
+    <loc>https://songchen.science/blog/zh-CN/posts/c1550b35/</loc>
     
     <lastmod>2023-10-18</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/2023/10/17/%E6%8E%A8%E8%8D%90%E5%B8%B8%E7%94%A8%E7%9A%84Hexo%E6%8F%92%E4%BB%B6-%E8%BD%AC%E8%BD%BD/</loc>
+    <loc>https://songchen.science/blog/zh-CN/posts/346eb830/</loc>
     
     <lastmod>2023-10-17</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/2023/10/13/%E7%94%A8Python%E6%89%93%E9%80%A0%E7%B2%BE%E7%BE%8E%E4%BA%8C%E7%BB%B4%E7%A0%81%EF%BC%8C%E4%BC%A0%E9%80%92%E6%97%A0%E9%99%90%E5%8F%AF%E8%83%BD/</loc>
+    <loc>https://songchen.science/blog/zh-CN/posts/5dbadbbd/</loc>
     
     <lastmod>2023-10-16</lastmod>
     
@@ -92,15 +92,6 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/lib/hbe.shrink</loc>
-    
-    <lastmod>2023-10-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://songchen.science/blog/zh-CN/lib/hbe.surge</loc>
     
     <lastmod>2023-10-12</lastmod>
@@ -110,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/lib/hbe.wave</loc>
+    <loc>https://songchen.science/blog/zh-CN/lib/hbe.shrink</loc>
     
     <lastmod>2023-10-12</lastmod>
     
@@ -137,6 +128,15 @@
   </url>
   
   <url>
+    <loc>https://songchen.science/blog/zh-CN/lib/hbe.wave</loc>
+    
+    <lastmod>2023-10-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://songchen.science/blog/zh-CN/lib/hbe.blink</loc>
     
     <lastmod>2023-10-12</lastmod>
@@ -146,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/2023/10/06/second-post/</loc>
+    <loc>https://songchen.science/blog/zh-CN/posts/e44932a0/</loc>
     
     <lastmod>2023-10-11</lastmod>
     
@@ -155,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/2023/10/10/Creating-a-Neural-Network-and-Making-Predictions-with-Python-s-AI/</loc>
+    <loc>https://songchen.science/blog/zh-CN/posts/b1a039fb/</loc>
     
     <lastmod>2023-10-11</lastmod>
     
@@ -164,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/2023/10/11/Finding-An-Effective-Python-Environment/</loc>
+    <loc>https://songchen.science/blog/zh-CN/posts/28115c/</loc>
     
     <lastmod>2023-10-11</lastmod>
     
@@ -182,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/2023/10/03/hello-world/</loc>
+    <loc>https://songchen.science/blog/zh-CN/posts/4a17b156/</loc>
     
     <lastmod>2023-10-08</lastmod>
     
@@ -225,20 +225,6 @@
     <priority>1.0</priority>
   </url>
 
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/tags/condensed-matter-physics/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/tags/computational-simulation/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://songchen.science/blog/zh-CN/tags/python/</loc>
@@ -297,6 +283,27 @@
   </url>
   
   <url>
+    <loc>https://songchen.science/blog/zh-CN/tags/condensed-matter-physics/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/tags/computational-simulation/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/tags/encryptAsDiary/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://songchen.science/blog/zh-CN/tags/Hexo/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -318,13 +325,6 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/tags/Pyenv/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://songchen.science/blog/zh-CN/tags/Hexo-plugins/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -332,20 +332,13 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/tags/encryptAsDiary/</loc>
+    <loc>https://songchen.science/blog/zh-CN/tags/Pyenv/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
 
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Condensed-matter-physics/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://songchen.science/blog/zh-CN/categories/Python/</loc>
@@ -362,34 +355,6 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Condensed-matter-physics/Computational-Simulations/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Webblog/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Python/Python-basic/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Python/Configuration/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://songchen.science/blog/zh-CN/categories/Data-science/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -397,21 +362,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Python/Bibliography/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://songchen.science/blog/zh-CN/categories/Python/Tools/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Documentation/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -433,6 +384,55 @@
   
   <url>
     <loc>https://songchen.science/blog/zh-CN/categories/Python/Editors/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/categories/Python/Configuration/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/categories/Python/Bibliography/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/categories/Condensed-matter-physics/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/categories/Webblog/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/categories/Python/Python-basic/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/categories/Condensed-matter-physics/Computational-Simulations/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/categories/Documentation/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

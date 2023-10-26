@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-10-26T19:48:14.532Z</updated>
+  <updated>2023-10-26T20:19:17.218Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Machine Learning BCA Simulations</title>
-    <link href="https://songchen.science/blog/2023/10/26/Machine-Learning-BCA-Simulations/"/>
-    <id>https://songchen.science/blog/2023/10/26/Machine-Learning-BCA-Simulations/</id>
+    <link href="https://songchen.science/blog/posts/cb2fd4b/"/>
+    <id>https://songchen.science/blog/posts/cb2fd4b/</id>
     <published>2023-10-26T19:12:21.000Z</published>
-    <updated>2023-10-26T19:48:14.532Z</updated>
+    <updated>2023-10-26T20:19:17.218Z</updated>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
@@ -32,9 +32,9 @@
     
     <category term="Condensed-matter physics" scheme="https://songchen.science/blog/categories/Physics/Condensed-matter-physics/"/>
     
-    <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
-    
     <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -45,19 +45,19 @@
   
   <entry>
     <title>Cooking with ARDUINO and Python</title>
-    <link href="https://songchen.science/blog/2023/10/24/Cooking-with-ARDUINO-and-Python/"/>
-    <id>https://songchen.science/blog/2023/10/24/Cooking-with-ARDUINO-and-Python/</id>
+    <link href="https://songchen.science/blog/posts/f04ea1f1/"/>
+    <id>https://songchen.science/blog/posts/f04ea1f1/</id>
     <published>2023-10-23T22:17:30.000Z</published>
-    <updated>2023-10-24T09:41:22.225Z</updated>
+    <updated>2023-10-26T20:19:17.212Z</updated>
     
     
     
     
     <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
     
-    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
-    
     <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
+    
+    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -68,10 +68,10 @@
   
   <entry>
     <title>Utilizing Functional Programming Paradigms in Python: Best Practices and Applications</title>
-    <link href="https://songchen.science/blog/2023/10/22/Utilizing-Functional-Programming-Paradigms-in-Python-Best-Practices-and-Applications/"/>
-    <id>https://songchen.science/blog/2023/10/22/Utilizing-Functional-Programming-Paradigms-in-Python-Best-Practices-and-Applications/</id>
+    <link href="https://songchen.science/blog/posts/452908e4/"/>
+    <id>https://songchen.science/blog/posts/452908e4/</id>
     <published>2023-10-22T21:36:36.000Z</published>
-    <updated>2023-10-22T22:22:54.811Z</updated>
+    <updated>2023-10-26T20:19:17.222Z</updated>
     
     
     <summary type="html">Functional programming is a programming paradigm that revolves around the central idea of function evaluation. This tutorial will delve into the realm of functional programming within the Python ecosystem. Functional programming, although less prominent in Python, remains a valuable concept to grasp. While it might not be the primary approach in Python, having a foundational understanding of functional programming is beneficial. You may encounter it occasionally when inspecting code authored by others, and there might be instances where leveraging Python&#39;s functional programming features proves advantageous in your own projects.</summary>
@@ -91,10 +91,10 @@
   
   <entry>
     <title>Python Libraries and Frameworks</title>
-    <link href="https://songchen.science/blog/2023/10/21/Python-Libraries-and-Frameworks/"/>
-    <id>https://songchen.science/blog/2023/10/21/Python-Libraries-and-Frameworks/</id>
+    <link href="https://songchen.science/blog/posts/27b45062/"/>
+    <id>https://songchen.science/blog/posts/27b45062/</id>
     <published>2023-10-21T11:15:06.000Z</published>
-    <updated>2023-10-22T14:16:26.689Z</updated>
+    <updated>2023-10-26T20:19:17.221Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;MACHINE-LEARNING&quot;&gt;&lt;a href=&quot;#MACHINE-LEARNING&quot; class=&quot;headerlink&quot; title=&quot;MACHINE LEARNING&quot;&gt;&lt;/a&gt;MACHINE LEARNING&lt;/h2&gt;&lt;ol&gt;
@@ -121,17 +121,17 @@
   
   <entry>
     <title>Zotero Plugins</title>
-    <link href="https://songchen.science/blog/2023/10/20/Zotero-Plugins/"/>
-    <id>https://songchen.science/blog/2023/10/20/Zotero-Plugins/</id>
+    <link href="https://songchen.science/blog/posts/3d8f8e4e/"/>
+    <id>https://songchen.science/blog/posts/3d8f8e4e/</id>
     <published>2023-10-20T16:10:35.000Z</published>
-    <updated>2023-10-20T22:23:30.460Z</updated>
+    <updated>2023-10-26T20:19:17.225Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;92139&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;78824&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
@@ -154,10 +154,10 @@
   
   <entry>
     <title>Plasma-Material Interactions</title>
-    <link href="https://songchen.science/blog/2023/10/17/Plasma-Material-Interactions/"/>
-    <id>https://songchen.science/blog/2023/10/17/Plasma-Material-Interactions/</id>
+    <link href="https://songchen.science/blog/posts/8b9599c5/"/>
+    <id>https://songchen.science/blog/posts/8b9599c5/</id>
     <published>2023-10-17T15:35:32.000Z</published>
-    <updated>2023-10-18T13:52:37.056Z</updated>
+    <updated>2023-10-26T20:19:17.224Z</updated>
     
     
     <summary type="html">Plasma-Material Interactions (PMI) are a set of complex and rich interactions and reactions between a bulk plasma and any materials in contact with the plasma. When a plasma comes into contact with a material, it forms a plasma sheath. The voltage drop across a plasma sheath is often many volts, and charged particles from the plasma passing through the sheath can be accelerated to many electron-Volts of potential energy before they impact the surface.</summary>
@@ -181,10 +181,10 @@
   
   <entry>
     <title>How to create charts that adhere to the publication requirements using Matplotlib.</title>
-    <link href="https://songchen.science/blog/2023/10/16/How-to-create-charts-that-adhere-to-the-publication-requirements-using-Matplotlib/"/>
-    <id>https://songchen.science/blog/2023/10/16/How-to-create-charts-that-adhere-to-the-publication-requirements-using-Matplotlib/</id>
+    <link href="https://songchen.science/blog/posts/92351494/"/>
+    <id>https://songchen.science/blog/posts/92351494/</id>
     <published>2023-10-16T18:28:05.201Z</published>
-    <updated>2023-10-21T12:34:59.274Z</updated>
+    <updated>2023-10-26T20:19:17.217Z</updated>
     
     
     <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://zhuanlan.zhihu.com/p/629348960&quot; target=&quot;_blank&quot;&gt;
@@ -213,10 +213,10 @@
   
   <entry>
     <title>AutoVA - Automated VCMA &amp; AHE Measurement System</title>
-    <link href="https://songchen.science/blog/2023/10/15/AutoVA-Automated-VCMA-AHE-Measurement-System/"/>
-    <id>https://songchen.science/blog/2023/10/15/AutoVA-Automated-VCMA-AHE-Measurement-System/</id>
+    <link href="https://songchen.science/blog/posts/968b8b22/"/>
+    <id>https://songchen.science/blog/posts/968b8b22/</id>
     <published>2023-10-15T18:41:05.000Z</published>
-    <updated>2023-10-15T19:41:45.918Z</updated>
+    <updated>2023-10-26T20:19:17.207Z</updated>
     
     
     <summary type="html">AutoVA - Automated VCMA/(magnetoelectric coupling) - Anomalous Hall effect Measurement System. The software is used to control 1. The E-field applied for the VCMA/Magnetoelectric coupling. (with the ramping function). 2. The E-fields can have multi-variants - (dwelling, pulser). 3. The electromagnetic filed. 4. The Soure Measure Unit (SMU) to apply one bias-current, and meanwhile measuring the Hall Voltage. Hysteresis loops can be obtained by looping the electromagnetic field.</summary>
@@ -238,10 +238,10 @@
   
   <entry>
     <title>Alfred Documentation</title>
-    <link href="https://songchen.science/blog/2023/10/14/Alfred-Documentation/"/>
-    <id>https://songchen.science/blog/2023/10/14/Alfred-Documentation/</id>
+    <link href="https://songchen.science/blog/posts/4d10c62/"/>
+    <id>https://songchen.science/blog/posts/4d10c62/</id>
     <published>2023-10-14T12:31:57.228Z</published>
-    <updated>2023-10-17T15:42:41.169Z</updated>
+    <updated>2023-10-26T20:19:17.214Z</updated>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
@@ -263,10 +263,10 @@
   
   <entry>
     <title>BCA Simulations</title>
-    <link href="https://songchen.science/blog/2023/10/11/BCA-Simulations/"/>
-    <id>https://songchen.science/blog/2023/10/11/BCA-Simulations/</id>
+    <link href="https://songchen.science/blog/posts/c1550b35/"/>
+    <id>https://songchen.science/blog/posts/c1550b35/</id>
     <published>2023-10-11T16:57:14.000Z</published>
-    <updated>2023-10-19T15:32:58.072Z</updated>
+    <updated>2023-10-26T20:19:17.210Z</updated>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
@@ -290,10 +290,10 @@
   
   <entry>
     <title>Finding An Effective Python Environment</title>
-    <link href="https://songchen.science/blog/2023/10/11/Finding-An-Effective-Python-Environment/"/>
-    <id>https://songchen.science/blog/2023/10/11/Finding-An-Effective-Python-Environment/</id>
+    <link href="https://songchen.science/blog/posts/28115c/"/>
+    <id>https://songchen.science/blog/posts/28115c/</id>
     <published>2023-10-10T22:55:14.000Z</published>
-    <updated>2023-10-18T10:17:59.286Z</updated>
+    <updated>2023-10-26T20:19:17.216Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Python-Version-Management-Tools&quot;&gt;&lt;a href=&quot;#Python-Version-Management-Tools&quot; class=&quot;headerlink&quot; title=&quot;Python Version Management Tools&quot;&gt;&lt;/a&gt;Python Version Management Tools&lt;/h2&gt;&lt;h3 id=&quot;pyenv&quot;&gt;&lt;a href=&quot;#pyenv&quot; class=&quot;headerlink&quot; title=&quot;pyenv&quot;&gt;&lt;/a&gt;pyenv&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pyenv/pyenv&quot;&gt;&lt;code&gt;pyenv&lt;/code&gt;&lt;/a&gt; is a polular and marture open-source tool used in the Python development ecosystem on MacOS. (It is &lt;a href=&quot;https://github.com/pyenv-win/pyenv-win#installation&quot;&gt;pyenv-win&lt;/a&gt; on windows). It allows developers to manage multiple Python installations on their system and easily switch between different Python versions. This is especially useful when you’re working on various Python projects that may have different version requirements.&lt;/p&gt;
@@ -322,10 +322,10 @@
   
   <entry>
     <title>Creating a Neural Network and Making Predictions with Python&#39;s AI</title>
-    <link href="https://songchen.science/blog/2023/10/10/Creating-a-Neural-Network-and-Making-Predictions-with-Python-s-AI/"/>
-    <id>https://songchen.science/blog/2023/10/10/Creating-a-Neural-Network-and-Making-Predictions-with-Python-s-AI/</id>
+    <link href="https://songchen.science/blog/posts/b1a039fb/"/>
+    <id>https://songchen.science/blog/posts/b1a039fb/</id>
     <published>2023-10-09T22:06:29.000Z</published>
-    <updated>2023-10-26T19:32:48.355Z</updated>
+    <updated>2023-10-26T20:19:17.213Z</updated>
     
     
     <summary type="html">&lt;div class=&quot;post-summary&quot;&gt;
@@ -353,10 +353,10 @@
   
   <entry>
     <title>Basic Usage of Hexo</title>
-    <link href="https://songchen.science/blog/2023/10/06/second-post/"/>
-    <id>https://songchen.science/blog/2023/10/06/second-post/</id>
+    <link href="https://songchen.science/blog/posts/e44932a0/"/>
+    <id>https://songchen.science/blog/posts/e44932a0/</id>
     <published>2023-10-06T00:24:52.000Z</published>
-    <updated>2023-10-18T19:51:03.527Z</updated>
+    <updated>2023-10-26T20:19:17.226Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Basic-Writing-Syntax&quot;&gt;&lt;a href=&quot;#Basic-Writing-Syntax&quot; class=&quot;headerlink&quot; title=&quot;Basic Writing Syntax&quot;&gt;&lt;/a&gt;Basic Writing Syntax&lt;/h2&gt;&lt;p&gt;To create a new post or new page, run the following command:&lt;/p&gt;
@@ -379,10 +379,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://songchen.science/blog/2023/10/03/hello-world/"/>
-    <id>https://songchen.science/blog/2023/10/03/hello-world/</id>
+    <link href="https://songchen.science/blog/posts/4a17b156/"/>
+    <id>https://songchen.science/blog/posts/4a17b156/</id>
     <published>2023-10-03T20:16:13.639Z</published>
-    <updated>2023-10-14T12:05:31.371Z</updated>
+    <updated>2023-10-26T20:19:17.219Z</updated>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
