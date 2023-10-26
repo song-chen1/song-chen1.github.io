@@ -28,9 +28,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
     
-    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
-    
     <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
+    
+    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -104,7 +104,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;44883&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;96963&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
@@ -253,11 +253,11 @@
     <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
     
     
-    <category term="physics" scheme="https://songchen.science/blog/tags/physics/"/>
-    
     <category term="condensed-matter physics" scheme="https://songchen.science/blog/tags/condensed-matter-physics/"/>
     
     <category term="computational simulation" scheme="https://songchen.science/blog/tags/computational-simulation/"/>
+    
+    <category term="physics" scheme="https://songchen.science/blog/tags/physics/"/>
     
   </entry>
   
