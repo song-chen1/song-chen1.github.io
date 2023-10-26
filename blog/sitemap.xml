@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://songchen.science/blog/2023/10/26/Machine-Learning-BCA-Simulations/</loc>
+    
+    <lastmod>2023-10-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/2023/10/10/Creating-a-Neural-Network-and-Making-Predictions-with-Python-s-AI/</loc>
+    
+    <lastmod>2023-10-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://songchen.science/blog/gallery/</loc>
     
     <lastmod>2023-10-26</lastmod>
@@ -128,18 +146,18 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/2023/10/10/Creating-a-Neural-Network-and-Making-Predictions-with-Python-s-AI/</loc>
+    <loc>https://songchen.science/blog/2023/10/03/hello-world/</loc>
     
-    <lastmod>2023-10-15</lastmod>
+    <lastmod>2023-10-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/2023/10/03/hello-world/</loc>
+    <loc>https://songchen.science/blog/lib/hbe.up</loc>
     
-    <lastmod>2023-10-14</lastmod>
+    <lastmod>2023-10-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -165,15 +183,6 @@
   
   <url>
     <loc>https://songchen.science/blog/lib/hbe.xray</loc>
-    
-    <lastmod>2023-10-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/lib/hbe.up</loc>
     
     <lastmod>2023-10-07</lastmod>
     
@@ -301,27 +310,6 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/tags/python-tools/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/tags/python-editors/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/tags/python-configuration/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://songchen.science/blog/tags/condensed-matter-physics/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -357,6 +345,27 @@
   </url>
   
   <url>
+    <loc>https://songchen.science/blog/tags/python-tools/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/tags/python-editors/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/tags/python-configuration/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://songchen.science/blog/tags/matplotlib/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -378,20 +387,6 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/tags/plasma-physics/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/tags/bibliography/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://songchen.science/blog/tags/Python-library/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -407,6 +402,20 @@
   
   <url>
     <loc>https://songchen.science/blog/tags/plugins/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/tags/plasma-physics/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/tags/bibliography/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -485,7 +494,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/categories/Python/matplotlib/</loc>
+    <loc>https://songchen.science/blog/categories/Python/Editors/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -493,13 +502,6 @@
   
   <url>
     <loc>https://songchen.science/blog/categories/Python/Intermediate/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/categories/Python/Editors/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -527,14 +529,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/categories/Physics/Plasma-physics/</loc>
-    <lastmod>2023-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/categories/Python/Library/</loc>
+    <loc>https://songchen.science/blog/categories/Python/matplotlib/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -548,7 +543,21 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/categories/Bibliography/</loc>
+    <loc>https://songchen.science/blog/categories/Python/Library/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/categories/Physics/Plasma-physics/</loc>
+    <lastmod>2023-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/categories/Zotero/Plugins/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -562,7 +571,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/categories/Zotero/Plugins/</loc>
+    <loc>https://songchen.science/blog/categories/Bibliography/</loc>
     <lastmod>2023-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
