@@ -32,9 +32,9 @@
     
     <category term="Condensed-matter physics" scheme="https://songchen.science/blog/categories/Physics/Condensed-matter-physics/"/>
     
-    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
-    
     <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -131,7 +131,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;78824&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;1059&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
@@ -345,9 +345,9 @@
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
     
-    <category term="data-science" scheme="https://songchen.science/blog/tags/data-science/"/>
-    
     <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="data-science" scheme="https://songchen.science/blog/tags/data-science/"/>
     
   </entry>
   
