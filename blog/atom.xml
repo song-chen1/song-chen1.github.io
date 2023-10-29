@@ -55,9 +55,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
     
-    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
-    
     <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
+    
+    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -131,7 +131,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;1059&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;9518&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
@@ -216,10 +216,39 @@
     <link href="https://songchen.science/blog/posts/968b8b22/"/>
     <id>https://songchen.science/blog/posts/968b8b22/</id>
     <published>2023-10-15T18:41:05.000Z</published>
-    <updated>2023-10-26T20:19:17.207Z</updated>
+    <updated>2023-10-29T16:54:26.217Z</updated>
     
     
-    <summary type="html">AutoVA - Automated VCMA/(magnetoelectric coupling) - Anomalous Hall effect Measurement System. The software is used to control 1. The E-field applied for the VCMA/Magnetoelectric coupling. (with the ramping function). 2. The E-fields can have multi-variants - (dwelling, pulser). 3. The electromagnetic filed. 4. The Soure Measure Unit (SMU) to apply one bias-current, and meanwhile measuring the Hall Voltage. Hysteresis loops can be obtained by looping the electromagnetic field.</summary>
+    <summary type="html">&lt;div class=&quot;post-summary&quot;&gt;
+
+
+&lt;p&gt;AutoVA - Automated VCMA&amp;#x2F;(magnetoelectric coupling) - Anomalous Hall effect Measurement System.&lt;/p&gt;
+&lt;p&gt;The software is used to control :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The E-field applied for the VCMA&amp;#x2F;Magnetoelectric coupling. (with the ramping function).&lt;ol&gt;
+&lt;li&gt;The E-fields can have multi-variants - (dwelling, pulser).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;The electromagnetic filed. &lt;/li&gt;
+&lt;li&gt;The Soure Measure Unit (SMU) to apply one bias-current, and meanwhile measuring the Hall Voltage. Hysteresis loops can be obtained by looping the electromagnetic field.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The software has following features:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AutoVA_1.0.0&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Compatible with a large amount of SMUs, and instruments&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Experiments procudures visualised&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;GUI for graphing live data&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;managing queues of experiments.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Data auto-generation&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;AutoVA_1.0.1&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The automated experiment time can be estimated and updated in real time.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;AutoVA_1.0.2&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The progressbar for single meaurement will be shown&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;/div&gt;</summary>
     
     
     
@@ -345,9 +374,9 @@
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
     
-    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
-    
     <category term="data-science" scheme="https://songchen.science/blog/tags/data-science/"/>
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
     
   </entry>
   
