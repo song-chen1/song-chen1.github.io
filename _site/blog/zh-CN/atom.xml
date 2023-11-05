@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/zh-CN/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/zh-CN/"/>
-  <updated>2023-10-26T20:21:38.090Z</updated>
+  <updated>2023-10-29T22:12:14.158Z</updated>
   <id>https://songchen.science/blog/zh-CN/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Obsidian 教程归纳汇总</title>
+    <link href="https://songchen.science/blog/zh-CN/posts/16e9b000/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/16e9b000/</id>
+    <published>2023-10-29T21:55:55.000Z</published>
+    <updated>2023-10-29T22:12:14.158Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Obsidian" scheme="https://songchen.science/blog/zh-CN/categories/Obsidian/"/>
+    
+    
+    <category term="Obsidian" scheme="https://songchen.science/blog/zh-CN/tags/Obsidian/"/>
+    
+  </entry>
   
   <entry>
     <title>Interview_Python (转载)</title>
@@ -152,7 +177,7 @@
     <link href="https://songchen.science/blog/zh-CN/posts/b2a36a01/"/>
     <id>https://songchen.science/blog/zh-CN/posts/b2a36a01/</id>
     <published>2023-10-12T21:21:10.000Z</published>
-    <updated>2023-10-29T16:48:45.862Z</updated>
+    <updated>2023-11-01T11:45:23.986Z</updated>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
