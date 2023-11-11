@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-11-05T23:29:25.268Z</updated>
+  <updated>2023-11-09T09:53:17.842Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -21,8 +21,16 @@
     <link href="https://songchen.science/blog/posts/284d73cd/"/>
     <id>https://songchen.science/blog/posts/284d73cd/</id>
     <published>2023-11-05T23:29:25.000Z</published>
-    <updated>2023-11-05T23:29:25.268Z</updated>
+    <updated>2023-11-09T09:53:17.842Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Paths-to-Superintelligence&quot;&gt;&lt;a href=&quot;#Paths-to-Superintelligence&quot; class=&quot;headerlink&quot; title=&quot;Paths to Superintelligence&quot;&gt;&lt;/a&gt;Paths</summary>
+        
+      
     
     
     
@@ -34,8 +42,17 @@
     <link href="https://songchen.science/blog/posts/83e64d9b/"/>
     <id>https://songchen.science/blog/posts/83e64d9b/</id>
     <published>2023-11-01T15:24:36.000Z</published>
-    <updated>2023-11-01T15:26:26.631Z</updated>
+    <updated>2023-11-11T11:34:01.865Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;[toc]&lt;/p&gt;
+&lt;h2 id=&quot;Threading&quot;&gt;&lt;a href=&quot;#Threading&quot; class=&quot;headerlink&quot; title=&quot;Threading&quot;&gt;&lt;/a&gt;Threading&lt;/h2&gt;&lt;h3</summary>
+        
+      
     
     
     
@@ -55,7 +72,7 @@
     <link href="https://songchen.science/blog/posts/2f5fd3b/"/>
     <id>https://songchen.science/blog/posts/2f5fd3b/</id>
     <published>2023-10-31T19:49:29.000Z</published>
-    <updated>2023-11-01T13:34:51.081Z</updated>
+    <updated>2023-11-05T23:30:00.524Z</updated>
     
     
     <summary type="html">When managing Python projects that rely on external packages, it&#39;s vital to ensure the precise compatibility of each package version. Updates can occasionally lead to unexpected changes in package behavior. Python Poetry, a dependable package manager, empowers you to precisely define, install, and harmonize external packages within your projects. This approach ensures that you consistently operate with the correct dependency versions across all machines</summary>
@@ -91,9 +108,9 @@
     
     <category term="Condensed-matter physics" scheme="https://songchen.science/blog/categories/Physics/Condensed-matter-physics/"/>
     
-    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
-    
     <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -190,7 +207,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;11648&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;54500&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
