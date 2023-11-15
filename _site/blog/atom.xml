@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-11-09T09:53:17.842Z</updated>
+  <updated>2023-11-11T18:38:15.567Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -21,16 +21,11 @@
     <link href="https://songchen.science/blog/posts/284d73cd/"/>
     <id>https://songchen.science/blog/posts/284d73cd/</id>
     <published>2023-11-05T23:29:25.000Z</published>
-    <updated>2023-11-09T09:53:17.842Z</updated>
+    <updated>2023-11-11T18:38:15.567Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Paths-to-Superintelligence&quot;&gt;&lt;a href=&quot;#Paths-to-Superintelligence&quot; class=&quot;headerlink&quot; title=&quot;Paths to Superintelligence&quot;&gt;&lt;/a&gt;Paths</summary>
-        
-      
+    <summary type="html">&lt;h1 id=&quot;Paths-to-Superintelligence&quot;&gt;&lt;a href=&quot;#Paths-to-Superintelligence&quot; class=&quot;headerlink&quot; title=&quot;Paths to Superintelligence&quot;&gt;&lt;/a&gt;Paths to Superintelligence&lt;/h1&gt;&lt;h2 id=&quot;Networks-and-organizations&quot;&gt;&lt;a href=&quot;#Networks-and-organizations&quot; class=&quot;headerlink&quot; title=&quot;Networks and organizations&quot;&gt;&lt;/a&gt;Networks and organizations&lt;/h2&gt;&lt;p&gt;Another concievable path to superintelligence is &lt;strong&gt;Gradual enhancement of networks and organisations&lt;/strong&gt; that link individual human minds with one another and various artifacts and bots.&lt;/p&gt;
+&lt;p&gt;Humanity has gained a lot in the collective intelligence in the form of many sources, including innovations in communictaions technology, such as writing and printing, and above all the introduction of language itself. increases in the size of the world population and the density of habitation; various improvements in organizational techniques and epistemic norms; and a gradual accumulation of institutional capital.&lt;/p&gt;</summary>
     
     
     
@@ -42,17 +37,10 @@
     <link href="https://songchen.science/blog/posts/83e64d9b/"/>
     <id>https://songchen.science/blog/posts/83e64d9b/</id>
     <published>2023-11-01T15:24:36.000Z</published>
-    <updated>2023-11-11T11:34:01.865Z</updated>
+    <updated>2023-11-15T09:30:56.060Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;[toc]&lt;/p&gt;
-&lt;h2 id=&quot;Threading&quot;&gt;&lt;a href=&quot;#Threading&quot; class=&quot;headerlink&quot; title=&quot;Threading&quot;&gt;&lt;/a&gt;Threading&lt;/h2&gt;&lt;h3</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;Threading&quot;&gt;&lt;a href=&quot;#Threading&quot; class=&quot;headerlink&quot; title=&quot;Threading&quot;&gt;&lt;/a&gt;Threading&lt;/h2&gt;&lt;h3 id=&quot;What-is-threading-in-python&quot;&gt;&lt;a href=&quot;#What-is-threading-in-python&quot; class=&quot;headerlink&quot; title=&quot;What is threading in python?&quot;&gt;&lt;/a&gt;What is threading in python?&lt;/h3&gt;&lt;p&gt;A thread is a separate flow of execution. This means that your program will have two things happening at once. But for most Python 3 implementations the different threads do not actually execute at the same time: they merely appear to.&lt;/p&gt;</summary>
     
     
     
@@ -207,7 +195,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;49010&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;70310&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
