@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-11-11T18:38:15.567Z</updated>
+  <updated>2023-11-16T22:45:18.005Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AHEMS - Anomalous Hall Effect Measurement System</title>
+    <link href="https://songchen.science/blog/posts/8da53686/"/>
+    <id>https://songchen.science/blog/posts/8da53686/</id>
+    <published>2023-11-16T22:37:53.000Z</published>
+    <updated>2023-11-16T22:45:18.005Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Reference&quot;&gt;&lt;a href=&quot;#Reference&quot; class=&quot;headerlink&quot; title=&quot;Reference&quot;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;p&gt;The following paper shouold be referred to to understand the Anomalous Hall Effect:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://journals.aps.org/rmp/pdf/10.1103/RevModPhys.82.1539?casa_token=mpPGv69axfkAAAAA:WV5ZIET03znXIYBSogCNli1TenvDDDRTfroiwmki3OnqWERgwgPfTmdVHsQyvGRj3KMGrjxBrUCKdw&quot;&gt;[1] N. Nagaosa, J. Sinova, S. Onoda, A. H. MacDonald, and N. P. Ong, “Anomalous Hall effect,” Rev. Modern Phys., vol. 82, no. 2, pp. 1539–1592, May 2010, doi: 10.1103&amp;#x2F;RevModPhys.82.1539.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://blog.songchen.science/images/AHE/GUI.png&quot; alt=&quot;AHE Measurement System GUI&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Software" scheme="https://songchen.science/blog/categories/Software/"/>
+    
+    
+    <category term="Software" scheme="https://songchen.science/blog/tags/Software/"/>
+    
+    <category term="Automation" scheme="https://songchen.science/blog/tags/Automation/"/>
+    
+    <category term="physics experiment" scheme="https://songchen.science/blog/tags/physics-experiment/"/>
+    
+  </entry>
   
   <entry>
     <title>From HLAI to Superintelligence</title>
@@ -195,7 +220,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;50062&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;58517&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
