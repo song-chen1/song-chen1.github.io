@@ -1,5 +1,14 @@
 main:
 
+  - title: Anomalous Hall Effect Measurement System (AHEMS)
+    authors: Song Chen
+    project_short: Software
+    project: The software is used to obatin the AHE hysteresis loops which is based on he relationship between the anomalous Hall conductivity and an external magnetic field applied to a material.
+    pdf: https://icloud.songchen.science/?/AHE%20Measurement/
+    web: https://icloud.songchen.science/?/AHE%20Measurement/
+    image: https://blog.songchen.science/images/AHE/GUI.png
+    notes: 
+
   - title: AutoVA - Automated VCMA & AHE Measurement System
     authors: Song Chen
     project_short: Software
