@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-11-16T22:45:18.005Z</updated>
+  <updated>2023-11-17T10:32:25.448Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>I-V Measurement System</title>
+    <link href="https://songchen.science/blog/posts/6ed7617e/"/>
+    <id>https://songchen.science/blog/posts/6ed7617e/</id>
+    <published>2023-11-17T10:21:01.000Z</published>
+    <updated>2023-11-17T10:32:25.448Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;An I-V curve measurement is performed by applying a series of voltages to the device. At each voltage, the current flowing through the device is measured. The supplied voltage is measured by a voltmeter connected in parallel to the device, and the current is measured by an ammeter connected in series. This voltmeter and ammeter can now be integrated to &lt;strong&gt;SMU: Source Measure unit&lt;/strong&gt;, which has been used in this project.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Software" scheme="https://songchen.science/blog/categories/Software/"/>
+    
+    
+    <category term="Software" scheme="https://songchen.science/blog/tags/Software/"/>
+    
+    <category term="Automation" scheme="https://songchen.science/blog/tags/Automation/"/>
+    
+    <category term="physics experiment" scheme="https://songchen.science/blog/tags/physics-experiment/"/>
+    
+  </entry>
   
   <entry>
     <title>AHEMS - Anomalous Hall Effect Measurement System</title>
@@ -220,7 +243,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;58517&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;90682&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
