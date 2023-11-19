@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-11-17T12:25:43.476Z</updated>
+  <updated>2023-11-19T22:34:52.420Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python OOP: Composition and Inheritance</title>
+    <link href="https://songchen.science/blog/posts/ed5bbb01/"/>
+    <id>https://songchen.science/blog/posts/ed5bbb01/</id>
+    <published>2023-11-18T15:58:10.000Z</published>
+    <updated>2023-11-19T22:34:52.420Z</updated>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
+    
+    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
+    
+    
+    <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>I-V Measurement System</title>
     <link href="https://songchen.science/blog/posts/6ed7617e/"/>
     <id>https://songchen.science/blog/posts/6ed7617e/</id>
     <published>2023-11-17T10:21:01.000Z</published>
-    <updated>2023-11-17T12:25:43.476Z</updated>
+    <updated>2023-11-19T22:39:02.787Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;An I-V curve measurement is performed by applying a series of voltages to the device. At each voltage, the current flowing through the device is measured. The supplied voltage is measured by a voltmeter connected in parallel to the device, and the current is measured by an ammeter connected in series. This voltmeter and ammeter can now be integrated to &lt;strong&gt;SMU: Source Measure unit&lt;/strong&gt;, which has been used in this project.&lt;/p&gt;</summary>
@@ -44,7 +65,7 @@
     <link href="https://songchen.science/blog/posts/8da53686/"/>
     <id>https://songchen.science/blog/posts/8da53686/</id>
     <published>2023-11-16T22:37:53.000Z</published>
-    <updated>2023-11-16T22:45:18.005Z</updated>
+    <updated>2023-11-19T22:38:46.967Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Reference&quot;&gt;&lt;a href=&quot;#Reference&quot; class=&quot;headerlink&quot; title=&quot;Reference&quot;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;p&gt;The following paper shouold be referred to to understand the Anomalous Hall Effect:&lt;/p&gt;
@@ -69,7 +90,7 @@
     <link href="https://songchen.science/blog/posts/284d73cd/"/>
     <id>https://songchen.science/blog/posts/284d73cd/</id>
     <published>2023-11-05T23:29:25.000Z</published>
-    <updated>2023-11-11T18:38:15.567Z</updated>
+    <updated>2023-11-19T22:20:26.195Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Paths-to-Superintelligence&quot;&gt;&lt;a href=&quot;#Paths-to-Superintelligence&quot; class=&quot;headerlink&quot; title=&quot;Paths to Superintelligence&quot;&gt;&lt;/a&gt;Paths to Superintelligence&lt;/h1&gt;&lt;h2 id=&quot;Networks-and-organizations&quot;&gt;&lt;a href=&quot;#Networks-and-organizations&quot; class=&quot;headerlink&quot; title=&quot;Networks and organizations&quot;&gt;&lt;/a&gt;Networks and organizations&lt;/h2&gt;&lt;p&gt;Another concievable path to superintelligence is &lt;strong&gt;Gradual enhancement of networks and organisations&lt;/strong&gt; that link individual human minds with one another and various artifacts and bots.&lt;/p&gt;
@@ -78,6 +99,10 @@
     
     
     
+    <category term="AGI" scheme="https://songchen.science/blog/tags/AGI/"/>
+    
+    <category term="superintelligence" scheme="https://songchen.science/blog/tags/superintelligence/"/>
+    
   </entry>
   
   <entry>
@@ -85,7 +110,7 @@
     <link href="https://songchen.science/blog/posts/83e64d9b/"/>
     <id>https://songchen.science/blog/posts/83e64d9b/</id>
     <published>2023-11-01T15:24:36.000Z</published>
-    <updated>2023-11-15T09:30:56.060Z</updated>
+    <updated>2023-11-19T22:21:05.198Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Threading&quot;&gt;&lt;a href=&quot;#Threading&quot; class=&quot;headerlink&quot; title=&quot;Threading&quot;&gt;&lt;/a&gt;Threading&lt;/h2&gt;&lt;h3 id=&quot;What-is-threading-in-python&quot;&gt;&lt;a href=&quot;#What-is-threading-in-python&quot; class=&quot;headerlink&quot; title=&quot;What is threading in python?&quot;&gt;&lt;/a&gt;What is threading in python?&lt;/h3&gt;&lt;p&gt;A thread is a separate flow of execution. This means that your program will have two things happening at once. But for most Python 3 implementations the different threads do not actually execute at the same time: they merely appear to.&lt;/p&gt;</summary>
@@ -108,7 +133,7 @@
     <link href="https://songchen.science/blog/posts/2f5fd3b/"/>
     <id>https://songchen.science/blog/posts/2f5fd3b/</id>
     <published>2023-10-31T19:49:29.000Z</published>
-    <updated>2023-11-05T23:30:00.524Z</updated>
+    <updated>2023-11-19T22:16:52.704Z</updated>
     
     
     <summary type="html">When managing Python projects that rely on external packages, it&#39;s vital to ensure the precise compatibility of each package version. Updates can occasionally lead to unexpected changes in package behavior. Python Poetry, a dependable package manager, empowers you to precisely define, install, and harmonize external packages within your projects. This approach ensures that you consistently operate with the correct dependency versions across all machines</summary>
@@ -133,7 +158,7 @@
     <link href="https://songchen.science/blog/posts/cb2fd4b/"/>
     <id>https://songchen.science/blog/posts/cb2fd4b/</id>
     <published>2023-10-26T19:12:21.000Z</published>
-    <updated>2023-11-18T15:14:21.991Z</updated>
+    <updated>2023-11-19T22:39:42.073Z</updated>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
@@ -144,9 +169,9 @@
     
     <category term="Condensed-matter physics" scheme="https://songchen.science/blog/categories/Physics/Condensed-matter-physics/"/>
     
-    <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
-    
     <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -243,7 +268,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;21401&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;98648&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
@@ -328,7 +353,7 @@
     <link href="https://songchen.science/blog/posts/968b8b22/"/>
     <id>https://songchen.science/blog/posts/968b8b22/</id>
     <published>2023-10-15T18:41:05.000Z</published>
-    <updated>2023-10-29T16:54:26.217Z</updated>
+    <updated>2023-11-19T22:38:57.498Z</updated>
     
     
     <summary type="html">&lt;div class=&quot;post-summary&quot;&gt;
@@ -486,9 +511,9 @@
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
     
-    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
-    
     <category term="data-science" scheme="https://songchen.science/blog/tags/data-science/"/>
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
     
   </entry>
   
