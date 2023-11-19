@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-11-17T10:32:25.448Z</updated>
+  <updated>2023-11-17T12:25:43.476Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://songchen.science/blog/posts/6ed7617e/"/>
     <id>https://songchen.science/blog/posts/6ed7617e/</id>
     <published>2023-11-17T10:21:01.000Z</published>
-    <updated>2023-11-17T10:32:25.448Z</updated>
+    <updated>2023-11-17T12:25:43.476Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;An I-V curve measurement is performed by applying a series of voltages to the device. At each voltage, the current flowing through the device is measured. The supplied voltage is measured by a voltmeter connected in parallel to the device, and the current is measured by an ammeter connected in series. This voltmeter and ammeter can now be integrated to &lt;strong&gt;SMU: Source Measure unit&lt;/strong&gt;, which has been used in this project.&lt;/p&gt;</summary>
@@ -133,7 +133,7 @@
     <link href="https://songchen.science/blog/posts/cb2fd4b/"/>
     <id>https://songchen.science/blog/posts/cb2fd4b/</id>
     <published>2023-10-26T19:12:21.000Z</published>
-    <updated>2023-10-26T20:19:17.218Z</updated>
+    <updated>2023-11-18T15:14:21.991Z</updated>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
@@ -243,7 +243,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;90682&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;21401&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
@@ -486,9 +486,9 @@
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
     
-    <category term="data-science" scheme="https://songchen.science/blog/tags/data-science/"/>
-    
     <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="data-science" scheme="https://songchen.science/blog/tags/data-science/"/>
     
   </entry>
   
