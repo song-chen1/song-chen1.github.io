@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-11-19T22:34:52.420Z</updated>
+  <updated>2023-11-20T14:35:41.056Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://songchen.science/blog/posts/0/"/>
+    <id>https://songchen.science/blog/posts/0/</id>
+    <published>2023-11-20T14:35:41.056Z</published>
+    <updated>2023-11-20T14:35:41.056Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;title: Research Output - Automation of Physical Experiments&lt;br&gt;speaker: Song Chen&lt;br&gt;plugins:&lt;br&gt;    - echarts&lt;/p&gt;
+&lt;slide</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Python OOP: Composition and Inheritance</title>
@@ -169,9 +191,9 @@
     
     <category term="Condensed-matter physics" scheme="https://songchen.science/blog/categories/Physics/Condensed-matter-physics/"/>
     
-    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
-    
     <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -268,7 +290,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;98648&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;3418&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
@@ -540,23 +562,6 @@
     <category term="Documentation" scheme="https://songchen.science/blog/tags/Documentation/"/>
     
     <category term="Hexo" scheme="https://songchen.science/blog/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://songchen.science/blog/posts/4a17b156/"/>
-    <id>https://songchen.science/blog/posts/4a17b156/</id>
-    <published>2023-10-03T20:16:13.639Z</published>
-    <updated>2023-10-26T20:19:17.219Z</updated>
-    
-    
-    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
-    
-    
-    
-    
-    <category term="encryptAsDiary" scheme="https://songchen.science/blog/tags/encryptAsDiary/"/>
     
   </entry>
   
