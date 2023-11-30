@@ -13,8 +13,8 @@ main:
     authors: Song Chen
     project_short: Software
     project: The software is used to obatin the AHE hysteresis loops which is based on he relationship between the anomalous Hall conductivity and an external magnetic field applied to a material.
-    pdf: https://icloud.songchen.science/?/AHE%20Measurement/
-    web: https://icloud.songchen.science/?/AHE%20Measurement/
+    pdf: https://icloud.songchen.science/?/AHEMS/
+    web: https://icloud.songchen.science/?/AHEMS/
     image: https://blog.songchen.science/images/AHE/GUI.png
     notes:
 
