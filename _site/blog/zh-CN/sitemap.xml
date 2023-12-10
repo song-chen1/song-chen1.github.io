@@ -173,6 +173,15 @@
   </url>
   
   <url>
+    <loc>https://songchen.science/blog/zh-CN/lib/hbe.wave</loc>
+    
+    <lastmod>2023-10-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://songchen.science/blog/zh-CN/lib/hbe.up</loc>
     
     <lastmod>2023-10-12</lastmod>
@@ -183,15 +192,6 @@
   
   <url>
     <loc>https://songchen.science/blog/zh-CN/lib/hbe.xray</loc>
-    
-    <lastmod>2023-10-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/lib/hbe.wave</loc>
     
     <lastmod>2023-10-12</lastmod>
     
@@ -434,13 +434,6 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Documentation/</loc>
-    <lastmod>2023-12-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://songchen.science/blog/zh-CN/categories/Python/Bibliography/</loc>
     <lastmod>2023-12-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -449,6 +442,13 @@
   
   <url>
     <loc>https://songchen.science/blog/zh-CN/categories/Machine-learning/</loc>
+    <lastmod>2023-12-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/categories/Documentation/</loc>
     <lastmod>2023-12-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
