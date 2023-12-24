@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-12-10T18:18:41.535Z</updated>
+  <updated>2023-12-24T17:39:22.027Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Is it possible to create magnetic semiconductors that function at room temperature?</title>
+    <link href="https://songchen.science/blog/posts/745ac829/"/>
+    <id>https://songchen.science/blog/posts/745ac829/</id>
+    <published>2023-12-24T17:28:17.000Z</published>
+    <updated>2023-12-24T17:39:22.027Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://www.science.org/doi/10.1126/science.adl0823&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;Is it possible to create magnetic semiconductors that function at room temperature?&lt;/a&gt;
+
+&lt;p&gt;As electronic devices continue to shrink to just a few nanometers, enabling the integration of billions of devices in computers, power consumption has surged beyond control, exceeding thermal limits and leading to failure. To address this issue, researchers are exploring an alternative to conventional electronics by harnessing the property of “spin” rather than “charge.” This emerging field, known as spintronics, compared to its counterpart electronics, holds the promise of more energy-efficient quantum computing and data storage, and beyond. Recent successes with van der Waals (vdW)–layered diluted magnetic chalcogenide semiconductors (dMCSs) are promising and have sparked a vibrant research community. This field is still in its infancy on the path to realizing the ultimate spintronics. But it is highly likely that the remaining scientific challenges can be overcome within the next decade or so.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Physics" scheme="https://songchen.science/blog/categories/Physics/"/>
+    
+    <category term="Semiconductors" scheme="https://songchen.science/blog/categories/Physics/Semiconductors/"/>
+    
+    
+    <category term="semiconductors" scheme="https://songchen.science/blog/tags/semiconductors/"/>
+    
+  </entry>
   
   <entry>
     <title>Functional Programming in Python: Episode 2</title>
@@ -335,7 +359,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;67196&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;85997&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
@@ -518,38 +542,6 @@
     <category term="computational simulation" scheme="https://songchen.science/blog/tags/computational-simulation/"/>
     
     <category term="physics" scheme="https://songchen.science/blog/tags/physics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Finding An Effective Python Environment</title>
-    <link href="https://songchen.science/blog/posts/28115c/"/>
-    <id>https://songchen.science/blog/posts/28115c/</id>
-    <published>2023-10-10T22:55:14.000Z</published>
-    <updated>2023-10-26T20:19:17.216Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;Python-Version-Management-Tools&quot;&gt;&lt;a href=&quot;#Python-Version-Management-Tools&quot; class=&quot;headerlink&quot; title=&quot;Python Version Management Tools&quot;&gt;&lt;/a&gt;Python Version Management Tools&lt;/h2&gt;&lt;h3 id=&quot;pyenv&quot;&gt;&lt;a href=&quot;#pyenv&quot; class=&quot;headerlink&quot; title=&quot;pyenv&quot;&gt;&lt;/a&gt;pyenv&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pyenv/pyenv&quot;&gt;&lt;code&gt;pyenv&lt;/code&gt;&lt;/a&gt; is a polular and marture open-source tool used in the Python development ecosystem on MacOS. (It is &lt;a href=&quot;https://github.com/pyenv-win/pyenv-win#installation&quot;&gt;pyenv-win&lt;/a&gt; on windows). It allows developers to manage multiple Python installations on their system and easily switch between different Python versions. This is especially useful when you’re working on various Python projects that may have different version requirements.&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ pyenv verison&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* system&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  3.7.9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  3.8.13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ python --version&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	Python 3.10.0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ pyenv install 3.12.0 &lt;span class=&quot;comment&quot;&gt;# this command takes time&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ pyenv versions&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* system&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	3.7.9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	3.8.13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	3.12.0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
-    
-    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
-    
-    <category term="Editors" scheme="https://songchen.science/blog/categories/Python/Editors/"/>
-    
-    <category term="Configuration" scheme="https://songchen.science/blog/categories/Python/Configuration/"/>
-    
-    
-    <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
-    
-    <category term="python_tools" scheme="https://songchen.science/blog/tags/python-tools/"/>
-    
-    <category term="python_editors" scheme="https://songchen.science/blog/tags/python-editors/"/>
-    
-    <category term="python_configuration" scheme="https://songchen.science/blog/tags/python-configuration/"/>
     
   </entry>
   
