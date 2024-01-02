@@ -4,8 +4,8 @@ main:
     authors: Song Chen
     project_short: Software
     project: The software is used to aplly the bias voltage and measure the current. Futher features such as I-V, V-I switching toggle, and Cyclic Voltammetry (CV) will be also included. 
-    pdf: https://icloud.songchen.science/?/I-V/
-    web: https://icloud.songchen.science/?/I-V/
+    pdf: https://goindex.chen-song90.workers.dev/0:/I-V/
+    web: https://goindex.chen-song90.workers.dev/0:/I-V/
     image: https://blog.songchen.science/images/I-V/GUI.png
     notes:
 
@@ -13,8 +13,8 @@ main:
     authors: Song Chen
     project_short: Software
     project: The software is used to obatin the AHE hysteresis loops which is based on he relationship between the anomalous Hall conductivity and an external magnetic field applied to a material.
-    pdf: https://icloud.songchen.science/?/AHEMS/
-    web: https://icloud.songchen.science/?/AHEMS/
+    pdf: https://goindex.chen-song90.workers.dev/0:/AHEMS/
+    web: https://goindex.chen-song90.workers.dev/0:/AHEMS/
     image: https://blog.songchen.science/images/AHE/GUI.png
     notes:
 
@@ -22,8 +22,8 @@ main:
     authors: Song Chen
     project_short: Software
     project: The software is used to 1. control the E-field applied for the VCMA/Magnetoelectric coupling; 2. to control the elctromagnetic field; 3. to control the SMU to apply one bias current ,and meanwhile measuring the Hall voltage. All the parameters can be set correspondingly and sequencer can be made to realize the automation.
-    pdf: ./assets/files/AutoVA.pdf
-    web: 
+    pdf: https://goindex.chen-song90.workers.dev/0:/AutoVA/
+    web: https://goindex.chen-song90.workers.dev/0:/AutoVA/
     image: ./assets/img/autova.png
     notes: Non-Open Source
 
