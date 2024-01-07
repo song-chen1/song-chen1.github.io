@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2023-12-24T17:40:06.069Z</updated>
+  <updated>2024-01-07T22:50:13.286Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Deep Neural Networks from Scratch</title>
+    <link href="https://songchen.science/blog/posts/8969d96a/"/>
+    <id>https://songchen.science/blog/posts/8969d96a/</id>
+    <published>2024-01-07T22:28:28.000Z</published>
+    <updated>2024-01-07T22:50:13.286Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Introducing-Neural-Networks&quot;&gt;&lt;a href=&quot;#Introducing-Neural-Networks&quot; class=&quot;headerlink&quot; title=&quot;Introducing Neural</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
+    
+    <category term="Data-science" scheme="https://songchen.science/blog/categories/Data-science/"/>
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="Neural-Networks" scheme="https://songchen.science/blog/categories/Machine-learning/Neural-Networks/"/>
+    
+    
+    <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
+    
+    <category term="data-science" scheme="https://songchen.science/blog/tags/data-science/"/>
+    
+    <category term="deep-learning" scheme="https://songchen.science/blog/tags/deep-learning/"/>
+    
+    <category term="neural-networks" scheme="https://songchen.science/blog/tags/neural-networks/"/>
+    
+  </entry>
   
   <entry>
     <title>Is it possible to create magnetic semiconductors that function at room temperature?</title>
@@ -359,7 +396,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;60693&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;16293&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
@@ -515,33 +552,6 @@
     <category term="Documentation" scheme="https://songchen.science/blog/tags/Documentation/"/>
     
     <category term="encryptAsDiary" scheme="https://songchen.science/blog/tags/encryptAsDiary/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BCA Simulations</title>
-    <link href="https://songchen.science/blog/posts/c1550b35/"/>
-    <id>https://songchen.science/blog/posts/c1550b35/</id>
-    <published>2023-10-11T16:57:14.000Z</published>
-    <updated>2023-10-26T20:19:17.210Z</updated>
-    
-    
-    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
-    
-    
-    
-    <category term="Physics" scheme="https://songchen.science/blog/categories/Physics/"/>
-    
-    <category term="Condensed-matter physics" scheme="https://songchen.science/blog/categories/Physics/Condensed-matter-physics/"/>
-    
-    <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
-    
-    
-    <category term="condensed-matter physics" scheme="https://songchen.science/blog/tags/condensed-matter-physics/"/>
-    
-    <category term="computational simulation" scheme="https://songchen.science/blog/tags/computational-simulation/"/>
-    
-    <category term="physics" scheme="https://songchen.science/blog/tags/physics/"/>
     
   </entry>
   
