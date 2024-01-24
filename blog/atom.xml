@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2024-01-07T23:18:36.333Z</updated>
+  <updated>2024-01-24T23:15:06.668Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Operational Effienciency Improvement in python</title>
+    <link href="https://songchen.science/blog/posts/6dfd8225/"/>
+    <id>https://songchen.science/blog/posts/6dfd8225/</id>
+    <published>2024-01-24T23:07:28.000Z</published>
+    <updated>2024-01-24T23:15:06.668Z</updated>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
+    
+    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
+    
+    
+    <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Deep Neural Networks from Scratch</title>
@@ -262,9 +283,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
     
-    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
-    
     <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
+    
+    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -312,9 +333,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
     
-    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
-    
     <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
+    
+    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -390,7 +411,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;66210&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;29871&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
@@ -521,31 +542,6 @@
     <category term="Automation" scheme="https://songchen.science/blog/tags/Automation/"/>
     
     <category term="physics experiment" scheme="https://songchen.science/blog/tags/physics-experiment/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Alfred Documentation</title>
-    <link href="https://songchen.science/blog/posts/4d10c62/"/>
-    <id>https://songchen.science/blog/posts/4d10c62/</id>
-    <published>2023-10-14T12:31:57.228Z</published>
-    <updated>2023-10-26T20:19:17.214Z</updated>
-    
-    
-    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
-    
-    
-    
-    <category term="Documentation" scheme="https://songchen.science/blog/categories/Documentation/"/>
-    
-    <category term="Alfred" scheme="https://songchen.science/blog/categories/Documentation/Alfred/"/>
-    
-    
-    <category term="Alfred" scheme="https://songchen.science/blog/tags/Alfred/"/>
-    
-    <category term="Documentation" scheme="https://songchen.science/blog/tags/Documentation/"/>
-    
-    <category term="encryptAsDiary" scheme="https://songchen.science/blog/tags/encryptAsDiary/"/>
     
   </entry>
   
