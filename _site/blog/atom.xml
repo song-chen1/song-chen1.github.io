@@ -51,9 +51,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
     
-    <category term="Data-science" scheme="https://songchen.science/blog/categories/Data-science/"/>
-    
     <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="Data-science" scheme="https://songchen.science/blog/categories/Data-science/"/>
     
     <category term="Neural-Networks" scheme="https://songchen.science/blog/categories/Machine-learning/Neural-Networks/"/>
     
@@ -283,9 +283,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
     
-    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
-    
     <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
+    
+    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -308,11 +308,11 @@
     
     <category term="Physics" scheme="https://songchen.science/blog/categories/Physics/"/>
     
-    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
-    
     <category term="Condensed-matter physics" scheme="https://songchen.science/blog/categories/Physics/Condensed-matter-physics/"/>
     
     <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -333,9 +333,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
     
-    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
-    
     <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
+    
+    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -411,7 +411,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;93075&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;17480&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
