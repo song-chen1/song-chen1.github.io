@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2024-01-24T23:15:23.279Z</updated>
+  <updated>2024-01-28T00:28:56.937Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Fortran -  Where we meet scientific and engineering applications</title>
+    <link href="https://songchen.science/blog/posts/4b4b0500/"/>
+    <id>https://songchen.science/blog/posts/4b4b0500/</id>
+    <published>2024-01-28T00:13:03.000Z</published>
+    <updated>2024-01-28T00:28:56.937Z</updated>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    <category term="Fortran" scheme="https://songchen.science/blog/categories/Fortran/"/>
+    
+    
+    <category term="fortran" scheme="https://songchen.science/blog/tags/fortran/"/>
+    
+  </entry>
   
   <entry>
     <title>Operational Effienciency Improvement in python</title>
@@ -283,9 +302,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
     
-    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
-    
     <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
+    
+    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -310,9 +329,9 @@
     
     <category term="Condensed-matter physics" scheme="https://songchen.science/blog/categories/Physics/Condensed-matter-physics/"/>
     
-    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
-    
     <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -333,9 +352,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
     
-    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
-    
     <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
+    
+    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -411,7 +430,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;5260&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;71694&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
@@ -488,60 +507,6 @@
     <category term="chart" scheme="https://songchen.science/blog/tags/chart/"/>
     
     <category term="data analysis" scheme="https://songchen.science/blog/tags/data-analysis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AutoVA - Automated VCMA &amp; AHE Measurement System</title>
-    <link href="https://songchen.science/blog/posts/968b8b22/"/>
-    <id>https://songchen.science/blog/posts/968b8b22/</id>
-    <published>2023-10-15T18:41:05.000Z</published>
-    <updated>2023-12-18T14:57:53.520Z</updated>
-    
-    
-    <summary type="html">&lt;div class=&quot;post-summary&quot;&gt;
-
-
-&lt;p&gt;AutoVA - Automated VCMA&amp;#x2F;(magnetoelectric coupling) - Anomalous Hall effect Measurement System.&lt;/p&gt;
-&lt;p&gt;The software is used to control :&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;The E-field applied for the VCMA&amp;#x2F;Magnetoelectric coupling. (with the ramping function).&lt;ol&gt;
-&lt;li&gt;The E-fields can have multi-variants - (dwelling, pulser).&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;The electromagnetic filed. &lt;/li&gt;
-&lt;li&gt;The Soure Measure Unit (SMU) to apply one bias-current, and meanwhile measuring the Hall Voltage. Hysteresis loops can be obtained by looping the electromagnetic field.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The software has following features:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;AutoVA_1.0.0&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;em&gt;Compatible with a large amount of SMUs, and instruments&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Experiments procudures visualised&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;GUI for graphing live data&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;managing queues of experiments.&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Data auto-generation&lt;/em&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;AutoVA_1.0.1&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;The automated experiment time can be estimated and updated in real time.&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;AutoVA_1.0.2&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;The progressbar for single meaurement will be shown&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;/div&gt;</summary>
-    
-    
-    
-    <category term="Software" scheme="https://songchen.science/blog/categories/Software/"/>
-    
-    <category term="Automation" scheme="https://songchen.science/blog/categories/Software/Automation/"/>
-    
-    
-    <category term="Software" scheme="https://songchen.science/blog/tags/Software/"/>
-    
-    <category term="Automation" scheme="https://songchen.science/blog/tags/Automation/"/>
-    
-    <category term="physics experiment" scheme="https://songchen.science/blog/tags/physics-experiment/"/>
     
   </entry>
   
