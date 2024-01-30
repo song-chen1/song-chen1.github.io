@@ -9,9 +9,8 @@ layout: homepage
 I am currently a Postdoctoral Associate [Western University](https://www.uwo.ca/), working under the mentorship of Dr. [Chao Zhang](https://www.eng.uwo.ca/mechanical/faculty/zhang_c/), Professor of [Department of Mechanical and Materials Engineering](https://www.eng.uwo.ca/mechanical/) and Dr. [Jing(Jin) Jiang](https://www.eng.uwo.ca/electrical/faculty/jiang_j/), Professor of [Department of Electrical and Computer Engineering](https://www.eng.uwo.ca/electrical/). My research involves numerical methods for investigations on thermal systems, including thermal hydraulics in nuclear reactors with a special focus on the Supercritical Water-Cooled Reactors(SCWRs) and the integration of thermal energy storage (TES) technology with High-Temperature Gas-Cooled type Small Modular Reactors (SMR-HTGRSs).
 ## Research Interest:
 - **Analysis of flow and heat transfer in channels with the supercritical fluids flowing:** circular tube, tube bundle
-- **Thermal Hydraulics:** SCWR, SMR-HTGR.
+- **Thermal Hydraulics based control system design:** SCWR, feedback control, feedforward control.
 - **CFD Simulation:** ANSYS FLUENT, COMSOL, START CMM+, OpenFoam, NekRS.
-- **Control system design:** feedback control, feedforward control.
 - **Numerical methods for integration of energy storage with thermal and distributed generation systems: coupling TES technology with SMRs and renewable energy power plants:** CFD, MATLAB.
 
 {% include_relative _includes/news.md %}
