@@ -11,7 +11,7 @@ I am currently a Postdoctoral Associate [Western University](https://www.uwo.ca/
 - **Analysis of flow and heat transfer in channels with the supercritical fluids flowing:** circular tube, tube bundle
 - **Thermal Hydraulics based control system design:** SCWR, feedback control, feedforward control.
 - **CFD Simulation:** ANSYS FLUENT, COMSOL, START CMM+, OpenFoam, NekRS.
-- **Numerical methods for integration of energy storage with thermal and distributed generation systems: coupling TES technology with SMRs and renewable energy power plants:** CFD, MATLAB.
+- **Numerical methods for integration of energy storage with thermal and distributed generation systems:** coupling TES technology with SMRs and renewable energy power plants.
 
 {% include_relative _includes/news.md %}
 
