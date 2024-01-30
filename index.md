@@ -6,13 +6,13 @@ layout: homepage
 
 <h2 style="margin: 60px 0px 10px;">Short Bio</h2>
 
-I am currently a Postdoctoral Associate [Western University](https://www.uwo.ca/), working under the mentorship of Dr. [Chao Zhang](https://www.eng.uwo.ca/mechanical/faculty/zhang_c/), Professor of [Department of Mechanical and Materials Engineering](https://www.eng.uwo.ca/mechanical/) and Dr. [Jing(Jin) Jiang](https://www.eng.uwo.ca/electrical/faculty/jiang_j/), Professor of [Department of Electrical and Computer Engineering](https://www.eng.uwo.ca/electrical/). My research involves numerical methods for investigations on thermal hydraulics in nuclear reactors and control system design for nuclear reactors, with a special focus on the Supercritical Water-Cooled Reactors(SCWRs) and High-Temperature Gas-Cooled type Small Modular Reactors (SMRs) using CFD methods.
+I am currently a Postdoctoral Associate [Western University](https://www.uwo.ca/), working under the mentorship of Dr. [Chao Zhang](https://www.eng.uwo.ca/mechanical/faculty/zhang_c/), Professor of [Department of Mechanical and Materials Engineering](https://www.eng.uwo.ca/mechanical/) and Dr. [Jing(Jin) Jiang](https://www.eng.uwo.ca/electrical/faculty/jiang_j/), Professor of [Department of Electrical and Computer Engineering](https://www.eng.uwo.ca/electrical/). My research involves numerical methods for investigations on thermal systems, including thermal hydraulics in nuclear reactors with a special focus on the Supercritical Water-Cooled Reactors(SCWRs) and the integration of thermal energy storage (TES) technology with High-Temperature Gas-Cooled type Small Modular Reactors (SMR-HTGRSs).
 ## Research Interest:
-- **Analysis of flow and heat transfer in channels:** circular tube, tube bundle
-- **Thermal Hydraulics:** SCWR, HTGR, SMR.
+- **Analysis of flow and heat transfer in channels with the supercritical fluids flowing:** circular tube, tube bundle
+- **Thermal Hydraulics:** SCWR, SMR-HTGR.
 - **CFD Simulation:** ANSYS FLUENT, COMSOL, START CMM+, OpenFoam, NekRS.
 - **Control system design:** feedback control, feedforward control.
-- **Numerical methods for coupling thermal hydraulics with neutronic:** MOOSE, Cardinal.
+- **Numerical methods for integration of energy storage with thermal and distributed generation systems: coupling TES technology with SMRs and renewable energy power plants:** CFD, MATLAB.
 
 {% include_relative _includes/news.md %}
 
