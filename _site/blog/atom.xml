@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2024-01-28T00:28:56.937Z</updated>
+  <updated>2024-02-14T21:43:54.538Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Rust Syntax Memo</title>
+    <link href="https://songchen.science/blog/posts/141d4edb/"/>
+    <id>https://songchen.science/blog/posts/141d4edb/</id>
+    <published>2024-02-14T21:25:28.000Z</published>
+    <updated>2024-02-14T21:43:54.538Z</updated>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    <category term="Rust" scheme="https://songchen.science/blog/categories/Rust/"/>
+    
+    <category term="CS Memo" scheme="https://songchen.science/blog/categories/Rust/CS-Memo/"/>
+    
+    
+    <category term="rust" scheme="https://songchen.science/blog/tags/rust/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Fortran -  Where we meet scientific and engineering applications</title>
     <link href="https://songchen.science/blog/posts/4b4b0500/"/>
     <id>https://songchen.science/blog/posts/4b4b0500/</id>
     <published>2024-01-28T00:13:03.000Z</published>
-    <updated>2024-01-28T00:28:56.937Z</updated>
+    <updated>2024-02-14T21:25:40.388Z</updated>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
@@ -430,7 +451,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;71694&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;24851&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
@@ -475,38 +496,6 @@
     <category term="plasma physics" scheme="https://songchen.science/blog/tags/plasma-physics/"/>
     
     <category term="bibliography" scheme="https://songchen.science/blog/tags/bibliography/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to create charts that adhere to the publication requirements using Matplotlib.</title>
-    <link href="https://songchen.science/blog/posts/92351494/"/>
-    <id>https://songchen.science/blog/posts/92351494/</id>
-    <published>2023-10-16T18:28:05.201Z</published>
-    <updated>2023-10-26T20:19:17.217Z</updated>
-    
-    
-    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://zhuanlan.zhihu.com/p/629348960&quot; target=&quot;_blank&quot;&gt;
-&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;
-从Nature到普通SCI：如何使用matplotlib绘制符合期刊要求的图表 &lt;/a&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://blog.songchen.science/en/How-to-create-charts-that-adhere-to-the-publication-requirements-using-Matplotlib/Solarize_Light2.png&quot; alt=&quot;Solarize_Light2:&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.songchen.science/en/How-to-create-charts-that-adhere-to-the-publication-requirements-using-Matplotlib/_classic_test_patch.png&quot; alt=&quot;_classic_test_patch:&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
-    
-    <category term="matplotlib" scheme="https://songchen.science/blog/categories/Python/matplotlib/"/>
-    
-    
-    <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
-    
-    <category term="matplotlib" scheme="https://songchen.science/blog/tags/matplotlib/"/>
-    
-    <category term="chart" scheme="https://songchen.science/blog/tags/chart/"/>
-    
-    <category term="data analysis" scheme="https://songchen.science/blog/tags/data-analysis/"/>
     
   </entry>
   
