@@ -1,5 +1,14 @@
 main:
 
+    - title: Development of a new criterion for predicting critical heat flux in rod bundles with supercritical water flowing upward
+    authors: <strong>Huirui Han</strong>, Chao Zhang, Jing Jiang
+    conference_short: J. Supercrit. Fluids
+    conference: The Journal of Supercritical Fluids
+    pdf: ./assets/files/JSF_2024.pdf
+    page: https://doi.org/10.1016/j.supflu.2024.106263
+    image: ./assets/files/JSF.jpg
+    notes: Published
+    
     - title: Construction of the Dynamic Model and Control System for the Canadian Supercritical Water–Cooled Reactor Power Plant
     authors: <strong>Huirui Han</strong>, Chao Zhang
     conference_short: Nucl. Technol.
@@ -14,44 +23,44 @@ main:
     conference_short: Prog. Nucl. Energy
     conference: Progress in Nuclear Energy
     pdf: ./assets/files/PNE_2023.pdf
-    page: https://www.sciencedirect.com/science/article/abs/pii/S0149197023003293?via%3Dihub
+    page: https://doi.org/10.1016/j.pnucene.2023.104894
     #bibtex: ./assets/files/multi.txt
     image: ./assets/files/PNE.jpg
     notes: Published
 
-  - title: Numerical simulation of the fluid flow and heat transfer of the supercritical water in the 64-element Canadian SCWR fuel bundle
+    - title: Numerical simulation of the fluid flow and heat transfer of the supercritical water in the 64-element Canadian SCWR fuel bundle
     authors: <strong>Huirui Han</strong>, Chao Zhang
     conference_short: J. Nucl. Sci. Technol.
     conference: Journal of Nuclear Science and Technology
     pdf: ./assets/files/JNST_2023.pdf
-    page: https://www.tandfonline.com/doi/full/10.1080/00223131.2023.2188269
+    page: https://doi.org/10.1080/00223131.2023.2188269
     image: ./assets/files/JNST.jpg
     notes: Published
 
-  - title: Numerical investigations of the effect of operation conditions on the heat transfer of the supercritical water in the Canadian SCWR fuel bundle
+    - title: Numerical investigations of the effect of operation conditions on the heat transfer of the supercritical water in the Canadian SCWR fuel bundle
     authors: <strong>Huirui Han</strong>, Chao Zhang
     conference_short: J. Supercrit. Fluids
     conference: The Journal of Supercritical Fluids
     pdf: ./assets/files/JSF2_2022.pdf
-    page: https://www.sciencedirect.com/science/article/pii/S0896844622002431?via%3Dihub
+    page: https://doi.org/10.1016/j.supflu.2022.105760
     image: ./assets/files/JSF2_2022.jpg
     notes: Published
 
-  - title: A Modified Turbulent Model for the Supercritical Water Flows in the Vertical Upward Channels
+    - title: A Modified Turbulent Model for the Supercritical Water Flows in the Vertical Upward Channels
     authors: <strong>Huirui Han</strong>, Chao Zhang
     conference_short: J. Supercrit. Fluids
     conference: The Journal of Supercritical Fluids
     pdf: ./assets/files/JSF1_2022.pdf
-    page: https://www.sciencedirect.com/science/article/pii/S0896844622001176?via%3Dihub
+    page: https://doi.org/10.1016/j.supflu.2022.105632
     image: ./assets/files/JSF1_2022.jpg
     notes: Published
 
-  - title: Numerical investigations of the effect of operation conditions on the heat transfer of the supercritical water in the Canadian SCWR fuel bundle
-    authors: <strong>Huirui Han</strong>, Chao Zhang
+    - title: Dynamic models and control system design for heated channels in a Canadian SCWR
+    authors: <strong>Huirui Han</strong>, Chao Zhang, Jing Jiang
     conference_short: Ann. Nucl. Energy
     conference: Annals of Nuclear Energy
     pdf: ./assets/files/ANE_2021.pdf
-    page: https://www.sciencedirect.com/science/article/pii/S0306454920306691?via%3Dihub
+    page: https://doi.org/10.1016/j.anucene.2020.107973
     image: ./assets/files/ANE.jpg
     notes: Published
 
