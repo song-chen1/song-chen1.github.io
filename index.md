@@ -6,8 +6,9 @@ layout: homepage
 
 <h2 style="margin: 60px 0px 10px;">Short Bio</h2>
 
-I am currently a Postdoctoral Associate [Western University](https://www.uwo.ca/), working under the mentorship of Dr. [Chao Zhang](https://www.eng.uwo.ca/mechanical/faculty/zhang_c/), Professor of [Department of Mechanical and Materials Engineering](https://www.eng.uwo.ca/mechanical/) and Dr. [Jing(Jin) Jiang](https://www.eng.uwo.ca/electrical/faculty/jiang_j/), Professor of [Department of Electrical and Computer Engineering](https://www.eng.uwo.ca/electrical/). My research involves numerical methods for investigations on thermal systems, including thermal hydraulics in nuclear reactors with a special focus on the Supercritical Water-Cooled Reactors(SCWRs) and the integration of thermal energy storage (TES) technology with High-Temperature Gas-Cooled type Small Modular Reactors (SMR-HTGRSs).
+I am currently a Postdoctoral Associate [Western University](https://www.uwo.ca/), working under the mentorship of Dr. [Chao Zhang](https://www.eng.uwo.ca/mechanical/faculty/zhang_c/), Professor of [Department of Mechanical and Materials Engineering](https://www.eng.uwo.ca/mechanical/) and Dr. [Jing(Jin) Jiang](https://www.eng.uwo.ca/electrical/faculty/jiang_j/), Professor of [Department of Electrical and Computer Engineering](https://www.eng.uwo.ca/electrical/). My recent research involves numerical methods for investigations on energy systems, including the application of supercritical fluids in sustainable energy systems and the integration of thermal energy storage (TES) technology with High-Temperature Gas-Cooled type Small Modular Reactors (SMR-HTGRSs).
 ## Research Interest:
+- **Supercritical fluids, Rod bundle, Thermal energy storage, Nuclear energy, Sustainable energy**
 - **Analysis of flow and heat transfer in channels with the supercritical fluids flowing:** circular tube, tube bundle
 - **Thermal Hydraulics based control system design:** SCWR, feedback control, feedforward control.
 - **CFD Simulation:** ANSYS FLUENT, COMSOL, START CMM+, OpenFoam, NekRS.
