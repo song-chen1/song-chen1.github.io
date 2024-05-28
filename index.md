@@ -10,12 +10,21 @@ I am currently a Physics Ph.D. candidate at [Spin-Ion Technologies](https://www.
 
 ## Research Interest:
 
-- **Ion-material Simulation:** SRIM, iradina, SDTrimSP, IMSIL, CORETO, TRIDYN, MARLOWE, RustBCA
+- **Ion-material Simulation:** SRIM, SDTrimSP, RustBCA
+- **Ion Irradiation/Implantation**
 - **Machine Learning:** fairness AI, penalization and augmentation methods
 - **E-field controlled magnetization** VCMA, Strain-mediated ME (Magnetoelectric) Effects, Straintronic, iontronic, E-filed induced spin reorientation, SOT.
 - **Micro-, Nanofabrication**
 - **Neuromorphic Computing** Neuromorphic Sensing and Perception, Hybrid Computing Systems, Brain-Inspired Robotics
-  {% include_relative _includes/news.md %}
+
+## Grants and Fellowships:
+- **Marie Skłodowska-Curie Actions (MSCA) Individual Fellowship**, 2020-2024, Early Stage Researcher (ESR), Grant Number: 864415
+
+## Professional Affiliations:
+- **Marie Curie Alumni Association Member**, 2021 - Present
+- **The European Magnetism Association (EMA) Member**, 2021 - Present
+
+{% include_relative _includes/news.md %}
 
 {% include_relative _includes/projects.md %}
 
