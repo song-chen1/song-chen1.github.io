@@ -8,6 +8,7 @@ main:
     page: https://www.sciencedirect.com/science/article/abs/pii/S0925400521013800?via%3Dihub
     bibtex: ./assets/files/multi.txt
     image: ./assets/files/multi.jpg
+    citation: sf-0AGoAAAAJ:u5HHmVD_uO8C
     notes: Published
 
   - title: Magneto‐Ionics in Annealed W/CoFeB/HfO2 Thin Films
@@ -18,6 +19,7 @@ main:
     page: https://www.sciencedirect.com/science/article/abs/pii/S0925400521013800?via%3Dihub
     bibtex: ./assets/files/magnetoionic.txt
     image: ./assets/files/admi202270196-gra-0001-m.jpg
+    citation: sf-0AGoAAAAJ:d1gkVwhDpl0C
     notes: Published
 
   - title: Flexible multielectrode arrays based electrochemical aptasensor for glycated human serum albumin detection
@@ -28,6 +30,17 @@ main:
     page: https://www.sciencedirect.com/science/article/abs/pii/S0925400523004458
     bibtex: ./assets/files/flexible.txt
     image: ./assets/files/1-s2.0-S0925400523004458-ga1_lrg.jpg
+    citation: sf-0AGoAAAAJ:qjMakFHDy7sC
+    notes: Published
+
+  - title: Controlling Magneto‐Ionics by Defect Engineering Through Light Ion Implantation
+    authors: Zheng Ma, Sofia Martins, Zhengwei Tan, Song Chen, Elmer Monteblanco, Maciej Liedke, Maik Butterling, Ahmed G Attallah, Eric Hirschmann, Andreas Wagner, Alberto Quintana, Eva Pellicer, Dafiné Ravelosona, Jordi Sort, Enric Menéndez
+    conference_short: AFM
+    conference: AFM
+    pdf: https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202312827
+    page: https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202312827
+    image: https://i1.rgstatic.net/publication/332591532_Advanced_Functional_Materials/links/5cbf3e40299bf120977abb00/largepreview.png
+    citation: sf-0AGoAAAAJ:Tyk-4Ss8FVUC
     notes: Published
 
   

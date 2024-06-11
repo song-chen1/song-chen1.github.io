@@ -349,8 +349,6 @@
       <a href="https://goindex.chen-song90.workers.dev/0:/AutoVA/" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Website</a>
       
       
-      <strong> <i style="color:#e74d3c">Non-Open Source</i></strong>
-      
       
     </div>
   </div>
@@ -364,6 +362,24 @@
 
 
 
+<!-- 
+This code generates a list of publications with various details such as title, authors, conference, links, and citation information. It uses a for loop to iterate over the publications data and dynamically generates the HTML markup for each publication.
+
+The publications are displayed in an ordered list (<ol>) with each publication represented as a list item (<li>). The list item contains a row (<div class="pub-row">) with two columns: one for the publication image and abbreviation, and the other for the publication details.
+
+The publication image is displayed using an <img> tag with the source specified by the "link.image" variable. The abbreviation of the conference is displayed as a badge using the <abbr> tag.
+
+The publication details such as title, authors, and conference are displayed within their respective <div> tags.
+
+The links associated with the publication (PDF, code, project page, BibTex) are displayed as buttons using the <a> tag with the appropriate href and target attributes. The buttons are styled using CSS classes.
+
+If there are any additional notes or other information associated with the publication, they are displayed using the <strong> and <i> tags.
+
+If the publication has citation information available, it is displayed within a nested for loop. The citation information includes the title, year, number of citations, and a link to the "Cited By" page.
+
+The code is written in Markdown and is intended to be used in a website or web page to display a list of publications.
+
+-->
 <h1 id="publications"></h1>
 
 <h2 style="margin: 30px 0px -15px;">Publications <temp style="font-size:15px;">[</temp><a href="https://scholar.google.com/citations?user=sf-0AGoAAAAJ&amp;hl=de" target="_blank" style="font-size:15px;">Google Scholar</a><temp style="font-size:15px;">]</temp><temp style="font-size:15px;">[</temp><a href="https://www.researchgate.net/profile/Song-Chen-60" target="_blank" style="font-size:15px;">ResearchGate</a><temp style="font-size:15px;">]</temp></h2>
@@ -371,6 +387,8 @@
 
 <div class="publications">
 <ol class="bibliography">
+
+
 
 
 
@@ -400,12 +418,31 @@
       <strong> <i style="color:#e74d3c">Published</i></strong>
       
       
+       
+      <strong> <a style="color:#e74d3c; font-weight:600"> • <i id="total_citation_mtl"></i><i style="color:#e74d3c; font-weight:600"> Citations </i></a></strong>
+        <script>
+            $(document).ready(function () {
+              var gsDataBaseUrl = 'https://raw.githubusercontent.com/song-chen1/song-chen1.github.io/'
+              
+              $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+                  var totalCitation = data['publications']['sf-0AGoAAAAJ:u5HHmVD_uO8C']['num_citations']
+                  document.getElementById('total_citation_mtl').innerHTML = totalCitation;
+                  var citationEles = document.getElementsByClassName('show_paper_citations')
+                  Array.prototype.forEach.call(citationEles, element => {
+                      var paperId = element.getAttribute('data')
+                      var numCitations = data['publications'][paperId]['num_citations']
+                      element.innerHTML = '| Citations: ' + numCitations;
+                  });
+              });
+            })
+        </script>
+      
     </div>
   </div>
 </div>
 </li>
-
 <br />
+
 
 
 
@@ -435,12 +472,31 @@
       <strong> <i style="color:#e74d3c">Published</i></strong>
       
       
+       
+      <strong> <a style="color:#e74d3c; font-weight:600"> • <i id="total_citation_mtl"></i><i style="color:#e74d3c; font-weight:600"> Citations </i></a></strong>
+        <script>
+            $(document).ready(function () {
+              var gsDataBaseUrl = 'https://raw.githubusercontent.com/song-chen1/song-chen1.github.io/'
+              
+              $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+                  var totalCitation = data['publications']['sf-0AGoAAAAJ:d1gkVwhDpl0C']['num_citations']
+                  document.getElementById('total_citation_mtl').innerHTML = totalCitation;
+                  var citationEles = document.getElementsByClassName('show_paper_citations')
+                  Array.prototype.forEach.call(citationEles, element => {
+                      var paperId = element.getAttribute('data')
+                      var numCitations = data['publications'][paperId]['num_citations']
+                      element.innerHTML = '| Citations: ' + numCitations;
+                  });
+              });
+            })
+        </script>
+      
     </div>
   </div>
 </div>
 </li>
-
 <br />
+
 
 
 
@@ -470,12 +526,89 @@
       <strong> <i style="color:#e74d3c">Published</i></strong>
       
       
+       
+      <strong> <a style="color:#e74d3c; font-weight:600"> • <i id="total_citation_mtl"></i><i style="color:#e74d3c; font-weight:600"> Citations </i></a></strong>
+        <script>
+            $(document).ready(function () {
+              var gsDataBaseUrl = 'https://raw.githubusercontent.com/song-chen1/song-chen1.github.io/'
+              
+              $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+                  var totalCitation = data['publications']['sf-0AGoAAAAJ:qjMakFHDy7sC']['num_citations']
+                  document.getElementById('total_citation_mtl').innerHTML = totalCitation;
+                  var citationEles = document.getElementsByClassName('show_paper_citations')
+                  Array.prototype.forEach.call(citationEles, element => {
+                      var paperId = element.getAttribute('data')
+                      var numCitations = data['publications'][paperId]['num_citations']
+                      element.innerHTML = '| Citations: ' + numCitations;
+                  });
+              });
+            })
+        </script>
+      
     </div>
   </div>
 </div>
 </li>
-
 <br />
+
+
+
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    <img src="https://i1.rgstatic.net/publication/332591532_Advanced_Functional_Materials/links/5cbf3e40299bf120977abb00/largepreview.png" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+            <abbr class="badge">AFM</abbr>
+  </div>
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+      <div class="title"><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202312827">Controlling Magneto‐Ionics by Defect Engineering Through Light Ion Implantation</a></div>
+      <div class="author">Zheng Ma, Sofia Martins, Zhengwei Tan, Song Chen, Elmer Monteblanco, Maciej Liedke, Maik Butterling, Ahmed G Attallah, Eric Hirschmann, Andreas Wagner, Alberto Quintana, Eva Pellicer, Dafiné Ravelosona, Jordi Sort, Enric Menéndez</div>
+      <div class="periodical"><em>AFM</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202312827" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+      
+       
+      <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202312827" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
+      
+      
+       
+      <strong> <i style="color:#e74d3c">Published</i></strong>
+      
+      
+       
+      <strong> <a style="color:#e74d3c; font-weight:600"> • <i id="total_citation_mtl"></i><i style="color:#e74d3c; font-weight:600"> Citations </i></a></strong>
+        <script>
+            $(document).ready(function () {
+              var gsDataBaseUrl = 'https://raw.githubusercontent.com/song-chen1/song-chen1.github.io/'
+              
+              $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+                  var totalCitation = data['publications']['sf-0AGoAAAAJ:Tyk-4Ss8FVUC']['num_citations']
+                  document.getElementById('total_citation_mtl').innerHTML = totalCitation;
+                  var citationEles = document.getElementsByClassName('show_paper_citations')
+                  Array.prototype.forEach.call(citationEles, element => {
+                      var paperId = element.getAttribute('data')
+                      var numCitations = data['publications'][paperId]['num_citations']
+                      element.innerHTML = '| Citations: ' + numCitations;
+                  });
+              });
+            })
+        </script>
+      
+    </div>
+  </div>
+</div>
+</li>
+<br />
+
+
+
+<!--
+This code generates a list of publications with various details such as title, authors, conference, links, and citation information. It uses a for loop to iterate over the publications data and dynamically generates the HTML markup for each publication.
+
+
 
 
 
@@ -484,7 +617,7 @@
 
 <h1 id="conferences"></h1>
 
-<h2 style="margin: 30px 0px -15px;">Conferences &amp; Events<temp style="font-size:15px;"></temp></h2>
+<h2 style="margin: 30px 0px -15px;">Conferences & Events<temp style="font-size:15px;"></temp></h2>
 
 <div class="publications">
 <ol class="bibliography">
@@ -494,7 +627,7 @@
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="./assets/img/autova.png" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+    <img src="./assets/img/autova.png" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
             <abbr class="badge">BeMAGIC</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -520,14 +653,14 @@
 </div>
 </li>
 
-<br />
+<br>
 
 
 
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="./assets/files/JEMS2023_2.jpg" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+    <img src="./assets/files/JEMS2023_2.jpg" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
             <abbr class="badge">JEMS</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -555,14 +688,14 @@
 </div>
 </li>
 
-<br />
+<br>
 
 
 
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="./assets/img/Group_picture.jpg" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+    <img src="./assets/img/Group_picture.jpg" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
             <abbr class="badge">BeMAGIC</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -588,14 +721,14 @@
 </div>
 </li>
 
-<br />
+<br>
 
 
 
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="./assets/img/eth.jpg" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+    <img src="./assets/img/eth.jpg" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
             <abbr class="badge">BeMAGIC</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -619,14 +752,14 @@
 </div>
 </li>
 
-<br />
+<br>
 
 
 
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="./assets/img/joint.jpg" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+    <img src="./assets/img/joint.jpg" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
             <abbr class="badge">BeMAGIC</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -650,14 +783,14 @@
 </div>
 </li>
 
-<br />
+<br>
 
 
 
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="./assets/img/Portada-cc58d654.jpg" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+    <img src="./assets/img/Portada-cc58d654.jpg" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
             <abbr class="badge">BeMAGIC</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -681,14 +814,14 @@
 </div>
 </li>
 
-<br />
+<br>
 
 
 
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="./assets/img/lF0ulCNA.jpeg" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+    <img src="./assets/img/lF0ulCNA.jpeg" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
             <abbr class="badge">BeMAGIC</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -714,7 +847,7 @@
 </div>
 </li>
 
-<br />
+<br>
 
 
 
@@ -733,7 +866,7 @@
 <br />
 <!-- <strong>Phone:</strong> </p> -->
 <!-- <p style="text-align: left;"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFJTf6Nq_juYt4YNHpMSA5JOIDjsyAG3BjNEWdyAJfhfO11w/viewform?embedded=true&hl=en" width="640" scrolling="no" height="780" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></p> -->
-</p></ol></div></ol></div></ol></div>
+</ol></div></ol></div>
 
 
       <br>
