@@ -59,23 +59,25 @@ The code is written in Markdown and is intended to be used in a website or web p
       {{ link.others }}
       {% endif %}
       {% if link.citation %} 
-      <strong> <a style="color:#e74d3c; font-weight:600" > • <i id="total_citation_mtl"></i><i style="color:#e74d3c; font-weight:600"> Citations </i></a></strong>
-        <script>
-            $(document).ready(function () {
-              var gsDataBaseUrl = 'https://raw.githubusercontent.com/song-chen1/song-chen1.github.io/'
-              
-              $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
-                  var totalCitation = data['publications']['{{ link.citation }}']['num_citations']
-                  document.getElementById('total_citation_mtl').innerHTML = totalCitation;
-                  var citationEles = document.getElementsByClassName('show_paper_citations')
-                  Array.prototype.forEach.call(citationEles, element => {
-                      var paperId = element.getAttribute('data')
-                      var numCitations = data['publications'][paperId]['num_citations']
-                      element.innerHTML = '| Citations: ' + numCitations;
-                  });
-              });
-            })
-        </script>
+      <strong> <a style="color:#e74d3c; font-weight:600"> • <i class="total_citation_mtl" data-citation="{{ link.citation }}"></i> <i style="color:#e74d3c; font-weight:600"> Citations </i></a></strong>
+      <script>
+        $(document).ready(function () {
+            var gsDataBaseUrl = 'https://raw.githubusercontent.com/song-chen1/song-chen1.github.io/'
+            
+            $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+                var citationEles = document.getElementsByClassName('total_citation_mtl');
+                Array.prototype.forEach.call(citationEles, function(element) {
+                    var citationKey = element.getAttribute('data-citation');
+                    if (data['publications'][citationKey]) {
+                        var numCitations = data['publications'][citationKey]['num_citations'];
+                        element.innerHTML = numCitations;
+                    } else {
+                        element.innerHTML = 'N/A';
+                    }
+                });
+            });
+        });
+      </script>
       {% endif %}
     </div>
   </div>
