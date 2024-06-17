@@ -24,6 +24,7 @@ I am currently a Physics Ph.D. candidate at [Spin-Ion Technologies](https://www.
 - **German Certificate**, 2011 - 2012, [Nanjing Univeristy](https://www.nju.edu.cn/), China
 - **Coursera Certificate**, 2024 - present, [Coursera](https://www.coursera.org/), Online
   - [Business English](https://blog.songchen.science/documents/coursera/6B4CVLYK9ASD.pdf)
+  - [Google Project Management](https://blog.songchen.science/documents/coursera/GPM.pdf)
 
 
 ## Grants and Fellowships
@@ -32,6 +33,10 @@ I am currently a Physics Ph.D. candidate at [Spin-Ion Technologies](https://www.
 ## Professional Affiliations
 - **Marie Curie Alumni Association Member**, 2021 - Present
 - **The European Magnetism Association (EMA) Member**, 2021 - Present
+
+## Certificates
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="343635de-7d0f-43ea-922d-432566a4b1e5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 {% include_relative _includes/news.md %}
 
@@ -42,3 +47,4 @@ I am currently a Physics Ph.D. candidate at [Spin-Ion Technologies](https://www.
 {% include_relative _includes/conference.md %}
 
 {% include_relative _includes/contact.md %}
+
