@@ -155,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/lib/hbe.shrink</loc>
+    <loc>https://songchen.science/blog/zh-CN/lib/hbe.surge</loc>
     
     <lastmod>2023-10-12</lastmod>
     
@@ -164,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/lib/hbe.surge</loc>
+    <loc>https://songchen.science/blog/zh-CN/lib/hbe.up</loc>
     
     <lastmod>2023-10-12</lastmod>
     
@@ -182,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/lib/hbe.xray</loc>
+    <loc>https://songchen.science/blog/zh-CN/lib/hbe.shrink</loc>
     
     <lastmod>2023-10-12</lastmod>
     
@@ -191,7 +191,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/lib/hbe.up</loc>
+    <loc>https://songchen.science/blog/zh-CN/lib/hbe.xray</loc>
     
     <lastmod>2023-10-12</lastmod>
     
@@ -285,41 +285,6 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/tags/encryptAsDiary/</loc>
-    <lastmod>2025-02-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/tags/Hexo/</loc>
-    <lastmod>2025-02-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/tags/Documentation/</loc>
-    <lastmod>2025-02-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/tags/Python/</loc>
-    <lastmod>2025-02-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/tags/Pyenv/</loc>
-    <lastmod>2025-02-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://songchen.science/blog/zh-CN/tags/python-tools/</loc>
     <lastmod>2025-02-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -341,7 +306,42 @@
   </url>
   
   <url>
+    <loc>https://songchen.science/blog/zh-CN/tags/Python/</loc>
+    <lastmod>2025-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://songchen.science/blog/zh-CN/tags/Obsidian/</loc>
+    <lastmod>2025-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/tags/encryptAsDiary/</loc>
+    <lastmod>2025-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/tags/Hexo/</loc>
+    <lastmod>2025-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/tags/Documentation/</loc>
+    <lastmod>2025-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/tags/Pyenv/</loc>
     <lastmod>2025-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -392,21 +392,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Data-science/</loc>
-    <lastmod>2025-02-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Machine-learning/</loc>
-    <lastmod>2025-02-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Python/Bibliography/</loc>
+    <loc>https://songchen.science/blog/zh-CN/categories/Obsidian/</loc>
     <lastmod>2025-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -420,7 +406,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Python/Configuration/</loc>
+    <loc>https://songchen.science/blog/zh-CN/categories/Data-science/</loc>
     <lastmod>2025-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -434,7 +420,14 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Obsidian/</loc>
+    <loc>https://songchen.science/blog/zh-CN/categories/Python/Bibliography/</loc>
+    <lastmod>2025-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/categories/Python/Python-basic/</loc>
     <lastmod>2025-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -448,7 +441,7 @@
   </url>
   
   <url>
-    <loc>https://songchen.science/blog/zh-CN/categories/Python/Python-basic/</loc>
+    <loc>https://songchen.science/blog/zh-CN/categories/Machine-learning/</loc>
     <lastmod>2025-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -463,6 +456,13 @@
   
   <url>
     <loc>https://songchen.science/blog/zh-CN/categories/Documentation/Hexo/</loc>
+    <lastmod>2025-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://songchen.science/blog/zh-CN/categories/Python/Configuration/</loc>
     <lastmod>2025-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
