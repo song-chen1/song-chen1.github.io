@@ -1,25 +1,11 @@
 main:
+
   - title: Effect of Helium Ion Irradiation on Spin and Magnetic Properties of Ta/CoFeB Structures
     project_short: Research project
     project: This research investigates he effects of Helium ion irradiation on the spin and magnetic properties of Ta/CoFeB structures. The samples of Ta/CoFeB with different thicknesses of the Ta layer are deposited and annealed for PMA and then irradiated by different doses. The different thicknesses of Ta lead to different properties in microscopic, and the dose-dependent effects can show the effects of the He ion irradiation.
     pdf: https://tohoku.repo.nii.ac.jp/record/2001826/files/240326-LIAO-6293-1.pdf
     web: https://tohoku.repo.nii.ac.jp/record/2001826/files/240326-LIAO-6293-1.pdf
     notes: Responsible for the design and implementation of the experiment, and BCA simulations.
-
-# projects:
-#   - name: "基于机器学习的图像识别系统"
-#     description: "开发一个利用深度学习算法进行图像识别的系统，用于自动分类和标记图像。"
-#     responsibilities:
-#       - "设计和实现深度学习模型"
-#       - "处理和标注数据集"
-#       - "进行模型训练和优化"
-#     technologies: 
-#       - "Python, TensorFlow, Keras"
-#     outcomes: 
-#       - "发表论文《基于卷积神经网络的图像识别》在国际会议上"
-#       - "系统准确率达到95%"
-#     duration: "2020-01 至 2021-06"
-#     team: "与3名研究生合作"
 
   - title: I-V Measurement System
     authors: Song Chen
