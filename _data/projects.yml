@@ -5,7 +5,7 @@ main:
     project: This research investigates he effects of Helium ion irradiation on the spin and magnetic properties of Ta/CoFeB structures. The samples of Ta/CoFeB with different thicknesses of the Ta layer are deposited and annealed for PMA and then irradiated by different doses. The different thicknesses of Ta lead to different properties in microscopic, and the dose-dependent effects can show the effects of the He ion irradiation.
     pdf: https://tohoku.repo.nii.ac.jp/record/2001826/files/240326-LIAO-6293-1.pdf
     web: https://tohoku.repo.nii.ac.jp/record/2001826/files/240326-LIAO-6293-1.pdf
-    image: https://blog.songchen.science/images/I-V/GUI.png
+    image: https://blog.songchen.science/images/plasma.jpg
     notes: Responsible for the design and implementation of the experiment, and BCA simulations.
 
   - title: I-V Measurement System
