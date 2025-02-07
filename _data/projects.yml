@@ -33,6 +33,15 @@ main:
     pdf: https://goindex.chen-song90.workers.dev/0:/AutoVA/
     web: https://goindex.chen-song90.workers.dev/0:/AutoVA/
     image: ./assets/img/autova.png
-    notes: 
+    notes:
+
+  - title: Tuning of perpendicular magnetic anisotropy in Bi-substituted yttrium iron garnet films by He+ ion irradiation
+    authors: Sreeveni Das, Rhodri Mansell, Lukáš Flajšman, Lide Yao, Johannes W van der Jagt, Song Chen, Dafiné Ravelosona, Liza Herrera Diez, Sebastiaan van Dijken
+    project_short: Research project
+    project: This research investigates the effects of He+ ion irradiation on the perpendicular magnetic anisotropy (PMA) of Bi-substituted yttrium iron garnet (Bi:YIG) films. The samples are irradiated with different doses of He+ ions, and the effects on the magnetic properties are studied. The results show that the PMA can be tuned by He+ ion irradiation, which is important for the development of spintronic devices.
+    pdf: https://arxiv.org/pdf/2410.04849
+    web: https://arxiv.org/pdf/2410.04849
+    image: https://blog.songchen.science/images/plasma.jpg
+    notes: Responsible for the design and implementation of the experiment, and BCA simulations.
 
 
