@@ -44,4 +44,11 @@ main:
     image: https://blog.songchen.science/images/plasma.jpg
     notes: Responsible for the design and implementation of the experiment, and BCA simulations.
 
-
+  - title: Controlling Magneto‐Ionics by Defect Engineering Through Light Ion Implantation
+    authors: Zheng Ma, Sofia Martins, Zhengwei Tan, Song Chen, Elmer Monteblanco, Maciej Liedke, Maik Butterling, Ahmed G Attallah, Eric Hirschmann, Andreas Wagner, Alberto Quintana, Eva Pellicer, Dafiné Ravelosona, Jordi Sort, Enric Menéndez
+    project_short: Research project
+    project: This research investigates the effects of light ion implantation on the magneto-ionic effect in the Co3O4 thin films.
+    pdf: https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202312827
+    web: https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202312827
+    image: https://blog.songchen.science/images/plasma.jpg
+    notes: Responsible for the design and implementation of the experiment, and BCA simulations.
