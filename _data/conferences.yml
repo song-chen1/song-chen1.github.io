@@ -1,4 +1,13 @@
 main:
+  - title: MCAA Annual Conference 2025
+    authors: Song Chen
+    conference_short: Marie Curie
+    conference: MCAA Annual Conference 2025
+    pdf: 
+    web: 
+    image: 
+    notes: Light talk about AutoVA
+
   - title: BeMAGIC Final Event - Post Event
     authors: Song Chen
     conference_short: BeMAGIC
