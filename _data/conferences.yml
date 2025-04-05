@@ -5,7 +5,7 @@ main:
     conference: MCAA Annual Conference 2025
     pdf: https://blog.songchen.science/assets/files/MCAA.pdf
     web: 
-    image: 
+    image: https://www.mariecuriealumni.eu/themes/on/images/logo.jpg
     notes: Light talk about AutoVA
 
   - title: BeMAGIC Final Event - Post Event
