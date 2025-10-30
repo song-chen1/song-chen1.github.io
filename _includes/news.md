@@ -4,7 +4,7 @@
 
 <ul>
 
-
+<li><strong>[Oct. 2025]</strong> My latest work on the ion irradiation, implantation and magneto-ionics with the title <span style="color:#e74d3c"><a href="https://confcats-siteplex.s3.us-east-1.amazonaws.com/magnetism25/MMM_2025_Program_Book_Desktop_Optimized_b91d7ca5e1.pdf">"Boosting magneto-ionics in Ta/CoFeB/Pt/MgO/HfO2 by interfacial atomic intermixing through Ne+ irradiation"</a></span> has been presented by Alessandro Cataldo representing me at the conference of MMM2025.</li>
 <li><strong>[Jun. 2024]</strong> Automating the generation of publication based on the Googlescholar profile, as shown in the  <span style="color:#e74d3c"><a href="https://github.com/song-chen1/song-chen1.github.io">Github repository</a></span>.</li>
 <li><strong>[DEC. 2023]</strong> The <span style="color:#e74d3c"><a href="https://goindex.chen-song90.workers.dev">Googledrive index</a></span> has been now integrated to the webblog.</li>
 <li><strong>[DEC. 2023]</strong> The <span style="color:#e74d3c"><a href="https://songchen.science/blog/gallery/">Hitchhiker's Gallery</a></span> has been released, thanks to anzai's <span style="color:#e74d3c"><a href="https://github.com/anzai249/easy-masonry/tree/main">work: easy-masonry</a></span> </li>
