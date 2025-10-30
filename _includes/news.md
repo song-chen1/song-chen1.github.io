@@ -10,7 +10,7 @@
 <li><strong>[DEC. 2023]</strong> The <span style="color:#e74d3c"><a href="https://songchen.science/blog/gallery/">Hitchhiker's Gallery</a></span> has been released, thanks to anzai's <span style="color:#e74d3c"><a href="https://github.com/anzai249/easy-masonry/tree/main">work: easy-masonry</a></span> </li>
 <li><strong>[NOV. 2023]</strong> The <span style="color:#e74d3c"><a href="https://bemagic-etn.eu/news/80-bemagic-final-event">Final Event of the BeMAGIC project</a></span> will take place in the Universitat Autònoma de Barcelona, Spain, on 14-15 December. </li>
 <li><strong>[NOV. 2023]</strong> AHEMS: <span style="color:#e74d3c"><a href="https://hitchhiker.azurewebsites.net/?/AHEMS/">Anomalous Hall Effect Measurement System</a></span> has been released.</li>
-<div id="newsmore" style="display:none">
+<div id="newsmore" style="display:block">
 <li><strong>[NOV. 2023]</strong> <span style="color:#e74d3c"><a href="https://hitchhiker.azurewebsites.net/?/I-V/">I-V Measurement System</a></span> has been released.</li>
 <li><strong>[OCT. 2023]</strong> The Tech Blog <span style="color:#e74d3c"><a href="https://songchen.science/blog/">"The Hitchhiker's Guide to Galaxy"</a></span> has now integrated an <span style="color:#e74d3c"><a href="https://hitchhiker.azurewebsites.net">onedrive file list program</a></span> implemented by calling API.</li>
 <li><strong>[OCT. 2023]</strong> The Tech Blog <span style="color:#e74d3c"><a href="https://songchen.science/blog/">"The Hitchhiker's Guide to Galaxy"</a></span> has now a <span style="color:#e74d3c"><a href="https://songchen.science/blog/zh-CN">chinese version</a></span>. The content inside can be separately edited. Later maybe a german version.</li>
