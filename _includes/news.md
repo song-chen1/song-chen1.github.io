@@ -10,7 +10,18 @@
 <li><strong>[DEC. 2023]</strong> The <span style="color:#e74d3c"><a href="https://songchen.science/blog/gallery/">Hitchhiker's Gallery</a></span> has been released, thanks to anzai's <span style="color:#e74d3c"><a href="https://github.com/anzai249/easy-masonry/tree/main">work: easy-masonry</a></span> </li>
 <li><strong>[NOV. 2023]</strong> The <span style="color:#e74d3c"><a href="https://bemagic-etn.eu/news/80-bemagic-final-event">Final Event of the BeMAGIC project</a></span> will take place in the Universitat Autònoma de Barcelona, Spain, on 14-15 December. </li>
 <li><strong>[NOV. 2023]</strong> AHEMS: <span style="color:#e74d3c"><a href="https://hitchhiker.azurewebsites.net/?/AHEMS/">Anomalous Hall Effect Measurement System</a></span> has been released.</li>
-<div id="newsmore" style="display:block">
+
+</ul>
+
+<div id="showMoreContainer">
+    <ul>
+        <li><a href="javascript:void(0)" onclick="toggle_vis('newsmore')">Show more...</a></li>
+    </ul>
+</div>
+
+<div id="newsmore" style="display:none;">
+<ul>
+
 <li><strong>[NOV. 2023]</strong> <span style="color:#e74d3c"><a href="https://hitchhiker.azurewebsites.net/?/I-V/">I-V Measurement System</a></span> has been released.</li>
 <li><strong>[OCT. 2023]</strong> The Tech Blog <span style="color:#e74d3c"><a href="https://songchen.science/blog/">"The Hitchhiker's Guide to Galaxy"</a></span> has now integrated an <span style="color:#e74d3c"><a href="https://hitchhiker.azurewebsites.net">onedrive file list program</a></span> implemented by calling API.</li>
 <li><strong>[OCT. 2023]</strong> The Tech Blog <span style="color:#e74d3c"><a href="https://songchen.science/blog/">"The Hitchhiker's Guide to Galaxy"</a></span> has now a <span style="color:#e74d3c"><a href="https://songchen.science/blog/zh-CN">chinese version</a></span>. The content inside can be separately edited. Later maybe a german version.</li>
@@ -23,5 +34,19 @@
 <li><strong>[DEC. 2022]</strong> Secondment at the  <a href="https://www.aalto.fi/en/department-of-applied-physics">department Applied Physics of Aalto University</a>, in collarboartion with professor <span style="color:#e74d3c"><a href="https://www.aalto.fi/en/people/sebastiaan-van-dijken">Sebastiaan van Dijken.</a></span></li>
 <li><strong>[JUN. 2022]</strong> Secondment at the  <a href="https://www.aalto.fi/en/department-of-applied-physics">department Applied Physics of Aalto University</a>, in collarboartion with professor <span style="color:#e74d3c"><a href="https://www.aalto.fi/en/people/sebastiaan-van-dijken">Sebastiaan van Dijken.</a></span></li>
 <li><strong>[JUN. 2021]</strong> Join the <a href="https://www.spin-ion.com/">Spin-Ion Technologies</a>, involved in the <a href="https://bemagic-etn.eu/">BeMAGIC</a> program (Marie Sklodowska-Curie European Training Network).</li>
-</div>
 </ul>
+</div>
+ 
+
+<script>
+function toggle_vis(id) {
+    // Show the hidden news div
+    var e = document.getElementById(id);
+    if(e.style.display == 'none') {
+        e.style.display = 'block';
+    }
+    
+    // Hide the "Show more" button after clicking
+    document.getElementById('showMoreContainer').style.display = 'none';
+}
+</script>
