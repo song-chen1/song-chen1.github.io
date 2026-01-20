@@ -15,7 +15,7 @@ main:
     conference: BeMAGIC Final Event
     pdf: https://bemagic-etn.eu/images/files2023/BeMAGIC%20Final%20Event%20information%201.pdf
     web: https://bemagic-etn.eu/news/81-bemagic-final-event-post-event
-    image: https://blog.songchen.science/assets/img/autova.png
+    image: ./assets/img/autova.png
     notes: 
 
   - title: Reversible and Non-volatile Magneto-ionic effect in W-CoFeB-MgO-HfO2 ultra-thin films with Perpendicular Anisotropy
@@ -24,7 +24,7 @@ main:
     conference: 13th Joint European Magnetic Symposia
     pdf: ./assets/files/JEMS2023_Song.pdf
     web: https://www.jems2023.es/
-    image: https://blog.songchen.science/assets/files/JEMS2023_2.jpg
+    image: ./assets/files/JEMS2023_2.jpg
     notes: Accepted
 
   - title: BeMAGIC CONFERENCE IN TORINO – POST EVENT
