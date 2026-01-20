@@ -286,11 +286,11 @@
     
     
     
-    <category term="Webblog" scheme="https://songchen.science/blog/zh-CN/categories/Webblog/"/>
-    
     <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/"/>
     
     <category term="Hexo" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/Hexo/"/>
+    
+    <category term="Webblog" scheme="https://songchen.science/blog/zh-CN/categories/Webblog/"/>
     
     
     <category term="Hexo" scheme="https://songchen.science/blog/zh-CN/tags/Hexo/"/>
