@@ -4,15 +4,15 @@ main:
     project_short: Google Project Management
     project: This is a professional certificate program offered by Google on Coursera.
     # project: This research investigates he effects of Helium ion irradiation on the spin and magnetic properties of Ta/CoFeB structures. The samples of Ta/CoFeB with different thicknesses of the Ta layer are deposited and annealed for PMA and then irradiated by different doses. The different thicknesses of Ta lead to different properties in microscopic, and the dose-dependent effects can show the effects of the He ion irradiation.
-    pdf: https://blog.songchen.science//assets/files/googleproject.pdf
-    web: https://blog.songchen.science//assets/files/googleproject.pdf
-    image: https://blog.songchen.science//assets/files/googleproject-2.jpg
+    pdf: https://blog.songchen.science/assets/files/googleproject.pdf
+    web: https://blog.songchen.science/assets/files/googleproject.pdf
+    image: https://blog.songchen.science/assets/files/googleproject-2.jpg
     notes: 
 
   - title: "PyTorch: Advanced Architectures and Deployment"
     project_short: Deeplearning AI
     project: This is a professional certificate program offered by Deeplearning AI on Coursera.
-    pdf: https://blog.songchen.science//assets/files/Coursera Document.pdf
-    web: https://blog.songchen.science//assets/files/Coursera Document.pdf
-    image: https://blog.songchen.science//assets/files/coursera1.png
+    pdf: https://blog.songchen.science/assets/files/Coursera Document.pdf
+    web: https://blog.songchen.science/assets/files/Coursera Document.pdf
+    image: https://blog.songchen.science/assets/files/coursera1.png
     notes:
