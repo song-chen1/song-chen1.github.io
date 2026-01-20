@@ -39,41 +39,45 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
 
 <div style="
     display: flex;
-    flex-wrap: nowrap;
-    gap: 16px;
     align-items: center;
+    gap: 6px;               /* tiny gao */
 ">
 
-  <!-- Certificate 1: Credly badge -->
-  <div>
-    <div 
-      data-iframe-width="150" 
-      data-iframe-height="270" 
-      data-share-badge-id="343635de-7d0f-43ea-922d-432566a4b1e5" 
+  <!-- Credly -->
+  <div style="
+      height: 260px;
+      display: flex;
+      align-items: center;
+  ">
+    <div
+      data-iframe-width="150"
+      data-iframe-height="260"
+      data-share-badge-id="343635de-7d0f-43ea-922d-432566a4b1e5"
       data-share-badge-host="https://www.credly.com">
     </div>
-    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+    <script async src="//cdn.credly.com/assets/utilities/embed.js"></script>
   </div>
 
-  <!-- Certificate 2: Coursera -->
-  <div>
+  <!-- Coursera -->
+  <div style="
+      height: 260px;
+      display: flex;
+      align-items: center;
+  ">
     <a href="https://www.coursera.org/account/accomplishments/verify/D5J9X83ZP43S"
-       target="_blank"
-       style="text-decoration: none; border: none;">
+       target="_blank">
       <img
         src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S.jpeg"
-        alt="Coursera Certificate"
         style="
-          height: 270px;
+          height: 260px;
           width: auto;
           display: block;
-          border: none;
-          box-shadow: none;
         ">
     </a>
   </div>
 
 </div>
+
 
 
 
