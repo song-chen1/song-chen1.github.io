@@ -35,9 +35,9 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
 - **Marie Curie Alumni Association Member**, 2021 - Present
 - **The European Magnetism Association (EMA) Member**, 2021 - Present
 
-{% include_relative _includes/certificate.md %}
-
 {% include_relative _includes/news.md %}
+
+{% include_relative _includes/certificate.md %}
 
 {% include_relative _includes/projects.md %}
 
