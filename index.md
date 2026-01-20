@@ -39,14 +39,11 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="343635de-7d0f-43ea-922d-432566a4b1e5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
-<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="343635de-7d0f-43ea-922d-432566a4b1e5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-
-<div style="margin-top: 20px; margin-bottom: 20px;">
-  <strong>English for Science, Technology, Engineering, and Mathematics</strong><br>
-  <a href="https://www.coursera.org/account/accomplishments/verify/D5J9X83ZP43S" target="_blank">
+<div style="display: inline-flex; align-items: center; justify-content: center; width: 150px; height: 270px; vertical-align: top;">
+  <a href="https://www.coursera.org/account/accomplishments/verify/D5J9X83ZP43S" target="_blank" style="text-decoration: none;">
     <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S.jpeg" 
-         alt="Coursera Certificate: English for STEM" 
-         style="width: 100%; max-width: 500px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 4px; margin-top: 10px;">
+         alt="Coursera Certificate" 
+         style="width: 150px; border: none; box-shadow: none; display: block;">
   </a>
 </div>
 
