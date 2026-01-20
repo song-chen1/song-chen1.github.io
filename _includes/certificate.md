@@ -5,7 +5,7 @@
 <div class="publications">
 <ol class="bibliography">
 
-{% for link in site.data.projects.main %}
+{% for link in site.data.certificate.main %}
 
 <li>
 <div class="pub-row">
