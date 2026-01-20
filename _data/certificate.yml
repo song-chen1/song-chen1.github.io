@@ -5,6 +5,6 @@ main:
     project: This is a professional certificate program offered by Google on Coursera. It covers the
     # project: This research investigates he effects of Helium ion irradiation on the spin and magnetic properties of Ta/CoFeB structures. The samples of Ta/CoFeB with different thicknesses of the Ta layer are deposited and annealed for PMA and then irradiated by different doses. The different thicknesses of Ta lead to different properties in microscopic, and the dose-dependent effects can show the effects of the He ion irradiation.
     pdf: ./assets/files/googleproject.pdf
-    web: ./assets/files/googleproject.png
+    web: ./assets/files/googleproject-2.jpg
     image: ./assets/files/googleproject.pdf
     notes: 
