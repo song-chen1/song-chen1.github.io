@@ -9,7 +9,7 @@ main:
     image: https://blog.songchen.science//assets/files/googleproject-2.jpg
     notes: 
 
-  - title: PyTorch: Advanced Architectures and Deployment
+  - title: "PyTorch: Advanced Architectures and Deployment"
     project_short: Deeplearning AI
     project: This is a professional certificate program offered by Deeplearning AI on Coursera.
     pdf: https://blog.songchen.science//assets/files/Coursera Document.pdf
