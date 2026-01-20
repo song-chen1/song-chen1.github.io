@@ -37,18 +37,18 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
 
 ## Certificates
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+<div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center;">
 
   <div>
       <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="343635de-7d0f-43ea-922d-432566a4b1e5" data-share-badge-host="https://www.credly.com"></div>
       <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
   </div>
 
-  <div style="height: 270px; display: flex; align-items: center;">
-      <a href="https://www.coursera.org/account/accomplishments/verify/D5J9X83ZP43S" target="_blank" style="text-decoration: none; border: none; display: block; height: 100%;">
+  <div>
+      <a href="https://www.coursera.org/account/accomplishments/verify/D5J9X83ZP43S" target="_blank" style="text-decoration: none; border: none;">
           <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S.jpeg" 
                alt="Coursera Certificate" 
-               style="height: 100%; width: auto; border: none; box-shadow: none; margin: 0;">
+               style="height: 270px; width: auto; border: none; box-shadow: none; display: block;">
       </a>
   </div>
 
