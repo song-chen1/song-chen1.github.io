@@ -40,10 +40,10 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
 <div style="
     display: flex;
     align-items: center;
-    gap: 0px;               /* tiny gao */
+    gap: 6px;   /* tiny gao */
 ">
 
-  <!-- Credly -->
+  <!-- Google / Credly certificate -->
   <div style="
       height: 260px;
       display: flex;
@@ -58,25 +58,41 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
     <script async src="//cdn.credly.com/assets/utilities/embed.js"></script>
   </div>
 
-  <!-- Coursera -->
+  <!-- Coursera: subtitle + image -->
   <div style="
-      height: 260px;
+      height: 260px;                /* SAME total height */
       display: flex;
-      align-items: center;
-  ">
+      flex-direction: column;
+      justify-content: center;      /* centers title+image as a unit */
+      align-items: center;">
+
+    <!-- subtitle -->
+    <div style="
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 4px;
+        line-height: 1;
+    ">
+      DeepLearning.AI · Coursera
+    </div>
+
+    <!-- certificate image -->
     <a href="https://www.coursera.org/account/accomplishments/verify/D5J9X83ZP43S"
        target="_blank">
       <img
         src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S.jpeg"
         style="
-          height: 260px;
+          height: 230px;   /* 260 - title space */
           width: auto;
           display: block;
         ">
     </a>
+
   </div>
 
 </div>
+
+
 
 
 
