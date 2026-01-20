@@ -40,13 +40,18 @@
 
 <script>
 function toggle_vis(id) {
-    // Show the hidden news div
     var e = document.getElementById(id);
+    var btn = document.getElementById('toggleBtn');
+    
+    // If hidden, show it and change text to "Show less"
     if(e.style.display == 'none') {
         e.style.display = 'block';
+        btn.innerHTML = 'Show less';
+    } 
+    // If visible, hide it and change text back to "Show more..."
+    else {
+        e.style.display = 'none';
+        btn.innerHTML = 'Show more...';
     }
-    
-    // Hide the "Show more" button after clicking
-    document.getElementById('showMoreContainer').style.display = 'none';
 }
 </script>
