@@ -37,7 +37,7 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
 
 ## Certificates
 
-<div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center;">
+<div style="display: flex; flex-wrap: wrap; gap: 5px; align-items: center;">
 
   <div>
       <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="343635de-7d0f-43ea-922d-432566a4b1e5" data-share-badge-host="https://www.credly.com"></div>
