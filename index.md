@@ -37,20 +37,20 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
 
 ## Certificates
 <div style="
-  display:flex;
-  align-items:flex-end;  /* align bottoms */
-  gap:0px;               /* tighter spacing */
-  margin:0;
-  padding:0;
+  display: flex;
+  align-items: flex-start;   /* TOP alignment */
+  gap: 0px;                  /* small gap */
+  margin: 0;
+  padding: 0;
 ">
 
-  <!-- Left: Credly / Google badge -->
+  <!-- LEFT: Google / Credly -->
   <div style="
-    height:270px;
-    display:flex;
-    align-items:flex-end; /* bottom inside box */
-    margin:0;
-    padding:0;
+    height: 270px;
+    display: flex;
+    align-items: flex-start; /* content sticks to top */
+    margin: 0;
+    padding: 0;
   ">
     <div
       style="margin:0; padding:0;"
@@ -62,24 +62,29 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
     <script async src="//cdn.credly.com/assets/utilities/embed.js"></script>
   </div>
 
-  <!-- Right: Coursera title + image -->
+  <!-- RIGHT: Coursera subtitle + image -->
   <div style="
-    height:250px;
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-end; /* push title+image to bottom */
-    align-items:center;
-    margin:0;
-    padding:0;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* stick to TOP */
+    margin: 0;
+    padding: 0;
   ">
-    <div style="
-      font-size:14px;
-      color:#666;
-      line-height:1.1;
-      margin:0 0 6px 0;
-      padding:0;
-    ">DeepLearning.AI · Coursera</div>
 
+    <!-- subtitle -->
+    <div style="
+      font-size: 14px;
+      color: #666;
+      line-height: 1.1;
+      margin: 0 0 4px 0;       /* tight spacing */
+      padding: 0;
+    ">
+      DeepLearning.AI · Coursera
+    </div>
+
+    <!-- certificate image -->
     <a href="https://www.coursera.org/account/accomplishments/verify/D5J9X83ZP43S"
        target="_blank"
        style="margin:0; padding:0;">
@@ -87,16 +92,18 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
         src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S.jpeg"
         alt="Coursera Certificate"
         style="
-          height:200px;   /* adjust once, then it will stay bottom-aligned */
-          width:auto;
-          display:block;
-          margin:0;
-          padding:0;
+          height: 248px;       /* 270 - subtitle */
+          width: auto;
+          display: block;
+          margin: 0;
+          padding: 0;
         ">
     </a>
+
   </div>
 
 </div>
+
 
 
 
