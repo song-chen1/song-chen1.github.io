@@ -38,59 +38,63 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
 ## Certificates
 
 <div style="
-    display: flex;
-    align-items: center;
-    gap: 6px;   /* tiny gao */
+  display: flex;
+  align-items: flex-start;   /* align the two items to the same top line */
+  gap: 8px;                  /* small gap */
 ">
 
-  <!-- Google / Credly certificate -->
+  <!-- Left: Credly / Google badge -->
   <div style="
-      height: 260px;
-      display: flex;
-      align-items: center;
+    height: 320px;           /* pick ONE shared height */
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
   ">
-    <div
-      data-iframe-width="150"
-      data-iframe-height="260"
+    <div style="margin:0; padding:0;"
+      data-iframe-width="220"
+      data-iframe-height="320"
       data-share-badge-id="343635de-7d0f-43ea-922d-432566a4b1e5"
       data-share-badge-host="https://www.credly.com">
     </div>
     <script async src="//cdn.credly.com/assets/utilities/embed.js"></script>
   </div>
 
-  <!-- Coursera: subtitle + image -->
+  <!-- Right: Coursera title + image -->
   <div style="
-      height: 260px;                /* SAME total height */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;      /* centers title+image as a unit */
-      align-items: center;">
-
-    <!-- subtitle -->
+    height: 320px;                 /* SAME shared height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  ">
     <div style="
-        font-size: 12px;
-        color: #666;
-        margin-bottom: 4px;
-        line-height: 1;
-    ">
-      DeepLearning.AI · Coursera
-    </div>
+      font-size: 14px;
+      color: #666;
+      line-height: 1.1;
+      margin: 0 0 6px 0;           /* small title spacing */
+      padding: 0;
+    ">DeepLearning.AI · Coursera</div>
 
-    <!-- certificate image -->
     <a href="https://www.coursera.org/account/accomplishments/verify/D5J9X83ZP43S"
-       target="_blank">
+       target="_blank"
+       style="margin:0; padding:0;">
       <img
         src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S.jpeg"
+        alt="Coursera Certificate"
         style="
-          height: 230px;   /* 260 - title space */
+          height: 300px;            /* 320 - (title+spacing) */
           width: auto;
           display: block;
+          margin: 0;
+          padding: 0;
         ">
     </a>
-
   </div>
 
 </div>
+
 
 
 
