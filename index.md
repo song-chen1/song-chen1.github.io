@@ -40,7 +40,7 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
 <div style="
     display: flex;
     align-items: center;
-    gap: 6px;               /* tiny gao */
+    gap: 0px;               /* tiny gao */
 ">
 
   <!-- Credly -->
