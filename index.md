@@ -64,7 +64,7 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
 
   <!-- RIGHT: Coursera subtitle + image -->
   <div style="
-    height: 270px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
