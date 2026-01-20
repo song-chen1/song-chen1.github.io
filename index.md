@@ -92,7 +92,7 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
         src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S.jpeg"
         alt="Coursera Certificate"
         style="
-          height: 240px;       /* 270 - subtitle */
+          height: 200px;       /* 270 - subtitle */
           width: auto;
           display: block;
           margin: 0;
