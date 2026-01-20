@@ -45,15 +45,15 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
 
   <!-- Left: Credly / Google badge -->
   <div style="
-    height: 320px;           /* pick ONE shared height */
+    height: 270px;           /* pick ONE shared height */
     display: flex;
     align-items: flex-start;
     margin: 0;
     padding: 0;
   ">
     <div style="margin:0; padding:0;"
-      data-iframe-width="220"
-      data-iframe-height="320"
+      data-iframe-width="150"
+      data-iframe-height=270"
       data-share-badge-id="343635de-7d0f-43ea-922d-432566a4b1e5"
       data-share-badge-host="https://www.credly.com">
     </div>
@@ -62,7 +62,7 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
 
   <!-- Right: Coursera title + image -->
   <div style="
-    height: 320px;                 /* SAME shared height */
+    height: 270px;                 /* SAME shared height */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,7 +84,7 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
         src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S.jpeg"
         alt="Coursera Certificate"
         style="
-          height: 300px;            /* 320 - (title+spacing) */
+          height: 250px;            /* 320 - (title+spacing) */
           width: auto;
           display: block;
           margin: 0;
