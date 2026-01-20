@@ -37,54 +37,30 @@ My research involves magnetoelectric ("ME") materials for energy-efficient infor
 
 ## Certificates
 
-<div style="
-  display: flex;
-  align-items: flex-start;   /* align the two items to the same top line */
-  gap: 8px;                  /* small gap */
-">
+<div style="display:flex; align-items:flex-start; gap:8px;">
 
   <!-- Left: Credly / Google badge -->
-  <div style="
-    height: 270px;           /* pick ONE shared height */
-    display: flex;
-    align-items: flex-start;
-    margin: 0;
-    padding: 0;
-  ">
+  <div style="height:270px; display:flex; align-items:flex-start; margin:0; padding:0;">
     <div style="margin:0; padding:0;"
       data-iframe-width="150"
-      data-iframe-height=270"
+      data-iframe-height="270"
       data-share-badge-id="343635de-7d0f-43ea-922d-432566a4b1e5"
-      data-share-badge-host="https://www.credly.com">
-    </div>
+      data-share-badge-host="https://www.credly.com"></div>
     <script async src="//cdn.credly.com/assets/utilities/embed.js"></script>
   </div>
 
   <!-- Right: Coursera title + image -->
-  <div style="
-    height: 270px;                 /* SAME shared height */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  ">
-    <div style="
-      font-size: 14px;
-      color: #666;
-      line-height: 1.1;
-      margin: 0 0 6px 0;           /* small title spacing */
-      padding: 0;
-    ">DeepLearning.AI · Coursera</div>
+  <div style="height:270px; display:flex; flex-direction:column; align-items:center; margin:0; padding:0;">
+    <div style="font-size:14px; color:#666; line-height:1.1; margin:0 0 6px 0; padding:0;">
+      DeepLearning.AI · Coursera
+    </div>
 
-    <a href="https://www.coursera.org/account/accomplishments/verify/D5J9X83ZP43S"
-       target="_blank"
-       style="margin:0; padding:0;">
+    <a href="https://www.coursera.org/account/accomplishments/verify/D5J9X83ZP43S" target="_blank" style="margin:0; padding:0;">
       <img
         src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S/CERTIFICATE_LANDING_PAGE~D5J9X83ZP43S.jpeg"
         alt="Coursera Certificate"
         style="
-          height: 250px;            /* 320 - (title+spacing) */
+          height: calc(270px - 22px);  /* auto fits under subtitle */
           width: auto;
           display: block;
           margin: 0;
