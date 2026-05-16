@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2024-02-14T22:19:33.022Z</updated>
+  <updated>2026-05-16T12:45:01.405Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Skills Repository</title>
+    <link href="https://songchen.science/blog/posts/90b43f1f/"/>
+    <id>https://songchen.science/blog/posts/90b43f1f/</id>
+    <published>2026-05-16T17:44:47.000Z</published>
+    <updated>2026-05-16T12:45:01.405Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;This post is based on the Github repository &lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Skills,Agent skills" scheme="https://songchen.science/blog/tags/Skills-Agent-skills/"/>
+    
+  </entry>
   
   <entry>
     <title>Rust Syntax Memo</title>
@@ -323,9 +346,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
     
-    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
-    
     <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
+    
+    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -350,9 +373,9 @@
     
     <category term="Condensed-matter physics" scheme="https://songchen.science/blog/categories/Physics/Condensed-matter-physics/"/>
     
-    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
-    
     <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -373,9 +396,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
     
-    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
-    
     <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
+    
+    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -389,7 +412,7 @@
     <link href="https://songchen.science/blog/posts/452908e4/"/>
     <id>https://songchen.science/blog/posts/452908e4/</id>
     <published>2023-10-22T21:36:36.000Z</published>
-    <updated>2023-12-10T17:22:49.637Z</updated>
+    <updated>2026-05-16T11:48:19.154Z</updated>
     
     
     <summary type="html">Functional programming is a programming paradigm that revolves around the central idea of function evaluation. This tutorial will delve into the realm of functional programming within the Python ecosystem. Functional programming, although less prominent in Python, remains a valuable concept to grasp. While it might not be the primary approach in Python, having a foundational understanding of functional programming is beneficial. You may encounter it occasionally when inspecting code authored by others, and there might be instances where leveraging Python&#39;s functional programming features proves advantageous in your own projects.</summary>
@@ -451,7 +474,7 @@
       
         
         
-    <summary type="html">&lt;blockquote id=&#39;90994&#39;&gt;&lt;script&gt;
+    <summary type="html">&lt;blockquote id=&#39;7341&#39;&gt;&lt;script&gt;
     window.addEventListener(&#39;load&#39;, function() {
      </summary>
         
@@ -469,33 +492,6 @@
     <category term="zotero" scheme="https://songchen.science/blog/tags/zotero/"/>
     
     <category term="plugins" scheme="https://songchen.science/blog/tags/plugins/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Plasma-Material Interactions</title>
-    <link href="https://songchen.science/blog/posts/8b9599c5/"/>
-    <id>https://songchen.science/blog/posts/8b9599c5/</id>
-    <published>2023-10-17T15:35:32.000Z</published>
-    <updated>2023-10-26T20:19:17.224Z</updated>
-    
-    
-    <summary type="html">Plasma-Material Interactions (PMI) are a set of complex and rich interactions and reactions between a bulk plasma and any materials in contact with the plasma. When a plasma comes into contact with a material, it forms a plasma sheath. The voltage drop across a plasma sheath is often many volts, and charged particles from the plasma passing through the sheath can be accelerated to many electron-Volts of potential energy before they impact the surface.</summary>
-    
-    
-    
-    <category term="Physics" scheme="https://songchen.science/blog/categories/Physics/"/>
-    
-    <category term="Plasma physics" scheme="https://songchen.science/blog/categories/Physics/Plasma-physics/"/>
-    
-    <category term="Bibliography" scheme="https://songchen.science/blog/categories/Bibliography/"/>
-    
-    
-    <category term="physics" scheme="https://songchen.science/blog/tags/physics/"/>
-    
-    <category term="plasma physics" scheme="https://songchen.science/blog/tags/plasma-physics/"/>
-    
-    <category term="bibliography" scheme="https://songchen.science/blog/tags/bibliography/"/>
     
   </entry>
   
