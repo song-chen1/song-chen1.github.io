@@ -1,8 +1,8 @@
 # Basic Information 
 title: Song Chen
-position: Ph.D. Candidate
+position: R&D Manager
 affiliation: Université Paris-Saclay
-subaffiliation: Spin-Ion Technologies 
+subaffiliation: 
 affiliation_link: https://www.universite-paris-saclay.fr/
 subaffiliation_link: https://www.spin-ion.com/
 affiliation_logo: ./assets/img/spinion.svg
@@ -14,7 +14,7 @@ address_link: https://www.google.fr/maps/place/Spin-Ion+Technologies/@48.7124352
 # Search Engine Optimization (SEO)
 keywords: song chen, chen song, songchen, chensong
 canonical: https://minimal-light-theme.yliu.me/
-description: Song Chen is a Ph.D. canditate at Spin-Ion Technologies and Université Paris-Saclay. His research lies at using magneto-ionics to develop new concepts for magnetic data storage, spintronic devices and magnonics, always with the aim of improving energy efficiency with respect to currently available technologies - with a special focus on the boosting magneto-ionic effect using ion irradiation & ion implantation.
+description: Song Chen is an R&D Manager at Spin-Ion Technologies and Université Paris-Saclay. His research lies at using magneto-ionics to develop new concepts for magnetic data storage, spintronic devices and magnonics, always with the aim of improving energy efficiency with respect to currently available technologies - with a special focus on the boosting magneto-ionic effect using ion irradiation & ion implantation.
 
 # The option is used to enable the Johns Hopkins template.
 enable_hopkins_logo: false
