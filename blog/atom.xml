@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2026-05-16T15:26:58.475Z</updated>
+  <updated>2026-08-04T14:45:09.851Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -17,18 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Superpower</title>
+    <link href="https://songchen.science/blog/posts/55017b02/"/>
+    <id>https://songchen.science/blog/posts/55017b02/</id>
+    <published>2026-08-04T20:36:37.000Z</published>
+    <updated>2026-08-04T14:45:09.851Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Superpowers&quot;&gt;&lt;a href=&quot;#Superpowers&quot; class=&quot;headerlink&quot; title=&quot;Superpowers&quot;&gt;&lt;/a&gt;Superpowers&lt;/h1&gt;&lt;p&gt;Superpowers is a complete</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Skills Repository</title>
     <link href="https://songchen.science/blog/posts/90b43f1f/"/>
     <id>https://songchen.science/blog/posts/90b43f1f/</id>
     <published>2026-05-16T17:44:47.000Z</published>
-    <updated>2026-05-16T15:26:58.475Z</updated>
+    <updated>2026-05-24T12:31:48.451Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;This post is based on the Github repository &lt;a</summary>
+    <summary type="html">&lt;p&gt;This post is now complemented by the generated &lt;a href=&quot;/blog/skills/&quot;&gt;Agent Skills catalogue&lt;/a&gt;, which is updated by the Telegram</summary>
         
       
     
@@ -459,39 +480,6 @@
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
     
     <category term="Python_library" scheme="https://songchen.science/blog/tags/Python-library/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Zotero Plugins</title>
-    <link href="https://songchen.science/blog/posts/3d8f8e4e/"/>
-    <id>https://songchen.science/blog/posts/3d8f8e4e/</id>
-    <published>2023-10-20T16:10:35.000Z</published>
-    <updated>2023-10-26T20:19:17.225Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote id=&#39;88626&#39;&gt;&lt;script&gt;
-    window.addEventListener(&#39;load&#39;, function() {
-     </summary>
-        
-      
-    
-    
-    
-    <category term="Software" scheme="https://songchen.science/blog/categories/Software/"/>
-    
-    <category term="Zotero" scheme="https://songchen.science/blog/categories/Zotero/"/>
-    
-    <category term="Plugins" scheme="https://songchen.science/blog/categories/Zotero/Plugins/"/>
-    
-    
-    <category term="zotero" scheme="https://songchen.science/blog/tags/zotero/"/>
-    
-    <category term="plugins" scheme="https://songchen.science/blog/tags/plugins/"/>
     
   </entry>
   
