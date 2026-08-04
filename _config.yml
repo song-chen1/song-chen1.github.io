@@ -62,9 +62,11 @@ plugins:
 
 # The following files will be removed from the generated website.
 exclude:
+  - .bundle
   - build.sh
   - Gemfile
   - Gemfile.lock
   - README.md
   - LICENSE
+  - vendor
   - CNAME
