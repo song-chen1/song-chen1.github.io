@@ -1,3 +1,4 @@
+https://songchen.science/blog/zh-CN/posts/dfc6e175/
 https://songchen.science/blog/zh-CN/blogroll/
 https://songchen.science/blog/zh-CN/about/me
 https://songchen.science/blog/zh-CN/gallery/
@@ -41,6 +42,11 @@ https://songchen.science/blog/zh-CN/tags/Documentation/
 https://songchen.science/blog/zh-CN/tags/Python/
 https://songchen.science/blog/zh-CN/tags/Pyenv/
 https://songchen.science/blog/zh-CN/tags/Hexo-plugins/
+https://songchen.science/blog/zh-CN/tags/deep-learning/
+https://songchen.science/blog/zh-CN/tags/NLP/
+https://songchen.science/blog/zh-CN/tags/BERT/
+https://songchen.science/blog/zh-CN/tags/HuggingFace/
+https://songchen.science/blog/zh-CN/tags/PyTorch/
 https://songchen.science/blog/zh-CN/categories/Condensed-matter-physics/
 https://songchen.science/blog/zh-CN/categories/Python/
 https://songchen.science/blog/zh-CN/categories/Condensed-matter-physics/Computational-Simulations/
@@ -57,3 +63,4 @@ https://songchen.science/blog/zh-CN/categories/Documentation/
 https://songchen.science/blog/zh-CN/categories/Python/Editors/
 https://songchen.science/blog/zh-CN/categories/Documentation/Hexo/
 https://songchen.science/blog/zh-CN/categories/Python/Configuration/
+https://songchen.science/blog/zh-CN/categories/Machine-learning/NLP/

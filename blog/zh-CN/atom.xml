@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/zh-CN/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/zh-CN/"/>
-  <updated>2023-11-11T14:39:35.948Z</updated>
+  <updated>2026-10-23T08:59:32.083Z</updated>
   <id>https://songchen.science/blog/zh-CN/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HuggingFace-transformers系列的介绍以及在下游任务中的使用 (转载)</title>
+    <link href="https://songchen.science/blog/zh-CN/posts/dfc6e175/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/dfc6e175/</id>
+    <published>2026-10-23T08:54:34.000Z</published>
+    <updated>2026-10-23T08:59:32.083Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://www.cnblogs.com/dongxiong/p/12763923.html&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;博客园 · dxzmpk&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;转载自 &lt;a href=&quot;https://www.cnblogs.com/dongxiong/p/12763923.html&quot;&gt;博客园&lt;/a&gt;，原作者：dxzmpk，原文发布于 2020-04-23。版权归原作者所有。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;内容介绍&quot;&gt;&lt;a href=&quot;#内容介绍&quot; class=&quot;headerlink&quot; title=&quot;内容介绍&quot;&gt;&lt;/a&gt;内容介绍&lt;/h1&gt;&lt;p&gt;这篇博客主要面向对&lt;strong&gt;Bert&lt;/strong&gt;系列在&lt;strong&gt;Pytorch&lt;/strong&gt;上应用感兴趣的同学，将涵盖的主要内容是：Bert系列有关的论文，&lt;a href=&quot;https://huggingface.co/transformers/installation.html#&quot;&gt;Huggingface&lt;/a&gt;的实现，以及如何在不同下游任务中使用预训练模型。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/zh-CN/categories/Machine-learning/"/>
+    
+    <category term="NLP" scheme="https://songchen.science/blog/zh-CN/categories/Machine-learning/NLP/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/zh-CN/tags/machine-learning/"/>
+    
+    <category term="deep-learning" scheme="https://songchen.science/blog/zh-CN/tags/deep-learning/"/>
+    
+    <category term="NLP" scheme="https://songchen.science/blog/zh-CN/tags/NLP/"/>
+    
+    <category term="BERT" scheme="https://songchen.science/blog/zh-CN/tags/BERT/"/>
+    
+    <category term="HuggingFace" scheme="https://songchen.science/blog/zh-CN/tags/HuggingFace/"/>
+    
+    <category term="PyTorch" scheme="https://songchen.science/blog/zh-CN/tags/PyTorch/"/>
+    
+  </entry>
   
   <entry>
     <title>Obsidian 教程归纳汇总</title>
