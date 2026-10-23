@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2026-08-04T14:45:09.851Z</updated>
+  <updated>2026-10-23T09:38:07.478Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to Publish a Blog Post from Scratch: A Step-by-Step Guide</title>
+    <link href="https://songchen.science/blog/posts/711b0316/"/>
+    <id>https://songchen.science/blog/posts/711b0316/</id>
+    <published>2026-10-23T09:30:09.000Z</published>
+    <updated>2026-10-23T09:38:07.478Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;This blog runs on &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt; 8 with the Icarus theme, as two sites: an English one and a Chinese one. This guide walks through every step from a blank page to a live post, with the exact commands for this setup.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Documentation" scheme="https://songchen.science/blog/categories/Documentation/"/>
+    
+    <category term="Hexo" scheme="https://songchen.science/blog/categories/Documentation/Hexo/"/>
+    
+    
+    <category term="Documentation" scheme="https://songchen.science/blog/tags/Documentation/"/>
+    
+    <category term="Hexo" scheme="https://songchen.science/blog/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Superpower</title>
@@ -450,36 +473,6 @@
     <category term="python_intermediate" scheme="https://songchen.science/blog/tags/python-intermediate/"/>
     
     <category term="functional programming" scheme="https://songchen.science/blog/tags/functional-programming/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python Libraries and Frameworks</title>
-    <link href="https://songchen.science/blog/posts/27b45062/"/>
-    <id>https://songchen.science/blog/posts/27b45062/</id>
-    <published>2023-10-21T11:15:06.000Z</published>
-    <updated>2023-10-26T20:19:17.221Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;MACHINE-LEARNING&quot;&gt;&lt;a href=&quot;#MACHINE-LEARNING&quot; class=&quot;headerlink&quot; title=&quot;MACHINE LEARNING&quot;&gt;&lt;/a&gt;MACHINE LEARNING&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://numpy.org/&quot;&gt;NumPy&lt;/a&gt; is a powerful Python library for numerical and scientific computing that provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays efficiently.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.tensorflow.org/&quot;&gt;TensorFlow&lt;/a&gt; is an open-source machine learning framework developed by Google that enables the creation and training of deep learning models through the use of computational graphs and a wide range of neural network layers and optimizers.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://pypi.org/project/Theano/&quot;&gt;Theano&lt;/a&gt; was an open-source numerical computation library for Python that was widely used for deep learning and scientific computing but has been largely replaced by more modern deep learning frameworks like TensorFlow and PyTorch.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
-    
-    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
-    
-    <category term="Library" scheme="https://songchen.science/blog/categories/Python/Library/"/>
-    
-    
-    <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
-    
-    <category term="Python_library" scheme="https://songchen.science/blog/tags/Python-library/"/>
     
   </entry>
   

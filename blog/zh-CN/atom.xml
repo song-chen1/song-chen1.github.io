@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/zh-CN/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/zh-CN/"/>
-  <updated>2026-10-23T08:59:32.083Z</updated>
+  <updated>2026-10-23T09:36:44.515Z</updated>
   <id>https://songchen.science/blog/zh-CN/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从零开始发布一篇博客：完整步骤指南</title>
+    <link href="https://songchen.science/blog/zh-CN/posts/8b9ae1c0/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/8b9ae1c0/</id>
+    <published>2026-10-23T09:30:11.000Z</published>
+    <updated>2026-10-23T09:36:44.515Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本博客使用 &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt; 8 和 Icarus 主题搭建，分为英文和中文两个站点。本文按顺序列出从一篇空白文章到正式上线的每一步，所有命令都对应本博客的实际环境。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/"/>
+    
+    <category term="Hexo" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://songchen.science/blog/zh-CN/tags/Hexo/"/>
+    
+    <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/tags/Documentation/"/>
+    
+  </entry>
   
   <entry>
     <title>HuggingFace-transformers系列的介绍以及在下游任务中的使用 (转载)</title>
