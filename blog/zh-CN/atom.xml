@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/zh-CN/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/zh-CN/"/>
-  <updated>2026-10-23T09:36:44.515Z</updated>
+  <updated>2026-10-24T13:24:35.888Z</updated>
   <id>https://songchen.science/blog/zh-CN/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>从零开始发布一篇博客：完整步骤指南</title>
     <link href="https://songchen.science/blog/zh-CN/posts/8b9ae1c0/"/>
     <id>https://songchen.science/blog/zh-CN/posts/8b9ae1c0/</id>
-    <published>2026-10-23T09:30:11.000Z</published>
-    <updated>2026-10-23T09:36:44.515Z</updated>
+    <published>2026-10-23T03:30:11.000Z</published>
+    <updated>2026-10-24T13:24:35.888Z</updated>
     
     
     <summary type="html">&lt;p&gt;本博客使用 &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt; 8 和 Icarus 主题搭建，分为英文和中文两个站点。本文按顺序列出从一篇空白文章到正式上线的每一步，所有命令都对应本博客的实际环境。&lt;/p&gt;</summary>
@@ -43,7 +43,7 @@
     <title>HuggingFace-transformers系列的介绍以及在下游任务中的使用 (转载)</title>
     <link href="https://songchen.science/blog/zh-CN/posts/dfc6e175/"/>
     <id>https://songchen.science/blog/zh-CN/posts/dfc6e175/</id>
-    <published>2026-10-23T08:54:34.000Z</published>
+    <published>2026-10-23T02:54:34.000Z</published>
     <updated>2026-10-23T08:59:32.083Z</updated>
     
     
@@ -80,7 +80,7 @@
     <title>Obsidian 教程归纳汇总</title>
     <link href="https://songchen.science/blog/zh-CN/posts/16e9b000/"/>
     <id>https://songchen.science/blog/zh-CN/posts/16e9b000/</id>
-    <published>2023-10-29T21:55:55.000Z</published>
+    <published>2023-10-29T14:55:55.000Z</published>
     <updated>2023-11-11T14:39:36.948Z</updated>
     
     
@@ -100,7 +100,7 @@
     <title>Interview_Python (转载)</title>
     <link href="https://songchen.science/blog/zh-CN/posts/890959d7/"/>
     <id>https://songchen.science/blog/zh-CN/posts/890959d7/</id>
-    <published>2023-10-22T22:23:41.000Z</published>
+    <published>2023-10-22T16:23:41.000Z</published>
     <updated>2023-10-26T20:21:39.090Z</updated>
     
     
@@ -124,7 +124,7 @@
     <title>Python的F-String用于字符串插值和格式化</title>
     <link href="https://songchen.science/blog/zh-CN/posts/ac0deb15/"/>
     <id>https://songchen.science/blog/zh-CN/posts/ac0deb15/</id>
-    <published>2023-10-19T20:05:37.000Z</published>
+    <published>2023-10-19T14:05:37.000Z</published>
     <updated>2023-10-26T20:21:39.096Z</updated>
     
     
@@ -145,7 +145,7 @@
     <title>多版本Python管理，轻松应对不同需求</title>
     <link href="https://songchen.science/blog/zh-CN/posts/dea9e976/"/>
     <id>https://songchen.science/blog/zh-CN/posts/dea9e976/</id>
-    <published>2023-10-18T19:25:44.000Z</published>
+    <published>2023-10-18T13:25:44.000Z</published>
     <updated>2023-10-26T20:21:39.102Z</updated>
     
     
@@ -170,7 +170,7 @@
     <title>推荐常用的Hexo插件 (转载)</title>
     <link href="https://songchen.science/blog/zh-CN/posts/346eb830/"/>
     <id>https://songchen.science/blog/zh-CN/posts/346eb830/</id>
-    <published>2023-10-17T19:18:33.000Z</published>
+    <published>2023-10-17T13:18:33.000Z</published>
     <updated>2023-10-26T20:21:39.101Z</updated>
     
     
@@ -210,7 +210,7 @@
     <title>用Python打造精美二维码，传递无限可能</title>
     <link href="https://songchen.science/blog/zh-CN/posts/5dbadbbd/"/>
     <id>https://songchen.science/blog/zh-CN/posts/5dbadbbd/</id>
-    <published>2023-10-13T14:13:17.000Z</published>
+    <published>2023-10-13T08:13:17.000Z</published>
     <updated>2023-11-19T22:01:19.860Z</updated>
     
     
@@ -231,7 +231,7 @@
     <title>Busuu_法语学习</title>
     <link href="https://songchen.science/blog/zh-CN/posts/b2a36a01/"/>
     <id>https://songchen.science/blog/zh-CN/posts/b2a36a01/</id>
-    <published>2023-10-12T21:21:10.000Z</published>
+    <published>2023-10-12T15:21:10.000Z</published>
     <updated>2023-11-24T20:51:57.535Z</updated>
     
     
@@ -254,7 +254,7 @@
     <title>BCA Simulations</title>
     <link href="https://songchen.science/blog/zh-CN/posts/c1550b35/"/>
     <id>https://songchen.science/blog/zh-CN/posts/c1550b35/</id>
-    <published>2023-10-11T16:57:14.000Z</published>
+    <published>2023-10-11T10:57:14.000Z</published>
     <updated>2023-10-26T20:21:39.092Z</updated>
     
     
@@ -277,7 +277,7 @@
     <title>Finding An Effective Python Environment</title>
     <link href="https://songchen.science/blog/zh-CN/posts/28115c/"/>
     <id>https://songchen.science/blog/zh-CN/posts/28115c/</id>
-    <published>2023-10-10T22:55:14.000Z</published>
+    <published>2023-10-10T16:55:14.000Z</published>
     <updated>2023-10-26T20:21:39.086Z</updated>
     
     
@@ -290,9 +290,9 @@
     
     <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
     
-    <category term="Editors" scheme="https://songchen.science/blog/zh-CN/categories/Python/Editors/"/>
-    
     <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
+    
+    <category term="Editors" scheme="https://songchen.science/blog/zh-CN/categories/Python/Editors/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/zh-CN/tags/python/"/>
@@ -309,7 +309,7 @@
     <title>Creating a Neural Network and Making Predictions with Python&#39;s AI</title>
     <link href="https://songchen.science/blog/zh-CN/posts/b1a039fb/"/>
     <id>https://songchen.science/blog/zh-CN/posts/b1a039fb/</id>
-    <published>2023-10-09T22:06:29.000Z</published>
+    <published>2023-10-09T16:06:29.000Z</published>
     <updated>2023-10-26T20:21:39.084Z</updated>
     
     
@@ -337,7 +337,7 @@
     <title>Basic Usage of Hexo</title>
     <link href="https://songchen.science/blog/zh-CN/posts/e44932a0/"/>
     <id>https://songchen.science/blog/zh-CN/posts/e44932a0/</id>
-    <published>2023-10-06T00:24:52.000Z</published>
+    <published>2023-10-05T18:24:52.000Z</published>
     <updated>2023-10-26T20:21:39.095Z</updated>
     
     
@@ -346,9 +346,9 @@
     
     
     
-    <category term="Webblog" scheme="https://songchen.science/blog/zh-CN/categories/Webblog/"/>
-    
     <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/"/>
+    
+    <category term="Webblog" scheme="https://songchen.science/blog/zh-CN/categories/Webblog/"/>
     
     <category term="Hexo" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/Hexo/"/>
     
@@ -363,8 +363,8 @@
     <title>Hello World</title>
     <link href="https://songchen.science/blog/zh-CN/posts/4a17b156/"/>
     <id>https://songchen.science/blog/zh-CN/posts/4a17b156/</id>
-    <published>2023-10-03T20:16:13.639Z</published>
-    <updated>2023-10-26T20:21:38.094Z</updated>
+    <published>2023-10-03T14:16:13.000Z</published>
+    <updated>2023-10-26T20:21:39.093Z</updated>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>

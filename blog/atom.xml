@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2026-10-23T09:38:07.478Z</updated>
+  <updated>2026-10-24T13:24:35.853Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>How to Publish a Blog Post from Scratch: A Step-by-Step Guide</title>
     <link href="https://songchen.science/blog/posts/711b0316/"/>
     <id>https://songchen.science/blog/posts/711b0316/</id>
-    <published>2026-10-23T09:30:09.000Z</published>
-    <updated>2026-10-23T09:38:07.478Z</updated>
+    <published>2026-10-23T03:30:09.000Z</published>
+    <updated>2026-10-24T13:24:35.853Z</updated>
     
     
     <summary type="html">&lt;p&gt;This blog runs on &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt; 8 with the Icarus theme, as two sites: an English one and a Chinese one. This guide walks through every step from a blank page to a live post, with the exact commands for this setup.&lt;/p&gt;</summary>
@@ -43,7 +43,7 @@
     <title>Superpower</title>
     <link href="https://songchen.science/blog/posts/55017b02/"/>
     <id>https://songchen.science/blog/posts/55017b02/</id>
-    <published>2026-08-04T20:36:37.000Z</published>
+    <published>2026-08-04T14:36:37.000Z</published>
     <updated>2026-08-04T14:45:09.851Z</updated>
     
     
@@ -64,7 +64,7 @@
     <title>Skills Repository</title>
     <link href="https://songchen.science/blog/posts/90b43f1f/"/>
     <id>https://songchen.science/blog/posts/90b43f1f/</id>
-    <published>2026-05-16T17:44:47.000Z</published>
+    <published>2026-05-16T11:44:47.000Z</published>
     <updated>2026-05-24T12:31:51.000Z</updated>
     
     
@@ -87,7 +87,7 @@
     <title>Rust Syntax Memo</title>
     <link href="https://songchen.science/blog/posts/141d4edb/"/>
     <id>https://songchen.science/blog/posts/141d4edb/</id>
-    <published>2024-02-14T21:25:28.000Z</published>
+    <published>2024-02-14T14:25:28.000Z</published>
     <updated>2024-02-14T22:19:34.022Z</updated>
     
     
@@ -108,7 +108,7 @@
     <title>Fortran -  Where we meet scientific and engineering applications</title>
     <link href="https://songchen.science/blog/posts/4b4b0500/"/>
     <id>https://songchen.science/blog/posts/4b4b0500/</id>
-    <published>2024-01-28T00:13:03.000Z</published>
+    <published>2024-01-27T17:13:03.000Z</published>
     <updated>2024-02-14T21:25:41.388Z</updated>
     
     
@@ -127,7 +127,7 @@
     <title>Operational Effienciency Improvement in python</title>
     <link href="https://songchen.science/blog/posts/6dfd8225/"/>
     <id>https://songchen.science/blog/posts/6dfd8225/</id>
-    <published>2024-01-24T23:07:28.000Z</published>
+    <published>2024-01-24T16:07:28.000Z</published>
     <updated>2024-01-24T23:15:24.279Z</updated>
     
     
@@ -148,7 +148,7 @@
     <title>Deep Neural Networks from Scratch</title>
     <link href="https://songchen.science/blog/posts/8969d96a/"/>
     <id>https://songchen.science/blog/posts/8969d96a/</id>
-    <published>2024-01-07T22:28:28.000Z</published>
+    <published>2024-01-07T15:28:28.000Z</published>
     <updated>2024-01-07T23:18:37.333Z</updated>
     
     
@@ -179,7 +179,7 @@
     <title>Is it possible to create magnetic semiconductors that function at room temperature?</title>
     <link href="https://songchen.science/blog/posts/745ac829/"/>
     <id>https://songchen.science/blog/posts/745ac829/</id>
-    <published>2023-12-24T17:28:17.000Z</published>
+    <published>2023-12-24T10:28:17.000Z</published>
     <updated>2023-12-24T17:40:07.069Z</updated>
     
     
@@ -203,7 +203,7 @@
     <title>Functional Programming in Python: Episode 2</title>
     <link href="https://songchen.science/blog/posts/4e38d95f/"/>
     <id>https://songchen.science/blog/posts/4e38d95f/</id>
-    <published>2023-12-10T14:24:07.000Z</published>
+    <published>2023-12-10T07:24:07.000Z</published>
     <updated>2023-12-10T18:18:42.535Z</updated>
     
     
@@ -226,7 +226,7 @@
     <title>Harness the Potential of Console Text with the Python Rich Package</title>
     <link href="https://songchen.science/blog/posts/8b6396bb/"/>
     <id>https://songchen.science/blog/posts/8b6396bb/</id>
-    <published>2023-12-09T13:49:29.000Z</published>
+    <published>2023-12-09T06:49:29.000Z</published>
     <updated>2023-12-10T18:18:42.537Z</updated>
     
     
@@ -247,7 +247,7 @@
     <title>Single and double underscores in Python identifiers</title>
     <link href="https://songchen.science/blog/posts/3762fd70/"/>
     <id>https://songchen.science/blog/posts/3762fd70/</id>
-    <published>2023-11-30T22:05:07.000Z</published>
+    <published>2023-11-30T15:05:07.000Z</published>
     <updated>2023-12-07T23:12:36.413Z</updated>
     
     
@@ -268,7 +268,7 @@
     <title>Python OOP: Composition and Inheritance</title>
     <link href="https://songchen.science/blog/posts/ed5bbb01/"/>
     <id>https://songchen.science/blog/posts/ed5bbb01/</id>
-    <published>2023-11-18T15:58:10.000Z</published>
+    <published>2023-11-18T08:58:10.000Z</published>
     <updated>2023-11-24T20:49:30.488Z</updated>
     
     
@@ -289,7 +289,7 @@
     <title>I-V Measurement System</title>
     <link href="https://songchen.science/blog/posts/6ed7617e/"/>
     <id>https://songchen.science/blog/posts/6ed7617e/</id>
-    <published>2023-11-17T10:21:01.000Z</published>
+    <published>2023-11-17T03:21:01.000Z</published>
     <updated>2023-11-19T22:39:03.787Z</updated>
     
     
@@ -312,7 +312,7 @@
     <title>AHEMS - Anomalous Hall Effect Measurement System</title>
     <link href="https://songchen.science/blog/posts/8da53686/"/>
     <id>https://songchen.science/blog/posts/8da53686/</id>
-    <published>2023-11-16T22:37:53.000Z</published>
+    <published>2023-11-16T15:37:53.000Z</published>
     <updated>2023-11-19T22:38:47.967Z</updated>
     
     
@@ -337,7 +337,7 @@
     <title>From HLAI to Superintelligence</title>
     <link href="https://songchen.science/blog/posts/284d73cd/"/>
     <id>https://songchen.science/blog/posts/284d73cd/</id>
-    <published>2023-11-05T23:29:25.000Z</published>
+    <published>2023-11-05T16:29:25.000Z</published>
     <updated>2023-11-19T22:20:27.195Z</updated>
     
     
@@ -357,7 +357,7 @@
     <title>Multiprocessing and Parallelism in Python</title>
     <link href="https://songchen.science/blog/posts/83e64d9b/"/>
     <id>https://songchen.science/blog/posts/83e64d9b/</id>
-    <published>2023-11-01T15:24:36.000Z</published>
+    <published>2023-11-01T08:24:36.000Z</published>
     <updated>2023-11-19T22:21:06.198Z</updated>
     
     
@@ -380,7 +380,7 @@
     <title>Python Poetry: Streamlining Dependency Management</title>
     <link href="https://songchen.science/blog/posts/2f5fd3b/"/>
     <id>https://songchen.science/blog/posts/2f5fd3b/</id>
-    <published>2023-10-31T19:49:29.000Z</published>
+    <published>2023-10-31T12:49:29.000Z</published>
     <updated>2023-11-19T22:16:53.704Z</updated>
     
     
@@ -405,7 +405,7 @@
     <title>Machine Learning BCA Simulations</title>
     <link href="https://songchen.science/blog/posts/cb2fd4b/"/>
     <id>https://songchen.science/blog/posts/cb2fd4b/</id>
-    <published>2023-10-26T19:12:21.000Z</published>
+    <published>2023-10-26T13:12:21.000Z</published>
     <updated>2023-11-19T22:39:43.073Z</updated>
     
     
@@ -413,11 +413,11 @@
     
     
     
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
     <category term="Physics" scheme="https://songchen.science/blog/categories/Physics/"/>
     
     <category term="Condensed-matter physics" scheme="https://songchen.science/blog/categories/Physics/Condensed-matter-physics/"/>
-    
-    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
     
     <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
     
@@ -432,7 +432,7 @@
     <title>Cooking with ARDUINO and Python</title>
     <link href="https://songchen.science/blog/posts/f04ea1f1/"/>
     <id>https://songchen.science/blog/posts/f04ea1f1/</id>
-    <published>2023-10-23T22:17:30.000Z</published>
+    <published>2023-10-23T16:17:30.000Z</published>
     <updated>2023-10-26T20:19:18.212Z</updated>
     
     
@@ -455,7 +455,7 @@
     <title>Utilizing Functional Programming Paradigms in Python: Best Practices and Applications</title>
     <link href="https://songchen.science/blog/posts/452908e4/"/>
     <id>https://songchen.science/blog/posts/452908e4/</id>
-    <published>2023-10-22T21:36:36.000Z</published>
+    <published>2023-10-22T15:36:36.000Z</published>
     <updated>2026-05-16T11:48:20.154Z</updated>
     
     
