@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/zh-CN/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/zh-CN/"/>
-  <updated>2026-10-24T13:24:35.888Z</updated>
+  <updated>2026-10-26T01:58:57.827Z</updated>
   <id>https://songchen.science/blog/zh-CN/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Lecture 0: Introduction of Machine Learning_机器学习导论：从人工智能到学习地图的全景解析</title>
+    <link href="https://songchen.science/blog/zh-CN/posts/22a2dfd9/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/22a2dfd9/</id>
+    <published>2026-10-24T16:00:00.000Z</published>
+    <updated>2026-10-26T01:58:57.827Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;机器学习导论：从人工智能到学习地图的全景解析&quot;&gt;&lt;a href=&quot;#机器学习导论：从人工智能到学习地图的全景解析&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="MachineLearning" scheme="https://songchen.science/blog/zh-CN/categories/MachineLearning/"/>
+    
+    
+    <category term="MachineLearning" scheme="https://songchen.science/blog/zh-CN/tags/MachineLearning/"/>
+    
+  </entry>
   
   <entry>
     <title>从零开始发布一篇博客：完整步骤指南</title>

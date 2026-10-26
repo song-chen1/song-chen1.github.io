@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2026-10-24T13:24:35.853Z</updated>
+  <updated>2026-10-25T04:22:38.873Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>uv Documentation (Repost)</title>
+    <link href="https://songchen.science/blog/posts/db10ad99/"/>
+    <id>https://songchen.science/blog/posts/db10ad99/</id>
+    <published>2026-10-24T17:58:59.000Z</published>
+    <updated>2026-10-25T04:22:38.873Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://docs.astral.sh/uv/&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;docs.astral.sh · Astral&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from &lt;a href=&quot;https://docs.astral.sh/uv/&quot;&gt;the uv documentation&lt;/a&gt; by &lt;a href=&quot;https://astral.sh/&quot;&gt;Astral&lt;/a&gt;, last updated 2026-03-13. Copyright (c) 2025 Astral Software Inc., used under the &lt;a href=&quot;https://github.com/astral-sh/uv/blob/main/LICENSE-MIT&quot;&gt;MIT License&lt;/a&gt;; the full notice is at the end of this post.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;An extremely fast Python package and project manager, written in Rust.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
+    
+    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
+    
+    
+    <category term="Documentation" scheme="https://songchen.science/blog/tags/Documentation/"/>
+    
+    <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
+    
+    <category term="uv" scheme="https://songchen.science/blog/tags/uv/"/>
+    
+  </entry>
   
   <entry>
     <title>How to Publish a Blog Post from Scratch: A Step-by-Step Guide</title>
@@ -390,9 +421,9 @@
     
     <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
     
-    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
-    
     <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
+    
+    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
@@ -413,11 +444,11 @@
     
     
     
-    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
-    
     <category term="Physics" scheme="https://songchen.science/blog/categories/Physics/"/>
     
     <category term="Condensed-matter physics" scheme="https://songchen.science/blog/categories/Physics/Condensed-matter-physics/"/>
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
     
     <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
     
@@ -440,39 +471,14 @@
     
     <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
     
+    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
+    
     <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
     
-    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
-    
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
     
     <category term="python_intermediate" scheme="https://songchen.science/blog/tags/python-intermediate/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Utilizing Functional Programming Paradigms in Python: Best Practices and Applications</title>
-    <link href="https://songchen.science/blog/posts/452908e4/"/>
-    <id>https://songchen.science/blog/posts/452908e4/</id>
-    <published>2023-10-22T15:36:36.000Z</published>
-    <updated>2026-05-16T11:48:20.154Z</updated>
-    
-    
-    <summary type="html">Functional programming is a programming paradigm that revolves around the central idea of function evaluation. This tutorial will delve into the realm of functional programming within the Python ecosystem. Functional programming, although less prominent in Python, remains a valuable concept to grasp. While it might not be the primary approach in Python, having a foundational understanding of functional programming is beneficial. You may encounter it occasionally when inspecting code authored by others, and there might be instances where leveraging Python&#39;s functional programming features proves advantageous in your own projects.</summary>
-    
-    
-    
-    <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
-    
-    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
-    
-    
-    <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
-    
-    <category term="python_intermediate" scheme="https://songchen.science/blog/tags/python-intermediate/"/>
-    
-    <category term="functional programming" scheme="https://songchen.science/blog/tags/functional-programming/"/>
     
   </entry>
   
