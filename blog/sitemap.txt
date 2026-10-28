@@ -1,3 +1,5 @@
+https://songchen.science/blog/posts/ca102104/
+https://songchen.science/blog/posts/0528c8a8/
 https://songchen.science/blog/posts/db10ad99/
 https://songchen.science/blog/posts/711b0316/
 https://songchen.science/blog/posts/55017b02/
@@ -110,3 +112,4 @@ https://songchen.science/blog/categories/Python/Configuration/
 https://songchen.science/blog/categories/Zotero/
 https://songchen.science/blog/categories/Zotero/Plugins/
 https://songchen.science/blog/categories/Webblog/
+https://songchen.science/blog/categories/kb/

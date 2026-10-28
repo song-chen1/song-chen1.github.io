@@ -1,4 +1,6 @@
 https://songchen.science/blog/zh-CN/posts/22a2dfd9/
+https://songchen.science/blog/zh-CN/posts/3b29b655/
+https://songchen.science/blog/zh-CN/posts/d6941306/
 https://songchen.science/blog/zh-CN/posts/8b9ae1c0/
 https://songchen.science/blog/zh-CN/posts/dfc6e175/
 https://songchen.science/blog/zh-CN/about/me
@@ -60,3 +62,4 @@ https://songchen.science/blog/zh-CN/categories/Documentation/
 https://songchen.science/blog/zh-CN/categories/Webblog/
 https://songchen.science/blog/zh-CN/categories/Documentation/Hexo/
 https://songchen.science/blog/zh-CN/categories/MachineLearning/
+https://songchen.science/blog/zh-CN/categories/kb/

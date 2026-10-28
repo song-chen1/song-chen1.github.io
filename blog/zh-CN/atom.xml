@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/zh-CN/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/zh-CN/"/>
-  <updated>2026-10-26T01:58:57.827Z</updated>
+  <updated>2026-10-28T04:03:45.535Z</updated>
   <id>https://songchen.science/blog/zh-CN/</id>
   
   <author>
@@ -21,16 +21,10 @@
     <link href="https://songchen.science/blog/zh-CN/posts/22a2dfd9/"/>
     <id>https://songchen.science/blog/zh-CN/posts/22a2dfd9/</id>
     <published>2026-10-24T16:00:00.000Z</published>
-    <updated>2026-10-26T01:58:57.827Z</updated>
+    <updated>2026-10-28T04:03:45.535Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;机器学习导论：从人工智能到学习地图的全景解析&quot;&gt;&lt;a href=&quot;#机器学习导论：从人工智能到学习地图的全景解析&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">梳理人工智能、机器学习与深度学习的关系，介绍机器学习的三步框架，并概览回归、分类、监督学习与强化学习等任务和学习方式。</summary>
     
     
     
@@ -38,6 +32,47 @@
     
     
     <category term="MachineLearning" scheme="https://songchen.science/blog/zh-CN/tags/MachineLearning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中文文章</title>
+    <link href="https://songchen.science/blog/zh-CN/posts/3b29b655/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/3b29b655/</id>
+    <published>2026-10-24T16:00:00.000Z</published>
+    <updated>2026-10-28T02:27:37.918Z</updated>
+    
+    
+    <summary type="html">列表预览_ZH：只在列表中展示的简短摘要。</summary>
+    
+    
+    
+    <category term="kb" scheme="https://songchen.science/blog/zh-CN/categories/kb/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>目标</title>
+    <link href="https://songchen.science/blog/zh-CN/posts/d6941306/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/d6941306/</id>
+    <published>2026-10-24T16:00:00.000Z</published>
+    <updated>2026-10-28T02:27:37.913Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Body&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="kb" scheme="https://songchen.science/blog/zh-CN/categories/kb/"/>
+    
     
   </entry>
   
