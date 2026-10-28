@@ -48,47 +48,6 @@
   </entry>
   
   <entry>
-    <title>Target</title>
-    <link href="https://songchen.science/blog/posts/0528c8a8/"/>
-    <id>https://songchen.science/blog/posts/0528c8a8/</id>
-    <published>2026-10-24T16:00:00.000Z</published>
-    <updated>2026-10-28T02:27:37.906Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Body&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    <category term="kb" scheme="https://songchen.science/blog/categories/kb/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Post</title>
-    <link href="https://songchen.science/blog/posts/ca102104/"/>
-    <id>https://songchen.science/blog/posts/ca102104/</id>
-    <published>2026-10-24T16:00:00.000Z</published>
-    <updated>2026-10-28T02:27:37.911Z</updated>
-    
-    
-    <summary type="html">LIST_PREVIEW_EN: a short overview of the full note.</summary>
-    
-    
-    
-    <category term="kb" scheme="https://songchen.science/blog/categories/kb/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>How to Publish a Blog Post from Scratch: A Step-by-Step Guide</title>
     <link href="https://songchen.science/blog/posts/711b0316/"/>
     <id>https://songchen.science/blog/posts/711b0316/</id>
@@ -462,14 +421,64 @@
     
     <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
     
-    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
-    
     <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
+    
+    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
     
     <category term="poetry" scheme="https://songchen.science/blog/tags/poetry/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Machine Learning BCA Simulations</title>
+    <link href="https://songchen.science/blog/posts/cb2fd4b/"/>
+    <id>https://songchen.science/blog/posts/cb2fd4b/</id>
+    <published>2023-10-26T13:12:21.000Z</published>
+    <updated>2023-11-19T22:39:43.073Z</updated>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    <category term="Physics" scheme="https://songchen.science/blog/categories/Physics/"/>
+    
+    <category term="Condensed-matter physics" scheme="https://songchen.science/blog/categories/Physics/Condensed-matter-physics/"/>
+    
+    <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    
+    <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cooking with ARDUINO and Python</title>
+    <link href="https://songchen.science/blog/posts/f04ea1f1/"/>
+    <id>https://songchen.science/blog/posts/f04ea1f1/</id>
+    <published>2023-10-23T16:17:30.000Z</published>
+    <updated>2023-10-26T20:19:18.212Z</updated>
+    
+    
+    
+    
+    <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
+    
+    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
+    
+    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
+    
+    
+    <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
+    
+    <category term="python_intermediate" scheme="https://songchen.science/blog/tags/python-intermediate/"/>
     
   </entry>
   

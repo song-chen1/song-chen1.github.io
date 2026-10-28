@@ -36,47 +36,6 @@
   </entry>
   
   <entry>
-    <title>中文文章</title>
-    <link href="https://songchen.science/blog/zh-CN/posts/3b29b655/"/>
-    <id>https://songchen.science/blog/zh-CN/posts/3b29b655/</id>
-    <published>2026-10-24T16:00:00.000Z</published>
-    <updated>2026-10-28T02:27:37.918Z</updated>
-    
-    
-    <summary type="html">列表预览_ZH：只在列表中展示的简短摘要。</summary>
-    
-    
-    
-    <category term="kb" scheme="https://songchen.science/blog/zh-CN/categories/kb/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>目标</title>
-    <link href="https://songchen.science/blog/zh-CN/posts/d6941306/"/>
-    <id>https://songchen.science/blog/zh-CN/posts/d6941306/</id>
-    <published>2026-10-24T16:00:00.000Z</published>
-    <updated>2026-10-28T02:27:37.913Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Body&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    <category term="kb" scheme="https://songchen.science/blog/zh-CN/categories/kb/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>从零开始发布一篇博客：完整步骤指南</title>
     <link href="https://songchen.science/blog/zh-CN/posts/8b9ae1c0/"/>
     <id>https://songchen.science/blog/zh-CN/posts/8b9ae1c0/</id>
@@ -406,9 +365,9 @@
     
     
     
-    <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/"/>
-    
     <category term="Webblog" scheme="https://songchen.science/blog/zh-CN/categories/Webblog/"/>
+    
+    <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/"/>
     
     <category term="Hexo" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/Hexo/"/>
     
