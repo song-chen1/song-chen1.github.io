@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2026-10-25T04:22:38.873Z</updated>
+  <updated>2026-10-29T01:46:17.411Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VoiceStudio (Repost)</title>
+    <link href="https://songchen.science/blog/posts/607938b0/"/>
+    <id>https://songchen.science/blog/posts/607938b0/</id>
+    <published>2026-10-28T11:11:09.000Z</published>
+    <updated>2026-10-29T01:46:17.411Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://github.com/debpalash/VoiceStudio&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;GitHub · debpalash&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from the &lt;a href=&quot;https://github.com/debpalash/VoiceStudio&quot;&gt;VoiceStudio README&lt;/a&gt; on GitHub. Copyright 2024-present Palash Debnath and VoiceStudio contributors, licensed under the &lt;a href=&quot;https://github.com/debpalash/VoiceStudio/blob/main/LICENSE&quot;&gt;GNU AGPL-3.0&lt;/a&gt;. Converted to this post on 2026-10-28: the view-counter image was removed and the image layout was adapted. This post is also under the AGPL-3.0.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p style=&quot;text-align: center&quot;&gt;&lt;img class=&quot;not-gallery-item&quot; src=&quot;/blog/posts/607938b0/image-1.png&quot; alt=&quot;VoiceStudio&quot; width=&quot;88&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://trendshift.io/repositories/28176?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-28176&quot;&gt;&lt;img src=&quot;https://trendshift.io/api/badge/repositories/28176&quot; alt=&quot;Trendshift badge showing where VoiceStudio ranks among trending repositories&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The local voice studio: clone, design, dub, dictate, transcribe and narrate in 646 languages.&lt;/strong&gt;&lt;br&gt;Runs on your own computer and phone. No accounts, no API keys, and nothing leaves your device unless you say yes.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Software" scheme="https://songchen.science/blog/categories/Software/"/>
+    
+    
+    <category term="github" scheme="https://songchen.science/blog/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>uv Documentation (Repost)</title>
@@ -448,37 +476,14 @@
     
     <category term="Condensed-matter physics" scheme="https://songchen.science/blog/categories/Physics/Condensed-matter-physics/"/>
     
-    <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
-    
     <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="Computational Simulations" scheme="https://songchen.science/blog/categories/Computational-Simulations/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
     
     <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cooking with ARDUINO and Python</title>
-    <link href="https://songchen.science/blog/posts/f04ea1f1/"/>
-    <id>https://songchen.science/blog/posts/f04ea1f1/</id>
-    <published>2023-10-23T16:17:30.000Z</published>
-    <updated>2023-10-26T20:19:18.212Z</updated>
-    
-    
-    
-    
-    <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
-    
-    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
-    
-    <category term="Intermediate" scheme="https://songchen.science/blog/categories/Python/Intermediate/"/>
-    
-    
-    <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
-    
-    <category term="python_intermediate" scheme="https://songchen.science/blog/tags/python-intermediate/"/>
     
   </entry>
   

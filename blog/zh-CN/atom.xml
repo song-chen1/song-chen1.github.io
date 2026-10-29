@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/zh-CN/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/zh-CN/"/>
-  <updated>2026-10-28T04:03:45.535Z</updated>
+  <updated>2026-10-29T02:00:05.488Z</updated>
   <id>https://songchen.science/blog/zh-CN/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://songchen.science/blog/zh-CN/posts/22a2dfd9/"/>
     <id>https://songchen.science/blog/zh-CN/posts/22a2dfd9/</id>
     <published>2026-10-24T16:00:00.000Z</published>
-    <updated>2026-10-28T04:03:45.535Z</updated>
+    <updated>2026-10-29T02:00:05.488Z</updated>
     
     
     <summary type="html">梳理人工智能、机器学习与深度学习的关系，介绍机器学习的三步框架，并概览回归、分类、监督学习与强化学习等任务和学习方式。</summary>
@@ -309,9 +309,9 @@
     
     <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
     
-    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
-    
     <category term="Editors" scheme="https://songchen.science/blog/zh-CN/categories/Python/Editors/"/>
+    
+    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
     
     
     <category term="python" scheme="https://songchen.science/blog/zh-CN/tags/python/"/>
@@ -365,9 +365,9 @@
     
     
     
-    <category term="Webblog" scheme="https://songchen.science/blog/zh-CN/categories/Webblog/"/>
-    
     <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/"/>
+    
+    <category term="Webblog" scheme="https://songchen.science/blog/zh-CN/categories/Webblog/"/>
     
     <category term="Hexo" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/Hexo/"/>
     
