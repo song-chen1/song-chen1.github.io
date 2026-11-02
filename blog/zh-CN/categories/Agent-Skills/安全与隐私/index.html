@@ -1,0 +1,2111 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>分类: 安全与隐私 - Project Geeker</title><link rel="manifest" href="/blog/zh-CN/manifest.json"><meta name="application-name" content="Project Geeker"><meta name="msapplication-TileImage" content="/assets/icons/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Project Geeker"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="website"><meta property="og:title" content="Project Geeker"><meta property="og:url" content="https://songchen.science/blog/zh-CN/"><meta property="og:site_name" content="Project Geeker"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://songchen.science/blog/zh-CN/img/og_image.png"><meta property="article:author" content="Song Chen"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://songchen.science/blog/zh-CN/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://songchen.science/blog/zh-CN/"},"headline":"Project Geeker","image":["https://songchen.science/blog/zh-CN/img/og_image.png"],"author":{"@type":"Person","name":"Song Chen"},"publisher":{"@type":"Organization","name":"Project Geeker","logo":{"@type":"ImageObject","url":{"light":"/images/logo.png","dark":"/images/logo-dark.png"}}},"description":""}</script><link rel="alternate" href="/blog/zh-CN/atom.xml" title="Project Geeker" type="application/atom+xml"><link rel="icon" href="/blog/zh-CN/assets/icons/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="/blog/zh-CN/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><meta name="follow.it-verification-code" content="uc2EwCtSW92aTx5KkxEk"><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head><body class="is-3-column"><script type="text/javascript" src="/js/imaegoo/night.js"></script><canvas id="universe"></canvas><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/blog/zh-CN/"><img class="logo-img" src="/blog/zh-CN/images/logo.png" alt="Project Geeker" height="28"><img class="logo-img-dark" src="/blog/zh-CN/images/logo-dark.png" alt="Project Geeker" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/blog/zh-CN/">首页</a><a class="navbar-item" href="/blog/zh-CN/archives/">时间轴</a><a class="navbar-item" href="/blog/zh-CN/categories/">分类</a><a class="navbar-item" href="/blog/zh-CN/tags/">标签</a><a class="navbar-item" href="/blog/zh-CN/blogroll/">友情链接</a><a class="navbar-item" href="/blog/zh-CN/guestbook/">留言板</a><a class="navbar-item" href="/blog/zh-CN/about/me">关于</a></div><div class="navbar-end"><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="画廊" href="/blog/zh-CN/gallery/"><i class="fas fa-images"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="GoogleDrive" href="https://goindex.chen-song90.workers.dev"><i class="fab fa-google-drive"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="iCloud" href="https://hitchhiker.azurewebsites.net"><i class="fas fa-cloud"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" href="https://songchen.science/blog/"> English</a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/blog/zh-CN/categories">分类</a></li><li><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a></li><li class="is-active"><a href="#" aria-current="page">安全与隐私</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2026-11-02T04:00:00.000Z" title="11/2/2026, 12:00:00 PM">2026-11-02</time>发表</span><span class="level-item"><time dateTime="2026-11-02T04:00:00.000Z" title="11/2/2026, 12:00:00 PM">2026-11-02</time>更新</span><span class="level-item"><a class="link-muted" href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a><span> / </span><a class="link-muted" href="/blog/zh-CN/categories/Agent-Skills/%E5%AE%89%E5%85%A8%E4%B8%8E%E9%9A%90%E7%A7%81/">安全与隐私</a></span><span class="level-item">2 小时读完 (大约18748个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/blog/zh-CN/agent-skills/security/">安全与隐私 | Agent Skills</a></p><div class="content"><h1 id="安全与隐私"><a href="#安全与隐私" class="headerlink" title="安全与隐私"></a>安全与隐私</h1><p>安全与隐私类技能用于辅助识别风险、检查访问控制与合规要求，并按安全领域规则完成工作。</p>
+<p><strong>目录快照：2026 年 11 月 2 日</strong></p>
+<h2 id="分类目录"><a href="#分类目录" class="headerlink" title="分类目录"></a>分类目录</h2><ul>
+<li><a href="#skill-a85f1ba3">addyosmani&#x2F;accessibility</a></li>
+<li><a href="#skill-dc6b668a">addyosmani&#x2F;best-practices</a></li>
+<li><a href="#skill-3b2e0f33">alinaqi&#x2F;maggy</a></li>
+<li><a href="#skill-18372ada">aurite-ai&#x2F;agent-verifier</a></li>
+<li><a href="#skill-d5f0f17e">auth0&#x2F;auth0-android</a></li>
+<li><a href="#skill-b26dc175">auth0&#x2F;auth0-angular</a></li>
+<li><a href="#skill-fbe1d26a">auth0&#x2F;auth0-express</a></li>
+<li><a href="#skill-6f61e4e6">auth0&#x2F;auth0-fastify</a></li>
+<li><a href="#skill-9520739d">auth0&#x2F;auth0-mfa</a></li>
+<li><a href="#skill-a99891c6">auth0&#x2F;auth0-migration</a></li>
+<li><a href="#skill-69607a37">auth0&#x2F;auth0-nextjs</a></li>
+<li><a href="#skill-a2c070f5">auth0&#x2F;auth0-nuxt</a></li>
+<li><a href="#skill-41c40c55">auth0&#x2F;auth0-react</a></li>
+<li><a href="#skill-dbaaa516">auth0&#x2F;auth0-react-native</a></li>
+<li><a href="#skill-18f02b8d">auth0&#x2F;auth0-vue</a></li>
+<li><a href="#skill-d4b35768">BehiSecc&#x2F;vibesec</a></li>
+<li><a href="#skill-42ba6c54">better-auth&#x2F;best-practices</a></li>
+<li><a href="#skill-96f54a9d">better-auth&#x2F;create-auth</a></li>
+<li><a href="#skill-88606123">better-auth&#x2F;emailAndPassword</a></li>
+<li><a href="#skill-fa84ea67">better-auth&#x2F;explain-error</a></li>
+<li><a href="#skill-dcea2578">better-auth&#x2F;organization</a></li>
+<li><a href="#skill-1b827c27">better-auth&#x2F;providers</a></li>
+<li><a href="#skill-749dc4e3">better-auth&#x2F;twoFactor</a></li>
+<li><a href="#skill-6d75dab2">binance&#x2F;query-token-audit</a></li>
+<li><a href="#skill-b08ddf70">coinbase&#x2F;authenticate-wallet</a></li>
+<li><a href="#skill-e22ee2c2">composiohq&#x2F;composio</a></li>
+<li><a href="#skill-073e43c9">danoszz&#x2F;penthera</a></li>
+<li><a href="#skill-6e411fef">firebase&#x2F;firebase-auth-basics</a></li>
+<li><a href="#skill-57ad7479">firebase&#x2F;firebase-basics</a></li>
+<li><a href="#skill-c15fb205">firebase&#x2F;firebase-security-rules-auditor</a></li>
+<li><a href="#skill-5e6f4f74">firecrawl&#x2F;firecrawl-build-interact</a></li>
+<li><a href="#skill-217fc9ac">garrytan&#x2F;cso</a></li>
+<li><a href="#skill-36704015">google&#x2F;cloud&#x2F;google-cloud-recipe-auth</a></li>
+<li><a href="#skill-952bd909">google&#x2F;cloud&#x2F;google-cloud-waf-security</a></li>
+<li><a href="#skill-0332b40a">mcollina&#x2F;skills</a></li>
+<li><a href="#skill-7a529255">microsoft&#x2F;azure-identity-dotnet</a></li>
+<li><a href="#skill-4409db41">microsoft&#x2F;azure-identity-java</a></li>
+<li><a href="#skill-6f1b68bf">microsoft&#x2F;azure-identity-py</a></li>
+<li><a href="#skill-f071aa37">microsoft&#x2F;azure-identity-rust</a></li>
+<li><a href="#skill-4e40e1ac">microsoft&#x2F;azure-identity-ts</a></li>
+<li><a href="#skill-e230f40b">microsoft&#x2F;azure-keyvault-py</a></li>
+<li><a href="#skill-ef18f9dd">microsoft&#x2F;azure-keyvault-secrets-rust</a></li>
+<li><a href="#skill-656f27a8">microsoft&#x2F;azure-keyvault-secrets-ts</a></li>
+<li><a href="#skill-5664ef1f">microsoft&#x2F;azure-security-keyvault-keys-dotnet</a></li>
+<li><a href="#skill-d419dcc1">microsoft&#x2F;azure-security-keyvault-keys-java</a></li>
+<li><a href="#skill-2ddbd11b">microsoft&#x2F;azure-security-keyvault-secrets-java</a></li>
+<li><a href="#skill-30d68eee">microsoft&#x2F;fastapi-router-py</a></li>
+<li><a href="#skill-64e5b5f7">microsoft&#x2F;microsoft-azure-webjobs-extensions-authentication-events-dotnet</a></li>
+<li><a href="#skill-512f7100">MiniMax-AI&#x2F;fullstack-dev</a></li>
+<li><a href="#skill-2ca66749">MiniMax-AI&#x2F;ios-application-dev</a></li>
+<li><a href="#skill-3a65c505">mongodb&#x2F;mongodb-mcp-setup</a></li>
+<li><a href="#skill-de7ddb40">moxno&#x2F;privacyscrubber-guard</a></li>
+<li><a href="#skill-d797dcb8">mukul975&#x2F;Anthropic-Cybersecurity-Skills</a></li>
+<li><a href="#skill-4b1d751c">NeoLabHQ&#x2F;review</a></li>
+<li><a href="#skill-dc91e71a">openai&#x2F;netlify-deploy</a></li>
+<li><a href="#skill-336c38c0">openai&#x2F;security-best-practices</a></li>
+<li><a href="#skill-e481f789">openai&#x2F;security-ownership-map</a></li>
+<li><a href="#skill-76d1d792">openai&#x2F;security-threat-model</a></li>
+<li><a href="#skill-0472258e">prompt-security&#x2F;clawsec</a></li>
+<li><a href="#skill-8bba0aaa">redhat&#x2F;cve-skillpack</a></li>
+<li><a href="#skill-d2bb447e">Rootly-AI-Labs&#x2F;rootly-incident-responder</a></li>
+<li><a href="#skill-01cd96f8">saleh-alhaddad&#x2F;itqan-engineering</a></li>
+<li><a href="#skill-0dd767d1">SHADOWPR0&#x2F;security-bluebook-builder</a></li>
+<li><a href="#skill-18253ed6">squirrelscan&#x2F;squirrelscan</a></li>
+<li><a href="#skill-64c736ce">Tencent&#x2F;aig-agent-redteam</a></li>
+<li><a href="#skill-5df8c556">trailofbits&#x2F;ask-questions-if-underspecified</a></li>
+<li><a href="#skill-3a8c6225">trailofbits&#x2F;audit-context-building</a></li>
+<li><a href="#skill-2c42db7a">trailofbits&#x2F;building-secure-contracts</a></li>
+<li><a href="#skill-2338c16a">trailofbits&#x2F;burpsuite-project-parser</a></li>
+<li><a href="#skill-e1c55406">trailofbits&#x2F;claude-in-chrome-troubleshooting</a></li>
+<li><a href="#skill-9988db3a">trailofbits&#x2F;constant-time-analysis</a></li>
+<li><a href="#skill-b7c6775e">trailofbits&#x2F;differential-review</a></li>
+<li><a href="#skill-cc422a9f">trailofbits&#x2F;dwarf-expert</a></li>
+<li><a href="#skill-55a4a723">trailofbits&#x2F;entry-point-analyzer</a></li>
+<li><a href="#skill-d0669438">trailofbits&#x2F;firebase-apk-scanner</a></li>
+<li><a href="#skill-00997cf3">trailofbits&#x2F;insecure-defaults</a></li>
+<li><a href="#skill-57491cba">trailofbits&#x2F;modern-python</a></li>
+<li><a href="#skill-843806ab">trailofbits&#x2F;property-based-testing</a></li>
+<li><a href="#skill-34a5d01f">trailofbits&#x2F;semgrep-rule-creator</a></li>
+<li><a href="#skill-31195d3b">trailofbits&#x2F;semgrep-rule-variant-creator</a></li>
+<li><a href="#skill-29cad9ca">trailofbits&#x2F;sharp-edges</a></li>
+<li><a href="#skill-5bfa856f">trailofbits&#x2F;spec-to-code-compliance</a></li>
+<li><a href="#skill-e1473e47">trailofbits&#x2F;static-analysis</a></li>
+<li><a href="#skill-f40f014c">trailofbits&#x2F;testing-handbook-skills</a></li>
+<li><a href="#skill-a823e9cc">trailofbits&#x2F;variant-analysis</a></li>
+<li><a href="#skill-f5d50bcc">veniceai&#x2F;venice-api-overview</a></li>
+<li><a href="#skill-b0b4dfce">veniceai&#x2F;venice-auth</a></li>
+<li><a href="#skill-121dcb0e">vercel-labs&#x2F;vercel-cli-with-tokens</a></li>
+<li><a href="#skill-18160f09">VoDaiLocz&#x2F;kilo-kit-mcp</a></li>
+<li><a href="#skill-b1f847d7">WordPress&#x2F;wp-abilities-api</a></li>
+<li><a href="#skill-57c869d8">WordPress&#x2F;wp-plugin-development</a></li>
+<li><a href="#skill-d8ef9dfd">WordPress&#x2F;wp-rest-api</a></li>
+<li><a href="#skill-ff2d16e9">wrsmith108&#x2F;varlock-claude-skill</a></li>
+</ul>
+<h2 id="本类全部技能"><a href="#本类全部技能" class="headerlink" title="本类全部技能"></a>本类全部技能</h2><p><a id="skill-a85f1ba3"></a></p>
+<h3 id="addyosmani-accessibility"><a href="#addyosmani-accessibility" class="headerlink" title="addyosmani&#x2F;accessibility"></a>addyosmani&#x2F;accessibility</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/addyosmani/skills/accessibility">Skills by - Google Chrome team - Addy Osmani (Web Quality)</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/addyosmani/web-quality-skills/blob/main/skills/accessibility/SKILL.md">https://github.com&#x2F;addyosmani&#x2F;web-quality-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;accessibility&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> WCAG合规性、屏幕阅读器支持和键盘导航</p>
+<p><strong>适用时机:</strong> 在被要求“提高可访问性”、“a11y审计”、“WCAG合规性”、“屏幕阅读器支持”、“键盘导航”或“使可访问”时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Accessibility (a11y)</li>
+<li>Evidence-led audit workflow</li>
+<li>WCAG Principles: POUR</li>
+<li>Conformance levels</li>
+<li>Perceivable</li>
+<li>Text alternatives (1.1)</li>
+<li>Color contrast (1.4.3, 1.4.6)</li>
+<li>Media alternatives (1.2)</li>
+<li>Operable</li>
+<li>Keyboard accessible (2.1)</li>
+<li>Focus visible (2.4.7)</li>
+<li>Focus not obscured (2.4.11) — new in 2.2</li>
+<li>Skip links (2.4.1)</li>
+<li>Target size (2.5.8) — new in 2.2</li>
+<li>Dragging movements (2.5.7) — new in 2.2</li>
+<li>Timing (2.2)</li>
+</ul>
+<hr>
+<p><a id="skill-dc6b668a"></a></p>
+<h3 id="addyosmani-best-practices"><a href="#addyosmani-best-practices" class="headerlink" title="addyosmani&#x2F;best-practices"></a>addyosmani&#x2F;best-practices</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/addyosmani/skills/best-practices">Skills by - Google Chrome team - Addy Osmani (Web Quality)</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/addyosmani/web-quality-skills/blob/main/skills/best-practices/SKILL.md">https://github.com&#x2F;addyosmani&#x2F;web-quality-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;best-practices&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 安全、现代网络API和代码质量模式</p>
+<p><strong>适用时机:</strong> 在被要求“应用最佳实践”、“安全审计”、“现代化代码”、“代码质量审查”或“检查漏洞”时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Best practices</li>
+<li>Evidence-led audit workflow</li>
+<li>Security</li>
+<li>Browser compatibility</li>
+<li>Doctype declaration</li>
+<li>Character encoding</li>
+<li>Viewport meta tag</li>
+<li>Feature detection</li>
+<li>Polyfills (when needed)</li>
+<li>Deprecated APIs</li>
+<li>Avoid these</li>
+<li>Event listener passive</li>
+<li>Console &amp; errors</li>
+<li>No console errors</li>
+<li>Error boundaries (React)</li>
+<li>Global error handler</li>
+</ul>
+<hr>
+<p><a id="skill-3b2e0f33"></a></p>
+<h3 id="alinaqi-maggy"><a href="#alinaqi-maggy" class="headerlink" title="alinaqi&#x2F;maggy"></a>alinaqi&#x2F;maggy</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/alinaqi/maggy">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/alinaqi/maggy/blob/main/skills/maggy/SKILL.md">https://github.com&#x2F;alinaqi&#x2F;maggy&#x2F;blob&#x2F;main&#x2F;skills&#x2F;maggy&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 采用安全优先的防护框架、以规格驱动的原子待办事项、大型语言模型测试模式和命令行工具编排（gh、vercel、supabase）的个性化项目初始化。</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：采用安全优先的防护措施、以规范为驱动的原子待办事项、大型语言模型测试模式和命令行工具编排（gh、vercel、supabase）的强硬项目初始化。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Maggy Skill</li>
+<li>⚠️ Execute permission model (important)</li>
+<li>When Maggy Helps</li>
+<li>Install and Configure</li>
+<li>Provider Abstraction</li>
+<li>Execute Pipeline</li>
+<li>Competitor Intelligence</li>
+<li>Not Included</li>
+<li>Files</li>
+</ul>
+<hr>
+<p><a id="skill-18372ada"></a></p>
+<h3 id="aurite-ai-agent-verifier"><a href="#aurite-ai-agent-verifier" class="headerlink" title="aurite-ai&#x2F;agent-verifier"></a>aurite-ai&#x2F;agent-verifier</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/Aurite-ai/agent-verifier">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/Aurite-ai/agent-verifier/blob/main/README.md">https://github.com&#x2F;Aurite-ai&#x2F;agent-verifier&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 审查AI代理代码中的秘密、无限循环和幻觉工具</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：审查AI代理代码中的秘密、无限循环、幻觉工具</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>🔍 Aurite Agent Verifier</li>
+<li>Why?</li>
+<li>Author’s Note</li>
+<li>What You Get</li>
+<li>Quickstart</li>
+<li>Install as a Claude Code plugin</li>
+<li>Learn More</li>
+<li>Contributions</li>
+<li>Table of Contents</li>
+<li>Architecture</li>
+<li>Available Skills</li>
+<li>Installation</li>
+<li>Recommended</li>
+<li>Updating Installed Skills</li>
+<li>From NPM Registry</li>
+<li>Usage</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 5 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/Aurite-ai/agent-verifier/blob/main/skills/verification/SKILL.md">verification</a> · <a target="_blank" rel="noopener" href="https://github.com/Aurite-ai/agent-verifier/blob/main/skills/verify-language/SKILL.md">verify-language</a> · <a target="_blank" rel="noopener" href="https://github.com/Aurite-ai/agent-verifier/blob/main/skills/verify-patterns/SKILL.md">verify-patterns</a> · <a target="_blank" rel="noopener" href="https://github.com/Aurite-ai/agent-verifier/blob/main/skills/verify-quality/SKILL.md">verify-quality</a> · <a target="_blank" rel="noopener" href="https://github.com/Aurite-ai/agent-verifier/blob/main/skills/verify-security/SKILL.md">verify-security</a></p>
+<hr>
+<p><a id="skill-d5f0f17e"></a></p>
+<h3 id="auth0-auth0-android"><a href="#auth0-auth0-android" class="headerlink" title="auth0&#x2F;auth0-android"></a>auth0&#x2F;auth0-android</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/auth0/skills/auth0-android">Skills by Auth0</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/auth0/agent-skills/blob/main/README.md">https://github.com&#x2F;auth0&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用Auth0 SDK为原生Android应用程序添加身份验证</p>
+<p><strong>适用时机:</strong> 在带有 Auth0 Web Auth 的 Android 应用中添加登录和退出屏幕 在 Android 上使用生物识别保护安全存储用户令牌 在 Kotlin 移动应用中设置无密码认证 在 Android 项目中处理多因素认证流程 使用 Auth0 访问令牌将 Android 应用连接到受保护的 API</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Auth0 Agent Skills</li>
+<li>Prerequisites</li>
+<li>Install</li>
+<li>Claude Code</li>
+<li>Cursor</li>
+<li>Codex &#x2F; ChatGPT plugins</li>
+<li>Antigravity</li>
+<li>Gemini CLI</li>
+<li>Any Agent (Skills CLI)</li>
+<li>ClawHub Marketplace</li>
+<li>What happens after install</li>
+<li>Forcing the skill with `&#x2F;auth0`</li>
+<li>Migrating from the individual skills</li>
+<li>Coverage</li>
+<li>Example prompts</li>
+<li>Feedback</li>
+</ul>
+<hr>
+<p><a id="skill-b26dc175"></a></p>
+<h3 id="auth0-auth0-angular"><a href="#auth0-auth0-angular" class="headerlink" title="auth0&#x2F;auth0-angular"></a>auth0&#x2F;auth0-angular</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/auth0/skills/auth0-angular">Skills by Auth0</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/auth0/agent-skills/blob/main/README.md">https://github.com&#x2F;auth0&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用@auth0&#x2F;auth0-angular为Angular应用程序添加身份验证</p>
+<p><strong>适用时机:</strong> 在基于重定向的身份验证的 Angular SPA 中添加登录和注册功能 保护特定路由，确保仅限已登录的用户访问 自动将访问令牌附加到出站 API 调用中 登录后自动显示用户个人资料数据（如姓名和头像） 使用 Angular 可观察性对象（observables）根据身份验证状态控制功能访问</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Auth0 Agent Skills</li>
+<li>Prerequisites</li>
+<li>Install</li>
+<li>Claude Code</li>
+<li>Cursor</li>
+<li>Codex &#x2F; ChatGPT plugins</li>
+<li>Antigravity</li>
+<li>Gemini CLI</li>
+<li>Any Agent (Skills CLI)</li>
+<li>ClawHub Marketplace</li>
+<li>What happens after install</li>
+<li>Forcing the skill with `&#x2F;auth0`</li>
+<li>Migrating from the individual skills</li>
+<li>Coverage</li>
+<li>Example prompts</li>
+<li>Feedback</li>
+</ul>
+<hr>
+<p><a id="skill-fbe1d26a"></a></p>
+<h3 id="auth0-auth0-express"><a href="#auth0-auth0-express" class="headerlink" title="auth0&#x2F;auth0-express"></a>auth0&#x2F;auth0-express</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/auth0/skills/auth0-express">Skills by Auth0</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/auth0/agent-skills/blob/main/README.md">https://github.com&#x2F;auth0&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 为Express.js应用程序添加基于会话的身份验证</p>
+<p><strong>适用时机:</strong> 在不手动编写 OAuth 流程的情况下，为 Express.js 网页应用添加登录和退出功能 保护管理员或仪表板路由，确保仅限已认证用户访问 路由处理器中从 Auth0 会话中读取用户个人资料数据 为 Express 设置 OpenID Connect 流程的回调和重定向 URL 限制访问特定 Express 路由，同时保持主页公开</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Auth0 Agent Skills</li>
+<li>Prerequisites</li>
+<li>Install</li>
+<li>Claude Code</li>
+<li>Cursor</li>
+<li>Codex &#x2F; ChatGPT plugins</li>
+<li>Antigravity</li>
+<li>Gemini CLI</li>
+<li>Any Agent (Skills CLI)</li>
+<li>ClawHub Marketplace</li>
+<li>What happens after install</li>
+<li>Forcing the skill with `&#x2F;auth0`</li>
+<li>Migrating from the individual skills</li>
+<li>Coverage</li>
+<li>Example prompts</li>
+<li>Feedback</li>
+</ul>
+<hr>
+<p><a id="skill-6f61e4e6"></a></p>
+<h3 id="auth0-auth0-fastify"><a href="#auth0-auth0-fastify" class="headerlink" title="auth0&#x2F;auth0-fastify"></a>auth0&#x2F;auth0-fastify</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/auth0/skills/auth0-fastify">Skills by Auth0</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/auth0/agent-skills/blob/main/README.md">https://github.com&#x2F;auth0&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 为Fastify网络应用程序添加基于会话的身份验证</p>
+<p><strong>适用时机:</strong> 在不手动编写 OAuth 流程的情况下，为 Fastify 网页应用添加登录和退出功能 保护特定路由，确保仅限已认证用户访问 检索已登录用户的个人资料以显示在仪表盘上 从会话中获取访问令牌以调用下游 API 在 Fastify 中为 Auth0 的托管登录页面设置回调处理</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Auth0 Agent Skills</li>
+<li>Prerequisites</li>
+<li>Install</li>
+<li>Claude Code</li>
+<li>Cursor</li>
+<li>Codex &#x2F; ChatGPT plugins</li>
+<li>Antigravity</li>
+<li>Gemini CLI</li>
+<li>Any Agent (Skills CLI)</li>
+<li>ClawHub Marketplace</li>
+<li>What happens after install</li>
+<li>Forcing the skill with `&#x2F;auth0`</li>
+<li>Migrating from the individual skills</li>
+<li>Coverage</li>
+<li>Example prompts</li>
+<li>Feedback</li>
+</ul>
+<hr>
+<p><a id="skill-9520739d"></a></p>
+<h3 id="auth0-auth0-mfa"><a href="#auth0-auth0-mfa" class="headerlink" title="auth0&#x2F;auth0-mfa"></a>auth0&#x2F;auth0-mfa</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/auth0/skills/auth0-mfa">Skills by Auth0</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/auth0/agent-skills/blob/main/README.md">https://github.com&#x2F;auth0&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 为由Auth0驱动的应用添加多因素认证</p>
+<p><strong>适用时机:</strong> 将TOTP或短信验证添加到现有的Auth0登录流程 在用户更改付款信息之前要求实施增强型多因素认证（MFA） 设置适应性认证，仅在可疑登录时触发MFA 通过在每次会话中强制实施多因素认证来满足PCI-DSS或HIPAA合规要求 将WebAuthn凭据配置为无密码应用的可用第二因素</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Auth0 Agent Skills</li>
+<li>Prerequisites</li>
+<li>Install</li>
+<li>Claude Code</li>
+<li>Cursor</li>
+<li>Codex &#x2F; ChatGPT plugins</li>
+<li>Antigravity</li>
+<li>Gemini CLI</li>
+<li>Any Agent (Skills CLI)</li>
+<li>ClawHub Marketplace</li>
+<li>What happens after install</li>
+<li>Forcing the skill with `&#x2F;auth0`</li>
+<li>Migrating from the individual skills</li>
+<li>Coverage</li>
+<li>Example prompts</li>
+<li>Feedback</li>
+</ul>
+<hr>
+<p><a id="skill-a99891c6"></a></p>
+<h3 id="auth0-auth0-migration"><a href="#auth0-auth0-migration" class="headerlink" title="auth0&#x2F;auth0-migration"></a>auth0&#x2F;auth0-migration</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/auth0/skills/auth0-migration">Skills by Auth0</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/auth0/agent-skills/blob/main/README.md">https://github.com&#x2F;auth0&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 将用户和身份验证流程从其他提供商迁移到Auth0</p>
+<p><strong>适用时机:</strong> 将 Firebase Auth 用户基础库迁移到 Auth0，但不强制重置密码 在分阶段迁移期间并行运行身份验证 从自定义数据库批量导入用户到 Auth0，更新 Express.js API 的 JWT 验证从 HS256 更改为 Auth0 的 RS256 在用户下次登录时懒惰迁移活跃的 Supabase 用户到 Auth0</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Auth0 Agent Skills</li>
+<li>Prerequisites</li>
+<li>Install</li>
+<li>Claude Code</li>
+<li>Cursor</li>
+<li>Codex &#x2F; ChatGPT plugins</li>
+<li>Antigravity</li>
+<li>Gemini CLI</li>
+<li>Any Agent (Skills CLI)</li>
+<li>ClawHub Marketplace</li>
+<li>What happens after install</li>
+<li>Forcing the skill with `&#x2F;auth0`</li>
+<li>Migrating from the individual skills</li>
+<li>Coverage</li>
+<li>Example prompts</li>
+<li>Feedback</li>
+</ul>
+<hr>
+<p><a id="skill-69607a37"></a></p>
+<h3 id="auth0-auth0-nextjs"><a href="#auth0-auth0-nextjs" class="headerlink" title="auth0&#x2F;auth0-nextjs"></a>auth0&#x2F;auth0-nextjs</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/auth0/skills/auth0-nextjs">Skills by Auth0</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/auth0/agent-skills/blob/main/README.md">https://github.com&#x2F;auth0&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 为Next.js应用程序添加身份验证</p>
+<p><strong>适用时机:</strong> 在 Next.js App Router 项目中添加登录和退出流程 保护特定页面，确保仅限已认证用户访问 在服务器组件和 API 路由中读取用户会话数据 使用 Auth0 中件设置 OAuth 回调处理 将 auth 路由从 SDK v3 迁移到 v4 格式</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Auth0 Agent Skills</li>
+<li>Prerequisites</li>
+<li>Install</li>
+<li>Claude Code</li>
+<li>Cursor</li>
+<li>Codex &#x2F; ChatGPT plugins</li>
+<li>Antigravity</li>
+<li>Gemini CLI</li>
+<li>Any Agent (Skills CLI)</li>
+<li>ClawHub Marketplace</li>
+<li>What happens after install</li>
+<li>Forcing the skill with `&#x2F;auth0`</li>
+<li>Migrating from the individual skills</li>
+<li>Coverage</li>
+<li>Example prompts</li>
+<li>Feedback</li>
+</ul>
+<hr>
+<p><a id="skill-a2c070f5"></a></p>
+<h3 id="auth0-auth0-nuxt"><a href="#auth0-auth0-nuxt" class="headerlink" title="auth0&#x2F;auth0-nuxt"></a>auth0&#x2F;auth0-nuxt</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/auth0/skills/auth0-nuxt">Skills by Auth0</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/auth0/agent-skills/blob/main/README.md">https://github.com&#x2F;auth0&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 在使用加密cookie会话的Nuxt 3&#x2F;4应用程序中添加Auth0认证</p>
+<p><strong>适用时机:</strong> 在带有 Auth0 的 Nuxt 3 应用中添加登录和退出流程 通过会话检查保护服务器路由和 API 端点 获取访问令牌以代表用户调用外部 API 使用 Redis 设置状态会话以实现分布式 Nuxt 部署 在 Nuxt SSR 应用中配置基于角色的路由中间件</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Auth0 Agent Skills</li>
+<li>Prerequisites</li>
+<li>Install</li>
+<li>Claude Code</li>
+<li>Cursor</li>
+<li>Codex &#x2F; ChatGPT plugins</li>
+<li>Antigravity</li>
+<li>Gemini CLI</li>
+<li>Any Agent (Skills CLI)</li>
+<li>ClawHub Marketplace</li>
+<li>What happens after install</li>
+<li>Forcing the skill with `&#x2F;auth0`</li>
+<li>Migrating from the individual skills</li>
+<li>Coverage</li>
+<li>Example prompts</li>
+<li>Feedback</li>
+</ul>
+<hr>
+<p><a id="skill-41c40c55"></a></p>
+<h3 id="auth0-auth0-react"><a href="#auth0-auth0-react" class="headerlink" title="auth0&#x2F;auth0-react"></a>auth0&#x2F;auth0-react</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/auth0/skills/auth0-react">Skills by Auth0</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/auth0/agent-skills/blob/main/README.md">https://github.com&#x2F;auth0&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用@auth0&#x2F;auth0-react为React SPA添加身份验证</p>
+<p><strong>适用时机:</strong> 在 React SPA 中添加登录和退出按钮 保护特定路由，确保仅限已登录用户访问 调用带有 Auth0 访问令牌的后端 API 在 React 应用中处理多因素身份验证（MFA）注册和验证 为 Vite 或 CRA 设置 Auth0Provider 的正确环境变量</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Auth0 Agent Skills</li>
+<li>Prerequisites</li>
+<li>Install</li>
+<li>Claude Code</li>
+<li>Cursor</li>
+<li>Codex &#x2F; ChatGPT plugins</li>
+<li>Antigravity</li>
+<li>Gemini CLI</li>
+<li>Any Agent (Skills CLI)</li>
+<li>ClawHub Marketplace</li>
+<li>What happens after install</li>
+<li>Forcing the skill with `&#x2F;auth0`</li>
+<li>Migrating from the individual skills</li>
+<li>Coverage</li>
+<li>Example prompts</li>
+<li>Feedback</li>
+</ul>
+<hr>
+<p><a id="skill-dbaaa516"></a></p>
+<h3 id="auth0-auth0-react-native"><a href="#auth0-auth0-react-native" class="headerlink" title="auth0&#x2F;auth0-react-native"></a>auth0&#x2F;auth0-react-native</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/auth0/skills/auth0-react-native">Skills by Auth0</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/auth0/agent-skills/blob/main/README.md">https://github.com&#x2F;auth0&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 为React Native和Expo移动应用程序添加身份验证</p>
+<p><strong>适用时机:</strong> 在带有 Auth0 通用登录功能的 React Native 应用中添加登录和注册界面 在 iOS 和 Android 上为返回用户设置生物识别认证 从移动应用调用受保护的 API，使用已存储的访问令牌 在 Expo 项目中配置 OAuth 重定向的深度链接回调 将现有 React Native 应用从自定义认证迁移到 Auth0</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Auth0 Agent Skills</li>
+<li>Prerequisites</li>
+<li>Install</li>
+<li>Claude Code</li>
+<li>Cursor</li>
+<li>Codex &#x2F; ChatGPT plugins</li>
+<li>Antigravity</li>
+<li>Gemini CLI</li>
+<li>Any Agent (Skills CLI)</li>
+<li>ClawHub Marketplace</li>
+<li>What happens after install</li>
+<li>Forcing the skill with `&#x2F;auth0`</li>
+<li>Migrating from the individual skills</li>
+<li>Coverage</li>
+<li>Example prompts</li>
+<li>Feedback</li>
+</ul>
+<hr>
+<p><a id="skill-18f02b8d"></a></p>
+<h3 id="auth0-auth0-vue"><a href="#auth0-auth0-vue" class="headerlink" title="auth0&#x2F;auth0-vue"></a>auth0&#x2F;auth0-vue</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/auth0/skills/auth0-vue">Skills by Auth0</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/auth0/agent-skills/blob/main/README.md">https://github.com&#x2F;auth0&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 为Vue.js应用程序添加身份验证</p>
+<p><strong>适用时机:</strong> 在 Vue 3 SPA 中添加登录和退出按钮 使用需要身份验证的导航守卫保护特定路由 代表已登录用户调用后端 API 获取访问令牌 登录后显示用户资料信息，如姓名和头像 为新 Vue 项目设置 Auth0 重定向 URI 和环境变量</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Auth0 Agent Skills</li>
+<li>Prerequisites</li>
+<li>Install</li>
+<li>Claude Code</li>
+<li>Cursor</li>
+<li>Codex &#x2F; ChatGPT plugins</li>
+<li>Antigravity</li>
+<li>Gemini CLI</li>
+<li>Any Agent (Skills CLI)</li>
+<li>ClawHub Marketplace</li>
+<li>What happens after install</li>
+<li>Forcing the skill with `&#x2F;auth0`</li>
+<li>Migrating from the individual skills</li>
+<li>Coverage</li>
+<li>Example prompts</li>
+<li>Feedback</li>
+</ul>
+<hr>
+<p><a id="skill-d4b35768"></a></p>
+<h3 id="BehiSecc-vibesec"><a href="#BehiSecc-vibesec" class="headerlink" title="BehiSecc&#x2F;vibesec"></a>BehiSecc&#x2F;vibesec</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/BehiSecc/VibeSec-Skill">Specialized Domains</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/BehiSecc/VibeSec-Skill/blob/main/SKILL.md">https://github.com&#x2F;BehiSecc&#x2F;VibeSec-Skill&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过从漏洞猎人的视角来编写代码，帮助编写安全的代码，防止包括IDOR、XSS、SQL注入、SSRF和弱密码在内的常见漏洞。</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：通过从漏洞猎人的视角看待代码，通过防止包括 IDOR、XSS、SQL 注入、SSRF 和弱式身份验证在内的常见漏洞，有助于编写安全代码。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Secure Coding Guide for Web Applications</li>
+<li>Overview</li>
+<li>Access Control Issues</li>
+<li>Core Requirements</li>
+<li>Authorization Checks Checklist</li>
+<li>Common Pitfalls to Avoid</li>
+<li>Implementation Pattern</li>
+<li>Client-Side Bugs</li>
+<li>Cross-Site Scripting (XSS)</li>
+<li>Cross-Site Request Forgery (CSRF)</li>
+<li>Secret Keys and Sensitive Data Exposure</li>
+<li>Open Redirect</li>
+<li>Protection Strategies</li>
+<li>Bypass Techniques to Block</li>
+<li>IDN Homograph Attack Protection</li>
+<li>Password Security</li>
+</ul>
+<hr>
+<p><a id="skill-42ba6c54"></a></p>
+<h3 id="better-auth-best-practices"><a href="#better-auth-best-practices" class="headerlink" title="better-auth&#x2F;best-practices"></a>better-auth&#x2F;best-practices</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/better-auth/skills/best-practices">Skills by Better Auth Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/better-auth/skills/blob/main/better-auth/best-practices/SKILL.md">https://github.com&#x2F;better-auth&#x2F;skills&#x2F;blob&#x2F;main&#x2F;better-auth&#x2F;best-practices&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 更好的认证集成的最佳实践</p>
+<p><strong>适用时机:</strong> 当用户提到Better Auth、betterauth、auth.ts，或者需要使用电子邮件&#x2F;密码、OAuth或插件配置来设置TypeScript认证时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Better Auth Integration Guide</li>
+<li>Documentation Version</li>
+<li>Setup Workflow</li>
+<li>Quick Reference</li>
+<li>Environment Variables</li>
+<li>File Location</li>
+<li>CLI Commands</li>
+<li>Core Config Options</li>
+<li>Database</li>
+<li>Session Management</li>
+<li>User &amp; Account Config</li>
+<li>Email Flows</li>
+<li>Security</li>
+<li>Hooks</li>
+<li>Plugins</li>
+<li>Client</li>
+</ul>
+<hr>
+<p><a id="skill-96f54a9d"></a></p>
+<h3 id="better-auth-create-auth"><a href="#better-auth-create-auth" class="headerlink" title="better-auth&#x2F;create-auth"></a>better-auth&#x2F;create-auth</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/better-auth/skills/create-auth">Skills by Better Auth Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/better-auth/skills/blob/main/better-auth/create-auth/SKILL.md">https://github.com&#x2F;better-auth&#x2F;skills&#x2F;blob&#x2F;main&#x2F;better-auth&#x2F;create-auth&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用Better Auth创建身份验证设置</p>
+<p><strong>适用时机:</strong> 当用户想使用Better Auth为新项目或现有项目添加登录、注册或身份验证时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Create Auth Skill</li>
+<li>Phase 1: Planning (REQUIRED before implementation)</li>
+<li>Step 1: Scan the project</li>
+<li>Step 2: Ask planning questions</li>
+<li>Step 3: Summarize the plan</li>
+<li>Phase 2: Implementation</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Server Config (auth.ts)</li>
+<li>Client Config (auth-client.ts)</li>
+<li>Route Handler Setup</li>
+<li>Database Migrations</li>
+<li>Database Adapters</li>
+<li>Drizzle + PostgreSQL Setup</li>
+<li>Drizzle Config (`drizzle.config.ts`)</li>
+<li>Common Plugins</li>
+</ul>
+<hr>
+<p><a id="skill-88606123"></a></p>
+<h3 id="better-auth-emailAndPassword"><a href="#better-auth-emailAndPassword" class="headerlink" title="better-auth&#x2F;emailAndPassword"></a>better-auth&#x2F;emailAndPassword</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/better-auth/skills/emailAndPassword">Skills by Better Auth Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/better-auth/skills/blob/main/better-auth/emailAndPassword/SKILL.md">https://github.com&#x2F;better-auth&#x2F;skills&#x2F;blob&#x2F;main&#x2F;better-auth&#x2F;emailAndPassword&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用Better Auth进行电子邮件和密码认证</p>
+<p><strong>适用时机:</strong> 当用户需要使用Better Auth设置登录、登录、注册、凭证认证或密码安全时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Quick Start</li>
+<li>Email Verification Setup</li>
+<li>Requiring Email Verification</li>
+<li>Client Side Validation</li>
+<li>Callback URLs</li>
+<li>Password Reset Flows</li>
+<li>Security Considerations</li>
+<li>Sending the Password Reset</li>
+<li>Password Hashing</li>
+<li>Custom Hashing Algorithm</li>
+</ul>
+<hr>
+<p><a id="skill-fa84ea67"></a></p>
+<h3 id="better-auth-explain-error"><a href="#better-auth-explain-error" class="headerlink" title="better-auth&#x2F;explain-error"></a>better-auth&#x2F;explain-error</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/better-auth/skills/explain-error">Skills by Better Auth Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/better-auth/skills/tree/main/better-auth/explain-error">https://github.com&#x2F;better-auth&#x2F;skills&#x2F;tree&#x2F;main&#x2F;better-auth&#x2F;explain-error</a></p>
+<p><strong>功能简介:</strong> 更好地解释“认证”错误消息</p>
+<p><strong>适用时机:</strong> 查找 Better Auth 中 INVALID_SESSION 错误含义 在 Next.js 路由中为 Better Auth 的认证失败添加适当的捕获块 在调试 RATE_LIMIT_EXCEEDED 问题时查找相关错误代码 为 Better Auth 的 OAuth 回调错误生成生产级错误处理 了解何时可以重试 Better Auth 错误，何时是致命错误</p>
+<p>未能取得单独的 SKILL.md；本文根据目录简介和可访问的仓库 README 整理。</p>
+<hr>
+<p><a id="skill-dcea2578"></a></p>
+<h3 id="better-auth-organization"><a href="#better-auth-organization" class="headerlink" title="better-auth&#x2F;organization"></a>better-auth&#x2F;organization</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/better-auth/skills/organization">Skills by Better Auth Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/better-auth/skills/blob/main/better-auth/organization/SKILL.md">https://github.com&#x2F;better-auth&#x2F;skills&#x2F;blob&#x2F;main&#x2F;better-auth&#x2F;organization&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用Better Auth进行组织管理</p>
+<p><strong>适用时机:</strong> 当用户需要组织设置、团队管理、成员角色、访问控制或Better Auth组织插件时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Setup</li>
+<li>Client-Side Setup</li>
+<li>Creating Organizations</li>
+<li>Controlling Organization Creation</li>
+<li>Creating Organizations on Behalf of Users</li>
+<li>Active Organizations</li>
+<li>Members</li>
+<li>Adding Members (Server-Side)</li>
+<li>Assigning Multiple Roles</li>
+<li>Removing Members</li>
+<li>Updating Member Roles</li>
+<li>Membership Limits</li>
+<li>Invitations</li>
+<li>Setting Up Invitation Emails</li>
+<li>Sending Invitations</li>
+<li>Shareable Invitation URLs</li>
+</ul>
+<hr>
+<p><a id="skill-1b827c27"></a></p>
+<h3 id="better-auth-providers"><a href="#better-auth-providers" class="headerlink" title="better-auth&#x2F;providers"></a>better-auth&#x2F;providers</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/better-auth/skills/providers">Skills by Better Auth Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/better-auth/skills/tree/main/better-auth/providers">https://github.com&#x2F;better-auth&#x2F;skills&#x2F;tree&#x2F;main&#x2F;better-auth&#x2F;providers</a></p>
+<p><strong>功能简介:</strong> 更好的Auth认证提供商</p>
+<p><strong>适用时机:</strong> 查找Better Auth中GitHub OAuth所需的环境变量 检查Better Auth为Google登录所期望的回调URL格式 比较Discord和Twitter OAuth提供商的设置步骤 在编写认证路由的同时生成特定提供商的集成代码 审查无密码认证设置的特殊要求</p>
+<p>未能取得单独的 SKILL.md；本文根据目录简介和可访问的仓库 README 整理。</p>
+<hr>
+<p><a id="skill-749dc4e3"></a></p>
+<h3 id="better-auth-twoFactor"><a href="#better-auth-twoFactor" class="headerlink" title="better-auth&#x2F;twoFactor"></a>better-auth&#x2F;twoFactor</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/better-auth/skills/twoFactor">Skills by Better Auth Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/better-auth/skills/blob/main/better-auth/twoFactor/SKILL.md">https://github.com&#x2F;better-auth&#x2F;skills&#x2F;blob&#x2F;main&#x2F;better-auth&#x2F;twoFactor&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用Better Auth的双重身份验证</p>
+<p><strong>适用时机:</strong> 当用户需要使用Better Auth进行多因素身份验证（MFA）、多重身份验证、身份验证器设置或登录安全时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Setup</li>
+<li>Client-Side Setup</li>
+<li>Enabling 2FA for Users</li>
+<li>TOTP (Authenticator App)</li>
+<li>Displaying the QR Code</li>
+<li>Verifying TOTP Codes</li>
+<li>TOTP Configuration Options</li>
+<li>OTP (Email&#x2F;SMS)</li>
+<li>Configuring OTP Delivery</li>
+<li>Sending and Verifying OTP</li>
+<li>OTP Storage Security</li>
+<li>Backup Codes</li>
+<li>Displaying Backup Codes</li>
+<li>Regenerating Backup Codes</li>
+<li>Using Backup Codes for Recovery</li>
+<li>Backup Code Configuration</li>
+</ul>
+<hr>
+<p><a id="skill-6d75dab2"></a></p>
+<h3 id="binance-query-token-audit"><a href="#binance-query-token-audit" class="headerlink" title="binance&#x2F;query-token-audit"></a>binance&#x2F;query-token-audit</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/binance/skills/query-token-audit">Skills by Binance</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/binance/binance-skills-hub/blob/main/skills/binance-web3/query-token-audit/SKILL.md">https://github.com&#x2F;binance&#x2F;binance-skills-hub&#x2F;blob&#x2F;main&#x2F;skills&#x2F;binance-web3&#x2F;query-token-audit&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 审计代币安全，以检测BSC、Base、Solana和以太坊上的诈骗、蜜罐和恶意合约</p>
+<p><strong>适用时机:</strong> 在用户询问“这个代币安全吗？”、“检查代币安全性”、“审计代币”或在任何兑换之前使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Query Token Audit Skill</li>
+<li>Overview</li>
+<li>Use Cases</li>
+<li>Supported Chains</li>
+<li>API: Token Security Audit</li>
+<li>Method: POST</li>
+<li>User Agent Header</li>
+<li>Notes</li>
+</ul>
+<hr>
+<p><a id="skill-b08ddf70"></a></p>
+<h3 id="coinbase-authenticate-wallet"><a href="#coinbase-authenticate-wallet" class="headerlink" title="coinbase&#x2F;authenticate-wallet"></a>coinbase&#x2F;authenticate-wallet</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/coinbase/skills/authenticate-wallet">Skills by Coinbase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/coinbase/agentic-wallet-skills/blob/main/README.md">https://github.com&#x2F;coinbase&#x2F;agentic-wallet-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 通过电子邮件一次性密码处理Coinbase支付钱包的登录</p>
+<p><strong>适用时机:</strong> 在发送USDC之前登录您的Coinbase钱包 在交易过程中会话过期后重新验证 设置新机器上的钱包访问权限（首次） 在运行余额查询之前检查钱包认证状态 在交易期间恢复“未登录”错误</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Coinbase Agentic Wallet Skills</li>
+<li>What it does</li>
+<li>Installation</li>
+<li>Usage</li>
+<li>Contributing</li>
+<li>Updating the `awal` version</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-e22ee2c2"></a></p>
+<h3 id="composiohq-composio"><a href="#composiohq-composio" class="headerlink" title="composiohq&#x2F;composio"></a>composiohq&#x2F;composio</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/composiohq/skills/composio">Skills by Composio Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/ComposioHQ/skills/blob/main/skills/composio/SKILL.md">https://github.com&#x2F;ComposioHQ&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;composio&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用管理式身份验证将AI代理连接到1000多个外部应用程序</p>
+<p><strong>适用时机:</strong> 从终端命令发送 Gmail 草稿，无需编写任何代码 将多租户 AI 代理连接到每个用户的专属 Slack 工作区 根据使用场景搜索 1000 多种工具集成，以找到合适的操作 在对话中触发 AI 代理创建 GitHub 问题 监听来自外部应用的实时事件，以驱动代理工作流程</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>When to Apply</li>
+<li>Setup</li>
+<li>1. Use Apps via Composio CLI</li>
+<li>2. Building Apps and Agents with Composio</li>
+</ul>
+<hr>
+<p><a id="skill-073e43c9"></a></p>
+<h3 id="danoszz-penthera"><a href="#danoszz-penthera" class="headerlink" title="danoszz&#x2F;penthera"></a>danoszz&#x2F;penthera</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/danoszz/penthera/tree/main/skills/penthera">n8n Automation</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/danoszz/penthera/blob/main/skills/penthera/SKILL.md">https://github.com&#x2F;danoszz&#x2F;penthera&#x2F;blob&#x2F;main&#x2F;skills&#x2F;penthera&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 针对仓库、依赖项和代理配置的离线基于规则的安全检查</p>
+<p><strong>适用时机:</strong> 当用户请求扫描、审计、加固、修复或审查其自身应用的安全性、测试环境URL、本地主机、仓库、依赖项或代理设置时使用。未经明确授权，请勿用于目标。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Penthera Security Scanner</li>
+<li>Critical: Authorization gate</li>
+<li>Preflight</li>
+<li>Resolve CLI command</li>
+<li>Decision tree</li>
+<li>Default safe behavior</li>
+<li>Reply with the brief</li>
+<li>Destructive mode gate</li>
+<li>Workflow 1: Pre-release audit</li>
+<li>Workflow 2: Repo + live combined</li>
+<li>Workflow 3: CI &#x2F; baseline regression</li>
+<li>Workflow 4: Scan and fix</li>
+<li>Fix-mode gate</li>
+<li>Workflow 5: Owner reports &amp; questionnaire responses</li>
+<li>Authenticated scans</li>
+<li>Workflow 6: Agent config audit</li>
+</ul>
+<hr>
+<p><a id="skill-6e411fef"></a></p>
+<h3 id="firebase-firebase-auth-basics"><a href="#firebase-firebase-auth-basics" class="headerlink" title="firebase&#x2F;firebase-auth-basics"></a>firebase&#x2F;firebase-auth-basics</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/firebase/skills/firebase-auth-basics">Skills by Firebase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/firebase/agent-skills/blob/main/skills/firebase-auth-basics/SKILL.md">https://github.com&#x2F;firebase&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;firebase-auth-basics&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用登录提供商设置Firebase身份验证</p>
+<p><strong>适用时机:</strong> 当用户的 App 需要使用身份验证规则进行用户登录、用户管理或安全的数据访问时，请使用此技能。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Prerequisites</li>
+<li>Core Concepts</li>
+<li>Users</li>
+<li>Identity Providers</li>
+<li>Tokens</li>
+<li>Workflow</li>
+<li>1. Provisioning</li>
+<li>2. Client Setup &amp; Usage</li>
+<li>3. Security Rules</li>
+</ul>
+<hr>
+<p><a id="skill-57ad7479"></a></p>
+<h3 id="firebase-firebase-basics"><a href="#firebase-firebase-basics" class="headerlink" title="firebase&#x2F;firebase-basics"></a>firebase&#x2F;firebase-basics</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/firebase/skills/firebase-basics">Skills by Firebase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/firebase/agent-skills/blob/main/skills/firebase-basics/SKILL.md">https://github.com&#x2F;firebase&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;firebase-basics&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 处理Firebase CLI的安装、身份验证和日常工作流程</p>
+<p><strong>适用时机:</strong> 在终端中从零开始设置一个新的Firebase项目 在没有浏览器的情况下在远程服务器上登录Firebase 在开发过程中切换多个Firebase项目 更新后修复损坏的Firebase CLI安装 添加像Hosting或Firestore这样的新Firebase服务到现有项目中</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Prerequisites</li>
+<li>Firebase Usage Principles</li>
+<li>References</li>
+<li>Common Issues</li>
+</ul>
+<hr>
+<p><a id="skill-c15fb205"></a></p>
+<h3 id="firebase-firebase-security-rules-auditor"><a href="#firebase-firebase-security-rules-auditor" class="headerlink" title="firebase&#x2F;firebase-security-rules-auditor"></a>firebase&#x2F;firebase-security-rules-auditor</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/firebase/skills/firebase-security-rules-auditor">Skills by Firebase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/firebase/agent-skills/blob/main/skills/firebase-security-rules-auditor/SKILL.md">https://github.com&#x2F;firebase&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;firebase-security-rules-auditor&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 审计Firestore安全规则并标记有风险的模式</p>
+<p><strong>适用时机:</strong> 用于审计&#x2F;审查规则、运行红队规则评估或根据审计员检查清单进行评分。不要用于 Firebase CLI（登录、部署）、Auth、Crashlytics、远程配置或数据库查询。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Overview</li>
+<li>Scoring Criteria</li>
+<li>Assessment: Security Validator (Red Team Edition)</li>
+<li>Mandatory Audit Checklist:</li>
+<li>Admin Bootstrapping &amp; Privileges:</li>
+<li>Scoring Criteria (1-5):</li>
+</ul>
+<hr>
+<p><a id="skill-5e6f4f74"></a></p>
+<h3 id="firecrawl-firecrawl-build-interact"><a href="#firecrawl-firecrawl-build-interact" class="headerlink" title="firecrawl&#x2F;firecrawl-build-interact"></a>firecrawl&#x2F;firecrawl-build-interact</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/firecrawl/skills/firecrawl-build-interact">Skills by Firecrawl Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/firecrawl/skills/blob/main/README.md">https://github.com&#x2F;firecrawl&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 多步骤Firecrawl浏览器流程：点击、填写表单、分页和考虑身份验证的导航</p>
+<p><strong>适用时机:</strong> 登录仪表盘并爬取认证后的数据 通过分页搜索结果点击以收集条目 从应用代码中填写并提交多步骤网页表单 驱动无限滚动动态以捕获所有项目 导航依赖JS的单页应用，在交互时显示内容</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Firecrawl Skills</li>
+<li>Install</li>
+<li>Catalog layout</li>
+<li>Contributing: where does my PR go?</li>
+<li>Skills</li>
+<li>Core (`skills&#x2F;core&#x2F;`)</li>
+<li>Build (`skills&#x2F;build&#x2F;`)</li>
+<li>Workflows (`skills&#x2F;workflows&#x2F;`)</li>
+<li>MCP Server</li>
+<li>Plugins</li>
+<li>Prerequisites</li>
+<li>Which skills do I need?</li>
+<li>Docs (Source of Truth)</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-217fc9ac"></a></p>
+<h3 id="garrytan-cso"><a href="#garrytan-cso" class="headerlink" title="garrytan&#x2F;cso"></a>garrytan&#x2F;cso</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/garrytan/skills/cso">Skills by Garry Tan (gstack)</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/garrytan/gstack/blob/main/cso/SKILL.md">https://github.com&#x2F;garrytan&#x2F;gstack&#x2F;blob&#x2F;main&#x2F;cso&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 首席安全官：OWASP前10+STRIDE威胁模型，无假阳性排除</p>
+<p><strong>适用时机:</strong> 在仓库公开前扫描 git 历史记录以查找泄露的 AWS 密钥和 OAuth 令牌 审计 GitHub Actions 工作流中的 pull_request_target 滥用行为和未挂钩的第三方动作 检查 Webhook 处理程序，确保整个代码库中均有 HMAC 签名验证 运行 LLM 功能审计，以追踪到达系统提示的用户输入路径 在进行 SOC 2 或合规审查前的审计周期中跟踪安全态势趋势</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>&#x2F;cso — evidence before assurance</li>
+<li>Arguments</li>
+<li>Mode Resolution</li>
+<li>Section index — Read each section when its situation applies</li>
+<li>Phase 0: Application model and readiness</li>
+<li>Phase 1: Attack surface census</li>
+<li>Phase 12: Evidence rubric and independent challenge</li>
+<li>Phase 13: Report and repair artifacts</li>
+<li>Phase 14: Recovery and current-source rechecks</li>
+</ul>
+<hr>
+<p><a id="skill-36704015"></a></p>
+<h3 id="google-cloud-google-cloud-recipe-auth"><a href="#google-cloud-google-cloud-recipe-auth" class="headerlink" title="google&#x2F;cloud&#x2F;google-cloud-recipe-auth"></a>google&#x2F;cloud&#x2F;google-cloud-recipe-auth</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/google-cloud-recipe-auth">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/google-cloud-recipe-auth/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;google-cloud-recipe-auth&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 提供关于验证和授权Google云服务和API的专家指导，涵盖人类用户、服务身份、应用程序默认凭证（ADC）和b...</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：提供有关验证和授权Google云服务和API的专家指导，涵盖人类用户、服务身份、应用程序默认凭证（ADC）和b...</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Authenticating and Authorizing to Google Cloud (IAM)</li>
+<li>Attribution</li>
+<li>Authentication</li>
+<li>Clarifying Questions for the Agent</li>
+<li>Human Authentication</li>
+<li>Types of User Identities</li>
+<li>Methods of Access for Developers and Administrators</li>
+<li>For End-Users and Customers</li>
+<li>Service-to-Service Authentication</li>
+<li>Service Accounts and Service Agents</li>
+<li>Best Practice: Attaching Service Accounts</li>
+<li>Special Cases &amp; Advanced Topics</li>
+<li>Authorization</li>
+<li>Examples</li>
+<li>Human-to-Service (Local Python Development)</li>
+<li>Service-to-Service (Cloud Run to Cloud SQL)</li>
+</ul>
+<hr>
+<p><a id="skill-952bd909"></a></p>
+<h3 id="google-cloud-google-cloud-waf-security"><a href="#google-cloud-google-cloud-waf-security" class="headerlink" title="google&#x2F;cloud&#x2F;google-cloud-waf-security"></a>google&#x2F;cloud&#x2F;google-cloud-waf-security</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/google-cloud-waf-security">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/google-cloud-waf-security/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;google-cloud-waf-security&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 基于Google Cloud Well-Architected Framework (WAF)中的设计原则和建议，为Google Cloud工作负载生成以安全为重点的指导。</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：基于Google Cloud Well-Architected Framework (WAF)中的设计原则和建议，为Google Cloud工作负载生成以安全为重点的指导。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Google Cloud Well-Architected Framework skill for the Security pillar</li>
+<li>Attribution</li>
+<li>Overview</li>
+<li>Workflow</li>
+<li>Core principles</li>
+<li>Relevant Google Cloud products</li>
+<li>Workload assessment questions</li>
+<li>Validation checklist</li>
+</ul>
+<hr>
+<p><a id="skill-0332b40a"></a></p>
+<h3 id="mcollina-skills"><a href="#mcollina-skills" class="headerlink" title="mcollina&#x2F;skills"></a>mcollina&#x2F;skills</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/mcollina/skills/tree/main/skills">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/mcollina/skills/blob/main/README.md">https://github.com&#x2F;mcollina&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> Matteo Collina的11项技能：Node.js、Fastify、TypeScript、OAuth、Git&#x2F;GitHub、ESLint neostandard、文档（Diataxis）、Node.js核心内部、技能优化器等</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：Matteo Collina的11项技能：Node.js、Fastify、TypeScript、OAuth、Git&#x2F;GitHub、ESLint neostandard、文档（Diataxis）、Node.js核心内部、技能优化器等</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Matteo Collina’s Skills</li>
+<li>Available Skills</li>
+<li>Usage</li>
+<li>Benchmarking</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 11 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/mcollina/skills/blob/main/skills/documentation/SKILL.md">documentation</a> · <a target="_blank" rel="noopener" href="https://github.com/mcollina/skills/blob/main/skills/fastify/SKILL.md">fastify</a> · <a target="_blank" rel="noopener" href="https://github.com/mcollina/skills/blob/main/skills/init/SKILL.md">init</a> · <a target="_blank" rel="noopener" href="https://github.com/mcollina/skills/blob/main/skills/linting-neostandard-eslint9/SKILL.md">linting-neostandard-eslint9</a> · <a target="_blank" rel="noopener" href="https://github.com/mcollina/skills/blob/main/skills/node/SKILL.md">node</a> · <a target="_blank" rel="noopener" href="https://github.com/mcollina/skills/blob/main/skills/nodejs-core/SKILL.md">nodejs-core</a> · <a target="_blank" rel="noopener" href="https://github.com/mcollina/skills/blob/main/skills/oauth/SKILL.md">oauth</a> · <a target="_blank" rel="noopener" href="https://github.com/mcollina/skills/blob/main/skills/octocat/SKILL.md">octocat</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-7a529255"></a></p>
+<h3 id="microsoft-azure-identity-dotnet"><a href="#microsoft-azure-identity-dotnet" class="headerlink" title="microsoft&#x2F;azure-identity-dotnet"></a>microsoft&#x2F;azure-identity-dotnet</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-identity-dotnet">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-identity-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-identity-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> Microsoft Entra ID 身份验证</p>
+<p><strong>适用时机:</strong> 在不硬编码密钥的情况下验证 Azure SDK 客户端（Blob 存储、密钥宝） 从本地的 AzureCliCredential 切换到生产环境中的 ManagedIdentityCredential，无需代码更改 使用客户端 ID 在 AKS 工作负载上配置用户指定的托管身份 使用 ChainedTokenCredential 与备用凭据串联，实现多环境部署 对 Azure 政府或中国主权云端点进行身份验证</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Identity library for .NET</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Service Principal with Secret</li>
+<li>Service Principal with Certificate</li>
+<li>Managed Identity</li>
+<li>DefaultAzureCredential</li>
+<li>Basic Usage</li>
+<li>ASP.NET Core with Dependency Injection</li>
+<li>Customizing DefaultAzureCredential</li>
+<li>Credential Types</li>
+<li>ManagedIdentityCredential (Production)</li>
+<li>ClientSecretCredential</li>
+<li>ClientCertificateCredential</li>
+<li>ChainedTokenCredential (Custom Chain)</li>
+<li>Developer Credentials</li>
+</ul>
+<hr>
+<p><a id="skill-4409db41"></a></p>
+<h3 id="microsoft-azure-identity-java"><a href="#microsoft-azure-identity-java" class="headerlink" title="microsoft&#x2F;azure-identity-java"></a>microsoft&#x2F;azure-identity-java</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-identity-java">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-identity-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-identity-java&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> Microsoft Entra ID 身份验证</p>
+<p><strong>适用时机:</strong> 在Java应用程序中实现默认AzureCredential、托管身份、服务主密钥或任何Azure身份验证模式时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Identity library for Java</li>
+<li>Installation</li>
+<li>Key Concepts</li>
+<li>DefaultAzureCredential (Recommended)</li>
+<li>Configure DefaultAzureCredential</li>
+<li>Managed Identity</li>
+<li>Service Principal with Secret</li>
+<li>Service Principal with Certificate</li>
+<li>Environment Credential</li>
+<li>Required Environment Variables</li>
+<li>Azure CLI Credential</li>
+<li>Interactive Browser</li>
+<li>Device Code</li>
+<li>Chained Credential</li>
+<li>Workload Identity (AKS)</li>
+<li>Token Caching</li>
+</ul>
+<hr>
+<p><a id="skill-6f1b68bf"></a></p>
+<h3 id="microsoft-azure-identity-py"><a href="#microsoft-azure-identity-py" class="headerlink" title="microsoft&#x2F;azure-identity-py"></a>microsoft&#x2F;azure-identity-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-identity-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-identity-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-identity-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> Microsoft Entra ID 身份验证</p>
+<p><strong>适用时机:</strong> 使用Python在Azure Blob存储客户端中进行身份验证，无需管理凭证 从本地Azure CLI登录切换到生产环境中管理的身份，且无需更改代码 通过OpenAI SDK的get_bearer_token_provider获取Azure OpenAI的Bearer令牌 为在AKS上运行的Python应用程序设置工作负载身份认证 将ManagedIdentityCredential与AzureCliCredential串联，作为开发&#x2F;生产备用方案</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Identity library for Python</li>
+<li>Installation</li>
+<li>Python Version</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>DefaultAzureCredential</li>
+<li>Credential Chain Order</li>
+<li>Customizing DefaultAzureCredential</li>
+<li>Exclude Parameters</li>
+<li>get_bearer_token_provider</li>
+<li>Credential Types</li>
+<li>Credential Chains</li>
+<li>Azure-Hosted Applications</li>
+<li>Service Principals</li>
+<li>User Authentication</li>
+<li>Developer Tools</li>
+</ul>
+<hr>
+<p><a id="skill-f071aa37"></a></p>
+<h3 id="microsoft-azure-identity-rust"><a href="#microsoft-azure-identity-rust" class="headerlink" title="microsoft&#x2F;azure-identity-rust"></a>microsoft&#x2F;azure-identity-rust</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-identity-rust">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-rust/skills/azure-identity-rust/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-rust&#x2F;skills&#x2F;azure-identity-rust&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> Microsoft Entra ID 身份验证</p>
+<p><strong>适用时机:</strong> 使用Azure CLI凭据在本地验证Rust应用程序与Azure密钥库的连接 从AKS工作集（带有工作负载身份）连接到Azure Blob存储 在CI中旋转服务主密钥，而无需更改应用程序代码 使用Azure Functions上的系统分配管理身份访问Azure SQL 在生产环境中无需代码更改，从本地DeveloperToolsCredential切换到ManagedIdentityCredential</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Identity library for Rust</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>DeveloperToolsCredential (Local Development)</li>
+<li>ManagedIdentityCredential (Production)</li>
+<li>ClientSecretCredential (Service Principal)</li>
+<li>Credential Types</li>
+<li>Best Practices</li>
+<li>Reference Links</li>
+</ul>
+<hr>
+<p><a id="skill-4e40e1ac"></a></p>
+<h3 id="microsoft-azure-identity-ts"><a href="#microsoft-azure-identity-ts" class="headerlink" title="microsoft&#x2F;azure-identity-ts"></a>microsoft&#x2F;azure-identity-ts</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-identity-ts">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-identity-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-identity-ts&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> Microsoft Entra ID 身份验证</p>
+<p><strong>适用时机:</strong> 在使用默认AzureCredential、管理身份、服务主导者或交互式浏览器登录进行身份验证时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Identity library for TypeScript</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Service Principal (Secret)</li>
+<li>Service Principal (Certificate)</li>
+<li>Workload Identity (Kubernetes)</li>
+<li>DefaultAzureCredential (Recommended for Local Development)</li>
+<li>Managed Identity</li>
+<li>System-Assigned</li>
+<li>User-Assigned (by Client ID)</li>
+<li>User-Assigned (by Resource ID)</li>
+<li>User-Assigned (by Object ID)</li>
+<li>Service Principal</li>
+<li>Client Secret</li>
+<li>Client Certificate</li>
+<li>Interactive Authentication</li>
+</ul>
+<hr>
+<p><a id="skill-e230f40b"></a></p>
+<h3 id="microsoft-azure-keyvault-py"><a href="#microsoft-azure-keyvault-py" class="headerlink" title="microsoft&#x2F;azure-keyvault-py"></a>microsoft&#x2F;azure-keyvault-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-keyvault-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-keyvault-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-keyvault-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 秘密、密钥和证书管理</p>
+<p><strong>适用时机:</strong> 在运行时从数据库中获取凭据，而不是将其硬编码在配置文件中 通过更新单个安全库密钥，将 API 密钥在多个服务之间轮换 使用存储在安全库中的 RSA 密钥签名数据包，而不会暴露私钥 管理 Azure 托管应用的 TLS 证书生命周期 在写入存储之前，使用由安全库管理的密钥加密敏感的用户数据</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Key Vault SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Secrets</li>
+<li>SecretClient Setup</li>
+<li>Secret Operations</li>
+<li>Keys</li>
+<li>KeyClient Setup</li>
+<li>Key Operations</li>
+<li>Cryptographic Operations</li>
+<li>Certificates</li>
+<li>CertificateClient Setup</li>
+<li>Certificate Operations</li>
+<li>Client Types Table</li>
+<li>Async Clients</li>
+</ul>
+<hr>
+<p><a id="skill-ef18f9dd"></a></p>
+<h3 id="microsoft-azure-keyvault-secrets-rust"><a href="#microsoft-azure-keyvault-secrets-rust" class="headerlink" title="microsoft&#x2F;azure-keyvault-secrets-rust"></a>microsoft&#x2F;azure-keyvault-secrets-rust</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-keyvault-secrets-rust">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-rust/skills/azure-keyvault-secrets-rust/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-rust&#x2F;skills&#x2F;azure-keyvault-secrets-rust&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 密钥宝秘密存储</p>
+<p><strong>适用时机:</strong> 在应用程序启动时从密钥库读取数据库密码，而不是硬编码它们。在不重新部署Rust服务的情况下，旋转存储在密钥库中的API密钥。按环境对秘密进行标记，以分离生产和测试环境的凭据。获取特定秘密版本，以审计在特定日期上有效的数值。列出密钥库中的所有秘密，以在项目内进行凭据库存管理。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Key Vault Secrets library for Rust</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Core Workflow</li>
+<li>Set Secret</li>
+<li>Update Secret Properties</li>
+<li>Delete Secret</li>
+<li>List Secrets (Pagination)</li>
+<li>Error Handling</li>
+<li>RBAC Roles</li>
+<li>Best Practices</li>
+<li>Reference Links</li>
+</ul>
+<hr>
+<p><a id="skill-656f27a8"></a></p>
+<h3 id="microsoft-azure-keyvault-secrets-ts"><a href="#microsoft-azure-keyvault-secrets-ts" class="headerlink" title="microsoft&#x2F;azure-keyvault-secrets-ts"></a>microsoft&#x2F;azure-keyvault-secrets-ts</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-keyvault-secrets-ts">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-keyvault-secrets-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-keyvault-secrets-ts&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 秘密存储和检索</p>
+<p><strong>适用时机:</strong> 用于存储和检索应用程序秘密或配置值时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Key Vault Secrets SDK for TypeScript</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Secrets Operations</li>
+<li>Create&#x2F;Set Secret</li>
+<li>Get Secret</li>
+<li>List Secrets</li>
+<li>Delete Secret</li>
+<li>Keys Operations</li>
+<li>Create Keys</li>
+<li>Get Key</li>
+<li>List Keys</li>
+<li>Rotate Key</li>
+<li>Delete Key</li>
+<li>Cryptographic Operations</li>
+</ul>
+<hr>
+<p><a id="skill-5664ef1f"></a></p>
+<h3 id="microsoft-azure-security-keyvault-keys-dotnet"><a href="#microsoft-azure-security-keyvault-keys-dotnet" class="headerlink" title="microsoft&#x2F;azure-security-keyvault-keys-dotnet"></a>microsoft&#x2F;azure-security-keyvault-keys-dotnet</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-security-keyvault-keys-dotnet">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-security-keyvault-keys-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-security-keyvault-keys-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 密码学密钥管理</p>
+<p><strong>适用时机:</strong> 按90天周期轮换RSA密钥，并采用自动密钥库策略 使用RSA-OAEP加密AES会话密钥，然后再将其存储在数据库中 使用由托管式HSM支持的EC密钥签署JWT或数据包 使用数据加密密钥进行包装，确保明文密钥材料永远不会离开密钥库 列出所有密钥版本，以审计生产环境中哪些版本处于活跃状态</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure.Security.KeyVault.Keys (.NET)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Client Hierarchy</li>
+<li>Authentication</li>
+<li>Microsoft Entra Token Credential</li>
+<li>Service Principal</li>
+<li>Key Management</li>
+<li>Create Keys</li>
+<li>Retrieve Keys</li>
+<li>Update Key Properties</li>
+<li>Delete and Purge Keys</li>
+<li>Backup and Restore</li>
+<li>Cryptographic Operations</li>
+<li>Get CryptographyClient</li>
+<li>Encrypt and Decrypt</li>
+</ul>
+<hr>
+<p><a id="skill-d419dcc1"></a></p>
+<h3 id="microsoft-azure-security-keyvault-keys-java"><a href="#microsoft-azure-security-keyvault-keys-java" class="headerlink" title="microsoft&#x2F;azure-security-keyvault-keys-java"></a>microsoft&#x2F;azure-security-keyvault-keys-java</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-security-keyvault-keys-java">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-security-keyvault-keys-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-security-keyvault-keys-java&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 密码学密钥管理</p>
+<p><strong>适用时机:</strong> 在创建、管理或使用RSA&#x2F;EC密钥、执行加密&#x2F;解密&#x2F;签名&#x2F;验证操作或与HSM支持的密钥一起工作时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Key Vault Keys (Java)</li>
+<li>Installation</li>
+<li>Client Creation</li>
+<li>Key Types</li>
+<li>Create Keys</li>
+<li>Create RSA Key</li>
+<li>Create EC Key</li>
+<li>Create Symmetric Key (Managed HSM only)</li>
+<li>Get Key</li>
+<li>Update Key Properties</li>
+<li>List Keys</li>
+<li>Delete Key</li>
+<li>Cryptographic Operations</li>
+<li>Encrypt&#x2F;Decrypt</li>
+<li>Sign&#x2F;Verify</li>
+<li>Wrap&#x2F;Unwrap Key</li>
+</ul>
+<hr>
+<p><a id="skill-2ddbd11b"></a></p>
+<h3 id="microsoft-azure-security-keyvault-secrets-java"><a href="#microsoft-azure-security-keyvault-secrets-java" class="headerlink" title="microsoft&#x2F;azure-security-keyvault-secrets-java"></a>microsoft&#x2F;azure-security-keyvault-secrets-java</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-security-keyvault-secrets-java">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-security-keyvault-secrets-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-security-keyvault-secrets-java&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 密码和密钥的秘密管理</p>
+<p><strong>适用时机:</strong> 在存储、检索或管理密码、API密钥、连接字符串或其他敏感的配置数据时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Key Vault Secrets (Java)</li>
+<li>Installation</li>
+<li>Client Creation</li>
+<li>Create&#x2F;Set Secret</li>
+<li>Get Secret</li>
+<li>Update Secret Properties</li>
+<li>List Secrets</li>
+<li>Delete Secret</li>
+<li>Recover Deleted Secret</li>
+<li>Purge Deleted Secret</li>
+<li>Backup and Restore</li>
+<li>Async Operations</li>
+<li>Configuration Patterns</li>
+<li>Load Multiple Secrets</li>
+<li>Secret Rotation Pattern</li>
+<li>Error Handling</li>
+</ul>
+<hr>
+<p><a id="skill-30d68eee"></a></p>
+<h3 id="microsoft-fastapi-router-py"><a href="#microsoft-fastapi-router-py" class="headerlink" title="microsoft&#x2F;fastapi-router-py"></a>microsoft&#x2F;fastapi-router-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/fastapi-router-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/fastapi-router-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;fastapi-router-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 具有CRUD和身份验证的FastAPI路由器</p>
+<p><strong>适用时机:</strong> 在构建REST API端点、创建新路由、实现CRUD操作或在FastAPI应用程序中添加已认证端点时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>FastAPI Router</li>
+<li>Quick Start</li>
+<li>Authentication Patterns</li>
+<li>Response Models</li>
+<li>HTTP Status Codes</li>
+<li>Integration Steps</li>
+<li>Best Practices</li>
+<li>Reference Files</li>
+</ul>
+<hr>
+<p><a id="skill-64e5b5f7"></a></p>
+<h3 id="microsoft-microsoft-azure-webjobs-extensions-authentication-events-dotnet"><a href="#microsoft-microsoft-azure-webjobs-extensions-authentication-events-dotnet" class="headerlink" title="microsoft&#x2F;microsoft-azure-webjobs-extensions-authentication-events-dotnet"></a>microsoft&#x2F;microsoft-azure-webjobs-extensions-authentication-events-dotnet</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/microsoft-azure-webjobs-extensions-authentication-events-dotnet">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/microsoft-azure-webjobs-extensions-authentication-events-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;microsoft-azure-webjobs-extensions-authentication-events-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> Entra ID自定义认证事件处理器</p>
+<p><strong>适用时机:</strong> 在 Entra 登录期间将部门和成本中心索赔添加到令牌中 根据用户的电子邮件域名预填充注册表字段 在属性提交时阻止来自特定电子邮件域的注册 通过自定义短信服务提供商发送 OTP 代码，而不是使用 Entra 默认设置 在将用户提交的属性保存到目录之前进行验证和规范化</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents (.NET)</li>
+<li>Installation</li>
+<li>Supported Events</li>
+<li>Core Workflows</li>
+<li>1. Token Enrichment (Add Custom Claims)</li>
+<li>2. Token Enrichment with External Data</li>
+<li>3. Attribute Collection - Customize UI (Start Event)</li>
+<li>4. Attribute Collection - Validate Submission (Submit Event)</li>
+<li>5. Custom OTP Delivery</li>
+<li>6. Function App Configuration</li>
+<li>Key Types Reference</li>
+<li>Entra ID Configuration</li>
+<li>Required App Registration Settings</li>
+<li>Best Practices</li>
+<li>Error Handling</li>
+<li>Related SDKs</li>
+</ul>
+<hr>
+<p><a id="skill-512f7100"></a></p>
+<h3 id="MiniMax-AI-fullstack-dev"><a href="#MiniMax-AI-fullstack-dev" class="headerlink" title="MiniMax-AI&#x2F;fullstack-dev"></a>MiniMax-AI&#x2F;fullstack-dev</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/MiniMax-AI/skills/fullstack-dev">Skills by MiniMax Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/MiniMax-AI/skills/blob/main/skills/fullstack-dev/SKILL.md">https://github.com&#x2F;MiniMax-AI&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;fullstack-dev&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 采用REST API设计、身份验证流程、实时功能和数据库集成的前端架构</p>
+<p><strong>适用时机:</strong> 使用适当的服务层构建新的 Express 或 Django API 连接带有类型化 API 客户端和错误处理的 React 前端到带有 REST 后端的连接 为现有应用添加带自动令牌刷新功能的 JWT 身份验证 实现通过预签名的 S3 URL 上传文件，而不是通过服务器进行流式传输 设置用于实时通知或聊天的 SSE 或 WebSocket 端点</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Full-Stack Development Practices</li>
+<li>MANDATORY WORKFLOW — Follow These Steps In Order</li>
+<li>Step 0: Gather Requirements</li>
+<li>Step 1: Architectural Decisions</li>
+<li>Step 2: Scaffold with Checklist</li>
+<li>Step 3: Implement Following Patterns</li>
+<li>Step 4: Test &amp; Verify</li>
+<li>Step 5: Handoff Summary</li>
+<li>Scope</li>
+<li>Quick Start — New Backend Service Checklist</li>
+<li>Quick Start — Frontend-Backend Integration Checklist</li>
+<li>Quick Navigation</li>
+<li>Core Principles (7 Iron Rules)</li>
+<li>1. Project Structure &amp; Layering (CRITICAL)</li>
+<li>Feature-First Organization</li>
+<li>Three-Layer Architecture</li>
+</ul>
+<hr>
+<p><a id="skill-2ca66749"></a></p>
+<h3 id="MiniMax-AI-ios-application-dev"><a href="#MiniMax-AI-ios-application-dev" class="headerlink" title="MiniMax-AI&#x2F;ios-application-dev"></a>MiniMax-AI&#x2F;ios-application-dev</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/MiniMax-AI/skills/ios-application-dev">Skills by MiniMax Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/MiniMax-AI/skills/blob/main/skills/ios-application-dev/SKILL.md">https://github.com&#x2F;MiniMax-AI&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;ios-application-dev&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用UIKit、SnapKit和SwiftUI进行iOS开发，涵盖导航、暗模式和HIG合规性</p>
+<p><strong>适用时机:</strong> 使用时机：开发iOS应用程序、实现UI、审查iOS代码、与UIKit&#x2F;SnapKit&#x2F;SwiftUI布局合作、构建iPhone界面、Swift移动开发、符合Apple HIG、实现iOS无障碍功能。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>iOS Application Development Guide</li>
+<li>Quick Reference</li>
+<li>UIKit</li>
+<li>SwiftUI</li>
+<li>Core Principles</li>
+<li>Layout</li>
+<li>Typography</li>
+<li>Colors</li>
+<li>Accessibility</li>
+<li>Navigation</li>
+<li>Privacy &amp; Permissions</li>
+<li>Checklist</li>
+<li>Components</li>
+<li>Privacy</li>
+<li>System Integration</li>
+<li>References</li>
+</ul>
+<hr>
+<p><a id="skill-3a65c505"></a></p>
+<h3 id="mongodb-mongodb-mcp-setup"><a href="#mongodb-mongodb-mcp-setup" class="headerlink" title="mongodb&#x2F;mongodb-mcp-setup"></a>mongodb&#x2F;mongodb-mcp-setup</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/mongodb/skills/mongodb-mcp-setup">Skills by MongoDB</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/mongodb/agent-skills/blob/main/skills/mongodb-mcp-setup/SKILL.md">https://github.com&#x2F;mongodb&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;mongodb-mcp-setup&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 设置带有身份验证和连接配置的MongoDB MCP服务器</p>
+<p><strong>适用时机:</strong> 当用户已安装MongoDB MCP服务器但尚未配置所需的环境变量，或他们询问如何连接到MongoDB&#x2F;Atlas但尚未设置凭据时，请使用此技能。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>MongoDB MCP Server Setup</li>
+<li>Overview</li>
+<li>Step 0: Detect Client</li>
+<li>Step 1: Check Existing Configuration</li>
+<li>Step 2: Present Configuration Options</li>
+<li>Step 3a: Connection String Setup</li>
+<li>3a.1: Explain How to Find the Connection String</li>
+<li>Step 3b: Service Account Setup</li>
+<li>3b.1: Guide Through Atlas Service Account Creation</li>
+<li>3b.2: API Access List Configuration</li>
+<li>Step 3c: Atlas Local Setup</li>
+<li>3c.1: Check Docker Installation</li>
+<li>3c.2: Confirm Setup Complete</li>
+<li>Step 4: Determine Read-Only vs Read-Write Access</li>
+<li>Step 5: Configure Credentials</li>
+<li>5.1: Add credentials</li>
+</ul>
+<hr>
+<p><a id="skill-de7ddb40"></a></p>
+<h3 id="moxno-privacyscrubber-guard"><a href="#moxno-privacyscrubber-guard" class="headerlink" title="moxno&#x2F;privacyscrubber-guard"></a>moxno&#x2F;privacyscrubber-guard</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/moxno/privacyscrubber-mcp/tree/main/skills/privacyscrubber-guard">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/moxno/privacyscrubber-mcp/blob/main/skills/privacyscrubber-guard/SKILL.md">https://github.com&#x2F;moxno&#x2F;privacyscrubber-mcp&#x2F;blob&#x2F;main&#x2F;skills&#x2F;privacyscrubber-guard&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 在代理调用之前对内存中的PII和机密信息进行消毒处理</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：在代理调用之前对内存中的PII和秘密进行消毒处理</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>PrivacyScrubber Guard — Agent Skill</li>
+<li>Quick Setup</li>
+<li>Core Agent Workflow</li>
+</ul>
+<hr>
+<p><a id="skill-d797dcb8"></a></p>
+<h3 id="mukul975-Anthropic-Cybersecurity-Skills"><a href="#mukul975-Anthropic-Cybersecurity-Skills" class="headerlink" title="mukul975&#x2F;Anthropic-Cybersecurity-Skills"></a>mukul975&#x2F;Anthropic-Cybersecurity-Skills</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/README.md">https://github.com&#x2F;mukul975&#x2F;Anthropic-Cybersecurity-Skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 753项涵盖38个领域的网络安全技能：云安全、渗透测试、红队、DFIR、恶意软件分析、威胁情报等（已映射到MITRE ATT&amp;CK）</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：753项涵盖38个领域的网络安全技能：云安全、渗透测试、红队、DFIR、恶意软件分析、威胁情报等（已映射到MITRE ATT&amp;CK）</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Anthropic Cybersecurity Skills</li>
+<li>The largest open-source cybersecurity skills library for AI agents</li>
+<li>Give any AI agent the security skills of a senior analyst</li>
+<li>Six frameworks, one skill library</li>
+<li>🆕 MITRE Fight Fraud Framework (F3) — 94 fraud-relevant skills</li>
+<li>MITRE ATT&amp;CK v19.1 — 805&#x2F;817 skills mapped</li>
+<li>Quick start</li>
+<li>🌍 GARS-2026 — Global Agentic AI Readiness Survey</li>
+<li>🚀 Try it on the Playground</li>
+<li>Why this exists</li>
+<li>What’s inside — 34 security domains</li>
+<li>How AI agents use these skills</li>
+<li>Skill anatomy</li>
+<li>YAML frontmatter (real example)</li>
+<li>Markdown body sections</li>
+<li>MITRE ATLAS 2026.07 — AI&#x2F;ML adversarial threats</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 818 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/skills/abusing-dpapi-for-credential-access/SKILL.md">abusing-dpapi-for-credential-access</a> · <a target="_blank" rel="noopener" href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/skills/abusing-shadow-credentials-for-privesc/SKILL.md">abusing-shadow-credentials-for-privesc</a> · <a target="_blank" rel="noopener" href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/skills/achieving-cmmc-level-2-compliance/SKILL.md">achieving-cmmc-level-2-compliance</a> · <a target="_blank" rel="noopener" href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/skills/acquiring-disk-image-with-dd-and-dcfldd/SKILL.md">acquiring-disk-image-with-dd-and-dcfldd</a> · <a target="_blank" rel="noopener" href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/skills/analyzing-active-directory-acl-abuse/SKILL.md">analyzing-active-directory-acl-abuse</a> · <a target="_blank" rel="noopener" href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/skills/analyzing-android-malware-with-apktool/SKILL.md">analyzing-android-malware-with-apktool</a> · <a target="_blank" rel="noopener" href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/skills/analyzing-api-gateway-access-logs/SKILL.md">analyzing-api-gateway-access-logs</a> · <a target="_blank" rel="noopener" href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/skills/analyzing-apt-group-with-mitre-navigator/SKILL.md">analyzing-apt-group-with-mitre-navigator</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-4b1d751c"></a></p>
+<h3 id="NeoLabHQ-review"><a href="#NeoLabHQ-review" class="headerlink" title="NeoLabHQ&#x2F;review"></a>NeoLabHQ&#x2F;review</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/review">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/blob/master/plugins/review/README.md">https://github.com&#x2F;NeoLabHQ&#x2F;context-engineering-kit&#x2F;blob&#x2F;master&#x2F;plugins&#x2F;review&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用专业代理人进行全面的PR代码审查：bug-hunter、security-auditor、code-quality-reviewer、contracts-reviewer、historical-context-reviewer、test-coverage-reviewer</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：使用专门的代理人进行全面的PR代码审查：bug-hunter、security-auditor、code-quality-reviewer、contracts-reviewer、historical-context-reviewer、test-coverage-reviewer</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Review Plugin</li>
+<li>Focused on</li>
+<li>Overview</li>
+<li>Quick Start</li>
+<li>Advanced Usage</li>
+<li>CI&#x2F;CD Integration</li>
+<li>Agent Architecture</li>
+<li>Commands</li>
+<li>Review Agents</li>
+<li>Bug Hunter</li>
+<li>Security Auditor</li>
+<li>Test Coverage Reviewer</li>
+<li>Code Quality Reviewer</li>
+<li>Contracts Reviewer</li>
+<li>Historical Context Reviewer</li>
+<li>Change Triage Agents</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 3 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/blob/master/plugins/review/skills/review-local-changes/SKILL.md">review-local-changes</a> · <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/blob/master/plugins/review/skills/review-pr/SKILL.md">review-pr</a> · <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/blob/master/plugins/review/skills/traiage-review/SKILL.md">traiage-review</a></p>
+<hr>
+<p><a id="skill-dc91e71a"></a></p>
+<h3 id="openai-netlify-deploy"><a href="#openai-netlify-deploy" class="headerlink" title="openai&#x2F;netlify-deploy"></a>openai&#x2F;netlify-deploy</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/netlify-deploy">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/skills/.curated/netlify-deploy/SKILL.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;.curated&#x2F;netlify-deploy&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用CLI认证、链接和环境支持自动化Netlify部署</p>
+<p><strong>适用时机:</strong> 当用户要求在Netlify上部署、托管、发布或链接一个网站&#x2F;仓库时使用，包括预览和生产部署。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Netlify Deployment Skill</li>
+<li>Overview</li>
+<li>Prerequisites</li>
+<li>Authentication Pattern</li>
+<li>Workflow</li>
+<li>1. Verify Netlify CLI Authentication</li>
+<li>2. Detect Site Link Status</li>
+<li>3. Link to Existing Site or Create New</li>
+<li>4. Verify Dependencies</li>
+<li>5. Deploy to Netlify</li>
+<li>6. Report Results</li>
+<li>Handling netlify.toml</li>
+<li>Example Full Workflow</li>
+<li>Error Handling</li>
+<li>Troubleshooting</li>
+<li>Escalated Network Access</li>
+</ul>
+<hr>
+<p><a id="skill-336c38c0"></a></p>
+<h3 id="openai-security-best-practices"><a href="#openai-security-best-practices" class="headerlink" title="openai&#x2F;security-best-practices"></a>openai&#x2F;security-best-practices</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/security-best-practices">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/skills/.curated/security-best-practices/SKILL.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;.curated&#x2F;security-best-practices&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 审查针对特定语言的安全漏洞代码</p>
+<p><strong>适用时机:</strong> 在生产部署前对 Flask API 进行常见 Python 网页安全问题的审计 为 Node.js Express 应用生成等级排序的漏洞报告 使用已应用安全默认值的全新 Go HTTP 处理程序 在现有 TypeScript 项目中添加功能时捕获硬编码的密钥或缺失的输入验证 获取与相关安全指南相关的解释的特定 CVE 类问题修复方案</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Security Best Practices</li>
+<li>Overview</li>
+<li>Workflow</li>
+<li>Workflow Decision Tree</li>
+<li>Overrides</li>
+<li>Report Format</li>
+<li>Fixes</li>
+<li>General Security Advice</li>
+<li>Avoid Using Incrementing IDs for Public IDs of Resources</li>
+<li>A note on TLS</li>
+</ul>
+<hr>
+<p><a id="skill-e481f789"></a></p>
+<h3 id="openai-security-ownership-map"><a href="#openai-security-ownership-map" class="headerlink" title="openai&#x2F;security-ownership-map"></a>openai&#x2F;security-ownership-map</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/security-ownership-map">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/skills/.curated/security-ownership-map/SKILL.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;.curated&#x2F;security-ownership-map&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 绘制人与文件所有权图，计算乘数因子，并识别风险</p>
+<p><strong>适用时机:</strong> 使用1的bus factor查找认证或加密文件 检查实际拥有敏感代码的人员，与CODEOWNERS所列的人员进行对比 定位数月无人触碰的过时的安全关键文件 按共同更改模式对文件进行分组，以发现隐藏的所有权集群 跟踪哪些贡献者拥有最高敏感更改的集中度</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Security Ownership Map</li>
+<li>Overview</li>
+<li>Requirements</li>
+<li>Workflow</li>
+<li>Quick start</li>
+<li>Sensitivity rules</li>
+<li>Output artifacts</li>
+<li>LLM query helper</li>
+<li>Basic security queries</li>
+<li>Summary format (default)</li>
+<li>Graph persistence</li>
+<li>Notes</li>
+</ul>
+<hr>
+<p><a id="skill-76d1d792"></a></p>
+<h3 id="openai-security-threat-model"><a href="#openai-security-threat-model" class="headerlink" title="openai&#x2F;security-threat-model"></a>openai&#x2F;security-threat-model</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/security-threat-model">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/skills/.curated/security-threat-model/SKILL.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;.curated&#x2F;security-threat-model&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 生成特定仓库的威胁模型，识别信任边界</p>
+<p><strong>适用时机:</strong> 在安全审查前对网络API进行威胁建模 在多服务后端中映射信任边界 识别文件上传或解析器端点的滥用路径 为渗透测试范围生成威胁模型文档 对面向外暴露的管理员接口进行攻击者能力审计</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Threat Model Source Code Repo</li>
+<li>Quick start</li>
+<li>Workflow</li>
+<li>1) Scope and extract the system model</li>
+<li>2) Derive boundaries, assets, and entry points</li>
+<li>3) Calibrate assets and attacker capabilities</li>
+<li>4) Enumerate threats as abuse paths</li>
+<li>5) Prioritize with explicit likelihood and impact reasoning</li>
+<li>6) Validate service context and assumptions with the user</li>
+<li>7) Recommend mitigations and focus paths</li>
+<li>8) Run a quality check before finalizing</li>
+<li>Risk prioritization guidance (illustrative, not exhaustive)</li>
+<li>References</li>
+</ul>
+<hr>
+<p><a id="skill-0472258e"></a></p>
+<h3 id="prompt-security-clawsec"><a href="#prompt-security-clawsec" class="headerlink" title="prompt-security&#x2F;clawsec"></a>prompt-security&#x2F;clawsec</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/prompt-security/clawsec">Specialized Domains</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/prompt-security/clawsec/blob/main/README.md">https://github.com&#x2F;prompt-security&#x2F;clawsec&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 包含漂移检测、自动审计和技能完整性验证的安全技能套件</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：包含漂移检测、自动审计和技能完整性验证的安全技能套件</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Install the OpenClaw suite</li>
+<li>1. Add the suite</li>
+<li>2. Review and enable the advisory hook</li>
+<li>See it work</li>
+<li>Detect and respond to agent-file drift</li>
+<li>How ClawSec protects an agent</li>
+<li>Platform entry points</li>
+<li>Skill feature matrix</li>
+<li>Query the signed advisory channel</li>
+<li>Build, test, and contribute</li>
+<li>Translations</li>
+<li>License</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 16 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/prompt-security/clawsec/blob/main/skills/claw-release/SKILL.md">claw-release</a> · <a target="_blank" rel="noopener" href="https://github.com/prompt-security/clawsec/blob/main/skills/clawsec-clawhub-checker/SKILL.md">clawsec-clawhub-checker</a> · <a target="_blank" rel="noopener" href="https://github.com/prompt-security/clawsec/blob/main/skills/clawsec-feed/SKILL.md">clawsec-feed</a> · <a target="_blank" rel="noopener" href="https://github.com/prompt-security/clawsec/blob/main/skills/clawsec-nanoclaw/SKILL.md">clawsec-nanoclaw</a> · <a target="_blank" rel="noopener" href="https://github.com/prompt-security/clawsec/blob/main/skills/clawsec-scanner/SKILL.md">clawsec-scanner</a> · <a target="_blank" rel="noopener" href="https://github.com/prompt-security/clawsec/blob/main/skills/clawsec-suite/SKILL.md">clawsec-suite</a> · <a target="_blank" rel="noopener" href="https://github.com/prompt-security/clawsec/blob/main/skills/clawtributor/SKILL.md">clawtributor</a> · <a target="_blank" rel="noopener" href="https://github.com/prompt-security/clawsec/blob/main/skills/hermes-attestation-guardian/SKILL.md">hermes-attestation-guardian</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-8bba0aaa"></a></p>
+<h3 id="redhat-cve-skillpack"><a href="#redhat-cve-skillpack" class="headerlink" title="redhat&#x2F;cve-skillpack"></a>redhat&#x2F;cve-skillpack</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://catalog.redhat.com/en/ai/skills/detail/agentic-skill-pack-for-red-hat-customers#agent-and-skills">Skills by RedHat</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://catalog.redhat.com/en/ai/skills/detail/agentic-skill-pack-for-red-hat-customers#agent-and-skills">https://catalog.redhat.com&#x2F;en&#x2F;ai&#x2F;skills&#x2F;detail&#x2F;agentic-skill-pack-for-red-hat-customers#agent-and-skills</a></p>
+<p><strong>功能简介:</strong> 了解CVE，检查产品生命周期状态，收集诊断信息，并按适当的严重程度提交支持案例——这是日常运营中必不可少的Red Hat技能。</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：了解CVE，检查产品生命周期状态，收集诊断信息，并在适当的严重程度下提交支持案例——这是日常运营中必不可少的Red Hat技能。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Platforms</li>
+<li>Products &amp; services</li>
+<li>Try, buy, sell</li>
+<li>Help</li>
+<li>About Red Hat Ecosystem Catalog</li>
+<li>Red Hat legal and privacy links</li>
+<li>Red Hat legal and privacy links</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 0 个不重复的技能文件路径。</p>
+<p>未能取得单独的 SKILL.md；本文根据目录简介和可访问的仓库 README 整理。</p>
+<hr>
+<p><a id="skill-d2bb447e"></a></p>
+<h3 id="Rootly-AI-Labs-rootly-incident-responder"><a href="#Rootly-AI-Labs-rootly-incident-responder" class="headerlink" title="Rootly-AI-Labs&#x2F;rootly-incident-responder"></a>Rootly-AI-Labs&#x2F;rootly-incident-responder</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/rootlyhq/rootly-mcp-server/blob/main/examples/skills/rootly-incident-responder.md">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/rootlyhq/rootly-mcp-server/blob/main/examples/skills/rootly-incident-responder.md">https://github.com&#x2F;rootlyhq&#x2F;rootly-mcp-server&#x2F;blob&#x2F;main&#x2F;examples&#x2F;skills&#x2F;rootly-incident-responder.md</a></p>
+<p><strong>功能简介:</strong> 采用机器学习相似匹配、解决方案建议和值班协调的AI驱动事件响应。需要[Rootly MCP Server](<a target="_blank" rel="noopener" href="https://github/.com/rootlyhq/rootly/-mcp/-server/">https://github\.com/rootlyhq/rootly\-mcp\-server\</a>)</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：采用AI驱动的事件响应，支持机器学习相似匹配、解决方案建议和值班协调。需要[Rootly MCP Server](<a target="_blank" rel="noopener" href="https://github/.com/rootlyhq/rootly/-mcp/-server/">https://github\.com/rootlyhq/rootly\-mcp\-server\</a>)</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Rootly Incident Responder</li>
+<li>Core Principles</li>
+<li>Your Workflow</li>
+<li>1. Gather Comprehensive Incident Context</li>
+<li>2. Find Historical Context</li>
+<li>3. Get Intelligent Solution Recommendations</li>
+<li>4. Identify On-Call Team &amp; Stakeholders</li>
+<li>5. Correlate with Code Changes</li>
+<li>6. Analyze Root Cause</li>
+<li>7. Create Action Items &amp; Remediation Plan</li>
+<li>8. Document Resolution</li>
+<li>Best Practices</li>
+<li>Prioritization</li>
+<li>Communication</li>
+<li>Uncertainty Handling</li>
+<li>Leveraging Rootly’s Intelligence</li>
+</ul>
+<hr>
+<p><a id="skill-01cd96f8"></a></p>
+<h3 id="saleh-alhaddad-itqan-engineering"><a href="#saleh-alhaddad-itqan-engineering" class="headerlink" title="saleh-alhaddad&#x2F;itqan-engineering"></a>saleh-alhaddad&#x2F;itqan-engineering</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/saleh-alhaddad/itqan-engineering">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/saleh-alhaddad/itqan-engineering/blob/main/SKILL.md">https://github.com&#x2F;saleh-alhaddad&#x2F;itqan-engineering&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 12项技能涵盖完整的软件工程生命周期：一个可供简历撰写的协调器，包含规范、计划、TDD构建、验证、五轴审查、安全与发布——代码前设有审批关卡，“完成”前需提供证据。</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：12项技能中的完整软件工程生命周期：一个可复现的调配器，包含规范、计划、TDD构建、验证、五轴审查、安全和发布——代码前有批准门槛，“完成”前有证据。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>itqan — engineering skills suite router</li>
+<li>How to work</li>
+<li>Non-negotiables (from CONVENTIONS)</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 0 个不重复的技能文件路径。</p>
+<hr>
+<p><a id="skill-0dd767d1"></a></p>
+<h3 id="SHADOWPR0-security-bluebook-builder"><a href="#SHADOWPR0-security-bluebook-builder" class="headerlink" title="SHADOWPR0&#x2F;security-bluebook-builder"></a>SHADOWPR0&#x2F;security-bluebook-builder</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/SHADOWPR0/security-bluebook-builder">Specialized Domains</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/SHADOWPR0/security-bluebook-builder/blob/main/SKILL.md">https://github.com&#x2F;SHADOWPR0&#x2F;security-bluebook-builder&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 为敏感应用程序构建安全蓝皮书</p>
+<p><strong>适用时机:</strong> 当用户需要针对处理PII&#x2F;PHI&#x2F;财务数据的应用程序的威胁模型、数据分类规则、身份验证&#x2F;会话政策、日志记录和审计要求、保留&#x2F;删除期望、事件响应或安全门槛时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Security Bluebook Builder</li>
+<li>Overview</li>
+<li>Workflow</li>
+<li>1) Gather inputs (ask only if missing)</li>
+<li>2) Draft the Blue Book</li>
+<li>3) Enforce guardrails</li>
+<li>4) Quality checks</li>
+<li>Resources</li>
+</ul>
+<hr>
+<p><a id="skill-18253ed6"></a></p>
+<h3 id="squirrelscan-squirrelscan"><a href="#squirrelscan-squirrelscan" class="headerlink" title="squirrelscan&#x2F;squirrelscan"></a>squirrelscan&#x2F;squirrelscan</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/squirrelscan/skills">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/squirrelscan/skills/blob/main/skills/squirrelscan/SKILL.md">https://github.com&#x2F;squirrelscan&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;squirrelscan&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 对网站进行SEO、性能、安全、可访问性和返现修复的审计</p>
+<p><strong>适用时机:</strong> 当用户希望检查、审计或改进网站的SEO、排名、速度或健康状况，以及用于squirrelscan本身的所有操作（如安装或更新CLI、登录和API密钥、运行审计、发布和共享报告、云积分、MCP服务器设置、配置或故障排除）时使用。还涵盖实体地图：网站在其JSON-LD中声明的实体的全站级图表，以及修复结构化数据身份问题，例如在每页单独声明的组织。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>squirrelscan CLI</li>
+<li>Links</li>
+<li>Install</li>
+<li>Command overview</li>
+<li>Quickstart</li>
+<li>Exit codes and audits that did not run</li>
+<li>Audit levels</li>
+<li>Probing intensity</li>
+<li>Authentication and accounts</li>
+<li>Reports</li>
+<li>Publishing</li>
+<li>Regression diffs</li>
+<li>Skipped checks</li>
+<li>Copy fix prompts</li>
+<li>Not checked</li>
+<li>What a published report holds</li>
+</ul>
+<hr>
+<p><a id="skill-64c736ce"></a></p>
+<h3 id="Tencent-aig-agent-redteam"><a href="#Tencent-aig-agent-redteam" class="headerlink" title="Tencent&#x2F;aig-agent-redteam"></a>Tencent&#x2F;aig-agent-redteam</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/Tencent/AI-Infra-Guard/tree/main/skills/aig-agent-redteam">Specialized Domains</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/Tencent/AI-Infra-Guard/blob/main/skills/aig-agent-redteam/SKILL.md">https://github.com&#x2F;Tencent&#x2F;AI-Infra-Guard&#x2F;blob&#x2F;main&#x2F;skills&#x2F;aig-agent-redteam&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 单命令代理红队安全评估技能</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：一个命令代理红队安全评估技能</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>AIG Agent 蓝军安全演习</li>
+<li>操作原则</li>
+<li>最小脚本策略</li>
+<li>复用 AI-Infra-Guard 数据源</li>
+<li>演习流程</li>
+<li>报告资源</li>
+<li>Step 0：范围与安全边界</li>
+<li>Step 1：能力与信任边界建模</li>
+<li>Step 2：生成风险假设</li>
+<li>Step 3：规划无害测试</li>
+<li>Step 4：执行并自适应变异</li>
+<li>Step 5：静态代码与供应链审计</li>
+<li>Step 6：基础设施审查</li>
+<li>Step 7：证据、评级与报告</li>
+<li>模块指引</li>
+<li>报告模板</li>
+</ul>
+<hr>
+<p><a id="skill-5df8c556"></a></p>
+<h3 id="trailofbits-ask-questions-if-underspecified"><a href="#trailofbits-ask-questions-if-underspecified" class="headerlink" title="trailofbits&#x2F;ask-questions-if-underspecified"></a>trailofbits&#x2F;ask-questions-if-underspecified</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/ask-questions-if-underspecified">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/README.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 关于模糊要求进行澄清的提示</p>
+<p><strong>适用时机:</strong> 在可能影响数十个文件的重构之前询问目标文件范围 在升级依赖项之前获取兼容性要求的确认 在为规格不详的功能编写测试之前明确接受标准 在运行数据迁移之前解决模糊的撤销要求 在性能优化通过之前确认哪些组件在范围之内</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Trail of Bits Skills Marketplace</li>
+<li>Installation</li>
+<li>Claude Code Marketplace</li>
+<li>Browse and Install Plugins</li>
+<li>Codex</li>
+<li>ChatGPT Workspace Marketplace</li>
+<li>Local Development</li>
+<li>Available Plugins</li>
+<li>Smart Contract Security</li>
+<li>Code Auditing</li>
+<li>Malware Analysis</li>
+<li>Verification</li>
+<li>Reverse Engineering</li>
+<li>Mobile Security</li>
+<li>Development</li>
+<li>Team Management</li>
+</ul>
+<hr>
+<p><a id="skill-3a8c6225"></a></p>
+<h3 id="trailofbits-audit-context-building"><a href="#trailofbits-audit-context-building" class="headerlink" title="trailofbits&#x2F;audit-context-building"></a>trailofbits&#x2F;audit-context-building</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/audit-context-building">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/audit-context-building/skills/audit-context-building/SKILL.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;audit-context-building&#x2F;skills&#x2F;audit-context-building&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过超粒度代码分析获得深层次的建筑语境</p>
+<p><strong>适用时机:</strong> 在对不熟悉的代码进行审计、威胁模型或架构审查时使用，并在任何漏洞挖掘通过之前使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Audit Context Building</li>
+<li>When to Use</li>
+<li>When NOT to Use</li>
+<li>Do not analyze in this context</li>
+<li>What comes back, and how to read it</li>
+<li>The format</li>
+</ul>
+<hr>
+<p><a id="skill-2c42db7a"></a></p>
+<h3 id="trailofbits-building-secure-contracts"><a href="#trailofbits-building-secure-contracts" class="headerlink" title="trailofbits&#x2F;building-secure-contracts"></a>trailofbits&#x2F;building-secure-contracts</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/building-secure-contracts">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/building-secure-contracts/README.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;building-secure-contracts&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 包含6个区块链漏洞扫描器的智能合约安全工具包</p>
+<p><strong>适用时机:</strong> 扫描 Solana&#x2F;Anchor 应用程序以检查缺失的所有权检查和签名者授权问题 检查 ERC20 代币实现是否存在如转账费用或重新基准等非标准行为 准备智能合约代码库以配合第三方安全审计，并采用结构化检查清单 评估 Substrate 托盘在处理 BadOrigin 和验证未签名交易方面的能力 在大规模部署前对合同的 9 个类别进行代码成熟度评分</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Building Secure Contracts</li>
+<li>Overview</li>
+<li>Installation</li>
+<li>Vulnerability Scanners</li>
+<li>Algorand Vulnerability Scanner</li>
+<li>Cairo Vulnerability Scanner</li>
+<li>Cosmos Vulnerability Scanner</li>
+<li>Solana Vulnerability Scanner</li>
+<li>Substrate Vulnerability Scanner</li>
+<li>TON Vulnerability Scanner</li>
+<li>Development Guidelines Assistants</li>
+<li>Audit Prep Assistant</li>
+<li>Code Maturity Assessor</li>
+<li>Guidelines Advisor</li>
+<li>Secure Workflow Guide</li>
+<li>Token Integration Analyzer</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 11 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/building-secure-contracts/skills/algorand-vulnerability-scanner/SKILL.md">algorand-vulnerability-scanner</a> · <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/building-secure-contracts/skills/audit-prep-assistant/SKILL.md">audit-prep-assistant</a> · <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/building-secure-contracts/skills/cairo-vulnerability-scanner/SKILL.md">cairo-vulnerability-scanner</a> · <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/building-secure-contracts/skills/code-maturity-assessor/SKILL.md">code-maturity-assessor</a> · <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/building-secure-contracts/skills/cosmos-vulnerability-scanner/SKILL.md">cosmos-vulnerability-scanner</a> · <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/building-secure-contracts/skills/guidelines-advisor/SKILL.md">guidelines-advisor</a> · <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/building-secure-contracts/skills/secure-workflow-guide/SKILL.md">secure-workflow-guide</a> · <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/building-secure-contracts/skills/solana-vulnerability-scanner/SKILL.md">solana-vulnerability-scanner</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-2338c16a"></a></p>
+<h3 id="trailofbits-burpsuite-project-parser"><a href="#trailofbits-burpsuite-project-parser" class="headerlink" title="trailofbits&#x2F;burpsuite-project-parser"></a>trailofbits&#x2F;burpsuite-project-parser</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/burpsuite-project-parser">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/burpsuite-project-parser/skills/burpsuite-project-parser/SKILL.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;burpsuite-project-parser&#x2F;skills&#x2F;burpsuite-project-parser&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 从Burp Suite项目文件中搜索和提取数据</p>
+<p><strong>适用时机:</strong> 使用该工具在使用正则表达式模式搜索响应头或体时，提取安全审计发现、导出代理历史记录或网站地图数据，或分析在Burp项目中捕获的HTTP流量。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Burp Project Parser</li>
+<li>When to Use</li>
+<li>Prerequisites</li>
+<li>Quick Reference</li>
+<li>Resolving Exit 3: the control query</li>
+<li>Sub-Component Filters (USE THESE)</li>
+<li>Available Filters</li>
+<li>Default Approach</li>
+<li>Regex Search Operations</li>
+<li>Search Response Headers</li>
+<li>Search Response Bodies</li>
+<li>Other Operations</li>
+<li>Extract Audit Items</li>
+<li>Dump Proxy History (AVOID)</li>
+<li>Dump Site Map (AVOID)</li>
+<li>Output Limits (REQUIRED)</li>
+</ul>
+<hr>
+<p><a id="skill-e1c55406"></a></p>
+<h3 id="trailofbits-claude-in-chrome-troubleshooting"><a href="#trailofbits-claude-in-chrome-troubleshooting" class="headerlink" title="trailofbits&#x2F;claude-in-chrome-troubleshooting"></a>trailofbits&#x2F;claude-in-chrome-troubleshooting</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/claude-in-chrome-troubleshooting">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/README.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 诊断并修复 Claude 在 Chrome MCP 扩展程序连接问题</p>
+<p><strong>适用时机:</strong> 修复 mcp__claude-in-chrome__* 工具失败时出现的“浏览器扩展程序未连接”错误。在 Claude Code CLI 和 Claude.app 之间切换活跃的原生消息主机。Cowork。在更新后将 chrome-native-host 包装程序重置为动态选择最新的 Claude Code 版本。诊断正在运行的哪个原生主机二进制文件，以及它是否在预期位置创建了套件。解决运行多个 Claude Code 会话或 Chrome 配置文件所致的套件冲突。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Trail of Bits Skills Marketplace</li>
+<li>Installation</li>
+<li>Claude Code Marketplace</li>
+<li>Browse and Install Plugins</li>
+<li>Codex</li>
+<li>ChatGPT Workspace Marketplace</li>
+<li>Local Development</li>
+<li>Available Plugins</li>
+<li>Smart Contract Security</li>
+<li>Code Auditing</li>
+<li>Malware Analysis</li>
+<li>Verification</li>
+<li>Reverse Engineering</li>
+<li>Mobile Security</li>
+<li>Development</li>
+<li>Team Management</li>
+</ul>
+<hr>
+<p><a id="skill-9988db3a"></a></p>
+<h3 id="trailofbits-constant-time-analysis"><a href="#trailofbits-constant-time-analysis" class="headerlink" title="trailofbits&#x2F;constant-time-analysis"></a>trailofbits&#x2F;constant-time-analysis</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/constant-time-analysis">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/constant-time-analysis/skills/constant-time-analysis/SKILL.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;constant-time-analysis&#x2F;skills&#x2F;constant-time-analysis&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 检测加密代码中编译器引起的时序侧向通道</p>
+<p><strong>适用时机:</strong> 在实施或审查加密代码时使用，遇到在C、C++、Go、Rust、Swift、Java、Kotlin、C#、PHP、JavaScript、TypeScript、Python或Ruby中在秘密上进行除法、依赖秘密的分支或常数时间编程问题时。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Constant-Time Analysis</li>
+<li>When to Use</li>
+<li>When NOT to Use</li>
+<li>Language Routing</li>
+<li>Running the Analyzer</li>
+<li>Per-language coverage limits</li>
+<li>Prerequisites</li>
+<li>Interpreting Results</li>
+<li>Triaging Findings</li>
+<li>Limitations</li>
+<li>Real-World Impact</li>
+<li>References</li>
+</ul>
+<hr>
+<p><a id="skill-b7c6775e"></a></p>
+<h3 id="trailofbits-differential-review"><a href="#trailofbits-differential-review" class="headerlink" title="trailofbits&#x2F;differential-review"></a>trailofbits&#x2F;differential-review</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/differential-review">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/differential-review/skills/differential-review/SKILL.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;differential-review&#x2F;skills&#x2F;differential-review&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 以安全为重点的差异化审查，结合git历史记录分析</p>
+<p><strong>适用时机:</strong> 用于审查PR、提交或差异图以查找安全漏洞，检查更改是否重新引入了之前修复的错误，询问更改还可能破坏哪些功能，或查找哪些修改的代码没有覆盖测试。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Differential Security Review</li>
+<li>Core Principles</li>
+<li>Rationalizations (Do Not Skip)</li>
+<li>Quick Reference</li>
+<li>Codebase Size Strategy</li>
+<li>Risk Level Triggers</li>
+<li>Workflow Overview</li>
+<li>Decision Tree</li>
+<li>Agents</li>
+<li>Quality Checklist</li>
+<li>Integration</li>
+<li>Example Usage</li>
+<li>Quick Triage (Small PR)</li>
+<li>Standard Review (Medium Codebase)</li>
+<li>Deep Audit (Large, Critical Change)</li>
+<li>When NOT to Use This Skill</li>
+</ul>
+<hr>
+<p><a id="skill-cc422a9f"></a></p>
+<h3 id="trailofbits-dwarf-expert"><a href="#trailofbits-dwarf-expert" class="headerlink" title="trailofbits&#x2F;dwarf-expert"></a>trailofbits&#x2F;dwarf-expert</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/dwarf-expert">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/dwarf-expert/skills/dwarf-expert/SKILL.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;dwarf-expert&#x2F;skills&#x2F;dwarf-expert&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> DWARF调试格式专业知识</p>
+<p><strong>适用时机:</strong> 在使用dwarfdump&#x2F;llvm-dwarfdump或readelf检查.debug_*部分、DIE树或DW_TAG_&#x2F;DW_AT_条目时使用，使用llvm-dwarfdump --verify验证调试信息，回答DWARF标准问题，或编写解析DWARF的代码（libdwarf、pyelftools、gimli）。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>DWARF Expert</li>
+<li>Authoritative Sources</li>
+<li>Parsing and Searching with dwarfdump</li>
+<li>Searching DIEs</li>
+<li>Verifying DWARF Integrity</li>
+<li>readelf</li>
+<li>Writing Code That Parses DWARF</li>
+</ul>
+<hr>
+<p><a id="skill-55a4a723"></a></p>
+<h3 id="trailofbits-entry-point-analyzer"><a href="#trailofbits-entry-point-analyzer" class="headerlink" title="trailofbits&#x2F;entry-point-analyzer"></a>trailofbits&#x2F;entry-point-analyzer</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/entry-point-analyzer">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/entry-point-analyzer/skills/entry-point-analyzer/SKILL.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;entry-point-analyzer&#x2F;skills&#x2F;entry-point-analyzer&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 识别智能合约中的状态变更入口点</p>
+<p><strong>适用时机:</strong> 在审计智能合约（Solidity、Vyper、Solana&#x2F;Rust、Move、TON、CosmWasm）时使用，或在被要求查找入口点、审计流程、外部函数、访问控制模式或特权操作时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Entry Point Analyzer</li>
+<li>Execution in Codex</li>
+<li>When to Use</li>
+<li>When NOT to Use</li>
+<li>Scope: State-Changing Functions Only</li>
+<li>Workflow</li>
+<li>Slither Integration (Solidity)</li>
+<li>1. Check if Slither is Available</li>
+<li>2. If Slither is Detected, Run Entry Points Printer</li>
+<li>3. Use Slither Output as Foundation</li>
+<li>4. When Slither is NOT Available</li>
+<li>Language Detection</li>
+<li>Access Classification</li>
+<li>1. Public (Unrestricted)</li>
+<li>2. Role-Restricted</li>
+<li>3. Contract-Only (Internal Integration Points)</li>
+</ul>
+<hr>
+<p><a id="skill-d0669438"></a></p>
+<h3 id="trailofbits-firebase-apk-scanner"><a href="#trailofbits-firebase-apk-scanner" class="headerlink" title="trailofbits&#x2F;firebase-apk-scanner"></a>trailofbits&#x2F;firebase-apk-scanner</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/firebase-apk-scanner">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/firebase-apk-scanner/skills/firebase-apk-scanner/SKILL.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;firebase-apk-scanner&#x2F;skills&#x2F;firebase-apk-scanner&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 扫描Android APK以查找Firebase的配置错误和安全漏洞</p>
+<p><strong>适用时机:</strong> 用于分析 Firebase 安全漏洞的 APK 文件、进行移动应用程序安全审计或测试 Firebase 端点安全时使用。仅供授权的安全研究使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Firebase APK Security Scanner</li>
+<li>When to Use</li>
+<li>When NOT to Use</li>
+<li>Rationalizations to Reject</li>
+<li>Reference Documentation</li>
+<li>How to Use This Skill</li>
+<li>Workflow</li>
+<li>Step 1: Validate Input</li>
+<li>Step 2: Run the Scanner</li>
+<li>Step 3: Present Results</li>
+<li>Scan Summary</li>
+<li>Extracted Configuration</li>
+<li>Vulnerabilities Found</li>
+<li>Remediation</li>
+<li>Manual Testing (If Scanner Fails)</li>
+<li>Severity Classification</li>
+</ul>
+<hr>
+<p><a id="skill-00997cf3"></a></p>
+<h3 id="trailofbits-insecure-defaults"><a href="#trailofbits-insecure-defaults" class="headerlink" title="trailofbits&#x2F;insecure-defaults"></a>trailofbits&#x2F;insecure-defaults</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/insecure-defaults">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/insecure-defaults/README.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;insecure-defaults&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 检测不安全的默认配置，例如硬编码的秘密信息、默认凭证和弱密码学</p>
+<p><strong>适用时机:</strong> 审计 JWT 密钥处理，以捕获生产认证代码中的重置值，如 `|| ‘default’`。扫描 Dockerfile 和 IaC 模板，查找触发不安全运行时行为的缺失环境变量。在部署前审查环境变量处理，将 fail-open 与 fail-secure 模式分离。检查密码哈希和令牌签名上下文中的加密使用情况，检查是否存在 MD5、SHA1 或 ECB。追踪 CORS 乱序字符和权限 0777 的默认设置，以确认它们是否到达生产端点。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Insecure Defaults Detection</li>
+<li>Install</li>
+<li>Use</li>
+<li>What it finds</li>
+<li>How it runs</li>
+<li>Patterns</li>
+<li>When not to use it</li>
+<li>Tests</li>
+</ul>
+<hr>
+<p><a id="skill-57491cba"></a></p>
+<h3 id="trailofbits-modern-python"><a href="#trailofbits-modern-python" class="headerlink" title="trailofbits&#x2F;modern-python"></a>trailofbits&#x2F;modern-python</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/modern-python">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/modern-python/skills/modern-python/SKILL.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;modern-python&#x2F;skills&#x2F;modern-python&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用uv、ruff、ty和pytest的最佳实践的现代Python工具</p>
+<p><strong>适用时机:</strong> 在创建项目、编写独立脚本或从pip&#x2F;Poetry&#x2F;mypy&#x2F;black迁移时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Modern Python</li>
+<li>When to Use This Skill</li>
+<li>When NOT to Use This Skill</li>
+<li>Anti-Patterns to Avoid</li>
+<li>Decision Tree</li>
+<li>Tool Overview</li>
+<li>Security Tools</li>
+<li>Quick Start: Minimal Project</li>
+<li>Full Project Setup</li>
+<li>1. Create Project Structure</li>
+<li>2. Configure pyproject.toml</li>
+<li>3. Install Dependencies</li>
+<li>4. Add Makefile</li>
+<li>Migration Guide</li>
+<li>From requirements.txt + pip</li>
+<li>From setup.py &#x2F; setup.cfg</li>
+</ul>
+<hr>
+<p><a id="skill-843806ab"></a></p>
+<h3 id="trailofbits-property-based-testing"><a href="#trailofbits-property-based-testing" class="headerlink" title="trailofbits&#x2F;property-based-testing"></a>trailofbits&#x2F;property-based-testing</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/property-based-testing">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/property-based-testing/skills/property-based-testing/SKILL.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;property-based-testing&#x2F;skills&#x2F;property-based-testing&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 针对多个语言和智能合约的基于属性的测试</p>
+<p><strong>适用时机:</strong> 适用于将案例添加到现有 @given、快速验证或 proptest 测试套件时，用于判断现有属性测试是否断言了任何真实内容，以及当生成器缩小了反例范围，而你需要区分错误属性与真实错误时。不适用于覆盖度引导的二进制伪随机测试（libFuzzer、AFL）、突变测试活动、静态分析、基准测试或端到端 UI 测试。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Property-Based Testing</li>
+<li>Property catalog</li>
+<li>The two ways a property test asserts nothing</li>
+<li>Where to look next</li>
+<li>Introducing PBT to a project that lacks it</li>
+</ul>
+<hr>
+<p><a id="skill-34a5d01f"></a></p>
+<h3 id="trailofbits-semgrep-rule-creator"><a href="#trailofbits-semgrep-rule-creator" class="headerlink" title="trailofbits&#x2F;semgrep-rule-creator"></a>trailofbits&#x2F;semgrep-rule-creator</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/semgrep-rule-creator">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/semgrep-rule-creator/skills/semgrep-rule-creator/SKILL.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;semgrep-rule-creator&#x2F;skills&#x2F;semgrep-rule-creator&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 创建和完善用于漏洞检测的Semgrep规则</p>
+<p><strong>适用时机:</strong> 在编写Semgrep规则或构建自定义静态分析检测时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Semgrep Rule Creator</li>
+<li>When to Use</li>
+<li>When NOT to Use</li>
+<li>Rationalizations to Reject</li>
+<li>Anti-Patterns</li>
+<li>Strictness Level</li>
+<li>Overview</li>
+<li>Quick Start</li>
+<li>Quick Reference</li>
+<li>Workflow</li>
+<li>Documentation</li>
+</ul>
+<hr>
+<p><a id="skill-31195d3b"></a></p>
+<h3 id="trailofbits-semgrep-rule-variant-creator"><a href="#trailofbits-semgrep-rule-variant-creator" class="headerlink" title="trailofbits&#x2F;semgrep-rule-variant-creator"></a>trailofbits&#x2F;semgrep-rule-variant-creator</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/semgrep-rule-variant-creator">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/semgrep-rule-variant-creator/skills/semgrep-rule-variant-creator/SKILL.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;semgrep-rule-variant-creator&#x2F;skills&#x2F;semgrep-rule-variant-creator&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用测试驱动验证将现有的Semgrep规则移植到新的目标语言中</p>
+<p><strong>适用时机:</strong> 用于将 Semgrep 规则移植到指定的目标语言。输入现有的规则和目标语言，为每个语言生成独立的规则+测试目录。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Semgrep Rule Variant Creator</li>
+<li>Run it as a workflow</li>
+<li>The four phases</li>
+<li>Output</li>
+<li>Scope and reporting</li>
+<li>Rationalizations to Reject</li>
+<li>Quick Reference</li>
+<li>Documentation</li>
+</ul>
+<hr>
+<p><a id="skill-29cad9ca"></a></p>
+<h3 id="trailofbits-sharp-edges"><a href="#trailofbits-sharp-edges" class="headerlink" title="trailofbits&#x2F;sharp-edges"></a>trailofbits&#x2F;sharp-edges</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/sharp-edges">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/sharp-edges/skills/sharp-edges/SKILL.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;sharp-edges&#x2F;skills&#x2F;sharp-edges&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 识别容易出错的API和危险的配置</p>
+<p><strong>适用时机:</strong> 用于审查 API 设计、配置规范、加密库人机界面设计，或评估代码是否遵循“默认安全”和“成功陷阱”原则。触发因素：枪炮式设计、防滥用、安全默认设置、API 可用性、危险配置。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Sharp Edges Analysis</li>
+<li>When to Use</li>
+<li>When NOT to Use</li>
+<li>Agent</li>
+<li>Core Principle</li>
+<li>Rationalizations to Reject</li>
+<li>Sharp Edge Categories</li>
+<li>1. Algorithm&#x2F;Mode Selection Footguns</li>
+<li>2. Dangerous Defaults</li>
+<li>3. Primitive vs. Semantic APIs</li>
+<li>4. Configuration Cliffs</li>
+<li>5. Silent Failures</li>
+<li>6. Stringly-Typed Security</li>
+<li>Analysis Workflow</li>
+<li>Phase 1: Surface Identification</li>
+<li>Phase 2: Edge Case Probing</li>
+</ul>
+<hr>
+<p><a id="skill-5bfa856f"></a></p>
+<h3 id="trailofbits-spec-to-code-compliance"><a href="#trailofbits-spec-to-code-compliance" class="headerlink" title="trailofbits&#x2F;spec-to-code-compliance"></a>trailofbits&#x2F;spec-to-code-compliance</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/spec-to-code-compliance">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/spec-to-code-compliance/skills/spec-to-code-compliance/SKILL.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;spec-to-code-compliance&#x2F;skills&#x2F;spec-to-code-compliance&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 用于区块链审计的规范到代码合规检查器</p>
+<p><strong>适用时机:</strong> 用于比较一个实施方案与白皮书、协议规范或设计文档。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Spec-to-Code Compliance</li>
+<li>When to Use</li>
+<li>When NOT to Use</li>
+<li>Do not check requirements in this context</li>
+<li>What comes back, and how to read it</li>
+<li>Judgment the workflow does not make for you</li>
+<li>The target does not have to be a contract</li>
+<li>Reference</li>
+</ul>
+<hr>
+<p><a id="skill-e1473e47"></a></p>
+<h3 id="trailofbits-static-analysis"><a href="#trailofbits-static-analysis" class="headerlink" title="trailofbits&#x2F;static-analysis"></a>trailofbits&#x2F;static-analysis</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/static-analysis">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/static-analysis/README.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;static-analysis&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 包含CodeQL、Semgrep和SARIF的静态分析工具包</p>
+<p><strong>适用时机:</strong> 运行 CodeQL 污染分析以追踪用户输入到 SQL 查询中 编写 Semgrep 规则以在整个代码库中捕获特定 CWE 模式 将多个扫描器的 SARIF 输出解析为去重发现列表 使用 Semgrep 对 Pull Request 进行 OWASP 和 Trail of Bits 规则集扫描 为项目特定的 API 汇流口生成 CodeQL 数据扩展模型</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Static Analysis</li>
+<li>Skills Included</li>
+<li>When to Use</li>
+<li>What It Does</li>
+<li>CodeQL</li>
+<li>Semgrep</li>
+<li>SARIF Parsing</li>
+<li>Running a Semgrep scan</li>
+<li>Workflows Included</li>
+<li>Scripts Included</li>
+<li>Tests</li>
+<li>Installation</li>
+<li>Related Skills</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 3 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/static-analysis/skills/codeql/SKILL.md">codeql</a> · <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/static-analysis/skills/sarif-parsing/SKILL.md">sarif-parsing</a> · <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/static-analysis/skills/semgrep/SKILL.md">semgrep</a></p>
+<hr>
+<p><a id="skill-f40f014c"></a></p>
+<h3 id="trailofbits-testing-handbook-skills"><a href="#trailofbits-testing-handbook-skills" class="headerlink" title="trailofbits&#x2F;testing-handbook-skills"></a>trailofbits&#x2F;testing-handbook-skills</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/testing-handbook-skills">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/testing-handbook-skills/README.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;testing-handbook-skills&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 测试手册技能：伪装器、静态分析、净化器</p>
+<p><strong>适用时机:</strong> 直接从手册的 fuzzing 章节中生成 libFuzzer 技能 使用手册准确的规则编写指导构建 Semgrep 技能的框架 编写一个跨引用 sanitizer 和覆盖率技能的 harness 编写技能 在 CI 中运行 validate-skills.py 以捕获生成技能之间的断开跨引用 从一个命令中构建一套完整的 16 个协调的安全测试技能</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Testing Handbook Skills</li>
+<li>Overview</li>
+<li>Installation</li>
+<li>Usage</li>
+<li>Generate All Skills</li>
+<li>Generate Specific Skill</li>
+<li>Structure</li>
+<li>Scripts</li>
+<li>Skill Types</li>
+<li>Generated Skills</li>
+<li>Skills Cross-Reference</li>
+<li>Configuration</li>
+<li>Author</li>
+<li>License</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 15 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/testing-handbook-skills/skills/address-sanitizer/SKILL.md">address-sanitizer</a> · <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/testing-handbook-skills/skills/aflpp/SKILL.md">aflpp</a> · <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/testing-handbook-skills/skills/atheris/SKILL.md">atheris</a> · <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/testing-handbook-skills/skills/cargo-fuzz/SKILL.md">cargo-fuzz</a> · <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/testing-handbook-skills/skills/constant-time-testing/SKILL.md">constant-time-testing</a> · <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/testing-handbook-skills/skills/coverage-analysis/SKILL.md">coverage-analysis</a> · <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/testing-handbook-skills/skills/fuzzing-dictionary/SKILL.md">fuzzing-dictionary</a> · <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/testing-handbook-skills/skills/fuzzing-obstacles/SKILL.md">fuzzing-obstacles</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-a823e9cc"></a></p>
+<h3 id="trailofbits-variant-analysis"><a href="#trailofbits-variant-analysis" class="headerlink" title="trailofbits&#x2F;variant-analysis"></a>trailofbits&#x2F;variant-analysis</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/variant-analysis">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/variant-analysis/skills/variant-analysis/SKILL.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;variant-analysis&#x2F;skills&#x2F;variant-analysis&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过模式分析找到类似的漏洞</p>
+<p><strong>适用时机:</strong> 在在认证处理器中找到一个后，从整个代码库中搜索null等价性绕过机制 从已知XSS模式构建Semgrep规则，并迭代直到覆盖相关泄露点 将单个根本原因中的30个ripgrep匹配结果分类为高&#x2F;中&#x2F;低置信度发现结果 从Python注入漏洞扩展CodeQL查询，覆盖同一仓库中的Java和Go变体 在CVE补丁后执行五步变体猎捕，以在分叉的代码路径中发现遗漏的实例</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Variant Analysis</li>
+<li>When to Use</li>
+<li>When NOT to Use</li>
+<li>The Five Steps</li>
+<li>Running it as a Workflow</li>
+<li>What Makes Hunts Fail</li>
+<li>Resources</li>
+</ul>
+<hr>
+<p><a id="skill-f5d50bcc"></a></p>
+<h3 id="veniceai-venice-api-overview"><a href="#veniceai-venice-api-overview" class="headerlink" title="veniceai&#x2F;venice-api-overview"></a>veniceai&#x2F;venice-api-overview</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/tree/main/skills/venice-api-overview">Skills by Venice.ai</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/blob/main/skills/venice-api-overview/SKILL.md">https://github.com&#x2F;veniceai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;venice-api-overview&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> API基础知识、认证模式、定价和版本化</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：API基础知识、认证模式、定价和版本化</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Venice API Overview</li>
+<li>Use when</li>
+<li>Base URL</li>
+<li>Authentication</li>
+<li>Endpoint map</li>
+<li>Inference</li>
+<li>Catalog</li>
+<li>Account, billing, wallet</li>
+<li>Utility</li>
+<li>Retired (return `410 Gone`)</li>
+<li>Response headers to watch</li>
+<li>Pricing model at a glance</li>
+<li>Standard error shape</li>
+<li>OpenAI compatibility - what works and what doesn’t</li>
+<li>Versioning</li>
+<li>Fast start checklist</li>
+</ul>
+<hr>
+<p><a id="skill-b0b4dfce"></a></p>
+<h3 id="veniceai-venice-auth"><a href="#veniceai-venice-auth" class="headerlink" title="veniceai&#x2F;venice-auth"></a>veniceai&#x2F;venice-auth</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/tree/main/skills/venice-auth">Skills by Venice.ai</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/blob/main/skills/venice-auth/SKILL.md">https://github.com&#x2F;veniceai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;venice-auth&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> API密钥和基于钱包的威尼斯身份验证</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：API密钥和基于钱包的威尼斯身份验证</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Venice Authentication</li>
+<li>Use when</li>
+<li>Which endpoints accept what</li>
+<li>Option A - Bearer API key</li>
+<li>Option B - x402 wallet (SIWX)</li>
+<li>Header</li>
+<li>SIWE message fields (EIP-4361, EVM)</li>
+<li>Solana message fields</li>
+<li>Manual signing (TypeScript, EVM)</li>
+<li>SDK shortcut (EVM &#x2F; Base)</li>
+<li>First-time top-up (wallet → credits)</li>
+<li>Choosing between the two</li>
+<li>Common auth errors</li>
+<li>Security hygiene</li>
+<li>Payment safety</li>
+</ul>
+<hr>
+<p><a id="skill-121dcb0e"></a></p>
+<h3 id="vercel-labs-vercel-cli-with-tokens"><a href="#vercel-labs-vercel-cli-with-tokens" class="headerlink" title="vercel-labs&#x2F;vercel-cli-with-tokens"></a>vercel-labs&#x2F;vercel-cli-with-tokens</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/vercel-labs/agent-skills/tree/main/skills/vercel-cli-with-tokens">Skills by Vercel Engineering Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/vercel-labs/agent-skills/blob/main/skills/vercel-cli-with-tokens/SKILL.md">https://github.com&#x2F;vercel-labs&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;vercel-cli-with-tokens&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用代币身份验证部署和管理Vercel项目</p>
+<p><strong>适用时机:</strong> 在使用Vercel CLI时使用访问令牌而不是交互式登录——例如“部署到vercel”、“设置vercel”、“将环境变量添加到vercel”。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Vercel CLI with Tokens</li>
+<li>Step 1: Locate the Vercel Token</li>
+<li>A) `VERCEL_TOKEN` is already set in the environment</li>
+<li>B) Token is in a `.env` file under `VERCEL_TOKEN`</li>
+<li>C) Token is in a `.env` file under a different name</li>
+<li>D) No token found — ask the user</li>
+<li>Step 2: Locate the Project and Team</li>
+<li>CLI Setup</li>
+<li>Deploying a Project</li>
+<li>Quick Deploy (have project ID — no linking needed)</li>
+<li>Full Deploy Flow (no project ID — need to link)</li>
+<li>Deploying from a Remote Repository (code not cloned locally)</li>
+<li>About `.vercel&#x2F;` Directory</li>
+<li>Managing Environment Variables</li>
+<li>Inspecting Deployments</li>
+<li>Managing Domains</li>
+</ul>
+<hr>
+<p><a id="skill-18160f09"></a></p>
+<h3 id="VoDaiLocz-kilo-kit-mcp"><a href="#VoDaiLocz-kilo-kit-mcp" class="headerlink" title="VoDaiLocz&#x2F;kilo-kit-mcp"></a>VoDaiLocz&#x2F;kilo-kit-mcp</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/VoDaiLocz/kilo-kit-mcp">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/VoDaiLocz/kilo-kit-mcp/blob/main/README.md">https://github.com&#x2F;VoDaiLocz&#x2F;kilo-kit-mcp&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 包含177项精心挑选技能的综合图书馆，搭配一个强制执行协议级C4工作流程闸道的MCP运行时环境，配备安全防护栏杆的硬闸命令执行功能，以及5个认知推理引擎（Tree of Thoughts DAG、Adversarial Grilling、5-Whys根因追踪器、上下文压缩器、自我进化），适用于Claude Code、Cursor、Antigravity和Codex。</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：包含177项精心挑选技能的综合库，搭配一个强制执行协议级C4工作流程闸道的MCP运行时环境，配备安全防护栏杆的硬闸命令执行功能，以及5个认知推理引擎（Tree of Thoughts DAG、Adversarial Grilling、5-Whys根因追踪器、Context Compactor、Self-Evolution），适用于Claude Code、Cursor、Antigravity和Codex。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Kilo-Kit</li>
+<li>💡 Why Kilo-Kit?</li>
+<li>The Crisis of Unbounded AI Agency</li>
+<li>The Solution: Governed Autonomy</li>
+<li>⚡ Quick Start (in 30 seconds)</li>
+<li>1. Zero-Install Instant Setup</li>
+<li>2. Verify System Health</li>
+<li>🏛️ Architecture &amp; C4 Protocol</li>
+<li>The C4 5-Gate Lifecycle</li>
+<li>💻 IDE Integration Guide</li>
+<li>⚡ Core Capabilities</li>
+<li>1. 🚦 4-Tier Adaptive Task Gating</li>
+<li>2. 🔍 SQLite FTS5 with BM25 Lexical Ranking</li>
+<li>3. ✍️ Self-Authoring Skills &amp; Autonomous Evolution</li>
+<li>4. 🛡️ Kilo-Sentinel Loop &amp; Thrashing Tripwire</li>
+<li>🧰 MCP Tools Suite (24 Tools)</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 168 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/VoDaiLocz/kilo-kit-mcp/blob/main/skills/agent-frameworks/agent-memory/SKILL.md">agent-memory</a> · <a target="_blank" rel="noopener" href="https://github.com/VoDaiLocz/kilo-kit-mcp/blob/main/skills/agent-frameworks/claukit/SKILL.md">claukit</a> · <a target="_blank" rel="noopener" href="https://github.com/VoDaiLocz/kilo-kit-mcp/blob/main/skills/agent-frameworks/mcp-agent-patterns/SKILL.md">mcp-agent-patterns</a> · <a target="_blank" rel="noopener" href="https://github.com/VoDaiLocz/kilo-kit-mcp/blob/main/skills/agent-frameworks/multi-agent-orchestration/SKILL.md">multi-agent-orchestration</a> · <a target="_blank" rel="noopener" href="https://github.com/VoDaiLocz/kilo-kit-mcp/blob/main/skills/agent-frameworks/workflow-state-machines/SKILL.md">workflow-state-machines</a> · <a target="_blank" rel="noopener" href="https://github.com/VoDaiLocz/kilo-kit-mcp/blob/main/skills/ai-media/ai-multimodal/SKILL.md">ai-multimodal</a> · <a target="_blank" rel="noopener" href="https://github.com/VoDaiLocz/kilo-kit-mcp/blob/main/skills/ai-media/geo-fundamentals/SKILL.md">geo-fundamentals</a> · <a target="_blank" rel="noopener" href="https://github.com/VoDaiLocz/kilo-kit-mcp/blob/main/skills/ai-media/media-processing/SKILL.md">media-processing</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-b1f847d7"></a></p>
+<h3 id="WordPress-wp-abilities-api"><a href="#WordPress-wp-abilities-api" class="headerlink" title="WordPress&#x2F;wp-abilities-api"></a>WordPress&#x2F;wp-abilities-api</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/WordPress/skills/wp-abilities-api">Skills by WordPress Development Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/WordPress/agent-skills/blob/trunk/skills/wp-abilities-api/SKILL.md">https://github.com&#x2F;WordPress&#x2F;agent-skills&#x2F;blob&#x2F;trunk&#x2F;skills&#x2F;wp-abilities-api&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 基于能力的权限和REST API认证</p>
+<p><strong>适用时机:</strong> 在与WordPress能力API（wp_register_ability、wp_register_ability_category、&#x2F;wp-json&#x2F;wp-abilities&#x2F;v1&#x2F;*、@wordpress&#x2F;abilities）一起工作时使用，包括定义能力、类别、元数据、REST暴露和客户端权限检查。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>WP Abilities API</li>
+<li>When to use</li>
+<li>Inputs required</li>
+<li>Procedure</li>
+<li>1) Confirm availability and version constraints</li>
+<li>2) Find existing Abilities usage</li>
+<li>3) Register categories (optional)</li>
+<li>4) Register abilities (PHP)</li>
+<li>5) Confirm REST exposure</li>
+<li>6) Consume from JS (if needed)</li>
+<li>Verification</li>
+<li>Failure modes &#x2F; debugging</li>
+<li>Escalation</li>
+</ul>
+<hr>
+<p><a id="skill-57c869d8"></a></p>
+<h3 id="WordPress-wp-plugin-development"><a href="#WordPress-wp-plugin-development" class="headerlink" title="WordPress&#x2F;wp-plugin-development"></a>WordPress&#x2F;wp-plugin-development</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/WordPress/skills/wp-plugin-development">Skills by WordPress Development Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/WordPress/agent-skills/blob/trunk/skills/wp-plugin-development/SKILL.md">https://github.com&#x2F;WordPress&#x2F;agent-skills&#x2F;blob&#x2F;trunk&#x2F;skills&#x2F;wp-plugin-development&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 插件架构、钩子、设置API、安全</p>
+<p><strong>适用时机:</strong> 在开发WordPress插件时使用：架构和钩子，激活&#x2F;停用&#x2F;卸载，管理员UI和设置API，数据存储，cron&#x2F;任务，安全（非重复标识符&#x2F;能力&#x2F;消毒&#x2F;逃脱），以及发布包装。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>WP Plugin Development</li>
+<li>When to use</li>
+<li>Inputs required</li>
+<li>Procedure</li>
+<li>0) Triage and locate plugin entrypoints</li>
+<li>1) Follow a predictable architecture</li>
+<li>2) Hooks and lifecycle (activation&#x2F;deactivation&#x2F;uninstall)</li>
+<li>3) Settings and admin UI (Settings API)</li>
+<li>4) Security baseline (always)</li>
+<li>5) Data storage, cron, migrations (if needed)</li>
+<li>Verification</li>
+<li>Failure modes &#x2F; debugging</li>
+<li>Escalation</li>
+</ul>
+<hr>
+<p><a id="skill-d8ef9dfd"></a></p>
+<h3 id="WordPress-wp-rest-api"><a href="#WordPress-wp-rest-api" class="headerlink" title="WordPress&#x2F;wp-rest-api"></a>WordPress&#x2F;wp-rest-api</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/WordPress/skills/wp-rest-api">Skills by WordPress Development Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/WordPress/agent-skills/blob/trunk/skills/wp-rest-api/SKILL.md">https://github.com&#x2F;WordPress&#x2F;agent-skills&#x2F;blob&#x2F;trunk&#x2F;skills&#x2F;wp-rest-api&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> REST API路由&#x2F;端点、结构体、身份验证和响应整形</p>
+<p><strong>适用时机:</strong> 在构建、扩展或调试WordPress REST API端点&#x2F;路由时使用：register_rest_route、WP_REST_Controller&#x2F;控制器类、规范&#x2F;参数验证、权限_回调&#x2F;身份验证、响应整形、register_rest_field&#x2F;register_meta，或通过show_in_rest来暴露CPTs&#x2F;分类。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>WP REST API</li>
+<li>When to use</li>
+<li>Inputs required</li>
+<li>Procedure</li>
+<li>0) Triage and locate REST usage</li>
+<li>1) Choose the right approach</li>
+<li>2) Register routes safely (namespaces, methods, permissions)</li>
+<li>3) Validate&#x2F;sanitize request args</li>
+<li>4) Responses, fields, and links</li>
+<li>5) Authentication and authorization</li>
+<li>6) Client-facing behavior (discovery, pagination, embeds)</li>
+<li>Verification</li>
+<li>Failure modes &#x2F; debugging</li>
+<li>Escalation</li>
+</ul>
+<hr>
+<p><a id="skill-ff2d16e9"></a></p>
+<h3 id="wrsmith108-varlock-claude-skill"><a href="#wrsmith108-varlock-claude-skill" class="headerlink" title="wrsmith108&#x2F;varlock-claude-skill"></a>wrsmith108&#x2F;varlock-claude-skill</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/wrsmith108/varlock-claude-skill">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/wrsmith108/varlock-claude-skill/blob/main/skills/varlock/SKILL.md">https://github.com&#x2F;wrsmith108&#x2F;varlock-claude-skill&#x2F;blob&#x2F;main&#x2F;skills&#x2F;varlock&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 安全的环境变量管理，确保秘密信息在 Claude 会话、终端、日志或 git 提交中永远不会泄露。</p>
+<p><strong>适用时机:</strong> 用于处理秘密信息、API密钥、凭证或任何敏感配置时使用。确保秘密信息永远不会在终端、日志、跟踪记录或Claude的上下文中泄露。触发短语包括“环境变量”、“秘密信息”、“.env”、“API密钥”、“凭证”、“敏感”、“Varlock”。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Varlock Security Skill</li>
+<li>Core Principle: Secrets Never Exposed</li>
+<li>CRITICAL: Security Rules for Claude</li>
+<li>Rule 1: Never Echo Secrets</li>
+<li>Rule 2: Never Read .env Directly</li>
+<li>Rule 3: Use Varlock for Validation</li>
+<li>Rule 4: Never Include Secrets in Commands</li>
+<li>Quick Start</li>
+<li>Installation</li>
+<li>Initialize Project</li>
+<li>Schema File: .env.schema</li>
+<li>Basic Structure</li>
+<li>Security Annotations</li>
+<li>Type Annotations</li>
+<li>Safe Commands for Claude</li>
+<li>Validating Environment</li>
+</ul>
+<hr>
+<p><a href="/blog/zh-CN/agent-skills/">返回 Agent Skills 分类导航</a></p>
+<p><a href="/blog/agent-skills/security/">English version of this category</a></p>
+</div></article></div></div><style>.column.column-left,.column.column-right{display:none}</style><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://www.gravatar.com/avatar/7525ea09384aeb09ec303671d7dca1bf?s=128" alt="Song Chen"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Song Chen</p><p class="is-size-6 is-block">Ph.D. Candiate at Université Paris Saclay &amp; Spin-Ion Technologies</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Paris, France</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/blog/zh-CN/archives"><p class="title">28</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/blog/zh-CN/categories"><p class="title">32</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/blog/zh-CN/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/song-chen1" target="_blank" rel="noopener" id="widget-follow">Github Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="GoogleScholar" href="https://scholar.google.com/citations?user=sf-0AGoAAAAJ&amp;hl=de"><i class="fab fa-google-plus-square"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/in/song-chen-3449b9278/"><i class="fab fa-linkedin"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Mail" href="mailto:kammichan90@gmail.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/blog/zh-CN/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/blog/zh-CN/archives/2026/11/"><span class="level-start"><span class="level-item">十一月 2026</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/blog/zh-CN/archives/2026/10/"><span class="level-start"><span class="level-item">十月 2026</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/blog/zh-CN/archives/2023/10/"><span class="level-start"><span class="level-item">十月 2023</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Agent-Skills/"><span class="tag">Agent Skills</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/BERT/"><span class="tag">BERT</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Documentation/"><span class="tag">Documentation</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/French/"><span class="tag">French</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Hexo/"><span class="tag">Hexo</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Hexo-plugins/"><span class="tag">Hexo plugins</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/HuggingFace/"><span class="tag">HuggingFace</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Language/"><span class="tag">Language</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/MachineLearning/"><span class="tag">MachineLearning</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/NLP/"><span class="tag">NLP</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Obsidian/"><span class="tag">Obsidian</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/PyTorch/"><span class="tag">PyTorch</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Pyenv/"><span class="tag">Pyenv</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Python/"><span class="tag">Python</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/VoltAgent/"><span class="tag">VoltAgent</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/computational-simulation/"><span class="tag">computational simulation</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/condensed-matter-physics/"><span class="tag">condensed-matter physics</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/data-science/"><span class="tag">data-science</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/deep-learning/"><span class="tag">deep-learning</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/encryptAsDiary/"><span class="tag">encryptAsDiary</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/machine-learning/"><span class="tag">machine-learning</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python/"><span class="tag">python</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-configuration/"><span class="tag">python_configuration</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-editors/"><span class="tag">python_editors</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-tools/"><span class="tag">python_tools</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="https://api.follow.it/subscription-form/YnRDa2puUlErMTdqQ2Q4aDRrem93bHllemF6Y1ZMSW9hQSsrQ3NKTzRXSGRpTlRocW13MXM2UUw4YUFRdUFhUVRJTk1kaVFPWjc2MUQ1TTlLZ3hvcnhLNHJ2bE4yS3VzaTZ4eTliREZjZEk3UHRIWXBRbkxnN3FVUFczVm9TZDF8c2Z0em5PTnVFYks5TU15dUtPdW05czZIeEF4V0dvYnhQVnJtUGNUZEIxYz0=/8" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/automation/">智能体工具与自动化 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E6%99%BA%E8%83%BD%E4%BD%93%E5%B7%A5%E5%85%B7%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96/">智能体工具与自动化</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/business/">商业与财务 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E5%95%86%E4%B8%9A%E4%B8%8E%E8%B4%A2%E5%8A%A1/">商业与财务</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/cloud/">云与运维 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E4%BA%91%E4%B8%8E%E8%BF%90%E7%BB%B4/">云与运维</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/ai_data/">人工智能与数据 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8E%E6%95%B0%E6%8D%AE/">人工智能与数据</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/productivity/">效率与协作 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E6%95%88%E7%8E%87%E4%B8%8E%E5%8D%8F%E4%BD%9C/">效率与协作</a></p></div></article></div></div><div class="card widget" id="twikoo-new"><div class="card-content"><div class="menu"><h3 class="menu-label">最新评论</h3><script>window.twikooEnvId = 'https://twikoodisqus.vercel.app';</script><div class="twikoo-new-container"></div></div></div></div></div><style>.column.column-left,.column.column-right{display:block}</style></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/blog/zh-CN/"><img class="logo-img" src="/blog/zh-CN/images/logo.png" alt="Project Geeker" height="28"><img class="logo-img-dark" src="/blog/zh-CN/images/logo-dark.png" alt="Project Geeker" height="28"></a><p class="is-size-7"><span>&copy; 2026 Song Chen</span>  网站最终解释权归 <a href="https://songchen.science" target="_blank" rel="noopener">Song</a><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p><p class="is-size-7">© 2023</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.21/dist/twikoo.all.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/blog/zh-CN/js/column.js"></script><script src="/blog/zh-CN/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/blog/zh-CN/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="/blog/zh-CN/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><div class="searchbox-pinyin"><label class="checkbox"><input id="search-by-pinyin" type="checkbox" checked="checked"><span> Pinyin search</span></label></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/imaegoo/pinyin.js" defer></script><script src="/blog/zh-CN/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/blog/zh-CN/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script><script type="text/javascript" src="/js/imaegoo/imaegoo.js"></script><script type="text/javascript" src="/js/imaegoo/universe.js"></script></body></html>

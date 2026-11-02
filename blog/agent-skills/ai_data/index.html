@@ -1,0 +1,1983 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>AI &amp; Data | Agent Skills - Project Geeker</title><link rel="manifest" href="/blog/manifest.json"><meta name="application-name" content="Project Geeker"><meta name="msapplication-TileImage" content="/assets/icons/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Project Geeker"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="AI &amp;amp; DataAI and data skills cover model and agent workflows, retrieval, analytics, data platforms, and machine-learning tasks. Catalog snapshot: November 2, 2026 Category menu brave&amp;#x2F;answers b"><meta property="og:type" content="article"><meta property="og:title" content="AI &amp; Data | Agent Skills"><meta property="og:url" content="https://songchen.science/blog/agent-skills/ai_data/"><meta property="og:site_name" content="Project Geeker"><meta property="og:description" content="AI &amp;amp; DataAI and data skills cover model and agent workflows, retrieval, analytics, data platforms, and machine-learning tasks. Catalog snapshot: November 2, 2026 Category menu brave&amp;#x2F;answers b"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://songchen.science/blog/img/og_image.png"><meta property="article:published_time" content="2026-11-02T04:00:00.000Z"><meta property="article:modified_time" content="2026-11-02T04:00:00.000Z"><meta property="article:author" content="Song Chen"><meta property="article:tag" content="Agent Skills"><meta property="article:tag" content="VoltAgent"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://songchen.science/blog/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://songchen.science/blog/agent-skills/ai_data/"},"headline":"AI & Data | Agent Skills","image":["https://songchen.science/blog/img/og_image.png"],"datePublished":"2026-11-02T04:00:00.000Z","dateModified":"2026-11-02T04:00:00.000Z","author":{"@type":"Person","name":"Song Chen"},"publisher":{"@type":"Organization","name":"Project Geeker","logo":{"@type":"ImageObject","url":{"light":"/images/logo.png","dark":"/images/logo-dark.png"}}},"description":"AI &amp; DataAI and data skills cover model and agent workflows, retrieval, analytics, data platforms, and machine-learning tasks. Catalog snapshot: November 2, 2026 Category menu brave&#x2F;answers b"}</script><link rel="canonical" href="https://songchen.science/blog/agent-skills/ai_data/"><link rel="alternate" href="/blog/atom.xml" title="Project Geeker" type="application/atom+xml"><link rel="icon" href="/blog/assets/icons/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="/blog/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.9420.ltd/js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-0NV49H4CZK" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-0NV49H4CZK');</script><!--!--><!--!--><!--!--><!--!--><!--!--><meta name="follow.it-verification-code" content="uc2EwCtSW92aTx5KkxEk"><!-- hexo injector head_end start --><script> let HEXO_MMEDIA_DATA = { js: [], css: [], aplayerData: [], metingData: [], artPlayerData: [], dplayerData: []}; </script><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head><body class="is-3-column"><script type="text/javascript" src="/js/imaegoo/night.js"></script><canvas id="universe"></canvas><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/blog/"><img class="logo-img" src="/blog/images/logo.png" alt="Project Geeker" height="28"><img class="logo-img-dark" src="/blog/images/logo-dark.png" alt="Project Geeker" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/blog/">Home</a><a class="navbar-item" href="/blog/archives">Archives</a><a class="navbar-item" href="/blog/categories">Categories</a><a class="navbar-item" href="/blog/tags">Tags</a><a class="navbar-item" href="/blog/guestbook/">BBS</a><a class="navbar-item" href="/blog/blogroll/">Blogroll</a><a class="navbar-item" href="/blog/about/me">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i><span>  Catalogue</span></a><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Gallery" href="/blog/gallery/"><i class="fas fa-images"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="GoogleDrive" href="https://goindex.chen-song90.workers.dev"><i class="fab fa-google-drive"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="iCloud" href="https://hitchhiker.azurewebsites.net"><i class="fas fa-cloud"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" href="https://songchen.science/blog/zh-CN/"> Chinese</a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2026-11-02T04:00:00.000Z" title="11/2/2026, 12:00:00 PM">2026-11-02</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-11-02T04:00:00.000Z" title="11/2/2026, 12:00:00 PM">2026-11-02</time></span><span class="level-item"><a class="link-muted" href="/blog/categories/Agent-Skills/">Agent Skills</a><span> / </span><a class="link-muted" href="/blog/categories/Agent-Skills/AI-Data/">AI &amp; Data</a></span><span class="level-item">an hour read (About 11979 words)</span><span class="level-item leancloud_visitors" id="/blog/agent-skills/ai_data/" data-flag-title="AI &amp; Data | Agent Skills"><i class="far fa-eye"></i>&nbsp;&nbsp;<span id="twikoo_visitors"><i class="fa fa-spinner fa-spin"></i></span>&nbsp;visits</span></div></div><h1 class="title is-3 is-size-4-mobile">AI &amp; Data | Agent Skills</h1><div class="content"><h1 id="AI-Data"><a href="#AI-Data" class="headerlink" title="AI &amp; Data"></a>AI &amp; Data</h1><p>AI and data skills cover model and agent workflows, retrieval, analytics, data platforms, and machine-learning tasks.</p>
+<p><strong>Catalog snapshot: November 2, 2026</strong></p>
+<h2 id="Category-menu"><a href="#Category-menu" class="headerlink" title="Category menu"></a>Category menu</h2><ul>
+<li><a href="#skill-5cd6016e">brave&#x2F;answers</a></li>
+<li><a href="#skill-5258a7b1">brave&#x2F;local-descriptions</a></li>
+<li><a href="#skill-ee60cf3b">brave&#x2F;news-search</a></li>
+<li><a href="#skill-9cf413d4">chrono-meta&#x2F;context-doctor</a></li>
+<li><a href="#skill-d2359d22">crawlbase&#x2F;crawl-markdown</a></li>
+<li><a href="#skill-f0ec4efa">crawlbase&#x2F;storage-bulk-get</a></li>
+<li><a href="#skill-4109fe33">crawlbase&#x2F;storage-list</a></li>
+<li><a href="#skill-02e951e2">czlonkowski&#x2F;n8n-node-configuration</a></li>
+<li><a href="#skill-43214186">datadog-labs&#x2F;dd-apm</a></li>
+<li><a href="#skill-9b69de5f">datadog-labs&#x2F;dd-llmo-eval-bootstrap</a></li>
+<li><a href="#skill-cf75a5b9">datadog-labs&#x2F;dd-llmo-eval-trace-rca</a></li>
+<li><a href="#skill-4460779f">duckdb&#x2F;read-file</a></li>
+<li><a href="#skill-07f48497">firebase&#x2F;firebase-ai-logic-basics</a></li>
+<li><a href="#skill-9ace4518">firebase&#x2F;firebase-firestore-enterprise-native-mode</a></li>
+<li><a href="#skill-04b060ec">flutter&#x2F;flutter-caching-data</a></li>
+<li><a href="#skill-f1ba6601">flutter&#x2F;flutter-embedding-native-views</a></li>
+<li><a href="#skill-f027f500">google-gemini&#x2F;gemini-api-dev</a></li>
+<li><a href="#skill-d5b1fa80">google-gemini&#x2F;gemini-interactions-api</a></li>
+<li><a href="#skill-2674a5b7">google-gemini&#x2F;gemini-live-api-dev</a></li>
+<li><a href="#skill-2b1c6d9c">google-gemini&#x2F;vertex-ai-api-dev</a></li>
+<li><a href="#skill-59d1a0b7">hermes-labs-ai&#x2F;little-canary</a></li>
+<li><a href="#skill-53bf50d2">huggingface&#x2F;hugging-face-evaluation</a></li>
+<li><a href="#skill-0d3d0fcf">huggingface&#x2F;hugging-face-model-trainer</a></li>
+<li><a href="#skill-810cfccf">microsoft&#x2F;agent-framework-azure-ai-py</a></li>
+<li><a href="#skill-ebc61b44">microsoft&#x2F;azure-ai-anomalydetector-java</a></li>
+<li><a href="#skill-a89d7126">microsoft&#x2F;azure-ai-contentsafety-java</a></li>
+<li><a href="#skill-a329682f">microsoft&#x2F;azure-ai-contentsafety-py</a></li>
+<li><a href="#skill-34326548">microsoft&#x2F;azure-ai-contentsafety-ts</a></li>
+<li><a href="#skill-9ff5f29d">microsoft&#x2F;azure-ai-contentunderstanding-py</a></li>
+<li><a href="#skill-1e76abbb">microsoft&#x2F;azure-ai-document-intelligence-dotnet</a></li>
+<li><a href="#skill-98edad1e">microsoft&#x2F;azure-ai-document-intelligence-ts</a></li>
+<li><a href="#skill-b03325d5">microsoft&#x2F;azure-ai-formrecognizer-java</a></li>
+<li><a href="#skill-a4dfe4f5">microsoft&#x2F;azure-ai-ml-py</a></li>
+<li><a href="#skill-9019feb6">microsoft&#x2F;azure-ai-openai-dotnet</a></li>
+<li><a href="#skill-a44227c2">microsoft&#x2F;azure-ai-projects-dotnet</a></li>
+<li><a href="#skill-e76f0702">microsoft&#x2F;azure-ai-projects-java</a></li>
+<li><a href="#skill-cf889fa7">microsoft&#x2F;azure-ai-projects-py</a></li>
+<li><a href="#skill-084b0083">microsoft&#x2F;azure-ai-projects-ts</a></li>
+<li><a href="#skill-e971d8f8">microsoft&#x2F;azure-ai-textanalytics-py</a></li>
+<li><a href="#skill-2bbd4d85">microsoft&#x2F;azure-ai-transcription-py</a></li>
+<li><a href="#skill-32710203">microsoft&#x2F;azure-ai-translation-document-py</a></li>
+<li><a href="#skill-596fc6cd">microsoft&#x2F;azure-ai-translation-text-py</a></li>
+<li><a href="#skill-532cd9b6">microsoft&#x2F;azure-ai-translation-ts</a></li>
+<li><a href="#skill-db8e677f">microsoft&#x2F;azure-ai-vision-imageanalysis-java</a></li>
+<li><a href="#skill-b3636f48">microsoft&#x2F;azure-ai-vision-imageanalysis-py</a></li>
+<li><a href="#skill-fbe5f536">microsoft&#x2F;azure-ai-voicelive-dotnet</a></li>
+<li><a href="#skill-c6625fd4">microsoft&#x2F;azure-ai-voicelive-java</a></li>
+<li><a href="#skill-5d497a1f">microsoft&#x2F;azure-ai-voicelive-py</a></li>
+<li><a href="#skill-2abfb42d">microsoft&#x2F;azure-ai-voicelive-ts</a></li>
+<li><a href="#skill-49dbdc72">microsoft&#x2F;azure-containerregistry-py</a></li>
+<li><a href="#skill-4651692a">microsoft&#x2F;azure-mgmt-arizeaiobservabilityeval-dotnet</a></li>
+<li><a href="#skill-0681eaa3">microsoft&#x2F;azure-mgmt-mongodbatlas-dotnet</a></li>
+<li><a href="#skill-7f8bee19">microsoft&#x2F;azure-resource-manager-redis-dotnet</a></li>
+<li><a href="#skill-8fe77ced">microsoft&#x2F;azure-search-documents-dotnet</a></li>
+<li><a href="#skill-38835548">microsoft&#x2F;azure-search-documents-py</a></li>
+<li><a href="#skill-8689c986">microsoft&#x2F;azure-search-documents-ts</a></li>
+<li><a href="#skill-7999d123">microsoft&#x2F;azure-storage-blob-ts</a></li>
+<li><a href="#skill-f3954357">microsoft&#x2F;azure-storage-file-datalake-py</a></li>
+<li><a href="#skill-c3ecd187">microsoft&#x2F;azure-storage-file-share-py</a></li>
+<li><a href="#skill-26bb0f3b">microsoft&#x2F;azure-storage-file-share-ts</a></li>
+<li><a href="#skill-7d9d04c7">microsoft&#x2F;azure-storage-queue-py</a></li>
+<li><a href="#skill-3b314040">microsoft&#x2F;azure-storage-queue-ts</a></li>
+<li><a href="#skill-ea98418d">microsoft&#x2F;pydantic-models-py</a></li>
+<li><a href="#skill-4fbcbb91">mongodb&#x2F;mongodb-query-optimizer</a></li>
+<li><a href="#skill-98873e35">mongodb&#x2F;mongodb-search-and-ai</a></li>
+<li><a href="#skill-4a46381d">NeoLabHQ&#x2F;reflexion</a></li>
+<li><a href="#skill-9efe0519">obra&#x2F;using-superpowers</a></li>
+<li><a href="#skill-1d779bcf">Qiuner&#x2F;birdview</a></li>
+<li><a href="#skill-49742e78">realkimbarrett&#x2F;generic-language-killer</a></li>
+<li><a href="#skill-b17cec60">redis&#x2F;redis-core</a></li>
+<li><a href="#skill-78fe7194">ruslanlap&#x2F;cavemenko</a></li>
+<li><a href="#skill-c3b0b95d">sametbrr&#x2F;llm-wiki-manager</a></li>
+<li><a href="#skill-628e83ba">serpapi&#x2F;serpapi-web-search</a></li>
+<li><a href="#skill-a12ca7dc">swaylq&#x2F;humanize-chinese</a></li>
+<li><a href="#skill-fc72ada9">veniceai&#x2F;venice-chat</a></li>
+<li><a href="#skill-6a1ebb92">veniceai&#x2F;venice-embeddings</a></li>
+<li><a href="#skill-ad93ab59">veniceai&#x2F;venice-models</a></li>
+<li><a href="#skill-80c93213">Vladimir-Human&#x2F;humanizer-ru</a></li>
+<li><a href="#skill-a8465f1c">wiltodelta&#x2F;remove-ai-watermarks</a></li>
+<li><a href="#skill-db814377">xberg-io&#x2F;xberg</a></li>
+</ul>
+<h2 id="Skills-in-this-category"><a href="#Skills-in-this-category" class="headerlink" title="Skills in this category"></a>Skills in this category</h2><p><a id="skill-5cd6016e"></a></p>
+<h3 id="brave-answers"><a href="#brave-answers" class="headerlink" title="brave&#x2F;answers"></a>brave&#x2F;answers</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/brave/skills/answers">Skills by Brave</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/brave/brave-search-skills/blob/main/skills/answers/SKILL.md">https://github.com&#x2F;brave&#x2F;brave-search-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;answers&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> AI-generated answers grounded in live web search results</p>
+<p><strong>When to use it:</strong> Getting a cited summary of a breaking news topic Running deep multi-source research on a technical comparison question Adding web-grounded Q&amp;A to an existing OpenAI SDK-based chatbot by swapping the base URL Looking up current stats or facts that an LLM’s training data wouldn’t cover Generating a research brief with source citations for a report</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Answers — AI Grounding</li>
+<li>When to Use</li>
+<li>Quick Start (cURL)</li>
+<li>Blocking (Single-Search)</li>
+<li>Streaming with Citations (Single-Search)</li>
+<li>Research Mode</li>
+<li>Endpoint</li>
+<li>Two Modes</li>
+<li>Parameters</li>
+<li>Standard Parameters</li>
+<li>Research Parameters</li>
+<li>Constraints (IMPORTANT)</li>
+<li>OpenAI SDK Usage</li>
+<li>Response Format</li>
+<li>Blocking Response (`stream&#x3D;false`, single-search only)</li>
+<li>Streaming Response</li>
+</ul>
+<hr>
+<p><a id="skill-5258a7b1"></a></p>
+<h3 id="brave-local-descriptions"><a href="#brave-local-descriptions" class="headerlink" title="brave&#x2F;local-descriptions"></a>brave&#x2F;local-descriptions</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/brave/skills/local-descriptions">Skills by Brave</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/brave/brave-search-skills/blob/main/skills/local-descriptions/SKILL.md">https://github.com&#x2F;brave&#x2F;brave-search-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;local-descriptions&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Fetch AI-generated text descriptions for points of interest</p>
+<p><strong>When to use it:</strong> Getting a written overview of a restaurant before adding it to a travel guide Pulling descriptive blurbs for local businesses found through Brave web search Adding narrative context to a list of nearby cafes or shops in an app Building a destination page with AI-written summaries of local attractions Comparing descriptions of multiple hotels in a city side by side</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Local Descriptions (Search API)</li>
+<li>Quick Start (cURL)</li>
+<li>Get POI Description</li>
+<li>Multiple POIs</li>
+<li>Endpoint</li>
+<li>Parameters</li>
+<li>Response Format</li>
+<li>Response Fields</li>
+<li>Example Response</li>
+<li>Getting POI IDs</li>
+<li>Use Cases</li>
+<li>Notes</li>
+</ul>
+<hr>
+<p><a id="skill-ee60cf3b"></a></p>
+<h3 id="brave-news-search"><a href="#brave-news-search" class="headerlink" title="brave&#x2F;news-search"></a>brave&#x2F;news-search</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/brave/skills/news-search">Skills by Brave</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/brave/brave-search-skills/blob/main/skills/news-search/SKILL.md">https://github.com&#x2F;brave&#x2F;brave-search-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;news-search&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Search Brave’s news index with article metadata</p>
+<p><strong>When to use it:</strong> Pulling headlines from the last 24 hours on a specific topic Filtering news to only trusted sources using Goggles ranking rules Looking up articles published during a specific date range Building a multilingual news feed by combining country and language params Feeding news results into a data pipeline with fetch metadata timestamps</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>News Search</li>
+<li>Quick Start (cURL)</li>
+<li>Basic Search</li>
+<li>Recent News (Past 24 Hours)</li>
+<li>Date Range Filter</li>
+<li>Endpoint</li>
+<li>Parameters</li>
+<li>Freshness Values</li>
+<li>Response Format</li>
+<li>Response Fields</li>
+<li>Goggles (Custom Ranking) — Unique to Brave</li>
+<li>Search Operators</li>
+<li>Use Cases</li>
+<li>Notes</li>
+</ul>
+<hr>
+<p><a id="skill-9cf413d4"></a></p>
+<h3 id="chrono-meta-context-doctor"><a href="#chrono-meta-context-doctor" class="headerlink" title="chrono-meta&#x2F;context-doctor"></a>chrono-meta&#x2F;context-doctor</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/chrono-meta/forge-harness/tree/main/plugins/fh-meta/skills/context-doctor">Context Engineering</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/chrono-meta/forge-harness/blob/main/plugins/fh-meta/skills/context-doctor/SKILL.md">https://github.com&#x2F;chrono-meta&#x2F;forge-harness&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;fh-meta&#x2F;skills&#x2F;context-doctor&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Generates .claudeignore and flags context bloat before it costs tokens</p>
+<p><strong>When to use it:</strong> Use when a task needs the capability described in this catalog entry: Generates .claudeignore and flags context bloat before it costs tokens</p>
+<p>The catalog does not state a separate trigger condition. This usage note is inferred from the published function description.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>context-doctor — Token Efficiency Diagnosis + Automatic Prescription</li>
+<li>Execution Steps</li>
+<li>Step 1. `.claudeignore` Diagnosis + Generation</li>
+<li>Step 2. Large File Detection + Split Strategy Guidance</li>
+<li>Step 3. `&#x2F;clear` + Model Switching Timing Guide</li>
+<li>Step 3.5. Cache-Boundary Audit (prompt caching, optional third lever)</li>
+<li>Step 4. harvest-loop Integration (burst pattern recording)</li>
+<li>Step 5. CC Context Structure Regular Audit (Hub Environment Only)</li>
+<li>Context Hierarchy (L1&#x2F;L2&#x2F;L3)</li>
+<li>Compression Pass</li>
+<li>Command-Output Reduction (the command-output axis)</li>
+<li>External User Environment Adaptation</li>
+<li>Invocation Triggers</li>
+<li>Auto-Invocation Conditions (at session start)</li>
+<li>Suppress Mechanism</li>
+<li>Explicit Triggers</li>
+</ul>
+<hr>
+<p><a id="skill-d2359d22"></a></p>
+<h3 id="crawlbase-crawl-markdown"><a href="#crawlbase-crawl-markdown" class="headerlink" title="crawlbase&#x2F;crawl-markdown"></a>crawlbase&#x2F;crawl-markdown</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/crawlbase/skills/crawl-markdown">Skills by Crawlbase</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/crawlbase/crawlbase-codex-plugin/blob/main/skills/crawl-markdown/SKILL.md">https://github.com&#x2F;crawlbase&#x2F;crawlbase-codex-plugin&#x2F;blob&#x2F;main&#x2F;skills&#x2F;crawl-markdown&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Extract clean, LLM-ready Markdown from any URL, stripped of ads and boilerplate</p>
+<p><strong>When to use it:</strong> Summarizing articles, blog posts, and news pages without HTML noise Feeding documentation and changelogs into a model’s context window Ingesting web content into a vector store for RAG pipelines Monitoring competitor product pages as readable Markdown Storing extracted Markdown in Crawlbase Cloud Storage for later use</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>When to use</li>
+<li>Usage</li>
+<li>Example prompts</li>
+</ul>
+<hr>
+<p><a id="skill-f0ec4efa"></a></p>
+<h3 id="crawlbase-storage-bulk-get"><a href="#crawlbase-storage-bulk-get" class="headerlink" title="crawlbase&#x2F;storage-bulk-get"></a>crawlbase&#x2F;storage-bulk-get</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/crawlbase/skills/storage-bulk-get">Skills by Crawlbase</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/crawlbase/crawlbase-codex-plugin/blob/main/skills/storage-bulk-get/SKILL.md">https://github.com&#x2F;crawlbase&#x2F;crawlbase-codex-plugin&#x2F;blob&#x2F;main&#x2F;skills&#x2F;storage-bulk-get&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Retrieve up to 100 stored pages in one call, with optional auto-delete</p>
+<p><strong>When to use it:</strong> Pulling the bodies of dozens of stored crawls in one round-trip Draining a storage queue by fetching items and deleting them afterwards Getting lightweight metadata for stored items before requesting full bodies Bulk-converting stored pages to Markdown for a RAG ingestion job</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>When to use</li>
+<li>Usage</li>
+<li>Example prompts</li>
+</ul>
+<hr>
+<p><a id="skill-4109fe33"></a></p>
+<h3 id="crawlbase-storage-list"><a href="#crawlbase-storage-list" class="headerlink" title="crawlbase&#x2F;storage-list"></a>crawlbase&#x2F;storage-list</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/crawlbase/skills/storage-list">Skills by Crawlbase</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/crawlbase/crawlbase-codex-plugin/blob/main/skills/storage-list/SKILL.md">https://github.com&#x2F;crawlbase&#x2F;crawlbase-codex-plugin&#x2F;blob&#x2F;main&#x2F;skills&#x2F;storage-list&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> List stored rids with scroll-based pagination, up to 1000 per call</p>
+<p><strong>When to use it:</strong> Seeing everything currently stored under a Crawlbase token Finding rids you no longer remember before a storage-get call Iterating over stored items page by page for batch processing Enumerating the JS-token silo separately from the normal one</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>When to use</li>
+<li>Usage</li>
+<li>Example prompts</li>
+</ul>
+<hr>
+<p><a id="skill-02e951e2"></a></p>
+<h3 id="czlonkowski-n8n-node-configuration"><a href="#czlonkowski-n8n-node-configuration" class="headerlink" title="czlonkowski&#x2F;n8n-node-configuration"></a>czlonkowski&#x2F;n8n-node-configuration</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/czlonkowski/n8n-skills/tree/main/skills/n8n-node-configuration">n8n Automation</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/czlonkowski/n8n-skills/blob/main/skills/n8n-node-configuration/SKILL.md">https://github.com&#x2F;czlonkowski&#x2F;n8n-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;n8n-node-configuration&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Node configuration with dependency rules and AI connections</p>
+<p><strong>When to use it:</strong> Use when configuring nodes, understanding property dependencies, determining required fields, choosing between get_node detail levels, or learning common configuration patterns by node type — including the native nodes that replace Code (Summarize, Aggregate, Split Out, Merge, Compare Datasets, Remove Duplicates, Sort, Limit, Date &amp; Time, HTTP Request pagination, Crypto). Always use this skill when setting up node parameters — it explains which fields are required for each operation, how displayOptions control field visibility, and when to use patchNodeField for surgical edits vs full node updates.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>n8n Node Configuration</li>
+<li>Configuration Philosophy</li>
+<li>Core Concepts</li>
+<li>1. Operation-Aware Configuration</li>
+<li>2. Property Dependencies</li>
+<li>3. Progressive Discovery</li>
+<li>Configuration Workflow</li>
+<li>Standard Process</li>
+<li>Example: Configuring HTTP Request</li>
+<li>get_node Detail Levels</li>
+<li>Standard Detail (DEFAULT - Use This!)</li>
+<li>Full Detail (Use Sparingly)</li>
+<li>Search Properties Mode</li>
+<li>Decision Tree</li>
+<li>Property Dependencies Deep Dive</li>
+<li>Common Node Patterns</li>
+</ul>
+<hr>
+<p><a id="skill-43214186"></a></p>
+<h3 id="datadog-labs-dd-apm"><a href="#datadog-labs-dd-apm" class="headerlink" title="datadog-labs&#x2F;dd-apm"></a>datadog-labs&#x2F;dd-apm</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/datadog-labs/skills/dd-apm">Skills by Datadog Labs</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/datadog-labs/agent-skills/blob/main/dd-apm/SKILL.md">https://github.com&#x2F;datadog-labs&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;dd-apm&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Query Datadog APM data directly from your editor</p>
+<p><strong>When to use it:</strong> Searching for slow traces on a specific service after a deploy Listing all services and their error rates in a given environment Pulling up the dependency map for a microservice to find upstream bottlenecks Checking request latency percentiles before and after a config change Finding error traces tied to a specific API endpoint</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Datadog APM</li>
+<li>Routing — Read This First</li>
+<li>Overlap disambiguation</li>
+<li>None of the above</li>
+<li>Requirements</li>
+<li>Command Execution Order (Token-Efficient)</li>
+<li>Quick Start</li>
+<li>Services</li>
+<li>List Services</li>
+<li>Service Stats</li>
+<li>Service Map</li>
+<li>Traces</li>
+<li>Search Traces</li>
+<li>Trace Detail</li>
+<li>Key Metrics</li>
+<li>Service Level Objectives</li>
+</ul>
+<hr>
+<p><a id="skill-9b69de5f"></a></p>
+<h3 id="datadog-labs-dd-llmo-eval-bootstrap"><a href="#datadog-labs-dd-llmo-eval-bootstrap" class="headerlink" title="datadog-labs&#x2F;dd-llmo-eval-bootstrap"></a>datadog-labs&#x2F;dd-llmo-eval-bootstrap</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/datadog-labs/skills/dd-llmo-eval-bootstrap">Skills by Datadog Labs</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/datadog-labs/agent-skills/blob/main/README.md">https://github.com&#x2F;datadog-labs&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>Function:</strong> Analyze production LLM traces and generate evaluators</p>
+<p><strong>When to use it:</strong> Generating evaluators for a RAG app after noticing answer quality drift Building a test suite from production traces of a customer support chatbot Creating LLM judge prompts grounded in real failure patterns from an RCA report Auditing an agent app for scope violations using trace-based safety evals Bootstrapping format and correctness checks for a new ml_app with no existing coverage</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Datadog Skills for AI Agents</li>
+<li>Skills</li>
+<li>Install</li>
+<li>Setup Pup</li>
+<li>Add Skill(s)</li>
+<li>Agent Observability (LLMO)</li>
+<li>Software Delivery (dd-software-delivery)</li>
+<li>Audit Trail (dd-audit)</li>
+<li>Datadog Apps (dd-apps)</li>
+<li>Quick Reference</li>
+<li>Auth</li>
+<li>More Skills</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-cf75a5b9"></a></p>
+<h3 id="datadog-labs-dd-llmo-eval-trace-rca"><a href="#datadog-labs-dd-llmo-eval-trace-rca" class="headerlink" title="datadog-labs&#x2F;dd-llmo-eval-trace-rca"></a>datadog-labs&#x2F;dd-llmo-eval-trace-rca</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/datadog-labs/skills/dd-llmo-eval-trace-rca">Skills by Datadog Labs</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/datadog-labs/agent-skills/blob/main/README.md">https://github.com&#x2F;datadog-labs&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>Function:</strong> Root-cause LLM app failures using eval traces</p>
+<p><strong>When to use it:</strong> Diagnosing why an LLM app’s eval pass rate dropped overnight Tracing a RAG retrieval failure back to the specific span that provided bad context Finding system prompt deficiencies that cause repeated agent tool misuse Separating real app failures from false positives caused by miscalibrated eval criteria Building a ranked failure taxonomy from scattered eval results across an ml_app</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Datadog Skills for AI Agents</li>
+<li>Skills</li>
+<li>Install</li>
+<li>Setup Pup</li>
+<li>Add Skill(s)</li>
+<li>Agent Observability (LLMO)</li>
+<li>Software Delivery (dd-software-delivery)</li>
+<li>Audit Trail (dd-audit)</li>
+<li>Datadog Apps (dd-apps)</li>
+<li>Quick Reference</li>
+<li>Auth</li>
+<li>More Skills</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-4460779f"></a></p>
+<h3 id="duckdb-read-file"><a href="#duckdb-read-file" class="headerlink" title="duckdb&#x2F;read-file"></a>duckdb&#x2F;read-file</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/duckdb/skills/read-file">Skills by DuckDB</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/duckdb/duckdb-skills/blob/main/skills/read-file/SKILL.md">https://github.com&#x2F;duckdb&#x2F;duckdb-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;read-file&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Read any data file (CSV, JSON, Parquet, Avro, Excel, spatial) locally or from remote storage</p>
+<p><strong>When to use it:</strong> Use when user references a data file, asks “what’s in this file”, or wants to preview&#x2F;profile a dataset. Not for source code.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Step 1 — Read it</li>
+<li>Step 2 — Answer</li>
+</ul>
+<hr>
+<p><a id="skill-07f48497"></a></p>
+<h3 id="firebase-firebase-ai-logic-basics"><a href="#firebase-firebase-ai-logic-basics" class="headerlink" title="firebase&#x2F;firebase-ai-logic-basics"></a>firebase&#x2F;firebase-ai-logic-basics</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/firebase/skills/firebase-ai-logic-basics">Skills by Firebase</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/firebase/agent-skills/blob/main/skills/firebase-ai-logic-basics/SKILL.md">https://github.com&#x2F;firebase&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;firebase-ai-logic-basics&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Call Gemini models from web and mobile apps via Firebase AI Logic</p>
+<p><strong>When to use it:</strong> Use when provisioning or initializing Firebase AI Logic, or adding Gemini features to an app: text generation, multimodal input, chat, streaming, structured output, hybrid on-device inference, App Check protection, or switching models with Remote Config.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Firebase AI Logic Basics</li>
+<li>Overview</li>
+<li>Setup &amp; initialization</li>
+<li>Prerequisites</li>
+<li>1. Provision Firebase AI Logic (ALL platforms)</li>
+<li>2. Add the SDK and initialize the service in the app</li>
+<li>Core Capabilities</li>
+<li>Text-Only Generation</li>
+<li>Multimodal (Text + Images&#x2F;Audio&#x2F;Video&#x2F;PDF input)</li>
+<li>Chat Session (Multi-turn)</li>
+<li>Streaming Responses</li>
+<li>Text-to-Speech (TTS) Generation</li>
+<li>Generate Images with Nano Banana</li>
+<li>Search Grounding with the built in googleSearch tool</li>
+<li>Supported Platforms and Frameworks</li>
+<li>Advanced Features</li>
+</ul>
+<hr>
+<p><a id="skill-9ace4518"></a></p>
+<h3 id="firebase-firebase-firestore-enterprise-native-mode"><a href="#firebase-firebase-firestore-enterprise-native-mode" class="headerlink" title="firebase&#x2F;firebase-firestore-enterprise-native-mode"></a>firebase&#x2F;firebase-firestore-enterprise-native-mode</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/firebase/skills/firebase-firestore-enterprise-native-mode">Skills by Firebase</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/firebase/agent-skills/blob/main/README.md">https://github.com&#x2F;firebase&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>Function:</strong> Set up and use Firestore Enterprise Native Mode</p>
+<p><strong>When to use it:</strong> Setting up a new Firestore Enterprise database in Native mode Writing security rules to control read and write access per collection Querying Firestore from a Python backend service Adding composite indexes to speed up filtered queries Structuring subcollections for a multi-tenant app</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Installation</li>
+<li>Option 1: Agent Skills CLI</li>
+<li>Option 2: Gemini CLI Extension</li>
+<li>Option 3: Claude Plugin</li>
+<li>Option 4: Codex Plugin</li>
+<li>Option 5: Kimi Plugin</li>
+<li>Option 6: Manual Set Up</li>
+<li>Option 7: Local Path via Agent Skills CLI</li>
+<li>Option 8: Local Development (Live Symlinking)</li>
+<li>🤝 Contributing</li>
+<li>📄 License</li>
+</ul>
+<hr>
+<p><a id="skill-04b060ec"></a></p>
+<h3 id="flutter-flutter-caching-data"><a href="#flutter-flutter-caching-data" class="headerlink" title="flutter&#x2F;flutter-caching-data"></a>flutter&#x2F;flutter-caching-data</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/flutter/skills/flutter-caching-data">Skills by Flutter</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/flutter/skills/blob/main/README.md">https://github.com&#x2F;flutter&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>Function:</strong> Implement offline-first caching strategies</p>
+<p><strong>When to use it:</strong> Adding offline support to a Flutter app that fetches data from a REST API Caching network images in a scrollable product listing screen Pre-warming the FlutterEngine in an existing Android app to avoid blank screen flashes Setting up background sync for locally queued writes when the device comes back online Storing user preferences and session state across app restarts with shared_preferences</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Flutter Agent Plugins</li>
+<li>Installation</li>
+<li>Available Skills</li>
+<li>Contributing</li>
+<li>Code of Conduct</li>
+</ul>
+<hr>
+<p><a id="skill-f1ba6601"></a></p>
+<h3 id="flutter-flutter-embedding-native-views"><a href="#flutter-flutter-embedding-native-views" class="headerlink" title="flutter&#x2F;flutter-embedding-native-views"></a>flutter&#x2F;flutter-embedding-native-views</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/flutter/skills/flutter-embedding-native-views">Skills by Flutter</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/flutter/skills/blob/main/README.md">https://github.com&#x2F;flutter&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>Function:</strong> Embed native Android, iOS, and macOS views in Flutter widgets</p>
+<p><strong>When to use it:</strong> Adding a native Google Maps view inside a Flutter screen on Android and iOS Rendering a platform-specific video player that Flutter widgets can overlay and clip Embedding a Flutter module into an existing React or Angular web application Displaying a native iOS WKWebView with Flutter navigation controls around it Placing multiple independent Flutter views into separate HTML containers on a single page</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Flutter Agent Plugins</li>
+<li>Installation</li>
+<li>Available Skills</li>
+<li>Contributing</li>
+<li>Code of Conduct</li>
+</ul>
+<hr>
+<p><a id="skill-f027f500"></a></p>
+<h3 id="google-gemini-gemini-api-dev"><a href="#google-gemini-gemini-api-dev" class="headerlink" title="google-gemini&#x2F;gemini-api-dev"></a>google-gemini&#x2F;gemini-api-dev</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/google-gemini/skills/gemini-api-dev">Skills by Google Gemini</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/google-gemini/gemini-skills/blob/main/skills/gemini-api-dev/SKILL.md">https://github.com&#x2F;google-gemini&#x2F;gemini-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gemini-api-dev&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Best practices for developing Gemini-powered apps using the Gemini API</p>
+<p><strong>When to use it:</strong> Use this skill when writing code that calls the Gemini API for text generation, multi-turn chat, multimodal understanding, image generation, video generation, speech generation (TTS), voice design, voice replication, streaming responses, background research tasks, function calling, structured output, or migrating from the old generateContent API. Covers SDK usage and best practices for Gemini models and agents in Python and TypeScript.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Gemini API Development Skill</li>
+<li>Critical Rules (Always Apply)</li>
+<li>Current Models (Use These)</li>
+<li>Current Agents</li>
+<li>Current SDKs</li>
+<li>Important Additional Notes</li>
+<li>Quick Start</li>
+<li>Python</li>
+<li>JavaScript&#x2F;TypeScript</li>
+<li>Response Helpers</li>
+<li>Stateful Conversation</li>
+<li>Deep Research Agent</li>
+<li>Managed Agents</li>
+<li>Antigravity Agent</li>
+<li>Custom Agents</li>
+<li>Streaming</li>
+</ul>
+<hr>
+<p><a id="skill-d5b1fa80"></a></p>
+<h3 id="google-gemini-gemini-interactions-api"><a href="#google-gemini-gemini-interactions-api" class="headerlink" title="google-gemini&#x2F;gemini-interactions-api"></a>google-gemini&#x2F;gemini-interactions-api</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/google-gemini/skills/gemini-interactions-api">Skills by Google Gemini</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/gemini-interactions-api/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;gemini-interactions-api&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Building apps with the Gemini Interactions API for text, chat, streaming, and image generation</p>
+<p><strong>When to use it:</strong> Use when the user wants to use the stateful, server-managed Interactions API for multi-turn conversations, background execution, streaming, structured output, and function calling on the Agent Platform.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Gemini Interactions API Skill</li>
+<li>Attribution</li>
+<li>1. Authentication</li>
+<li>2. Client Initialization</li>
+<li>Option A: Environment Variables (Recommended)</li>
+<li>Option B: Explicit Inline Parameters</li>
+<li>Option C: Express Mode (API Key)</li>
+<li>3. Core Interactions API Usage</li>
+<li>Quick Start (Single-Turn)</li>
+<li>Stateful Conversation (Multi-Turn)</li>
+<li>Real-Time Streaming</li>
+<li>Structured Output (Pydantic &#x2F; Polymorphic `response_format`)</li>
+<li>Function Calling (Agent Tool Use)</li>
+<li>Agents &amp; Long-Running Tasks</li>
+<li>4. Accessing the Interactions API via REST</li>
+<li>5. Data Model &amp; Step Types Reference</li>
+</ul>
+<hr>
+<p><a id="skill-2674a5b7"></a></p>
+<h3 id="google-gemini-gemini-live-api-dev"><a href="#google-gemini-gemini-live-api-dev" class="headerlink" title="google-gemini&#x2F;gemini-live-api-dev"></a>google-gemini&#x2F;gemini-live-api-dev</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/google-gemini/skills/gemini-live-api-dev">Skills by Google Gemini</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/google-gemini/gemini-skills/blob/main/skills/gemini-live-api-dev/SKILL.md">https://github.com&#x2F;google-gemini&#x2F;gemini-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gemini-live-api-dev&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Building real-time bidirectional streaming apps with the Gemini Live API</p>
+<p><strong>When to use it:</strong> Use this skill when building real-time, bidirectional streaming applications with the Gemini Live API, or migrating legacy Live models (2.0&#x2F;2.5&#x2F;3.1) to Gemini 3.8 Live. Covers WebSocket-based audio&#x2F;video&#x2F;text streaming, voice activity detection (VAD), background reasoning (extended thinking), asynchronous function calling, session management, ephemeral tokens, live transcription, and live translation. SDKs covered - google-genai (Python), @google&#x2F;genai (JavaScript&#x2F;TypeScript).</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Gemini Live API Development Skill</li>
+<li>Overview</li>
+<li>Models</li>
+<li>Current Models (Use These)</li>
+<li>SDKs</li>
+<li>Partner Integrations</li>
+<li>Audio Formats</li>
+<li>Quick Start</li>
+<li>Authentication</li>
+<li>Connecting to the Live API</li>
+<li>Sending Text</li>
+<li>Sending Audio</li>
+<li>Sending Video</li>
+<li>Receiving Audio and Text</li>
+<li>Background Reasoning (Extended Thinking)</li>
+<li>Live Translation (Gemini Live Translate)</li>
+</ul>
+<hr>
+<p><a id="skill-2b1c6d9c"></a></p>
+<h3 id="google-gemini-vertex-ai-api-dev"><a href="#google-gemini-vertex-ai-api-dev" class="headerlink" title="google-gemini&#x2F;vertex-ai-api-dev"></a>google-gemini&#x2F;vertex-ai-api-dev</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/google-gemini/skills/vertex-ai-api-dev">Skills by Google Gemini</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/google-gemini/gemini-skills/blob/main/README.md">https://github.com&#x2F;google-gemini&#x2F;gemini-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>Function:</strong> Developing Gemini-powered apps on Google Cloud Vertex AI using the Gen AI SDK</p>
+<p><strong>When to use it:</strong> Calling Gemini models from a Python backend with Application Default Credentials Generating structured JSON output that matches a specific schema for data pipelines Processing uploaded video or audio files through Vertex AI multimodal endpoints Running batch predictions on large datasets asynchronously without blocking Setting up bidirectional audio streaming with the Live API for real-time voice apps</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Gemini API skills</li>
+<li>About</li>
+<li>Performance</li>
+<li>Skills in this repo</li>
+<li>Installation</li>
+<li>Using Vercel skills CLI</li>
+<li>Using Context7 skills CLI</li>
+<li>Antigravity</li>
+<li>Claude Code</li>
+<li>Cursor</li>
+<li>OpenAI Codex</li>
+<li>More info</li>
+<li>Disclaimer</li>
+</ul>
+<hr>
+<p><a id="skill-59d1a0b7"></a></p>
+<h3 id="hermes-labs-ai-little-canary"><a href="#hermes-labs-ai-little-canary" class="headerlink" title="hermes-labs-ai&#x2F;little-canary"></a>hermes-labs-ai&#x2F;little-canary</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/hermes-labs-ai/little-canary/blob/main/.agents/skills/little-canary/SKILL.md">Development and Testing</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/hermes-labs-ai/little-canary/blob/main/.agents/skills/little-canary/SKILL.md">https://github.com&#x2F;hermes-labs-ai&#x2F;little-canary&#x2F;blob&#x2F;main&#x2F;.agents&#x2F;skills&#x2F;little-canary&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Screen inbound text with a sacrificial canary</p>
+<p><strong>When to use it:</strong> Use when you need to screen inbound untrusted text before it reaches a primary model — detecting prompt injection by its behavioral effect on a sacrificial canary model, not just pattern matching — and want a block&#x2F;flag&#x2F;pass routing decision plus explicit behavioral-coverage state. Inbound preflight sensor, not a guarantee.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>little-canary</li>
+<li>Use it for</li>
+<li>Do not use it for</li>
+<li>Quickstart</li>
+<li>Output shape</li>
+<li>Common gotchas</li>
+<li>More</li>
+</ul>
+<hr>
+<p><a id="skill-53bf50d2"></a></p>
+<h3 id="huggingface-hugging-face-evaluation"><a href="#huggingface-hugging-face-evaluation" class="headerlink" title="huggingface&#x2F;hugging-face-evaluation"></a>huggingface&#x2F;hugging-face-evaluation</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/huggingface/skills/hugging-face-evaluation">Skills by Hugging Face Team</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/huggingface/skills/blob/main/README.md">https://github.com&#x2F;huggingface&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>Function:</strong> Model evaluation with vLLM&#x2F;lighteval and eval tables</p>
+<p><strong>When to use it:</strong> Extracting benchmark scores from a model README and formatting them as model-index YAML Importing Artificial Analysis benchmark results directly into a model card Running MMLU or GSM8K evaluations on a HuggingFace model using a local GPU Submitting lighteval jobs to HF Jobs for models without a public API endpoint Opening a pull request with structured evaluation metadata on a model you don’t own</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Hugging Face Skills</li>
+<li>How do Skills work?</li>
+<li>Installation</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Gemini CLI</li>
+<li>Cursor</li>
+<li>Skills</li>
+<li>Available skills</li>
+<li>Using skills in your coding agent</li>
+<li>Contribute or customize a skill</li>
+<li>Marketplace</li>
+<li>Additional references</li>
+</ul>
+<hr>
+<p><a id="skill-0d3d0fcf"></a></p>
+<h3 id="huggingface-hugging-face-model-trainer"><a href="#huggingface-hugging-face-model-trainer" class="headerlink" title="huggingface&#x2F;hugging-face-model-trainer"></a>huggingface&#x2F;hugging-face-model-trainer</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/huggingface/skills/hugging-face-model-trainer">Skills by Hugging Face Team</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/huggingface/skills/blob/main/README.md">https://github.com&#x2F;huggingface&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>Function:</strong> Train models with TRL: SFT, DPO, GRPO, GGUF conversion</p>
+<p><strong>When to use it:</strong> Fine-tuning a Qwen or Llama model on a custom instruction dataset without owning a GPU Running DPO training on preference data to align a model’s outputs Converting a freshly trained model to GGUF for use with Ollama or LM Studio Validating a dataset’s column format before spending money on a GPU job Estimating training cost and time before committing to an a10g-large run</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Hugging Face Skills</li>
+<li>How do Skills work?</li>
+<li>Installation</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Gemini CLI</li>
+<li>Cursor</li>
+<li>Skills</li>
+<li>Available skills</li>
+<li>Using skills in your coding agent</li>
+<li>Contribute or customize a skill</li>
+<li>Marketplace</li>
+<li>Additional references</li>
+</ul>
+<hr>
+<p><a id="skill-810cfccf"></a></p>
+<h3 id="microsoft-agent-framework-azure-ai-py"><a href="#microsoft-agent-framework-azure-ai-py" class="headerlink" title="microsoft&#x2F;agent-framework-azure-ai-py"></a>microsoft&#x2F;agent-framework-azure-ai-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/agent-framework-azure-ai-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/agent-framework-azure-ai-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;agent-framework-azure-ai-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Agent Framework for Azure AI Foundry</p>
+<p><strong>When to use it:</strong> Use when creating persistent agents with AzureAIAgentsProvider, using hosted tools (code interpreter, file search, web search), integrating MCP servers, managing conversation threads, or implementing streaming responses. Covers function tools, structured outputs, and multi-tool agents.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Agent Framework Azure Hosted Agents</li>
+<li>Architecture</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Core Workflow</li>
+<li>Basic Agent</li>
+<li>Agent with Function Tools</li>
+<li>Agent with Hosted Tools</li>
+<li>Streaming Responses</li>
+<li>Conversation Threads</li>
+<li>Structured Outputs</li>
+<li>Provider Methods</li>
+<li>Hosted Tools Quick Reference</li>
+<li>Complete Example</li>
+<li>Conventions</li>
+</ul>
+<hr>
+<p><a id="skill-ebc61b44"></a></p>
+<h3 id="microsoft-azure-ai-anomalydetector-java"><a href="#microsoft-azure-ai-anomalydetector-java" class="headerlink" title="microsoft&#x2F;azure-ai-anomalydetector-java"></a>microsoft&#x2F;azure-ai-anomalydetector-java</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-anomalydetector-java">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-ai-anomalydetector-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-ai-anomalydetector-java&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Anomaly detection applications</p>
+<p><strong>When to use it:</strong> Use when implementing univariate&#x2F;multivariate anomaly detection, time-series analysis, or AI-powered monitoring.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Anomaly Detector SDK for Java</li>
+<li>Installation</li>
+<li>Client Creation</li>
+<li>Sync and Async Clients</li>
+<li>With DefaultAzureCredential</li>
+<li>Key Concepts</li>
+<li>Univariate Anomaly Detection</li>
+<li>Multivariate Anomaly Detection</li>
+<li>Core Patterns</li>
+<li>Univariate Batch Detection</li>
+<li>Univariate Last Point Detection (Streaming)</li>
+<li>Change Point Detection</li>
+<li>Multivariate Model Training</li>
+<li>Multivariate Batch Inference</li>
+<li>Multivariate Last Point Detection</li>
+<li>Model Management</li>
+</ul>
+<hr>
+<p><a id="skill-a89d7126"></a></p>
+<h3 id="microsoft-azure-ai-contentsafety-java"><a href="#microsoft-azure-ai-contentsafety-java" class="headerlink" title="microsoft&#x2F;azure-ai-contentsafety-java"></a>microsoft&#x2F;azure-ai-contentsafety-java</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-contentsafety-java">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-ai-contentsafety-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-ai-contentsafety-java&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Content moderation and safety</p>
+<p><strong>When to use it:</strong> Use when implementing text&#x2F;image analysis, blocklist management, or harm detection for hate, violence, sexual content, and self-harm.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Content Safety SDK for Java</li>
+<li>Installation</li>
+<li>Client Creation</li>
+<li>With API Key</li>
+<li>With DefaultAzureCredential</li>
+<li>Key Concepts</li>
+<li>Harm Categories</li>
+<li>Severity Levels</li>
+<li>Core Patterns</li>
+<li>Analyze Text</li>
+<li>Analyze Text with Options</li>
+<li>Analyze Text with Blocklist</li>
+<li>Analyze Image</li>
+<li>Analyze Image from URL</li>
+<li>Blocklist Management</li>
+<li>Create or Update Blocklist</li>
+</ul>
+<hr>
+<p><a id="skill-a329682f"></a></p>
+<h3 id="microsoft-azure-ai-contentsafety-py"><a href="#microsoft-azure-ai-contentsafety-py" class="headerlink" title="microsoft&#x2F;azure-ai-contentsafety-py"></a>microsoft&#x2F;azure-ai-contentsafety-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-contentsafety-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-contentsafety-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-contentsafety-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Harmful content detection</p>
+<p><strong>When to use it:</strong> Scanning user comments before they post to a forum Checking AI-generated responses for harmful content before displaying them Filtering uploaded images on a file-sharing platform Blocking domain-specific slurs or brand terms using custom blocklists Pre-screening support chat messages for self-harm language to trigger escalation</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Content Safety SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Legacy: API Key (existing keyed deployments)</li>
+<li>Analyze Text</li>
+<li>Analyze Image</li>
+<li>Image from URL</li>
+<li>Text Blocklist Management</li>
+<li>Create Blocklist</li>
+<li>Add Block Items</li>
+<li>Analyze with Blocklist</li>
+<li>Severity Levels</li>
+<li>Harm Categories</li>
+<li>Severity Scale</li>
+<li>Client Types</li>
+</ul>
+<hr>
+<p><a id="skill-34326548"></a></p>
+<h3 id="microsoft-azure-ai-contentsafety-ts"><a href="#microsoft-azure-ai-contentsafety-ts" class="headerlink" title="microsoft&#x2F;azure-ai-contentsafety-ts"></a>microsoft&#x2F;azure-ai-contentsafety-ts</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-contentsafety-ts">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-ai-contentsafety-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-ai-contentsafety-ts&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Content safety for text and images</p>
+<p><strong>When to use it:</strong> Use when moderating user-generated content, detecting hate speech, violence, sexual content, or self-harm, or managing custom blocklists.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Content Safety REST SDK for TypeScript</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>API Key</li>
+<li>DefaultAzureCredential</li>
+<li>Analyze Text</li>
+<li>Analyze Image</li>
+<li>Base64 Content</li>
+<li>Blob URL</li>
+<li>Blocklist Management</li>
+<li>Create Blocklist</li>
+<li>Add Items to Blocklist</li>
+<li>Analyze with Blocklist</li>
+<li>List Blocklists</li>
+<li>Delete Blocklist</li>
+</ul>
+<hr>
+<p><a id="skill-9ff5f29d"></a></p>
+<h3 id="microsoft-azure-ai-contentunderstanding-py"><a href="#microsoft-azure-ai-contentunderstanding-py" class="headerlink" title="microsoft&#x2F;azure-ai-contentunderstanding-py"></a>microsoft&#x2F;azure-ai-contentunderstanding-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-contentunderstanding-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-contentunderstanding-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-contentunderstanding-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Multimodal content extraction</p>
+<p><strong>When to use it:</strong> Converting scanned PDFs to markdown for RAG pipelines Transcribing recorded meetings with per-phrase timestamps Pulling invoice fields like vendor name and line items from uploaded files Extracting key frames and summaries from product demo videos Running image content extraction across a batch of screenshots</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Content Understanding SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Core Workflow</li>
+<li>Prebuilt Analyzers</li>
+<li>Analyze Document</li>
+<li>Access Document Content Details</li>
+<li>Analyze Image</li>
+<li>Analyze Video</li>
+<li>Analyze Audio</li>
+<li>Custom Analyzers</li>
+<li>Analyzer Management</li>
+<li>Async Client</li>
+<li>Content Types</li>
+<li>Model Imports</li>
+</ul>
+<hr>
+<p><a id="skill-1e76abbb"></a></p>
+<h3 id="microsoft-azure-ai-document-intelligence-dotnet"><a href="#microsoft-azure-ai-document-intelligence-dotnet" class="headerlink" title="microsoft&#x2F;azure-ai-document-intelligence-dotnet"></a>microsoft&#x2F;azure-ai-document-intelligence-dotnet</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-document-intelligence-dotnet">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-ai-document-intelligence-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-ai-document-intelligence-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Document text, table, and data extraction</p>
+<p><strong>When to use it:</strong> Pulling vendor name, line items, and totals from uploaded invoice PDFs Reading merchant name and transaction date from scanned expense receipts Extracting fields from W-2 forms during tax document processing Training a custom model to parse a proprietary contract template Classifying incoming document batches into predefined types before routing</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure.AI.DocumentIntelligence (.NET)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Microsoft Entra Token Credential</li>
+<li>API Key</li>
+<li>Client Types</li>
+<li>Prebuilt Models</li>
+<li>Core Workflows</li>
+<li>1. Analyze Invoice</li>
+<li>2. Extract Layout (Text, Tables, Structure)</li>
+<li>3. Analyze Receipt</li>
+<li>4. Build Custom Model</li>
+<li>5. Build Document Classifier</li>
+<li>6. Classify Document</li>
+<li>7. Manage Models</li>
+</ul>
+<hr>
+<p><a id="skill-98edad1e"></a></p>
+<h3 id="microsoft-azure-ai-document-intelligence-ts"><a href="#microsoft-azure-ai-document-intelligence-ts" class="headerlink" title="microsoft&#x2F;azure-ai-document-intelligence-ts"></a>microsoft&#x2F;azure-ai-document-intelligence-ts</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-document-intelligence-ts">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-ai-document-intelligence-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-ai-document-intelligence-ts&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Document text and table extraction</p>
+<p><strong>When to use it:</strong> Use when processing invoices, receipts, IDs, forms, or building custom document models.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure Document Intelligence REST SDK for TypeScript</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>DefaultAzureCredential</li>
+<li>API Key</li>
+<li>Analyze Document (URL)</li>
+<li>Analyze Document (Local File)</li>
+<li>Prebuilt Models</li>
+<li>Extract Invoice Fields</li>
+<li>Extract Receipt Fields</li>
+<li>List Document Models</li>
+<li>Build Custom Model</li>
+<li>Build Document Classifier</li>
+<li>Classify Document</li>
+<li>Get Service Info</li>
+</ul>
+<hr>
+<p><a id="skill-b03325d5"></a></p>
+<h3 id="microsoft-azure-ai-formrecognizer-java"><a href="#microsoft-azure-ai-formrecognizer-java" class="headerlink" title="microsoft&#x2F;azure-ai-formrecognizer-java"></a>microsoft&#x2F;azure-ai-formrecognizer-java</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-formrecognizer-java">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-ai-formrecognizer-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-ai-formrecognizer-java&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Document analysis and form extraction</p>
+<p><strong>When to use it:</strong> Parsing invoice PDFs to pull vendor name, line items, and totals into a database Extracting fields from scanned W2 forms during payroll processing Reading table data from multi-page contract PDFs without manual copy-paste Training a custom model to recognize a company-specific purchase order format Classifying incoming document batches as invoices, receipts, or contracts before routing</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Document Intelligence SDK for Java</li>
+<li>Before Implementation</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>DefaultAzureCredential (Recommended)</li>
+<li>API Key</li>
+<li>Administration Client</li>
+<li>Async Client</li>
+<li>Prebuilt Models</li>
+<li>Core Patterns</li>
+<li>Analyze from File</li>
+<li>Analyze from URL</li>
+<li>Extract Layout</li>
+<li>Extract Document Fields</li>
+<li>Analyze with Options</li>
+</ul>
+<hr>
+<p><a id="skill-a4dfe4f5"></a></p>
+<h3 id="microsoft-azure-ai-ml-py"><a href="#microsoft-azure-ai-ml-py" class="headerlink" title="microsoft&#x2F;azure-ai-ml-py"></a>microsoft&#x2F;azure-ai-ml-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-ml-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-ml-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-ml-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Azure ML workspace and job management</p>
+<p><strong>When to use it:</strong> Submitting a training job to a remote GPU cluster without leaving Python Registering a trained model to the Azure ML model registry for deployment Building a multi-step pipeline that chains data prep and model training Scaling a compute cluster up or down based on job queue size Versioning datasets stored in Azure Blob Storage as named data assets</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure Machine Learning SDK v2 for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>From Config File</li>
+<li>Workspace Management</li>
+<li>Create Workspace</li>
+<li>List Workspaces</li>
+<li>Data Assets</li>
+<li>Register Data</li>
+<li>Register Folder</li>
+<li>Model Registry</li>
+<li>Register Model</li>
+<li>List Models</li>
+<li>Compute</li>
+<li>Create Compute Cluster</li>
+</ul>
+<hr>
+<p><a id="skill-9019feb6"></a></p>
+<h3 id="microsoft-azure-ai-openai-dotnet"><a href="#microsoft-azure-ai-openai-dotnet" class="headerlink" title="microsoft&#x2F;azure-ai-openai-dotnet"></a>microsoft&#x2F;azure-ai-openai-dotnet</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-openai-dotnet">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-ai-openai-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-ai-openai-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> GPT-4, embeddings, DALL-E, and Whisper client</p>
+<p><strong>When to use it:</strong> Sending chat completions to a GPT-4o deployment from a C# backend Generating text embeddings for a vector search index in .NET Transcribing audio files using Whisper via an Azure-managed endpoint Calling DALL-E 3 to generate images from within an ASP.NET application Wiring up function calling so a .NET service can invoke local methods from model responses</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure.AI.OpenAI (.NET)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Client Hierarchy</li>
+<li>Authentication</li>
+<li>API Key Authentication</li>
+<li>Microsoft Entra Token Credential</li>
+<li>Using OpenAI SDK Directly with Azure</li>
+<li>Chat Completions</li>
+<li>Basic Chat</li>
+<li>Async Chat</li>
+<li>Streaming Chat</li>
+<li>Chat with Options</li>
+<li>Multi-turn Conversation</li>
+<li>Structured Outputs (JSON Schema)</li>
+<li>Reasoning Models (o1, o4-mini)</li>
+</ul>
+<hr>
+<p><a id="skill-a44227c2"></a></p>
+<h3 id="microsoft-azure-ai-projects-dotnet"><a href="#microsoft-azure-ai-projects-dotnet" class="headerlink" title="microsoft&#x2F;azure-ai-projects-dotnet"></a>microsoft&#x2F;azure-ai-projects-dotnet</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-projects-dotnet">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-ai-projects-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-ai-projects-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> AI Foundry project management SDK</p>
+<p><strong>When to use it:</strong> Creating and running persistent agents with custom tools like Bing search or Azure AI Search Uploading training datasets to Azure Blob Storage through named connections Listing and filtering model deployments by publisher within an AI Foundry project Running relevance or groundedness evaluations against a dataset using built-in evaluators Managing Azure AI Search indexes as versioned artifacts within a project</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure.AI.Projects (.NET)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Client Hierarchy</li>
+<li>Core Workflows</li>
+<li>1. Get Persistent Agents Client</li>
+<li>2. Versioned Agents with Tools (Preview)</li>
+<li>3. Connections</li>
+<li>4. Deployments</li>
+<li>5. Datasets</li>
+<li>6. Indexes</li>
+<li>7. Evaluations</li>
+<li>8. Get Azure OpenAI Chat Client</li>
+<li>Available Agent Tools</li>
+<li>Key Types Reference</li>
+</ul>
+<hr>
+<p><a id="skill-e76f0702"></a></p>
+<h3 id="microsoft-azure-ai-projects-java"><a href="#microsoft-azure-ai-projects-java" class="headerlink" title="microsoft&#x2F;azure-ai-projects-java"></a>microsoft&#x2F;azure-ai-projects-java</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-projects-java">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-ai-projects-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-ai-projects-java&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> AI Foundry project management</p>
+<p><strong>When to use it:</strong> Listing all Azure AI connections available in a Foundry project Creating a search index backed by Azure AI Search from Java code Uploading documents to a dataset before running an evaluation Querying available model deployments in a Foundry project Running AI model evaluations and retrieving results programmatically</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Projects SDK for Java</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Client Hierarchy</li>
+<li>Core Operations</li>
+<li>List Connections</li>
+<li>List Indexes</li>
+<li>Create or Update Index</li>
+<li>Access OpenAI Evaluations</li>
+<li>Best Practices</li>
+<li>Error Handling</li>
+<li>Reference Links</li>
+</ul>
+<hr>
+<p><a id="skill-cf889fa7"></a></p>
+<h3 id="microsoft-azure-ai-projects-py"><a href="#microsoft-azure-ai-projects-py" class="headerlink" title="microsoft&#x2F;azure-ai-projects-py"></a>microsoft&#x2F;azure-ai-projects-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-projects-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-projects-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-projects-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> AI Foundry project client and agents</p>
+<p><strong>When to use it:</strong> Use when working with Foundry project clients, creating versioned agents with PromptAgentDefinition, running evaluations, managing connections&#x2F;deployments&#x2F;datasets&#x2F;indexes, or using OpenAI-compatible clients. This is the high-level Foundry SDK - for low-level agent operations, use azure-ai-agents-python skill.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Projects Python SDK (Foundry SDK)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Client Operations Overview</li>
+<li>Two Client Approaches</li>
+<li>1. AIProjectClient (Native Foundry)</li>
+<li>2. OpenAI-Compatible Client</li>
+<li>Agent Operations</li>
+<li>Create Agent (Basic)</li>
+<li>Create Agent with Tools</li>
+<li>Versioned Agents with PromptAgentDefinition</li>
+<li>Tools Overview</li>
+<li>Thread and Message Flow</li>
+<li>Connections</li>
+<li>Deployments</li>
+</ul>
+<hr>
+<p><a id="skill-084b0083"></a></p>
+<h3 id="microsoft-azure-ai-projects-ts"><a href="#microsoft-azure-ai-projects-ts" class="headerlink" title="microsoft&#x2F;azure-ai-projects-ts"></a>microsoft&#x2F;azure-ai-projects-ts</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-projects-ts">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-ai-projects-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-ai-projects-ts&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> AI Foundry project client and agents</p>
+<p><strong>When to use it:</strong> Use when working with Foundry project clients, agents, connections, deployments, datasets, indexes, evaluations, or getting OpenAI clients.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Projects SDK for TypeScript</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Operation Groups</li>
+<li>Getting OpenAI Client</li>
+<li>Agents</li>
+<li>Create Agent</li>
+<li>Agent with Tools</li>
+<li>Run Agent</li>
+<li>Connections</li>
+<li>Deployments</li>
+<li>Datasets</li>
+<li>Indexes</li>
+<li>Key Types</li>
+<li>Best Practices</li>
+</ul>
+<hr>
+<p><a id="skill-e971d8f8"></a></p>
+<h3 id="microsoft-azure-ai-textanalytics-py"><a href="#microsoft-azure-ai-textanalytics-py" class="headerlink" title="microsoft&#x2F;azure-ai-textanalytics-py"></a>microsoft&#x2F;azure-ai-textanalytics-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-textanalytics-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-textanalytics-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-textanalytics-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> NLP: sentiment, entities, key phrases</p>
+<p><strong>When to use it:</strong> Scanning customer support tickets for sentiment and flagging negative ones Redacting SSNs, emails, and phone numbers from uploaded documents before storage Extracting medical conditions and medications from clinical notes with UMLS linkage Detecting the language of incoming user messages to route them to the right support team Pulling key phrases from product reviews to surface recurring topics</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Text Analytics SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Legacy: API Key (existing keyed deployments)</li>
+<li>Sentiment Analysis</li>
+<li>Entity Recognition</li>
+<li>PII Detection</li>
+<li>Key Phrase Extraction</li>
+<li>Language Detection</li>
+<li>Healthcare Text Analytics</li>
+<li>Multiple Analysis (Batch)</li>
+<li>Async Client</li>
+<li>Client Types</li>
+<li>Available Operations</li>
+<li>Best Practices</li>
+</ul>
+<hr>
+<p><a id="skill-2bbd4d85"></a></p>
+<h3 id="microsoft-azure-ai-transcription-py"><a href="#microsoft-azure-ai-transcription-py" class="headerlink" title="microsoft&#x2F;azure-ai-transcription-py"></a>microsoft&#x2F;azure-ai-transcription-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-transcription-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-transcription-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-transcription-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Speech-to-text transcription</p>
+<p><strong>When to use it:</strong> Transcribing recorded meeting audio with speaker labels Generating subtitles from video files stored in Azure Blob Storage Converting customer call recordings to searchable text Running real-time captions for a live audio stream Batch processing a folder of interview recordings overnight</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Transcription SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Transcription (Batch)</li>
+<li>Transcription (Real-time)</li>
+<li>Best Practices</li>
+<li>Reference Files</li>
+</ul>
+<hr>
+<p><a id="skill-32710203"></a></p>
+<h3 id="microsoft-azure-ai-translation-document-py"><a href="#microsoft-azure-ai-translation-document-py" class="headerlink" title="microsoft&#x2F;azure-ai-translation-document-py"></a>microsoft&#x2F;azure-ai-translation-document-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-translation-document-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-translation-document-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-translation-document-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Batch document translation</p>
+<p><strong>When to use it:</strong> Translating a product manual from English into five languages in one batch job Converting a legal PDF to Spanish without losing its table and header structure Running nightly translation of customer support tickets stored in Azure Blob Storage Applying a company-specific glossary when translating technical documentation to French Translating PowerPoint decks for international sales teams without manual reformatting</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Document Translation SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Legacy: API Key (existing keyed deployments)</li>
+<li>Basic Document Translation</li>
+<li>Multiple Target Languages</li>
+<li>Translate Single Document</li>
+<li>Check Translation Status</li>
+<li>List Document Statuses</li>
+<li>Cancel Translation</li>
+<li>Using Glossary</li>
+<li>Supported Document Formats</li>
+<li>Supported Languages</li>
+<li>Async Client</li>
+<li>Supported Formats</li>
+</ul>
+<hr>
+<p><a id="skill-596fc6cd"></a></p>
+<h3 id="microsoft-azure-ai-translation-text-py"><a href="#microsoft-azure-ai-translation-text-py" class="headerlink" title="microsoft&#x2F;azure-ai-translation-text-py"></a>microsoft&#x2F;azure-ai-translation-text-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-translation-text-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-translation-text-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-translation-text-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Real-time text translation</p>
+<p><strong>When to use it:</strong> Translating user-submitted form content into a target language before storing it Detecting the language of incoming support tickets to route them correctly Converting Japanese text from Latin script input to Kanji output Looking up dictionary entries and part-of-speech tags for language learning apps Translating HTML page content while preserving markup structure</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Text Translation SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Legacy: API Key (existing keyed deployments)</li>
+<li>Basic Translation</li>
+<li>Translate to Multiple Languages</li>
+<li>Specify Source Language</li>
+<li>Language Detection</li>
+<li>Transliteration</li>
+<li>Dictionary Lookup</li>
+<li>Dictionary Examples</li>
+<li>Get Supported Languages</li>
+<li>Break Sentence</li>
+<li>Translation Options</li>
+<li>Async Client</li>
+</ul>
+<hr>
+<p><a id="skill-532cd9b6"></a></p>
+<h3 id="microsoft-azure-ai-translation-ts"><a href="#microsoft-azure-ai-translation-ts" class="headerlink" title="microsoft&#x2F;azure-ai-translation-ts"></a>microsoft&#x2F;azure-ai-translation-ts</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-translation-ts">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-ai-translation-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-ai-translation-ts&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Text and document translation</p>
+<p><strong>When to use it:</strong> Use when implementing text translation, transliteration, language detection, or batch document translation.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure Translation SDKs for TypeScript</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Text Translation Client</li>
+<li>Authentication</li>
+<li>Translate Text</li>
+<li>Translate with Options</li>
+<li>Get Supported Languages</li>
+<li>Transliterate</li>
+<li>Detect Language</li>
+<li>Document Translation Client</li>
+<li>Single Document Translation</li>
+<li>Batch Document Translation</li>
+<li>Get Translation Status</li>
+<li>Get Supported Formats</li>
+<li>Key Types</li>
+</ul>
+<hr>
+<p><a id="skill-db8e677f"></a></p>
+<h3 id="microsoft-azure-ai-vision-imageanalysis-java"><a href="#microsoft-azure-ai-vision-imageanalysis-java" class="headerlink" title="microsoft&#x2F;azure-ai-vision-imageanalysis-java"></a>microsoft&#x2F;azure-ai-vision-imageanalysis-java</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-vision-imageanalysis-java">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-ai-vision-imageanalysis-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-ai-vision-imageanalysis-java&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Image captioning, OCR, and object detection</p>
+<p><strong>When to use it:</strong> Use when implementing image captioning, OCR text extraction, object detection, tagging, or smart cropping.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Vision Image Analysis SDK for Java</li>
+<li>Installation</li>
+<li>Client Creation</li>
+<li>With API Key</li>
+<li>Async Client</li>
+<li>With DefaultAzureCredential</li>
+<li>Visual Features</li>
+<li>Core Patterns</li>
+<li>Generate Caption</li>
+<li>Generate Caption from URL</li>
+<li>Extract Text (OCR)</li>
+<li>Detect Objects</li>
+<li>Get Tags</li>
+<li>Detect People</li>
+<li>Smart Cropping</li>
+<li>Dense Captions</li>
+</ul>
+<hr>
+<p><a id="skill-b3636f48"></a></p>
+<h3 id="microsoft-azure-ai-vision-imageanalysis-py"><a href="#microsoft-azure-ai-vision-imageanalysis-py" class="headerlink" title="microsoft&#x2F;azure-ai-vision-imageanalysis-py"></a>microsoft&#x2F;azure-ai-vision-imageanalysis-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-vision-imageanalysis-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-vision-imageanalysis-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-vision-imageanalysis-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Image captions, tags, OCR, objects</p>
+<p><strong>When to use it:</strong> Generating alt text for uploaded product images automatically Extracting printed text from scanned receipts or forms Detecting people in security camera frames for downstream processing Getting suggested crop coordinates for profile photos at specific aspect ratios Tagging wildlife photographs by detected objects and scene content</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Vision Image Analysis SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Legacy: API Key (existing keyed deployments)</li>
+<li>Analyze Image from URL</li>
+<li>Analyze Image from File</li>
+<li>Image Caption</li>
+<li>Dense Captions (Multiple Regions)</li>
+<li>Tags</li>
+<li>Object Detection</li>
+<li>OCR (Text Extraction)</li>
+<li>People Detection</li>
+<li>Smart Cropping</li>
+<li>Async Client</li>
+<li>Visual Features</li>
+</ul>
+<hr>
+<p><a id="skill-fbe5f536"></a></p>
+<h3 id="microsoft-azure-ai-voicelive-dotnet"><a href="#microsoft-azure-ai-voicelive-dotnet" class="headerlink" title="microsoft&#x2F;azure-ai-voicelive-dotnet"></a>microsoft&#x2F;azure-ai-voicelive-dotnet</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-voicelive-dotnet">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-ai-voicelive-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-ai-voicelive-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Real-time bidirectional voice AI</p>
+<p><strong>When to use it:</strong> Building a voice assistant that responds to spoken questions in real time Adding bidirectional audio to a .NET customer support chatbot Triggering backend functions from voice commands during a live session Switching between text and audio modalities in the same conversation Connecting Azure Neural voices to a GPT-4o realtime model from a .NET app</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure.AI.VoiceLive (.NET)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Microsoft Entra Token Credential</li>
+<li>API Key</li>
+<li>Client Hierarchy</li>
+<li>Core Workflow</li>
+<li>1. Start Session and Configure</li>
+<li>2. Process Events</li>
+<li>3. Send User Message</li>
+<li>4. Function Calling</li>
+<li>Voice Options</li>
+<li>Supported Models</li>
+<li>Key Types Reference</li>
+<li>Best Practices</li>
+</ul>
+<hr>
+<p><a id="skill-c6625fd4"></a></p>
+<h3 id="microsoft-azure-ai-voicelive-java"><a href="#microsoft-azure-ai-voicelive-java" class="headerlink" title="microsoft&#x2F;azure-ai-voicelive-java"></a>microsoft&#x2F;azure-ai-voicelive-java</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-voicelive-java">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-ai-voicelive-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-ai-voicelive-java&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Real-time bidirectional voice AI</p>
+<p><strong>When to use it:</strong> Streaming PCM16 audio to an AI assistant and playing back spoken responses in real time Configuring server-side voice activity detection to end turns on silence Switching between Azure Neural voices and OpenAI voices within the same session Triggering Java function calls when the AI detects a user intent like fetching weather data Adding noise reduction and echo cancellation to microphone input before sending to the model</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI VoiceLive SDK for Java</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>API Key</li>
+<li>DefaultAzureCredential (Recommended)</li>
+<li>Key Concepts</li>
+<li>Audio Requirements</li>
+<li>Core Workflow</li>
+<li>1. Start Session</li>
+<li>2. Configure Session Options</li>
+<li>3. Send Audio Input</li>
+<li>4. Handle Events</li>
+<li>Voice Configuration</li>
+<li>OpenAI Voices</li>
+<li>Azure Voices</li>
+</ul>
+<hr>
+<p><a id="skill-5d497a1f"></a></p>
+<h3 id="microsoft-azure-ai-voicelive-py"><a href="#microsoft-azure-ai-voicelive-py" class="headerlink" title="microsoft&#x2F;azure-ai-voicelive-py"></a>microsoft&#x2F;azure-ai-voicelive-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-voicelive-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-voicelive-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-voicelive-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Real-time bidirectional voice AI</p>
+<p><strong>When to use it:</strong> Use this skill when creating Python applications that need real-time bidirectional audio communication with Azure AI, including voice assistants, voice-enabled chatbots, real-time speech-to-speech translation, voice-driven avatars, or any WebSocket-based audio streaming with AI models. Supports Server VAD (Voice Activity Detection), turn-based conversation, function calling, MCP tools, avatar integration, and transcription.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Voice Live SDK</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Legacy: API Key (existing keyed deployments)</li>
+<li>Quick Start</li>
+<li>Core Architecture</li>
+<li>Connection Resources</li>
+<li>Session Configuration</li>
+<li>Audio Streaming</li>
+<li>Send Audio (Base64 PCM16)</li>
+<li>Receive Audio</li>
+<li>Event Handling</li>
+<li>Common Patterns</li>
+<li>Manual Turn Mode (No VAD)</li>
+<li>Interrupt Handling</li>
+</ul>
+<hr>
+<p><a id="skill-2abfb42d"></a></p>
+<h3 id="microsoft-azure-ai-voicelive-ts"><a href="#microsoft-azure-ai-voicelive-ts" class="headerlink" title="microsoft&#x2F;azure-ai-voicelive-ts"></a>microsoft&#x2F;azure-ai-voicelive-ts</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-voicelive-ts">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-ai-voicelive-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-ai-voicelive-ts&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Real-time bidirectional voice AI</p>
+<p><strong>When to use it:</strong> Building a voice assistant that responds to spoken questions in real time Adding live voice interaction to a browser-based customer support chat Routing telephony audio through a GPT-4o model for automated call handling Streaming microphone input to Azure AI and playing back synthesized speech Wiring up function calls so a voice agent can fetch live data mid-conversation</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>@azure&#x2F;ai-voicelive (JavaScript&#x2F;TypeScript)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Microsoft Entra Token Credential (Recommended)</li>
+<li>API Key</li>
+<li>Client Hierarchy</li>
+<li>Quick Start</li>
+<li>Session Configuration</li>
+<li>Event Handling (Azure SDK Pattern)</li>
+<li>Function Calling</li>
+<li>Voice Options</li>
+<li>Supported Models</li>
+<li>Turn Detection Options</li>
+<li>Audio Formats</li>
+<li>Key Types Reference</li>
+</ul>
+<hr>
+<p><a id="skill-49dbdc72"></a></p>
+<h3 id="microsoft-azure-containerregistry-py"><a href="#microsoft-azure-containerregistry-py" class="headerlink" title="microsoft&#x2F;azure-containerregistry-py"></a>microsoft&#x2F;azure-containerregistry-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-containerregistry-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-containerregistry-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-containerregistry-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Container image and registry management</p>
+<p><strong>When to use it:</strong> Listing all repositories and their manifest counts in an ACR instance Deleting untagged manifests older than 30 days to reduce storage costs Locking production images by setting can_delete&#x3D;False on specific tags Downloading blob layers from a registry for local inspection or migration Querying tag history ordered by last update to audit recent pushes</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure Container Registry SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Entra ID (Recommended)</li>
+<li>Anonymous Access (Public Registry)</li>
+<li>List Repositories</li>
+<li>Repository Operations</li>
+<li>Get Repository Properties</li>
+<li>Update Repository Properties</li>
+<li>Delete Repository</li>
+<li>List Tags</li>
+<li>Filter by Order</li>
+<li>Manifest Operations</li>
+<li>List Manifests</li>
+<li>Get Manifest Properties</li>
+</ul>
+<hr>
+<p><a id="skill-4651692a"></a></p>
+<h3 id="microsoft-azure-mgmt-arizeaiobservabilityeval-dotnet"><a href="#microsoft-azure-mgmt-arizeaiobservabilityeval-dotnet" class="headerlink" title="microsoft&#x2F;azure-mgmt-arizeaiobservabilityeval-dotnet"></a>microsoft&#x2F;azure-mgmt-arizeaiobservabilityeval-dotnet</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-mgmt-arizeaiobservabilityeval-dotnet">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-arizeaiobservabilityeval-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-mgmt-arizeaiobservabilityeval-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Arize AI observability management</p>
+<p><strong>When to use it:</strong> Use when managing Arize AI organizations on Azure via Azure Marketplace, creating&#x2F;updating&#x2F;deleting Arize resources, or integrating Arize ML observability into .NET applications. Triggers: “Arize AI”, “ML observability”, “ArizeAIObservabilityEval”, “Arize organization”.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure.ResourceManager.ArizeAIObservabilityEval</li>
+<li>Installation</li>
+<li>Package Info</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Core Workflow</li>
+<li>Create an Arize AI Organization</li>
+<li>Get an Organization</li>
+<li>List Organizations</li>
+<li>Update an Organization</li>
+<li>Delete an Organization</li>
+<li>Key Types</li>
+<li>Enums</li>
+<li>Best Practices</li>
+<li>Error Handling</li>
+<li>Direct Resource Access</li>
+</ul>
+<hr>
+<p><a id="skill-0681eaa3"></a></p>
+<h3 id="microsoft-azure-mgmt-mongodbatlas-dotnet"><a href="#microsoft-azure-mgmt-mongodbatlas-dotnet" class="headerlink" title="microsoft&#x2F;azure-mgmt-mongodbatlas-dotnet"></a>microsoft&#x2F;azure-mgmt-mongodbatlas-dotnet</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-mgmt-mongodbatlas-dotnet">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-mongodbatlas-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-mgmt-mongodbatlas-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> MongoDB Atlas as ARM resources</p>
+<p><strong>When to use it:</strong> Use when creating, updating, listing, or deleting MongoDB Atlas organizations through Azure Marketplace integration. This SDK manages the Azure-side organization resource, not Atlas clusters&#x2F;databases directly.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure.ResourceManager.MongoDBAtlas SDK</li>
+<li>Package Information</li>
+<li>Installation</li>
+<li>Important Scope Limitation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Core Types</li>
+<li>Workflows</li>
+<li>Get Organization Collection</li>
+<li>Create Organization</li>
+<li>Get Existing Organization</li>
+<li>List Organizations</li>
+<li>Update Tags</li>
+<li>Update Organization Properties</li>
+<li>Delete Organization</li>
+<li>Model Properties Reference</li>
+</ul>
+<hr>
+<p><a id="skill-7f8bee19"></a></p>
+<h3 id="microsoft-azure-resource-manager-redis-dotnet"><a href="#microsoft-azure-resource-manager-redis-dotnet" class="headerlink" title="microsoft&#x2F;azure-resource-manager-redis-dotnet"></a>microsoft&#x2F;azure-resource-manager-redis-dotnet</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-resource-manager-redis-dotnet">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-redis-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-resource-manager-redis-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Azure Cache for Redis provisioning</p>
+<p><strong>When to use it:</strong> Provisioning a new Redis cache with a specific SKU and TLS configuration Rotating primary or secondary access keys on a schedule Adding IP-range firewall rules to restrict cache access Configuring maintenance windows for Premium-tier caches Setting up geo-replication by linking two Premium Redis instances</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure.ResourceManager.Redis (.NET)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Resource Hierarchy</li>
+<li>Core Workflows</li>
+<li>1. Create Redis Cache</li>
+<li>2. Get Redis Cache</li>
+<li>3. Update Redis Cache</li>
+<li>4. Delete Redis Cache</li>
+<li>5. Get Access Keys</li>
+<li>6. Regenerate Access Keys</li>
+<li>7. Manage Firewall Rules</li>
+<li>8. Configure Patch Schedule (Premium SKU)</li>
+<li>9. Import&#x2F;Export Data (Premium SKU)</li>
+<li>10. Force Reboot</li>
+</ul>
+<hr>
+<p><a id="skill-8fe77ced"></a></p>
+<h3 id="microsoft-azure-search-documents-dotnet"><a href="#microsoft-azure-search-documents-dotnet" class="headerlink" title="microsoft&#x2F;azure-search-documents-dotnet"></a>microsoft&#x2F;azure-search-documents-dotnet</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-search-documents-dotnet">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-search-documents-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-search-documents-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Full-text, vector, and hybrid search</p>
+<p><strong>When to use it:</strong> Running hybrid search queries that combine keyword, vector, and semantic ranking in a single request Building autocomplete and suggestion UIs backed by an Azure Search index Uploading and updating document batches in a .NET application Creating and managing search indexes from C# model classes using FieldBuilder Fetching extractive answers and captions from natural language queries against structured data</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure.Search.Documents (.NET)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Client Selection</li>
+<li>Index Creation</li>
+<li>Using FieldBuilder (Recommended)</li>
+<li>Manual Field Definition</li>
+<li>Document Operations</li>
+<li>Search Patterns</li>
+<li>Basic Search</li>
+<li>Faceted Search</li>
+<li>Autocomplete and Suggestions</li>
+<li>Vector Search</li>
+<li>Semantic Search</li>
+<li>Hybrid Search (Vector + Keyword + Semantic)</li>
+</ul>
+<hr>
+<p><a id="skill-38835548"></a></p>
+<h3 id="microsoft-azure-search-documents-py"><a href="#microsoft-azure-search-documents-py" class="headerlink" title="microsoft&#x2F;azure-search-documents-py"></a>microsoft&#x2F;azure-search-documents-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-search-documents-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-search-documents-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-search-documents-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Full-text, vector, and hybrid search</p>
+<p><strong>When to use it:</strong> Querying a search index with combined keyword and vector similarity scoring Building autocomplete and type-ahead suggestions over a product catalog Indexing Azure Blob Storage documents with entity recognition skillsets Running semantic ranking on natural language questions against a knowledge base Filtering and faceting search results by category, rating, or date ranges</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Search SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Legacy: API Key (existing keyed deployments)</li>
+<li>Client Types</li>
+<li>Create Index with Vector Field</li>
+<li>Upload Documents</li>
+<li>Keyword Search</li>
+<li>Vector Search</li>
+<li>Hybrid Search (Vector + Keyword)</li>
+<li>Semantic Ranking</li>
+<li>Filters</li>
+<li>Facets</li>
+<li>Autocomplete &amp; Suggest</li>
+<li>Indexer with Skillset</li>
+</ul>
+<hr>
+<p><a id="skill-8689c986"></a></p>
+<h3 id="microsoft-azure-search-documents-ts"><a href="#microsoft-azure-search-documents-ts" class="headerlink" title="microsoft&#x2F;azure-search-documents-ts"></a>microsoft&#x2F;azure-search-documents-ts</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-search-documents-ts">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-search-documents-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-search-documents-ts&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Vector&#x2F;hybrid search with semantic ranking</p>
+<p><strong>When to use it:</strong> Use when creating&#x2F;managing indexes, implementing vector&#x2F;hybrid search, semantic ranking, or building agentic retrieval with knowledge bases.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure AI Search SDK for TypeScript</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Core Workflow</li>
+<li>Create Index with Vector Field</li>
+<li>Index Documents</li>
+<li>Full-Text Search</li>
+<li>Vector Search</li>
+<li>Hybrid Search (Text + Vector)</li>
+<li>Semantic Search</li>
+<li>Filtering and Facets</li>
+<li>Autocomplete and Suggestions</li>
+<li>Batch Operations</li>
+<li>Key Types</li>
+<li>Best Practices</li>
+</ul>
+<hr>
+<p><a id="skill-7999d123"></a></p>
+<h3 id="microsoft-azure-storage-blob-ts"><a href="#microsoft-azure-storage-blob-ts" class="headerlink" title="microsoft&#x2F;azure-storage-blob-ts"></a>microsoft&#x2F;azure-storage-blob-ts</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-storage-blob-ts">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-storage-blob-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-storage-blob-ts&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Blob upload, download, and management</p>
+<p><strong>When to use it:</strong> Uploading user-generated files to Azure Blob Storage from a Node.js backend Generating short-lived SAS URLs for secure browser-side file downloads Writing append blobs for structured log accumulation across services Listing and paginating blobs under a container prefix for file browser UIs Copying blobs between containers during data migration or archival workflows</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>@azure&#x2F;storage-blob (TypeScript&#x2F;JavaScript)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Microsoft Entra Token Credential (Recommended)</li>
+<li>Connection String</li>
+<li>StorageSharedKeyCredential (Node.js only)</li>
+<li>SAS Token</li>
+<li>Client Hierarchy</li>
+<li>Container Operations</li>
+<li>Create Container</li>
+<li>List Containers</li>
+<li>Delete Container</li>
+<li>Blob Operations</li>
+<li>Upload Blob (Simple)</li>
+<li>Upload from File (Node.js only)</li>
+</ul>
+<hr>
+<p><a id="skill-f3954357"></a></p>
+<h3 id="microsoft-azure-storage-file-datalake-py"><a href="#microsoft-azure-storage-file-datalake-py" class="headerlink" title="microsoft&#x2F;azure-storage-file-datalake-py"></a>microsoft&#x2F;azure-storage-file-datalake-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-storage-file-datalake-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-storage-file-datalake-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-storage-file-datalake-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Hierarchical data lake storage</p>
+<p><strong>When to use it:</strong> Uploading Spark or Databricks output files into organized directory hierarchies Setting user-level ACL permissions on a shared analytics folder Listing all files recursively under a specific partition path Appending log chunks to a file without overwriting existing data Moving processed files to an archive directory after pipeline completion</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure Data Lake Storage Gen2 SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Client Hierarchy</li>
+<li>File System Operations</li>
+<li>Directory Operations</li>
+<li>File Operations</li>
+<li>Upload File</li>
+<li>Download File</li>
+<li>Delete File</li>
+<li>List Contents</li>
+<li>File&#x2F;Directory Properties</li>
+<li>Access Control (ACL)</li>
+<li>Async Client</li>
+<li>Best Practices</li>
+</ul>
+<hr>
+<p><a id="skill-c3ecd187"></a></p>
+<h3 id="microsoft-azure-storage-file-share-py"><a href="#microsoft-azure-storage-file-share-py" class="headerlink" title="microsoft&#x2F;azure-storage-file-share-py"></a>microsoft&#x2F;azure-storage-file-share-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-storage-file-share-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-storage-file-share-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-storage-file-share-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> SMB file share management</p>
+<p><strong>When to use it:</strong> Mounting a shared file system across multiple Azure VMs using SMB Uploading and downloading large files in chunks to avoid memory pressure Creating share snapshots before running destructive batch operations Listing directory contents programmatically to build a file browser UI Copying files between paths within the same Azure storage account</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure Storage File Share SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Share Operations</li>
+<li>Create Share</li>
+<li>List Shares</li>
+<li>Get Share Client</li>
+<li>Delete Share</li>
+<li>Directory Operations</li>
+<li>Create Directory</li>
+<li>List Directories and Files</li>
+<li>Delete Directory</li>
+<li>File Operations</li>
+<li>Upload File</li>
+<li>Download File</li>
+</ul>
+<hr>
+<p><a id="skill-26bb0f3b"></a></p>
+<h3 id="microsoft-azure-storage-file-share-ts"><a href="#microsoft-azure-storage-file-share-ts" class="headerlink" title="microsoft&#x2F;azure-storage-file-share-ts"></a>microsoft&#x2F;azure-storage-file-share-ts</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-storage-file-share-ts">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-storage-file-share-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-storage-file-share-ts&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> SMB file share operations</p>
+<p><strong>When to use it:</strong> Uploading log files from a Node.js service into an Azure file share Listing and browsing directory contents in a mounted SMB share Generating time-limited SAS URLs for secure file access Taking share snapshots before running batch file transformations Copying files between directories within the same storage account</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>@azure&#x2F;storage-file-share (TypeScript&#x2F;JavaScript)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Connection String (Simplest)</li>
+<li>StorageSharedKeyCredential (Node.js only)</li>
+<li>Microsoft Entra Token Credential</li>
+<li>SAS Token</li>
+<li>Client Hierarchy</li>
+<li>Share Operations</li>
+<li>Create Share</li>
+<li>List Shares</li>
+<li>Delete Share</li>
+<li>Get Share Properties</li>
+<li>Set Share Quota</li>
+<li>Directory Operations</li>
+</ul>
+<hr>
+<p><a id="skill-7d9d04c7"></a></p>
+<h3 id="microsoft-azure-storage-queue-py"><a href="#microsoft-azure-storage-queue-py" class="headerlink" title="microsoft&#x2F;azure-storage-queue-py"></a>microsoft&#x2F;azure-storage-queue-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-storage-queue-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-storage-queue-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-storage-queue-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Simple message queuing</p>
+<p><strong>When to use it:</strong> Queuing image processing jobs from a web upload endpoint Distributing background tasks across multiple worker processes Buffering webhook payloads before writing to a database Decoupling order placement from fulfillment logic in e-commerce pipelines Detecting and handling poison messages with dequeue count tracking</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Azure Queue Storage SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Queue Operations</li>
+<li>Send Messages</li>
+<li>Receive Messages</li>
+<li>Peek Messages</li>
+<li>Update Message</li>
+<li>Delete Message</li>
+<li>Clear Queue</li>
+<li>Queue Properties</li>
+<li>Async Client</li>
+<li>Base64 Encoding</li>
+<li>Best Practices</li>
+<li>Reference Files</li>
+</ul>
+<hr>
+<p><a id="skill-3b314040"></a></p>
+<h3 id="microsoft-azure-storage-queue-ts"><a href="#microsoft-azure-storage-queue-ts" class="headerlink" title="microsoft&#x2F;azure-storage-queue-ts"></a>microsoft&#x2F;azure-storage-queue-ts</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-storage-queue-ts">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-storage-queue-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-storage-queue-ts&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Queue message operations</p>
+<p><strong>When to use it:</strong> Sending job payloads to a background worker queue Routing webhook events to async processors without blocking the HTTP response Moving repeatedly failing messages to a dead-letter queue after a dequeue threshold Peeking at queue depth to decide whether to scale worker instances Generating time-limited SAS tokens for third-party queue access</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>@azure&#x2F;storage-queue (TypeScript&#x2F;JavaScript)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Microsoft Entra Token Credential (Recommended)</li>
+<li>Connection String</li>
+<li>StorageSharedKeyCredential (Node.js only)</li>
+<li>SAS Token</li>
+<li>Client Hierarchy</li>
+<li>Queue Operations</li>
+<li>Create Queue</li>
+<li>List Queues</li>
+<li>Delete Queue</li>
+<li>Get Queue Properties</li>
+<li>Set Queue Metadata</li>
+<li>Message Operations</li>
+</ul>
+<hr>
+<p><a id="skill-ea98418d"></a></p>
+<h3 id="microsoft-pydantic-models-py"><a href="#microsoft-pydantic-models-py" class="headerlink" title="microsoft&#x2F;pydantic-models-py"></a>microsoft&#x2F;pydantic-models-py</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/pydantic-models-py">Skills by Microsoft</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/pydantic-models-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;pydantic-models-py&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Pydantic models for API schemas</p>
+<p><strong>When to use it:</strong> Use when defining API request&#x2F;response schemas, database models, or data validation in Python applications using Pydantic v2.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Pydantic Models</li>
+<li>Quick Start</li>
+<li>Multi-Model Pattern</li>
+<li>camelCase Aliases</li>
+<li>Optional Update Fields</li>
+<li>Database Document</li>
+<li>Integration Steps</li>
+<li>Reference Files</li>
+</ul>
+<hr>
+<p><a id="skill-4fbcbb91"></a></p>
+<h3 id="mongodb-mongodb-query-optimizer"><a href="#mongodb-mongodb-query-optimizer" class="headerlink" title="mongodb&#x2F;mongodb-query-optimizer"></a>mongodb&#x2F;mongodb-query-optimizer</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/mongodb/skills/mongodb-query-optimizer">Skills by MongoDB</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/mongodb/agent-skills/blob/main/skills/mongodb-query-optimizer/SKILL.md">https://github.com&#x2F;mongodb&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;mongodb-query-optimizer&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Analyze and optimize query performance using Atlas Performance Advisor</p>
+<p><strong>When to use it:</strong> Finding why a find() with sort is doing an in-memory SORT stage Picking the right field order for a compound index on a filter+sort query Reviewing Atlas Performance Advisor slow query logs from the last 24 hours Deciding which redundant indexes to drop on a collection near the 20-index limit Fixing a query that scans 50K keys but returns 100 documents</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>MongoDB Query Optimizer</li>
+<li>When this skill is invoked</li>
+<li>High Level Workflow</li>
+<li>General Performance Help</li>
+<li>Help with a Specific Query</li>
+<li>MCP: available tools</li>
+<li>1\. DB connection string works for MongoDB MCP</li>
+<li>2\. Atlas API access works for MongoDB MCP</li>
+<li>Example workflow 1 (help with specific query)</li>
+<li>Example workflow 2 (general database performance help)</li>
+<li>Load references</li>
+<li>Output</li>
+</ul>
+<hr>
+<p><a id="skill-98873e35"></a></p>
+<h3 id="mongodb-mongodb-search-and-ai"><a href="#mongodb-mongodb-search-and-ai" class="headerlink" title="mongodb&#x2F;mongodb-search-and-ai"></a>mongodb&#x2F;mongodb-search-and-ai</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/mongodb/skills/mongodb-search-and-ai">Skills by MongoDB</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/mongodb/agent-skills/blob/main/skills/mongodb-search-and-ai/SKILL.md">https://github.com&#x2F;mongodb&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;mongodb-search-and-ai&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Implement Atlas Search and AI-powered recommendations with vector search</p>
+<p><strong>When to use it:</strong> Use this skill for ANY question about MongoDB search, including open-ended and explanatory ones asked before the user has any data or use case — ‘how does search work in MongoDB?’, ‘I’m new to MongoDB search, where do I start?’, ‘what’s the difference between Atlas Search and Vector Search?’, ‘which search type should I use?’, ‘what is vector search?’, ‘how does automated embedding work?’, ‘can you explain hybrid search?’. Do not answer these from general knowledge; use this skill. Also use to build search features: full-text queries, autocomplete, fuzzy matching, faceted search, semantic similarity, embeddings,</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>MongoDB Search and AI Recommendations Skill</li>
+<li>Core Principles</li>
+<li>Workflow</li>
+<li>0. Check for a Quickstart Request</li>
+<li>1. Discovery Phase</li>
+<li>2. Determine Search Type and Consult the Reference File</li>
+<li>3. Execution and Validation</li>
+<li>Anti-Patterns to Avoid</li>
+<li>Handling Edge Cases</li>
+</ul>
+<hr>
+<p><a id="skill-4a46381d"></a></p>
+<h3 id="NeoLabHQ-reflexion"><a href="#NeoLabHQ-reflexion" class="headerlink" title="NeoLabHQ&#x2F;reflexion"></a>NeoLabHQ&#x2F;reflexion</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/reflexion">Development and Testing</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/blob/master/plugins/reflexion/README.md">https://github.com&#x2F;NeoLabHQ&#x2F;context-engineering-kit&#x2F;blob&#x2F;master&#x2F;plugins&#x2F;reflexion&#x2F;README.md</a></p>
+<p><strong>Function:</strong> Self-refinement loop that forces the LLM to reflect on previous output and correct itself.</p>
+<p><strong>When to use it:</strong> Use when a task needs the capability described in this catalog entry: Self-refinement loop that forces the LLM to reflect on previous output and correct itself.</p>
+<p>The catalog does not state a separate trigger condition. This usage note is inferred from the published function description.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Reflexion Plugin</li>
+<li>Plugin Target</li>
+<li>Overview</li>
+<li>Quick Start</li>
+<li>Automatic Reflection with Hooks</li>
+<li>How It Works</li>
+<li>Commands</li>
+<li>Theoretical Foundation</li>
+</ul>
+<p>This catalog entry points to a collection. The scanned repository lists 3 distinct skill-file paths.</p>
+<p><strong>Sample members:</strong> <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/blob/master/plugins/reflexion/skills/critique/SKILL.md">critique</a> · <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/blob/master/plugins/reflexion/skills/memorize/SKILL.md">memorize</a> · <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/blob/master/plugins/reflexion/skills/reflect/SKILL.md">reflect</a></p>
+<hr>
+<p><a id="skill-9efe0519"></a></p>
+<h3 id="obra-using-superpowers"><a href="#obra-using-superpowers" class="headerlink" title="obra&#x2F;using-superpowers"></a>obra&#x2F;using-superpowers</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/obra/superpowers/blob/main/skills/using-superpowers/SKILL.md">Productivity and Collaboration</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/obra/superpowers/blob/main/skills/using-superpowers/SKILL.md">https://github.com&#x2F;obra&#x2F;superpowers&#x2F;blob&#x2F;main&#x2F;skills&#x2F;using-superpowers&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Leverage core platform capabilities</p>
+<p><strong>When to use it:</strong> Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>The Rule</li>
+<li>Skill Priority</li>
+<li>Red Flags</li>
+<li>Platform Adaptation</li>
+<li>User Instructions</li>
+</ul>
+<hr>
+<p><a id="skill-1d779bcf"></a></p>
+<h3 id="Qiuner-birdview"><a href="#Qiuner-birdview" class="headerlink" title="Qiuner&#x2F;birdview"></a>Qiuner&#x2F;birdview</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/Qiuner/birdview">Context Engineering</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/Qiuner/birdview/blob/main/SKILL.md">https://github.com&#x2F;Qiuner&#x2F;birdview&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Put architecture and constraints at the center of AI coding</p>
+<p><strong>When to use it:</strong> Use when a task needs the capability described in this catalog entry: Put architecture and constraints at the center of AI coding</p>
+<p>The catalog does not state a separate trigger condition. This usage note is inferred from the published function description.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Birdview</li>
+<li>Activation</li>
+<li>Workflow</li>
+<li>Confirm the displayed plan before implementation</li>
+<li>Rules</li>
+<li>Tools</li>
+</ul>
+<hr>
+<p><a id="skill-49742e78"></a></p>
+<h3 id="realkimbarrett-generic-language-killer"><a href="#realkimbarrett-generic-language-killer" class="headerlink" title="realkimbarrett&#x2F;generic-language-killer"></a>realkimbarrett&#x2F;generic-language-killer</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/realkimbarrett/advertising-skills/tree/main/skills/qa/generic-language-killer">Advertising Skills by Kim Barrett</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/realkimbarrett/advertising-skills/blob/main/skills/qa/generic-language-killer/SKILL.md">https://github.com&#x2F;realkimbarrett&#x2F;advertising-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;qa&#x2F;generic-language-killer&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Remove vague, corporate, or AI-sounding language and replace it with clear, specific, human wording</p>
+<p><strong>When to use it:</strong> Trigger on “improve copy”, “sounds generic”, “too fluffy”.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Role</li>
+<li>Process</li>
+<li>Output</li>
+<li>Rules</li>
+<li>Avoid</li>
+</ul>
+<hr>
+<p><a id="skill-b17cec60"></a></p>
+<h3 id="redis-redis-core"><a href="#redis-redis-core" class="headerlink" title="redis&#x2F;redis-core"></a>redis&#x2F;redis-core</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/redis/agent-skills/tree/main/skills/redis-core">Skills by Redis</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/redis/agent-skills/blob/main/skills/redis-core/SKILL.md">https://github.com&#x2F;redis&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;redis-core&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Redis development best practices — data structures, query engine, vector search, caching, and performance optimization.</p>
+<p><strong>When to use it:</strong> Use when designing a Redis data model, caching objects, deciding between Hash and JSON, building counters, leaderboards, membership sets, or session stores, or when reviewing&#x2F;cleaning up Redis key naming.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Redis Core</li>
+<li>When to apply</li>
+<li>1. Choose the right data structure</li>
+<li>2. Use consistent key names</li>
+<li>References</li>
+</ul>
+<hr>
+<p><a id="skill-78fe7194"></a></p>
+<h3 id="ruslanlap-cavemenko"><a href="#ruslanlap-cavemenko" class="headerlink" title="ruslanlap&#x2F;cavemenko"></a>ruslanlap&#x2F;cavemenko</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/ruslanlap/cavemenko/tree/main/skills/cavemenko">Context Engineering</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/ruslanlap/cavemenko/tree/main/skills/cavemenko">https://github.com&#x2F;ruslanlap&#x2F;cavemenko&#x2F;tree&#x2F;main&#x2F;skills&#x2F;cavemenko</a></p>
+<p><strong>Function:</strong> Ukrainian pro-drop reply style, measured -49% tokens</p>
+<p><strong>When to use it:</strong> Use when a task needs the capability described in this catalog entry: Ukrainian pro-drop reply style, measured -49% tokens</p>
+<p>The catalog does not state a separate trigger condition. This usage note is inferred from the published function description.</p>
+<p>No individual SKILL.md was retrieved; this entry is based on the catalog description and available repository README.</p>
+<hr>
+<p><a id="skill-c3b0b95d"></a></p>
+<h3 id="sametbrr-llm-wiki-manager"><a href="#sametbrr-llm-wiki-manager" class="headerlink" title="sametbrr&#x2F;llm-wiki-manager"></a>sametbrr&#x2F;llm-wiki-manager</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/sametbrr/llm-wiki-manager">Context Engineering</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/sametbrr/llm-wiki-manager/blob/main/SKILL.md">https://github.com&#x2F;sametbrr&#x2F;llm-wiki-manager&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Persistent LLM-managed personal wiki — the model writes, cross-references, and maintains the knowledge base while you curate sources. Implements Karpathy’s LLM Wiki pattern with 8 operating modes.</p>
+<p><strong>When to use it:</strong> Use this skill when the user wants to (1) bootstrap a new wiki, second brain, or research notebook; (2) ingest a new source (article, PDF, paper, transcript) and update relevant entity&#x2F;concept pages, the index, and log; (3) query an existing wiki and synthesize an answer with citations, filing it back if useful; (4) update the wiki when a new source supersedes a claim across multiple pages (diff-before-write sweep); (5) lint the wiki for orphan pages, broken links, index drift, or stub pages — auto-dated reports. Trigger this when the user mentions a “second brain”, “research wiki”, “knowledge base”, or “Memex”,</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>LLM Wiki Manager</li>
+<li>The three layers (memorize this)</li>
+<li>Mode router</li>
+<li>Core invariants (apply in every mode) — nine rules</li>
+<li>1. The user owns `raw&#x2F;`. The LLM owns `wiki&#x2F;`.</li>
+<li>2. Every operation logs to `wiki&#x2F;log.md`.</li>
+<li>3. Every new or significantly-updated page touches `wiki&#x2F;index.md`.</li>
+<li>4. Cross-reference aggressively.</li>
+<li>5. Cite back to `raw&#x2F;`.</li>
+<li>6. Flag contradictions, don’t silently overwrite.</li>
+<li>7. Rewrite `wiki&#x2F;hot.md` after every ingest.</li>
+<li>8. The schema lives in `CLAUDE.md` and is updated when conventions change.</li>
+<li>9. If the project’s `CLAUDE.md` declares an `External Wiki`, honor it.</li>
+<li>Standard wiki layout</li>
+<li>Bundled scripts</li>
+<li>Bundled templates</li>
+</ul>
+<hr>
+<p><a id="skill-628e83ba"></a></p>
+<h3 id="serpapi-serpapi-web-search"><a href="#serpapi-serpapi-web-search" class="headerlink" title="serpapi&#x2F;serpapi-web-search"></a>serpapi&#x2F;serpapi-web-search</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/serpapi/skills/serpapi-web-search">Skills by SerpApi</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/serpapi/skills/blob/master/skills/serpapi-web-search/SKILL.md">https://github.com&#x2F;serpapi&#x2F;skills&#x2F;blob&#x2F;master&#x2F;skills&#x2F;serpapi-web-search&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Structured search data via 130+ engines: pick the right engine, extract the right keys, recover from errors</p>
+<p><strong>When to use it:</strong> Getting exact citation counts from Google Scholar instead of approximate web results Pulling live flight prices, hotel rates, and shopping prices as structured JSON Looking up local business details — phone, rating, reviews — via Google Maps Fanning out finance, news, and web queries in parallel for research tasks Cross-checking facts across Google and Bing before citing them</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Invocation</li>
+<li>Engine selection</li>
+<li>Gotchas</li>
+<li>Parameters</li>
+<li>Composition</li>
+<li>Errors</li>
+<li>Reference links</li>
+</ul>
+<hr>
+<p><a id="skill-a12ca7dc"></a></p>
+<h3 id="swaylq-humanize-chinese"><a href="#swaylq-humanize-chinese" class="headerlink" title="swaylq&#x2F;humanize-chinese"></a>swaylq&#x2F;humanize-chinese</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/swaylq/humanize-chinese">Specialized Domains</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/swaylq/humanize-chinese/blob/main/SKILL.md">https://github.com&#x2F;swaylq&#x2F;humanize-chinese&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Detect and rewrite AI-generated Chinese text, fully offline, no LLM</p>
+<p><strong>When to use it:</strong> Use when user says: “去AI味”, “降AIGC”, “人性化文本”, “humanize chinese”, “AI检测”, “AIGC降重”, “去除AI痕迹”, “文本改写”, “论文降重”, “知网检测”, “维普检测”, “AI写作检测”, “让文字更自然”, “detect AI text”, “humanize text”, “make text human-like”, “去ai化”, “改成人话”, “去机器味”, “长文本改写”, “小说改写”, “写一篇”, “claudish”, “去claude腔”, “助手腔”, “去水印”, “watermark remover”, “remove watermark”</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Humanize Chinese AI Text v6</li>
+<li>CLI Tools</li>
+<li>统一 CLI（推荐）</li>
+<li>独立脚本形式（等价）</li>
+<li>评分标准</li>
+<li>参数速查</li>
+<li>工作流（中文主线）</li>
+<li>HC3-Chinese 基准测试</li>
+<li>流程 ①：写作指南 —— 生成时就别写出 AI 腔</li>
+<li>流程 ②：改写清单 —— 拿到稿子后定点过一遍</li>
+<li>先扫一遍：检测 AI 写作模式</li>
+<li>逐条拆：命中什么改什么</li>
+<li>学术论文特殊处理（不能口语化）</li>
+<li>流程 ④：Claude 腔 → 平实中文</li>
+<li>流程 ⑤：去水印</li>
+<li>流程 ⑥：纠错清单 —— 修错误、顺拗口，动作要轻</li>
+</ul>
+<hr>
+<p><a id="skill-fc72ada9"></a></p>
+<h3 id="veniceai-venice-chat"><a href="#veniceai-venice-chat" class="headerlink" title="veniceai&#x2F;venice-chat"></a>veniceai&#x2F;venice-chat</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/tree/main/skills/venice-chat">Skills by Venice.ai</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/blob/main/skills/venice-chat/SKILL.md">https://github.com&#x2F;veniceai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;venice-chat&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Chat completions, multimodal inputs, tools, and streaming</p>
+<p><strong>When to use it:</strong> Use when a task needs the capability described in this catalog entry: Chat completions, multimodal inputs, tools, and streaming</p>
+<p>The catalog does not state a separate trigger condition. This usage note is inferred from the published function description.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Venice Chat Completions</li>
+<li>Use when</li>
+<li>Minimal request</li>
+<li>The request body</li>
+<li>Core fields (OpenAI-compatible)</li>
+<li>Capability gates (400 before inference)</li>
+<li>`venice_parameters` (Venice-only)</li>
+<li>Model feature suffixes</li>
+<li>Messages and modalities</li>
+<li>Images (`image_url`)</li>
+<li>Audio (`input_audio`)</li>
+<li>Video (`video_url`)</li>
+<li>Documents (`file`)</li>
+<li>Prompt caching (`cache_control`)</li>
+<li>Tools &amp; function calling</li>
+<li>Reasoning models</li>
+</ul>
+<hr>
+<p><a id="skill-6a1ebb92"></a></p>
+<h3 id="veniceai-venice-embeddings"><a href="#veniceai-venice-embeddings" class="headerlink" title="veniceai&#x2F;venice-embeddings"></a>veniceai&#x2F;venice-embeddings</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/tree/main/skills/venice-embeddings">Skills by Venice.ai</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/blob/main/skills/venice-embeddings/SKILL.md">https://github.com&#x2F;veniceai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;venice-embeddings&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Embeddings models, dimensions, and encoding formats</p>
+<p><strong>When to use it:</strong> Use when a task needs the capability described in this catalog entry: Embeddings models, dimensions, and encoding formats</p>
+<p>The catalog does not state a separate trigger condition. This usage note is inferred from the published function description.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Venice Embeddings</li>
+<li>Use when</li>
+<li>Minimal request</li>
+<li>Request schema</li>
+<li>Input limits</li>
+<li>Response headers &amp; compression</li>
+<li>Using the OpenAI SDK</li>
+<li>LangChain</li>
+<li>Batch-embedding pattern</li>
+<li>Choosing a model</li>
+<li>Error handling</li>
+<li>Gotchas</li>
+</ul>
+<hr>
+<p><a id="skill-ad93ab59"></a></p>
+<h3 id="veniceai-venice-models"><a href="#veniceai-venice-models" class="headerlink" title="veniceai&#x2F;venice-models"></a>veniceai&#x2F;venice-models</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/tree/main/skills/venice-models">Skills by Venice.ai</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/blob/main/skills/venice-models/SKILL.md">https://github.com&#x2F;veniceai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;venice-models&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Model catalog, traits, and compatibility mappings</p>
+<p><strong>When to use it:</strong> Use when a task needs the capability described in this catalog entry: Model catalog, traits, and compatibility mappings</p>
+<p>The catalog does not state a separate trigger condition. This usage note is inferred from the published function description.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Venice Models</li>
+<li>Use when</li>
+<li>`GET &#x2F;models`</li>
+<li>Top-level `ModelResponse` fields</li>
+<li>`model_spec` - common fields</li>
+<li>`model_spec.capabilities` - text models</li>
+<li>`model_spec.constraints` and type-specific fields</li>
+<li>`model_spec.pricing` - by type</li>
+<li>`GET &#x2F;models&#x2F;traits`</li>
+<li>`GET &#x2F;models&#x2F;compatibility_mapping`</li>
+<li>Common patterns</li>
+<li>Pick a vision + reasoning model at runtime</li>
+<li>Validate an image request before submit</li>
+<li>Estimate LLM cost</li>
+<li>Gotchas</li>
+</ul>
+<hr>
+<p><a id="skill-80c93213"></a></p>
+<h3 id="Vladimir-Human-humanizer-ru"><a href="#Vladimir-Human-humanizer-ru" class="headerlink" title="Vladimir-Human&#x2F;humanizer-ru"></a>Vladimir-Human&#x2F;humanizer-ru</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/Vladimir-Human/humanizer-ru">Marketing</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/Vladimir-Human/humanizer-ru/blob/main/skills/humanizer-ru/SKILL.md">https://github.com&#x2F;Vladimir-Human&#x2F;humanizer-ru&#x2F;blob&#x2F;main&#x2F;skills&#x2F;humanizer-ru&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Rewrites AI-written Russian text while preserving numbers, dates, and names</p>
+<p><strong>When to use it:</strong> Use when a task needs the capability described in this catalog entry: Rewrites AI-written Russian text while preserving numbers, dates, and names</p>
+<p>The catalog does not state a separate trigger condition. This usage note is inferred from the published function description.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>humanizer-ru</li>
+<li>Режимы</li>
+<li>Как править</li>
+<li>Признаки машинного текста и что с ними делать</li>
+<li>Русская специфика</li>
+<li>Факты неприкосновенны</li>
+<li>Когда править мало</li>
+<li>Что вернуть</li>
+<li>Границы</li>
+</ul>
+<hr>
+<p><a id="skill-a8465f1c"></a></p>
+<h3 id="wiltodelta-remove-ai-watermarks"><a href="#wiltodelta-remove-ai-watermarks" class="headerlink" title="wiltodelta&#x2F;remove-ai-watermarks"></a>wiltodelta&#x2F;remove-ai-watermarks</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/wiltodelta/remove-ai-watermarks/tree/main/skills/remove-ai-watermarks">Specialized Domains</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/wiltodelta/remove-ai-watermarks/blob/main/skills/remove-ai-watermarks/SKILL.md">https://github.com&#x2F;wiltodelta&#x2F;remove-ai-watermarks&#x2F;blob&#x2F;main&#x2F;skills&#x2F;remove-ai-watermarks&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Remove AI watermarks and provenance metadata from images you own</p>
+<p><strong>When to use it:</strong> Use when the user wants to strip or clean AI watermarks and generation labels, or asks whether a file was AI-generated or carries AI provenance, even if they do not name remove-ai-watermarks. Do not use for stock-agency, marketplace, classifieds, or other third-party paid-asset watermarks.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Remove AI watermarks</li>
+<li>Scope</li>
+<li>Workflow</li>
+<li>1. Scope</li>
+<li>2. Probe</li>
+<li>3. Install</li>
+<li>4. Choose the command</li>
+<li>5. Run</li>
+<li>6. Report</li>
+<li>Examples</li>
+<li>Identify without overstating the result</li>
+<li>Remove a user-named visible AI label</li>
+<li>Route an unavailable invisible removal safely</li>
+<li>Gotchas</li>
+<li>Do not</li>
+</ul>
+<hr>
+<p><a id="skill-db814377"></a></p>
+<h3 id="xberg-io-xberg"><a href="#xberg-io-xberg" class="headerlink" title="xberg-io&#x2F;xberg"></a>xberg-io&#x2F;xberg</h3><p><strong>Catalog entry:</strong> <a target="_blank" rel="noopener" href="https://github.com/xberg-io/xberg/tree/main/plugin/skills/xberg">Productivity and Collaboration</a><br><strong>Source documentation:</strong> <a target="_blank" rel="noopener" href="https://github.com/xberg-io/xberg/blob/main/plugin/skills/xberg/SKILL.md">https://github.com&#x2F;xberg-io&#x2F;xberg&#x2F;blob&#x2F;main&#x2F;plugin&#x2F;skills&#x2F;xberg&#x2F;SKILL.md</a></p>
+<p><strong>Function:</strong> Extract text, tables, and metadata from 101+ document formats</p>
+<p><strong>When to use it:</strong> Use when writing code that calls Xberg APIs in Python, Node.js&#x2F;TypeScript, Rust, or CLI. Covers installation, extraction (sync&#x2F;async), configuration (OCR, chunking, output format), batch processing, error handling, and plugins.</p>
+<p>Usage guidance is taken from the skill’s own trigger description or usage section.</p>
+<p><strong>Source skill menu:</strong></p>
+<ul>
+<li>Xberg Document Extraction</li>
+<li>Installation</li>
+<li>Python</li>
+<li>Node.js</li>
+<li>Rust</li>
+<li>CLI</li>
+<li>Quick Start</li>
+<li>Configuration</li>
+<li>Python (snake_case)</li>
+<li>Node.js (camelCase)</li>
+<li>Rust (snake_case)</li>
+<li>Config File (TOML)</li>
+<li>Batch Processing</li>
+<li>OCR</li>
+<li>Backends</li>
+<li>Language Codes</li>
+</ul>
+<hr>
+<p><a href="/blog/agent-skills/">Back to the category index</a></p>
+<p><a href="/blog/zh-CN/agent-skills/ai_data/">本分类中文版</a></p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>AI &amp; Data | Agent Skills</p><p><a href="https://songchen.science/blog/agent-skills/ai_data/">https://songchen.science/blog/agent-skills/ai_data/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Song Chen</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2026-11-02</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2026-11-02</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/blog/tags/Agent-Skills/">Agent Skills</a><a class="link-muted mr-2" rel="tag" href="/blog/tags/VoltAgent/">VoltAgent</a></div><div class="sharethis-inline-share-buttons"></div><script src="https://platform-api.sharethis.com/js/sharethis.js#property=652030ec7b301100121bcefa&amp;product=inline-share-buttons&amp;source=platform" defer></script></article></div><div class="card"><div class="card-content"><h3>Related Articles:</h3><span><ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="/blog/agent-skills/automation/" title="Agent Tools & Automation | Agent Skills" rel="bookmark">Agent Tools & Automation | Agent Skills</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="/blog/agent-skills/business/" title="Business & Finance | Agent Skills" rel="bookmark">Business & Finance | Agent Skills</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="/blog/agent-skills/cloud/" title="Cloud & Operations | Agent Skills" rel="bookmark">Cloud & Operations | Agent Skills</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="/blog/agent-skills/productivity/" title="Productivity & Collaboration | Agent Skills" rel="bookmark">Productivity & Collaboration | Agent Skills</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="/blog/agent-skills/design/" title="Design & Frontend | Agent Skills" rel="bookmark">Design & Frontend | Agent Skills</a></h3></div></li></ul></span></div></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" href="https://afdian.net/a/chanson" target="_blank" rel="noopener" data-type="afdian"><span class="icon is-small"><i class="fas fa-charging-station"></i></span><span>Afdian.net</span></a><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>Alipay</span><span class="qrcode"><img src="/blog/assets/img/alipay.png" alt="Alipay"></span></a><a class="button donate" href="https://www.buymeacoffee.com/kammichan0" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>Buy me a coffee</span></a><a class="button donate" href="https://patreon.com/user?u=102892122" target="_blank" rel="noopener" data-type="patreon"><span class="icon is-small"><i class="fab fa-patreon"></i></span><span>Patreon</span></a><a class="button donate" data-type="paypal" onclick="document.getElementById(&#039;paypal-donate-form&#039;).submit()"><span class="icon is-small"><i class="fab fa-paypal"></i></span><span>Paypal</span></a><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" rel="noopener" id="paypal-donate-form"><input type="hidden" name="cmd" value="_donations"><input type="hidden" name="business" value="7SHJLQ8H659MU"><input type="hidden" name="currency_code" value="USD"></form><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>Wechat</span><span class="qrcode"><img src="/blog/assets/img/wepay.png" alt="Wechat"></span></a></div></div></div><div class="card"><nav class="post-navigation mt-4 level is-mobile card-content"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/blog/agent-skills/automation/"><span class="level-item">Agent Tools &amp; Automation | Agent Skills</span><i class="level-item fas fa-chevron-right"></i></a></div></nav></div><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div class="content twikoo" id="twikoo"></div><script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.21/dist/twikoo.all.min.js"></script><script>twikoo.init({
+      envId: 'https://twikoodisqus.vercel.app',
+      onCommentLoaded: function () {
+        var commentContents = document.getElementsByClassName('tk-content');
+        for (var i = 0; i < commentContents.length; i++) {
+          var commentItem = commentContents[i];
+          var imgEls = commentItem.getElementsByTagName('img');
+          if (imgEls.length > 0) {
+            for (var j = 0; j < imgEls.length; j++) {
+              var imgEl = imgEls[j];
+              var aEl = document.createElement('a');
+              aEl.setAttribute('class', 'tk-lg-link');
+              aEl.setAttribute('href', imgEl.getAttribute('src'));
+              aEl.setAttribute('data-src', imgEl.getAttribute('src'));
+              aEl.appendChild(imgEl.cloneNode(false));
+              imgEl.parentNode.insertBefore(aEl, imgEl.nextSibling);
+              imgEl.remove();
+            }
+            if (typeof $.fn.lightGallery === 'function') {
+              $(commentItem).lightGallery({
+                selector: '.tk-lg-link'
+              });
+            }
+          }
+        }
+      }
+    });</script></div></div></div><style>.column.column-left,.column.column-right{display:none}</style><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://www.gravatar.com/avatar/7525ea09384aeb09ec303671d7dca1bf?s=128" alt="Song Chen"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Song Chen</p><p class="is-size-6 is-block">Ph.D. Candiate at Université Paris Saclay &amp; Spin-Ion Technologies</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Paris, France</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/blog/archives"><p class="title">46</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/blog/categories"><p class="title">42</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/blog/tags"><p class="title">40</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/song-chen1" target="_blank" rel="noopener" id="widget-follow">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="GoogleScholar" href="https://scholar.google.com/citations?user=sf-0AGoAAAAJ&amp;hl=de"><i class="fab fa-google-plus-square"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/in/song-chen-3449b9278/"><i class="fab fa-linkedin"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Mail" href="mailto:kammichan90@gmail.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/blog/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/blog/archives/2026/11/"><span class="level-start"><span class="level-item">November 2026</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/blog/archives/2026/10/"><span class="level-start"><span class="level-item">October 2026</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/blog/archives/2026/08/"><span class="level-start"><span class="level-item">August 2026</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blog/archives/2026/05/"><span class="level-start"><span class="level-item">May 2026</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blog/archives/2024/02/"><span class="level-start"><span class="level-item">February 2024</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blog/archives/2024/01/"><span class="level-start"><span class="level-item">January 2024</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/blog/archives/2023/12/"><span class="level-start"><span class="level-item">December 2023</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/blog/archives/2023/11/"><span class="level-start"><span class="level-item">November 2023</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/blog/archives/2023/10/"><span class="level-start"><span class="level-item">October 2023</span></span><span class="level-end"><span class="level-item tag">15</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/blog/tags/AGI/"><span class="tag">AGI</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Agent-Skills/"><span class="tag">Agent Skills</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Alfred/"><span class="tag">Alfred</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Automation/"><span class="tag">Automation</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Documentation/"><span class="tag">Documentation</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Hexo/"><span class="tag">Hexo</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Python-library/"><span class="tag">Python_library</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Skills-Agent-skills/"><span class="tag">Skills,Agent skills</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Software/"><span class="tag">Software</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/VoltAgent/"><span class="tag">VoltAgent</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/bibliography/"><span class="tag">bibliography</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/chart/"><span class="tag">chart</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/computational-simulation/"><span class="tag">computational simulation</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/condensed-matter-physics/"><span class="tag">condensed-matter physics</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/data-analysis/"><span class="tag">data analysis</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/data-science/"><span class="tag">data-science</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/deep-learning/"><span class="tag">deep-learning</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/encryptAsDiary/"><span class="tag">encryptAsDiary</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/fortran/"><span class="tag">fortran</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/functional-programming/"><span class="tag">functional programming</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/github/"><span class="tag">github</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/machine-learning/"><span class="tag">machine-learning</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/matplotlib/"><span class="tag">matplotlib</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/multiprocessing/"><span class="tag">multiprocessing</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/neural-networks/"><span class="tag">neural-networks</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/physics/"><span class="tag">physics</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/physics-experiment/"><span class="tag">physics experiment</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/plasma-physics/"><span class="tag">plasma physics</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/plugins/"><span class="tag">plugins</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/poetry/"><span class="tag">poetry</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/python/"><span class="tag">python</span><span class="tag">16</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/python-configuration/"><span class="tag">python_configuration</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/python-editors/"><span class="tag">python_editors</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/python-intermediate/"><span class="tag">python_intermediate</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/python-tools/"><span class="tag">python_tools</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/rust/"><span class="tag">rust</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/semiconductors/"><span class="tag">semiconductors</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/superintelligence/"><span class="tag">superintelligence</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/uv/"><span class="tag">uv</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/zotero/"><span class="tag">zotero</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="https://api.follow.it/subscription-form/YnRDa2puUlErMTdqQ2Q4aDRrem93bHllemF6Y1ZMSW9hQSsrQ3NKTzRXSGRpTlRocW13MXM2UUw4YUFRdUFhUVRJTk1kaVFPWjc2MUQ1TTlLZ3hvcnhLNHJ2bE4yS3VzaTZ4eTliREZjZEk3UHRIWXBRbkxnN3FVUFczVm9TZDF8c2Z0em5PTnVFYks5TU15dUtPdW05czZIeEF4V0dvYnhQVnJtUGNUZEIxYz0=/8" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#AI-Data"><span class="level-left"><span class="level-item">1</span><span class="level-item">AI &amp; Data</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Category-menu"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">Category menu</span></span></a></li><li><a class="level is-mobile" href="#Skills-in-this-category"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">Skills in this category</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#brave-answers"><span class="level-left"><span class="level-item">1.2.1</span><span class="level-item">brave/answers</span></span></a></li><li><a class="level is-mobile" href="#brave-local-descriptions"><span class="level-left"><span class="level-item">1.2.2</span><span class="level-item">brave/local-descriptions</span></span></a></li><li><a class="level is-mobile" href="#brave-news-search"><span class="level-left"><span class="level-item">1.2.3</span><span class="level-item">brave/news-search</span></span></a></li><li><a class="level is-mobile" href="#chrono-meta-context-doctor"><span class="level-left"><span class="level-item">1.2.4</span><span class="level-item">chrono-meta/context-doctor</span></span></a></li><li><a class="level is-mobile" href="#crawlbase-crawl-markdown"><span class="level-left"><span class="level-item">1.2.5</span><span class="level-item">crawlbase/crawl-markdown</span></span></a></li><li><a class="level is-mobile" href="#crawlbase-storage-bulk-get"><span class="level-left"><span class="level-item">1.2.6</span><span class="level-item">crawlbase/storage-bulk-get</span></span></a></li><li><a class="level is-mobile" href="#crawlbase-storage-list"><span class="level-left"><span class="level-item">1.2.7</span><span class="level-item">crawlbase/storage-list</span></span></a></li><li><a class="level is-mobile" href="#czlonkowski-n8n-node-configuration"><span class="level-left"><span class="level-item">1.2.8</span><span class="level-item">czlonkowski/n8n-node-configuration</span></span></a></li><li><a class="level is-mobile" href="#datadog-labs-dd-apm"><span class="level-left"><span class="level-item">1.2.9</span><span class="level-item">datadog-labs/dd-apm</span></span></a></li><li><a class="level is-mobile" href="#datadog-labs-dd-llmo-eval-bootstrap"><span class="level-left"><span class="level-item">1.2.10</span><span class="level-item">datadog-labs/dd-llmo-eval-bootstrap</span></span></a></li><li><a class="level is-mobile" href="#datadog-labs-dd-llmo-eval-trace-rca"><span class="level-left"><span class="level-item">1.2.11</span><span class="level-item">datadog-labs/dd-llmo-eval-trace-rca</span></span></a></li><li><a class="level is-mobile" href="#duckdb-read-file"><span class="level-left"><span class="level-item">1.2.12</span><span class="level-item">duckdb/read-file</span></span></a></li><li><a class="level is-mobile" href="#firebase-firebase-ai-logic-basics"><span class="level-left"><span class="level-item">1.2.13</span><span class="level-item">firebase/firebase-ai-logic-basics</span></span></a></li><li><a class="level is-mobile" href="#firebase-firebase-firestore-enterprise-native-mode"><span class="level-left"><span class="level-item">1.2.14</span><span class="level-item">firebase/firebase-firestore-enterprise-native-mode</span></span></a></li><li><a class="level is-mobile" href="#flutter-flutter-caching-data"><span class="level-left"><span class="level-item">1.2.15</span><span class="level-item">flutter/flutter-caching-data</span></span></a></li><li><a class="level is-mobile" href="#flutter-flutter-embedding-native-views"><span class="level-left"><span class="level-item">1.2.16</span><span class="level-item">flutter/flutter-embedding-native-views</span></span></a></li><li><a class="level is-mobile" href="#google-gemini-gemini-api-dev"><span class="level-left"><span class="level-item">1.2.17</span><span class="level-item">google-gemini/gemini-api-dev</span></span></a></li><li><a class="level is-mobile" href="#google-gemini-gemini-interactions-api"><span class="level-left"><span class="level-item">1.2.18</span><span class="level-item">google-gemini/gemini-interactions-api</span></span></a></li><li><a class="level is-mobile" href="#google-gemini-gemini-live-api-dev"><span class="level-left"><span class="level-item">1.2.19</span><span class="level-item">google-gemini/gemini-live-api-dev</span></span></a></li><li><a class="level is-mobile" href="#google-gemini-vertex-ai-api-dev"><span class="level-left"><span class="level-item">1.2.20</span><span class="level-item">google-gemini/vertex-ai-api-dev</span></span></a></li><li><a class="level is-mobile" href="#hermes-labs-ai-little-canary"><span class="level-left"><span class="level-item">1.2.21</span><span class="level-item">hermes-labs-ai/little-canary</span></span></a></li><li><a class="level is-mobile" href="#huggingface-hugging-face-evaluation"><span class="level-left"><span class="level-item">1.2.22</span><span class="level-item">huggingface/hugging-face-evaluation</span></span></a></li><li><a class="level is-mobile" href="#huggingface-hugging-face-model-trainer"><span class="level-left"><span class="level-item">1.2.23</span><span class="level-item">huggingface/hugging-face-model-trainer</span></span></a></li><li><a class="level is-mobile" href="#microsoft-agent-framework-azure-ai-py"><span class="level-left"><span class="level-item">1.2.24</span><span class="level-item">microsoft/agent-framework-azure-ai-py</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-anomalydetector-java"><span class="level-left"><span class="level-item">1.2.25</span><span class="level-item">microsoft/azure-ai-anomalydetector-java</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-contentsafety-java"><span class="level-left"><span class="level-item">1.2.26</span><span class="level-item">microsoft/azure-ai-contentsafety-java</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-contentsafety-py"><span class="level-left"><span class="level-item">1.2.27</span><span class="level-item">microsoft/azure-ai-contentsafety-py</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-contentsafety-ts"><span class="level-left"><span class="level-item">1.2.28</span><span class="level-item">microsoft/azure-ai-contentsafety-ts</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-contentunderstanding-py"><span class="level-left"><span class="level-item">1.2.29</span><span class="level-item">microsoft/azure-ai-contentunderstanding-py</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-document-intelligence-dotnet"><span class="level-left"><span class="level-item">1.2.30</span><span class="level-item">microsoft/azure-ai-document-intelligence-dotnet</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-document-intelligence-ts"><span class="level-left"><span class="level-item">1.2.31</span><span class="level-item">microsoft/azure-ai-document-intelligence-ts</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-formrecognizer-java"><span class="level-left"><span class="level-item">1.2.32</span><span class="level-item">microsoft/azure-ai-formrecognizer-java</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-ml-py"><span class="level-left"><span class="level-item">1.2.33</span><span class="level-item">microsoft/azure-ai-ml-py</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-openai-dotnet"><span class="level-left"><span class="level-item">1.2.34</span><span class="level-item">microsoft/azure-ai-openai-dotnet</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-projects-dotnet"><span class="level-left"><span class="level-item">1.2.35</span><span class="level-item">microsoft/azure-ai-projects-dotnet</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-projects-java"><span class="level-left"><span class="level-item">1.2.36</span><span class="level-item">microsoft/azure-ai-projects-java</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-projects-py"><span class="level-left"><span class="level-item">1.2.37</span><span class="level-item">microsoft/azure-ai-projects-py</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-projects-ts"><span class="level-left"><span class="level-item">1.2.38</span><span class="level-item">microsoft/azure-ai-projects-ts</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-textanalytics-py"><span class="level-left"><span class="level-item">1.2.39</span><span class="level-item">microsoft/azure-ai-textanalytics-py</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-transcription-py"><span class="level-left"><span class="level-item">1.2.40</span><span class="level-item">microsoft/azure-ai-transcription-py</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-translation-document-py"><span class="level-left"><span class="level-item">1.2.41</span><span class="level-item">microsoft/azure-ai-translation-document-py</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-translation-text-py"><span class="level-left"><span class="level-item">1.2.42</span><span class="level-item">microsoft/azure-ai-translation-text-py</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-translation-ts"><span class="level-left"><span class="level-item">1.2.43</span><span class="level-item">microsoft/azure-ai-translation-ts</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-vision-imageanalysis-java"><span class="level-left"><span class="level-item">1.2.44</span><span class="level-item">microsoft/azure-ai-vision-imageanalysis-java</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-vision-imageanalysis-py"><span class="level-left"><span class="level-item">1.2.45</span><span class="level-item">microsoft/azure-ai-vision-imageanalysis-py</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-voicelive-dotnet"><span class="level-left"><span class="level-item">1.2.46</span><span class="level-item">microsoft/azure-ai-voicelive-dotnet</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-voicelive-java"><span class="level-left"><span class="level-item">1.2.47</span><span class="level-item">microsoft/azure-ai-voicelive-java</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-voicelive-py"><span class="level-left"><span class="level-item">1.2.48</span><span class="level-item">microsoft/azure-ai-voicelive-py</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-ai-voicelive-ts"><span class="level-left"><span class="level-item">1.2.49</span><span class="level-item">microsoft/azure-ai-voicelive-ts</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-containerregistry-py"><span class="level-left"><span class="level-item">1.2.50</span><span class="level-item">microsoft/azure-containerregistry-py</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-mgmt-arizeaiobservabilityeval-dotnet"><span class="level-left"><span class="level-item">1.2.51</span><span class="level-item">microsoft/azure-mgmt-arizeaiobservabilityeval-dotnet</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-mgmt-mongodbatlas-dotnet"><span class="level-left"><span class="level-item">1.2.52</span><span class="level-item">microsoft/azure-mgmt-mongodbatlas-dotnet</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-resource-manager-redis-dotnet"><span class="level-left"><span class="level-item">1.2.53</span><span class="level-item">microsoft/azure-resource-manager-redis-dotnet</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-search-documents-dotnet"><span class="level-left"><span class="level-item">1.2.54</span><span class="level-item">microsoft/azure-search-documents-dotnet</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-search-documents-py"><span class="level-left"><span class="level-item">1.2.55</span><span class="level-item">microsoft/azure-search-documents-py</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-search-documents-ts"><span class="level-left"><span class="level-item">1.2.56</span><span class="level-item">microsoft/azure-search-documents-ts</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-storage-blob-ts"><span class="level-left"><span class="level-item">1.2.57</span><span class="level-item">microsoft/azure-storage-blob-ts</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-storage-file-datalake-py"><span class="level-left"><span class="level-item">1.2.58</span><span class="level-item">microsoft/azure-storage-file-datalake-py</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-storage-file-share-py"><span class="level-left"><span class="level-item">1.2.59</span><span class="level-item">microsoft/azure-storage-file-share-py</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-storage-file-share-ts"><span class="level-left"><span class="level-item">1.2.60</span><span class="level-item">microsoft/azure-storage-file-share-ts</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-storage-queue-py"><span class="level-left"><span class="level-item">1.2.61</span><span class="level-item">microsoft/azure-storage-queue-py</span></span></a></li><li><a class="level is-mobile" href="#microsoft-azure-storage-queue-ts"><span class="level-left"><span class="level-item">1.2.62</span><span class="level-item">microsoft/azure-storage-queue-ts</span></span></a></li><li><a class="level is-mobile" href="#microsoft-pydantic-models-py"><span class="level-left"><span class="level-item">1.2.63</span><span class="level-item">microsoft/pydantic-models-py</span></span></a></li><li><a class="level is-mobile" href="#mongodb-mongodb-query-optimizer"><span class="level-left"><span class="level-item">1.2.64</span><span class="level-item">mongodb/mongodb-query-optimizer</span></span></a></li><li><a class="level is-mobile" href="#mongodb-mongodb-search-and-ai"><span class="level-left"><span class="level-item">1.2.65</span><span class="level-item">mongodb/mongodb-search-and-ai</span></span></a></li><li><a class="level is-mobile" href="#NeoLabHQ-reflexion"><span class="level-left"><span class="level-item">1.2.66</span><span class="level-item">NeoLabHQ/reflexion</span></span></a></li><li><a class="level is-mobile" href="#obra-using-superpowers"><span class="level-left"><span class="level-item">1.2.67</span><span class="level-item">obra/using-superpowers</span></span></a></li><li><a class="level is-mobile" href="#Qiuner-birdview"><span class="level-left"><span class="level-item">1.2.68</span><span class="level-item">Qiuner/birdview</span></span></a></li><li><a class="level is-mobile" href="#realkimbarrett-generic-language-killer"><span class="level-left"><span class="level-item">1.2.69</span><span class="level-item">realkimbarrett/generic-language-killer</span></span></a></li><li><a class="level is-mobile" href="#redis-redis-core"><span class="level-left"><span class="level-item">1.2.70</span><span class="level-item">redis/redis-core</span></span></a></li><li><a class="level is-mobile" href="#ruslanlap-cavemenko"><span class="level-left"><span class="level-item">1.2.71</span><span class="level-item">ruslanlap/cavemenko</span></span></a></li><li><a class="level is-mobile" href="#sametbrr-llm-wiki-manager"><span class="level-left"><span class="level-item">1.2.72</span><span class="level-item">sametbrr/llm-wiki-manager</span></span></a></li><li><a class="level is-mobile" href="#serpapi-serpapi-web-search"><span class="level-left"><span class="level-item">1.2.73</span><span class="level-item">serpapi/serpapi-web-search</span></span></a></li><li><a class="level is-mobile" href="#swaylq-humanize-chinese"><span class="level-left"><span class="level-item">1.2.74</span><span class="level-item">swaylq/humanize-chinese</span></span></a></li><li><a class="level is-mobile" href="#veniceai-venice-chat"><span class="level-left"><span class="level-item">1.2.75</span><span class="level-item">veniceai/venice-chat</span></span></a></li><li><a class="level is-mobile" href="#veniceai-venice-embeddings"><span class="level-left"><span class="level-item">1.2.76</span><span class="level-item">veniceai/venice-embeddings</span></span></a></li><li><a class="level is-mobile" href="#veniceai-venice-models"><span class="level-left"><span class="level-item">1.2.77</span><span class="level-item">veniceai/venice-models</span></span></a></li><li><a class="level is-mobile" href="#Vladimir-Human-humanizer-ru"><span class="level-left"><span class="level-item">1.2.78</span><span class="level-item">Vladimir-Human/humanizer-ru</span></span></a></li><li><a class="level is-mobile" href="#wiltodelta-remove-ai-watermarks"><span class="level-left"><span class="level-item">1.2.79</span><span class="level-item">wiltodelta/remove-ai-watermarks</span></span></a></li><li><a class="level is-mobile" href="#xberg-io-xberg"><span class="level-left"><span class="level-item">1.2.80</span><span class="level-item">xberg-io/xberg</span></span></a></li></ul></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/blog/js/toc.js" defer></script></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/agent-skills/ai_data/">AI &amp; Data | Agent Skills</a></p><p class="categories"><a href="/blog/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/categories/Agent-Skills/AI-Data/">AI &amp; Data</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/agent-skills/automation/">Agent Tools &amp; Automation | Agent Skills</a></p><p class="categories"><a href="/blog/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/categories/Agent-Skills/Agent-Tools-Automation/">Agent Tools &amp; Automation</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/agent-skills/business/">Business &amp; Finance | Agent Skills</a></p><p class="categories"><a href="/blog/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/categories/Agent-Skills/Business-Finance/">Business &amp; Finance</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/agent-skills/cloud/">Cloud &amp; Operations | Agent Skills</a></p><p class="categories"><a href="/blog/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/categories/Agent-Skills/Cloud-Operations/">Cloud &amp; Operations</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/agent-skills/productivity/">Productivity &amp; Collaboration | Agent Skills</a></p><p class="categories"><a href="/blog/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/categories/Agent-Skills/Productivity-Collaboration/">Productivity &amp; Collaboration</a></p></div></article></div></div><div class="card widget" id="twikoo-new"><div class="card-content"><div class="menu"><h3 class="menu-label">Latest Comments</h3><script>window.twikooEnvId = 'https://twikoodisqus.vercel.app';</script><div class="twikoo-new-container"></div></div></div></div></div><style>.column.column-left,.column.column-right{display:block}</style></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/blog/"><img class="logo-img" src="/blog/images/logo.png" alt="Project Geeker" height="28"><img class="logo-img-dark" src="/blog/images/logo-dark.png" alt="Project Geeker" height="28"></a><p class="is-size-7"><span>&copy; 2026 Song Chen</span>  Right to final interpretation by <a href="https://songchen.science" target="_blank" rel="noopener">Song</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p><p class="is-size-7">Power with 💖</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.21/dist/twikoo.all.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/blog/js/column.js"></script><script src="/blog/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/blog/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-right",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mhchem.min.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><script src="/blog/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><div class="searchbox-pinyin"><label class="checkbox"><input id="search-by-pinyin" type="checkbox" checked="checked"><span> Pinyin search</span></label></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/imaegoo/pinyin.js" defer></script><script src="/blog/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/blog/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script><script type="text/javascript" src="/js/imaegoo/imaegoo.js"></script><script type="text/javascript" src="/js/imaegoo/universe.js"></script><!-- hexo injector body_end start --><script src="/assets/mmedia/mmedia-loader.js"></script><!-- hexo injector body_end end --></body></html>

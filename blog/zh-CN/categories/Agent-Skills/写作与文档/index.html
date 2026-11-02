@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>分类: 写作与文档 - Project Geeker</title><link rel="manifest" href="/blog/zh-CN/manifest.json"><meta name="application-name" content="Project Geeker"><meta name="msapplication-TileImage" content="/assets/icons/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Project Geeker"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="website"><meta property="og:title" content="Project Geeker"><meta property="og:url" content="https://songchen.science/blog/zh-CN/"><meta property="og:site_name" content="Project Geeker"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://songchen.science/blog/zh-CN/img/og_image.png"><meta property="article:author" content="Song Chen"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://songchen.science/blog/zh-CN/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://songchen.science/blog/zh-CN/"},"headline":"Project Geeker","image":["https://songchen.science/blog/zh-CN/img/og_image.png"],"author":{"@type":"Person","name":"Song Chen"},"publisher":{"@type":"Organization","name":"Project Geeker","logo":{"@type":"ImageObject","url":{"light":"/images/logo.png","dark":"/images/logo-dark.png"}}},"description":""}</script><link rel="alternate" href="/blog/zh-CN/atom.xml" title="Project Geeker" type="application/atom+xml"><link rel="icon" href="/blog/zh-CN/assets/icons/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="/blog/zh-CN/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><meta name="follow.it-verification-code" content="uc2EwCtSW92aTx5KkxEk"><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head><body class="is-3-column"><script type="text/javascript" src="/js/imaegoo/night.js"></script><canvas id="universe"></canvas><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/blog/zh-CN/"><img class="logo-img" src="/blog/zh-CN/images/logo.png" alt="Project Geeker" height="28"><img class="logo-img-dark" src="/blog/zh-CN/images/logo-dark.png" alt="Project Geeker" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/blog/zh-CN/">首页</a><a class="navbar-item" href="/blog/zh-CN/archives/">时间轴</a><a class="navbar-item" href="/blog/zh-CN/categories/">分类</a><a class="navbar-item" href="/blog/zh-CN/tags/">标签</a><a class="navbar-item" href="/blog/zh-CN/blogroll/">友情链接</a><a class="navbar-item" href="/blog/zh-CN/guestbook/">留言板</a><a class="navbar-item" href="/blog/zh-CN/about/me">关于</a></div><div class="navbar-end"><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="画廊" href="/blog/zh-CN/gallery/"><i class="fas fa-images"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="GoogleDrive" href="https://goindex.chen-song90.workers.dev"><i class="fab fa-google-drive"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="iCloud" href="https://hitchhiker.azurewebsites.net"><i class="fas fa-cloud"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" href="https://songchen.science/blog/"> English</a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/blog/zh-CN/categories">分类</a></li><li><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a></li><li class="is-active"><a href="#" aria-current="page">写作与文档</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2026-11-02T04:00:00.000Z" title="11/2/2026, 12:00:00 PM">2026-11-02</time>发表</span><span class="level-item"><time dateTime="2026-11-02T04:00:00.000Z" title="11/2/2026, 12:00:00 PM">2026-11-02</time>更新</span><span class="level-item"><a class="link-muted" href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a><span> / </span><a class="link-muted" href="/blog/zh-CN/categories/Agent-Skills/%E5%86%99%E4%BD%9C%E4%B8%8E%E6%96%87%E6%A1%A3/">写作与文档</a></span><span class="level-item">1 小时读完 (大约9981个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/blog/zh-CN/agent-skills/documents/">写作与文档 | Agent Skills</a></p><div class="content"><h1 id="写作与文档"><a href="#写作与文档" class="headerlink" title="写作与文档"></a>写作与文档</h1><p>写作与文档类技能用于创建、修改、分析、翻译和排版文字或办公文档。</p>
+<p><strong>目录快照：2026 年 11 月 2 日</strong></p>
+<h2 id="分类目录"><a href="#分类目录" class="headerlink" title="分类目录"></a>分类目录</h2><ul>
+<li><a href="#skill-893d1eaa">anthropics&#x2F;doc-coauthoring</a></li>
+<li><a href="#skill-83c03074">anthropics&#x2F;docx</a></li>
+<li><a href="#skill-fe040d60">anthropics&#x2F;internal-comms</a></li>
+<li><a href="#skill-4251285d">anthropics&#x2F;pdf</a></li>
+<li><a href="#skill-72bc6a40">anthropics&#x2F;pptx</a></li>
+<li><a href="#skill-3a28e00a">anthropics&#x2F;xlsx</a></li>
+<li><a href="#skill-c8504478">arifszn&#x2F;slide-wright</a></li>
+<li><a href="#skill-79ce01f1">AugustusW&#x2F;audio-tldr</a></li>
+<li><a href="#skill-c0c7c732">blader&#x2F;humanizer</a></li>
+<li><a href="#skill-735b32ae">clickhouse&#x2F;clickhouse-architecture-advisor</a></li>
+<li><a href="#skill-197fa15d">datadog-labs&#x2F;dd-docs</a></li>
+<li><a href="#skill-bff1524a">deusyu&#x2F;translate-book</a></li>
+<li><a href="#skill-25c93d74">duckdb&#x2F;duckdb-docs</a></li>
+<li><a href="#skill-4415b1ed">garrytan&#x2F;document-release</a></li>
+<li><a href="#skill-09788573">ilyautov&#x2F;humanizer-ru</a></li>
+<li><a href="#skill-6bf412b9">JayPokale&#x2F;chisle</a></li>
+<li><a href="#skill-e2f87c56">kklimuk&#x2F;docx-cli</a></li>
+<li><a href="#skill-4a75e52d">makenotion&#x2F;knowledge-capture</a></li>
+<li><a href="#skill-fc97b8fa">manavmishra&#x2F;zero-slop</a></li>
+<li><a href="#skill-8516dbbf">mattpocock&#x2F;skills</a></li>
+<li><a href="#skill-3944a64e">MiniMax-AI&#x2F;minimax-docx</a></li>
+<li><a href="#skill-720934dc">MiniMax-AI&#x2F;minimax-pdf</a></li>
+<li><a href="#skill-1fb51dbe">MiniMax-AI&#x2F;minimax-xlsx</a></li>
+<li><a href="#skill-dc3b654c">MiniMax-AI&#x2F;pptx-generator</a></li>
+<li><a href="#skill-4b69f3e6">nagameTW&#x2F;formosa-humanizer</a></li>
+<li><a href="#skill-795ad4cd">Nanako0129&#x2F;sepia</a></li>
+<li><a href="#skill-8d281d66">NeoLabHQ&#x2F;write-concisely</a></li>
+<li><a href="#skill-b1238ada">obra&#x2F;writing-plans</a></li>
+<li><a href="#skill-1bbbf5c6">obra&#x2F;writing-skills</a></li>
+<li><a href="#skill-3cdf1484">openai&#x2F;doc</a></li>
+<li><a href="#skill-06392f1d">openai&#x2F;figma</a></li>
+<li><a href="#skill-88a5f1f3">openai&#x2F;figma-generate-design</a></li>
+<li><a href="#skill-c7cfc291">openai&#x2F;figma-implement-design</a></li>
+<li><a href="#skill-62cdae01">openai&#x2F;openai-docs</a></li>
+<li><a href="#skill-c83bc1ba">openai&#x2F;pdf</a></li>
+<li><a href="#skill-0670681d">openai&#x2F;sentry</a></li>
+<li><a href="#skill-4978e844">openai&#x2F;slides</a></li>
+<li><a href="#skill-99ba9a18">openai&#x2F;spreadsheet</a></li>
+<li><a href="#skill-b68410d1">PSPDFKit-labs&#x2F;nutrient-agent-skill</a></li>
+<li><a href="#skill-7905b4ee">SHADOWPR0&#x2F;beautiful_prose</a></li>
+<li><a href="#skill-78bd0c29">Skill_Seekers</a></li>
+<li><a href="#skill-a7821389">smixs&#x2F;creative-director-skill</a></li>
+<li><a href="#skill-bc05a3c6">trailofbits&#x2F;culture-index</a></li>
+<li><a href="#skill-76916955">vercel-labs&#x2F;writing-guidelines</a></li>
+<li><a href="#skill-686fddf6">zarazhangrui&#x2F;frontend-slides</a></li>
+<li><a href="#skill-cbecf1ad">zilliztech&#x2F;mfs</a></li>
+</ul>
+<h2 id="本类全部技能"><a href="#本类全部技能" class="headerlink" title="本类全部技能"></a>本类全部技能</h2><p><a id="skill-893d1eaa"></a></p>
+<h3 id="anthropics-doc-coauthoring"><a href="#anthropics-doc-coauthoring" class="headerlink" title="anthropics&#x2F;doc-coauthoring"></a>anthropics&#x2F;doc-coauthoring</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/anthropics/skills/doc-coauthoring">Official Claude Skills</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/anthropics/skills/blob/main/skills/doc-coauthoring/SKILL.md">https://github.com&#x2F;anthropics&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;doc-coauthoring&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 协作文档编辑和共同撰写</p>
+<p><strong>适用时机:</strong> 适用于用户想要撰写文档、提案、技术规格、决策文件或类似结构化内容时使用。此工作流程有助于用户高效地传递上下文，通过迭代细化内容，并验证文档是否适合读者阅读。当用户提及撰写文档、创建提案、起草规格或类似文档任务时触发。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Doc Co-Authoring Workflow</li>
+<li>When to Offer This Workflow</li>
+<li>Stage 1: Context Gathering</li>
+<li>Initial Questions</li>
+<li>Info Dumping</li>
+<li>Stage 2: Refinement &amp; Structure</li>
+<li>Step 1: Clarifying Questions</li>
+<li>Step 2: Brainstorming</li>
+<li>Step 3: Curation</li>
+<li>Step 4: Gap Check</li>
+<li>Step 5: Drafting</li>
+<li>Step 6: Iterative Refinement</li>
+<li>Quality Checking</li>
+<li>Near Completion</li>
+<li>Stage 3: Reader Testing</li>
+<li>Testing Approach</li>
+</ul>
+<hr>
+<p><a id="skill-83c03074"></a></p>
+<h3 id="anthropics-docx"><a href="#anthropics-docx" class="headerlink" title="anthropics&#x2F;docx"></a>anthropics&#x2F;docx</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/anthropics/skills/docx">Official Claude Skills</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/anthropics/skills/blob/main/skills/docx/SKILL.md">https://github.com&#x2F;anthropics&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;docx&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 创建、编辑和分析Word文档</p>
+<p><strong>适用时机:</strong> 当用户想要创建、读取、编辑或操作Word文档（.docx文件）或Word模板（.dotx文件）时，请使用此技能。触发条件包括：任何提及“Word doc”、“word document”、“.docx”、“.dotx”，或请求生成带有目录、标题、页码或信头等格式的专业文档。提取或重新组织.docx或.dotx文件中的内容、在文档中插入或替换图片、在Word文件中进行查找替换、使用跟踪更改或注释工作，或将内容转换为精美的Word文档时，也请使用此技能。如果用户请求</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>DOCX creation, editing, and analysis</li>
+<li>Creating with docx-js — gotchas</li>
+<li>Verify the output</li>
+<li>Editing existing documents</li>
+<li>Comments</li>
+<li>Dependencies</li>
+</ul>
+<hr>
+<p><a id="skill-fe040d60"></a></p>
+<h3 id="anthropics-internal-comms"><a href="#anthropics-internal-comms" class="headerlink" title="anthropics&#x2F;internal-comms"></a>anthropics&#x2F;internal-comms</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/anthropics/skills/internal-comms">Official Claude Skills</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/anthropics/skills/blob/main/skills/internal-comms/SKILL.md">https://github.com&#x2F;anthropics&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;internal-comms&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 撰写状态报告、新闻通讯和常见问题解答</p>
+<p><strong>适用时机:</strong> 每当被要求撰写某种内部沟通（状态报告、领导更新、3P更新、公司通讯、常见问题解答、事故报告、项目更新等）时，都使用这项技能。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>When to use this skill</li>
+<li>How to use this skill</li>
+<li>Keywords</li>
+</ul>
+<hr>
+<p><a id="skill-4251285d"></a></p>
+<h3 id="anthropics-pdf"><a href="#anthropics-pdf" class="headerlink" title="anthropics&#x2F;pdf"></a>anthropics&#x2F;pdf</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/anthropics/skills/pdf">Official Claude Skills</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/anthropics/skills/blob/main/skills/pdf/SKILL.md">https://github.com&#x2F;anthropics&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;pdf&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 提取文本，创建PDF文件，处理表格</p>
+<p><strong>适用时机:</strong> 当用户想对PDF文件进行任何操作时，请使用此技能。这包括从PDF文件中读取或提取文本&#x2F;表格、将多个PDF文件合并为单个文件、将PDF文件拆分、旋转页面、添加水印、创建新PDF文件、填写PDF表格、对PDF文件进行加密&#x2F;解密、提取图像，以及对扫描的PDF文件进行光学字符识别（OCR），以使其具备搜索功能。如果用户提到一个.pdf文件或请求生成一个，请使用此技能。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>PDF Processing Guide</li>
+<li>Overview</li>
+<li>Quick Start</li>
+<li>Python Libraries</li>
+<li>pypdf - Basic Operations</li>
+<li>pdfplumber - Text and Table Extraction</li>
+<li>reportlab - Create PDFs</li>
+<li>Command-Line Tools</li>
+<li>pdftotext (poppler-utils)</li>
+<li>qpdf</li>
+<li>pdftk (if available)</li>
+<li>Common Tasks</li>
+<li>Extract Text from Scanned PDFs</li>
+<li>Add Watermark</li>
+<li>Extract Images</li>
+<li>Password Protection</li>
+</ul>
+<hr>
+<p><a id="skill-72bc6a40"></a></p>
+<h3 id="anthropics-pptx"><a href="#anthropics-pptx" class="headerlink" title="anthropics&#x2F;pptx"></a>anthropics&#x2F;pptx</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/anthropics/skills/pptx">Official Claude Skills</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/anthropics/skills/blob/main/skills/pptx/SKILL.md">https://github.com&#x2F;anthropics&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;pptx&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 创建、编辑和分析PowerPoint演示文稿</p>
+<p><strong>适用时机:</strong> 从客户演示文稿中提取所有文本并输入摘要电子邮件 将数据报告转换为带有图表和突出显示的幻灯片演示文稿 编辑现有模板演示文稿，添加新内容而不破坏布局 从头构建演示文稿，使用自定义配色方案和字体搭配 将大型演示文稿按章节拆分为独立的文件</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>PPTX creation, editing, and analysis</li>
+<li>Scripts</li>
+<li>Creating with pptxgenjs — gotchas</li>
+<li>Editing existing decks and templates</li>
+<li>Design Ideas</li>
+<li>Before Starting</li>
+<li>Color Palettes</li>
+<li>For Each Slide</li>
+<li>Typography</li>
+<li>Spacing</li>
+<li>Avoid (Common Mistakes)</li>
+<li>QA (Required)</li>
+<li>Content QA</li>
+<li>File QA (required)</li>
+<li>Visual QA</li>
+<li>Converting to Images</li>
+</ul>
+<hr>
+<p><a id="skill-3a28e00a"></a></p>
+<h3 id="anthropics-xlsx"><a href="#anthropics-xlsx" class="headerlink" title="anthropics&#x2F;xlsx"></a>anthropics&#x2F;xlsx</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/anthropics/skills/xlsx">Official Claude Skills</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md">https://github.com&#x2F;anthropics&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;xlsx&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 创建、编辑和分析Excel电子表格</p>
+<p><strong>适用时机:</strong> 使用按颜色编码的输入和公式驱动的预测构建财务模型 将带有位置错误的标题和垃圾行的数据清理到结构化的电子表格中 将TSV数据导出转换为格式化的Excel工作簿，并设置正确的列宽 在现有电子表格中添加SUM和AVERAGE公式，而不必硬编码计算值 修复继承的Excel文件中的#REF!和#DIV&#x2F;0!错误</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>XLSX creation, editing, and analysis</li>
+<li>Requirements for every output</li>
+<li>Recalculate (mandatory whenever the file contains formulas)</li>
+<li>Choosing formulas that survive verification</li>
+<li>openpyxl gotchas</li>
+<li>Financial models</li>
+<li>Dependencies</li>
+</ul>
+<hr>
+<p><a id="skill-c8504478"></a></p>
+<h3 id="arifszn-slide-wright"><a href="#arifszn-slide-wright" class="headerlink" title="arifszn&#x2F;slide-wright"></a>arifszn&#x2F;slide-wright</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/arifszn/slide-wright">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/arifszn/slide-wright/blob/main/SKILL.md">https://github.com&#x2F;arifszn&#x2F;slide-wright&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 生成主题HTML幻灯片，导出到PowerPoint或PDF</p>
+<p><strong>适用时机:</strong> 当用户想要制作幻灯片、演示文稿、演讲幻灯片、演示文稿或在现有幻灯片中添加&#x2F;删除&#x2F;更改幻灯片时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>slide-wright</li>
+<li>The rule that defines this skill</li>
+<li>The engine (keep this internal)</li>
+<li>Editing a deck that already exists</li>
+<li>Step 5 — Hand it off</li>
+<li>Reference files</li>
+</ul>
+<hr>
+<p><a id="skill-79ce01f1"></a></p>
+<h3 id="AugustusW-audio-tldr"><a href="#AugustusW-audio-tldr" class="headerlink" title="AugustusW&#x2F;audio-tldr"></a>AugustusW&#x2F;audio-tldr</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/AugustusW/audio-tldr-skill/tree/main/skills/audio-tldr">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/AugustusW/audio-tldr-skill/blob/main/skills/audio-tldr/SKILL.md">https://github.com&#x2F;AugustusW&#x2F;audio-tldr-skill&#x2F;blob&#x2F;main&#x2F;skills&#x2F;audio-tldr&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用本地缓存的转录文本总结视频和播客</p>
+<p><strong>适用时机:</strong> 当用户请求总结、获取关键点、翻译或 TL;DR 任何音频或视频内容时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>audio-tldr</li>
+<li>User preferences (read first)</li>
+<li>Digest model resolution</li>
+<li>Phase 1 — Transcribe (cached)</li>
+<li>Phase 1.5 — Frames (opt-in)</li>
+<li>Phase 1.8 — Correct (before every digest)</li>
+<li>Phase 2 — Digest</li>
+<li>Custom templates</li>
+<li>Digest via subagent (cheaper model)</li>
+<li>Usage log</li>
+<li>Digest via local Ollama (privacy mode)</li>
+<li>Re-digesting</li>
+<li>Cache management</li>
+<li>Notes</li>
+<li>Feedback</li>
+</ul>
+<hr>
+<p><a id="skill-c0c7c732"></a></p>
+<h3 id="blader-humanizer"><a href="#blader-humanizer" class="headerlink" title="blader&#x2F;humanizer"></a>blader&#x2F;humanizer</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/blader/humanizer">Marketing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/blader/humanizer/blob/main/SKILL.md">https://github.com&#x2F;blader&#x2F;humanizer&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 从文本中去除人工智能生成的写作痕迹，使其听起来更自然、更像人类。</p>
+<p><strong>适用时机:</strong> 用于编辑或审阅用于AI提示的散文时使用：非X而是Y的对比、一句话结尾、分段开场、强行的三元结构、到处都是连字符、夸张的陈述、销售语言、常见的AI词汇、醒目的标签或填充语。基于维基百科的“AI写作的迹象”。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Humanizer: remove AI writing patterns</li>
+<li>Why AI text sounds the way it does</li>
+<li>How to work</li>
+<li>Voice</li>
+<li>What to return</li>
+<li>A. Staging instead of stating</li>
+<li>1. Not X but Y</li>
+<li>2. One-line closers and dramatic fragments</li>
+<li>3. Sayings that sound deep</li>
+<li>4. Staged run-up before the point</li>
+<li>5. Arguing with no one</li>
+<li>B. Rhythm by rule</li>
+<li>6. Forced triads</li>
+<li>7. Repeated sentence openings</li>
+<li>8. Dashes as the universal connector</li>
+<li>9. Stacked qualifiers</li>
+</ul>
+<hr>
+<p><a id="skill-735b32ae"></a></p>
+<h3 id="clickhouse-clickhouse-architecture-advisor"><a href="#clickhouse-clickhouse-architecture-advisor" class="headerlink" title="clickhouse&#x2F;clickhouse-architecture-advisor"></a>clickhouse&#x2F;clickhouse-architecture-advisor</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/clickhouse/skills/clickhouse-architecture-advisor">Skills by ClickHouse</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/clickhouse/agent-skills/blob/main/skills/clickhouse-architecture-advisor/SKILL.md">https://github.com&#x2F;clickhouse&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;clickhouse-architecture-advisor&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 设计ClickHouse架构，并将最佳实践转化为针对工作负载的决策</p>
+<p><strong>适用时机:</strong> 在设计 ClickHouse 架构、在数据 ingestion 或建模模式之间进行选择，或将最佳实践转化为针对工作负载的系统设计时使用。通过决策框架和明确的来源标识，补充 clickhouse-best-practices。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>ClickHouse Architecture Advisor</li>
+<li>Required behavior</li>
+<li>Provenance rules</li>
+<li>`official`</li>
+<li>`derived`</li>
+<li>`field`</li>
+<li>Read these rule files by scenario</li>
+<li>Real-time ingestion design</li>
+<li>Time-series and retention design</li>
+<li>Enrichment and dimension lookups</li>
+<li>Mutable state &#x2F; late-arriving events</li>
+<li>Output format</li>
+<li>Architecture-specific guidance</li>
+<li>Full reference</li>
+</ul>
+<hr>
+<p><a id="skill-197fa15d"></a></p>
+<h3 id="datadog-labs-dd-docs"><a href="#datadog-labs-dd-docs" class="headerlink" title="datadog-labs&#x2F;dd-docs"></a>datadog-labs&#x2F;dd-docs</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/datadog-labs/skills/dd-docs">Skills by Datadog Labs</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/datadog-labs/agent-skills/blob/main/dd-docs/SKILL.md">https://github.com&#x2F;datadog-labs&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;dd-docs&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过LLM优化文档索引查找Datadog文档</p>
+<p><strong>适用时机:</strong> 查找合适的 Datadog 文档页面来解答监控配置问题 在不离开编辑器的情况下查找 APM 追踪配置详细信息 在调试会话期间检查 Datadog 日志管道语法 在编写自定义集成时获取指标 API 参考文档 在创建警报之前审查 Datadog 监控阈值选项</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Datadog Docs</li>
+<li>LLM-Friendly Documentation</li>
+<li>How to Use llms.txt</li>
+<li>Key Documentation Sections</li>
+<li>Scope Guardrails</li>
+<li>Failure Handling</li>
+</ul>
+<hr>
+<p><a id="skill-bff1524a"></a></p>
+<h3 id="deusyu-translate-book"><a href="#deusyu-translate-book" class="headerlink" title="deusyu&#x2F;translate-book"></a>deusyu&#x2F;translate-book</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/deusyu/translate-book">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/deusyu/translate-book/blob/main/SKILL.md">https://github.com&#x2F;deusyu&#x2F;translate-book&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过并行子代理和简历翻译书籍（PDF&#x2F;DOCX&#x2F;EPUB）</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：通过并行子代理和简历翻译书籍（PDF&#x2F;DOCX&#x2F;EPUB）</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Book Translation Skill</li>
+<li>Workflow</li>
+<li>1. Collect Parameters</li>
+<li>2. Preprocess — Convert to Markdown Chunks</li>
+<li>3. Discover Source Chunks</li>
+<li>3.5. Build Glossary (term consistency)</li>
+<li>3.7. Plan Selective Re-translation</li>
+<li>4. Parallel Translation with Sub-Agents</li>
+<li>4.5. Merge Sub-Agent Meta Into Glossary (after each batch)</li>
+<li>5. Verify Completeness and Retry</li>
+<li>6. Translate Book Title</li>
+<li>7. Post-process — Merge and Build</li>
+<li>8. Report Results</li>
+<li>9. Spot Fixes After the Build</li>
+</ul>
+<hr>
+<p><a id="skill-25c93d74"></a></p>
+<h3 id="duckdb-duckdb-docs"><a href="#duckdb-duckdb-docs" class="headerlink" title="duckdb&#x2F;duckdb-docs"></a>duckdb&#x2F;duckdb-docs</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/duckdb/skills/duckdb-docs">Skills by DuckDB</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/duckdb/duckdb-skills/blob/main/skills/duckdb-docs/SKILL.md">https://github.com&#x2F;duckdb&#x2F;duckdb-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;duckdb-docs&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用HTTPS上的全文搜索搜索DuckDB和DuckLake文档</p>
+<p><strong>适用时机:</strong> 查找 DuckDB SQL 函数语法，如 arg_max 或 list_aggregate 查找 DuckLake 目录配置选项 检查特定 DuckDB 功能的稳定版与夜间版差异 在博客文章中查找 DuckDB 设计决策背后的动机 通过检索相关参考文档来调试 DuckDB 查询</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Step 1 — Check DuckDB is installed</li>
+<li>Step 2 — Ensure required extensions are installed</li>
+<li>Step 3 — Choose the data source and extract search terms</li>
+<li>Data source selection</li>
+<li>Search terms</li>
+<li>Step 4 — Ensure local cache is fresh</li>
+<li>Step 5 — Search the docs</li>
+<li>Step 6 — Handle errors</li>
+<li>Step 7 — Present results</li>
+</ul>
+<hr>
+<p><a id="skill-4415b1ed"></a></p>
+<h3 id="garrytan-document-release"><a href="#garrytan-document-release" class="headerlink" title="garrytan&#x2F;document-release"></a>garrytan&#x2F;document-release</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/garrytan/skills/document-release">Skills by Garry Tan (gstack)</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/garrytan/gstack/blob/main/document-release/SKILL.md">https://github.com&#x2F;garrytan&#x2F;gstack&#x2F;blob&#x2F;main&#x2F;document-release&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 技术作者：更新所有项目文档，使其与您刚刚发布的内容一致。</p>
+<p><strong>适用时机:</strong> 合并新命令后更新 README 功能表 在仓库重构后修复 CONTRIBUTING 中过时的文件路径 将变更日志条目从提交消息语调优化为面向用户的语言 在差异图显示工作已完成时标记 TODO 项为已完成 在 PR 合并前检查文档跨文档一致性</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Shared preamble (load first)</li>
+<li>Preamble (run first)</li>
+<li>Question Tuning (skip entirely if `QUESTION_TUNING: false`)</li>
+<li>Telemetry (run last)</li>
+<li>Step 0: Detect platform and base branch</li>
+<li>Document Release: Documentation Audit and Update</li>
+<li>Ship-owned documentation mode</li>
+<li>Section index — Read each section when its situation applies</li>
+<li>Step 1: Pre-flight &amp; Diff Analysis</li>
+<li>Step 1.5: Coverage Map (Blast-Radius Analysis)</li>
+<li>Important Rules</li>
+</ul>
+<hr>
+<p><a id="skill-09788573"></a></p>
+<h3 id="ilyautov-humanizer-ru"><a href="#ilyautov-humanizer-ru" class="headerlink" title="ilyautov&#x2F;humanizer-ru"></a>ilyautov&#x2F;humanizer-ru</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/ilyautov/humanizer-ru/tree/main/skills/humanizer-ru">Marketing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/ilyautov/humanizer-ru/blob/main/skills/humanizer-ru/SKILL.md">https://github.com&#x2F;ilyautov&#x2F;humanizer-ru&#x2F;blob&#x2F;main&#x2F;skills&#x2F;humanizer-ru&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用扫描仪从俄语文本中移除64个AI写作标记</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：使用扫描仪从俄语文本中移除64个AI写作标记。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Humanizer-RU v3.32.0</li>
+<li>Выбери режим</li>
+<li>Шаг 1. Диагностика</li>
+<li>Регистр: что где снимается</li>
+<li>Жёсткие запреты (HARD BANS)</li>
+<li>Шаг 2. Правка по разметке</li>
+<li>Шаг 3. Сверка с исходником</li>
+<li>Что получает пользователь</li>
+</ul>
+<hr>
+<p><a id="skill-6bf412b9"></a></p>
+<h3 id="JayPokale-chisle"><a href="#JayPokale-chisle" class="headerlink" title="JayPokale&#x2F;chisle"></a>JayPokale&#x2F;chisle</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/JayPokale/Chisle/tree/main/skills/chisle">Context Engineering</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/JayPokale/Chisle/blob/main/skills/chisle/SKILL.md">https://github.com&#x2F;JayPokale&#x2F;Chisle&#x2F;blob&#x2F;main&#x2F;skills&#x2F;chisle&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 减少代理代币：简洁的散文，简洁的代码，裁剪的工具输出</p>
+<p><strong>适用时机:</strong> 当用户说“chisle mode”、“activate chisle”、“chislify”、“be efficient”、“be minimal”、“no fluff”、“yagni”或调用 &#x2F;chisle 时使用。停用：“stop chisle”&#x2F;“normal mode”。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Chisle</li>
+<li>Persistence</li>
+<li>Prose: Maximum Signal Per Token</li>
+<li>Code: The Efficiency Ladder</li>
+<li>Thinking Is Billed Too</li>
+<li>Code Rules</li>
+<li>Context Diet: Read Less Into the Window</li>
+<li>Output Format</li>
+<li>Auto-Clarity</li>
+<li>When NOT to be lazy</li>
+<li>Boundaries</li>
+</ul>
+<hr>
+<p><a id="skill-e2f87c56"></a></p>
+<h3 id="kklimuk-docx-cli"><a href="#kklimuk-docx-cli" class="headerlink" title="kklimuk&#x2F;docx-cli"></a>kklimuk&#x2F;docx-cli</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/kklimuk/docx-cli">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/kklimuk/docx-cli/blob/main/skills/docx-cli/SKILL.md">https://github.com&#x2F;kklimuk&#x2F;docx-cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;docx-cli&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用 .docx 文件工作，成本约为其他技能的一半。</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：以约其他技能一半的成本处理 .docx 文件。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>docx-cli</li>
+<li>0. Make sure the binary is on PATH</li>
+<li>1. The contract is `--help` — start there</li>
+<li>Which workflow?</li>
+<li>2. Locators — how you address things</li>
+<li>3. Golden workflows</li>
+<li>Fill out a form or contract (keeps formatting)</li>
+<li>Redline with tracked changes</li>
+<li>Finalize a returned redline</li>
+<li>Comment on clauses</li>
+<li>Read &#x2F; extract</li>
+<li>Build from scratch &#x2F; verify layout</li>
+<li>4. Apply many changes from one read — `--batch`</li>
+<li>5. Output &amp; safety contract</li>
+<li>6. Going deeper</li>
+</ul>
+<hr>
+<p><a id="skill-4a75e52d"></a></p>
+<h3 id="makenotion-knowledge-capture"><a href="#makenotion-knowledge-capture" class="headerlink" title="makenotion&#x2F;knowledge-capture"></a>makenotion&#x2F;knowledge-capture</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/makenotion/skills/knowledge-capture">Skills by Notion</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/makenotion/notion-cookbook/blob/main/README.md">https://github.com&#x2F;makenotion&#x2F;notion-cookbook&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 将对话转化为结构化的Notion文档页面，并进行适当的组织和链接。</p>
+<p><strong>适用时机:</strong> 将聊天讨论串中的技术决策保存为 Notion 中的正式决策记录 将调试会话转换为可从团队维基链接的逐步操作指南 将问答交流转换为带有适当标签和类别属性的常见问题解答（FAQ）条目 将生产事故记录为相关项目的死因调查页面 将代码审查中的架构笔记转换为可搜索的文档数据库</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Notion cookbook</li>
+<li>What do you want to build?</li>
+<li>Quickstarts</li>
+<li>Using this cookbook with a coding agent</li>
+<li>Run an API example</li>
+<li>Deploy a Worker</li>
+<li>API examples</li>
+<li>Worker examples</li>
+<li>Default template</li>
+<li>Sync external data into Notion</li>
+<li>Add tools to a Notion Agent</li>
+<li>Handle webhooks</li>
+<li>More resources</li>
+<li>Community</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-fc97b8fa"></a></p>
+<h3 id="manavmishra-zero-slop"><a href="#manavmishra-zero-slop" class="headerlink" title="manavmishra&#x2F;zero-slop"></a>manavmishra&#x2F;zero-slop</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/manavmishra/ZeroSlop/blob/main/SKILL.md">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/manavmishra/ZeroSlop/blob/main/SKILL.md">https://github.com&#x2F;manavmishra&#x2F;ZeroSlop&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 编辑听起来像AI的散文，同时保留事实、语气和格式。</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：编辑听起来像AI的散文，同时保留事实、语气和格式。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Zero Slop</li>
+<li>Hard rules (non-negotiable)</li>
+<li>Eight roles, one pipeline</li>
+<li>Detailed workflow</li>
+<li>References</li>
+<li>Worked example (LinkedIn)</li>
+</ul>
+<hr>
+<p><a id="skill-8516dbbf"></a></p>
+<h3 id="mattpocock-skills"><a href="#mattpocock-skills" class="headerlink" title="mattpocock&#x2F;skills"></a>mattpocock&#x2F;skills</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/mattpocock/skills">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/mattpocock/skills/blob/main/README.md">https://github.com&#x2F;mattpocock&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 17种开发工作流程技能：PRD编写、TDD、代码库架构、git guardrails、问题分级、重构计划等等</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：17种开发工作流程技能：PRD编写、TDD、代码库架构、git安全指南、问题分类、重构计划等</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Skills For Real Engineers</li>
+<li>Installation (30-second setup)</li>
+<li>1. Get the skills</li>
+<li>2. Run `&#x2F;setup-matt-pocock-skills`</li>
+<li>3. Bam - you’re ready to go.</li>
+<li>Why These Skills Exist</li>
+<li>#1: The Agent Didn’t Do What I Want</li>
+<li>#2: The Agent Is Way Too Verbose</li>
+<li>#3: The Code Doesn’t Work</li>
+<li>#4: We Built A Ball Of Mud</li>
+<li>Summary</li>
+<li>Reference</li>
+<li>Engineering</li>
+<li>Productivity</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 39 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/mattpocock/skills/blob/main/skills/engineering/ask-matt/SKILL.md">ask-matt</a> · <a target="_blank" rel="noopener" href="https://github.com/mattpocock/skills/blob/main/skills/engineering/code-review/SKILL.md">code-review</a> · <a target="_blank" rel="noopener" href="https://github.com/mattpocock/skills/blob/main/skills/engineering/codebase-design/SKILL.md">codebase-design</a> · <a target="_blank" rel="noopener" href="https://github.com/mattpocock/skills/blob/main/skills/engineering/diagnosing-bugs/SKILL.md">diagnosing-bugs</a> · <a target="_blank" rel="noopener" href="https://github.com/mattpocock/skills/blob/main/skills/engineering/domain-modeling/SKILL.md">domain-modeling</a> · <a target="_blank" rel="noopener" href="https://github.com/mattpocock/skills/blob/main/skills/engineering/grill-with-docs/SKILL.md">grill-with-docs</a> · <a target="_blank" rel="noopener" href="https://github.com/mattpocock/skills/blob/main/skills/engineering/implement-spec/SKILL.md">implement-spec</a> · <a target="_blank" rel="noopener" href="https://github.com/mattpocock/skills/blob/main/skills/engineering/implement/SKILL.md">implement</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-3944a64e"></a></p>
+<h3 id="MiniMax-AI-minimax-docx"><a href="#MiniMax-AI-minimax-docx" class="headerlink" title="MiniMax-AI&#x2F;minimax-docx"></a>MiniMax-AI&#x2F;minimax-docx</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/MiniMax-AI/skills/minimax-docx">Skills by MiniMax Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/MiniMax-AI/skills/blob/main/skills/minimax-docx/SKILL.md">https://github.com&#x2F;MiniMax-AI&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;minimax-docx&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用OpenXML SDK进行专业的DOCX文档创建和编辑</p>
+<p><strong>适用时机:</strong> 当用户想生成、修改或格式化Word文档时，使用此技能——包括当他们说“写一份报告”、“起草一份提案”、“起草一份合同”、“填写此表格”、“将格式重新调整以匹配此模板”，或任何最终输出为.docx文件的任务时。即使用户没有明确提及“docx”，如果该任务暗示需要打印&#x2F;正式的文件，也请使用此技能。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>minimax-docx</li>
+<li>Setup</li>
+<li>Quick Start: Direct C# Path</li>
+<li>CLI shorthand</li>
+<li>Pipeline routing</li>
+<li>Pre-processing</li>
+<li>Scenario A: Create</li>
+<li>Scenario B: Edit &#x2F; Fill</li>
+<li>Scenario C: Apply Template</li>
+<li>Validation pipeline</li>
+<li>Critical rules</li>
+<li>References</li>
+<li>Scenario guides (read first for each pipeline)</li>
+<li>C# code samples (compilable, heavily commented — read when writing code)</li>
+<li>Markdown references (read when you need specifications or design rules)</li>
+</ul>
+<hr>
+<p><a id="skill-720934dc"></a></p>
+<h3 id="MiniMax-AI-minimax-pdf"><a href="#MiniMax-AI-minimax-pdf" class="headerlink" title="MiniMax-AI&#x2F;minimax-pdf"></a>MiniMax-AI&#x2F;minimax-pdf</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/MiniMax-AI/skills/minimax-pdf">Skills by MiniMax Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/MiniMax-AI/skills/blob/main/skills/minimax-pdf/SKILL.md">https://github.com&#x2F;MiniMax-AI&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;minimax-pdf&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用基于令牌的设计系统和15种封面样式生成、填充和重新格式化PDF文件</p>
+<p><strong>适用时机:</strong> 当PDF的视觉质量和设计身份重要时，使用此技能。创建（从零生成）：“创建PDF”，“生成报告”，“撰写提案”，“创建简历”，“精美PDF”，“专业文档”，“封面页”，“精良PDF”，“客户可用的文档”。填写（填写表单字段）：“填写表格”，“填写此PDF”，“完成表单字段”，“将数值写入PDF”，“此PDF包含哪些字段”。重格式化（将设计应用于现有文档）：“重格式化此文档”，“应用我们的风格”，“将此Markdown&#x2F;文本转换为PDF”，“使此文档看起来好看”，“重新设计此PDF”。此技能 us</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>minimax-pdf</li>
+<li>Read `design&#x2F;design.md` before any CREATE or REFORMAT work.</li>
+<li>Route table</li>
+<li>Route A: CREATE</li>
+<li>Route B: FILL</li>
+<li>Route C: REFORMAT</li>
+<li>Environment</li>
+</ul>
+<hr>
+<p><a id="skill-1fb51dbe"></a></p>
+<h3 id="MiniMax-AI-minimax-xlsx"><a href="#MiniMax-AI-minimax-xlsx" class="headerlink" title="MiniMax-AI&#x2F;minimax-xlsx"></a>MiniMax-AI&#x2F;minimax-xlsx</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/MiniMax-AI/skills/minimax-xlsx">Skills by MiniMax Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/MiniMax-AI/skills/blob/main/skills/minimax-xlsx/SKILL.md">https://github.com&#x2F;MiniMax-AI&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;minimax-xlsx&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 创建、读取、分析和验证Excel&#x2F;电子表格文件，零格式丢失</p>
+<p><strong>适用时机:</strong> 当用户请求创建、构建、修改、分析、读取、验证或格式化任何 Excel 表格、财务模型、折叠表或表格数据文件时使用。涵盖：从零开始创建新的 xlsx 文件、读取和分析现有文件、在不丢失格式的情况下编辑现有 xlsx 文件、公式重新计算和验证，以及应用专业的财务格式化标准。在“表格”、“Excel”、“.xlsx”、“.csv”、“折叠表”、“财务模型”、“公式”或任何要求以 Excel 格式生成表格数据的请求上触发。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>MiniMax XLSX Skill</li>
+<li>Task Routing</li>
+<li>READ — Analyze data (read `references&#x2F;read-analyze.md` first)</li>
+<li>CREATE — XML template (read `references&#x2F;create.md` + `references&#x2F;format.md`)</li>
+<li>EDIT — XML direct-edit (read `references&#x2F;edit.md` first)</li>
+<li>FIX — Repair broken formulas (read `references&#x2F;fix.md` first)</li>
+<li>VALIDATE — Check formulas (read `references&#x2F;validate.md` first)</li>
+<li>Financial Color Standard</li>
+<li>Key Rules</li>
+<li>Utility Scripts</li>
+</ul>
+<hr>
+<p><a id="skill-dc3b654c"></a></p>
+<h3 id="MiniMax-AI-pptx-generator"><a href="#MiniMax-AI-pptx-generator" class="headerlink" title="MiniMax-AI&#x2F;pptx-generator"></a>MiniMax-AI&#x2F;pptx-generator</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/MiniMax-AI/skills/pptx-generator">Skills by MiniMax Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/MiniMax-AI/skills/blob/main/skills/pptx-generator/SKILL.md">https://github.com&#x2F;MiniMax-AI&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;pptx-generator&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用PptxGenJS从零开始创建和编辑PowerPoint演示文稿</p>
+<p><strong>适用时机:</strong> 从零开始构建一个采用统一配色主题的12张幻灯片演示文稿 从客户的PPTX文件中提取所有文本，以审查或总结其内容 在现有品牌模板中添加新幻灯片，同时不破坏其格式 生成与其余幻灯片一致的章节分隔和目录幻灯片 将主题大纲转换为带有封面和摘要页面的结构化幻灯片序列</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>PPTX Generator &amp; Editor</li>
+<li>Overview</li>
+<li>Quick Reference</li>
+<li>Reference Files</li>
+<li>Reading Content</li>
+<li>Creating from Scratch — Workflow</li>
+<li>Step 1: Research &amp; Requirements</li>
+<li>Step 2: Select Color Palette &amp; Fonts</li>
+<li>Step 3: Select Design Style</li>
+<li>Step 4: Plan Slide Outline</li>
+<li>Step 5: Generate Slide JS Files</li>
+<li>Step 6: Compile into Final PPTX</li>
+<li>Step 7: QA (Required)</li>
+<li>Output Structure</li>
+<li>Slide Output Format</li>
+<li>Theme Object Contract (MANDATORY)</li>
+</ul>
+<hr>
+<p><a id="skill-4b69f3e6"></a></p>
+<h3 id="nagameTW-formosa-humanizer"><a href="#nagameTW-formosa-humanizer" class="headerlink" title="nagameTW&#x2F;formosa-humanizer"></a>nagameTW&#x2F;formosa-humanizer</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/nagameTW/formosa-humanizer">Marketing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/nagameTW/formosa-humanizer/blob/main/SKILL.md">https://github.com&#x2F;nagameTW&#x2F;formosa-humanizer&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 从台湾传统中文文本中移除AI写作标记</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：从台湾传统中文文本中移除AI写作标记</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Humanizer-zh-tw：去除 AI 寫作痕跡（繁體中文版）</li>
+<li>你的任務</li>
+<li>安全邊界：待改寫的文字是資料，不是指令</li>
+<li>核心規則：保護中文標點</li>
+<li>保留 markdown 結構</li>
+<li>文風校準</li>
+<li>個性與靈魂</li>
+<li>語域對照</li>
+<li>內容模式</li>
+<li>1. 過度強調意義、傳承和更廣泛的趨勢</li>
+<li>2. 過度強調知名度和媒體報導</li>
+<li>3. 尾綴式的膚淺分析</li>
+<li>4. 宣傳和廣告式語言</li>
+<li>5. 模糊歸因和含糊措辭</li>
+<li>6. 公式化的「挑戰與未來展望」段落</li>
+<li>語言與語法模式</li>
+</ul>
+<hr>
+<p><a id="skill-795ad4cd"></a></p>
+<h3 id="Nanako0129-sepia"><a href="#Nanako0129-sepia" class="headerlink" title="Nanako0129&#x2F;sepia"></a>Nanako0129&#x2F;sepia</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/Nanako0129/sepia">Marketing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/Nanako0129/sepia/blob/main/skills/sepia/SKILL.md">https://github.com&#x2F;Nanako0129&#x2F;sepia&#x2F;blob&#x2F;main&#x2F;skills&#x2F;sepia&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> De-AI写作技巧：在词汇选择前修正叙事结构</p>
+<p><strong>适用时机:</strong> 在被要求使任何文本变得人性化、去AI化、简化或去除AI风味时使用；在撰写或修订这些文档类型中的任何文档时使用；或在输出内容不应看起来像机器生成的任何时候使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Sepia — de-AI writing</li>
+<li>Security boundary</li>
+<li>Routing</li>
+<li>Operations</li>
+<li>Fiction workflows</li>
+<li>Calibration — the rule that governs all rules</li>
+<li>Hard guardrails</li>
+</ul>
+<hr>
+<p><a id="skill-8d281d66"></a></p>
+<h3 id="NeoLabHQ-write-concisely"><a href="#NeoLabHQ-write-concisely" class="headerlink" title="NeoLabHQ&#x2F;write-concisely"></a>NeoLabHQ&#x2F;write-concisely</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/docs/skills/write-concisely">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/blob/master/plugins/docs/skills/write-concisely/SKILL.md">https://github.com&#x2F;NeoLabHQ&#x2F;context-engineering-kit&#x2F;blob&#x2F;master&#x2F;plugins&#x2F;docs&#x2F;skills&#x2F;write-concisely&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 应用著名的《风格要素》书籍原则，通过消除冗长并改进结构，使文档和写作更清晰、更专业。</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：应用著名的《风格要素》书籍原则，通过消除冗长并改进结构，使文档和写作更清晰、更专业。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Writing Clearly and Concisely</li>
+<li>Overview</li>
+<li>All Rules</li>
+<li>Elementary Rules of Usage (Grammar&#x2F;Punctuation)</li>
+<li>Elementary Principles of Composition</li>
+<li>Section V: Words and Expressions Commonly Misused</li>
+<li>The Elements of Style (1918)</li>
+<li>Contents</li>
+<li>I. Introductory</li>
+<li>II. Elementary Rules Of Usage</li>
+<li>Rule 1. Form the possessive singular of nouns by adding ‘s</li>
+<li>Rule 2. In a series of three or more terms with a single conjunction, use a comma after each term except the last</li>
+<li>Rule 3. Enclose parenthetic expressions between commas</li>
+<li>Rule 4. Place a comma before a conjunction introducing a co-ordinate clause</li>
+<li>Rule 5. Do not join independent clauses by a comma</li>
+<li>Rule 6. Do not break sentences in two</li>
+</ul>
+<hr>
+<p><a id="skill-b1238ada"></a></p>
+<h3 id="obra-writing-plans"><a href="#obra-writing-plans" class="headerlink" title="obra&#x2F;writing-plans"></a>obra&#x2F;writing-plans</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/obra/superpowers/blob/main/skills/writing-plans/SKILL.md">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/obra/superpowers/blob/main/skills/writing-plans/SKILL.md">https://github.com&#x2F;obra&#x2F;superpowers&#x2F;blob&#x2F;main&#x2F;skills&#x2F;writing-plans&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 创建战略文档</p>
+<p><strong>适用时机:</strong> 在接触代码之前，在对多步骤任务有规格或要求时使用</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Writing Plans</li>
+<li>Overview</li>
+<li>Scope Check</li>
+<li>File Structure</li>
+<li>Task Right-Sizing</li>
+<li>Step Granularity</li>
+<li>Plan Document Header</li>
+<li>Task Structure</li>
+<li>What a Step Contains</li>
+<li>Self-Review</li>
+<li>Execution Handoff</li>
+</ul>
+<hr>
+<p><a id="skill-1bbbf5c6"></a></p>
+<h3 id="obra-writing-skills"><a href="#obra-writing-skills" class="headerlink" title="obra&#x2F;writing-skills"></a>obra&#x2F;writing-skills</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/obra/superpowers/blob/main/skills/writing-skills/SKILL.md">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/obra/superpowers/blob/main/skills/writing-skills/SKILL.md">https://github.com&#x2F;obra&#x2F;superpowers&#x2F;blob&#x2F;main&#x2F;skills&#x2F;writing-skills&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 开发和记录能力</p>
+<p><strong>适用时机:</strong> 在创建新技能、编辑现有技能或部署前验证技能工作时使用</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Writing Skills</li>
+<li>Overview</li>
+<li>What is a Skill?</li>
+<li>TDD Mapping for Skills</li>
+<li>When to Create a Skill</li>
+<li>Skill Types</li>
+<li>Technique</li>
+<li>Pattern</li>
+<li>Reference</li>
+<li>Directory Structure</li>
+<li>Writing SKILL.md</li>
+<li>Flowcharts</li>
+<li>Code Examples</li>
+<li>File Organization</li>
+<li>Self-Contained Skill</li>
+<li>Skill with Reusable Tool</li>
+</ul>
+<hr>
+<p><a id="skill-3cdf1484"></a></p>
+<h3 id="openai-doc"><a href="#openai-doc" class="headerlink" title="openai&#x2F;doc"></a>openai&#x2F;doc</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/doc">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/README.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用格式和排版准确性阅读、创建和编辑 .docx 文档</p>
+<p><strong>适用时机:</strong> 读取包含表格或图表且布局上下文至关重要的 DOCX 文件 从结构化数据生成格式化报告，并保持标题和样式一致 编辑现有合同或提案，同时不破坏其原始格式 提交客户文件前通过视觉验证，检查是否存在问题 将 DOCX 转换为 PDF，并逐页检查间距或对齐问题</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Agent Skills</li>
+<li>Installing a skill</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-06392f1d"></a></p>
+<h3 id="openai-figma"><a href="#openai-figma" class="headerlink" title="openai&#x2F;figma"></a>openai&#x2F;figma</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/figma">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/skills/.curated/figma/SKILL.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;.curated&#x2F;figma&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用 Figma MCP 服务器获取设计上下文，并将节点转换为生产代码。</p>
+<p><strong>适用时机:</strong> 在编写组件代码之前从 Figma 框架中获取精确的布局和间距 将 Figma 变体转换为 React + Tailwind，无需手动测量值 直接从 Figma 中提取 SVG 和图像资产，而不是手动导出 对完成的 UI 实现进行与原始 Figma 截图的验证 解决 Figma MCP 设置和节点 ID 解析问题</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Figma MCP</li>
+<li>Figma MCP Integration Rules</li>
+<li>Required flow (do not skip)</li>
+<li>Implementation rules</li>
+<li>Asset handling</li>
+<li>Link-based prompting</li>
+<li>References</li>
+</ul>
+<hr>
+<p><a id="skill-88a5f1f3"></a></p>
+<h3 id="openai-figma-generate-design"><a href="#openai-figma-generate-design" class="headerlink" title="openai&#x2F;figma-generate-design"></a>openai&#x2F;figma-generate-design</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/figma-generate-design">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/skills/.curated/figma-generate-design/SKILL.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;.curated&#x2F;figma-generate-design&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用设计系统代词将应用程序页面和布局转换为Figma</p>
+<p><strong>适用时机:</strong> 适用于任务涉及将应用程序页面、视图或多部分布局转换为 Figma 时使用。触发器：’write to Figma’、’create in Figma from code’、’push page to Figma’、’take this app&#x2F;page and build it in Figma’、’create a screen’、’build a landing page in Figma’、’update the Figma screen to match code’。这是用户每次希望从代码或描述中在 Figma 中构建或更新完整页面、屏幕或视图时首选的工作流程技能。通过 search_design_system 发现设计系统组件、变量和样式，导入它们，并逐步按部分逐部分构建屏幕 usi</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Build &#x2F; Update Screens from Design System</li>
+<li>Skill Boundaries</li>
+<li>Prerequisites</li>
+<li>Parallel Workflow with generate_figma_design (Web Apps Only)</li>
+<li>Required Workflow</li>
+<li>Step 1: Understand the Screen</li>
+<li>Step 2: Discover Design System — Components, Variables, and Styles</li>
+<li>Step 3: Create the Page Wrapper Frame First</li>
+<li>Step 4: Build Each Section Inside the Wrapper</li>
+<li>Step 5: Validate the Full Screen</li>
+<li>Step 6: Updating an Existing Screen</li>
+<li>Reference Docs</li>
+<li>Error Recovery</li>
+<li>Best Practices</li>
+</ul>
+<hr>
+<p><a id="skill-c7cfc291"></a></p>
+<h3 id="openai-figma-implement-design"><a href="#openai-figma-implement-design" class="headerlink" title="openai&#x2F;figma-implement-design"></a>openai&#x2F;figma-implement-design</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/figma-implement-design">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/skills/.curated/figma-implement-design/SKILL.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;.curated&#x2F;figma-implement-design&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 以1:1的视觉忠实度将Figma设计转换为生产准备的代码</p>
+<p><strong>适用时机:</strong> 用于从 Figma 文件中实现 UI 代码时，当用户提到“实现设计”、“生成代码”、“实现组件”、提供 Figma 网址，或请求构建符合 Figma 规格的组件时。对于通过 `use_figma` 编写的 Figma 画布代码，请使用 `figma-use`。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Implement Design</li>
+<li>Overview</li>
+<li>Skill Boundaries</li>
+<li>Prerequisites</li>
+<li>Required Workflow</li>
+<li>Step 1: Get Node ID</li>
+<li>Step 2: Fetch Design Context</li>
+<li>Step 3: Capture Visual Reference</li>
+<li>Step 4: Download Required Assets</li>
+<li>Step 5: Translate to Project Conventions</li>
+<li>Step 6: Achieve 1:1 Visual Parity</li>
+<li>Step 7: Validate Against Figma</li>
+<li>Implementation Rules</li>
+<li>Component Organization</li>
+<li>Design System Integration</li>
+<li>Code Quality</li>
+</ul>
+<hr>
+<p><a id="skill-62cdae01"></a></p>
+<h3 id="openai-openai-docs"><a href="#openai-openai-docs" class="headerlink" title="openai&#x2F;openai-docs"></a>openai&#x2F;openai-docs</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/openai-docs">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/skills/.curated/openai-docs/SKILL.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;.curated&#x2F;openai-docs&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 提供来自OpenAI开发者文档的权威指导</p>
+<p><strong>适用时机:</strong> 当用户询问如何使用OpenAI产品或API进行构建、询问Codex本身或选择Codex界面、需要带有引用和最新官方文档、需要帮助选择特定用例的最新模型，或需要模型升级和提示词升级指导时使用；对于非Codex文档的问题使用OpenAI文档MCP工具，首先使用Codex手册助手获取广泛的Codex自我知识，并将备用浏览限制在OpenAI官方域名内。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>OpenAI Docs</li>
+<li>Workflow Configuration</li>
+<li>Source Priority</li>
+<li>OpenAI product snapshots</li>
+<li>Codex self-knowledge</li>
+<li>Source Route</li>
+<li>Surface Map</li>
+<li>Boundaries And Output</li>
+<li>If MCP server is missing</li>
+<li>Workflow</li>
+<li>Reference map</li>
+<li>Quality rules</li>
+<li>Tooling notes</li>
+</ul>
+<hr>
+<p><a id="skill-c83bc1ba"></a></p>
+<h3 id="openai-pdf"><a href="#openai-pdf" class="headerlink" title="openai&#x2F;pdf"></a>openai&#x2F;pdf</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/pdf">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/skills/.curated/pdf/SKILL.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;.curated&#x2F;pdf&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 阅读、创建和审查具有布局和视觉格式完整性的PDF文件</p>
+<p><strong>适用时机:</strong> 当任务涉及阅读、创建或审查对渲染和排版至关重要的PDF文件时使用；优先通过渲染页面（Poppler）进行视觉检查，并使用Python工具（如`reportlab`、`pdfplumber`和`pypdf`）进行生成和提取。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>PDF Skill</li>
+<li>When to use</li>
+<li>Workflow</li>
+<li>Temp and output conventions</li>
+<li>Dependencies (install if missing)</li>
+<li>Environment</li>
+<li>Rendering command</li>
+<li>Quality expectations</li>
+<li>Final checks</li>
+</ul>
+<hr>
+<p><a id="skill-0670681d"></a></p>
+<h3 id="openai-sentry"><a href="#openai-sentry" class="headerlink" title="openai&#x2F;sentry"></a>openai&#x2F;sentry</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/sentry">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/skills/.curated/sentry/SKILL.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;.curated&#x2F;sentry&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 检查Sentry问题，总结生产错误，并提取健康数据</p>
+<p><strong>适用时机:</strong> 当用户请求检查 Sentry 问题或事件、总结最近的生产错误，或通过 Sentry CLI 获取基础的 Sentry 健康数据时使用；使用 `sentry` 命令执行只读查询。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Sentry (Read-only Observability)</li>
+<li>Quick start</li>
+<li>Core tasks (use Sentry CLI)</li>
+<li>1) List issues (ordered by most recent)</li>
+<li>2) Resolve an issue short ID to issue detail</li>
+<li>3) Issue detail</li>
+<li>4) Issue events</li>
+<li>5) Event detail</li>
+<li>6) AI-powered root cause analysis</li>
+<li>7) AI-powered fix plan</li>
+<li>Fallback: arbitrary API access</li>
+<li>Inputs and defaults</li>
+<li>Output formatting rules</li>
+<li>Golden test inputs</li>
+</ul>
+<hr>
+<p><a id="skill-4978e844"></a></p>
+<h3 id="openai-slides"><a href="#openai-slides" class="headerlink" title="openai&#x2F;slides"></a>openai&#x2F;slides</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/slides">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/README.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用PptxGenJS创建和编辑.pptx演示文稿</p>
+<p><strong>适用时机:</strong> 从零开始将PDF演示文稿重新构建为可编辑的.pptx文件 在现有幻灯片中添加条形图，同时不破坏布局 在向客户交付前检查密集的幻灯片集是否有文本溢出 重现参考幻灯片集，同时保持其精确的宽高比和排版 在在不同机器上打开幻灯片集后诊断字体替换警告</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Agent Skills</li>
+<li>Installing a skill</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-99ba9a18"></a></p>
+<h3 id="openai-spreadsheet"><a href="#openai-spreadsheet" class="headerlink" title="openai&#x2F;spreadsheet"></a>openai&#x2F;spreadsheet</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/spreadsheet">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/README.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用公式创建、编辑、分析和可视化电子表格</p>
+<p><strong>适用时机:</strong> 使用公式关联单元格和彩色编码输入构建财务模型 将CSV导出文件转换为带有标题和边框的格式化.xlsx报告 在现有工作簿中添加折叠式摘要表，同时不破坏引用检查电子表格中的#REF!或#DIV&#x2F;0!等错误公式生成带有章节标题、缩进行项和引用假设的IB格式DCF</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Agent Skills</li>
+<li>Installing a skill</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-b68410d1"></a></p>
+<h3 id="PSPDFKit-labs-nutrient-agent-skill"><a href="#PSPDFKit-labs-nutrient-agent-skill" class="headerlink" title="PSPDFKit-labs&#x2F;nutrient-agent-skill"></a>PSPDFKit-labs&#x2F;nutrient-agent-skill</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/PSPDFKit-labs/nutrient-agent-skill">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/PSPDFKit-labs/nutrient-agent-skill/blob/main/nutrient-document-processing/SKILL.md">https://github.com&#x2F;PSPDFKit-labs&#x2F;nutrient-agent-skill&#x2F;blob&#x2F;main&#x2F;nutrient-document-processing&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用 Nutrient DWS API 处理文档：转换（PDF&#x2F;DOCX&#x2F;XLSX&#x2F;PPTX&#x2F;HTML&#x2F;图片）、提取文本&#x2F;表格、OCR（20多种语言）、删除敏感个人信息（PII）（基于模式+AI）、添加水印、数字签名、填写表格。[MCP 服务器](<a target="_blank" rel="noopener" href="https://www/.npmjs/.com/package/@nutrient/-sdk/dws/-mcp/-server/">https://www\.npmjs\.com/package/@nutrient\-sdk/dws\-mcp\-server\</a>) 也可使用。</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的功能时使用：使用 Nutrient DWS API 进行文档处理：转换（PDF&#x2F;DOCX&#x2F;XLSX&#x2F;PPTX&#x2F;HTML&#x2F;图片）、提取文本&#x2F;表格、OCR（20 多种语言）、删除敏感个人信息（PII）（基于模式+AI）、添加水印、数字签名、填写表格。[MCP 服务器](<a target="_blank" rel="noopener" href="https://www/.npmjs/.com/package/@nutrient/-sdk/dws/-mcp/-server/">https://www\.npmjs\.com/package/@nutrient\-sdk/dws\-mcp\-server\</a>) 也可使用。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Nutrient Document Processing</li>
+<li>Product router</li>
+<li>Setup</li>
+<li>Paid-run approval gate</li>
+<li>Helper preference</li>
+<li>Single-operation helpers</li>
+<li>Multi-step workflow template</li>
+<li>Safety rules</li>
+<li>Reference map</li>
+</ul>
+<hr>
+<p><a id="skill-7905b4ee"></a></p>
+<h3 id="SHADOWPR0-beautiful-prose"><a href="#SHADOWPR0-beautiful-prose" class="headerlink" title="SHADOWPR0&#x2F;beautiful_prose"></a>SHADOWPR0&#x2F;beautiful_prose</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/SHADOWPR0/beautiful_prose">Marketing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/SHADOWPR0/beautiful_prose/blob/main/SKILL.md">https://github.com&#x2F;SHADOWPR0&#x2F;beautiful_prose&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 硬朗的写作风格合同，用于打造永恒、有力、无AI痕迹的英语散文</p>
+<p><strong>适用时机:</strong> 当用户要求使用必须简洁、准确、具体且不带有人工智能节奏、填充语或治疗性语调的散文或改写时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Beautiful Prose (Claude Skill)</li>
+<li>What this skill does</li>
+<li>Activation</li>
+<li>Absolute prohibitions</li>
+<li>1) Em dashes</li>
+<li>2) “It’s not X, it’s Y” constructions</li>
+<li>3) Filler transitions and scene-setting</li>
+<li>4) Therapeutic or validating language</li>
+<li>5) AI tells and meta commentary</li>
+<li>6) Symmetry padding</li>
+<li>Positive constraints</li>
+<li>Sentence craft</li>
+<li>Word choice</li>
+<li>Rhythm and structure</li>
+<li>Authority</li>
+<li>Registers (optional)</li>
+</ul>
+<hr>
+<p><a id="skill-78bd0c29"></a></p>
+<h3 id="Skill-Seekers"><a href="#Skill-Seekers" class="headerlink" title="Skill_Seekers"></a>Skill_Seekers</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/yusufkaraaslan/Skill_Seekers">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/yusufkaraaslan/Skill_Seekers/blob/development/README.md">https://github.com&#x2F;yusufkaraaslan&#x2F;Skill_Seekers&#x2F;blob&#x2F;development&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 只需几分钟即可自动将文档网站、GitHub 仓库和 PDF 文件转换为 Claude AI 技能</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：只需几分钟即可自动将文档网站、GitHub 仓库和 PDF 文件转换为 Claude AI 技能。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Skill Seekers</li>
+<li>💛 Sponsors</li>
+<li>Bronze Sponsors</li>
+<li>🚀 Quick Start</li>
+<li>🛰️ AI-driven project scan</li>
+<li>All 18 source types</li>
+<li>📦 Installation</li>
+<li>📚 Documentation</li>
+<li>🎯 What you get</li>
+<li>Export targets (22)</li>
+<li>Why it matters</li>
+<li>✨ Key capabilities</li>
+<li>🔌 MCP Integration (40 tools)</li>
+<li>🤖 Installing to AI agents</li>
+<li>Uploading to Claude</li>
+<li>⚙️ How it works</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 26 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/yusufkaraaslan/Skill_Seekers/blob/development/distribution/claude-plugin/skills/skill-builder/SKILL.md">skill-builder</a> · <a target="_blank" rel="noopener" href="https://github.com/yusufkaraaslan/Skill_Seekers/blob/development/skills/skill-seekers/SKILL.md">skill-seekers</a> · <a target="_blank" rel="noopener" href="https://github.com/yusufkaraaslan/Skill_Seekers/blob/development/tests/golden/phase2/chat/SKILL.md">chat</a> · <a target="_blank" rel="noopener" href="https://github.com/yusufkaraaslan/Skill_Seekers/blob/development/tests/golden/phase2/chat_empty/SKILL.md">chat_empty</a> · <a target="_blank" rel="noopener" href="https://github.com/yusufkaraaslan/Skill_Seekers/blob/development/tests/golden/phase2/chat_single/SKILL.md">chat_single</a> · <a target="_blank" rel="noopener" href="https://github.com/yusufkaraaslan/Skill_Seekers/blob/development/tests/golden/phase2/chat_topics/SKILL.md">chat_topics</a> · <a target="_blank" rel="noopener" href="https://github.com/yusufkaraaslan/Skill_Seekers/blob/development/tests/golden/phase2/epub/SKILL.md">epub</a> · <a target="_blank" rel="noopener" href="https://github.com/yusufkaraaslan/Skill_Seekers/blob/development/tests/golden/phase2/epub_kw/SKILL.md">epub_kw</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-a7821389"></a></p>
+<h3 id="smixs-creative-director-skill"><a href="#smixs-creative-director-skill" class="headerlink" title="smixs&#x2F;creative-director-skill"></a>smixs&#x2F;creative-director-skill</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/smixs/creative-director-skill">Marketing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/smixs/creative-director-skill/blob/main/creative-director/SKILL.md">https://github.com&#x2F;smixs&#x2F;creative-director-skill&#x2F;blob&#x2F;main&#x2F;creative-director&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 具备递归自我评估的AI创意总监：20多种方法论（SIT、TRIZ、二元分化、SCAMPER、联想法），3维评估标准与戛纳国际影展&#x2F;D&amp;AD&#x2F;HumanKind奖项挂钩，从概念到展示的5阶段流程。</p>
+<p><strong>适用时机:</strong> 适用于用户请求生成创意概念、头脑风暴活动创意、开发大创意或活动平台、评估或批评现有创意作品、发现消费者洞察，或分享创意构思的简要说明——包括活动激活、公关特技、品牌实用性、体验式和非广告创意。该工具会根据569个传奇活动的库（P01-P18模式图）进行校准，以检测饱和度并确保原创性。请勿用于媒体规划、制作预算、品牌标识&#x2F;标志设计、文案最终稿或市场调研数据收集。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Creative Director</li>
+<li>Instructions</li>
+<li>Phase Router</li>
+<li>Phase 1: INTAKE (brief reception)</li>
+<li>Phase 2: INSIGHT (insight discovery)</li>
+<li>Phase 3: IDEATION (idea generation)</li>
+<li>Phase 4: EVALUATE + REFINE (recursive cycle)</li>
+<li>Phase 5: ARTICULATE (final output)</li>
+<li>Creative Constitution (short form)</li>
+<li>HumanKind Scale + Gap Analysis</li>
+<li>Anti-Pitfall Rules</li>
+<li>Calibration (dual system)</li>
+<li>Output Format</li>
+<li>Final deliverable (standard)</li>
+<li>References</li>
+<li>Examples</li>
+</ul>
+<hr>
+<p><a id="skill-bc05a3c6"></a></p>
+<h3 id="trailofbits-culture-index"><a href="#trailofbits-culture-index" class="headerlink" title="trailofbits&#x2F;culture-index"></a>trailofbits&#x2F;culture-index</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/trailofbits/skills/culture-index">Security Skills by Trail of Bits Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trailofbits/skills/blob/main/plugins/culture-index/skills/interpreting-culture-index/SKILL.md">https://github.com&#x2F;trailofbits&#x2F;skills&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;culture-index&#x2F;skills&#x2F;interpreting-culture-index&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 索引和搜索文化文档</p>
+<p><strong>适用时机:</strong> 当用户共享文化指数PDF或JSON配置文件、询问某人的CI特征意味着什么、比较团队中的文化指数配置文件与招聘配置文件或询问来自调查与工作差距的倦怠风险时，使用此功能。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>When to Use</li>
+<li>When NOT to Use</li>
+</ul>
+<hr>
+<p><a id="skill-76916955"></a></p>
+<h3 id="vercel-labs-writing-guidelines"><a href="#vercel-labs-writing-guidelines" class="headerlink" title="vercel-labs&#x2F;writing-guidelines"></a>vercel-labs&#x2F;writing-guidelines</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/vercel-labs/agent-skills/tree/main/skills/writing-guidelines">Skills by Vercel Engineering Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/vercel-labs/agent-skills/blob/main/skills/writing-guidelines/SKILL.md">https://github.com&#x2F;vercel-labs&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;writing-guidelines&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 对照写作指南审查文档</p>
+<p><strong>适用时机:</strong> 在被要求“审查我的文档”、“检查写作风格”、“审核散文”、“审查文档的语气和语调”或“将此页面与写作手册进行比较”时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Writing Guidelines</li>
+<li>How It Works</li>
+<li>Guidelines Source</li>
+<li>Usage</li>
+</ul>
+<hr>
+<p><a id="skill-686fddf6"></a></p>
+<h3 id="zarazhangrui-frontend-slides"><a href="#zarazhangrui-frontend-slides" class="headerlink" title="zarazhangrui&#x2F;frontend-slides"></a>zarazhangrui&#x2F;frontend-slides</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/zarazhangrui/frontend-slides">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/zarazhangrui/frontend-slides/blob/main/SKILL.md">https://github.com&#x2F;zarazhangrui&#x2F;frontend-slides&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用视觉风格预览生成富含动画的HTML演示文稿</p>
+<p><strong>适用时机:</strong> 当用户想创建演示文稿、将PPT&#x2F;PPTX转换为网页，或为演讲&#x2F;演示创建幻灯片时使用。帮助非设计师通过视觉探索而非抽象选择来发现自己的美学。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Frontend Slides</li>
+<li>Core Principles</li>
+<li>Design Aesthetics</li>
+<li>Fixed Stage Rules</li>
+<li>Content Density Modes</li>
+<li>Phase 0: Detect Mode</li>
+<li>Mode C: Modification Rules</li>
+<li>Phase 1: Content Discovery (New Presentations)</li>
+<li>Step 1.2: Image Evaluation (if images provided)</li>
+<li>Phase 2: Style Discovery</li>
+<li>Step 2.0: Generate 3 Style Previews Directly</li>
+<li>Step 2.1: User Picks</li>
+<li>Phase 3: Generate Presentation</li>
+<li>Phase 4: PPT Conversion</li>
+<li>Phase 5: Delivery</li>
+<li>Phase 6: Share &amp; Export (Optional)</li>
+</ul>
+<hr>
+<p><a id="skill-cbecf1ad"></a></p>
+<h3 id="zilliztech-mfs"><a href="#zilliztech-mfs" class="headerlink" title="zilliztech&#x2F;mfs"></a>zilliztech&#x2F;mfs</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/zilliztech/mfs">Context Engineering</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/zilliztech/mfs/blob/main/README.md">https://github.com&#x2F;zilliztech&#x2F;mfs&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> `mfs-find` &#x2F; `mfs-ingest` 技能可以在您的代码、文档、聊天（Slack&#x2F;Gmail&#x2F;Jira）、数据库和对象存储中进行搜索、grep 和读取，这些都在一个类似文件的可搜索命名空间中；使用本地 ONNX 嵌入式实现自助托管。</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：`mfs-find` &#x2F; `mfs-ingest` 技能，可在一个类似文件的可搜索命名空间中搜索、grep 和读取您的代码、文档、聊天（Slack&#x2F;Gmail&#x2F;Jira）、数据库和对象存储；本地托管，配备本地 ONNX 嵌入式向量表示。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>🚀 Quick start</li>
+<li>Start the server</li>
+<li>Install the CLI</li>
+<li>Set environment variables</li>
+<li>Skill install</li>
+<li>💡 Use cases</li>
+<li>🧠 Your agent’s memory and skills</li>
+<li>💻 Your codebases</li>
+<li>📄 Documents, images, any format</li>
+<li>☁️ Cloud drives and buckets</li>
+<li>🌍 Online sources</li>
+<li>💬 Team chat and tickets</li>
+<li>🎫 Customers and support</li>
+<li>🗄️ Production data</li>
+<li>🌐 One query across all of them at once</li>
+<li>🧰 Commands</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 4 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/zilliztech/mfs/blob/main/examples/deep-research-skill/deep-research/SKILL.md">deep-research</a> · <a target="_blank" rel="noopener" href="https://github.com/zilliztech/mfs/blob/main/examples/open-tag-skill/open-tag/SKILL.md">open-tag</a> · <a target="_blank" rel="noopener" href="https://github.com/zilliztech/mfs/blob/main/skills/mfs-find/SKILL.md">mfs-find</a> · <a target="_blank" rel="noopener" href="https://github.com/zilliztech/mfs/blob/main/skills/mfs-ingest/SKILL.md">mfs-ingest</a></p>
+<hr>
+<p><a href="/blog/zh-CN/agent-skills/">返回 Agent Skills 分类导航</a></p>
+<p><a href="/blog/agent-skills/documents/">English version of this category</a></p>
+</div></article></div></div><style>.column.column-left,.column.column-right{display:none}</style><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://www.gravatar.com/avatar/7525ea09384aeb09ec303671d7dca1bf?s=128" alt="Song Chen"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Song Chen</p><p class="is-size-6 is-block">Ph.D. Candiate at Université Paris Saclay &amp; Spin-Ion Technologies</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Paris, France</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/blog/zh-CN/archives"><p class="title">28</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/blog/zh-CN/categories"><p class="title">32</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/blog/zh-CN/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/song-chen1" target="_blank" rel="noopener" id="widget-follow">Github Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="GoogleScholar" href="https://scholar.google.com/citations?user=sf-0AGoAAAAJ&amp;hl=de"><i class="fab fa-google-plus-square"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/in/song-chen-3449b9278/"><i class="fab fa-linkedin"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Mail" href="mailto:kammichan90@gmail.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/blog/zh-CN/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/blog/zh-CN/archives/2026/11/"><span class="level-start"><span class="level-item">十一月 2026</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/blog/zh-CN/archives/2026/10/"><span class="level-start"><span class="level-item">十月 2026</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/blog/zh-CN/archives/2023/10/"><span class="level-start"><span class="level-item">十月 2023</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Agent-Skills/"><span class="tag">Agent Skills</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/BERT/"><span class="tag">BERT</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Documentation/"><span class="tag">Documentation</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/French/"><span class="tag">French</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Hexo/"><span class="tag">Hexo</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Hexo-plugins/"><span class="tag">Hexo plugins</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/HuggingFace/"><span class="tag">HuggingFace</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Language/"><span class="tag">Language</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/MachineLearning/"><span class="tag">MachineLearning</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/NLP/"><span class="tag">NLP</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Obsidian/"><span class="tag">Obsidian</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/PyTorch/"><span class="tag">PyTorch</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Pyenv/"><span class="tag">Pyenv</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Python/"><span class="tag">Python</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/VoltAgent/"><span class="tag">VoltAgent</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/computational-simulation/"><span class="tag">computational simulation</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/condensed-matter-physics/"><span class="tag">condensed-matter physics</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/data-science/"><span class="tag">data-science</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/deep-learning/"><span class="tag">deep-learning</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/encryptAsDiary/"><span class="tag">encryptAsDiary</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/machine-learning/"><span class="tag">machine-learning</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python/"><span class="tag">python</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-configuration/"><span class="tag">python_configuration</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-editors/"><span class="tag">python_editors</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-tools/"><span class="tag">python_tools</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="https://api.follow.it/subscription-form/YnRDa2puUlErMTdqQ2Q4aDRrem93bHllemF6Y1ZMSW9hQSsrQ3NKTzRXSGRpTlRocW13MXM2UUw4YUFRdUFhUVRJTk1kaVFPWjc2MUQ1TTlLZ3hvcnhLNHJ2bE4yS3VzaTZ4eTliREZjZEk3UHRIWXBRbkxnN3FVUFczVm9TZDF8c2Z0em5PTnVFYks5TU15dUtPdW05czZIeEF4V0dvYnhQVnJtUGNUZEIxYz0=/8" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/automation/">智能体工具与自动化 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E6%99%BA%E8%83%BD%E4%BD%93%E5%B7%A5%E5%85%B7%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96/">智能体工具与自动化</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/business/">商业与财务 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E5%95%86%E4%B8%9A%E4%B8%8E%E8%B4%A2%E5%8A%A1/">商业与财务</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/cloud/">云与运维 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E4%BA%91%E4%B8%8E%E8%BF%90%E7%BB%B4/">云与运维</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/ai_data/">人工智能与数据 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8E%E6%95%B0%E6%8D%AE/">人工智能与数据</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/productivity/">效率与协作 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E6%95%88%E7%8E%87%E4%B8%8E%E5%8D%8F%E4%BD%9C/">效率与协作</a></p></div></article></div></div><div class="card widget" id="twikoo-new"><div class="card-content"><div class="menu"><h3 class="menu-label">最新评论</h3><script>window.twikooEnvId = 'https://twikoodisqus.vercel.app';</script><div class="twikoo-new-container"></div></div></div></div></div><style>.column.column-left,.column.column-right{display:block}</style></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/blog/zh-CN/"><img class="logo-img" src="/blog/zh-CN/images/logo.png" alt="Project Geeker" height="28"><img class="logo-img-dark" src="/blog/zh-CN/images/logo-dark.png" alt="Project Geeker" height="28"></a><p class="is-size-7"><span>&copy; 2026 Song Chen</span>  网站最终解释权归 <a href="https://songchen.science" target="_blank" rel="noopener">Song</a><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p><p class="is-size-7">© 2023</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.21/dist/twikoo.all.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/blog/zh-CN/js/column.js"></script><script src="/blog/zh-CN/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/blog/zh-CN/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="/blog/zh-CN/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><div class="searchbox-pinyin"><label class="checkbox"><input id="search-by-pinyin" type="checkbox" checked="checked"><span> Pinyin search</span></label></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/imaegoo/pinyin.js" defer></script><script src="/blog/zh-CN/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/blog/zh-CN/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script><script type="text/javascript" src="/js/imaegoo/imaegoo.js"></script><script type="text/javascript" src="/js/imaegoo/universe.js"></script></body></html>

@@ -1,0 +1,2335 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>分类: 云与运维 - Project Geeker</title><link rel="manifest" href="/blog/zh-CN/manifest.json"><meta name="application-name" content="Project Geeker"><meta name="msapplication-TileImage" content="/assets/icons/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Project Geeker"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="website"><meta property="og:title" content="Project Geeker"><meta property="og:url" content="https://songchen.science/blog/zh-CN/"><meta property="og:site_name" content="Project Geeker"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://songchen.science/blog/zh-CN/img/og_image.png"><meta property="article:author" content="Song Chen"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://songchen.science/blog/zh-CN/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://songchen.science/blog/zh-CN/"},"headline":"Project Geeker","image":["https://songchen.science/blog/zh-CN/img/og_image.png"],"author":{"@type":"Person","name":"Song Chen"},"publisher":{"@type":"Organization","name":"Project Geeker","logo":{"@type":"ImageObject","url":{"light":"/images/logo.png","dark":"/images/logo-dark.png"}}},"description":""}</script><link rel="alternate" href="/blog/zh-CN/atom.xml" title="Project Geeker" type="application/atom+xml"><link rel="icon" href="/blog/zh-CN/assets/icons/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="/blog/zh-CN/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><meta name="follow.it-verification-code" content="uc2EwCtSW92aTx5KkxEk"><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head><body class="is-3-column"><script type="text/javascript" src="/js/imaegoo/night.js"></script><canvas id="universe"></canvas><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/blog/zh-CN/"><img class="logo-img" src="/blog/zh-CN/images/logo.png" alt="Project Geeker" height="28"><img class="logo-img-dark" src="/blog/zh-CN/images/logo-dark.png" alt="Project Geeker" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/blog/zh-CN/">首页</a><a class="navbar-item" href="/blog/zh-CN/archives/">时间轴</a><a class="navbar-item" href="/blog/zh-CN/categories/">分类</a><a class="navbar-item" href="/blog/zh-CN/tags/">标签</a><a class="navbar-item" href="/blog/zh-CN/blogroll/">友情链接</a><a class="navbar-item" href="/blog/zh-CN/guestbook/">留言板</a><a class="navbar-item" href="/blog/zh-CN/about/me">关于</a></div><div class="navbar-end"><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="画廊" href="/blog/zh-CN/gallery/"><i class="fas fa-images"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="GoogleDrive" href="https://goindex.chen-song90.workers.dev"><i class="fab fa-google-drive"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="iCloud" href="https://hitchhiker.azurewebsites.net"><i class="fas fa-cloud"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" href="https://songchen.science/blog/"> English</a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/blog/zh-CN/categories">分类</a></li><li><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a></li><li class="is-active"><a href="#" aria-current="page">云与运维</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2026-11-02T04:00:00.000Z" title="11/2/2026, 12:00:00 PM">2026-11-02</time>发表</span><span class="level-item"><time dateTime="2026-11-02T04:00:00.000Z" title="11/2/2026, 12:00:00 PM">2026-11-02</time>更新</span><span class="level-item"><a class="link-muted" href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a><span> / </span><a class="link-muted" href="/blog/zh-CN/categories/Agent-Skills/%E4%BA%91%E4%B8%8E%E8%BF%90%E7%BB%B4/">云与运维</a></span><span class="level-item">3 小时读完 (大约23664个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/blog/zh-CN/agent-skills/cloud/">云与运维 | Agent Skills</a></p><div class="content"><h1 id="云与运维"><a href="#云与运维" class="headerlink" title="云与运维"></a>云与运维</h1><p>云与运维类技能聚焦部署、基础设施、可观测性、可靠性和云服务配置。</p>
+<p><strong>目录快照：2026 年 11 月 2 日</strong></p>
+<h2 id="分类目录"><a href="#分类目录" class="headerlink" title="分类目录"></a>分类目录</h2><ul>
+<li><a href="#skill-1b0748ac">AceDataCloud&#x2F;fish-audio</a></li>
+<li><a href="#skill-5d10c1d1">browserbase&#x2F;functions</a></li>
+<li><a href="#skill-54293f6c">clickhouse&#x2F;chdb-sql</a></li>
+<li><a href="#skill-ef9e4262">clickhouse&#x2F;clickhousectl-cloud-deploy</a></li>
+<li><a href="#skill-bb22c818">CloudAI-X&#x2F;threejs-skills</a></li>
+<li><a href="#skill-fa187ad2">cloudflare&#x2F;agents-sdk</a></li>
+<li><a href="#skill-d01723a6">cloudflare&#x2F;cloudflare</a></li>
+<li><a href="#skill-323c5931">cloudflare&#x2F;cloudflare-email-service</a></li>
+<li><a href="#skill-ed349df5">cloudflare&#x2F;durable-objects</a></li>
+<li><a href="#skill-bf622ab1">cloudflare&#x2F;sandbox-sdk</a></li>
+<li><a href="#skill-5455362e">cloudflare&#x2F;security-audit-skill</a></li>
+<li><a href="#skill-7770ccdd">cloudflare&#x2F;web-perf</a></li>
+<li><a href="#skill-7f0c99b8">cloudflare&#x2F;workers-best-practices</a></li>
+<li><a href="#skill-e5d999fc">cloudflare&#x2F;wrangler</a></li>
+<li><a href="#skill-a292d8d9">crawlbase&#x2F;storage-bulk-delete</a></li>
+<li><a href="#skill-9877ea9e">crawlbase&#x2F;storage-count</a></li>
+<li><a href="#skill-93a8405a">crawlbase&#x2F;storage-delete</a></li>
+<li><a href="#skill-86cd5037">crawlbase&#x2F;storage-get</a></li>
+<li><a href="#skill-5f86cbd3">d1vai&#x2F;d1v</a></li>
+<li><a href="#skill-983cc6b7">datadog-labs&#x2F;dd-monitors</a></li>
+<li><a href="#skill-b06f9b1c">expo&#x2F;expo-cicd-workflows</a></li>
+<li><a href="#skill-e68b181c">expo&#x2F;expo-deployment</a></li>
+<li><a href="#skill-25b0d2dc">expo&#x2F;native-data-fetching</a></li>
+<li><a href="#skill-7d44ee41">firebase&#x2F;firebase-app-hosting-basics</a></li>
+<li><a href="#skill-306466a0">firebase&#x2F;firebase-data-connect-basics</a></li>
+<li><a href="#skill-3f2bd14e">firebase&#x2F;firebase-firestore-standard</a></li>
+<li><a href="#skill-16c782d5">firebase&#x2F;firebase-hosting-basics</a></li>
+<li><a href="#skill-9043c539">garrytan&#x2F;land-and-deploy</a></li>
+<li><a href="#skill-20bc9850">garrytan&#x2F;setup-deploy</a></li>
+<li><a href="#skill-a35cbcfb">getsentry&#x2F;sentry-cloudflare-sdk</a></li>
+<li><a href="#skill-18709755">getsentry&#x2F;sentry-feature-setup</a></li>
+<li><a href="#skill-3d068a80">getsentry&#x2F;sentry-setup-ai-monitoring</a></li>
+<li><a href="#skill-d21f66c6">google&#x2F;cloud&#x2F;agent-platform-skill-registry</a></li>
+<li><a href="#skill-acde25c7">google&#x2F;cloud&#x2F;alloydb-basics</a></li>
+<li><a href="#skill-5eb5d898">google&#x2F;cloud&#x2F;bigquery-basics</a></li>
+<li><a href="#skill-2ba890c0">google&#x2F;cloud&#x2F;cloud-run-basics</a></li>
+<li><a href="#skill-27c4ffab">google&#x2F;cloud&#x2F;cloud-sql-basics</a></li>
+<li><a href="#skill-1ba2f5f5">google&#x2F;cloud&#x2F;firebase-basics</a></li>
+<li><a href="#skill-17b0e56c">google&#x2F;cloud&#x2F;gemini-agents-api</a></li>
+<li><a href="#skill-4cd78682">google&#x2F;cloud&#x2F;gemini-api</a></li>
+<li><a href="#skill-da4d176e">google&#x2F;cloud&#x2F;gemini-interactions-api</a></li>
+<li><a href="#skill-aeffb5b3">google&#x2F;cloud&#x2F;gke-basics</a></li>
+<li><a href="#skill-b1f562be">google&#x2F;cloud&#x2F;google-cloud-networking-observability</a></li>
+<li><a href="#skill-2a661b94">google&#x2F;cloud&#x2F;google-cloud-recipe-onboarding</a></li>
+<li><a href="#skill-48918c2f">google&#x2F;cloud&#x2F;google-cloud-waf-cost-optimization</a></li>
+<li><a href="#skill-13817618">google&#x2F;cloud&#x2F;google-cloud-waf-operational-excellence</a></li>
+<li><a href="#skill-1dd84ac0">google&#x2F;cloud&#x2F;google-cloud-waf-performance-optimization</a></li>
+<li><a href="#skill-3883f110">google&#x2F;cloud&#x2F;google-cloud-waf-reliability</a></li>
+<li><a href="#skill-e67dc0e4">google&#x2F;cloud&#x2F;google-cloud-waf-sustainability</a></li>
+<li><a href="#skill-11d0ddc5">hashicorp&#x2F;azure-verified-modules</a></li>
+<li><a href="#skill-fece3fad">hashicorp&#x2F;new-terraform-provider</a></li>
+<li><a href="#skill-10e1fc39">hashicorp&#x2F;provider-actions</a></li>
+<li><a href="#skill-b10907ef">hashicorp&#x2F;provider-resources</a></li>
+<li><a href="#skill-7f7cd93e">hashicorp&#x2F;provider-test-patterns</a></li>
+<li><a href="#skill-a9267a5a">hashicorp&#x2F;refactor-module</a></li>
+<li><a href="#skill-ab103cf0">hashicorp&#x2F;run-acceptance-tests</a></li>
+<li><a href="#skill-d4798025">hashicorp&#x2F;terraform-search-import</a></li>
+<li><a href="#skill-b4b74168">hashicorp&#x2F;terraform-stacks</a></li>
+<li><a href="#skill-b6b746bf">hashicorp&#x2F;terraform-style-guide</a></li>
+<li><a href="#skill-9c95d741">hashicorp&#x2F;terraform-test</a></li>
+<li><a href="#skill-d8fc929e">hedralab&#x2F;eskill</a></li>
+<li><a href="#skill-cedad37d">huggingface&#x2F;hugging-face-jobs</a></li>
+<li><a href="#skill-9c57e00e">huggingface&#x2F;hugging-face-vision-trainer</a></li>
+<li><a href="#skill-c5dcea05">huggingface&#x2F;huggingface-gradio</a></li>
+<li><a href="#skill-fcde3fbc">hyperb1iss&#x2F;unifly</a></li>
+<li><a href="#skill-a8fdf3b0">microsoft&#x2F;azure-mgmt-weightsandbiases-dotnet</a></li>
+<li><a href="#skill-75c2892f">microsoft&#x2F;azure-monitor-ingestion-java</a></li>
+<li><a href="#skill-f495ca00">microsoft&#x2F;azure-monitor-ingestion-py</a></li>
+<li><a href="#skill-d1abc4fe">microsoft&#x2F;azure-monitor-opentelemetry-exporter-java</a></li>
+<li><a href="#skill-14a7db83">microsoft&#x2F;azure-monitor-opentelemetry-exporter-py</a></li>
+<li><a href="#skill-7564e23e">microsoft&#x2F;azure-monitor-opentelemetry-py</a></li>
+<li><a href="#skill-77b19c86">microsoft&#x2F;azure-monitor-opentelemetry-ts</a></li>
+<li><a href="#skill-6c25f38a">microsoft&#x2F;azure-monitor-query-java</a></li>
+<li><a href="#skill-fc30765b">microsoft&#x2F;azure-monitor-query-py</a></li>
+<li><a href="#skill-e4bbd233">microsoft&#x2F;cloud-solution-architect</a></li>
+<li><a href="#skill-ac2610ba">mongodb&#x2F;mongodb-connection</a></li>
+<li><a href="#skill-d34fc3c9">mongodb&#x2F;mongodb-natural-language-querying</a></li>
+<li><a href="#skill-dbbf501f">neondatabase&#x2F;neon-postgres</a></li>
+<li><a href="#skill-f0585a98">netlify&#x2F;netlify-ai-gateway</a></li>
+<li><a href="#skill-54d2a782">netlify&#x2F;netlify-blobs</a></li>
+<li><a href="#skill-26d515a1">netlify&#x2F;netlify-caching</a></li>
+<li><a href="#skill-581a5520">netlify&#x2F;netlify-cli-and-deploy</a></li>
+<li><a href="#skill-04b55c43">netlify&#x2F;netlify-config</a></li>
+<li><a href="#skill-2cb5b253">netlify&#x2F;netlify-db</a></li>
+<li><a href="#skill-2738ac26">netlify&#x2F;netlify-deploy</a></li>
+<li><a href="#skill-416c7b4f">netlify&#x2F;netlify-edge-functions</a></li>
+<li><a href="#skill-53d0b163">netlify&#x2F;netlify-forms</a></li>
+<li><a href="#skill-a5684744">netlify&#x2F;netlify-frameworks</a></li>
+<li><a href="#skill-9b4290a7">netlify&#x2F;netlify-functions</a></li>
+<li><a href="#skill-d1010891">netlify&#x2F;netlify-image-cdn</a></li>
+<li><a href="#skill-d614be5a">NoizAI&#x2F;skills</a></li>
+<li><a href="#skill-e8fd868e">openai&#x2F;cloudflare-deploy</a></li>
+<li><a href="#skill-9ba35b2b">openai&#x2F;render-deploy</a></li>
+<li><a href="#skill-132547ac">openai&#x2F;vercel-deploy</a></li>
+<li><a href="#skill-ae92388c">OptimNow&#x2F;cloud-finops-skills</a></li>
+<li><a href="#skill-d3541c7e">posteyai&#x2F;skills</a></li>
+<li><a href="#skill-7389d06e">publora&#x2F;skills</a></li>
+<li><a href="#skill-7a66c755">redhat&#x2F;sre-skillpack</a></li>
+<li><a href="#skill-56ad2109">rorkai&#x2F;app-store-connect-cli-skills</a></li>
+<li><a href="#skill-465adf61">sujunmin&#x2F;agy-ppt</a></li>
+<li><a href="#skill-6e56dd08">testmu-ai&#x2F;cicd-pipeline-skill</a></li>
+<li><a href="#skill-b51c811b">tushaarmehtaa&#x2F;tushar-skills</a></li>
+<li><a href="#skill-d81b8b6a">veniceai&#x2F;venice-crypto-rpc</a></li>
+<li><a href="#skill-eb245ad1">vercel-labs&#x2F;deploy-to-vercel</a></li>
+<li><a href="#skill-5eec4e9f">vmware-skills&#x2F;VMware-AIops</a></li>
+<li><a href="#skill-7d9769f9">wanshuiyin&#x2F;Auto-claude-code-research-in-sleep</a></li>
+<li><a href="#skill-29e6dfa5">Xquik-dev&#x2F;tweetclaw</a></li>
+<li><a href="#skill-94a4f6fa">zxkane&#x2F;aws-skills</a></li>
+</ul>
+<h2 id="本类全部技能"><a href="#本类全部技能" class="headerlink" title="本类全部技能"></a>本类全部技能</h2><p><a id="skill-1b0748ac"></a></p>
+<h3 id="AceDataCloud-fish-audio"><a href="#AceDataCloud-fish-audio" class="headerlink" title="AceDataCloud&#x2F;fish-audio"></a>AceDataCloud&#x2F;fish-audio</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/AceDataCloud/Skills/tree/main/skills/fish-audio">Specialized Domains</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/AceDataCloud/Skills/blob/main/skills/fish-audio/SKILL.md">https://github.com&#x2F;AceDataCloud&#x2F;Skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;fish-audio&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用Fish Audio生成语音和克隆声音</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：使用 Fish Audio 生成语音和克隆语音</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Fish Audio — Text-to-Speech</li>
+<li>First-time setup</li>
+<li>Quick Start</li>
+<li>Endpoints</li>
+<li>Workflows</li>
+<li>1. Find a reference voice</li>
+<li>2. Text-to-Speech</li>
+<li>3. One-shot voice cloning</li>
+<li>4. Async TTS</li>
+<li>5. Create a persistent public voice model</li>
+<li>6. List voices created by the calling account</li>
+<li>Parameters — `&#x2F;fish&#x2F;tts`</li>
+<li>Header</li>
+<li>JSON body</li>
+<li>Gotchas</li>
+</ul>
+<hr>
+<p><a id="skill-5d10c1d1"></a></p>
+<h3 id="browserbase-functions"><a href="#browserbase-functions" class="headerlink" title="browserbase&#x2F;functions"></a>browserbase&#x2F;functions</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/browserbase/skills/functions">Skills by Browserbase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/browserbase/skills/blob/main/skills/functions/SKILL.md">https://github.com&#x2F;browserbase&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;functions&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 将浏览器自动化脚本部署为无服务器云函数</p>
+<p><strong>适用时机:</strong> 当用户想要部署浏览器自动化程序以按计划或cron运行、为浏览器任务创建WebHook端点、在云端而不是本地运行自动化程序，或者询问Browserbase函数时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Browserbase Functions</li>
+<li>Prerequisites</li>
+<li>Creating a Function Project</li>
+<li>1. Initialize</li>
+<li>2. Add Credentials to .env</li>
+<li>3. Install Dependencies</li>
+<li>Function Structure</li>
+<li>Development Workflow</li>
+<li>1. Start Dev Server</li>
+<li>2. Test Locally</li>
+<li>3. Iterate</li>
+<li>Deploying</li>
+<li>Quick Reference</li>
+</ul>
+<hr>
+<p><a id="skill-54293f6c"></a></p>
+<h3 id="clickhouse-chdb-sql"><a href="#clickhouse-chdb-sql" class="headerlink" title="clickhouse&#x2F;chdb-sql"></a>clickhouse&#x2F;chdb-sql</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/clickhouse/skills/chdb-sql">Skills by ClickHouse</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/clickhouse/agent-skills/blob/main/skills/chdb-sql/SKILL.md">https://github.com&#x2F;clickhouse&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;chdb-sql&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> Python中的正在运行的ClickHouse SQL引擎——无需服务器即可查询文件、数据库和云存储</p>
+<p><strong>适用时机:</strong> 当用户希望在本地文件（parquet&#x2F;csv&#x2F;json）、URL、S3路径或远程数据库（Postgres、MySQL、MongoDB、ClickHouse Cloud、Iceberg、Delta Lake）上运行SQL——尤其是分析SQL——而无需设置服务器时使用。提供chDB——Python中的嵌入式ClickHouse SQL，包含1000多个函数，Session用于具有状态的多步骤管道，支持参数化查询，并通过`s3()`、`mysql()`、`postgresql()`、`iceberg()`、`deltaLake()`、`remoteSecure()`表函数实现跨源合并。触发条件：用户希望在parquet&#x2F;csv&#x2F;文件上或在远程分析源之间运行SQL；使用ClickHouse SQL功能（窗口函数</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>chdb SQL — ClickHouse in Your Python Process</li>
+<li>Decision Tree: Pick the Right API</li>
+<li>chdb.query() — One Line, Any Data</li>
+<li>Session — Stateful Analysis Pipelines</li>
+<li>Connection API (DB-API 2.0)</li>
+<li>Troubleshooting</li>
+<li>References</li>
+</ul>
+<hr>
+<p><a id="skill-ef9e4262"></a></p>
+<h3 id="clickhouse-clickhousectl-cloud-deploy"><a href="#clickhouse-clickhousectl-cloud-deploy" class="headerlink" title="clickhouse&#x2F;clickhousectl-cloud-deploy"></a>clickhouse&#x2F;clickhousectl-cloud-deploy</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/clickhouse/skills/clickhousectl-cloud-deploy">Skills by ClickHouse</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/clickhouse/agent-skills/blob/main/README.md">https://github.com&#x2F;clickhouse&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用clickhousectl部署到ClickHouse Cloud并从本地设置中迁移</p>
+<p><strong>适用时机:</strong> 在ClickHouse云提供中部署本地ClickHouse原型 在clickhousectl中提供管理型ClickHouse服务 将表结构和数据从本地实例迁移到ClickHouse云 为应用程序团队设置云托管的ClickHouse 在多个环境中标准化云部署步骤</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>ClickHouse Agent Skills</li>
+<li>Installation</li>
+<li>npx</li>
+<li>clickhousectl</li>
+<li>What is this?</li>
+<li>Available Skills</li>
+<li>ClickHouse Best Practices</li>
+<li>ClickHouse Architecture Advisor</li>
+<li>ClickHouse JS Node Troubleshooting</li>
+<li>chdb DataStore</li>
+<li>chdb SQL</li>
+<li>Infra ClickHouse</li>
+<li>Infra Postgres</li>
+<li>ClickStack OTel Collector</li>
+<li>Quick Start</li>
+<li>Supported Agents</li>
+</ul>
+<hr>
+<p><a id="skill-bb22c818"></a></p>
+<h3 id="CloudAI-X-threejs-skills"><a href="#CloudAI-X-threejs-skills" class="headerlink" title="CloudAI-X&#x2F;threejs-skills"></a>CloudAI-X&#x2F;threejs-skills</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/CloudAI-X/threejs-skills">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/CloudAI-X/threejs-skills/blob/main/README.md">https://github.com&#x2F;CloudAI-X&#x2F;threejs-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 用于创建3D元素和互动体验的Three.js技能</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：用于创建3D元素和互动体验的Three.js技能</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Three.js Skills for Claude Code</li>
+<li>Why</li>
+<li>Installation</li>
+<li>Skills Included</li>
+<li>How It Works</li>
+<li>Skill File Structure</li>
+<li>Verification</li>
+<li>License</li>
+<li>Acknowledgments</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 13 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/CloudAI-X/threejs-skills/blob/main/skills/threejs-animation/SKILL.md">threejs-animation</a> · <a target="_blank" rel="noopener" href="https://github.com/CloudAI-X/threejs-skills/blob/main/skills/threejs-asset-pipeline/SKILL.md">threejs-asset-pipeline</a> · <a target="_blank" rel="noopener" href="https://github.com/CloudAI-X/threejs-skills/blob/main/skills/threejs-fundamentals/SKILL.md">threejs-fundamentals</a> · <a target="_blank" rel="noopener" href="https://github.com/CloudAI-X/threejs-skills/blob/main/skills/threejs-geometry/SKILL.md">threejs-geometry</a> · <a target="_blank" rel="noopener" href="https://github.com/CloudAI-X/threejs-skills/blob/main/skills/threejs-interaction/SKILL.md">threejs-interaction</a> · <a target="_blank" rel="noopener" href="https://github.com/CloudAI-X/threejs-skills/blob/main/skills/threejs-lighting/SKILL.md">threejs-lighting</a> · <a target="_blank" rel="noopener" href="https://github.com/CloudAI-X/threejs-skills/blob/main/skills/threejs-loaders/SKILL.md">threejs-loaders</a> · <a target="_blank" rel="noopener" href="https://github.com/CloudAI-X/threejs-skills/blob/main/skills/threejs-materials/SKILL.md">threejs-materials</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-fa187ad2"></a></p>
+<h3 id="cloudflare-agents-sdk"><a href="#cloudflare-agents-sdk" class="headerlink" title="cloudflare&#x2F;agents-sdk"></a>cloudflare&#x2F;agents-sdk</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/cloudflare/skills/agents-sdk">Skills by Cloudflare Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/cloudflare/skills/blob/main/skills/agents-sdk/SKILL.md">https://github.com&#x2F;cloudflare&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;agents-sdk&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用调度、RPC和MCP服务器构建具有状态的AI代理</p>
+<p><strong>适用时机:</strong> 在 Cloudflare Worker 代理中运行预定 cron 任务 构建一个聊天应用，使代理状态实时同步到 React 客户端 使用 McpAgent 配置 MCP 服务器以暴露可调用工具 处理传入电子邮件，并通过代理的路由逻辑发送回复 暂停多步骤工作流程，直到人工批准下一步操作</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Cloudflare Agents SDK</li>
+<li>Retrieval Sources</li>
+<li>Capabilities</li>
+<li>FIRST: Verify Installation</li>
+<li>Wrangler Configuration</li>
+<li>Agent Class</li>
+<li>Routing</li>
+<li>Core APIs</li>
+<li>React Client</li>
+<li>References</li>
+<li>Core</li>
+<li>Chat &amp; Streaming</li>
+<li>Background Processing</li>
+<li>Integrations</li>
+<li>Experimental</li>
+<li>Skill feedback</li>
+</ul>
+<hr>
+<p><a id="skill-d01723a6"></a></p>
+<h3 id="cloudflare-cloudflare"><a href="#cloudflare-cloudflare" class="headerlink" title="cloudflare&#x2F;cloudflare"></a>cloudflare&#x2F;cloudflare</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/cloudflare/skills/cloudflare">Skills by Cloudflare Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/cloudflare/skills/blob/main/skills/cloudflare/SKILL.md">https://github.com&#x2F;cloudflare&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloudflare&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 涵盖Workers、Pages、存储、AI、网络、安全和IaC的全面Cloudflare平台技能</p>
+<p><strong>适用时机:</strong> 为新项目选择合适的 Cloudflare 基础组件（Workers、Pages、D1、R2、持久对象） 为现有应用程序集成 Workers AI 或向量化 为内部服务搭建 Cloudflare 隧道或 Spectrum 监听器 为生产域名配置 WAF 和 DDoS 防护 借助 Terraform 或 Pulumi 将 Cloudflare 资源以代码形式管理</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Discover and build with Cloudflare</li>
+<li>Choose the CLI</li>
+<li>Help the user find the right product</li>
+<li>What are you trying to build?</li>
+<li>Find guidance for a task not listed here</li>
+<li>Caching</li>
+<li>Working principles</li>
+<li>Skill feedback</li>
+</ul>
+<hr>
+<p><a id="skill-323c5931"></a></p>
+<h3 id="cloudflare-cloudflare-email-service"><a href="#cloudflare-cloudflare-email-service" class="headerlink" title="cloudflare&#x2F;cloudflare-email-service"></a>cloudflare&#x2F;cloudflare-email-service</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/cloudflare/skills/cloudflare-email-service">Skills by Cloudflare Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/cloudflare/skills/blob/main/skills/cloudflare-email-service/SKILL.md">https://github.com&#x2F;cloudflare&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloudflare-email-service&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用Cloudflare电子邮件发送和电子邮件路由功能发送交易电子邮件并路由收件邮件</p>
+<p><strong>适用时机:</strong> 通过绑定将域名到工作者的传入电子邮件路由，将交易性电子邮件发送到 Cloudflare 工作者进行处理 从 Node.js 或 Python 应用通过 REST API 发送电子邮件 将电子邮件处理集成到 Agents SDK 代理中 为新发送域名配置 SPF、DKIM 和 DMARC</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Cloudflare Email Service</li>
+<li>Retrieval Sources</li>
+<li>FIRST: Check Prerequisites</li>
+<li>What Do You Need?</li>
+<li>Sending Workflow</li>
+<li>Common Mistakes</li>
+<li>References</li>
+<li>Skill feedback</li>
+</ul>
+<hr>
+<p><a id="skill-ed349df5"></a></p>
+<h3 id="cloudflare-durable-objects"><a href="#cloudflare-durable-objects" class="headerlink" title="cloudflare&#x2F;durable-objects"></a>cloudflare&#x2F;durable-objects</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/cloudflare/skills/durable-objects">Skills by Cloudflare Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/cloudflare/skills/blob/main/skills/durable-objects/SKILL.md">https://github.com&#x2F;cloudflare&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;durable-objects&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 与RPC、SQLite和WebSockets的状态协调</p>
+<p><strong>适用时机:</strong> 构建一个多人游戏房间，确保玩家间的轮流顺序和分数保持一致。协调预订系统，防止两个用户同时预订同一时段。在多租户SaaS应用中管理每个租户的SQLite存储，无需单独的数据库。为订阅续订提醒或会话超时等事项安排针对每个实体的报警。处理具有共享文档状态的实时协作工具的持久性WebSocket连接。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Durable Objects</li>
+<li>Retrieval Sources</li>
+<li>When to Use</li>
+<li>Reference Documentation</li>
+<li>Core Principles</li>
+<li>Use Durable Objects For</li>
+<li>Do NOT Use For</li>
+<li>Quick Reference</li>
+<li>Wrangler Configuration</li>
+<li>Basic Durable Object Pattern</li>
+<li>Critical Rules</li>
+<li>Authorization</li>
+<li>Anti-Patterns (NEVER)</li>
+<li>Stub Creation</li>
+<li>Storage Operations</li>
+<li>Alarms</li>
+</ul>
+<hr>
+<p><a id="skill-bf622ab1"></a></p>
+<h3 id="cloudflare-sandbox-sdk"><a href="#cloudflare-sandbox-sdk" class="headerlink" title="cloudflare&#x2F;sandbox-sdk"></a>cloudflare&#x2F;sandbox-sdk</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/cloudflare/skills/sandbox-sdk">Skills by Cloudflare Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/cloudflare/skills/blob/main/README.md">https://github.com&#x2F;cloudflare&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 为Workers构建沙盒应用程序，实现安全、隔离的代码执行</p>
+<p><strong>适用时机:</strong> 从AI代码解释器运行未经信任的用户提交的代码 在隔离执行环境中构建基于Web的编程沙盒 在每次运行中在隔离沙盒中执行CI&#x2F;CD测试步骤 通过预览URL启动交互式开发环境 在不暴露主机工作者的情况下运行代理的工具调用代码</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Cloudflare Skills</li>
+<li>Installing</li>
+<li>Codex</li>
+<li>Claude Code</li>
+<li>VS Code &#x2F; GitHub Copilot</li>
+<li>Cursor</li>
+<li>npx skills</li>
+<li>Clone &#x2F; Copy</li>
+<li>Skills</li>
+<li>MCP Servers</li>
+</ul>
+<hr>
+<p><a id="skill-5455362e"></a></p>
+<h3 id="cloudflare-security-audit-skill"><a href="#cloudflare-security-audit-skill" class="headerlink" title="cloudflare&#x2F;security-audit-skill"></a>cloudflare&#x2F;security-audit-skill</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/cloudflare/security-audit-skill">Skills by Cloudflare Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/SKILL.md">https://github.com&#x2F;cloudflare&#x2F;security-audit-skill&#x2F;blob&#x2F;main&#x2F;skills&#x2F;security-audit&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 采用独立验证、可机器读取的发现进行多阶段安全审计</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：采用独立验证、可机器读取的发现结果的多阶段安全审计</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Security Audit</li>
+<li>Operating modes</li>
+<li>Platform terminology</li>
+<li>Universal execution safety</li>
+<li>Full audit setup</li>
+<li>Write isolation</li>
+<li>Full audit planning</li>
+<li>Coverage and prior runs</li>
+<li>Run profiles and scope</li>
+<li>Core principles</li>
+<li>Require a boundary and result</li>
+<li>Use bounded local evidence</li>
+<li>Respect source visibility</li>
+<li>Separate priority from certainty</li>
+<li>Recommend the smallest effective source fix</li>
+<li>Full audit workflow</li>
+</ul>
+<hr>
+<p><a id="skill-7770ccdd"></a></p>
+<h3 id="cloudflare-web-perf"><a href="#cloudflare-web-perf" class="headerlink" title="cloudflare&#x2F;web-perf"></a>cloudflare&#x2F;web-perf</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/cloudflare/skills/web-perf">Skills by Cloudflare Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/cloudflare/skills/blob/main/skills/web-perf/SKILL.md">https://github.com&#x2F;cloudflare&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;web-perf&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 审计核心网页指标和渲染阻断资源</p>
+<p><strong>适用时机:</strong> 诊断在登陆页面上LCP为何高于4s 追踪哪些CSS或JS文件阻碍首次渲染 发现缺少宽度&#x2F;高度属性的图片，导致布局偏移 检查静态资产的缓存头和压缩情况 审计Next.js或Vite应用的打包包中是否有未使用的代码和过大的polyfill</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Web Performance Audit</li>
+<li>Retrieval Sources</li>
+<li>FIRST: Verify MCP Tools Available</li>
+<li>Key Guidelines</li>
+<li>Quick Reference</li>
+<li>Workflow</li>
+<li>Phase 1: Performance Trace</li>
+<li>Phase 2: Core Web Vitals Analysis</li>
+<li>Phase 3: Network Analysis</li>
+<li>Phase 4: Accessibility Snapshot</li>
+<li>Phase 5: Codebase Analysis</li>
+<li>Detect Framework &amp; Bundler</li>
+<li>Tree-Shaking &amp; Dead Code</li>
+<li>Unused JS&#x2F;CSS</li>
+<li>Polyfills</li>
+<li>Compression &amp; Minification</li>
+</ul>
+<hr>
+<p><a id="skill-7f0c99b8"></a></p>
+<h3 id="cloudflare-workers-best-practices"><a href="#cloudflare-workers-best-practices" class="headerlink" title="cloudflare&#x2F;workers-best-practices"></a>cloudflare&#x2F;workers-best-practices</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/cloudflare/skills/workers-best-practices">Skills by Cloudflare Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/cloudflare/skills/blob/main/skills/workers-best-practices/SKILL.md">https://github.com&#x2F;cloudflare&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;workers-best-practices&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 审查并作者对生产最佳实践和wrangler.jsonc惯例的工人代码进行审查。</p>
+<p><strong>适用时机:</strong> 在编写、审查或配置Workers时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>References</li>
+<li>Keep Compatibility Dates Current</li>
+<li>Enable Observability</li>
+<li>Place Compute Near Regional Databases</li>
+<li>Anti-Patterns to Flag</li>
+<li>Validation</li>
+<li>Scope</li>
+<li>Skill feedback</li>
+</ul>
+<hr>
+<p><a id="skill-e5d999fc"></a></p>
+<h3 id="cloudflare-wrangler"><a href="#cloudflare-wrangler" class="headerlink" title="cloudflare&#x2F;wrangler"></a>cloudflare&#x2F;wrangler</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/cloudflare/skills/wrangler">Skills by Cloudflare Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/cloudflare/skills/blob/main/skills/wrangler/SKILL.md">https://github.com&#x2F;cloudflare&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;wrangler&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 部署和管理Worker、KV、R2、D1、向量化、队列、工作流程</p>
+<p><strong>适用时机:</strong> 从单个配置文件部署 Worker 到测试和生产环境 在发布前对远程数据库执行 D1 SQL 迁移 从生产 Worker 实时流式传输经过过滤输出的错误日志 将 Worker 部署滚回到特定之前的版本 采用本地 JSON 文件中的批量数据为 KV 命名空间进行初始化</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Wrangler CLI</li>
+<li>Inspect the Project</li>
+<li>Retrieve What the Task Needs</li>
+<li>Apply the Change</li>
+<li>Work with Workers Previews</li>
+<li>Validate</li>
+<li>Skill feedback</li>
+</ul>
+<hr>
+<p><a id="skill-a292d8d9"></a></p>
+<h3 id="crawlbase-storage-bulk-delete"><a href="#crawlbase-storage-bulk-delete" class="headerlink" title="crawlbase&#x2F;storage-bulk-delete"></a>crawlbase&#x2F;storage-bulk-delete</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/crawlbase/skills/storage-bulk-delete">Skills by Crawlbase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/crawlbase/crawlbase-codex-plugin/blob/main/skills/storage-bulk-delete/SKILL.md">https://github.com&#x2F;crawlbase&#x2F;crawlbase-codex-plugin&#x2F;blob&#x2F;main&#x2F;skills&#x2F;storage-bulk-delete&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 一次性从Crawlbase云存储中删除最多100页存储页面</p>
+<p><strong>适用时机:</strong> 清理一批经过处理的爬虫结果，仅需一次调用。在耗时截图的工作后清空JS-token存储库。通过删除超过截止时间的rids来强制保留数据。与存储列表结合，彻底擦除令牌的存储空间。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>When to use</li>
+<li>Usage</li>
+<li>Example prompts</li>
+</ul>
+<hr>
+<p><a id="skill-9877ea9e"></a></p>
+<h3 id="crawlbase-storage-count"><a href="#crawlbase-storage-count" class="headerlink" title="crawlbase&#x2F;storage-count"></a>crawlbase&#x2F;storage-count</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/crawlbase/skills/storage-count">Skills by Crawlbase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/crawlbase/crawlbase-codex-plugin/blob/main/skills/storage-count/SKILL.md">https://github.com&#x2F;crawlbase&#x2F;crawlbase-codex-plugin&#x2F;blob&#x2F;main&#x2F;skills&#x2F;storage-count&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 统计用于令牌的Crawlbase云存储中存储的文件数量</p>
+<p><strong>适用时机:</strong> 在执行批量操作前检查存储使用情况 一目了然地回答“我们存储了多少页？” 验证一组store: true爬虫确实成功到达 独立计数与正常存储环境分离的JS-token存储库</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>When to use</li>
+<li>Usage</li>
+<li>Example prompts</li>
+</ul>
+<hr>
+<p><a id="skill-93a8405a"></a></p>
+<h3 id="crawlbase-storage-delete"><a href="#crawlbase-storage-delete" class="headerlink" title="crawlbase&#x2F;storage-delete"></a>crawlbase&#x2F;storage-delete</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/crawlbase/skills/storage-delete">Skills by Crawlbase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/crawlbase/crawlbase-codex-plugin/blob/main/skills/storage-delete/SKILL.md">https://github.com&#x2F;crawlbase&#x2F;crawlbase-codex-plugin&#x2F;blob&#x2F;main&#x2F;skills&#x2F;storage-delete&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过rid从Crawlbase云存储中删除单个存储页面</p>
+<p><strong>适用时机:</strong> 删除不再需要的特定存储页面 从JS-token隔离库中删除存储的截图页面 清理单个失败或过时的抓取结果</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>When to use</li>
+<li>Usage</li>
+<li>Example prompts</li>
+</ul>
+<hr>
+<p><a id="skill-86cd5037"></a></p>
+<h3 id="crawlbase-storage-get"><a href="#crawlbase-storage-get" class="headerlink" title="crawlbase&#x2F;storage-get"></a>crawlbase&#x2F;storage-get</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/crawlbase/skills/storage-get">Skills by Crawlbase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/crawlbase/crawlbase-codex-plugin/blob/main/skills/storage-get/SKILL.md">https://github.com&#x2F;crawlbase&#x2F;crawlbase-codex-plugin&#x2F;blob&#x2F;main&#x2F;skills&#x2F;storage-get&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 以JSON、HTML或Markdown格式从Crawlbase云存储中检索存储的页面</p>
+<p><strong>适用时机:</strong> 稍后在不再次发起爬虫请求的情况下重新读取已爬取的页面 将存储的HTML页面转换为Markdown进行摘要 检索存储在JS令牌隔离区中的JS渲染页面 当rid未知时，通过其原始URL查找已存储的页面</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>When to use</li>
+<li>Usage</li>
+<li>Example prompts</li>
+</ul>
+<hr>
+<p><a id="skill-5f86cbd3"></a></p>
+<h3 id="d1vai-d1v"><a href="#d1vai-d1v" class="headerlink" title="d1vai&#x2F;d1v"></a>d1vai&#x2F;d1v</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/d1vai/d1v-cli/blob/main/skills/d1v/SKILL.md">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/d1vai/d1v-cli/blob/main/skills/d1v/SKILL.md">https://github.com&#x2F;d1vai&#x2F;d1v-cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;d1v&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用经过验证的预览和已确认的生产发布部署网页项目</p>
+<p><strong>适用时机:</strong> 当任务涉及D1V认证、项目绑定、工作区同步、容器命令、环境元数据、预览部署、部署状态或用户确认的生产发布时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>d1v CLI</li>
+<li>Safety</li>
+<li>Authenticate and discover</li>
+<li>Bind a local workspace</li>
+<li>Run commands in a workspace</li>
+<li>Environment metadata</li>
+<li>Deployments</li>
+<li>Local runtime</li>
+<li>References</li>
+</ul>
+<hr>
+<p><a id="skill-983cc6b7"></a></p>
+<h3 id="datadog-labs-dd-monitors"><a href="#datadog-labs-dd-monitors" class="headerlink" title="datadog-labs&#x2F;dd-monitors"></a>datadog-labs&#x2F;dd-monitors</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/datadog-labs/skills/dd-monitors">Skills by Datadog Labs</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/datadog-labs/agent-skills/blob/main/dd-monitors/SKILL.md">https://github.com&#x2F;datadog-labs&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;dd-monitors&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过 pup CLI 管理 Datadog 监控器</p>
+<p><strong>适用时机:</strong> 从包含适当阈值的 JSON 文件中创建新的指标警报 审计监控器以查找缺少团队所有权标签的监控器 按特定团队或服务标签筛选所有监控器 在计划部署前安排停机窗口 检查哪些监控器处于翻转状态并收紧其评估窗口</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Datadog Monitors</li>
+<li>Prerequisites</li>
+<li>Command Execution Order (Token-Efficient)</li>
+<li>Quick Start</li>
+<li>Common Operations</li>
+<li>List Monitors</li>
+<li>Get Monitor</li>
+<li>Create Monitor</li>
+<li>Silence Alerts (Downtime)</li>
+<li>Monitor Creation Best Practices</li>
+<li>1. Avoid Alert Fatigue</li>
+<li>2. Use Proper Scoping</li>
+<li>3. Set Recovery Thresholds</li>
+<li>4. Include Context in Messages</li>
+<li>NEVER Delete Monitors Directly</li>
+<li>Monitor Types</li>
+</ul>
+<hr>
+<p><a id="skill-b06f9b1c"></a></p>
+<h3 id="expo-expo-cicd-workflows"><a href="#expo-expo-cicd-workflows" class="headerlink" title="expo&#x2F;expo-cicd-workflows"></a>expo&#x2F;expo-cicd-workflows</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/expo/skills/expo-cicd-workflows">Skills by Expo Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/expo/skills/blob/main/README.md">https://github.com&#x2F;expo&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> Expo项目的 CI&#x2F;CD 工作流程</p>
+<p><strong>适用时机:</strong> 为 React Native 应用从头开始编写新的 EAS 工作流 YAML 文件 添加仅在构建任务成功后执行的部署步骤 配置推送事件或手动调度的工作流触发器 调试工作流在进行结构化验证时出现晦涩错误 设置 iOS 和 Android 的并行构建任务，使其在单个工作流文件中运行</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>How It Works</li>
+<li>Installation</li>
+<li>Skills CLI</li>
+<li>Claude Code Plugin</li>
+<li>Codex Plugin</li>
+<li>Updating</li>
+<li>Try It</li>
+<li>Skills Included</li>
+<li>Start Here</li>
+<li>Framework (open source)</li>
+<li>Services &amp; paid distribution</li>
+<li>Experimental</li>
+<li>Expo MCP Server</li>
+<li>FAQ</li>
+<li>Which AI coding agents are supported?</li>
+<li>Should I install the skills or the plugin?</li>
+</ul>
+<hr>
+<p><a id="skill-e68b181c"></a></p>
+<h3 id="expo-expo-deployment"><a href="#expo-expo-deployment" class="headerlink" title="expo&#x2F;expo-deployment"></a>expo&#x2F;expo-deployment</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/expo/skills/expo-deployment">Skills by Expo Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/expo/skills/blob/main/README.md">https://github.com&#x2F;expo&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 部署Expo应用程序到生产环境</p>
+<p><strong>适用时机:</strong> 将 iOS 构建提交至 TestFlight 进行测试版审查 代码合并至主分支时运行自动 Play Store 发布 在 Web 应用合并请求中生成预览 URL 在 iOS 和 Android 之间远程管理构建版本号 设置一个单一的 eas.json 配置，以处理平台构建和提交</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>How It Works</li>
+<li>Installation</li>
+<li>Skills CLI</li>
+<li>Claude Code Plugin</li>
+<li>Codex Plugin</li>
+<li>Updating</li>
+<li>Try It</li>
+<li>Skills Included</li>
+<li>Start Here</li>
+<li>Framework (open source)</li>
+<li>Services &amp; paid distribution</li>
+<li>Experimental</li>
+<li>Expo MCP Server</li>
+<li>FAQ</li>
+<li>Which AI coding agents are supported?</li>
+<li>Should I install the skills or the plugin?</li>
+</ul>
+<hr>
+<p><a id="skill-25b0d2dc"></a></p>
+<h3 id="expo-native-data-fetching"><a href="#expo-native-data-fetching" class="headerlink" title="expo&#x2F;native-data-fetching"></a>expo&#x2F;native-data-fetching</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/expo/skills/native-data-fetching">Skills by Expo Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/expo/skills/blob/main/README.md">https://github.com&#x2F;expo&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 网络请求、API调用、缓存和离线支持</p>
+<p><strong>适用时机:</strong> 为 Expo 应用设置带有 staleTime 和重试配置的 React Query 使用 expo-secure-store 存储和刷新身份验证令牌 设备断线时自动暂停和恢复查询 为开发和生产构建配置独立的 API 基础 URL 当组件卸载时取消在飞行中的获取请求</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>How It Works</li>
+<li>Installation</li>
+<li>Skills CLI</li>
+<li>Claude Code Plugin</li>
+<li>Codex Plugin</li>
+<li>Updating</li>
+<li>Try It</li>
+<li>Skills Included</li>
+<li>Start Here</li>
+<li>Framework (open source)</li>
+<li>Services &amp; paid distribution</li>
+<li>Experimental</li>
+<li>Expo MCP Server</li>
+<li>FAQ</li>
+<li>Which AI coding agents are supported?</li>
+<li>Should I install the skills or the plugin?</li>
+</ul>
+<hr>
+<p><a id="skill-7d44ee41"></a></p>
+<h3 id="firebase-firebase-app-hosting-basics"><a href="#firebase-firebase-app-hosting-basics" class="headerlink" title="firebase&#x2F;firebase-app-hosting-basics"></a>firebase&#x2F;firebase-app-hosting-basics</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/firebase/skills/firebase-app-hosting-basics">Skills by Firebase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/firebase/agent-skills/blob/main/skills/firebase-app-hosting-basics/SKILL.md">https://github.com&#x2F;firebase&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;firebase-app-hosting-basics&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 部署和管理全栈Web应用程序（Next.js、Angular等）</p>
+<p><strong>适用时机:</strong> 在部署 Next.js&#x2F;Angular 应用、配置 apphosting.yaml 或 firebase.json 应用托管块、管理密钥、设置 GitHub CI&#x2F;CD 或配置 Blaze 计费要求时使用。不要用于经典静态网站托管、Auth、Firestore、Crashlytics 或 Xcode。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>App Hosting Basics</li>
+<li>Description</li>
+<li>Hosting vs App Hosting</li>
+<li>Deploying to App Hosting</li>
+<li>Deploy from Source</li>
+<li>Automated deployment via GitHub (CI&#x2F;CD)</li>
+<li>Emulation</li>
+</ul>
+<hr>
+<p><a id="skill-306466a0"></a></p>
+<h3 id="firebase-firebase-data-connect-basics"><a href="#firebase-firebase-data-connect-basics" class="headerlink" title="firebase&#x2F;firebase-data-connect-basics"></a>firebase&#x2F;firebase-data-connect-basics</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/firebase/skills/firebase-data-connect-basics">Skills by Firebase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/firebase/agent-skills/blob/main/skills/firebase-data-connect-basics/SKILL.md">https://github.com&#x2F;firebase&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;firebase-data-connect-basics&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 构建由Cloud SQL支持的Firebase数据连接后端</p>
+<p><strong>适用时机:</strong> 在设计包含表和关系的结构化查询语言（Schema）时，编写授权查询和变更语句时，配置实时数据更新时，或生成类型安全 SDK 时使用。当您需要与 Firebase 结合使用关系型数据库时，或当用户提及 SQL Connect 或 Data Connect 时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Firebase SQL Connect</li>
+<li>Project Structure</li>
+<li>Key Tools for Validation</li>
+<li>Operation Strategies: GraphQL vs. Native SQL</li>
+<li>Development Workflow</li>
+<li>1. Define Data Model (`schema&#x2F;schema.gql`)</li>
+<li>2. Define Authorized Operations (`connector&#x2F;queries.gql`, `connector&#x2F;mutations.gql`)</li>
+<li>3. Use type-safe SDK in your apps</li>
+<li>Feature Capability Map</li>
+<li>Deployment &amp; CLI</li>
+<li>How to initialize SQL Connect in a Firebase project</li>
+<li>How to build apps using SQL Connect locally</li>
+<li>How to deploy SQL Connect to Cloud SQL</li>
+<li>Examples</li>
+</ul>
+<hr>
+<p><a id="skill-3f2bd14e"></a></p>
+<h3 id="firebase-firebase-firestore-standard"><a href="#firebase-firebase-firestore-standard" class="headerlink" title="firebase&#x2F;firebase-firestore-standard"></a>firebase&#x2F;firebase-firestore-standard</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/firebase/skills/firebase-firestore-standard">Skills by Firebase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/firebase/agent-skills/blob/main/README.md">https://github.com&#x2F;firebase&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 关于Cloud Firestore标准版完整指南</p>
+<p><strong>适用时机:</strong> 为 Firebase 项目设置新的 Firestore 数据库 编写限制用户角色读取&#x2F;写入访问权限的安全规则 使用模块化 SDK 从网页应用查询 Firestore 集合 为多字段查询创建复合索引 将更新后的安全规则部署到生产环境中的 Firestore 实例</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Installation</li>
+<li>Option 1: Agent Skills CLI</li>
+<li>Option 2: Gemini CLI Extension</li>
+<li>Option 3: Claude Plugin</li>
+<li>Option 4: Codex Plugin</li>
+<li>Option 5: Kimi Plugin</li>
+<li>Option 6: Manual Set Up</li>
+<li>Option 7: Local Path via Agent Skills CLI</li>
+<li>Option 8: Local Development (Live Symlinking)</li>
+<li>🤝 Contributing</li>
+<li>📄 License</li>
+</ul>
+<hr>
+<p><a id="skill-16c782d5"></a></p>
+<h3 id="firebase-firebase-hosting-basics"><a href="#firebase-firebase-hosting-basics" class="headerlink" title="firebase&#x2F;firebase-hosting-basics"></a>firebase&#x2F;firebase-hosting-basics</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/firebase/skills/firebase-hosting-basics">Skills by Firebase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/firebase/agent-skills/blob/main/skills/firebase-hosting-basics/SKILL.md">https://github.com&#x2F;firebase&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;firebase-hosting-basics&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 部署静态网站、SPA 和微服务到 Firebase 托管服务</p>
+<p><strong>适用时机:</strong> 在部署静态站点&#x2F;SPA、设置自定义域名、配置 firebase.json 托管设置（重定向、重写、头文件、多站点）或管理预览渠道时使用。不要用于 Firebase App Hosting（Next.js&#x2F;SSR）、Auth、Firestore 查询&#x2F;规则、Data Connect 或 Crashlytics。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>hosting-basics</li>
+<li>Overview</li>
+<li>Hosting vs App Hosting</li>
+<li>Instructions</li>
+<li>1. Configuration (`firebase.json`)</li>
+<li>2. Deploying</li>
+<li>3. Emulation</li>
+</ul>
+<hr>
+<p><a id="skill-9043c539"></a></p>
+<h3 id="garrytan-land-and-deploy"><a href="#garrytan-land-and-deploy" class="headerlink" title="garrytan&#x2F;land-and-deploy"></a>garrytan&#x2F;land-and-deploy</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/garrytan/skills/land-and-deploy">Skills by Garry Tan (gstack)</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/garrytan/gstack/blob/main/land-and-deploy/SKILL.md">https://github.com&#x2F;garrytan&#x2F;gstack&#x2F;blob&#x2F;main&#x2F;land-and-deploy&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 合并PR，等待CI并部署，验证生产健康状况</p>
+<p><strong>适用时机:</strong> 合并PR并观察GitHub Actions部署工作流是否完成 在用户察觉之前捕获故障的生产部署 在审查、测试和变更日志更新上执行合并前准备性检查 在推送后验证Vercel或Fly.io应用是否加载正确 在 Canary 检查失败时使用撤销提交撤销不良合并</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Shared preamble (load first)</li>
+<li>Preamble (run first)</li>
+<li>Question Tuning (skip entirely if `QUESTION_TUNING: false`)</li>
+<li>Repo Ownership — See Something, Say Something</li>
+<li>Search Before Building</li>
+<li>Telemetry (run last)</li>
+<li>Step 0: Detect platform and base branch</li>
+<li>&#x2F;land-and-deploy — Merge, Deploy, Verify</li>
+<li>User-invocable</li>
+<li>Arguments</li>
+<li>Automation and approval</li>
+<li>Voice &amp; Tone</li>
+<li>Section index — Read each section when its situation applies</li>
+<li>Step 1: Pre-flight</li>
+<li>Step 1.5: First-run dry-run validation</li>
+<li>Step 2: Pre-merge checks</li>
+</ul>
+<hr>
+<p><a id="skill-20bc9850"></a></p>
+<h3 id="garrytan-setup-deploy"><a href="#garrytan-setup-deploy" class="headerlink" title="garrytan&#x2F;setup-deploy"></a>garrytan&#x2F;setup-deploy</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/garrytan/skills/setup-deploy">Skills by Garry Tan (gstack)</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/garrytan/gstack/blob/main/setup-deploy/SKILL.md">https://github.com&#x2F;garrytan&#x2F;gstack&#x2F;blob&#x2F;main&#x2F;setup-deploy&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 部署配置器：一次性设置&#x2F;land-and-deploy</p>
+<p><strong>适用时机:</strong> 首次在 Fly.io 项目上设置 &#x2F;land-and-deploy 从 Render 切换到 Vercel 后重新配置部署设置 在通过 GitHub Actions 进行部署的现有项目中添加健康检查 URL 配置带有自定义部署脚本的单仓库的合并后部署验证 更新将 Render 应用迁移到自定义域名后的生产 URL</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Shared preamble (load first)</li>
+<li>Preamble (run first)</li>
+<li>Question Tuning (skip entirely if `QUESTION_TUNING: false`)</li>
+<li>Telemetry (run last)</li>
+<li>Third-Party Web Actions</li>
+<li>&#x2F;setup-deploy — Configure Deployment for gstack</li>
+<li>Instructions</li>
+<li>Step 1: Check existing configuration</li>
+<li>Step 2: Detect platform</li>
+<li>Step 3: Platform-specific setup</li>
+<li>Step 4: Write configuration</li>
+<li>Step 5: Verify</li>
+<li>Step 6: Summary</li>
+<li>Important Rules</li>
+</ul>
+<hr>
+<p><a id="skill-a35cbcfb"></a></p>
+<h3 id="getsentry-sentry-cloudflare-sdk"><a href="#getsentry-sentry-cloudflare-sdk" class="headerlink" title="getsentry&#x2F;sentry-cloudflare-sdk"></a>getsentry&#x2F;sentry-cloudflare-sdk</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/getsentry/skills/sentry-cloudflare-sdk">Skills by Sentry team for their dev team.</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/getsentry/sentry-for-ai/blob/main/README.md">https://github.com&#x2F;getsentry&#x2F;sentry-for-ai&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> Cloudflare Workers、Pages、Durable Objects、Queues 和工作流程的完整 Sentry SDK 设置</p>
+<p><strong>适用时机:</strong> 将 @sentry&#x2F;cloudflare 添加到基于 Hono 的 Worker 中 对持久对象类进行追踪式微调 监控队列消费者 Worker 中的错误 将 Sentry 连接到 Cloudflare Pages Functions 应用 在基于 Workers 的 LLM 中继器上启用 AI 监控</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Sentry for AI</li>
+<li>What You Can Do</li>
+<li>Distribution</li>
+<li>Build it yourself</li>
+<li>Skills</li>
+<li>Core</li>
+<li>Feature Setup</li>
+<li>Reference Library</li>
+<li>Prerequisites</li>
+<li>Contributing</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-18709755"></a></p>
+<h3 id="getsentry-sentry-feature-setup"><a href="#getsentry-sentry-feature-setup" class="headerlink" title="getsentry&#x2F;sentry-feature-setup"></a>getsentry&#x2F;sentry-feature-setup</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/getsentry/skills/sentry-feature-setup">Skills by Sentry team for their dev team.</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/getsentry/sentry-for-ai/blob/main/README.md">https://github.com&#x2F;getsentry&#x2F;sentry-for-ai&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 配置高级Sentry功能：AI监控、OTel管道和警报</p>
+<p><strong>适用时机:</strong> 为现有 Sentry 项目启用 AI 监控 将现有 OTel 集成器连接到 Sentry 为已配置的项目添加警报规则和通知 将高级功能层叠到已配置的 SDK 中 统一多个 Sentry 项目中的功能发布</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Sentry for AI</li>
+<li>What You Can Do</li>
+<li>Distribution</li>
+<li>Build it yourself</li>
+<li>Skills</li>
+<li>Core</li>
+<li>Feature Setup</li>
+<li>Reference Library</li>
+<li>Prerequisites</li>
+<li>Contributing</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-3d068a80"></a></p>
+<h3 id="getsentry-sentry-setup-ai-monitoring"><a href="#getsentry-sentry-setup-ai-monitoring" class="headerlink" title="getsentry&#x2F;sentry-setup-ai-monitoring"></a>getsentry&#x2F;sentry-setup-ai-monitoring</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/getsentry/skills/sentry-setup-ai-monitoring">Skills by Sentry team for their dev team.</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/getsentry/sentry-for-ai/blob/main/README.md">https://github.com&#x2F;getsentry&#x2F;sentry-for-ai&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 工具 OpenAI、Anthropic、Vercel AI、LangChain、Google GenAI 和 Pydantic AI</p>
+<p><strong>适用时机:</strong> 在生产环境中为 OpenAI 或 Anthropic 客户端配置 Sentry 监控，使用 LangChain 代理；将 Vercel AI SDK 调用连接到 Sentry 追踪；跟踪 Pydantic AI 代理是否因错误或延迟而运行；在混合提供商应用中标准化 LLM 监控。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Sentry for AI</li>
+<li>What You Can Do</li>
+<li>Distribution</li>
+<li>Build it yourself</li>
+<li>Skills</li>
+<li>Core</li>
+<li>Feature Setup</li>
+<li>Reference Library</li>
+<li>Prerequisites</li>
+<li>Contributing</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-d21f66c6"></a></p>
+<h3 id="google-cloud-agent-platform-skill-registry"><a href="#google-cloud-agent-platform-skill-registry" class="headerlink" title="google&#x2F;cloud&#x2F;agent-platform-skill-registry"></a>google&#x2F;cloud&#x2F;agent-platform-skill-registry</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/agent-platform-skill-registry">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/agent-platform-skill-registry/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;agent-platform-skill-registry&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 与双子座企业代理人平台技能注册表交互，以创建和搜索可用的技能。</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：与Gemini企业代理平台技能注册表交互，以创建和搜索可用技能。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Skill Registry</li>
+<li>Attribution</li>
+<li>Core Capabilities</li>
+<li>Core Directives</li>
+<li>Prerequisites &amp; Authentication</li>
+<li>Library &amp; Authentication</li>
+<li>Environment Variables</li>
+<li>Quickstart</li>
+<li>Operations</li>
+</ul>
+<hr>
+<p><a id="skill-acde25c7"></a></p>
+<h3 id="google-cloud-alloydb-basics"><a href="#google-cloud-alloydb-basics" class="headerlink" title="google&#x2F;cloud&#x2F;alloydb-basics"></a>google&#x2F;cloud&#x2F;alloydb-basics</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/alloydb-basics">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/alloydb-basics/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;alloydb-basics&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 管理用于 PostgreSQL 的 AlloyDB 的集群、实例和备份，并与 AlloyDB 模型上下文协议 (MCP) 工具集成，以实现自动数据库操作。</p>
+<p><strong>适用时机:</strong> 用于创建、配置或管理 AlloyDB 数据库。请勿用于普通 PostgreSQL 实例（例如 Cloud SQL）或其他 GCP 数据库。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>AlloyDB Basics</li>
+<li>Attribution</li>
+<li>Quick Start</li>
+<li>Reference Directory</li>
+<li>Directives for Agents</li>
+<li>Supporting Links</li>
+</ul>
+<hr>
+<p><a id="skill-5eb5d898"></a></p>
+<h3 id="google-cloud-bigquery-basics"><a href="#google-cloud-bigquery-basics" class="headerlink" title="google&#x2F;cloud&#x2F;bigquery-basics"></a>google&#x2F;cloud&#x2F;bigquery-basics</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/bigquery-basics">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/bigquery-basics/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;bigquery-basics&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 管理BigQuery中的数据集、表格和工作，并与BigQuery ML和Gemini集成，用于高级数据分析和基于人工智能的洞察。</p>
+<p><strong>适用时机:</strong> 当您需要与BigQuery交互、运行SQL查询、管理BigQuery资源（数据集、表、视图）或进行基本的数据吞噬和分析时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>BigQuery Basics</li>
+<li>Attribution</li>
+<li>Setup and Basic Usage</li>
+<li>Reference Directory</li>
+<li>Related Skills</li>
+</ul>
+<hr>
+<p><a id="skill-2ba890c0"></a></p>
+<h3 id="google-cloud-cloud-run-basics"><a href="#google-cloud-cloud-run-basics" class="headerlink" title="google&#x2F;cloud&#x2F;cloud-run-basics"></a>google&#x2F;cloud&#x2F;cloud-run-basics</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/cloud-run-basics">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/cloud-run-basics/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;cloud-run-basics&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 管理云运行服务、工作和工作者池。</p>
+<p><strong>适用时机:</strong> 当您需要部署响应HTTP请求（服务）的应用、运行事件触发或定时任务（工作任务）或处理始终在线的基于拉取的工作背景处理（工作者池）时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Cloud Run Basics</li>
+<li>Attribution</li>
+<li>Prerequisites</li>
+<li>Required roles</li>
+<li>Deploy a Cloud Run service</li>
+<li>Deploy a container image to Cloud Run</li>
+<li>Supported container images</li>
+<li>Deploy from source code</li>
+<li>Create and execute a Cloud Run job</li>
+<li>Deploy a worker pool</li>
+<li>Deploy a container image</li>
+<li>Deploy a worker pool from source</li>
+<li>What to do if a deployment fails:</li>
+<li>Reference Directory</li>
+</ul>
+<hr>
+<p><a id="skill-27c4ffab"></a></p>
+<h3 id="google-cloud-cloud-sql-basics"><a href="#google-cloud-cloud-sql-basics" class="headerlink" title="google&#x2F;cloud&#x2F;cloud-sql-basics"></a>google&#x2F;cloud&#x2F;cloud-sql-basics</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/cloud-sql-basics">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/cloud-sql-basics/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;cloud-sql-basics&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 此文件生成或解释云SQL资源。</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：此文件生成或解释 Cloud SQL 资源。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Cloud SQL Basics</li>
+<li>Attribution</li>
+<li>Prerequisites</li>
+<li>Quick Start (PostgreSQL)</li>
+<li>Reference Directory</li>
+</ul>
+<hr>
+<p><a id="skill-1ba2f5f5"></a></p>
+<h3 id="google-cloud-firebase-basics"><a href="#google-cloud-firebase-basics" class="headerlink" title="google&#x2F;cloud&#x2F;firebase-basics"></a>google&#x2F;cloud&#x2F;firebase-basics</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/firebase-basics">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/firebase-basics/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;firebase-basics&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 无论您是在开发使用Firebase产品的项目还是开发移动或网页应用程序，都请使用此技能。</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：在任何使用Firebase产品或服务的项目中工作时，请使用此技能，特别是移动或网页应用程序。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Firebase Basics</li>
+<li>Usage Attribution</li>
+<li>Prerequisites</li>
+<li>Firebase Usage Principles</li>
+<li>References</li>
+<li>Common Issues</li>
+</ul>
+<hr>
+<p><a id="skill-17b0e56c"></a></p>
+<h3 id="google-cloud-gemini-agents-api"><a href="#google-cloud-gemini-agents-api" class="headerlink" title="google&#x2F;cloud&#x2F;gemini-agents-api"></a>google&#x2F;cloud&#x2F;gemini-agents-api</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/gemini-agents-api">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/gemini-agents-api/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;gemini-agents-api&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 管理Gemini企业代理平台上的自定义代理资源。</p>
+<p><strong>适用时机:</strong> 当用户在执行对话之前想程序化地创建、配置、列出、更新或删除具有状态的、由服务器管理的Agent资源（包括挂载的文件、技能和工具）时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Gemini Enterprise Agent Platform - Managed Agents API Skill</li>
+<li>Attribution</li>
+<li>1. Authentication &amp; Setup</li>
+<li>1. Setup Environment Variables</li>
+<li>2. Endpoint URL</li>
+<li>2. Programmatic Agent Management (Control Plane CRUD)</li>
+<li>1. Create Agent (Long-Running Operation)</li>
+<li>2. Polling the LRO Status</li>
+<li>3. Get Agent</li>
+<li>4. List Agents</li>
+<li>5. Update Agent (Patching Configuration)</li>
+<li>6. Delete Agent</li>
+<li>3. Interacting with Custom Agents (Data Plane)</li>
+</ul>
+<hr>
+<p><a id="skill-4cd78682"></a></p>
+<h3 id="google-cloud-gemini-api"><a href="#google-cloud-gemini-api" class="headerlink" title="google&#x2F;cloud&#x2F;gemini-api"></a>google&#x2F;cloud&#x2F;gemini-api</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/gemini-api">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/gemini-api/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;gemini-api&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用Google Gen AI SDK指导在Agent平台上的Gemini API的使用。</p>
+<p><strong>适用时机:</strong> 适用于用户询问在企业环境中使用Gemini，或明确提及Vertex AI、Google Cloud或Agent Platform时使用。指导使用Google Gen AI SDK在Agent Platform上使用Gemini API。涵盖SDK使用方法（Python、JS&#x2F;TS、Go、Java、C#），以及多模态输入、工具、媒体生成、缓存、批次预测和Live API等功能。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Gemini API in Agent Platform</li>
+<li>Attribution</li>
+<li>Core Directives</li>
+<li>SDKs</li>
+<li>Authentication &amp; Configuration</li>
+<li>Application Default Credentials (ADC)</li>
+<li>Agent Platform in Express Mode</li>
+<li>Initialization</li>
+<li>Models</li>
+<li>Quick Start</li>
+<li>Python</li>
+<li>TypeScript&#x2F;JavaScript</li>
+<li>Go</li>
+<li>Java</li>
+<li>C#&#x2F;.NET</li>
+<li>API spec &amp; Documentation (source of truth)</li>
+</ul>
+<hr>
+<p><a id="skill-da4d176e"></a></p>
+<h3 id="google-cloud-gemini-interactions-api"><a href="#google-cloud-gemini-interactions-api" class="headerlink" title="google&#x2F;cloud&#x2F;gemini-interactions-api"></a>google&#x2F;cloud&#x2F;gemini-interactions-api</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/gemini-interactions-api">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/gemini-interactions-api/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;gemini-interactions-api&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 指导在Gemini企业代理平台上的Gemini交互API的使用。</p>
+<p><strong>适用时机:</strong> 当用户想在Agent平台上使用具有状态的、由服务器管理的Interactions API进行多轮对话、后台执行、流式处理、结构化输出和函数调用时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Gemini Interactions API Skill</li>
+<li>Attribution</li>
+<li>1. Authentication</li>
+<li>2. Client Initialization</li>
+<li>Option A: Environment Variables (Recommended)</li>
+<li>Option B: Explicit Inline Parameters</li>
+<li>Option C: Express Mode (API Key)</li>
+<li>3. Core Interactions API Usage</li>
+<li>Quick Start (Single-Turn)</li>
+<li>Stateful Conversation (Multi-Turn)</li>
+<li>Real-Time Streaming</li>
+<li>Structured Output (Pydantic &#x2F; Polymorphic `response_format`)</li>
+<li>Function Calling (Agent Tool Use)</li>
+<li>Agents &amp; Long-Running Tasks</li>
+<li>4. Accessing the Interactions API via REST</li>
+<li>5. Data Model &amp; Step Types Reference</li>
+</ul>
+<hr>
+<p><a id="skill-aeffb5b3"></a></p>
+<h3 id="google-cloud-gke-basics"><a href="#google-cloud-gke-basics" class="headerlink" title="google&#x2F;cloud&#x2F;gke-basics"></a>google&#x2F;cloud&#x2F;gke-basics</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/gke-basics">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/gke-basics/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;gke-basics&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用黄金路径Autopilot配置计划、创建和配置生产准备的Google Kubernetes Engine（GKE）集群。</p>
+<p><strong>适用时机:</strong> 在创建 GKE 集群、获取 kubectl 凭据或在自动驾驶模式和标准模式之间进行选择时使用。不要用于工作负载身份（使用 gke-workload-identity）、GKE 网络（使用 gke-networking）、安全加固（使用 gke-platform-security 或 gke-workload-security）或集群升级（使用 gke-upgrades）。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>GKE Basics &amp; Critical Gotchas</li>
+<li>Attribution</li>
+<li>Key Selection Rules: Autopilot vs. Standard</li>
+<li>Critical Gotchas &amp; Best Practices</li>
+<li>Reference Directory</li>
+</ul>
+<hr>
+<p><a id="skill-b1f562be"></a></p>
+<h3 id="google-cloud-google-cloud-networking-observability"><a href="#google-cloud-google-cloud-networking-observability" class="headerlink" title="google&#x2F;cloud&#x2F;google-cloud-networking-observability"></a>google&#x2F;cloud&#x2F;google-cloud-networking-observability</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/google-cloud-networking-observability">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/google-cloud-networking-observability/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;google-cloud-networking-observability&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过分析日志、指标和诊断来调查Google Cloud网络问题。</p>
+<p><strong>适用时机:</strong> 用于调查丢弃的网络流量、数据包丢弃、丢弃原因、VPC流量日志（包括私有服务连接&#x2F;PSC、无服务器&#x2F;App Engine直接VPC和成本估算）、NAT、防火墙或威胁日志，查询延迟和吞吐量指标，或运行连接性测试以进行路径诊断。不要用于通用虚拟机管理或非可观测任务。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Google Cloud Networking Observability Expert</li>
+<li>Attribution</li>
+<li>🛑 Core Directive: Results First</li>
+<li>Log &amp; Telemetry Overview</li>
+<li>Procedures</li>
+<li>0. Log Source Preference</li>
+<li>1. Tool Selection &amp; Discovery</li>
+<li>2. Schema Verification &amp; Error Recovery</li>
+<li>3. Analysis Guides (Read Only When Needed)</li>
+<li>Boundaries (CRITICAL)</li>
+</ul>
+<hr>
+<p><a id="skill-2a661b94"></a></p>
+<h3 id="google-cloud-google-cloud-recipe-onboarding"><a href="#google-cloud-google-cloud-recipe-onboarding" class="headerlink" title="google&#x2F;cloud&#x2F;google-cloud-recipe-onboarding"></a>google&#x2F;cloud&#x2F;google-cloud-recipe-onboarding</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/google-cloud-recipe-onboarding">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/google-cloud-recipe-onboarding/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;google-cloud-recipe-onboarding&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 关于开发者在Google Cloud上的第一步的指导，涵盖账户创建、计费设置、项目管理和部署第一个资源。</p>
+<p><strong>适用时机:</strong> 适用于新开发者希望初始化其第一个 Google Cloud 项目、配置计费并验证部署的情况。不要用于企业组织设置（请使用 Google Cloud 设置引导流程进行）。不要用于复杂的多项目架构。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Onboarding to Google Cloud</li>
+<li>Attribution</li>
+<li>Overview</li>
+<li>Prerequisites</li>
+<li>Steps</li>
+<li>Section 1: Verify Host Tooling Setup</li>
+<li>Section 2: Authenticate and Route Session</li>
+<li>Section 3: Select or Instantiate Your Google Cloud Project</li>
+<li>Section 4: Verify and Link Billing</li>
+<li>Section 5: Skill Chaining (Spend Controls &amp; Workloads)</li>
+<li>Validation Logic</li>
+<li>Additional Resources</li>
+</ul>
+<hr>
+<p><a id="skill-48918c2f"></a></p>
+<h3 id="google-cloud-google-cloud-waf-cost-optimization"><a href="#google-cloud-google-cloud-waf-cost-optimization" class="headerlink" title="google&#x2F;cloud&#x2F;google-cloud-waf-cost-optimization"></a>google&#x2F;cloud&#x2F;google-cloud-waf-cost-optimization</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/google-cloud-waf-cost-optimization">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/google-cloud-waf-cost-optimization/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;google-cloud-waf-cost-optimization&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 基于Google Cloud良好架构框架（WAF）为Google Cloud工作负载生成成本优化指导。</p>
+<p><strong>适用时机:</strong> 当用户请求分析 Google Cloud 支出、降低云账单、优化资源配置（例如计算、GKE、存储、数据库）、评估折扣选项（例如 CUDs、SUDs、Spot VMs）或消除闲置容量时使用。不要用于独立产品定价查询或非成本架构设计。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Google Cloud Well-Architected Framework skill for the Cost Optimization pillar</li>
+<li>Attribution</li>
+<li>Overview</li>
+<li>Operational instructions</li>
+<li>Core principles</li>
+<li>Relevant Google Cloud products</li>
+<li>Workload assessment questions</li>
+<li>Validation checklist</li>
+</ul>
+<hr>
+<p><a id="skill-13817618"></a></p>
+<h3 id="google-cloud-google-cloud-waf-operational-excellence"><a href="#google-cloud-google-cloud-waf-operational-excellence" class="headerlink" title="google&#x2F;cloud&#x2F;google-cloud-waf-operational-excellence"></a>google&#x2F;cloud&#x2F;google-cloud-waf-operational-excellence</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/google-cloud-waf-operational-excellence">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/google-cloud-waf-operational-excellence/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;google-cloud-waf-operational-excellence&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 基于Google Cloud Well-Ar...运营卓越支柱中的设计原则和建议，为Google Cloud工作负载生成以运营为重点的指导。</p>
+<p><strong>适用时机:</strong> 当用户询问容量管理、变更管理、事故和问题管理、配置管理、使用基础设施即代码（IaC）进行部署自动化或Google Cloud工作负载的运营健康检查等与操作相关的主题时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Google Cloud Well-Architected Framework skill for the Operational Excellence pillar</li>
+<li>Attribution</li>
+<li>Overview</li>
+<li>Core principles</li>
+<li>Relevant Google Cloud products</li>
+<li>Workload assessment questions</li>
+<li>Validation checklist</li>
+</ul>
+<hr>
+<p><a id="skill-1dd84ac0"></a></p>
+<h3 id="google-cloud-google-cloud-waf-performance-optimization"><a href="#google-cloud-google-cloud-waf-performance-optimization" class="headerlink" title="google&#x2F;cloud&#x2F;google-cloud-waf-performance-optimization"></a>google&#x2F;cloud&#x2F;google-cloud-waf-performance-optimization</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/google-cloud-waf-performance-optimization">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/google-cloud-waf-performance-optimization/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;google-cloud-waf-performance-optimization&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 基于Google Cloud Well...性能优化支柱中的设计原则和建议，为Google Cloud工作负载生成以性能为导向的指导。</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：基于Google Cloud Well...性能优化支柱中的设计原则和建议，为Google Cloud工作负载生成以性能为导向的指导......</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Google Cloud Well-Architected Framework skill for the Performance Optimization pillar</li>
+<li>Attribution</li>
+<li>Overview</li>
+<li>Core principles</li>
+<li>Relevant Google Cloud products</li>
+<li>Workload assessment questions</li>
+<li>Validation checklist</li>
+</ul>
+<hr>
+<p><a id="skill-3883f110"></a></p>
+<h3 id="google-cloud-google-cloud-waf-reliability"><a href="#google-cloud-google-cloud-waf-reliability" class="headerlink" title="google&#x2F;cloud&#x2F;google-cloud-waf-reliability"></a>google&#x2F;cloud&#x2F;google-cloud-waf-reliability</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/google-cloud-waf-reliability">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/google-cloud-waf-reliability/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;google-cloud-waf-reliability&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 基于Google Cloud良好架构框架中的设计原则和建议，为Google Cloud工作负载生成以可靠性为重点的指导。</p>
+<p><strong>适用时机:</strong> 当用户询问与可靠性相关的主题时使用，例如工作负载可用性、为高可用性（HA）或灾难恢复（DR）设计、设置和达到RTO&#x2F;RPO目标、SRE最佳实践、备份策略、多区域故障转网或Google Cloud上的故障容忍架构。不要用于其他“良好架构框架”支柱，如成本优化、运营卓越或安全，也不要用于实际的资源部署和实时故障排除。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Google Cloud Well-Architected Framework skill for the Reliability pillar</li>
+<li>Attribution</li>
+<li>Overview</li>
+<li>Core principles</li>
+<li>Relevant Google Cloud products</li>
+<li>Workload assessment questions</li>
+<li>Validation checklist</li>
+</ul>
+<hr>
+<p><a id="skill-e67dc0e4"></a></p>
+<h3 id="google-cloud-google-cloud-waf-sustainability"><a href="#google-cloud-google-cloud-waf-sustainability" class="headerlink" title="google&#x2F;cloud&#x2F;google-cloud-waf-sustainability"></a>google&#x2F;cloud&#x2F;google-cloud-waf-sustainability</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/tree/main/skills/cloud/google-cloud-waf-sustainability">Skills by Google Cloud</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/google-cloud-waf-sustainability/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;google-cloud-waf-sustainability&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 基于Google Cloud Well-Architected Framework (WAF)中的设计原则和建议，为Google Cloud工作负载生成以可持续性为重点的指导。</p>
+<p><strong>适用时机:</strong> 当用户请求评估、设计或优化 Google Cloud 工作负载以实现可持续性时使用——包括共享责任模型、选择低碳地区（CFE%）、减少资源和 AI&#x2F;ML 能源浪费、设计高效的软件和存储生命周期，或使用 Google Cloud 碳足迹测量和跟踪排放量。不要用于财务成本降低（使用 google-cloud-waf-cost-optimization）、延迟和吞吐量调优（使用 google-cloud-waf-performance-optimization）或高可用性和灾难恢复（使用 google-cloud-waf-reliability）。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Google Cloud Well-Architected Framework skill for the Sustainability pillar</li>
+<li>Attribution</li>
+<li>Overview</li>
+<li>Core principles</li>
+<li>Relevant Google Cloud products</li>
+<li>Workload assessment questions</li>
+<li>Validation checklist</li>
+</ul>
+<hr>
+<p><a id="skill-11d0ddc5"></a></p>
+<h3 id="hashicorp-azure-verified-modules"><a href="#hashicorp-azure-verified-modules" class="headerlink" title="hashicorp&#x2F;azure-verified-modules"></a>hashicorp&#x2F;azure-verified-modules</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/hashicorp/skills/azure-verified-modules">Skills by HashiCorp Team for Terraform</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/hashicorp/agent-skills/blob/main/README.md">https://github.com&#x2F;hashicorp&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> Terraform模块的Azure验证模块（AVM）认证标准</p>
+<p><strong>适用时机:</strong> 提交前检查新Terraform模块是否符合AVM认证 正确为azurerm和azapi设置提供商版本约束 以适当的类型、描述和可为空设置结构化变量 编写避免泄露敏感数据或完整资源对象的输出块 在小版本中引入新资源时添加功能开关变量</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>HashiCorp Agent Skills</li>
+<li>Table of Contents</li>
+<li>Recent Updates</li>
+<li>Migration from Legacy Plugin IDs and Paths</li>
+<li>Install an Individual Skill</li>
+<li>Install a Product Plugin Bundle</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Repository Structure</li>
+<li>Governance and Support</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-fece3fad"></a></p>
+<h3 id="hashicorp-new-terraform-provider"><a href="#hashicorp-new-terraform-provider" class="headerlink" title="hashicorp&#x2F;new-terraform-provider"></a>hashicorp&#x2F;new-terraform-provider</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/hashicorp/skills/new-terraform-provider">Skills by HashiCorp Team for Terraform</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/hashicorp/agent-skills/blob/main/README.md">https://github.com&#x2F;hashicorp&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用插件框架搭建一个新的Terraform提供商项目</p>
+<p><strong>适用时机:</strong> 从干净的目录结构中启动新的Terraform提供商 在不阅读模板文档的情况下连接插件框架入口点 生成一个提供商工作区，该工作区可直接构建并通过测试 添加第二个提供商到仓库中，而不将其与现有工作区混合 使用第一个资源编写之前先建立go.mod和依赖树</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>HashiCorp Agent Skills</li>
+<li>Table of Contents</li>
+<li>Recent Updates</li>
+<li>Migration from Legacy Plugin IDs and Paths</li>
+<li>Install an Individual Skill</li>
+<li>Install a Product Plugin Bundle</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Repository Structure</li>
+<li>Governance and Support</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-10e1fc39"></a></p>
+<h3 id="hashicorp-provider-actions"><a href="#hashicorp-provider-actions" class="headerlink" title="hashicorp&#x2F;provider-actions"></a>hashicorp&#x2F;provider-actions</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/hashicorp/skills/provider-actions">Skills by HashiCorp Team for Terraform</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/hashicorp/agent-skills/blob/main/README.md">https://github.com&#x2F;hashicorp&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用插件框架实现Terraform提供商操作</p>
+<p><strong>适用时机:</strong> 在资源配置完成后添加创建后的操作，以触发下游服务 通过连接 before_update 操作来在更新运行前验证资源状态 在操作的 Invoke 方法内部，通过异步 API 轮询直至完成 为需要 Terraform 1.14.0 或更高版本的操作编写验收测试 使用所需的前置内容、示例和变更日志条目来文档化新操作</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>HashiCorp Agent Skills</li>
+<li>Table of Contents</li>
+<li>Recent Updates</li>
+<li>Migration from Legacy Plugin IDs and Paths</li>
+<li>Install an Individual Skill</li>
+<li>Install a Product Plugin Bundle</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Repository Structure</li>
+<li>Governance and Support</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-b10907ef"></a></p>
+<h3 id="hashicorp-provider-resources"><a href="#hashicorp-provider-resources" class="headerlink" title="hashicorp&#x2F;provider-resources"></a>hashicorp&#x2F;provider-resources</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/hashicorp/skills/provider-resources">Skills by HashiCorp Team for Terraform</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/hashicorp/agent-skills/blob/main/README.md">https://github.com&#x2F;hashicorp&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用插件框架实现Terraform提供商资源和数据源</p>
+<p><strong>适用时机:</strong> 为新的Terraform资源编写创建&#x2F;读取&#x2F;更新&#x2F;删除处理器 使用验证器和计划修饰器设计结构体属性 为现有资源添加导入支持 编写接受测试，包括用于漂移检测的消失测试 实现查找函数，并采用适当的未找到错误处理</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>HashiCorp Agent Skills</li>
+<li>Table of Contents</li>
+<li>Recent Updates</li>
+<li>Migration from Legacy Plugin IDs and Paths</li>
+<li>Install an Individual Skill</li>
+<li>Install a Product Plugin Bundle</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Repository Structure</li>
+<li>Governance and Support</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-7f7cd93e"></a></p>
+<h3 id="hashicorp-provider-test-patterns"><a href="#hashicorp-provider-test-patterns" class="headerlink" title="hashicorp&#x2F;provider-test-patterns"></a>hashicorp&#x2F;provider-test-patterns</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/hashicorp/skills/provider-test-patterns">Skills by HashiCorp Team for Terraform</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/hashicorp/agent-skills/blob/main/README.md">https://github.com&#x2F;hashicorp&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用terraform-plugin-testing的Terraform提供商的接受测试模式</p>
+<p><strong>适用时机:</strong> 从头开始编写新Terraform提供商资源的接受测试 调试因ImportStateVerify失败而出现故障的导入测试 添加一个在修复特定GitHub问题之前重现该问题的回归测试 在现有测试中替换旧有的TestCheckFunc断言为ConfigStateChecks 测试在应用后不应出现在状态中的临时资源</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>HashiCorp Agent Skills</li>
+<li>Table of Contents</li>
+<li>Recent Updates</li>
+<li>Migration from Legacy Plugin IDs and Paths</li>
+<li>Install an Individual Skill</li>
+<li>Install a Product Plugin Bundle</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Repository Structure</li>
+<li>Governance and Support</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-a9267a5a"></a></p>
+<h3 id="hashicorp-refactor-module"><a href="#hashicorp-refactor-module" class="headerlink" title="hashicorp&#x2F;refactor-module"></a>hashicorp&#x2F;refactor-module</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/hashicorp/skills/refactor-module">Skills by HashiCorp Team for Terraform</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/hashicorp/agent-skills/blob/main/README.md">https://github.com&#x2F;hashicorp&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 将单一的Terraform配置转换为可重用的模块</p>
+<p><strong>适用时机:</strong> 将500行的主体tf文件拆分为独立的VPC、计算和数据模块 将资源提取到模块后迁移状态引用 在之前使用无类型字符串的模块中添加类型化变量验证 生成已移动的块以重新定位状态，而不会破坏和重新创建资源 对模块输出进行结构化，以便下游模块可以引用VPC ID和子网映射</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>HashiCorp Agent Skills</li>
+<li>Table of Contents</li>
+<li>Recent Updates</li>
+<li>Migration from Legacy Plugin IDs and Paths</li>
+<li>Install an Individual Skill</li>
+<li>Install a Product Plugin Bundle</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Repository Structure</li>
+<li>Governance and Support</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-ab103cf0"></a></p>
+<h3 id="hashicorp-run-acceptance-tests"><a href="#hashicorp-run-acceptance-tests" class="headerlink" title="hashicorp&#x2F;run-acceptance-tests"></a>hashicorp&#x2F;run-acceptance-tests</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/hashicorp/skills/run-acceptance-tests">Skills by HashiCorp Team for Terraform</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/hashicorp/agent-skills/blob/main/README.md">https://github.com&#x2F;hashicorp&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用Go的测试运行器运行Terraform提供商的接受测试</p>
+<p><strong>适用时机:</strong> 按名称运行单个Terraform提供商接受测试 使用详细输出和调试日志调试失败的`TestAcc`测试 测试运行后保留Terraform工作区以检查剩余状态 确认测试通过并非故意破坏断言而导致的假阴性 设置测试报告缺失时缺失的提供商特定环境变量</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>HashiCorp Agent Skills</li>
+<li>Table of Contents</li>
+<li>Recent Updates</li>
+<li>Migration from Legacy Plugin IDs and Paths</li>
+<li>Install an Individual Skill</li>
+<li>Install a Product Plugin Bundle</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Repository Structure</li>
+<li>Governance and Support</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-d4798025"></a></p>
+<h3 id="hashicorp-terraform-search-import"><a href="#hashicorp-terraform-search-import" class="headerlink" title="hashicorp&#x2F;terraform-search-import"></a>hashicorp&#x2F;terraform-search-import</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/hashicorp/skills/terraform-search-import">Skills by HashiCorp Team for Terraform</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/hashicorp/agent-skills/blob/main/README.md">https://github.com&#x2F;hashicorp&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 发现现有的云资源并将其批量导入到Terraform状态中</p>
+<p><strong>适用时机:</strong> 在不手动编写每个导入块的情况下，将数十个 EC2 实例导入到 Terraform 状态中 审计 AWS 账户中存在的哪些 S3 桶或 RDS 实例尚未被任何 Terraform 配置跟踪 手动迁移预先配置的基础设施到 IaC，在团队切换到 Terraform 后 通过在多个 AWS 区域中按标签过滤资源，并一次性生成所有资源的配置 通过查询按“Owner”标签过滤的资源，缩小特定团队拥有的范围</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>HashiCorp Agent Skills</li>
+<li>Table of Contents</li>
+<li>Recent Updates</li>
+<li>Migration from Legacy Plugin IDs and Paths</li>
+<li>Install an Individual Skill</li>
+<li>Install a Product Plugin Bundle</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Repository Structure</li>
+<li>Governance and Support</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-b4b74168"></a></p>
+<h3 id="hashicorp-terraform-stacks"><a href="#hashicorp-terraform-stacks" class="headerlink" title="hashicorp&#x2F;terraform-stacks"></a>hashicorp&#x2F;terraform-stacks</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/hashicorp/skills/terraform-stacks">Skills by HashiCorp Team for Terraform</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/hashicorp/agent-skills/blob/main/README.md">https://github.com&#x2F;hashicorp&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 管理多个环境、地区和云账户中的基础设施</p>
+<p><strong>适用时机:</strong> 从一个组件定义部署相同的基础设施到开发、测试和生产环境 使用 for-each 供应商在 us-east-1、eu-west-1 和 ap-southeast-1 之间启动相同的环境 将网络堆栈的 VPC 输出直接链接到应用程序堆栈的输入 配置 OIDC 工作负载身份，确保部署永远不会在状态中存储持久的 AWS 凭证 将 canary 部署与自动批准规则分组，该规则在任何资源删除时进行阻止</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>HashiCorp Agent Skills</li>
+<li>Table of Contents</li>
+<li>Recent Updates</li>
+<li>Migration from Legacy Plugin IDs and Paths</li>
+<li>Install an Individual Skill</li>
+<li>Install a Product Plugin Bundle</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Repository Structure</li>
+<li>Governance and Support</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-b6b746bf"></a></p>
+<h3 id="hashicorp-terraform-style-guide"><a href="#hashicorp-terraform-style-guide" class="headerlink" title="hashicorp&#x2F;terraform-style-guide"></a>hashicorp&#x2F;terraform-style-guide</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/hashicorp/skills/terraform-style-guide">Skills by HashiCorp Team for Terraform</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/hashicorp/agent-skills/blob/main/README.md">https://github.com&#x2F;hashicorp&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 按照HashiCorp的官方风格规范生成Terraform HCL代码</p>
+<p><strong>适用时机:</strong> 从零开始编写带有正确文件结构的新Terraform模块 审查现有HCL配置中是否存在命名约定违规 默认设置带有加密和公共访问限制的S3桶 将基于计数资源的配置转换为带有命名实例的for_each 增加类型、描述和验证块到裸变量声明中</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>HashiCorp Agent Skills</li>
+<li>Table of Contents</li>
+<li>Recent Updates</li>
+<li>Migration from Legacy Plugin IDs and Paths</li>
+<li>Install an Individual Skill</li>
+<li>Install a Product Plugin Bundle</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Repository Structure</li>
+<li>Governance and Support</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-9c95d741"></a></p>
+<h3 id="hashicorp-terraform-test"><a href="#hashicorp-terraform-test" class="headerlink" title="hashicorp&#x2F;terraform-test"></a>hashicorp&#x2F;terraform-test</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/hashicorp/skills/terraform-test">Skills by HashiCorp Team for Terraform</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/hashicorp/agent-skills/blob/main/README.md">https://github.com&#x2F;hashicorp&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用 .tftest.hcl 文件构建的Terraform配置的内置测试框架</p>
+<p><strong>适用时机:</strong> 编写 .tftest.hcl 文件以在合并变更前验证模块输出 在本地运行计划模式单元测试，无需预先配置真实云资源 对 AWS 或 Azure 提供商进行伪造，以在无需凭证的情况下测试条件逻辑 使用 CI 管道中的 expect_failures 捕获变量验证回归 测试 for_each 资源计数以及跨多个运行块的标签传播</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>HashiCorp Agent Skills</li>
+<li>Table of Contents</li>
+<li>Recent Updates</li>
+<li>Migration from Legacy Plugin IDs and Paths</li>
+<li>Install an Individual Skill</li>
+<li>Install a Product Plugin Bundle</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Repository Structure</li>
+<li>Governance and Support</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-d8fc929e"></a></p>
+<h3 id="hedralab-eskill"><a href="#hedralab-eskill" class="headerlink" title="hedralab&#x2F;eskill"></a>hedralab&#x2F;eskill</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/hedralab/eskill">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/hedralab/eskill/blob/main/SKILL.md">https://github.com&#x2F;hedralab&#x2F;eskill&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 构建顶级代理技能的元技能：符合规格的SKILL.md、评估循环、验证器、市场调研、编号文件流水线</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：Meta-skill 用于构建顶级Agent技能：符合规格的SKILL.md、评估循环、验证器、市场调研、编号文件流水线</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>eskill — Quy trình tạo Agent Skill (12 trụ cột)</li>
+<li>12 trụ cột — mỗi trụ 1 kim chỉ nam top-1</li>
+<li>Quickstart (3 câu — user mới bắt đầu từ đây)</li>
+<li>6 bước — BƯỚC 0 quan trọng nhất</li>
+<li>Quy tắc vàng (học từ sai lầm egram — đừng lặp)</li>
+<li>Giới hạn (trung thực — khi nào KHÔNG dùng)</li>
+<li>References</li>
+</ul>
+<hr>
+<p><a id="skill-cedad37d"></a></p>
+<h3 id="huggingface-hugging-face-jobs"><a href="#huggingface-hugging-face-jobs" class="headerlink" title="huggingface&#x2F;hugging-face-jobs"></a>huggingface&#x2F;hugging-face-jobs</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/huggingface/skills/hugging-face-jobs">Skills by Hugging Face Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/huggingface/skills/blob/main/README.md">https://github.com&#x2F;huggingface&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 在HF基础设施上运行计算任务和Python脚本</p>
+<p><strong>适用时机:</strong> 使用A10G GPU在无需预先配置服务器的情况下对数千个样本进行批次推断 安排每日数据处理任务，将结果推送至Hub数据集仓库 对Hub数据集运行vLLM生成流水线，并将输出保存回Hub 在提交完整训练运行前，在云端GPU上测试ML实验代码 使用托管的TPU或GPU硬件上使用LLM生成合成数据集</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Hugging Face Skills</li>
+<li>How do Skills work?</li>
+<li>Installation</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Gemini CLI</li>
+<li>Cursor</li>
+<li>Skills</li>
+<li>Available skills</li>
+<li>Using skills in your coding agent</li>
+<li>Contribute or customize a skill</li>
+<li>Marketplace</li>
+<li>Additional references</li>
+</ul>
+<hr>
+<p><a id="skill-9c57e00e"></a></p>
+<h3 id="huggingface-hugging-face-vision-trainer"><a href="#huggingface-hugging-face-vision-trainer" class="headerlink" title="huggingface&#x2F;hugging-face-vision-trainer"></a>huggingface&#x2F;hugging-face-vision-trainer</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/huggingface/skills/hugging-face-vision-trainer">Skills by Hugging Face Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/huggingface/skills/blob/main/README.md">https://github.com&#x2F;huggingface&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 在HF基础设施上训练视觉模型</p>
+<p><strong>适用时机:</strong> 使用 D-FINE 或 RT-DETR v2 在云端 GPU 上对 COCO 格式数据进行自定义对象检测器训练 在没有本地 GPU 的 Hub 图片数据集上对 MobileNetV3 或 ViT 分类器进行微调 使用边界框或点提示对 SAM2 进行图像遮挡或分割微调 在提交 GPU 训练任务前运行数据集检查器以捕获列格式不匹配的情况 将微调后的检测或分类检查点直接从临时的云端任务保存到 Hugging Face Hub</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Hugging Face Skills</li>
+<li>How do Skills work?</li>
+<li>Installation</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Gemini CLI</li>
+<li>Cursor</li>
+<li>Skills</li>
+<li>Available skills</li>
+<li>Using skills in your coding agent</li>
+<li>Contribute or customize a skill</li>
+<li>Marketplace</li>
+<li>Additional references</li>
+</ul>
+<hr>
+<p><a id="skill-c5dcea05"></a></p>
+<h3 id="huggingface-huggingface-gradio"><a href="#huggingface-huggingface-gradio" class="headerlink" title="huggingface&#x2F;huggingface-gradio"></a>huggingface&#x2F;huggingface-gradio</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/huggingface/skills/huggingface-gradio">Skills by Hugging Face Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/huggingface/skills/blob/main/skills/huggingface-gradio/SKILL.md">https://github.com&#x2F;huggingface&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;huggingface-gradio&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 构建Gradio应用程序并部署到HF Spaces</p>
+<p><strong>适用时机:</strong> 在创建或编辑Gradiio应用程序、组件、事件监听器、布局或聊天机器人时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Gradio</li>
+<li>Guides</li>
+<li>Core Patterns</li>
+<li>Key Component Signatures</li>
+<li>`Textbox(value: str | I18nData | Callable | None &#x3D; None, type: Literal[‘text’, ‘password’, ‘email’] &#x3D; “text”, lines: int &#x3D; 1, max_lines: int | None &#x3D; None, placeholder: str | I18nData | None &#x3D; None, label: str | I18nData | None &#x3D; None, info: str | I18nData | None &#x3D; None, every: Timer | float | None &#x3D; None, inputs: Component | Sequence[Component] | set[Component] | None &#x3D; None, show_label: bool | None &#x3D; None, container: bool &#x3D; True, scale: int | None &#x3D; None, min_width: int &#x3D; 160, interactive: bool | None &#x3D; None, visible: bool | Literal[‘hidden’] &#x3D; True, elem_id: str | None &#x3D; None, autofocus: bool &#x3D; False, autoscroll: bool &#x3D; True, elem_classes: list[str] | str | None &#x3D; None, render: bool &#x3D; True, key: int | str | tuple[int | str, ...] | None &#x3D; None, preserved_by_key: list[str] | str | None &#x3D; “value”, text_align: Literal[‘left’, ‘right’] | None &#x3D; None, rtl: bool &#x3D; False, buttons: list[Literal[‘copy’] | Button] | None &#x3D; None, max_length: int | None &#x3D; None, submit_btn: str | bool | None &#x3D; False, stop_btn: str | bool | None &#x3D; False, html_attributes: InputHTMLAttributes | None &#x3D; None)`</li>
+<li>`Number(value: float | Callable | None &#x3D; None, label: str | I18nData | None &#x3D; None, placeholder: str | I18nData | None &#x3D; None, info: str | I18nData | None &#x3D; None, every: Timer | float | None &#x3D; None, inputs: Component | Sequence[Component] | set[Component] | None &#x3D; None, show_label: bool | None &#x3D; None, container: bool &#x3D; True, scale: int | None &#x3D; None, min_width: int &#x3D; 160, interactive: bool | None &#x3D; None, visible: bool | Literal[‘hidden’] &#x3D; True, elem_id: str | None &#x3D; None, elem_classes: list[str] | str | None &#x3D; None, render: bool &#x3D; True, key: int | str | tuple[int | str, ...] | None &#x3D; None, preserved_by_key: list[str] | str | None &#x3D; “value”, buttons: list[Button] | None &#x3D; None, precision: int | None &#x3D; None, minimum: float | None &#x3D; None, maximum: float | None &#x3D; None, step: float &#x3D; 1)`</li>
+<li>`Slider(minimum: float &#x3D; 0, maximum: float &#x3D; 100, value: float | Callable | None &#x3D; None, step: float | None &#x3D; None, precision: int | None &#x3D; None, label: str | I18nData | None &#x3D; None, info: str | I18nData | None &#x3D; None, every: Timer | float | None &#x3D; None, inputs: Component | Sequence[Component] | set[Component] | None &#x3D; None, show_label: bool | None &#x3D; None, container: bool &#x3D; True, scale: int | None &#x3D; None, min_width: int &#x3D; 160, interactive: bool | None &#x3D; None, visible: bool | Literal[‘hidden’] &#x3D; True, elem_id: str | None &#x3D; None, elem_classes: list[str] | str | None &#x3D; None, render: bool &#x3D; True, key: int | str | tuple[int | str, ...] | None &#x3D; None, preserved_by_key: list[str] | str | None &#x3D; “value”, randomize: bool &#x3D; False, buttons: list[Literal[‘reset’]] | None &#x3D; None)`</li>
+<li>`Checkbox(value: bool | Callable &#x3D; False, label: str | I18nData | None &#x3D; None, info: str | I18nData | None &#x3D; None, every: Timer | float | None &#x3D; None, inputs: Component | Sequence[Component] | set[Component] | None &#x3D; None, show_label: bool | None &#x3D; None, container: bool &#x3D; True, scale: int | None &#x3D; None, min_width: int &#x3D; 160, interactive: bool | None &#x3D; None, visible: bool | Literal[‘hidden’] &#x3D; True, elem_id: str | None &#x3D; None, elem_classes: list[str] | str | None &#x3D; None, render: bool &#x3D; True, key: int | str | tuple[int | str, ...] | None &#x3D; None, preserved_by_key: list[str] | str | None &#x3D; “value”, buttons: list[Button] | None &#x3D; None)`</li>
+<li>`Dropdown(choices: Sequence[str | int | float | tuple[str, str | int | float]] | None &#x3D; None, value: str | int | float | Sequence[str | int | float] | Callable | DefaultValue | None &#x3D; DefaultValue(), type: Literal[‘value’, ‘index’] &#x3D; “value”, multiselect: bool | None &#x3D; None, allow_custom_value: bool &#x3D; False, max_choices: int | None &#x3D; None, filterable: bool &#x3D; True, label: str | I18nData | None &#x3D; None, info: str | I18nData | None &#x3D; None, every: Timer | float | None &#x3D; None, inputs: Component | Sequence[Component] | set[Component] | None &#x3D; None, show_label: bool | None &#x3D; None, container: bool &#x3D; True, scale: int | None &#x3D; None, min_width: int &#x3D; 160, interactive: bool | None &#x3D; None, visible: bool | Literal[‘hidden’] &#x3D; True, elem_id: str | None &#x3D; None, elem_classes: list[str] | str | None &#x3D; None, render: bool &#x3D; True, key: int | str | tuple[int | str, ...] | None &#x3D; None, preserved_by_key: list[str] | str | None &#x3D; “value”, buttons: list[Button] | None &#x3D; None)`</li>
+<li>`Radio(choices: Sequence[str | int | float | tuple[str, str | int | float]] | None &#x3D; None, value: str | int | float | Callable | None &#x3D; None, type: Literal[‘value’, ‘index’] &#x3D; “value”, label: str | I18nData | None &#x3D; None, info: str | I18nData | None &#x3D; None, every: Timer | float | None &#x3D; None, inputs: Component | Sequence[Component] | set[Component] | None &#x3D; None, show_label: bool | None &#x3D; None, container: bool &#x3D; True, scale: int | None &#x3D; None, min_width: int &#x3D; 160, interactive: bool | None &#x3D; None, visible: bool | Literal[‘hidden’] &#x3D; True, elem_id: str | None &#x3D; None, elem_classes: list[str] | str | None &#x3D; None, render: bool &#x3D; True, key: int | str | tuple[int | str, ...] | None &#x3D; None, preserved_by_key: list[str] | str | None &#x3D; “value”, rtl: bool &#x3D; False, buttons: list[Button] | None &#x3D; None)`</li>
+<li>`Image(value: str | PIL.Image.Image | np.ndarray | Callable | None &#x3D; None, format: str &#x3D; “webp”, height: int | str | None &#x3D; None, width: int | str | None &#x3D; None, image_mode: Literal[‘1’, ‘L’, ‘P’, ‘RGB’, ‘RGBA’, ‘CMYK’, ‘YCbCr’, ‘LAB’, ‘HSV’, ‘I’, ‘F’] | None &#x3D; “RGB”, sources: list[Literal[‘upload’, ‘webcam’, ‘clipboard’]] | Literal[‘upload’, ‘webcam’, ‘clipboard’] | None &#x3D; None, type: Literal[‘numpy’, ‘pil’, ‘filepath’] &#x3D; “numpy”, label: str | I18nData | None &#x3D; None, every: Timer | float | None &#x3D; None, inputs: Component | Sequence[Component] | set[Component] | None &#x3D; None, show_label: bool | None &#x3D; None, buttons: list[Literal[‘download’, ‘share’, ‘fullscreen’] | Button] | None &#x3D; None, container: bool &#x3D; True, scale: int | None &#x3D; None, min_width: int &#x3D; 160, interactive: bool | None &#x3D; None, visible: bool | Literal[‘hidden’] &#x3D; True, streaming: bool &#x3D; False, elem_id: str | None &#x3D; None, elem_classes: list[str] | str | None &#x3D; None, render: bool &#x3D; True, key: int | str | tuple[int | str, ...] | None &#x3D; None, preserved_by_key: list[str] | str | None &#x3D; “value”, webcam_options: WebcamOptions | None &#x3D; None, placeholder: str | None &#x3D; None, watermark: WatermarkOptions | None &#x3D; None)`</li>
+<li>`Audio(value: str | Path | tuple[int, np.ndarray] | Callable | None &#x3D; None, sources: list[Literal[‘upload’, ‘microphone’]] | Literal[‘upload’, ‘microphone’] | None &#x3D; None, type: Literal[‘numpy’, ‘filepath’] &#x3D; “numpy”, label: str | I18nData | None &#x3D; None, every: Timer | float | None &#x3D; None, inputs: Component | Sequence[Component] | set[Component] | None &#x3D; None, show_label: bool | None &#x3D; None, container: bool &#x3D; True, scale: int | None &#x3D; None, min_width: int &#x3D; 160, interactive: bool | None &#x3D; None, visible: bool | Literal[‘hidden’] &#x3D; True, streaming: bool &#x3D; False, elem_id: str | None &#x3D; None, elem_classes: list[str] | str | None &#x3D; None, render: bool &#x3D; True, key: int | str | tuple[int | str, ...] | None &#x3D; None, preserved_by_key: list[str] | str | None &#x3D; “value”, format: Literal[‘wav’, ‘mp3’] | None &#x3D; None, autoplay: bool &#x3D; False, editable: bool &#x3D; True, buttons: list[Literal[‘download’, ‘share’] | Button] | None &#x3D; None, waveform_options: WaveformOptions | dict | None &#x3D; None, loop: bool &#x3D; False, recording: bool &#x3D; False, subtitles: str | Path | list[dict[str, Any]] | None &#x3D; None, playback_position: float &#x3D; 0)`</li>
+<li>`Video(value: str | Path | Callable | None &#x3D; None, format: str | None &#x3D; None, sources: list[Literal[‘upload’, ‘webcam’]] | Literal[‘upload’, ‘webcam’] | None &#x3D; None, height: int | str | None &#x3D; None, width: int | str | None &#x3D; None, label: str | I18nData | None &#x3D; None, every: Timer | float | None &#x3D; None, inputs: Component | Sequence[Component] | set[Component] | None &#x3D; None, show_label: bool | None &#x3D; None, container: bool &#x3D; True, scale: int | None &#x3D; None, min_width: int &#x3D; 160, interactive: bool | None &#x3D; None, visible: bool | Literal[‘hidden’] &#x3D; True, elem_id: str | None &#x3D; None, elem_classes: list[str] | str | None &#x3D; None, render: bool &#x3D; True, key: int | str | tuple[int | str, ...] | None &#x3D; None, preserved_by_key: list[str] | str | None &#x3D; “value”, webcam_options: WebcamOptions | None &#x3D; None, include_audio: bool | None &#x3D; None, autoplay: bool &#x3D; False, buttons: list[Literal[‘download’, ‘share’] | Button] | None &#x3D; None, loop: bool &#x3D; False, streaming: bool &#x3D; False, watermark: WatermarkOptions | None &#x3D; None, subtitles: str | Path | list[dict[str, Any]] | None &#x3D; None, playback_position: float &#x3D; 0)`</li>
+<li>`File(value: str | list[str] | Callable | None &#x3D; None, file_count: Literal[‘single’, ‘multiple’, ‘directory’] &#x3D; “single”, file_types: list[str] | None &#x3D; None, type: Literal[‘filepath’, ‘binary’] &#x3D; “filepath”, label: str | I18nData | None &#x3D; None, every: Timer | float | None &#x3D; None, inputs: Component | Sequence[Component] | set[Component] | None &#x3D; None, show_label: bool | None &#x3D; None, container: bool &#x3D; True, scale: int | None &#x3D; None, min_width: int &#x3D; 160, height: int | str | float | None &#x3D; None, interactive: bool | None &#x3D; None, visible: bool | Literal[‘hidden’] &#x3D; True, elem_id: str | None &#x3D; None, elem_classes: list[str] | str | None &#x3D; None, render: bool &#x3D; True, key: int | str | tuple[int | str, ...] | None &#x3D; None, preserved_by_key: list[str] | str | None &#x3D; “value”, allow_reordering: bool &#x3D; False, buttons: list[Button] | None &#x3D; None)`</li>
+<li>`Chatbot(value: list[MessageDict | Message] | Callable | None &#x3D; None, label: str | I18nData | None &#x3D; None, every: Timer | float | None &#x3D; None, inputs: Component | Sequence[Component] | set[Component] | None &#x3D; None, show_label: bool | None &#x3D; None, container: bool &#x3D; True, scale: int | None &#x3D; None, min_width: int &#x3D; 160, visible: bool | Literal[‘hidden’] &#x3D; True, elem_id: str | None &#x3D; None, elem_classes: list[str] | str | None &#x3D; None, autoscroll: bool &#x3D; True, render: bool &#x3D; True, key: int | str | tuple[int | str, ...] | None &#x3D; None, preserved_by_key: list[str] | str | None &#x3D; “value”, height: int | str | None &#x3D; 400, resizable: bool &#x3D; False, max_height: int | str | None &#x3D; None, min_height: int | str | None &#x3D; None, editable: Literal[‘user’, ‘all’] | None &#x3D; None, latex_delimiters: list[dict[str, str | bool]] | None &#x3D; None, rtl: bool &#x3D; False, buttons: list[Literal[‘share’, ‘copy’, ‘copy_all’] | Button] | None &#x3D; None, watermark: str | None &#x3D; None, avatar_images: tuple[str | Path | None, str | Path | None] | None &#x3D; None, sanitize_html: bool &#x3D; True, render_markdown: bool &#x3D; True, feedback_options: list[str] | tuple[str, ...] | None &#x3D; (‘Like’, ‘Dislike’), feedback_value: Sequence[str | None] | None &#x3D; None, line_breaks: bool &#x3D; True, layout: Literal[‘panel’, ‘bubble’] | None &#x3D; None, placeholder: str | None &#x3D; None, examples: list[ExampleMessage] | None &#x3D; None, allow_file_downloads: &#x3D; True, group_consecutive_messages: bool &#x3D; True, allow_tags: list[str] | bool &#x3D; True, reasoning_tags: list[tuple[str, str]] | None &#x3D; None, like_user_message: bool &#x3D; False)`</li>
+<li>`Button(value: str | I18nData | Callable &#x3D; “Run”, every: Timer | float | None &#x3D; None, inputs: Component | Sequence[Component] | set[Component] | None &#x3D; None, variant: Literal[‘primary’, ‘secondary’, ‘stop’, ‘huggingface’] &#x3D; “secondary”, size: Literal[‘sm’, ‘md’, ‘lg’] &#x3D; “lg”, icon: str | Path | None &#x3D; None, link: str | None &#x3D; None, link_target: Literal[‘_self’, ‘_blank’, ‘_parent’, ‘_top’] &#x3D; “_self”, visible: bool | Literal[‘hidden’] &#x3D; True, interactive: bool &#x3D; True, elem_id: str | None &#x3D; None, elem_classes: list[str] | str | None &#x3D; None, render: bool &#x3D; True, key: int | str | tuple[int | str, ...] | None &#x3D; None, preserved_by_key: list[str] | str | None &#x3D; “value”, scale: int | None &#x3D; None, min_width: int | None &#x3D; None)`</li>
+</ul>
+<hr>
+<p><a id="skill-fcde3fbc"></a></p>
+<h3 id="hyperb1iss-unifly"><a href="#hyperb1iss-unifly" class="headerlink" title="hyperb1iss&#x2F;unifly"></a>hyperb1iss&#x2F;unifly</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/hyperb1iss/unifly/tree/main/skills/unifly">Specialized Domains</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/hyperb1iss/unifly/blob/main/skills/unifly/SKILL.md">https://github.com&#x2F;hyperb1iss&#x2F;unifly&#x2F;blob&#x2F;main&#x2F;skills&#x2F;unifly&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过unifly CLI检查和管理Ubiquiti UniFi网络</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：通过unifly CLI检查和管理Ubiquiti UniFi网络</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>unifly</li>
+</ul>
+<hr>
+<p><a id="skill-a8fdf3b0"></a></p>
+<h3 id="microsoft-azure-mgmt-weightsandbiases-dotnet"><a href="#microsoft-azure-mgmt-weightsandbiases-dotnet" class="headerlink" title="microsoft&#x2F;azure-mgmt-weightsandbiases-dotnet"></a>microsoft&#x2F;azure-mgmt-weightsandbiases-dotnet</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-mgmt-weightsandbiases-dotnet">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-weightsandbiases-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-mgmt-weightsandbiases-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 权重和偏见部署管理</p>
+<p><strong>适用时机:</strong> 将 W&amp;B 实例部署到现有 Azure 资源组 配置 Entra ID SSO，以便团队使用企业凭证登录 为 W&amp;B 实例标记成本中心，以便在机器学习团队之间进行跟踪 列出订阅内所有 W&amp;B 部署以进行使用审计 更新现有 W&amp;B 实例的区域和子域名设置</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure.ResourceManager.WeightsAndBiases (.NET)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Resource Hierarchy</li>
+<li>Core Workflows</li>
+<li>1. Create Weights &amp; Biases Instance</li>
+<li>2. Get Existing Instance</li>
+<li>3. List All Instances</li>
+<li>4. Configure Single Sign-On (SSO)</li>
+<li>5. Update Instance</li>
+<li>6. Delete Instance</li>
+<li>7. Check Resource Name Availability</li>
+<li>Key Types Reference</li>
+<li>Available Regions</li>
+<li>Marketplace Offer Details</li>
+</ul>
+<hr>
+<p><a id="skill-75c2892f"></a></p>
+<h3 id="microsoft-azure-monitor-ingestion-java"><a href="#microsoft-azure-monitor-ingestion-java" class="headerlink" title="microsoft&#x2F;azure-monitor-ingestion-java"></a>microsoft&#x2F;azure-monitor-ingestion-java</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-monitor-ingestion-java">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-monitor-ingestion-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-monitor-ingestion-java&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 向Azure Monitor定制日志捕获</p>
+<p><strong>适用时机:</strong> 将Java应用程序日志发送到自定义的Log Analytics表进行集中查询 将审计事件从Spring Boot服务批量收集并上传到Azure Monitor 通过DCR将结构化Java日志路由到CommonSecurityLog或Syslog内置表 在批量日志接收管道中处理部分上传失败，但不中断整个批次 使用Reactive Java应用程序中的LogsIngestionAsyncClient异步接收高流量的遥感数据</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Monitor Ingestion SDK for Java</li>
+<li>Installation</li>
+<li>Prerequisites</li>
+<li>Environment Variables</li>
+<li>Client Creation</li>
+<li>Synchronous Client</li>
+<li>Asynchronous Client</li>
+<li>Key Concepts</li>
+<li>Core Operations</li>
+<li>Upload Custom Logs</li>
+<li>Upload with Concurrency</li>
+<li>Upload with Error Handling</li>
+<li>Async Upload with Reactor</li>
+<li>Log Entry Model Example</li>
+<li>Error Handling</li>
+<li>Best Practices</li>
+</ul>
+<hr>
+<p><a id="skill-f495ca00"></a></p>
+<h3 id="microsoft-azure-monitor-ingestion-py"><a href="#microsoft-azure-monitor-ingestion-py" class="headerlink" title="microsoft&#x2F;azure-monitor-ingestion-py"></a>microsoft&#x2F;azure-monitor-ingestion-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-monitor-ingestion-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-monitor-ingestion-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-monitor-ingestion-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 向Azure Monitor定制日志捕获</p>
+<p><strong>适用时机:</strong> 将Python服务发送的应用程序日志发送至Log Analytics进行查询 将安全审计记录导入Azure Monitor中的自定义表 将JSON文件中的批次日志导出上传至DCR定义的结构 管道异步高吞吐量事件流发送至Log Analytics，无需手动批次处理 将日志路由至Azure Government或主权云端点</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Monitor Ingestion SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Prerequisites</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Upload Custom Logs</li>
+<li>Upload from JSON File</li>
+<li>Custom Error Handling</li>
+<li>Ignore Errors</li>
+<li>Async Client</li>
+<li>Sovereign Clouds</li>
+<li>Batching Behavior</li>
+<li>Client Types</li>
+<li>Key Concepts</li>
+<li>DCR Stream Name Format</li>
+<li>Best Practices</li>
+</ul>
+<hr>
+<p><a id="skill-d1abc4fe"></a></p>
+<h3 id="microsoft-azure-monitor-opentelemetry-exporter-java"><a href="#microsoft-azure-monitor-opentelemetry-exporter-java" class="headerlink" title="microsoft&#x2F;azure-monitor-opentelemetry-exporter-java"></a>microsoft&#x2F;azure-monitor-opentelemetry-exporter-java</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-monitor-opentelemetry-exporter-java">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-monitor-opentelemetry-exporter-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-monitor-opentelemetry-exporter-java&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> OpenTelemetry 导出到 Azure Monitor</p>
+<p><strong>适用时机:</strong> 将Java微服务发送分布式跟踪数据至Application Insights 为跟踪记录添加如订单编号和客户等级等时域属性以进行调试 在时域记录异常，以便在Azure Monitor中显示 将HTTP请求数量和延迟作为指标添加到Application Insights中 从已弃用的导出器迁移到自动配置包</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Monitor OpenTelemetry Exporter for Java</li>
+<li>Installation (Deprecated)</li>
+<li>Recommended: Use Autoconfigure Instead</li>
+<li>Environment Variables</li>
+<li>Basic Setup with Autoconfigure (Recommended)</li>
+<li>Using Environment Variable</li>
+<li>With Explicit Connection String</li>
+<li>Creating Spans</li>
+<li>Adding Span Attributes</li>
+<li>Custom Span Processor</li>
+<li>Nested Spans</li>
+<li>Recording Exceptions</li>
+<li>Metrics (via OpenTelemetry)</li>
+<li>Key Concepts</li>
+<li>Migration to Autoconfigure</li>
+<li>Migration Steps</li>
+</ul>
+<hr>
+<p><a id="skill-14a7db83"></a></p>
+<h3 id="microsoft-azure-monitor-opentelemetry-exporter-py"><a href="#microsoft-azure-monitor-opentelemetry-exporter-py" class="headerlink" title="microsoft&#x2F;azure-monitor-opentelemetry-exporter-py"></a>microsoft&#x2F;azure-monitor-opentelemetry-exporter-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-monitor-opentelemetry-exporter-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-monitor-opentelemetry-exporter-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-monitor-opentelemetry-exporter-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 将OpenTelemetry导出到Application Insights</p>
+<p><strong>适用时机:</strong> OpenTelemetry 的路由从自定义追踪管道延伸至 Application Insights。使用 ApplicationInsightsSampler 对分布式服务中的生产追踪进行 10% 的采样。使用日志导出器和 LoggingHandler 将 Python 日志输出发送至 Application Insights。使用主权云凭据连接至 Azure Government 端点。当接收端点无法访问时，使用本地离线存储重试失败的 telemetry 导出。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Monitor OpenTelemetry Exporter for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>When to Use</li>
+<li>Trace Exporter</li>
+<li>Metric Exporter</li>
+<li>Log Exporter</li>
+<li>From Environment Variable</li>
+<li>Azure AD Authentication</li>
+<li>Sampling</li>
+<li>Offline Storage</li>
+<li>Disable Offline Storage</li>
+<li>Sovereign Clouds</li>
+<li>Exporter Types</li>
+<li>Configuration Options</li>
+</ul>
+<hr>
+<p><a id="skill-7564e23e"></a></p>
+<h3 id="microsoft-azure-monitor-opentelemetry-py"><a href="#microsoft-azure-monitor-opentelemetry-py" class="headerlink" title="microsoft&#x2F;azure-monitor-opentelemetry-py"></a>microsoft&#x2F;azure-monitor-opentelemetry-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-monitor-opentelemetry-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-monitor-opentelemetry-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-monitor-opentelemetry-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 单行应用程序洞察设置</p>
+<p><strong>适用时机:</strong> 在不修改路由处理器的情况下为 Flask API 添加应用洞察信息 通过 psycopg2 自适应仪器化在 Django 中跟踪数据库查询 对高流量 FastAPI 服务中的请求进行 10% 的采样 将服务名称附加到跟踪记录中，以便应用地图显示正确的节点 将生产工作负载从基于密钥的身份验证切换到 Azure AD 凭证</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Monitor OpenTelemetry Distro for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Quick Start</li>
+<li>Explicit Connection String</li>
+<li>With Flask</li>
+<li>With Django</li>
+<li>With FastAPI</li>
+<li>Custom Traces</li>
+<li>Custom Metrics</li>
+<li>Custom Logs</li>
+<li>Sampling</li>
+<li>Cloud Role Name</li>
+<li>Disable Specific Instrumentations</li>
+<li>Enable Live Metrics</li>
+</ul>
+<hr>
+<p><a id="skill-77b19c86"></a></p>
+<h3 id="microsoft-azure-monitor-opentelemetry-ts"><a href="#microsoft-azure-monitor-opentelemetry-ts" class="headerlink" title="microsoft&#x2F;azure-monitor-opentelemetry-ts"></a>microsoft&#x2F;azure-monitor-opentelemetry-ts</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-monitor-opentelemetry-ts">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-monitor-opentelemetry-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-monitor-opentelemetry-ts&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 应用程序洞察跟踪和指标</p>
+<p><strong>适用时机:</strong> 在使用Application Insights为Node.js应用程序添加分布式追踪、指标和日志时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Monitor OpenTelemetry SDK for TypeScript</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Quick Start (Auto-Instrumentation)</li>
+<li>ESM Support (Node.js 18.19+)</li>
+<li>Full Configuration</li>
+<li>Custom Traces</li>
+<li>Custom Metrics</li>
+<li>Manual Exporter Setup</li>
+<li>Trace Exporter</li>
+<li>Metric Exporter</li>
+<li>Log Exporter</li>
+<li>Custom Logs Ingestion</li>
+<li>Custom Span Processor</li>
+<li>Sampling</li>
+<li>Shutdown</li>
+</ul>
+<hr>
+<p><a id="skill-6c25f38a"></a></p>
+<h3 id="microsoft-azure-monitor-query-java"><a href="#microsoft-azure-monitor-query-java" class="headerlink" title="microsoft&#x2F;azure-monitor-query-java"></a>microsoft&#x2F;azure-monitor-query-java</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-monitor-query-java">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-monitor-query-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-monitor-query-java&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 查询Azure监控日志和指标</p>
+<p><strong>适用时机:</strong> 从 Java 应用程序向日志分析工作区执行 Kusto 查询 通过自定义时间范围获取 Azure VM 的 CPU 或内存指标 将多个日志查询批量化为单个 API 调用以减少往返开销 将日志分析查询结果直接映射到 Java 模型类 仅通过一次请求查询多个 Azure 资源中的指标</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Monitor Query SDK for Java</li>
+<li>Installation</li>
+<li>Prerequisites</li>
+<li>Environment Variables</li>
+<li>Client Creation</li>
+<li>LogsQueryClient (Sync)</li>
+<li>LogsQueryAsyncClient</li>
+<li>MetricsQueryClient (Sync)</li>
+<li>MetricsQueryAsyncClient</li>
+<li>Sovereign Cloud Configuration</li>
+<li>Key Concepts</li>
+<li>Logs Query Operations</li>
+<li>Basic Query</li>
+<li>Query by Resource ID</li>
+<li>Map Results to Custom Model</li>
+<li>Batch Query</li>
+</ul>
+<hr>
+<p><a id="skill-fc30765b"></a></p>
+<h3 id="microsoft-azure-monitor-query-py"><a href="#microsoft-azure-monitor-query-py" class="headerlink" title="microsoft&#x2F;azure-monitor-query-py"></a>microsoft&#x2F;azure-monitor-query-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-monitor-query-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-monitor-query-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-monitor-query-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 查询Azure监控日志和指标</p>
+<p><strong>适用时机:</strong> 在时间窗口内对Log Analytics执行Kusto查询，以查找缓慢的API请求 从Azure虚拟机提取5分钟粒度的CPU和网络指标 单次往返中批量查询AppRequests和AppExceptions 将Log Analytics查询结果转换为pandas DataFrame进行分析 根据API名称维度筛选Azure Blob存储请求指标</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Monitor Query SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Logs Query Client</li>
+<li>Basic Query</li>
+<li>Query with Time Range</li>
+<li>Convert to DataFrame</li>
+<li>Batch Query</li>
+<li>Handle Partial Results</li>
+<li>Metrics Query Client</li>
+<li>Query Resource Metrics</li>
+<li>Aggregations</li>
+<li>Filter by Dimension</li>
+<li>List Metric Definitions</li>
+<li>List Metric Namespaces</li>
+</ul>
+<hr>
+<p><a id="skill-e4bbd233"></a></p>
+<h3 id="microsoft-cloud-solution-architect"><a href="#microsoft-cloud-solution-architect" class="headerlink" title="microsoft&#x2F;cloud-solution-architect"></a>microsoft&#x2F;cloud-solution-architect</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/cloud-solution-architect">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/README.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 设计结构良好的Azure云系统</p>
+<p><strong>适用时机:</strong> 为新的 Azure 工作负载选择微服务与 N 层架构 在生产架构审查期间映射 WAF 核心架构的权衡 选择消息管道中的 Service Bus 与事件中心 应用电路断路器和重试模式到失败的下游依赖项 为多区域 Cosmos DB 配置编写架构决策记录</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Agent Skills</li>
+<li>Quick Start</li>
+<li>What’s Inside</li>
+<li>Skill Catalog</li>
+<li>Core</li>
+<li>Foundry (Language-Agnostic)</li>
+<li>Python</li>
+<li>.NET</li>
+<li>TypeScript</li>
+<li>Java</li>
+<li>Rust</li>
+<li>Repository Structure</li>
+<li>Plugins</li>
+<li>MCP Servers</li>
+<li>Additional Resources</li>
+<li>Agents</li>
+</ul>
+<hr>
+<p><a id="skill-ac2610ba"></a></p>
+<h3 id="mongodb-mongodb-connection"><a href="#mongodb-mongodb-connection" class="headerlink" title="mongodb&#x2F;mongodb-connection"></a>mongodb&#x2F;mongodb-connection</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/mongodb/skills/mongodb-connection">Skills by MongoDB</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/mongodb/agent-skills/blob/main/skills/mongodb-connection/SKILL.md">https://github.com&#x2F;mongodb&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;mongodb-connection&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 优化MongoDB客户端连接池、超时时间和无服务器模式</p>
+<p><strong>适用时机:</strong> 在工作&#x2F;更新&#x2F;审查实例化或配置MongoDB客户端（例如，调用`connect()`时）、配置连接池、排查连接错误（ECONNREFUSED、超时、连接池耗尽）、优化与连接相关的性能问题时使用此技能。这包括使用MongoDB构建无服务器函数、创建使用MongoDB的API端点、优化高流量MongoDB应用程序、创建长期运行的任务和并发处理，或调试与连接相关的故障等场景。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>MongoDB Connection Optimizer</li>
+<li>Core Principle: Context Before Configuration</li>
+<li>Understanding How Connection Pools Work</li>
+<li>Configuration Design</li>
+<li>Calculating Initial Pool Size</li>
+<li>Configuration Scenarios</li>
+<li>Troubleshooting Connection Issues</li>
+<li>Guidelines</li>
+<li>Pool Exhaustion</li>
+<li>Connection Timeouts (ECONNREFUSED, SocketTimeout)</li>
+<li>Connection Churn</li>
+<li>High Latency</li>
+<li>Environmental Context (MANDATORY)</li>
+<li>Parameters that inform a pool configuration</li>
+<li>Advising on Monitoring &amp; Iteration</li>
+<li>When creating code</li>
+</ul>
+<hr>
+<p><a id="skill-d34fc3c9"></a></p>
+<h3 id="mongodb-mongodb-natural-language-querying"><a href="#mongodb-mongodb-natural-language-querying" class="headerlink" title="mongodb&#x2F;mongodb-natural-language-querying"></a>mongodb&#x2F;mongodb-natural-language-querying</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/mongodb/skills/mongodb-natural-language-querying">Skills by MongoDB</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/mongodb/agent-skills/blob/main/skills/mongodb-natural-language-querying/SKILL.md">https://github.com&#x2F;mongodb&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;mongodb-natural-language-querying&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 将自然语言翻译成MongoDB查询和聚合管道</p>
+<p><strong>适用时机:</strong> 在用户要求编写、创建或生成 MongoDB 查询、想要在 MongoDB 中过滤&#x2F;查询&#x2F;聚合数据、询问“我该如何查询……”、需要查询语法帮助，或讨论查找&#x2F;过滤&#x2F;分组 MongoDB 文档时，使用此技能。也用于将类似 SQL 的请求翻译为 MongoDB 语法。不处理 Atlas Search（$search 运算符）、向量&#x2F;语义搜索（$vectorSearch 运算符）、模糊匹配、自动完成索引或相关性评分——这些请使用 search-and-ai。不分析或优化现有查询——这些请使用 mongodb-query-optimizer。不处理聚合管道。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>MongoDB Natural Language Querying</li>
+<li>Query Generation Process</li>
+<li>1. Gather Context Using MCP Tools</li>
+<li>2. Analyze Context and Validate Fields</li>
+<li>3. Choose Query Type: Find vs Aggregation</li>
+<li>4. Format Your Response</li>
+<li>Best Practices</li>
+<li>Query Quality</li>
+<li>Aggregation Pipeline Quality</li>
+<li>Error Prevention</li>
+<li>Schema Analysis</li>
+<li>Sample Document Usage</li>
+<li>Error Handling</li>
+<li>Example Workflow</li>
+<li>Managing Context Size</li>
+</ul>
+<hr>
+<p><a id="skill-dbbf501f"></a></p>
+<h3 id="neondatabase-neon-postgres"><a href="#neondatabase-neon-postgres" class="headerlink" title="neondatabase&#x2F;neon-postgres"></a>neondatabase&#x2F;neon-postgres</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/neondatabase/skills/neon-postgres">Skills by Neon</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/neondatabase/agent-skills/blob/main/skills/neon-postgres/SKILL.md">https://github.com&#x2F;neondatabase&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;neon-postgres&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> Neon Serverless Postgres的最佳实践</p>
+<p><strong>适用时机:</strong> 当工作是现有 DATABASE_URL、SQL、结构体、inspect 或搜索时使用。新的后端、身份验证、文件、函数和 LLM 调用将归属于父级 `neon` 技能。实时查询、响应式用户界面和实时数据将归属于 `neon-realtime`。也适用于 “@neondatabase&#x2F;serverless”、”@neon&#x2F;neon-js”、”neon inspect db”、”语义搜索”、”向量搜索”、”全文搜索”、”BM25” 或 “混合搜索”。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Lakebase Postgres</li>
+<li>Setup Flow</li>
+<li>1. Select the organization and project</li>
+<li>2. Get the connection string</li>
+<li>3. Pick the connection method and driver</li>
+<li>4. Set up the schema</li>
+<li>Branching</li>
+<li>Migrations</li>
+<li>Troubleshooting and Neon-Specific Performance</li>
+<li>Choose CLI or MCP</li>
+<li>Pick the Diagnostic</li>
+<li>Interpret Results Safely</li>
+<li>Inspect Neon Cache Behavior Per Query</li>
+<li>Performance Workflow</li>
+<li>Autoscaling</li>
+<li>Scale to Zero</li>
+</ul>
+<hr>
+<p><a id="skill-f0585a98"></a></p>
+<h3 id="netlify-netlify-ai-gateway"><a href="#netlify-netlify-ai-gateway" class="headerlink" title="netlify&#x2F;netlify-ai-gateway"></a>netlify&#x2F;netlify-ai-gateway</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/netlify/skills/netlify-ai-gateway">Skills by Netlify Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/netlify/context-and-tools/blob/main/skills/netlify-ai-gateway/SKILL.md">https://github.com&#x2F;netlify&#x2F;context-and-tools&#x2F;blob&#x2F;main&#x2F;skills&#x2F;netlify-ai-gateway&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过统一门户端点访问AI模型</p>
+<p><strong>适用时机:</strong> 从 Netlify 函数调用 GPT-4o 或 Claude，且不将 API 密钥存储在环境变量中 通过更改单个模型字符串切换 OpenAI 和 Anthropic 模型 使用现有的 OpenAI SDK 为 Netlify 网站添加 AI 聊天端点 使用在生产环境中运行的相同网关在 netlify dev 上本地测试 AI 功能 通过 Netlify 控制台监控 AI 模型使用情况和成本，而不是每个提供商的控制台</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Netlify AI Gateway</li>
+<li>Footguns (read first)</li>
+<li>Where code goes</li>
+<li>Provider SDKs (instantiate with no args)</li>
+<li>Env vars — which to use</li>
+<li>Full example (Vite + React + Function)</li>
+<li>Local development</li>
+<li>Billing, limits, constraints</li>
+<li>References</li>
+<li>Netlify house rules (ai-gateway)</li>
+</ul>
+<hr>
+<p><a id="skill-54d2a782"></a></p>
+<h3 id="netlify-netlify-blobs"><a href="#netlify-netlify-blobs" class="headerlink" title="netlify&#x2F;netlify-blobs"></a>netlify&#x2F;netlify-blobs</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/netlify/skills/netlify-blobs">Skills by Netlify Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/netlify/context-and-tools/blob/main/skills/netlify-blobs/SKILL.md">https://github.com&#x2F;netlify&#x2F;context-and-tools&#x2F;blob&#x2F;main&#x2F;skills&#x2F;netlify-blobs&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 用于文件和数据的键值对象存储</p>
+<p><strong>适用时机:</strong> 用于持久化用户文件上传（图片&#x2F;文档）、缓存函数或背景函数（Background Functions）的计算输出、提供可下载资产、按 ID 键存储 JSON 块数据，或为部署特定数据提供初始数据。请从 Functions、Edge Functions 或 Build Plugins 中选择此选项进行键值或对象存储——不适用于用户级、事务级或关系型数据（此项请使用 Netlify DB）。触发器包括“保存上传的文件”、“缓存 API 结果”、“存储生成的网站地图”、“函数键值存储”或“无数据库的文件上传”。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Netlify Blobs</li>
+<li>Choosing a store type</li>
+<li>Core writes and reads</li>
+<li>Persisting a user upload (Function)</li>
+<li>Reading (Function)</li>
+<li>Metadata and conditional reads</li>
+<li>Concurrency: atomic conditional writes</li>
+<li>Listing</li>
+<li>Deleting</li>
+<li>Expiration (no server-side TTL)</li>
+<li>Consistency</li>
+<li>Regions</li>
+<li>File-based uploads (no build plugin)</li>
+<li>Access control (default to private)</li>
+<li>Constraints</li>
+<li>When an operation fails</li>
+</ul>
+<hr>
+<p><a id="skill-26d515a1"></a></p>
+<h3 id="netlify-netlify-caching"><a href="#netlify-netlify-caching" class="headerlink" title="netlify&#x2F;netlify-caching"></a>netlify&#x2F;netlify-caching</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/netlify/skills/netlify-caching">Skills by Netlify Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/netlify/context-and-tools/blob/main/skills/netlify-caching/SKILL.md">https://github.com&#x2F;netlify&#x2F;context-and-tools&#x2F;blob&#x2F;main&#x2F;skills&#x2F;netlify-caching&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 配置CDN缓存和缓存清除</p>
+<p><strong>适用时机:</strong> 当你向函数响应中添加缓存或缓存控制头、调整缓存TTL或过期时重新验证、设置持久性缓存、根据查询&#x2F;头&#x2F;cookie&#x2F;国家&#x2F;语言变动缓存键、根据网站或缓存标签清除或无效化缓存、使用程序化缓存API（caches.open&#x2F;match&#x2F;put）或@netlify&#x2F;cache辅助工具（fetchWithCache&#x2F;cacheHeaders&#x2F;getCacheStatus）、加快昂贵的API调用、添加ISR或按需重新验证，或者通过Cache-Status头进行响应是否被缓存的调试时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Netlify caching</li>
+<li>Cache-control header to reach for</li>
+<li>Footguns (read first)</li>
+<li>Directives</li>
+<li>Cache key variation — `Netlify-Vary`</li>
+<li>Cache tags &amp; opt-out</li>
+<li>On-demand invalidation (purge)</li>
+<li>Cache API (`caches` global)</li>
+<li>`@netlify&#x2F;cache` module</li>
+<li>`cacheHeaders(settings)` → header object</li>
+<li>`fetchWithCache(resource, options?, cacheSettings?)`</li>
+<li>`getCacheStatus(response | headers | headerString)`</li>
+<li>`needsRevalidation(response)` → boolean</li>
+<li>Durable cache</li>
+<li>Debugging with `Cache-Status`</li>
+<li>Netlify house rules (caching)</li>
+</ul>
+<hr>
+<p><a id="skill-581a5520"></a></p>
+<h3 id="netlify-netlify-cli-and-deploy"><a href="#netlify-netlify-cli-and-deploy" class="headerlink" title="netlify&#x2F;netlify-cli-and-deploy"></a>netlify&#x2F;netlify-cli-and-deploy</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/netlify/skills/netlify-cli-and-deploy">Skills by Netlify Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/netlify/context-and-tools/blob/main/README.md">https://github.com&#x2F;netlify&#x2F;context-and-tools&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> CLI设置、本地开发和部署工作流程</p>
+<p><strong>适用时机:</strong> 在没有 Git 远程服务器的情况下将静态网站部署到生产环境 从 Netlify 将环境变量导出到本地 .env 文件 使用 Netlify Functions 进行本地开发，并通过 netlify dev 注入重定向 为部署预览与生产环境设置上下文特定环境变量 通过 Git 远程 URL 将现有项目链接到 Netlify 网站</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Netlify Context and Tools</li>
+<li>Skills</li>
+<li>References</li>
+<li>Installation</li>
+<li>Other ways to install</li>
+<li>Hosted skills, manifest, and npm</li>
+<li>Install skills and keep them current</li>
+<li>Design Principles</li>
+<li>Contributing</li>
+<li>Generated outputs — do not edit them directly</li>
+</ul>
+<hr>
+<p><a id="skill-04b55c43"></a></p>
+<h3 id="netlify-netlify-config"><a href="#netlify-netlify-config" class="headerlink" title="netlify&#x2F;netlify-config"></a>netlify&#x2F;netlify-config</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/netlify/skills/netlify-config">Skills by Netlify Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/netlify/context-and-tools/blob/main/skills/netlify-config/SKILL.md">https://github.com&#x2F;netlify&#x2F;context-and-tools&#x2F;blob&#x2F;main&#x2F;skills&#x2F;netlify-config&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> netlify.toml网站配置参考</p>
+<p><strong>适用时机:</strong> 在设置构建命令或发布目录、添加重定向或重写或代理、添加SPA备用重写、设置自定义响应头或基础认证、管理环境变量和秘密、按部署上下文限制变量范围、标记变量为秘密、禁用秘密扫描、配置函数捆绑、忽略构建或在Netlify上连接一个单仓库或JavaScript SPA时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Netlify configuration</li>
+<li>Modern vs legacy syntax to reach for</li>
+<li>`netlify.toml` build + contexts</li>
+<li>Redirects and rewrites</li>
+<li>Proxies</li>
+<li>Custom headers</li>
+<li>Functions</li>
+<li>Environment variables</li>
+<li>Injecting env values into headers&#x2F;redirects</li>
+<li>Useful read-only build vars</li>
+<li>Secrets Controller</li>
+<li>Sensitive variable policy (public repos only)</li>
+<li>Ignore builds</li>
+<li>Monorepos</li>
+<li>JavaScript SPAs</li>
+<li>Netlify Dev `[dev]`</li>
+</ul>
+<hr>
+<p><a id="skill-2cb5b253"></a></p>
+<h3 id="netlify-netlify-db"><a href="#netlify-netlify-db" class="headerlink" title="netlify&#x2F;netlify-db"></a>netlify&#x2F;netlify-db</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/netlify/skills/netlify-db">Skills by Netlify Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/netlify/context-and-tools/blob/main/README.md">https://github.com&#x2F;netlify&#x2F;context-and-tools&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用部署预览分支管理PostgreSQL</p>
+<p><strong>适用时机:</strong> 对 Netlify 函数中的结构化应用数据执行 SQL 查询 设置 Drizzle ORM 模型并生成类型化迁移测试在合并至生产环境前，在部署预览分支上测试数据库迁移查询并筛选随时间增长的关系型数据 通过 netlify dev 局部访问 Postgres 数据库，无需手动连接配置</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Netlify Context and Tools</li>
+<li>Skills</li>
+<li>References</li>
+<li>Installation</li>
+<li>Other ways to install</li>
+<li>Hosted skills, manifest, and npm</li>
+<li>Install skills and keep them current</li>
+<li>Design Principles</li>
+<li>Contributing</li>
+<li>Generated outputs — do not edit them directly</li>
+</ul>
+<hr>
+<p><a id="skill-2738ac26"></a></p>
+<h3 id="netlify-netlify-deploy"><a href="#netlify-netlify-deploy" class="headerlink" title="netlify&#x2F;netlify-deploy"></a>netlify&#x2F;netlify-deploy</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/netlify/skills/netlify-deploy">Skills by Netlify Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/netlify/context-and-tools/blob/main/skills/netlify-deploy/SKILL.md">https://github.com&#x2F;netlify&#x2F;context-and-tools&#x2F;blob&#x2F;main&#x2F;skills&#x2F;netlify-deploy&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> Netlify网站的自动化部署工作流程</p>
+<p><strong>适用时机:</strong> 在合并PR之前将Vite或Next.js应用部署到Netlify预览URL上 通过Git远程连接本地项目文件夹到现有Netlify网站 从头创建新Netlify网站并从零配置构建设置 验证预览URL是否正确后推送到生产部署 检查构建命令和发布目录以排查失败的部署问题</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Netlify deploy</li>
+<li>Modern CLI</li>
+<li>Ways to create a deploy</li>
+<li>netlify.toml deploy contexts</li>
+<li>Deploy Previews &amp; branch deploys</li>
+<li>Locking, skipping, and manual production deploys</li>
+<li>Managing deploys</li>
+<li>Deploy to Netlify button</li>
+<li>Secrets scanning failures</li>
+<li>Fixing a failed deploy — no rollbacks</li>
+<li>Deploy permissions (private repos)</li>
+<li>Constraints &amp; gotchas</li>
+<li>Netlify house rules (deploy)</li>
+</ul>
+<hr>
+<p><a id="skill-416c7b4f"></a></p>
+<h3 id="netlify-netlify-edge-functions"><a href="#netlify-netlify-edge-functions" class="headerlink" title="netlify&#x2F;netlify-edge-functions"></a>netlify&#x2F;netlify-edge-functions</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/netlify/skills/netlify-edge-functions">Skills by Netlify Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/netlify/context-and-tools/blob/main/skills/netlify-edge-functions/SKILL.md">https://github.com&#x2F;netlify&#x2F;context-and-tools&#x2F;blob&#x2F;main&#x2F;skills&#x2F;netlify-edge-functions&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 低延迟边缘中间件和地理位置逻辑</p>
+<p><strong>适用时机:</strong> 当边缘函数不作任何操作、运行顺序错误、忽略其Cache-Control头或无法读取环境变量时使用它。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Netlify Edge Functions</li>
+<li>Use this form</li>
+<li>⚠️ Footguns</li>
+<li>Files</li>
+<li>Return values</li>
+<li>Endpoint</li>
+<li>Redirect &#x2F; rewrite</li>
+<li>Middleware (modify origin response)</li>
+<li>Conditional requests</li>
+<li>Read body, then continue</li>
+<li>Netlify user gate (private &#x2F; team-login-protected projects)</li>
+<li>Post-response work</li>
+<li>Streaming SSR (`.tsx`)</li>
+<li>`Context`</li>
+<li>Declarations</li>
+<li>Inline `config`</li>
+</ul>
+<hr>
+<p><a id="skill-53d0b163"></a></p>
+<h3 id="netlify-netlify-forms"><a href="#netlify-netlify-forms" class="headerlink" title="netlify&#x2F;netlify-forms"></a>netlify&#x2F;netlify-forms</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/netlify/skills/netlify-forms">Skills by Netlify Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/netlify/context-and-tools/blob/main/skills/netlify-forms/SKILL.md">https://github.com&#x2F;netlify&#x2F;context-and-tools&#x2F;blob&#x2F;main&#x2F;skills&#x2F;netlify-forms&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用垃圾邮件过滤处理HTML表单</p>
+<p><strong>适用时机:</strong> 在向Netlify网站添加联系方式表单、潜在客户捕获表单、文件上传表单或新闻通讯订阅时使用；连接AJAX表单提交；设置自定义感谢页面；在表单中添加蜜罐或reCAPTCHA；在Next.js、Nuxt、SvelteKit、Astro或Gatsby中使表单正常工作；通过Netlify API读取表单提交；在表单提交事件上设置提交通知或ChatGPT自动化；或调试缺失的提交和表单在无声中无法注册的情况。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Netlify Forms</li>
+<li>Static HTML form</li>
+<li>JS-rendered &#x2F; SSR &#x2F; framework forms (Next.js, Nuxt, SvelteKit, Astro, Gatsby)</li>
+<li>AJAX submission</li>
+<li>File uploads</li>
+<li>Custom success page</li>
+<li>Spam prevention</li>
+<li>Email notifications &amp; subject line</li>
+<li>Reading submissions via the API</li>
+<li>Submission summary (field order matters)</li>
+<li>Debugging missing submissions</li>
+<li>Constraints</li>
+<li>Netlify house rules (forms)</li>
+</ul>
+<hr>
+<p><a id="skill-a5684744"></a></p>
+<h3 id="netlify-netlify-frameworks"><a href="#netlify-netlify-frameworks" class="headerlink" title="netlify&#x2F;netlify-frameworks"></a>netlify&#x2F;netlify-frameworks</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/netlify/skills/netlify-frameworks">Skills by Netlify Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/netlify/context-and-tools/blob/main/skills/netlify-frameworks/SKILL.md">https://github.com&#x2F;netlify&#x2F;context-and-tools&#x2F;blob&#x2F;main&#x2F;skills&#x2F;netlify-frameworks&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 部署支持SSR的Web框架</p>
+<p><strong>适用时机:</strong> 在设置或修复框架部署（Next.js &#x2F; Astro &#x2F; Nuxt &#x2F; SvelteKit &#x2F; Remix &#x2F; React Router &#x2F; TanStack Start &#x2F; SolidStart &#x2F; Gatsby &#x2F; Angular &#x2F; Vite &#x2F; Express &#x2F; Hydrogen &#x2F; Hugo &#x2F; Eleventy &#x2F; Vue &#x2F; React）时使用，添加与Netlify上下文连接的SSR或边缘函数或中间件，修复SPA重定向和捕获所有规则，设置构建命令或发布目录，或调试“为什么我的环境变量没有更新”和框架构建失败问题。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Env vars: modern rules (read first)</li>
+<li>SPA redirects and the SSR catch-all footgun</li>
+<li>Local dev with platform emulation (no Netlify CLI)</li>
+<li>Build settings by framework</li>
+<li>SSR &#x2F; adapter setup</li>
+<li>Astro</li>
+<li>Next.js (13.5+ only)</li>
+<li>SvelteKit</li>
+<li>React Router (7+)</li>
+<li>Remix</li>
+<li>Nuxt</li>
+<li>SolidStart</li>
+<li>TanStack Start</li>
+<li>Gatsby</li>
+<li>Angular</li>
+<li>Express</li>
+</ul>
+<hr>
+<p><a id="skill-9b4290a7"></a></p>
+<h3 id="netlify-netlify-functions"><a href="#netlify-netlify-functions" class="headerlink" title="netlify&#x2F;netlify-functions"></a>netlify&#x2F;netlify-functions</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/netlify/skills/netlify-functions">Skills by Netlify Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/netlify/context-and-tools/blob/main/skills/netlify-functions/SKILL.md">https://github.com&#x2F;netlify&#x2F;context-and-tools&#x2F;blob&#x2F;main&#x2F;skills&#x2F;netlify-functions&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 构建无服务器API端点和后台任务</p>
+<p><strong>适用时机:</strong> 为一个没有单独后端架构的静态 React 应用编写 REST API 端点 在用户收到即时 202 回应后运行后台函数以处理图像上传 安排每日夜间 cron 任务以从外部 API 同步数据 将函数发送的服务器端事件实时流式传输给客户端 从传入请求中访问地理位置和 IP 数据以提供本地化内容</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Netlify Functions</li>
+<li>File locations</li>
+<li>Minimal function</li>
+<li>Custom path routing</li>
+<li>Fetchable module shape (alternative)</li>
+<li>Context object</li>
+<li>Who is calling: `context.user`</li>
+<li>Config object</li>
+<li>Integrations</li>
+<li>Streaming responses</li>
+<li>Background functions (long-running)</li>
+<li>Scheduled functions (cron)</li>
+<li>Platform-event functions</li>
+<li>Region</li>
+<li>Memory &#x2F; vCPU</li>
+<li>Bundling &amp; files on disk</li>
+</ul>
+<hr>
+<p><a id="skill-d1010891"></a></p>
+<h3 id="netlify-netlify-image-cdn"><a href="#netlify-netlify-image-cdn" class="headerlink" title="netlify&#x2F;netlify-image-cdn"></a>netlify&#x2F;netlify-image-cdn</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/netlify/skills/netlify-image-cdn">Skills by Netlify Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/netlify/context-and-tools/blob/main/skills/netlify-image-cdn/SKILL.md">https://github.com&#x2F;netlify&#x2F;context-and-tools&#x2F;blob&#x2F;main&#x2F;skills&#x2F;netlify-image-cdn&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过CDN优化和转换图像</p>
+<p><strong>适用时机:</strong> 适用于添加图像优化或响应式图像、格式转换（WebP&#x2F;AVIF&#x2F;PNG）、生成缩略图或模糊占位符、通过CDN提供远程&#x2F;第三方图像、在netlify.toml中允许远程域名、设置图像重定向或缓存头、构建用户上传的图像流水线，或调试&#x2F;.&#x2F;netlify&#x2F;images上的404错误。同时涵盖Angular&#x2F;Astro&#x2F;Gatsby&#x2F;Next.js&#x2F;Nuxt框架的图像处理。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Netlify Image CDN</li>
+<li>Query parameters</li>
+<li>Common transformations</li>
+<li>fit behavior</li>
+<li>Format notes</li>
+<li>Remote source images</li>
+<li>remote_images regex escaping</li>
+<li>Response codes</li>
+<li>Reusing parameters across images</li>
+<li>Caching headers</li>
+<li>Blur placeholders (fm&#x3D;blurhash)</li>
+<li>Local development</li>
+<li>User-uploaded image pipelines</li>
+<li>Framework image handling</li>
+<li>Additional constraints</li>
+<li>Netlify house rules (image-cdn)</li>
+</ul>
+<hr>
+<p><a id="skill-d614be5a"></a></p>
+<h3 id="NoizAI-skills"><a href="#NoizAI-skills" class="headerlink" title="NoizAI&#x2F;skills"></a>NoizAI&#x2F;skills</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/NoizAI/skills">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/NoizAI/skills/blob/main/README.md">https://github.com&#x2F;NoizAI&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 具有本地&#x2F;云API和应用程序交付的人工语音合成工作流程</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：使用本地&#x2F;云API和应用程序交付的人工语音合成工作流程</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Unmute your intelligent bot</li>
+<li>Install with `npx skills add`</li>
+<li>Highlights</li>
+<li>Available skills</li>
+<li>Quick Verify</li>
+<li>English Audio Demos</li>
+<li>Noiz API Key (recommended)</li>
+<li>Contributing</li>
+<li>Feedback &amp; Discussion</li>
+<li>Project Trends</li>
+<li>GitHub Star Trend</li>
+<li>Git Clone Trend</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 10 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/NoizAI/skills/blob/main/skills/characteristic-voice/SKILL.md">characteristic-voice</a> · <a target="_blank" rel="noopener" href="https://github.com/NoizAI/skills/blob/main/skills/chat-with-anyone/SKILL.md">chat-with-anyone</a> · <a target="_blank" rel="noopener" href="https://github.com/NoizAI/skills/blob/main/skills/daily-news-caster/SKILL.md">daily-news-caster</a> · <a target="_blank" rel="noopener" href="https://github.com/NoizAI/skills/blob/main/skills/music-video/SKILL.md">music-video</a> · <a target="_blank" rel="noopener" href="https://github.com/NoizAI/skills/blob/main/skills/sound-fx/SKILL.md">sound-fx</a> · <a target="_blank" rel="noopener" href="https://github.com/NoizAI/skills/blob/main/skills/speech-to-text/SKILL.md">speech-to-text</a> · <a target="_blank" rel="noopener" href="https://github.com/NoizAI/skills/blob/main/skills/template-skill/SKILL.md">template-skill</a> · <a target="_blank" rel="noopener" href="https://github.com/NoizAI/skills/blob/main/skills/text-to-music/SKILL.md">text-to-music</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-e8fd868e"></a></p>
+<h3 id="openai-cloudflare-deploy"><a href="#openai-cloudflare-deploy" class="headerlink" title="openai&#x2F;cloudflare-deploy"></a>openai&#x2F;cloudflare-deploy</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/cloudflare-deploy">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/skills/.curated/cloudflare-deploy/SKILL.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;.curated&#x2F;cloudflare-deploy&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用Workers、Pages和平台服务将应用程序部署到Cloudflare上</p>
+<p><strong>适用时机:</strong> 当用户要求在Cloudflare上部署、托管、发布或设置项目时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Cloudflare Deploy</li>
+<li>Prerequisites</li>
+<li>Authentication (Required Before Deploy)</li>
+<li>Quick Decision Trees</li>
+<li>“I need to run code”</li>
+<li>“I need to store data”</li>
+<li>“I need AI&#x2F;ML”</li>
+<li>“I need networking&#x2F;connectivity”</li>
+<li>“I need security”</li>
+<li>“I need media&#x2F;content”</li>
+<li>“I need infrastructure-as-code”</li>
+<li>Product Index</li>
+<li>Compute &amp; Runtime</li>
+<li>Storage &amp; Data</li>
+<li>AI &amp; Machine Learning</li>
+<li>Networking &amp; Connectivity</li>
+</ul>
+<hr>
+<p><a id="skill-9ba35b2b"></a></p>
+<h3 id="openai-render-deploy"><a href="#openai-render-deploy" class="headerlink" title="openai&#x2F;render-deploy"></a>openai&#x2F;render-deploy</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/render-deploy">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/skills/.curated/render-deploy/SKILL.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;.curated&#x2F;render-deploy&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用Git支持的服务将应用程序部署到Render的云平台</p>
+<p><strong>适用时机:</strong> 当用户想在Render的云平台上部署、托管、发布或设置他们的应用程序时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Deploy to Render</li>
+<li>Prerequisites</li>
+<li>When to Use This Skill</li>
+<li>Happy Path (New Users)</li>
+<li>Choose Your Source Path</li>
+<li>Choose Your Deployment Method (Git Repo)</li>
+<li>Method Selection Heuristic</li>
+<li>Prerequisites Check</li>
+<li>Cursor</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Other Tools</li>
+<li>Workspace Selection</li>
+<li>Method 1: Blueprint Deployment (Recommended for Complex Apps)</li>
+<li>Blueprint Workflow</li>
+<li>Step 1: Analyze Codebase</li>
+</ul>
+<hr>
+<p><a id="skill-132547ac"></a></p>
+<h3 id="openai-vercel-deploy"><a href="#openai-vercel-deploy" class="headerlink" title="openai&#x2F;vercel-deploy"></a>openai&#x2F;vercel-deploy</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/vercel-deploy">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/skills/.curated/vercel-deploy/SKILL.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;.curated&#x2F;vercel-deploy&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用预览或生产选项将应用程序和网站部署到Vercel上</p>
+<p><strong>适用时机:</strong> 当用户请求部署操作，例如“部署我的应用程序”、“部署并给我链接”、“发布这个”或“创建预览部署”时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Vercel Deploy</li>
+<li>Prerequisites</li>
+<li>Quick Start</li>
+<li>Fallback (No Auth)</li>
+<li>Production Deploys</li>
+<li>Output</li>
+<li>Troubleshooting</li>
+<li>Escalated Network Access</li>
+</ul>
+<hr>
+<p><a id="skill-ae92388c"></a></p>
+<h3 id="OptimNow-cloud-finops-skills"><a href="#OptimNow-cloud-finops-skills" class="headerlink" title="OptimNow&#x2F;cloud-finops-skills"></a>OptimNow&#x2F;cloud-finops-skills</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/OptimNow/cloud-finops-skills/tree/main/skills/cloud-finops">Specialized Domains</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/OptimNow/cloud-finops-skills/blob/main/skills/cloud-finops/README.md">https://github.com&#x2F;OptimNow&#x2F;cloud-finops-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud-finops&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> FinOps知识：云账单机制、承诺、分配、AI支出</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：FinOps知识：云计费机制、承诺、分配、AI支出</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Moved</li>
+</ul>
+<hr>
+<p><a id="skill-d3541c7e"></a></p>
+<h3 id="posteyai-skills"><a href="#posteyai-skills" class="headerlink" title="posteyai&#x2F;skills"></a>posteyai&#x2F;skills</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/posteyai/skills">Marketing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/posteyai/skills/blob/main/README.md">https://github.com&#x2F;posteyai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 为九个网络撰写、安排和发布社交帖子</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：为九个网络草拟、安排和发布社交帖子</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Postey Skills — MCP Server &amp; AI Agent Skills for Social Media</li>
+<li>Quick start</li>
+<li>The Postey MCP server</li>
+<li>The skill and the server are layers, not alternatives</li>
+<li>What the skill adds</li>
+<li>Installation</li>
+<li>Claude Code (recommended)</li>
+<li>Grok Build</li>
+<li>Connect the MCP server</li>
+<li>Credentials</li>
+<li>Supported platforms</li>
+<li>Troubleshooting</li>
+<li>Links</li>
+<li>License</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 16 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/posteyai/skills/blob/main/skills/postey-analytics/SKILL.md">postey-analytics</a> · <a target="_blank" rel="noopener" href="https://github.com/posteyai/skills/blob/main/skills/postey-engagement/SKILL.md">postey-engagement</a> · <a target="_blank" rel="noopener" href="https://github.com/posteyai/skills/blob/main/skills/postey-ideas/SKILL.md">postey-ideas</a> · <a target="_blank" rel="noopener" href="https://github.com/posteyai/skills/blob/main/skills/postey-ops/SKILL.md">postey-ops</a> · <a target="_blank" rel="noopener" href="https://github.com/posteyai/skills/blob/main/skills/postey-teams/SKILL.md">postey-teams</a> · <a target="_blank" rel="noopener" href="https://github.com/posteyai/skills/blob/main/skills/postey-video/SKILL.md">postey-video</a> · <a target="_blank" rel="noopener" href="https://github.com/posteyai/skills/blob/main/skills/postey-voice/SKILL.md">postey-voice</a> · <a target="_blank" rel="noopener" href="https://github.com/posteyai/skills/blob/main/skills/postey/SKILL.md">postey</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-7389d06e"></a></p>
+<h3 id="publora-skills"><a href="#publora-skills" class="headerlink" title="publora&#x2F;skills"></a>publora&#x2F;skills</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/publora/skills">Marketing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/publora/skills/blob/main/README.md">https://github.com&#x2F;publora&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 为十个社交网络撰写、安排和发布帖子</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：为十个社交网络草拟、安排和发布帖子</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Publora Skills: post to 10 social networks from your AI agent</li>
+<li>Install</li>
+<li>Existing Claude Code connections</li>
+<li>The 9 skills</li>
+<li>How it works</li>
+<li>REST fallback</li>
+<li>FAQ</li>
+<li>Contributing</li>
+<li>Related</li>
+<li>License</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 9 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/publora/skills/blob/main/.codex-marketplace/publora-skills/skills/bluesky-post/SKILL.md">bluesky-post</a> · <a target="_blank" rel="noopener" href="https://github.com/publora/skills/blob/main/.codex-marketplace/publora-skills/skills/instagram-post/SKILL.md">instagram-post</a> · <a target="_blank" rel="noopener" href="https://github.com/publora/skills/blob/main/.codex-marketplace/publora-skills/skills/linkedin-analytics/SKILL.md">linkedin-analytics</a> · <a target="_blank" rel="noopener" href="https://github.com/publora/skills/blob/main/.codex-marketplace/publora-skills/skills/linkedin-post/SKILL.md">linkedin-post</a> · <a target="_blank" rel="noopener" href="https://github.com/publora/skills/blob/main/.codex-marketplace/publora-skills/skills/social-post/SKILL.md">social-post</a> · <a target="_blank" rel="noopener" href="https://github.com/publora/skills/blob/main/.codex-marketplace/publora-skills/skills/telegram-post/SKILL.md">telegram-post</a> · <a target="_blank" rel="noopener" href="https://github.com/publora/skills/blob/main/.codex-marketplace/publora-skills/skills/threads-post/SKILL.md">threads-post</a> · <a target="_blank" rel="noopener" href="https://github.com/publora/skills/blob/main/.codex-marketplace/publora-skills/skills/tiktok-post/SKILL.md">tiktok-post</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-7a66c755"></a></p>
+<h3 id="redhat-sre-skillpack"><a href="#redhat-sre-skillpack" class="headerlink" title="redhat&#x2F;sre-skillpack"></a>redhat&#x2F;sre-skillpack</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://catalog.redhat.com/en/ai/skills/detail/agentic-skill-pack-for-site-reliability-engineers">Skills by RedHat</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://catalog.redhat.com/en/ai/skills/detail/agentic-skill-pack-for-site-reliability-engineers">https://catalog.redhat.com&#x2F;en&#x2F;ai&#x2F;skills&#x2F;detail&#x2F;agentic-skill-pack-for-site-reliability-engineers</a></p>
+<p><strong>功能简介:</strong> 在您的RHEL集群中发现、修复和验证CVE——通过单一工作流程协调Red Hat Lightspeed和Ansible自动化平台。</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：在您的RHEL集群中发现、修复和验证CVE——通过单一工作流程协调Red Hat Lightspeed和Ansible自动化平台。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Platforms</li>
+<li>Products &amp; services</li>
+<li>Try, buy, sell</li>
+<li>Help</li>
+<li>About Red Hat Ecosystem Catalog</li>
+<li>Red Hat legal and privacy links</li>
+<li>Red Hat legal and privacy links</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 0 个不重复的技能文件路径。</p>
+<p>未能取得单独的 SKILL.md；本文根据目录简介和可访问的仓库 README 整理。</p>
+<hr>
+<p><a id="skill-56ad2109"></a></p>
+<h3 id="rorkai-app-store-connect-cli-skills"><a href="#rorkai-app-store-connect-cli-skills" class="headerlink" title="rorkai&#x2F;app-store-connect-cli-skills"></a>rorkai&#x2F;app-store-connect-cli-skills</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/rorkai/app-store-connect-cli-skills">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/rorkai/app-store-connect-cli-skills/blob/main/README.md">https://github.com&#x2F;rorkai&#x2F;app-store-connect-cli-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用 ASC CLI 自动化 App Store 的部署和管理</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：使用 ASC CLI 自动化 App Store 部署和管理</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>ASC CLI skills</li>
+<li>Installation</li>
+<li>Claude Code plugin</li>
+<li>Codex plugin</li>
+<li>Available Skills</li>
+<li>asc-cli-usage</li>
+<li>asc-apple-ads</li>
+<li>asc-workflow</li>
+<li>asc-app-create-ui</li>
+<li>asc-xcode-build</li>
+<li>asc-ad-hoc-distribution</li>
+<li>asc-screenshot-resize</li>
+<li>asc-shots-pipeline</li>
+<li>asc-release-flow</li>
+<li>asc-signing-setup</li>
+<li>asc-id-resolver</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 26 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/rorkai/app-store-connect-cli-skills/blob/main/skills/asc-ad-hoc-distribution/SKILL.md">asc-ad-hoc-distribution</a> · <a target="_blank" rel="noopener" href="https://github.com/rorkai/app-store-connect-cli-skills/blob/main/skills/asc-analytics-reports/SKILL.md">asc-analytics-reports</a> · <a target="_blank" rel="noopener" href="https://github.com/rorkai/app-store-connect-cli-skills/blob/main/skills/asc-app-create-ui/SKILL.md">asc-app-create-ui</a> · <a target="_blank" rel="noopener" href="https://github.com/rorkai/app-store-connect-cli-skills/blob/main/skills/asc-apple-ads/SKILL.md">asc-apple-ads</a> · <a target="_blank" rel="noopener" href="https://github.com/rorkai/app-store-connect-cli-skills/blob/main/skills/asc-aso-audit/SKILL.md">asc-aso-audit</a> · <a target="_blank" rel="noopener" href="https://github.com/rorkai/app-store-connect-cli-skills/blob/main/skills/asc-build-lifecycle/SKILL.md">asc-build-lifecycle</a> · <a target="_blank" rel="noopener" href="https://github.com/rorkai/app-store-connect-cli-skills/blob/main/skills/asc-cli-usage/SKILL.md">asc-cli-usage</a> · <a target="_blank" rel="noopener" href="https://github.com/rorkai/app-store-connect-cli-skills/blob/main/skills/asc-crash-triage/SKILL.md">asc-crash-triage</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-465adf61"></a></p>
+<h3 id="sujunmin-agy-ppt"><a href="#sujunmin-agy-ppt" class="headerlink" title="sujunmin&#x2F;agy-ppt"></a>sujunmin&#x2F;agy-ppt</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/sujunmin/agy-ppt">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/sujunmin/agy-ppt/blob/main/skills/agy-ppt/SKILL.md">https://github.com&#x2F;sujunmin&#x2F;agy-ppt&#x2F;blob&#x2F;main&#x2F;skills&#x2F;agy-ppt&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 无需采用AI粗糙的视觉效果即可生成PowerPoint演示文稿，专为Antigravity+Kiro+Codex流水线打造；GPT图像渲染功能比Gemini更好地处理密集的中文幻灯片文本。</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：无需AI杂乱的外观生成PowerPoint幻灯片，专为Antigravity+Kiro+Codex流水线设计；GPT图像渲染比Gemini更好地处理密集的传统中文幻灯片文本。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>AGY PPT Orchestrator</li>
+<li>1. 目的</li>
+<li>2. 核心設計原則</li>
+<li>2.1 單一控制者</li>
+<li>2.2 AGY 負責「要做什麼」</li>
+<li>2.3 Kiro 負責「如何讓系統做到」</li>
+<li>2.4 Codex 只負責圖片</li>
+<li>3. OAuth-only 執行原則</li>
+<li>4. 固定圖片後端</li>
+<li>5. Kiro 呼叫原則</li>
+<li>5.1 Kiro Runtime</li>
+<li>5.2 正式流程</li>
+<li>5.3 Agent selection 與 scope</li>
+<li>5.4 Agent scope 是 turn-long invariant</li>
+<li>5.5 失敗回報</li>
+<li>5.6 Permission boundary</li>
+</ul>
+<hr>
+<p><a id="skill-6e56dd08"></a></p>
+<h3 id="testmu-ai-cicd-pipeline-skill"><a href="#testmu-ai-cicd-pipeline-skill" class="headerlink" title="testmu-ai&#x2F;cicd-pipeline-skill"></a>testmu-ai&#x2F;cicd-pipeline-skill</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/LambdaTest/agent-skills/tree/main/cicd-pipeline-skill">Skills by TestMu AI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/LambdaTest/agent-skills/blob/main/cicd-pipeline-skill/SKILL.md">https://github.com&#x2F;LambdaTest&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;cicd-pipeline-skill&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 为GitHub Actions、Jenkins、GitLab CI和Azure DevOps上的测试生成CI&#x2F;CD流水线</p>
+<p><strong>适用时机:</strong> 当用户提及“CI&#x2F;CD”、“流水线”、“GitHub Actions”、“Jenkins”、“GitLab CI”时使用。触发条件：“CI&#x2F;CD”、“流水线”、“GitHub Actions”、“Jenkins”、“GitLab CI”、“Azure DevOps”、“自动化测试流水线”。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>CI&#x2F;CD Pipeline Skill</li>
+<li>Core Patterns</li>
+<li>GitHub Actions</li>
+<li>Jenkins (Jenkinsfile)</li>
+<li>GitLab CI</li>
+<li>Quick Reference</li>
+<li>Deep Patterns</li>
+</ul>
+<hr>
+<p><a id="skill-b51c811b"></a></p>
+<h3 id="tushaarmehtaa-tushar-skills"><a href="#tushaarmehtaa-tushar-skills" class="headerlink" title="tushaarmehtaa&#x2F;tushar-skills"></a>tushaarmehtaa&#x2F;tushar-skills</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/tushaarmehtaa/tushar-skills">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/tushaarmehtaa/tushar-skills/blob/main/README.md">https://github.com&#x2F;tushaarmehtaa&#x2F;tushar-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 部署、拓展、筹款、规格、发布的34种工作流程技能</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：部署、接触、筹款、规格、发布的34种工作流程技能</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>slashskills</li>
+<li>Agent Skills, not runtime-specific prompts</li>
+<li>Developer tools</li>
+<li>Install</li>
+<li>Claude app</li>
+<li>Skill catalog</li>
+<li>Contributing</li>
+<li>V1 scope</li>
+<li>License</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 35 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/tushaarmehtaa/tushar-skills/blob/main/agent-instructions/SKILL.md">agent-instructions</a> · <a target="_blank" rel="noopener" href="https://github.com/tushaarmehtaa/tushar-skills/blob/main/ai-cost-audit/SKILL.md">ai-cost-audit</a> · <a target="_blank" rel="noopener" href="https://github.com/tushaarmehtaa/tushar-skills/blob/main/ai-product-development/SKILL.md">ai-product-development</a> · <a target="_blank" rel="noopener" href="https://github.com/tushaarmehtaa/tushar-skills/blob/main/analytics/SKILL.md">analytics</a> · <a target="_blank" rel="noopener" href="https://github.com/tushaarmehtaa/tushar-skills/blob/main/auth-implementation/SKILL.md">auth-implementation</a> · <a target="_blank" rel="noopener" href="https://github.com/tushaarmehtaa/tushar-skills/blob/main/changelog/SKILL.md">changelog</a> · <a target="_blank" rel="noopener" href="https://github.com/tushaarmehtaa/tushar-skills/blob/main/cold-outreach/SKILL.md">cold-outreach</a> · <a target="_blank" rel="noopener" href="https://github.com/tushaarmehtaa/tushar-skills/blob/main/credit-metering/SKILL.md">credit-metering</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-d81b8b6a"></a></p>
+<h3 id="veniceai-venice-crypto-rpc"><a href="#veniceai-venice-crypto-rpc" class="headerlink" title="veniceai&#x2F;venice-crypto-rpc"></a>veniceai&#x2F;venice-crypto-rpc</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/tree/main/skills/venice-crypto-rpc">Skills by Venice.ai</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/blob/main/skills/venice-crypto-rpc/SKILL.md">https://github.com&#x2F;veniceai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;venice-crypto-rpc&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 为支持的加密网络提供JSON-RPC代理服务</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：支持的加密网络中的JSON-RPC代理</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Venice Crypto RPC (JSON-RPC proxy)</li>
+<li>Supported networks</li>
+<li>Chain families</li>
+<li>Send a JSON-RPC request</li>
+<li>Single call</li>
+<li>Batch (up to 100 calls)</li>
+<li>Drop-in with `viem`</li>
+<li>Pricing</li>
+<li>Response headers</li>
+<li>Unsupported methods</li>
+<li>Idempotency</li>
+<li>Rate limits and concurrency</li>
+<li>Errors</li>
+<li>Patterns</li>
+</ul>
+<hr>
+<p><a id="skill-eb245ad1"></a></p>
+<h3 id="vercel-labs-deploy-to-vercel"><a href="#vercel-labs-deploy-to-vercel" class="headerlink" title="vercel-labs&#x2F;deploy-to-vercel"></a>vercel-labs&#x2F;deploy-to-vercel</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/vercel-labs/agent-skills/tree/main/skills/deploy-to-vercel">Skills by Vercel Engineering Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/vercel-labs/agent-skills/blob/main/skills/deploy-to-vercel/SKILL.md">https://github.com&#x2F;vercel-labs&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;deploy-to-vercel&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 将应用程序和网站部署到Vercel</p>
+<p><strong>适用时机:</strong> 当用户请求部署操作，例如“部署我的应用程序”、“部署并给我链接”、“发布这个”或“创建预览部署”时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Deploy to Vercel</li>
+<li>Step 1: Gather Project State</li>
+<li>Team selection</li>
+<li>Step 2: Choose a Deploy Method</li>
+<li>Linked (`.vercel&#x2F;` exists) + has git remote → Git Push</li>
+<li>Linked (`.vercel&#x2F;` exists) + no git remote → `vercel deploy`</li>
+<li>Not linked + CLI is authenticated → Link first, then deploy</li>
+<li>Not linked + CLI not authenticated → Install, auth, link, deploy</li>
+<li>No-Auth Fallback — `vercel deploy --temporary`</li>
+<li>Agent-Specific Notes</li>
+<li>Claude Code &#x2F; terminal-based agents</li>
+<li>Sandboxed environments (claude.ai, Codex)</li>
+<li>Output</li>
+<li>Troubleshooting</li>
+<li>Network Egress Error (claude.ai)</li>
+<li>Escalated Network Access (Codex &#x2F; sandboxed environments)</li>
+</ul>
+<hr>
+<p><a id="skill-5eec4e9f"></a></p>
+<h3 id="vmware-skills-VMware-AIops"><a href="#vmware-skills-VMware-AIops" class="headerlink" title="vmware-skills&#x2F;VMware-AIops"></a>vmware-skills&#x2F;VMware-AIops</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/vmware-skills/VMware-AIops">Specialized Domains</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/vmware-skills/VMware-AIops/blob/main/skills/vmware-aiops/SKILL.md">https://github.com&#x2F;vmware-skills&#x2F;VMware-AIops&#x2F;blob&#x2F;main&#x2F;skills&#x2F;vmware-aiops&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> AI驱动的 VMware vCenter&#x2F;ESXi 监控和运营：库存查询、健康&#x2F;警报、虚拟机生命周期（创建、删除、快照、克隆、迁移）、vSAN 管理、Aria Operations 分析以及定时日志扫描。支持 Claude Code、Gemini CLI、Codex、Aider、Trae、Kimi 和 MCP。</p>
+<p><strong>适用时机:</strong> 当用户需要在 VMware&#x2F;vSphere&#x2F;ESXi 中管理虚拟机（VM）时，请使用此技能——它是所有虚拟机操作的入口点。直接处理：开机&#x2F;关机、克隆、快照、迁移、从 OVA 或模板部署、在虚拟机内运行命令、批处理操作、集群管理、vCenter 报警确认、一目了然的集群健康分级（“有什么在燃烧吗？”），以及虚拟机&#x2F;主机&#x2F;数据存储器调查的深入分析。始终在任何“开机”、“克隆”、“部署”、“迁移”、“批处理”、“客机执行”、“报警”或虚拟机生命周期任务中使用此技能，并在“有什么在燃烧吗？”&#x2F;“现在需要关注什么”&#x2F;“调查”等分级任务中使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>VMware AIops</li>
+<li>What This Skill Does</li>
+<li>Audit &amp; Safety</li>
+<li>Quick Install</li>
+<li>VMware Family — Install What You Need</li>
+<li>When to Use This Skill</li>
+<li>Related Skills — Skill Routing</li>
+<li>Common Workflows</li>
+<li>Cluster Health Triage (“what’s wrong right now?”)</li>
+<li>Object-Centered Investigation → Act (drill-down before you change anything)</li>
+<li>Deploy a Lab Environment</li>
+<li>Batch Clone for Testing</li>
+<li>Migrate VM to Another Host</li>
+<li>Usage Mode</li>
+<li>MCP Tools (61 — 18 read, 43 write)</li>
+<li>CLI Quick Reference</li>
+</ul>
+<hr>
+<p><a id="skill-7d9769f9"></a></p>
+<h3 id="wanshuiyin-Auto-claude-code-research-in-sleep"><a href="#wanshuiyin-Auto-claude-code-research-in-sleep" class="headerlink" title="wanshuiyin&#x2F;Auto-claude-code-research-in-sleep"></a>wanshuiyin&#x2F;Auto-claude-code-research-in-sleep</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep">Specialized Domains</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/README.md">https://github.com&#x2F;wanshuiyin&#x2F;Auto-claude-code-research-in-sleep&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 采用跨模型审查循环和GPU部署的自主机器学习研究</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：使用跨模型审查循环和GPU部署的自主机器学习研究</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Auto-claude-code-research-in-sleep (ARIS ⚔️🌙)</li>
+<li>Contents</li>
+<li>1. 🎯 More Than Just a Prompt</li>
+<li>2. 📢 What’s New</li>
+<li>3. 🚀 Quick Start</li>
+<li>4. ✨ Features</li>
+<li>5. 📈 Score Progression (Real Run)</li>
+<li>6. 🏆 Community Showcase — Papers Built with ARIS</li>
+<li>7. 🧩 Awesome Community Skills &amp; Extensions</li>
+<li>8. 🔄 Workflows</li>
+<li>Full Pipeline 🚀</li>
+<li>Workflow 1: Idea Discovery &amp; Method Refinement 🔍</li>
+<li>Workflow 1.5: Experiment Bridge 🔗</li>
+<li>Workflow 2: Auto Research Loop 🔁 (sleep &amp; wake up to results)</li>
+<li>Workflow 3: Paper Writing Pipeline 📝</li>
+<li>Workflow 4: Rebuttal 📝 (reply to reviewers safely)</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 87 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/skills/ablation-planner/SKILL.md">ablation-planner</a> · <a target="_blank" rel="noopener" href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/skills/alphaxiv/SKILL.md">alphaxiv</a> · <a target="_blank" rel="noopener" href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/skills/analyze-results/SKILL.md">analyze-results</a> · <a target="_blank" rel="noopener" href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/skills/arxiv/SKILL.md">arxiv</a> · <a target="_blank" rel="noopener" href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/skills/auto-paper-improvement-loop/SKILL.md">auto-paper-improvement-loop</a> · <a target="_blank" rel="noopener" href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/skills/auto-review-loop-llm/SKILL.md">auto-review-loop-llm</a> · <a target="_blank" rel="noopener" href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/skills/auto-review-loop-minimax/SKILL.md">auto-review-loop-minimax</a> · <a target="_blank" rel="noopener" href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/skills/auto-review-loop/SKILL.md">auto-review-loop</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-29e6dfa5"></a></p>
+<h3 id="Xquik-dev-tweetclaw"><a href="#Xquik-dev-tweetclaw" class="headerlink" title="Xquik-dev&#x2F;tweetclaw"></a>Xquik-dev&#x2F;tweetclaw</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/Xquik-dev/tweetclaw">Marketing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/Xquik-dev/tweetclaw/blob/master/skills/tweetclaw/SKILL.md">https://github.com&#x2F;Xquik-dev&#x2F;tweetclaw&#x2F;blob&#x2F;master&#x2F;skills&#x2F;tweetclaw&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 发布推文、回复、私信；搜索、监控、举办抽奖活动</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：发布推文、回复、私信；搜索、监控、运行抽奖活动</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>TweetClaw</li>
+<li>Install</li>
+<li>Trust profile</li>
+<li>Safety rules</li>
+<li>Pricing</li>
+<li>Documentation</li>
+<li>Use TweetClaw for</li>
+<li>Configure</li>
+<li>Tools</li>
+<li>`explore`</li>
+<li>`tweetclaw`</li>
+<li>Commands</li>
+<li>Events</li>
+<li>Workflow map</li>
+<li>Read data</li>
+<li>Security boundaries</li>
+</ul>
+<hr>
+<p><a id="skill-94a4f6fa"></a></p>
+<h3 id="zxkane-aws-skills"><a href="#zxkane-aws-skills" class="headerlink" title="zxkane&#x2F;aws-skills"></a>zxkane&#x2F;aws-skills</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/zxkane/aws-skills">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/zxkane/aws-skills/blob/main/README.md">https://github.com&#x2F;zxkane&#x2F;aws-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用基础设施自动化和云架构模式进行AWS开发</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：AWS开发与基础设施自动化和云架构模式</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>AWS Skills for Claude Code</li>
+<li>Plugins</li>
+<li>0. AWS Common Plugin (Dependency)</li>
+<li>1. AWS CDK Plugin</li>
+<li>2. AWS Cost &amp; Operations Plugin</li>
+<li>3. AWS Serverless &amp; Event-Driven Architecture Plugin</li>
+<li>4. AWS Agentic AI Plugin</li>
+<li>Installation</li>
+<li>Option 1: Claude Code Plugin Marketplace</li>
+<li>Option 2: Install Individual Skills via npx</li>
+<li>Core CDK Principles</li>
+<li>Resource Naming</li>
+<li>Lambda Functions</li>
+<li>Pre-Deployment Validation</li>
+<li>Usage Examples</li>
+<li>CDK Development</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 6 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/zxkane/aws-skills/blob/main/plugins/aws-agentic-ai/skills/aws-agentic-ai/SKILL.md">aws-agentic-ai</a> · <a target="_blank" rel="noopener" href="https://github.com/zxkane/aws-skills/blob/main/plugins/aws-common/skills/aws-mcp-setup/SKILL.md">aws-mcp-setup</a> · <a target="_blank" rel="noopener" href="https://github.com/zxkane/aws-skills/blob/main/plugins/aws-cost-ops/skills/aws-cost-operations/SKILL.md">aws-cost-operations</a> · <a target="_blank" rel="noopener" href="https://github.com/zxkane/aws-skills/blob/main/plugins/aws-iac/skills/aws-cdk-development/SKILL.md">aws-cdk-development</a> · <a target="_blank" rel="noopener" href="https://github.com/zxkane/aws-skills/blob/main/plugins/aws-iac/skills/aws-sst-development/SKILL.md">aws-sst-development</a> · <a target="_blank" rel="noopener" href="https://github.com/zxkane/aws-skills/blob/main/plugins/serverless-eda/skills/aws-serverless-eda/SKILL.md">aws-serverless-eda</a></p>
+<hr>
+<p><a href="/blog/zh-CN/agent-skills/">返回 Agent Skills 分类导航</a></p>
+<p><a href="/blog/agent-skills/cloud/">English version of this category</a></p>
+</div></article></div></div><style>.column.column-left,.column.column-right{display:none}</style><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://www.gravatar.com/avatar/7525ea09384aeb09ec303671d7dca1bf?s=128" alt="Song Chen"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Song Chen</p><p class="is-size-6 is-block">Ph.D. Candiate at Université Paris Saclay &amp; Spin-Ion Technologies</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Paris, France</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/blog/zh-CN/archives"><p class="title">28</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/blog/zh-CN/categories"><p class="title">32</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/blog/zh-CN/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/song-chen1" target="_blank" rel="noopener" id="widget-follow">Github Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="GoogleScholar" href="https://scholar.google.com/citations?user=sf-0AGoAAAAJ&amp;hl=de"><i class="fab fa-google-plus-square"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/in/song-chen-3449b9278/"><i class="fab fa-linkedin"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Mail" href="mailto:kammichan90@gmail.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/blog/zh-CN/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/blog/zh-CN/archives/2026/11/"><span class="level-start"><span class="level-item">十一月 2026</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/blog/zh-CN/archives/2026/10/"><span class="level-start"><span class="level-item">十月 2026</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/blog/zh-CN/archives/2023/10/"><span class="level-start"><span class="level-item">十月 2023</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Agent-Skills/"><span class="tag">Agent Skills</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/BERT/"><span class="tag">BERT</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Documentation/"><span class="tag">Documentation</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/French/"><span class="tag">French</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Hexo/"><span class="tag">Hexo</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Hexo-plugins/"><span class="tag">Hexo plugins</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/HuggingFace/"><span class="tag">HuggingFace</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Language/"><span class="tag">Language</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/MachineLearning/"><span class="tag">MachineLearning</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/NLP/"><span class="tag">NLP</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Obsidian/"><span class="tag">Obsidian</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/PyTorch/"><span class="tag">PyTorch</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Pyenv/"><span class="tag">Pyenv</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Python/"><span class="tag">Python</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/VoltAgent/"><span class="tag">VoltAgent</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/computational-simulation/"><span class="tag">computational simulation</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/condensed-matter-physics/"><span class="tag">condensed-matter physics</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/data-science/"><span class="tag">data-science</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/deep-learning/"><span class="tag">deep-learning</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/encryptAsDiary/"><span class="tag">encryptAsDiary</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/machine-learning/"><span class="tag">machine-learning</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python/"><span class="tag">python</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-configuration/"><span class="tag">python_configuration</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-editors/"><span class="tag">python_editors</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-tools/"><span class="tag">python_tools</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="https://api.follow.it/subscription-form/YnRDa2puUlErMTdqQ2Q4aDRrem93bHllemF6Y1ZMSW9hQSsrQ3NKTzRXSGRpTlRocW13MXM2UUw4YUFRdUFhUVRJTk1kaVFPWjc2MUQ1TTlLZ3hvcnhLNHJ2bE4yS3VzaTZ4eTliREZjZEk3UHRIWXBRbkxnN3FVUFczVm9TZDF8c2Z0em5PTnVFYks5TU15dUtPdW05czZIeEF4V0dvYnhQVnJtUGNUZEIxYz0=/8" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/automation/">智能体工具与自动化 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E6%99%BA%E8%83%BD%E4%BD%93%E5%B7%A5%E5%85%B7%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96/">智能体工具与自动化</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/business/">商业与财务 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E5%95%86%E4%B8%9A%E4%B8%8E%E8%B4%A2%E5%8A%A1/">商业与财务</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/cloud/">云与运维 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E4%BA%91%E4%B8%8E%E8%BF%90%E7%BB%B4/">云与运维</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/ai_data/">人工智能与数据 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8E%E6%95%B0%E6%8D%AE/">人工智能与数据</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/productivity/">效率与协作 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E6%95%88%E7%8E%87%E4%B8%8E%E5%8D%8F%E4%BD%9C/">效率与协作</a></p></div></article></div></div><div class="card widget" id="twikoo-new"><div class="card-content"><div class="menu"><h3 class="menu-label">最新评论</h3><script>window.twikooEnvId = 'https://twikoodisqus.vercel.app';</script><div class="twikoo-new-container"></div></div></div></div></div><style>.column.column-left,.column.column-right{display:block}</style></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/blog/zh-CN/"><img class="logo-img" src="/blog/zh-CN/images/logo.png" alt="Project Geeker" height="28"><img class="logo-img-dark" src="/blog/zh-CN/images/logo-dark.png" alt="Project Geeker" height="28"></a><p class="is-size-7"><span>&copy; 2026 Song Chen</span>  网站最终解释权归 <a href="https://songchen.science" target="_blank" rel="noopener">Song</a><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p><p class="is-size-7">© 2023</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.21/dist/twikoo.all.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/blog/zh-CN/js/column.js"></script><script src="/blog/zh-CN/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/blog/zh-CN/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="/blog/zh-CN/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><div class="searchbox-pinyin"><label class="checkbox"><input id="search-by-pinyin" type="checkbox" checked="checked"><span> Pinyin search</span></label></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/imaegoo/pinyin.js" defer></script><script src="/blog/zh-CN/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/blog/zh-CN/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script><script type="text/javascript" src="/js/imaegoo/imaegoo.js"></script><script type="text/javascript" src="/js/imaegoo/universe.js"></script></body></html>

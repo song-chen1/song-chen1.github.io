@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>分类: 效率与协作 - Project Geeker</title><link rel="manifest" href="/blog/zh-CN/manifest.json"><meta name="application-name" content="Project Geeker"><meta name="msapplication-TileImage" content="/assets/icons/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Project Geeker"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="website"><meta property="og:title" content="Project Geeker"><meta property="og:url" content="https://songchen.science/blog/zh-CN/"><meta property="og:site_name" content="Project Geeker"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://songchen.science/blog/zh-CN/img/og_image.png"><meta property="article:author" content="Song Chen"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://songchen.science/blog/zh-CN/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://songchen.science/blog/zh-CN/"},"headline":"Project Geeker","image":["https://songchen.science/blog/zh-CN/img/og_image.png"],"author":{"@type":"Person","name":"Song Chen"},"publisher":{"@type":"Organization","name":"Project Geeker","logo":{"@type":"ImageObject","url":{"light":"/images/logo.png","dark":"/images/logo-dark.png"}}},"description":""}</script><link rel="alternate" href="/blog/zh-CN/atom.xml" title="Project Geeker" type="application/atom+xml"><link rel="icon" href="/blog/zh-CN/assets/icons/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="/blog/zh-CN/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><meta name="follow.it-verification-code" content="uc2EwCtSW92aTx5KkxEk"><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head><body class="is-3-column"><script type="text/javascript" src="/js/imaegoo/night.js"></script><canvas id="universe"></canvas><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/blog/zh-CN/"><img class="logo-img" src="/blog/zh-CN/images/logo.png" alt="Project Geeker" height="28"><img class="logo-img-dark" src="/blog/zh-CN/images/logo-dark.png" alt="Project Geeker" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/blog/zh-CN/">首页</a><a class="navbar-item" href="/blog/zh-CN/archives/">时间轴</a><a class="navbar-item" href="/blog/zh-CN/categories/">分类</a><a class="navbar-item" href="/blog/zh-CN/tags/">标签</a><a class="navbar-item" href="/blog/zh-CN/blogroll/">友情链接</a><a class="navbar-item" href="/blog/zh-CN/guestbook/">留言板</a><a class="navbar-item" href="/blog/zh-CN/about/me">关于</a></div><div class="navbar-end"><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="画廊" href="/blog/zh-CN/gallery/"><i class="fas fa-images"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="GoogleDrive" href="https://goindex.chen-song90.workers.dev"><i class="fab fa-google-drive"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="iCloud" href="https://hitchhiker.azurewebsites.net"><i class="fas fa-cloud"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" href="https://songchen.science/blog/"> English</a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/blog/zh-CN/categories">分类</a></li><li><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a></li><li class="is-active"><a href="#" aria-current="page">效率与协作</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2026-11-02T04:00:00.000Z" title="11/2/2026, 12:00:00 PM">2026-11-02</time>发表</span><span class="level-item"><time dateTime="2026-11-02T04:00:00.000Z" title="11/2/2026, 12:00:00 PM">2026-11-02</time>更新</span><span class="level-item"><a class="link-muted" href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a><span> / </span><a class="link-muted" href="/blog/zh-CN/categories/Agent-Skills/%E6%95%88%E7%8E%87%E4%B8%8E%E5%8D%8F%E4%BD%9C/">效率与协作</a></span><span class="level-item">41 分钟读完 (大约6110个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/blog/zh-CN/agent-skills/productivity/">效率与协作 | Agent Skills</a></p><div class="content"><h1 id="效率与协作"><a href="#效率与协作" class="headerlink" title="效率与协作"></a>效率与协作</h1><p>效率与协作类技能连接沟通、日程、文件、会议和团队服务等日常工作。</p>
+<p><strong>目录快照：2026 年 11 月 2 日</strong></p>
+<h2 id="分类目录"><a href="#分类目录" class="headerlink" title="分类目录"></a>分类目录</h2><ul>
+<li><a href="#skill-c33b9cd8">career-ops-hq&#x2F;career-ops</a></li>
+<li><a href="#skill-63abfc40">getsentry&#x2F;sentry-create-alert</a></li>
+<li><a href="#skill-4d0b1d57">googleworkspace&#x2F;gws-admin-reports</a></li>
+<li><a href="#skill-1eb8b257">googleworkspace&#x2F;gws-calendar</a></li>
+<li><a href="#skill-e25d715b">googleworkspace&#x2F;gws-chat</a></li>
+<li><a href="#skill-dd3ee3a8">googleworkspace&#x2F;gws-classroom</a></li>
+<li><a href="#skill-e20887df">googleworkspace&#x2F;gws-docs</a></li>
+<li><a href="#skill-ca68c8e5">googleworkspace&#x2F;gws-drive</a></li>
+<li><a href="#skill-92307266">googleworkspace&#x2F;gws-events</a></li>
+<li><a href="#skill-99014ff6">googleworkspace&#x2F;gws-forms</a></li>
+<li><a href="#skill-8fb46794">googleworkspace&#x2F;gws-gmail</a></li>
+<li><a href="#skill-1d8906b2">googleworkspace&#x2F;gws-keep</a></li>
+<li><a href="#skill-4e1b2833">googleworkspace&#x2F;gws-modelarmor</a></li>
+<li><a href="#skill-9060d85d">googleworkspace&#x2F;gws-people</a></li>
+<li><a href="#skill-a8c9f14b">googleworkspace&#x2F;gws-shared</a></li>
+<li><a href="#skill-154dab7f">googleworkspace&#x2F;gws-sheets</a></li>
+<li><a href="#skill-9df0f9d0">googleworkspace&#x2F;gws-slides</a></li>
+<li><a href="#skill-858e8140">googleworkspace&#x2F;gws-tasks</a></li>
+<li><a href="#skill-252f99fd">googleworkspace&#x2F;gws-workflow</a></li>
+<li><a href="#skill-2d298153">Kevin7Qi&#x2F;codex-collab</a></li>
+<li><a href="#skill-25d7ca34">more-io&#x2F;apple-bridges</a></li>
+<li><a href="#skill-2a7839ce">notiondevs&#x2F;Notion Skills for Claude</a></li>
+<li><a href="#skill-e3c694b1">openai&#x2F;notion-knowledge-capture</a></li>
+<li><a href="#skill-0f783c95">openai&#x2F;notion-meeting-intelligence</a></li>
+<li><a href="#skill-3a05c286">openai&#x2F;notion-spec-to-implementation</a></li>
+<li><a href="#skill-e524b7b1">Paramchoudhary&#x2F;ResumeSkills</a></li>
+<li><a href="#skill-87ecd104">pattern-ai-labs&#x2F;agentcall</a></li>
+<li><a href="#skill-0235c959">resend&#x2F;agent-email-inbox</a></li>
+<li><a href="#skill-b076e173">resend&#x2F;resend</a></li>
+<li><a href="#skill-170307ab">Sendmux&#x2F;skills</a></li>
+<li><a href="#skill-8236f035">trycourier&#x2F;courier-skills</a></li>
+<li><a href="#skill-bc2d146b">typefully&#x2F;typefully</a></li>
+<li><a href="#skill-a79661bb">vanshyadav1408&#x2F;linkedin-outreach</a></li>
+</ul>
+<h2 id="本类全部技能"><a href="#本类全部技能" class="headerlink" title="本类全部技能"></a>本类全部技能</h2><p><a id="skill-c33b9cd8"></a></p>
+<h3 id="career-ops-hq-career-ops"><a href="#career-ops-hq-career-ops" class="headerlink" title="career-ops-hq&#x2F;career-ops"></a>career-ops-hq&#x2F;career-ops</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/career-ops-hq/career-ops">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/career-ops-hq/career-ops/blob/main/.grok/skills/career-ops/SKILL.md">https://github.com&#x2F;career-ops-hq&#x2F;career-ops&#x2F;blob&#x2F;main&#x2F;.grok&#x2F;skills&#x2F;career-ops&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 根据您的简历评分工作，定制简历，跟踪申请</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：根据您的简历对工作进行评分，定制简历，跟踪申请</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<hr>
+<p><a id="skill-63abfc40"></a></p>
+<h3 id="getsentry-sentry-create-alert"><a href="#getsentry-sentry-create-alert" class="headerlink" title="getsentry&#x2F;sentry-create-alert"></a>getsentry&#x2F;sentry-create-alert</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/getsentry/skills/sentry-create-alert">Skills by Sentry team for their dev team.</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/getsentry/sentry-for-ai/blob/main/README.md">https://github.com&#x2F;getsentry&#x2F;sentry-for-ai&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用电子邮件、Slack、PagerDuty、Discord等创建Sentry警报</p>
+<p><strong>适用时机:</strong> 通过 PagerDuty 调度值班人员处理 P1 Sentry 问题 将生产后端错误路由至 Slack 频道 为发布健康回归情况设置电子邮件警报 为每个项目创建基于优先级的警报规则 构建一个将未解决问题上报至 Discord 的工作流程</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Sentry for AI</li>
+<li>What You Can Do</li>
+<li>Distribution</li>
+<li>Build it yourself</li>
+<li>Skills</li>
+<li>Core</li>
+<li>Feature Setup</li>
+<li>Reference Library</li>
+<li>Prerequisites</li>
+<li>Contributing</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-4d0b1d57"></a></p>
+<h3 id="googleworkspace-gws-admin-reports"><a href="#googleworkspace-gws-admin-reports" class="headerlink" title="googleworkspace&#x2F;gws-admin-reports"></a>googleworkspace&#x2F;gws-admin-reports</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-admin-reports">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-admin-reports/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-admin-reports&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 工作区审计日志和使用报告</p>
+<p><strong>适用时机:</strong> 拉取驱动活动日志以审计上周谁访问或共享了文件 检查每位用户的应用使用情况以识别不活跃的工作区账户 将管理员控制台活动实时流式传输到 Webhook 以进行实时警报 生成针对整个组织的使用报告以跟踪存储和服务采用情况 停止不再需要的推送通知渠道</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>admin-reports (reports_v1)</li>
+<li>API Resources</li>
+<li>activities</li>
+<li>channels</li>
+<li>customerUsageReports</li>
+<li>entityUsageReports</li>
+<li>userUsageReport</li>
+<li>Discovering Commands</li>
+</ul>
+<hr>
+<p><a id="skill-1eb8b257"></a></p>
+<h3 id="googleworkspace-gws-calendar"><a href="#googleworkspace-gws-calendar" class="headerlink" title="googleworkspace&#x2F;gws-calendar"></a>googleworkspace&#x2F;gws-calendar</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-calendar">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-calendar/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-calendar&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 管理Google日历日历和活动</p>
+<p><strong>适用时机:</strong> 在安排会议前查询多个日历中的空闲&#x2F;忙碌时段 从脚本中创建包含特定参与者和提醒的重复事件 当所有权或组织发生变化时将事件移动到不同的日历 列出用户可访问的所有日历及其共享权限 在自动化工作流程中作为一部分检查日程表中的即将到来的事件</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>calendar (v3)</li>
+<li>Helper Commands</li>
+<li>API Resources</li>
+<li>acl</li>
+<li>calendarList</li>
+<li>calendars</li>
+<li>channels</li>
+<li>colors</li>
+<li>events</li>
+<li>freebusy</li>
+<li>settings</li>
+<li>Discovering Commands</li>
+</ul>
+<hr>
+<p><a id="skill-e25d715b"></a></p>
+<h3 id="googleworkspace-gws-chat"><a href="#googleworkspace-gws-chat" class="headerlink" title="googleworkspace&#x2F;gws-chat"></a>googleworkspace&#x2F;gws-chat</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-chat">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-chat/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-chat&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 管理Google聊天空间和消息</p>
+<p><strong>适用时机:</strong> 通过一个命令创建新的聊天空间并添加团队成员 通过电子邮件查找特定用户的现有私信对话串 作为管理员搜索所有组织空间以审计或清理不活跃的空间 将文件附件上传到聊天空间消息 列出服务账户或用户所属于的所有空间</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>chat (v1)</li>
+<li>Helper Commands</li>
+<li>API Resources</li>
+<li>customEmojis</li>
+<li>media</li>
+<li>spaces</li>
+<li>users</li>
+<li>Discovering Commands</li>
+</ul>
+<hr>
+<p><a id="skill-dd3ee3a8"></a></p>
+<h3 id="googleworkspace-gws-classroom"><a href="#googleworkspace-gws-classroom" class="headerlink" title="googleworkspace&#x2F;gws-classroom"></a>googleworkspace&#x2F;gws-classroom</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-classroom">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-classroom/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-classroom&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 管理Google Classroom课程、名单和课程内容</p>
+<p><strong>适用时机:</strong> 在 Google Workspace 域中创建新课程并分配课程管理员 通过发送和接受邀请将学生添加到课程 列出所有教师所拥有的课程以审核其当前工作量 在学期中更新课程的评分周期设置 提取用户个人资料以验证监护人和注册状态</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>classroom (v1)</li>
+<li>API Resources</li>
+<li>courses</li>
+<li>invitations</li>
+<li>registrations</li>
+<li>userProfiles</li>
+<li>Discovering Commands</li>
+</ul>
+<hr>
+<p><a id="skill-e20887df"></a></p>
+<h3 id="googleworkspace-gws-docs"><a href="#googleworkspace-gws-docs" class="headerlink" title="googleworkspace&#x2F;gws-docs"></a>googleworkspace&#x2F;gws-docs</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-docs">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-docs/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-docs&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 阅读和编写Google文档文件</p>
+<p><strong>适用时机:</strong> 从脚本或工作流程创建新的 Google 文档 通过 ID 获取文档的完整内容 对现有文档应用结构化批量编辑 将文本作为自动化管道的一部分附加到文档中 将文档数据提取到本地流程中进行进一步处理</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>docs (v1)</li>
+<li>Helper Commands</li>
+<li>API Resources</li>
+<li>documents</li>
+<li>Discovering Commands</li>
+</ul>
+<hr>
+<p><a id="skill-ca68c8e5"></a></p>
+<h3 id="googleworkspace-gws-drive"><a href="#googleworkspace-gws-drive" class="headerlink" title="googleworkspace&#x2F;gws-drive"></a>googleworkspace&#x2F;gws-drive</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-drive">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-drive/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-drive&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 管理Google Drive文件、文件夹和共享驱动器</p>
+<p><strong>适用时机:</strong> 按标签或 MIME 类型筛选共享驱动器中的所有文件 取消在未打开浏览器的情况下对特定用户的文件权限 下载导出为 PDF 的 Google 文档到本地目录 监控文件夹中的更改并将事件管道到脚本 解决您拥有的文件上的待处理访问请求</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>drive (v3)</li>
+<li>Helper Commands</li>
+<li>API Resources</li>
+<li>about</li>
+<li>accessproposals</li>
+<li>approvals</li>
+<li>apps</li>
+<li>changes</li>
+<li>channels</li>
+<li>comments</li>
+<li>drives</li>
+<li>files</li>
+<li>operations</li>
+<li>permissions</li>
+<li>replies</li>
+<li>revisions</li>
+</ul>
+<hr>
+<p><a id="skill-92307266"></a></p>
+<h3 id="googleworkspace-gws-events"><a href="#googleworkspace-gws-events" class="headerlink" title="googleworkspace&#x2F;gws-events"></a>googleworkspace&#x2F;gws-events</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-events">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-events/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-events&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 订阅Google Workspace活动</p>
+<p><strong>适用时机:</strong> 实时将聊天消息事件发送到自定义 Webhook 修复身份验证错误后重新激活暂停的 Workspace 订阅 在 Workspace 租户中列出所有活跃的事件订阅 删除遗留的已弃用的集成留下的过期的订阅 通过 ID 查询长期运行的 Workspace 操作的状态</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>events (v1)</li>
+<li>Helper Commands</li>
+<li>API Resources</li>
+<li>message</li>
+<li>operations</li>
+<li>subscriptions</li>
+<li>tasks</li>
+<li>Discovering Commands</li>
+</ul>
+<hr>
+<p><a id="skill-99014ff6"></a></p>
+<h3 id="googleworkspace-gws-forms"><a href="#googleworkspace-gws-forms" class="headerlink" title="googleworkspace&#x2F;gws-forms"></a>googleworkspace&#x2F;gws-forms</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-forms">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-forms/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-forms&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 阅读和编写Google表格</p>
+<p><strong>适用时机:</strong> 将表单中的所有响应数据从本地文件中提取并用于分析 创建一个新的空白表单，并在单个脚本中为其填充问题 更新表单发布设置，以控制谁可以提交响应 设置监视器，以便在收到新响应时触发操作 批量更新表单项目，以反映调查重新设计，而无需修改用户界面（UI）</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>forms (v1)</li>
+<li>API Resources</li>
+<li>forms</li>
+<li>Discovering Commands</li>
+</ul>
+<hr>
+<p><a id="skill-8fb46794"></a></p>
+<h3 id="googleworkspace-gws-gmail"><a href="#googleworkspace-gws-gmail" class="headerlink" title="googleworkspace&#x2F;gws-gmail"></a>googleworkspace&#x2F;gws-gmail</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-gmail">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-gmail/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-gmail&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 发送、阅读和管理Gmail电子邮件</p>
+<p><strong>适用时机:</strong> 按发件人和主题对未读收件箱消息进行分类 采用脚本或工作流发送自动电子邮件通知 不通过手动跟踪消息ID回复邮件链 查看邮箱以查看新消息并将其管道到另一个进程中 根据内容或标签将特定消息转发给团队成员</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>gmail (v1)</li>
+<li>Helper Commands</li>
+<li>API Resources</li>
+<li>users</li>
+<li>Discovering Commands</li>
+</ul>
+<hr>
+<p><a id="skill-1d8906b2"></a></p>
+<h3 id="googleworkspace-gws-keep"><a href="#googleworkspace-gws-keep" class="headerlink" title="googleworkspace&#x2F;gws-keep"></a>googleworkspace&#x2F;gws-keep</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-keep">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-keep/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-keep&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 管理Google Keep笔记</p>
+<p><strong>适用时机:</strong> 从终端脚本创建新的“记下”条目 列出所有记下条目并将输出管道到 grep 中查找特定关键词 通过 shell 循环按 ID 删除一批旧记下条目 从“记下”中从本地磁盘下载附件 将单个记下条目的内容获取出来，用于在另一个脚本中引用</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>keep (v1)</li>
+<li>API Resources</li>
+<li>media</li>
+<li>notes</li>
+<li>Discovering Commands</li>
+</ul>
+<hr>
+<p><a id="skill-4e1b2833"></a></p>
+<h3 id="googleworkspace-gws-modelarmor"><a href="#googleworkspace-gws-modelarmor" class="headerlink" title="googleworkspace&#x2F;gws-modelarmor"></a>googleworkspace&#x2F;gws-modelarmor</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-modelarmor">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-modelarmor/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-modelarmor&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 为安全过滤用户生成的内容</p>
+<p><strong>适用时机:</strong> 在将提示发送至 LLM API 扫描模型之前过滤用户提示 在向最终用户显示之前扫描模型响应中的有害内容 创建适用于多个 AI 应用程序的可重用安全模板 在面向用户的聊天界面中阻止提示注入尝试 审计 LLM 驱动工作流程中的内容政策违规情况</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>modelarmor (v1)</li>
+<li>Helper Commands</li>
+<li>Discovering Commands</li>
+</ul>
+<hr>
+<p><a id="skill-9060d85d"></a></p>
+<h3 id="googleworkspace-gws-people"><a href="#googleworkspace-gws-people" class="headerlink" title="googleworkspace&#x2F;gws-people"></a>googleworkspace&#x2F;gws-people</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-people">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-people/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-people&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 管理Google人脉联系人和个人资料</p>
+<p><strong>适用时机:</strong> 搜索域名目录以查找同事的电话号码或电子邮件 添加包含电话、电子邮件和组织详细信息的新供应商联系人 将自动创建的“其他联系人”移动到命名联系人群组 公司重新品牌后批量更新联系人记录 将群组中的所有联系人列出以构建分发名单</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>people (v1)</li>
+<li>API Resources</li>
+<li>contactGroups</li>
+<li>otherContacts</li>
+<li>people</li>
+<li>Discovering Commands</li>
+</ul>
+<hr>
+<p><a id="skill-a8c9f14b"></a></p>
+<h3 id="googleworkspace-gws-shared"><a href="#googleworkspace-gws-shared" class="headerlink" title="googleworkspace&#x2F;gws-shared"></a>googleworkspace&#x2F;gws-shared</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-shared">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-shared/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-shared&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 共享身份验证、全球标志和输出格式化</p>
+<p><strong>适用时机:</strong> 在不同脚本之间切换 gws 输出格式为 JSON、CSV 和表格格式 在提交 API 调用之前使用 --dry-run 执行破坏性 gws 命令 使用服务账户密钥文件进行身份验证，而不是基于浏览器的 OAuth 将大型 Drive 文件列表自动分页为单个 NDJSON 输出 将 PII 进行筛查后将 API 响应通过管道输送到下游工具</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>gws — Shared Reference</li>
+<li>Installation</li>
+<li>Authentication</li>
+<li>Global Flags</li>
+<li>CLI Syntax</li>
+<li>Method Flags</li>
+<li>Security Rules</li>
+<li>Shell Tips</li>
+<li>Community &amp; Feedback Etiquette</li>
+</ul>
+<hr>
+<p><a id="skill-154dab7f"></a></p>
+<h3 id="googleworkspace-gws-sheets"><a href="#googleworkspace-gws-sheets" class="headerlink" title="googleworkspace&#x2F;gws-sheets"></a>googleworkspace&#x2F;gws-sheets</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-sheets">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-sheets/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-sheets&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 阅读和编写Google Sheets电子表格</p>
+<p><strong>适用时机:</strong> 从共享电子表格读取销售数据并输入脚本 每个自动化工作流程执行后向日志表添加新行 创建新电子表格并填充报告数据 通过一次 API 调用批量更新单元格格式、单元格范围或表格属性 使用数据过滤器获取特定单元格范围，而无需拉取整个表格</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>sheets (v4)</li>
+<li>Helper Commands</li>
+<li>API Resources</li>
+<li>spreadsheets</li>
+<li>Discovering Commands</li>
+</ul>
+<hr>
+<p><a id="skill-9df0f9d0"></a></p>
+<h3 id="googleworkspace-gws-slides"><a href="#googleworkspace-gws-slides" class="headerlink" title="googleworkspace&#x2F;gws-slides"></a>googleworkspace&#x2F;gws-slides</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-slides">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-slides/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-slides&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 阅读和编写Google Slides演示文稿</p>
+<p><strong>适用时机:</strong> 从脚本中使用特定 ID 创建新演示文稿 从演示文稿中获取当前状态以检查幻灯片内容 在一次 API 调用中对幻灯片文本、图像或格式进行批量编辑 从数据中自动生成幻灯片而无需打开浏览器 作为流水线的一部分更新演示文稿标题或主题</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>slides (v1)</li>
+<li>API Resources</li>
+<li>presentations</li>
+<li>Discovering Commands</li>
+</ul>
+<hr>
+<p><a id="skill-858e8140"></a></p>
+<h3 id="googleworkspace-gws-tasks"><a href="#googleworkspace-gws-tasks" class="headerlink" title="googleworkspace&#x2F;gws-tasks"></a>googleworkspace&#x2F;gws-tasks</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-tasks">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-tasks/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-tasks&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 管理 Google Tasks 任务列表和任务</p>
+<p><strong>适用时机:</strong> 为项目冲刺创建新的任务列表 将任务从父任务下移以构建子任务层次结构 在审查后从列表中清除所有已完成的任务 从列表中获取所有任务以管道输送到报告或脚本中 删除最初在 Google Docs 中分配的共享任务</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>tasks (v1)</li>
+<li>API Resources</li>
+<li>tasklists</li>
+<li>tasks</li>
+<li>Discovering Commands</li>
+</ul>
+<hr>
+<p><a id="skill-252f99fd"></a></p>
+<h3 id="googleworkspace-gws-workflow"><a href="#googleworkspace-gws-workflow" class="headerlink" title="googleworkspace&#x2F;gws-workflow"></a>googleworkspace&#x2F;gws-workflow</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/googleworkspace/skills/gws-workflow">Skills by Google Workspace CLI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/googleworkspace/cli/blob/main/skills/gws-workflow/SKILL.md">https://github.com&#x2F;googleworkspace&#x2F;cli&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gws-workflow&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 跨服务Google Workspace生产力工作流程</p>
+<p><strong>适用时机:</strong> 从今天的日历事件和待办事项生成简短摘要 将可执行的电子邮件转换为无需离开终端的Google任务条目 电话开始前提取会议详情、参与者和关联文档 将Drive文件公告直接发布到聊天空间 获取已参加会议的每周摘要和未读邮件量</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>workflow (v1)</li>
+<li>Helper Commands</li>
+<li>Discovering Commands</li>
+</ul>
+<hr>
+<p><a id="skill-2d298153"></a></p>
+<h3 id="Kevin7Qi-codex-collab"><a href="#Kevin7Qi-codex-collab" class="headerlink" title="Kevin7Qi&#x2F;codex-collab"></a>Kevin7Qi&#x2F;codex-collab</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/Kevin7Qi/codex-collab">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/Kevin7Qi/codex-collab/blob/main/SKILL.md">https://github.com&#x2F;Kevin7Qi&#x2F;codex-collab&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 与 Claude Code 的 Codex 协作</p>
+<p><strong>适用时机:</strong> 当用户请求调用、委托或与 Codex 协作完成任何任务时使用。此外，当 Codex 的独立且非 Claude 的视角能够提供价值时，也应主动使用——例如对代码、计划、架构或设计决策的第二意见。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>codex-collab</li>
+<li>Choosing a path</li>
+<li>Native Peer Messaging</li>
+<li>Codex’s Own App-Server</li>
+<li>Run Command</li>
+<li>Code Review</li>
+<li>Context Efficiency &amp; Result Visibility</li>
+<li>Resuming Threads</li>
+<li>Detached Runs and Following</li>
+<li>Watching for questions and approvals without polling (`next`)</li>
+<li>The Ask Channel (Codex Asks, You Answer)</li>
+<li>Approvals</li>
+<li>CLI Reference</li>
+<li>Options</li>
+<li>Exit codes (run, review)</li>
+<li>Goal Mode</li>
+</ul>
+<hr>
+<p><a id="skill-25d7ca34"></a></p>
+<h3 id="more-io-apple-bridges"><a href="#more-io-apple-bridges" class="headerlink" title="more-io&#x2F;apple-bridges"></a>more-io&#x2F;apple-bridges</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/more-io/claude-apple-bridges">Specialized Domains</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/more-io/claude-apple-bridges/blob/main/skills/apple-bridges/SKILL.md">https://github.com&#x2F;more-io&#x2F;claude-apple-bridges&#x2F;blob&#x2F;main&#x2F;skills&#x2F;apple-bridges&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 原生 macOS 应用程序访问——通过 Swift CLI 桥接管理 Apple 提醒、日历、联系人、笔记、邮件和 tmux 会话</p>
+<p><strong>适用时机:</strong> 当用户询问Apple应用程序（提醒、日历、联系人、笔记、邮件、消息（iMessage&#x2F;SMS）或tmux会话）时，请使用此技能。这包括创建&#x2F;完成提醒、查看&#x2F;添加日历事件、查找联系人、阅读&#x2F;书写笔记、发送&#x2F;阅读电子邮件、阅读&#x2F;发送iMessage和短信，以及捕获tmux会话内容。当用户提及任务、待办事项、排程、生日、空闲时间段或当天总结时，也请使用此技能。这些桥接工具是安装在~&#x2F;.claude&#x2F;中的CLI工具，可为Claude Code在macOS上提供对这些Apple应用程序的原生访问权限。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Apple Bridges</li>
+<li>Quick Reference</li>
+<li>General Patterns</li>
+<li>CLI Syntax</li>
+<li>Quoting</li>
+<li>Destructive Operations</li>
+<li>Permissions</li>
+<li>Allowed Tools Configuration</li>
+</ul>
+<hr>
+<p><a id="skill-2a7839ce"></a></p>
+<h3 id="notiondevs-Notion-Skills-for-Claude"><a href="#notiondevs-Notion-Skills-for-Claude" class="headerlink" title="notiondevs&#x2F;Notion Skills for Claude"></a>notiondevs&#x2F;Notion Skills for Claude</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0">https://www.notion.so&#x2F;notiondevs&#x2F;Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0</a></p>
+<p><strong>功能简介:</strong> 使用Notion的工作技能</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：使用Notion的工作技能</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p>未能取得单独的 SKILL.md；本文根据目录简介和可访问的仓库 README 整理。</p>
+<hr>
+<p><a id="skill-e3c694b1"></a></p>
+<h3 id="openai-notion-knowledge-capture"><a href="#openai-notion-knowledge-capture" class="headerlink" title="openai&#x2F;notion-knowledge-capture"></a>openai&#x2F;notion-knowledge-capture</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/notion-knowledge-capture">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/skills/.curated/notion-knowledge-capture/SKILL.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;.curated&#x2F;notion-knowledge-capture&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 将对话转换为结构化、可搜索的Notion维基条目</p>
+<p><strong>适用时机:</strong> 在将聊天&#x2F;笔记转换为wiki条目、操作指南、决策或常见问题解答时使用，并使用适当的链接。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Knowledge Capture</li>
+<li>Quick start</li>
+<li>Workflow</li>
+<li>0) If any MCP call fails because Notion MCP is not connected, pause and set it up:</li>
+<li>1) Define the capture</li>
+<li>2) Locate destination</li>
+<li>3) Extract and structure</li>
+<li>4) Create&#x2F;update in Notion</li>
+<li>5) Link and surface</li>
+<li>References and examples</li>
+</ul>
+<hr>
+<p><a id="skill-0f783c95"></a></p>
+<h3 id="openai-notion-meeting-intelligence"><a href="#openai-notion-meeting-intelligence" class="headerlink" title="openai&#x2F;notion-meeting-intelligence"></a>openai&#x2F;notion-meeting-intelligence</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/notion-meeting-intelligence">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/skills/.curated/notion-meeting-intelligence/SKILL.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;.curated&#x2F;notion-meeting-intelligence&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过提取Notion上下文并定制议程来准备会议</p>
+<p><strong>适用时机:</strong> 在收集背景信息、起草议程&#x2F;预读材料以及根据参会者定制材料时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Meeting Intelligence</li>
+<li>Quick start</li>
+<li>Workflow</li>
+<li>0) If any MCP call fails because Notion MCP is not connected, pause and set it up:</li>
+<li>1) Gather inputs</li>
+<li>2) Choose format</li>
+<li>3) Build the agenda&#x2F;pre-read</li>
+<li>4) Enrich with research</li>
+<li>5) Finalize and share</li>
+<li>References and examples</li>
+</ul>
+<hr>
+<p><a id="skill-3a05c286"></a></p>
+<h3 id="openai-notion-spec-to-implementation"><a href="#openai-notion-spec-to-implementation" class="headerlink" title="openai&#x2F;notion-spec-to-implementation"></a>openai&#x2F;notion-spec-to-implementation</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/openai/skills/notion-spec-to-implementation">Skills by OpenAI</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/openai/skills/blob/main/skills/.curated/notion-spec-to-implementation/SKILL.md">https://github.com&#x2F;openai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;.curated&#x2F;notion-spec-to-implementation&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 将Notion规格转换为链接的实施计划和任务</p>
+<p><strong>适用时机:</strong> 在实施PRD&#x2F;功能规格并从其中创建Notion计划+任务时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Spec to Implementation</li>
+<li>Quick start</li>
+<li>Workflow</li>
+<li>0) If any MCP call fails because Notion MCP is not connected, pause and set it up:</li>
+<li>1) Locate and read the spec</li>
+<li>2) Choose plan depth</li>
+<li>3) Create tasks</li>
+<li>4) Link artifacts</li>
+<li>5) Track progress</li>
+<li>References and examples</li>
+</ul>
+<hr>
+<p><a id="skill-e524b7b1"></a></p>
+<h3 id="Paramchoudhary-ResumeSkills"><a href="#Paramchoudhary-ResumeSkills" class="headerlink" title="Paramchoudhary&#x2F;ResumeSkills"></a>Paramchoudhary&#x2F;ResumeSkills</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/Paramchoudhary/ResumeSkills">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/Paramchoudhary/ResumeSkills/blob/main/README.md">https://github.com&#x2F;Paramchoudhary&#x2F;ResumeSkills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 20项用于简历优化、ATS分析、面试准备和职业转型的高级技能</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：20项用于简历优化、ATS分析、面试准备和职业转型的高级技能</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Resume Skills for Claude Code</li>
+<li>What are Skills?</li>
+<li>Available Skills</li>
+<li>Installation</li>
+<li>Option 1: CLI Install (Recommended)</li>
+<li>Option 2: Manual Install</li>
+<li>Option 3: Direct Download</li>
+<li>Uninstall</li>
+<li>Supported AI Agents</li>
+<li>Usage</li>
+<li>Skill Categories</li>
+<li>Resume Optimization</li>
+<li>Job Search Strategy</li>
+<li>Supporting Documents</li>
+<li>Interview &amp; Negotiation</li>
+<li>Specialized Roles</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 22 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/Paramchoudhary/ResumeSkills/blob/main/.agents/skills/executive-resume-writer/SKILL.md">executive-resume-writer</a> · <a target="_blank" rel="noopener" href="https://github.com/Paramchoudhary/ResumeSkills/blob/main/.agents/skills/interview-prep-generator/SKILL.md">interview-prep-generator</a> · <a target="_blank" rel="noopener" href="https://github.com/Paramchoudhary/ResumeSkills/blob/main/.agents/skills/job-description-analyzer/SKILL.md">job-description-analyzer</a> · <a target="_blank" rel="noopener" href="https://github.com/Paramchoudhary/ResumeSkills/blob/main/.agents/skills/linkedin-profile-optimizer/SKILL.md">linkedin-profile-optimizer</a> · <a target="_blank" rel="noopener" href="https://github.com/Paramchoudhary/ResumeSkills/blob/main/.agents/skills/offer-comparison-analyzer/SKILL.md">offer-comparison-analyzer</a> · <a target="_blank" rel="noopener" href="https://github.com/Paramchoudhary/ResumeSkills/blob/main/.agents/skills/portfolio-case-study-writer/SKILL.md">portfolio-case-study-writer</a> · <a target="_blank" rel="noopener" href="https://github.com/Paramchoudhary/ResumeSkills/blob/main/.agents/skills/reference-list-builder/SKILL.md">reference-list-builder</a> · <a target="_blank" rel="noopener" href="https://github.com/Paramchoudhary/ResumeSkills/blob/main/skills/academic-cv-builder/SKILL.md">academic-cv-builder</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-87ecd104"></a></p>
+<h3 id="pattern-ai-labs-agentcall"><a href="#pattern-ai-labs-agentcall" class="headerlink" title="pattern-ai-labs&#x2F;agentcall"></a>pattern-ai-labs&#x2F;agentcall</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/pattern-ai-labs/agentcall">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/pattern-ai-labs/agentcall/blob/main/SKILL.md">https://github.com&#x2F;pattern-ai-labs&#x2F;agentcall&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 让您的AI代理加入Google Meet、Zoom、Teams会议，并像真正的团队成员一样协作。</p>
+<p><strong>适用时机:</strong> 当被要求加入通话、参加会议或参加视频会议时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>join-meeting</li>
+<li>Prerequisites</li>
+<li>API Key Setup</li>
+<li>User Preferences</li>
+<li>Usage</li>
+<li>Options</li>
+<li>Bot Naming</li>
+<li>Modes Explained</li>
+<li>audio (default)</li>
+<li>webpage-audio</li>
+<li>webpage-av</li>
+<li>webpage-av-screenshare</li>
+<li>Which mode should I use?</li>
+<li>How the Tunnel Works (Webpage Modes)</li>
+<li>Tunnel Authentication</li>
+<li>Mic Permissions (Webpage Modes)</li>
+</ul>
+<hr>
+<p><a id="skill-0235c959"></a></p>
+<h3 id="resend-agent-email-inbox"><a href="#resend-agent-email-inbox" class="headerlink" title="resend&#x2F;agent-email-inbox"></a>resend&#x2F;agent-email-inbox</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/resend/resend-skills/tree/main/skills/agent-email-inbox">Skills by Resend</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/resend/resend-skills/blob/main/skills/agent-email-inbox/SKILL.md">https://github.com&#x2F;resend&#x2F;resend-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;agent-email-inbox&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> AI代理邮件收件箱管理</p>
+<p><strong>适用时机:</strong> 在构建任何触发电子邮件内容执行操作的系统时使用——例如AI代理收件箱、自动化支持处理程序、电子邮件到任务流水线，或任何处理不可信任的来信的工作流程。当用户希望接收电子邮件并通过程序化方式对其进行操作时，始终使用此技能，即使邮件中没有提及“代理”——该技能包含关键的安全模式（发件人允许列表、内容过滤、沙盒处理），可防止不可信任的电子邮件控制您的系统。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>AI Agent Email Inbox</li>
+<li>Overview</li>
+<li>Why Webhook-Based Receiving?</li>
+<li>Architecture</li>
+<li>SDK Version Requirements</li>
+<li>Quick Start</li>
+<li>Before You Start: Account &amp; API Key Setup</li>
+<li>First Question: New or Existing Resend Account?</li>
+<li>Creating API Keys Securely</li>
+<li>API Key Permissions</li>
+<li>Domain Setup</li>
+<li>Option 1: Receiving on the Domain (Recommended)</li>
+<li>Option 2: Forwarding</li>
+<li>Create the Inbox</li>
+<li>Security Levels</li>
+<li>Level 1: Strict Allowlist (Recommended)</li>
+</ul>
+<hr>
+<p><a id="skill-b076e173"></a></p>
+<h3 id="resend-resend"><a href="#resend-resend" class="headerlink" title="resend&#x2F;resend"></a>resend&#x2F;resend</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/resend/resend-skills/tree/main/skills/resend">Skills by Resend</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/resend/resend-skills/blob/main/skills/resend/SKILL.md">https://github.com&#x2F;resend&#x2F;resend-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;resend&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过Resend API发送和管理电子邮件</p>
+<p><strong>适用时机:</strong> 使用该技能时，请与 Resend 电子邮件 API 配合使用——发送交易性电子邮件（单条或批量）、通过 Webhooks 接收来信、管理电子邮件模板、跟踪发送事件、管理域名、联系人、广播、Webhooks、API 密钥、收件箱（主题、标签、草稿、回复）、自动化、事件、查看 API 请求日志、检查账户使用情况和配额，或设置 Resend SDK。当用户提及 Resend 时，请始终使用此技能，即使是像“使用 Resend 发送电子邮件”这样的简单任务——该技能包含关键注意事项（幂等密钥、Webhook 验证、模板变量语法），这些内容会...</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Resend</li>
+<li>Quick Send — Node.js</li>
+<li>Quick Send — Python</li>
+<li>Single vs Batch Decision</li>
+<li>Idempotency Keys (Critical for Retries)</li>
+<li>Quick Receive (Node.js)</li>
+<li>What Do You Need?</li>
+<li>SDK Version Requirements</li>
+<li>Common Setup</li>
+<li>API Key</li>
+<li>Detect Project Language</li>
+<li>Common Mistakes</li>
+<li>Cross-Cutting Concerns</li>
+<li>Send + Receive Together</li>
+<li>AI Agent Inbox</li>
+<li>Marketing Emails</li>
+</ul>
+<hr>
+<p><a id="skill-170307ab"></a></p>
+<h3 id="Sendmux-skills"><a href="#Sendmux-skills" class="headerlink" title="Sendmux&#x2F;skills"></a>Sendmux&#x2F;skills</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/Sendmux/skills">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/Sendmux/skills/blob/main/README.md">https://github.com&#x2F;Sendmux&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 为代理发送mux电子邮件和邮箱工作流程</p>
+<p><strong>适用时机:</strong> 当任务需要本目录条目中描述的能力时使用：为代理发送mux电子邮件和邮箱工作流程</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Sendmux Agent Skills</li>
+<li>Marketplace install</li>
+<li>Direct Agent Skills install</li>
+<li>What This Pack Teaches</li>
+<li>Skills Catalogue</li>
+<li>Target matrix</li>
+<li>Development</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 11 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/Sendmux/skills/blob/main/plugins/sendmux/skills/agent-email-inbox/SKILL.md">agent-email-inbox</a> · <a target="_blank" rel="noopener" href="https://github.com/Sendmux/skills/blob/main/plugins/sendmux/skills/email-for-ai-agents/SKILL.md">email-for-ai-agents</a> · <a target="_blank" rel="noopener" href="https://github.com/Sendmux/skills/blob/main/plugins/sendmux/skills/sendmux-attachments/SKILL.md">sendmux-attachments</a> · <a target="_blank" rel="noopener" href="https://github.com/Sendmux/skills/blob/main/plugins/sendmux/skills/sendmux-cli/SKILL.md">sendmux-cli</a> · <a target="_blank" rel="noopener" href="https://github.com/Sendmux/skills/blob/main/plugins/sendmux/skills/sendmux-email-for-agents/SKILL.md">sendmux-email-for-agents</a> · <a target="_blank" rel="noopener" href="https://github.com/Sendmux/skills/blob/main/plugins/sendmux/skills/sendmux-getting-started/SKILL.md">sendmux-getting-started</a> · <a target="_blank" rel="noopener" href="https://github.com/Sendmux/skills/blob/main/plugins/sendmux/skills/sendmux-mailbox-agent/SKILL.md">sendmux-mailbox-agent</a> · <a target="_blank" rel="noopener" href="https://github.com/Sendmux/skills/blob/main/plugins/sendmux/skills/sendmux-management/SKILL.md">sendmux-management</a><br>更多成员请查看来源仓库。</p>
+<hr>
+<p><a id="skill-8236f035"></a></p>
+<h3 id="trycourier-courier-skills"><a href="#trycourier-courier-skills" class="headerlink" title="trycourier&#x2F;courier-skills"></a>trycourier&#x2F;courier-skills</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/trycourier/courier-skills">Skills by Courier</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/trycourier/courier-skills/blob/main/skills/courier/SKILL.md">https://github.com&#x2F;trycourier&#x2F;courier-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;courier&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过电子邮件、短信、推送和聊天进行多渠道通知</p>
+<p><strong>适用时机:</strong> 在使用Courier在电子邮件、短信、推送、应用内收件箱、Slack、Teams和WhatsApp上构建通知时使用：发送、模板、翻译、电子邮件客户端预览、Elemental、旅程、偏好设置、路由、CLI和MCP。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Courier</li>
+<li>The Model</li>
+<li>How to Use This Skill</li>
+<li>Addressing a Send</li>
+<li>Canonical SDK Shape</li>
+<li>Common operations</li>
+<li>Writing a user profile</li>
+<li>Universal Rules</li>
+<li>See also (not duplicated here)</li>
+<li>Debugging a Delivery Failure</li>
+<li>Verifying Against Live Sources</li>
+<li>Where to Look</li>
+<li>Not covered here</li>
+</ul>
+<hr>
+<p><a id="skill-bc2d146b"></a></p>
+<h3 id="typefully-typefully"><a href="#typefully-typefully" class="headerlink" title="typefully&#x2F;typefully"></a>typefully&#x2F;typefully</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/typefully/skills/typefully">Skills by Typefully</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/typefully/agent-skills/blob/main/skills/typefully/SKILL.md">https://github.com&#x2F;typefully&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;typefully&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 在X、LinkedIn、Threads、Bluesky和Mastodon上创建、安排和发布社交媒体内容</p>
+<p><strong>适用时机:</strong> 当被要求为Twitter&#x2F;X、LinkedIn、Threads、Bluesky、Mastodon或Substack Notes撰写、安排、发布或检查推文、帖子、话题或社交媒体内容时，或者当用户提供Typefully的草稿URL，例如<a target="_blank" rel="noopener" href="https://typefully/.com/?a=%5C">https://typefully\.com/?a=\</a>&lt;social_set_id&gt;&amp;d&#x3D;&lt;draft_id&gt;时，使用此技能。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Typefully Skill</li>
+<li>Dropped Typefully draft URLs</li>
+<li>Reference guides</li>
+<li>1. Choose a social set</li>
+<li>2. Create drafts</li>
+<li>One draft per post — always</li>
+<li>Scratchpad notes</li>
+<li>Link previews</li>
+<li>3. Schedule &amp; publish</li>
+<li>Common actions</li>
+<li>Commands</li>
+<li>User &amp; social sets</li>
+<li>Drafts</li>
+<li>Scheduling &amp; publishing</li>
+<li>Queue</li>
+<li>Tags</li>
+</ul>
+<hr>
+<p><a id="skill-a79661bb"></a></p>
+<h3 id="vanshyadav1408-linkedin-outreach"><a href="#vanshyadav1408-linkedin-outreach" class="headerlink" title="vanshyadav1408&#x2F;linkedin-outreach"></a>vanshyadav1408&#x2F;linkedin-outreach</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/vanshyadav1408/Omentir/tree/main/plugins/omentir/skills/linkedin-outreach">Marketing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/vanshyadav1408/Omentir/blob/main/plugins/omentir/skills/linkedin-outreach/SKILL.md">https://github.com&#x2F;vanshyadav1408&#x2F;Omentir&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;omentir&#x2F;skills&#x2F;linkedin-outreach&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过 Omentir MCP 进行 LinkedIn 潜在客户挖掘、评分和接触计划草案</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：通过 Omentir MCP 进行 LinkedIn 潜在客户挖掘、评分和接触计划草案。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>LinkedIn outreach through Omentir</li>
+<li>First calls</li>
+<li>Finding people</li>
+<li>Sending</li>
+<li>Grok Bot</li>
+</ul>
+<hr>
+<p><a href="/blog/zh-CN/agent-skills/">返回 Agent Skills 分类导航</a></p>
+<p><a href="/blog/agent-skills/productivity/">English version of this category</a></p>
+</div></article></div></div><style>.column.column-left,.column.column-right{display:none}</style><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://www.gravatar.com/avatar/7525ea09384aeb09ec303671d7dca1bf?s=128" alt="Song Chen"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Song Chen</p><p class="is-size-6 is-block">Ph.D. Candiate at Université Paris Saclay &amp; Spin-Ion Technologies</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Paris, France</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/blog/zh-CN/archives"><p class="title">28</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/blog/zh-CN/categories"><p class="title">32</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/blog/zh-CN/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/song-chen1" target="_blank" rel="noopener" id="widget-follow">Github Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="GoogleScholar" href="https://scholar.google.com/citations?user=sf-0AGoAAAAJ&amp;hl=de"><i class="fab fa-google-plus-square"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/in/song-chen-3449b9278/"><i class="fab fa-linkedin"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Mail" href="mailto:kammichan90@gmail.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/blog/zh-CN/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/blog/zh-CN/archives/2026/11/"><span class="level-start"><span class="level-item">十一月 2026</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/blog/zh-CN/archives/2026/10/"><span class="level-start"><span class="level-item">十月 2026</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/blog/zh-CN/archives/2023/10/"><span class="level-start"><span class="level-item">十月 2023</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Agent-Skills/"><span class="tag">Agent Skills</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/BERT/"><span class="tag">BERT</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Documentation/"><span class="tag">Documentation</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/French/"><span class="tag">French</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Hexo/"><span class="tag">Hexo</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Hexo-plugins/"><span class="tag">Hexo plugins</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/HuggingFace/"><span class="tag">HuggingFace</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Language/"><span class="tag">Language</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/MachineLearning/"><span class="tag">MachineLearning</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/NLP/"><span class="tag">NLP</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Obsidian/"><span class="tag">Obsidian</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/PyTorch/"><span class="tag">PyTorch</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Pyenv/"><span class="tag">Pyenv</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Python/"><span class="tag">Python</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/VoltAgent/"><span class="tag">VoltAgent</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/computational-simulation/"><span class="tag">computational simulation</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/condensed-matter-physics/"><span class="tag">condensed-matter physics</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/data-science/"><span class="tag">data-science</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/deep-learning/"><span class="tag">deep-learning</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/encryptAsDiary/"><span class="tag">encryptAsDiary</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/machine-learning/"><span class="tag">machine-learning</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python/"><span class="tag">python</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-configuration/"><span class="tag">python_configuration</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-editors/"><span class="tag">python_editors</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-tools/"><span class="tag">python_tools</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="https://api.follow.it/subscription-form/YnRDa2puUlErMTdqQ2Q4aDRrem93bHllemF6Y1ZMSW9hQSsrQ3NKTzRXSGRpTlRocW13MXM2UUw4YUFRdUFhUVRJTk1kaVFPWjc2MUQ1TTlLZ3hvcnhLNHJ2bE4yS3VzaTZ4eTliREZjZEk3UHRIWXBRbkxnN3FVUFczVm9TZDF8c2Z0em5PTnVFYks5TU15dUtPdW05czZIeEF4V0dvYnhQVnJtUGNUZEIxYz0=/8" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/automation/">智能体工具与自动化 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E6%99%BA%E8%83%BD%E4%BD%93%E5%B7%A5%E5%85%B7%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96/">智能体工具与自动化</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/business/">商业与财务 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E5%95%86%E4%B8%9A%E4%B8%8E%E8%B4%A2%E5%8A%A1/">商业与财务</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/cloud/">云与运维 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E4%BA%91%E4%B8%8E%E8%BF%90%E7%BB%B4/">云与运维</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/ai_data/">人工智能与数据 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8E%E6%95%B0%E6%8D%AE/">人工智能与数据</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/productivity/">效率与协作 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E6%95%88%E7%8E%87%E4%B8%8E%E5%8D%8F%E4%BD%9C/">效率与协作</a></p></div></article></div></div><div class="card widget" id="twikoo-new"><div class="card-content"><div class="menu"><h3 class="menu-label">最新评论</h3><script>window.twikooEnvId = 'https://twikoodisqus.vercel.app';</script><div class="twikoo-new-container"></div></div></div></div></div><style>.column.column-left,.column.column-right{display:block}</style></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/blog/zh-CN/"><img class="logo-img" src="/blog/zh-CN/images/logo.png" alt="Project Geeker" height="28"><img class="logo-img-dark" src="/blog/zh-CN/images/logo-dark.png" alt="Project Geeker" height="28"></a><p class="is-size-7"><span>&copy; 2026 Song Chen</span>  网站最终解释权归 <a href="https://songchen.science" target="_blank" rel="noopener">Song</a><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p><p class="is-size-7">© 2023</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.21/dist/twikoo.all.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/blog/zh-CN/js/column.js"></script><script src="/blog/zh-CN/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/blog/zh-CN/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="/blog/zh-CN/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><div class="searchbox-pinyin"><label class="checkbox"><input id="search-by-pinyin" type="checkbox" checked="checked"><span> Pinyin search</span></label></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/imaegoo/pinyin.js" defer></script><script src="/blog/zh-CN/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/blog/zh-CN/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script><script type="text/javascript" src="/js/imaegoo/imaegoo.js"></script><script type="text/javascript" src="/js/imaegoo/universe.js"></script></body></html>

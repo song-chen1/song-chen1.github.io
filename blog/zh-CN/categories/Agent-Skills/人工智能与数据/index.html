@@ -1,0 +1,1826 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>分类: 人工智能与数据 - Project Geeker</title><link rel="manifest" href="/blog/zh-CN/manifest.json"><meta name="application-name" content="Project Geeker"><meta name="msapplication-TileImage" content="/assets/icons/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Project Geeker"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="website"><meta property="og:title" content="Project Geeker"><meta property="og:url" content="https://songchen.science/blog/zh-CN/"><meta property="og:site_name" content="Project Geeker"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://songchen.science/blog/zh-CN/img/og_image.png"><meta property="article:author" content="Song Chen"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://songchen.science/blog/zh-CN/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://songchen.science/blog/zh-CN/"},"headline":"Project Geeker","image":["https://songchen.science/blog/zh-CN/img/og_image.png"],"author":{"@type":"Person","name":"Song Chen"},"publisher":{"@type":"Organization","name":"Project Geeker","logo":{"@type":"ImageObject","url":{"light":"/images/logo.png","dark":"/images/logo-dark.png"}}},"description":""}</script><link rel="alternate" href="/blog/zh-CN/atom.xml" title="Project Geeker" type="application/atom+xml"><link rel="icon" href="/blog/zh-CN/assets/icons/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="/blog/zh-CN/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><meta name="follow.it-verification-code" content="uc2EwCtSW92aTx5KkxEk"><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head><body class="is-3-column"><script type="text/javascript" src="/js/imaegoo/night.js"></script><canvas id="universe"></canvas><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/blog/zh-CN/"><img class="logo-img" src="/blog/zh-CN/images/logo.png" alt="Project Geeker" height="28"><img class="logo-img-dark" src="/blog/zh-CN/images/logo-dark.png" alt="Project Geeker" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/blog/zh-CN/">首页</a><a class="navbar-item" href="/blog/zh-CN/archives/">时间轴</a><a class="navbar-item" href="/blog/zh-CN/categories/">分类</a><a class="navbar-item" href="/blog/zh-CN/tags/">标签</a><a class="navbar-item" href="/blog/zh-CN/blogroll/">友情链接</a><a class="navbar-item" href="/blog/zh-CN/guestbook/">留言板</a><a class="navbar-item" href="/blog/zh-CN/about/me">关于</a></div><div class="navbar-end"><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="画廊" href="/blog/zh-CN/gallery/"><i class="fas fa-images"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="GoogleDrive" href="https://goindex.chen-song90.workers.dev"><i class="fab fa-google-drive"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="iCloud" href="https://hitchhiker.azurewebsites.net"><i class="fas fa-cloud"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" href="https://songchen.science/blog/"> English</a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/blog/zh-CN/categories">分类</a></li><li><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a></li><li class="is-active"><a href="#" aria-current="page">人工智能与数据</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2026-11-02T04:00:00.000Z" title="11/2/2026, 12:00:00 PM">2026-11-02</time>发表</span><span class="level-item"><time dateTime="2026-11-02T04:00:00.000Z" title="11/2/2026, 12:00:00 PM">2026-11-02</time>更新</span><span class="level-item"><a class="link-muted" href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a><span> / </span><a class="link-muted" href="/blog/zh-CN/categories/Agent-Skills/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8E%E6%95%B0%E6%8D%AE/">人工智能与数据</a></span><span class="level-item">2 小时读完 (大约15860个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/blog/zh-CN/agent-skills/ai_data/">人工智能与数据 | Agent Skills</a></p><div class="content"><h1 id="人工智能与数据"><a href="#人工智能与数据" class="headerlink" title="人工智能与数据"></a>人工智能与数据</h1><p>人工智能与数据类技能覆盖模型和智能体工作流、检索、分析、数据平台及机器学习任务。</p>
+<p><strong>目录快照：2026 年 11 月 2 日</strong></p>
+<h2 id="分类目录"><a href="#分类目录" class="headerlink" title="分类目录"></a>分类目录</h2><ul>
+<li><a href="#skill-5cd6016e">brave&#x2F;answers</a></li>
+<li><a href="#skill-5258a7b1">brave&#x2F;local-descriptions</a></li>
+<li><a href="#skill-ee60cf3b">brave&#x2F;news-search</a></li>
+<li><a href="#skill-9cf413d4">chrono-meta&#x2F;context-doctor</a></li>
+<li><a href="#skill-d2359d22">crawlbase&#x2F;crawl-markdown</a></li>
+<li><a href="#skill-f0ec4efa">crawlbase&#x2F;storage-bulk-get</a></li>
+<li><a href="#skill-4109fe33">crawlbase&#x2F;storage-list</a></li>
+<li><a href="#skill-02e951e2">czlonkowski&#x2F;n8n-node-configuration</a></li>
+<li><a href="#skill-43214186">datadog-labs&#x2F;dd-apm</a></li>
+<li><a href="#skill-9b69de5f">datadog-labs&#x2F;dd-llmo-eval-bootstrap</a></li>
+<li><a href="#skill-cf75a5b9">datadog-labs&#x2F;dd-llmo-eval-trace-rca</a></li>
+<li><a href="#skill-4460779f">duckdb&#x2F;read-file</a></li>
+<li><a href="#skill-07f48497">firebase&#x2F;firebase-ai-logic-basics</a></li>
+<li><a href="#skill-9ace4518">firebase&#x2F;firebase-firestore-enterprise-native-mode</a></li>
+<li><a href="#skill-04b060ec">flutter&#x2F;flutter-caching-data</a></li>
+<li><a href="#skill-f1ba6601">flutter&#x2F;flutter-embedding-native-views</a></li>
+<li><a href="#skill-f027f500">google-gemini&#x2F;gemini-api-dev</a></li>
+<li><a href="#skill-d5b1fa80">google-gemini&#x2F;gemini-interactions-api</a></li>
+<li><a href="#skill-2674a5b7">google-gemini&#x2F;gemini-live-api-dev</a></li>
+<li><a href="#skill-2b1c6d9c">google-gemini&#x2F;vertex-ai-api-dev</a></li>
+<li><a href="#skill-59d1a0b7">hermes-labs-ai&#x2F;little-canary</a></li>
+<li><a href="#skill-53bf50d2">huggingface&#x2F;hugging-face-evaluation</a></li>
+<li><a href="#skill-0d3d0fcf">huggingface&#x2F;hugging-face-model-trainer</a></li>
+<li><a href="#skill-810cfccf">microsoft&#x2F;agent-framework-azure-ai-py</a></li>
+<li><a href="#skill-ebc61b44">microsoft&#x2F;azure-ai-anomalydetector-java</a></li>
+<li><a href="#skill-a89d7126">microsoft&#x2F;azure-ai-contentsafety-java</a></li>
+<li><a href="#skill-a329682f">microsoft&#x2F;azure-ai-contentsafety-py</a></li>
+<li><a href="#skill-34326548">microsoft&#x2F;azure-ai-contentsafety-ts</a></li>
+<li><a href="#skill-9ff5f29d">microsoft&#x2F;azure-ai-contentunderstanding-py</a></li>
+<li><a href="#skill-1e76abbb">microsoft&#x2F;azure-ai-document-intelligence-dotnet</a></li>
+<li><a href="#skill-98edad1e">microsoft&#x2F;azure-ai-document-intelligence-ts</a></li>
+<li><a href="#skill-b03325d5">microsoft&#x2F;azure-ai-formrecognizer-java</a></li>
+<li><a href="#skill-a4dfe4f5">microsoft&#x2F;azure-ai-ml-py</a></li>
+<li><a href="#skill-9019feb6">microsoft&#x2F;azure-ai-openai-dotnet</a></li>
+<li><a href="#skill-a44227c2">microsoft&#x2F;azure-ai-projects-dotnet</a></li>
+<li><a href="#skill-e76f0702">microsoft&#x2F;azure-ai-projects-java</a></li>
+<li><a href="#skill-cf889fa7">microsoft&#x2F;azure-ai-projects-py</a></li>
+<li><a href="#skill-084b0083">microsoft&#x2F;azure-ai-projects-ts</a></li>
+<li><a href="#skill-e971d8f8">microsoft&#x2F;azure-ai-textanalytics-py</a></li>
+<li><a href="#skill-2bbd4d85">microsoft&#x2F;azure-ai-transcription-py</a></li>
+<li><a href="#skill-32710203">microsoft&#x2F;azure-ai-translation-document-py</a></li>
+<li><a href="#skill-596fc6cd">microsoft&#x2F;azure-ai-translation-text-py</a></li>
+<li><a href="#skill-532cd9b6">microsoft&#x2F;azure-ai-translation-ts</a></li>
+<li><a href="#skill-db8e677f">microsoft&#x2F;azure-ai-vision-imageanalysis-java</a></li>
+<li><a href="#skill-b3636f48">microsoft&#x2F;azure-ai-vision-imageanalysis-py</a></li>
+<li><a href="#skill-fbe5f536">microsoft&#x2F;azure-ai-voicelive-dotnet</a></li>
+<li><a href="#skill-c6625fd4">microsoft&#x2F;azure-ai-voicelive-java</a></li>
+<li><a href="#skill-5d497a1f">microsoft&#x2F;azure-ai-voicelive-py</a></li>
+<li><a href="#skill-2abfb42d">microsoft&#x2F;azure-ai-voicelive-ts</a></li>
+<li><a href="#skill-49dbdc72">microsoft&#x2F;azure-containerregistry-py</a></li>
+<li><a href="#skill-4651692a">microsoft&#x2F;azure-mgmt-arizeaiobservabilityeval-dotnet</a></li>
+<li><a href="#skill-0681eaa3">microsoft&#x2F;azure-mgmt-mongodbatlas-dotnet</a></li>
+<li><a href="#skill-7f8bee19">microsoft&#x2F;azure-resource-manager-redis-dotnet</a></li>
+<li><a href="#skill-8fe77ced">microsoft&#x2F;azure-search-documents-dotnet</a></li>
+<li><a href="#skill-38835548">microsoft&#x2F;azure-search-documents-py</a></li>
+<li><a href="#skill-8689c986">microsoft&#x2F;azure-search-documents-ts</a></li>
+<li><a href="#skill-7999d123">microsoft&#x2F;azure-storage-blob-ts</a></li>
+<li><a href="#skill-f3954357">microsoft&#x2F;azure-storage-file-datalake-py</a></li>
+<li><a href="#skill-c3ecd187">microsoft&#x2F;azure-storage-file-share-py</a></li>
+<li><a href="#skill-26bb0f3b">microsoft&#x2F;azure-storage-file-share-ts</a></li>
+<li><a href="#skill-7d9d04c7">microsoft&#x2F;azure-storage-queue-py</a></li>
+<li><a href="#skill-3b314040">microsoft&#x2F;azure-storage-queue-ts</a></li>
+<li><a href="#skill-ea98418d">microsoft&#x2F;pydantic-models-py</a></li>
+<li><a href="#skill-4fbcbb91">mongodb&#x2F;mongodb-query-optimizer</a></li>
+<li><a href="#skill-98873e35">mongodb&#x2F;mongodb-search-and-ai</a></li>
+<li><a href="#skill-4a46381d">NeoLabHQ&#x2F;reflexion</a></li>
+<li><a href="#skill-9efe0519">obra&#x2F;using-superpowers</a></li>
+<li><a href="#skill-1d779bcf">Qiuner&#x2F;birdview</a></li>
+<li><a href="#skill-49742e78">realkimbarrett&#x2F;generic-language-killer</a></li>
+<li><a href="#skill-b17cec60">redis&#x2F;redis-core</a></li>
+<li><a href="#skill-78fe7194">ruslanlap&#x2F;cavemenko</a></li>
+<li><a href="#skill-c3b0b95d">sametbrr&#x2F;llm-wiki-manager</a></li>
+<li><a href="#skill-628e83ba">serpapi&#x2F;serpapi-web-search</a></li>
+<li><a href="#skill-a12ca7dc">swaylq&#x2F;humanize-chinese</a></li>
+<li><a href="#skill-fc72ada9">veniceai&#x2F;venice-chat</a></li>
+<li><a href="#skill-6a1ebb92">veniceai&#x2F;venice-embeddings</a></li>
+<li><a href="#skill-ad93ab59">veniceai&#x2F;venice-models</a></li>
+<li><a href="#skill-80c93213">Vladimir-Human&#x2F;humanizer-ru</a></li>
+<li><a href="#skill-a8465f1c">wiltodelta&#x2F;remove-ai-watermarks</a></li>
+<li><a href="#skill-db814377">xberg-io&#x2F;xberg</a></li>
+</ul>
+<h2 id="本类全部技能"><a href="#本类全部技能" class="headerlink" title="本类全部技能"></a>本类全部技能</h2><p><a id="skill-5cd6016e"></a></p>
+<h3 id="brave-answers"><a href="#brave-answers" class="headerlink" title="brave&#x2F;answers"></a>brave&#x2F;answers</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/brave/skills/answers">Skills by Brave</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/brave/brave-search-skills/blob/main/skills/answers/SKILL.md">https://github.com&#x2F;brave&#x2F;brave-search-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;answers&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 基于实时网络搜索结果生成的AI生成答案</p>
+<p><strong>适用时机:</strong> 获取突发新闻主题的引用摘要 对技术比较问题进行深入的多源研究 在现有基于 OpenAI SDK 的聊天机器人中添加基于网络的问答功能，通过替换基础 URL 查找 LLM 训练数据无法覆盖的当前统计数据或事实 为报告生成包含来源引用的研究摘要</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Answers — AI Grounding</li>
+<li>When to Use</li>
+<li>Quick Start (cURL)</li>
+<li>Blocking (Single-Search)</li>
+<li>Streaming with Citations (Single-Search)</li>
+<li>Research Mode</li>
+<li>Endpoint</li>
+<li>Two Modes</li>
+<li>Parameters</li>
+<li>Standard Parameters</li>
+<li>Research Parameters</li>
+<li>Constraints (IMPORTANT)</li>
+<li>OpenAI SDK Usage</li>
+<li>Response Format</li>
+<li>Blocking Response (`stream&#x3D;false`, single-search only)</li>
+<li>Streaming Response</li>
+</ul>
+<hr>
+<p><a id="skill-5258a7b1"></a></p>
+<h3 id="brave-local-descriptions"><a href="#brave-local-descriptions" class="headerlink" title="brave&#x2F;local-descriptions"></a>brave&#x2F;local-descriptions</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/brave/skills/local-descriptions">Skills by Brave</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/brave/brave-search-skills/blob/main/skills/local-descriptions/SKILL.md">https://github.com&#x2F;brave&#x2F;brave-search-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;local-descriptions&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 获取Fetch AI生成的景点描述文本</p>
+<p><strong>适用时机:</strong> 在将餐厅添加到旅行指南之前获取其书面概述 通过Brave网页搜索找到的当地企业的描述性简介 为应用程序中附近咖啡馆或商店列表添加叙事背景 构建带有AI撰写的当地景点摘要的目的地页面 对城市中多个酒店的描述并列比较</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Local Descriptions (Search API)</li>
+<li>Quick Start (cURL)</li>
+<li>Get POI Description</li>
+<li>Multiple POIs</li>
+<li>Endpoint</li>
+<li>Parameters</li>
+<li>Response Format</li>
+<li>Response Fields</li>
+<li>Example Response</li>
+<li>Getting POI IDs</li>
+<li>Use Cases</li>
+<li>Notes</li>
+</ul>
+<hr>
+<p><a id="skill-ee60cf3b"></a></p>
+<h3 id="brave-news-search"><a href="#brave-news-search" class="headerlink" title="brave&#x2F;news-search"></a>brave&#x2F;news-search</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/brave/skills/news-search">Skills by Brave</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/brave/brave-search-skills/blob/main/skills/news-search/SKILL.md">https://github.com&#x2F;brave&#x2F;brave-search-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;news-search&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用文章元数据搜索Brave的新闻索引</p>
+<p><strong>适用时机:</strong> 从过去24小时的特定主题中提取头条新闻 使用Goggles排名规则筛选仅包含可信来源的新闻 查找特定日期范围内的文章 通过组合国家和语言参数构建多语言新闻流 将新闻结果输送到带有数据元信息时间戳的数据管道中</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>News Search</li>
+<li>Quick Start (cURL)</li>
+<li>Basic Search</li>
+<li>Recent News (Past 24 Hours)</li>
+<li>Date Range Filter</li>
+<li>Endpoint</li>
+<li>Parameters</li>
+<li>Freshness Values</li>
+<li>Response Format</li>
+<li>Response Fields</li>
+<li>Goggles (Custom Ranking) — Unique to Brave</li>
+<li>Search Operators</li>
+<li>Use Cases</li>
+<li>Notes</li>
+</ul>
+<hr>
+<p><a id="skill-9cf413d4"></a></p>
+<h3 id="chrono-meta-context-doctor"><a href="#chrono-meta-context-doctor" class="headerlink" title="chrono-meta&#x2F;context-doctor"></a>chrono-meta&#x2F;context-doctor</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/chrono-meta/forge-harness/tree/main/plugins/fh-meta/skills/context-doctor">Context Engineering</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/chrono-meta/forge-harness/blob/main/plugins/fh-meta/skills/context-doctor/SKILL.md">https://github.com&#x2F;chrono-meta&#x2F;forge-harness&#x2F;blob&#x2F;main&#x2F;plugins&#x2F;fh-meta&#x2F;skills&#x2F;context-doctor&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 在消耗令牌之前生成 .claudeignore 并标记上下文冗余</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：在消耗令牌之前生成 .claudeignore 并标记上下文冗余。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>context-doctor — Token Efficiency Diagnosis + Automatic Prescription</li>
+<li>Execution Steps</li>
+<li>Step 1. `.claudeignore` Diagnosis + Generation</li>
+<li>Step 2. Large File Detection + Split Strategy Guidance</li>
+<li>Step 3. `&#x2F;clear` + Model Switching Timing Guide</li>
+<li>Step 3.5. Cache-Boundary Audit (prompt caching, optional third lever)</li>
+<li>Step 4. harvest-loop Integration (burst pattern recording)</li>
+<li>Step 5. CC Context Structure Regular Audit (Hub Environment Only)</li>
+<li>Context Hierarchy (L1&#x2F;L2&#x2F;L3)</li>
+<li>Compression Pass</li>
+<li>Command-Output Reduction (the command-output axis)</li>
+<li>External User Environment Adaptation</li>
+<li>Invocation Triggers</li>
+<li>Auto-Invocation Conditions (at session start)</li>
+<li>Suppress Mechanism</li>
+<li>Explicit Triggers</li>
+</ul>
+<hr>
+<p><a id="skill-d2359d22"></a></p>
+<h3 id="crawlbase-crawl-markdown"><a href="#crawlbase-crawl-markdown" class="headerlink" title="crawlbase&#x2F;crawl-markdown"></a>crawlbase&#x2F;crawl-markdown</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/crawlbase/skills/crawl-markdown">Skills by Crawlbase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/crawlbase/crawlbase-codex-plugin/blob/main/skills/crawl-markdown/SKILL.md">https://github.com&#x2F;crawlbase&#x2F;crawlbase-codex-plugin&#x2F;blob&#x2F;main&#x2F;skills&#x2F;crawl-markdown&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 从任何URL提取干净的、准备好用于LLM的Markdown，去除广告和模板代码</p>
+<p><strong>适用时机:</strong> 在不产生HTML冗余的情况下总结文章、博客文章和新闻页面 将文档和变更日志输入模型的上下文窗口 将网页内容输入RAG流水线中的向量存储器 以可读Markdown格式监控竞争对手的产品页面 将提取的Markdown存储在Crawlbase云存储中以供后续使用</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>When to use</li>
+<li>Usage</li>
+<li>Example prompts</li>
+</ul>
+<hr>
+<p><a id="skill-f0ec4efa"></a></p>
+<h3 id="crawlbase-storage-bulk-get"><a href="#crawlbase-storage-bulk-get" class="headerlink" title="crawlbase&#x2F;storage-bulk-get"></a>crawlbase&#x2F;storage-bulk-get</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/crawlbase/skills/storage-bulk-get">Skills by Crawlbase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/crawlbase/crawlbase-codex-plugin/blob/main/skills/storage-bulk-get/SKILL.md">https://github.com&#x2F;crawlbase&#x2F;crawlbase-codex-plugin&#x2F;blob&#x2F;main&#x2F;skills&#x2F;storage-bulk-get&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 一次性检索最多100页已存储的页面，可选择自动删除</p>
+<p><strong>适用时机:</strong> 一次往返提取数十个存储爬虫的体格 通过获取项目并随后删除项目来清空存储队列 在请求完整体格之前获取存储项目的轻量元数据 为 RAG 抽取任务批量将存储页面转换为 Markdown</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>When to use</li>
+<li>Usage</li>
+<li>Example prompts</li>
+</ul>
+<hr>
+<p><a id="skill-4109fe33"></a></p>
+<h3 id="crawlbase-storage-list"><a href="#crawlbase-storage-list" class="headerlink" title="crawlbase&#x2F;storage-list"></a>crawlbase&#x2F;storage-list</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/crawlbase/skills/storage-list">Skills by Crawlbase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/crawlbase/crawlbase-codex-plugin/blob/main/skills/storage-list/SKILL.md">https://github.com&#x2F;crawlbase&#x2F;crawlbase-codex-plugin&#x2F;blob&#x2F;main&#x2F;skills&#x2F;storage-list&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用滚动式分页存储的条目列表，每次最多可存储1000条。</p>
+<p><strong>适用时机:</strong> 查看当前存储在 Crawlbase 代称下的所有内容 在存储-获取（storage-get）调用前查找您不再记得的路径 逐页遍历已存储的项以进行批次处理 将 JS 代称隔离存储单元与常规存储单元分开列出</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>When to use</li>
+<li>Usage</li>
+<li>Example prompts</li>
+</ul>
+<hr>
+<p><a id="skill-02e951e2"></a></p>
+<h3 id="czlonkowski-n8n-node-configuration"><a href="#czlonkowski-n8n-node-configuration" class="headerlink" title="czlonkowski&#x2F;n8n-node-configuration"></a>czlonkowski&#x2F;n8n-node-configuration</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/czlonkowski/n8n-skills/tree/main/skills/n8n-node-configuration">n8n Automation</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/czlonkowski/n8n-skills/blob/main/skills/n8n-node-configuration/SKILL.md">https://github.com&#x2F;czlonkowski&#x2F;n8n-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;n8n-node-configuration&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用依赖规则和AI连接的节点配置</p>
+<p><strong>适用时机:</strong> 在配置节点、理解属性依赖关系、确定必填字段、在get_node详细度级别之间进行选择，或按节点类型学习常见配置模式（包括替代Code的原生节点，如摘要、聚合、拆分、合并、比较数据集、删除重复项、排序、限制、日期与时间、HTTP请求分页、加密）时使用。设置节点参数时始终使用此技能——它能说明每个操作所需的字段，显示选项如何控制字段可见性，以及何时使用patchNodeField进行精细编辑，而非对节点进行全面更新。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>n8n Node Configuration</li>
+<li>Configuration Philosophy</li>
+<li>Core Concepts</li>
+<li>1. Operation-Aware Configuration</li>
+<li>2. Property Dependencies</li>
+<li>3. Progressive Discovery</li>
+<li>Configuration Workflow</li>
+<li>Standard Process</li>
+<li>Example: Configuring HTTP Request</li>
+<li>get_node Detail Levels</li>
+<li>Standard Detail (DEFAULT - Use This!)</li>
+<li>Full Detail (Use Sparingly)</li>
+<li>Search Properties Mode</li>
+<li>Decision Tree</li>
+<li>Property Dependencies Deep Dive</li>
+<li>Common Node Patterns</li>
+</ul>
+<hr>
+<p><a id="skill-43214186"></a></p>
+<h3 id="datadog-labs-dd-apm"><a href="#datadog-labs-dd-apm" class="headerlink" title="datadog-labs&#x2F;dd-apm"></a>datadog-labs&#x2F;dd-apm</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/datadog-labs/skills/dd-apm">Skills by Datadog Labs</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/datadog-labs/agent-skills/blob/main/dd-apm/SKILL.md">https://github.com&#x2F;datadog-labs&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;dd-apm&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 直接从您的编辑器查询Datadog APM数据</p>
+<p><strong>适用时机:</strong> 部署后在特定服务上查找缓慢的异常轨迹 在给定环境中列出所有服务及其错误率 检索微服务的依赖图以查找上游瓶颈 在配置更改前后检查请求延迟百分位数 查找与特定 API 端点关联的异常轨迹</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Datadog APM</li>
+<li>Routing — Read This First</li>
+<li>Overlap disambiguation</li>
+<li>None of the above</li>
+<li>Requirements</li>
+<li>Command Execution Order (Token-Efficient)</li>
+<li>Quick Start</li>
+<li>Services</li>
+<li>List Services</li>
+<li>Service Stats</li>
+<li>Service Map</li>
+<li>Traces</li>
+<li>Search Traces</li>
+<li>Trace Detail</li>
+<li>Key Metrics</li>
+<li>Service Level Objectives</li>
+</ul>
+<hr>
+<p><a id="skill-9b69de5f"></a></p>
+<h3 id="datadog-labs-dd-llmo-eval-bootstrap"><a href="#datadog-labs-dd-llmo-eval-bootstrap" class="headerlink" title="datadog-labs&#x2F;dd-llmo-eval-bootstrap"></a>datadog-labs&#x2F;dd-llmo-eval-bootstrap</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/datadog-labs/skills/dd-llmo-eval-bootstrap">Skills by Datadog Labs</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/datadog-labs/agent-skills/blob/main/README.md">https://github.com&#x2F;datadog-labs&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 分析生产LLM痕迹并生成评估器</p>
+<p><strong>适用时机:</strong> 在发现答案质量偏差后为RAG应用生成评估器 从客户支持聊天机器人生产日志中构建测试套件 基于RCA报告中的真实故障模式构建LLM评判提示 采用基于日志的安全评估对代理应用进行范围违规检查 为一个无现有覆盖率的新ml_app构建启动式格式与正确性检查</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Datadog Skills for AI Agents</li>
+<li>Skills</li>
+<li>Install</li>
+<li>Setup Pup</li>
+<li>Add Skill(s)</li>
+<li>Agent Observability (LLMO)</li>
+<li>Software Delivery (dd-software-delivery)</li>
+<li>Audit Trail (dd-audit)</li>
+<li>Datadog Apps (dd-apps)</li>
+<li>Quick Reference</li>
+<li>Auth</li>
+<li>More Skills</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-cf75a5b9"></a></p>
+<h3 id="datadog-labs-dd-llmo-eval-trace-rca"><a href="#datadog-labs-dd-llmo-eval-trace-rca" class="headerlink" title="datadog-labs&#x2F;dd-llmo-eval-trace-rca"></a>datadog-labs&#x2F;dd-llmo-eval-trace-rca</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/datadog-labs/skills/dd-llmo-eval-trace-rca">Skills by Datadog Labs</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/datadog-labs/agent-skills/blob/main/README.md">https://github.com&#x2F;datadog-labs&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用评估跟踪记录根因导致LLM应用程序失败的原因</p>
+<p><strong>适用时机:</strong> 诊断为何LLM应用评估通过率一夜之间下降 追踪RAG检索失败的原因，追溯到提供不良上下文的具体区间 发现导致代理工具反复滥用的系统提示缺陷 将真实应用故障与因评估标准不准确导致的假阳性区分开 来从ml_app中的零星评估结果中构建排序失败分类学</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Datadog Skills for AI Agents</li>
+<li>Skills</li>
+<li>Install</li>
+<li>Setup Pup</li>
+<li>Add Skill(s)</li>
+<li>Agent Observability (LLMO)</li>
+<li>Software Delivery (dd-software-delivery)</li>
+<li>Audit Trail (dd-audit)</li>
+<li>Datadog Apps (dd-apps)</li>
+<li>Quick Reference</li>
+<li>Auth</li>
+<li>More Skills</li>
+<li>License</li>
+</ul>
+<hr>
+<p><a id="skill-4460779f"></a></p>
+<h3 id="duckdb-read-file"><a href="#duckdb-read-file" class="headerlink" title="duckdb&#x2F;read-file"></a>duckdb&#x2F;read-file</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/duckdb/skills/read-file">Skills by DuckDB</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/duckdb/duckdb-skills/blob/main/skills/read-file/SKILL.md">https://github.com&#x2F;duckdb&#x2F;duckdb-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;read-file&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 从本地或远程存储中读取任何数据文件（CSV、JSON、Parquet、Avro、Excel、空间）</p>
+<p><strong>适用时机:</strong> 当用户引用数据文件、询问“这个文件里有什么”或想要预览&#x2F;概览数据集时使用。不适用于源代码。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Step 1 — Read it</li>
+<li>Step 2 — Answer</li>
+</ul>
+<hr>
+<p><a id="skill-07f48497"></a></p>
+<h3 id="firebase-firebase-ai-logic-basics"><a href="#firebase-firebase-ai-logic-basics" class="headerlink" title="firebase&#x2F;firebase-ai-logic-basics"></a>firebase&#x2F;firebase-ai-logic-basics</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/firebase/skills/firebase-ai-logic-basics">Skills by Firebase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/firebase/agent-skills/blob/main/skills/firebase-ai-logic-basics/SKILL.md">https://github.com&#x2F;firebase&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;firebase-ai-logic-basics&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过Firebase AI Logic从网页和移动应用程序调用Gemini模型</p>
+<p><strong>适用时机:</strong> 在为Firebase AI Logic进行配置或初始化，或将Gemini功能添加到应用程序时使用：文本生成、多模态输入、聊天、流媒体、结构化输出、混合设备端推理、App Check保护，或使用远程配置切换模型。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Firebase AI Logic Basics</li>
+<li>Overview</li>
+<li>Setup &amp; initialization</li>
+<li>Prerequisites</li>
+<li>1. Provision Firebase AI Logic (ALL platforms)</li>
+<li>2. Add the SDK and initialize the service in the app</li>
+<li>Core Capabilities</li>
+<li>Text-Only Generation</li>
+<li>Multimodal (Text + Images&#x2F;Audio&#x2F;Video&#x2F;PDF input)</li>
+<li>Chat Session (Multi-turn)</li>
+<li>Streaming Responses</li>
+<li>Text-to-Speech (TTS) Generation</li>
+<li>Generate Images with Nano Banana</li>
+<li>Search Grounding with the built in googleSearch tool</li>
+<li>Supported Platforms and Frameworks</li>
+<li>Advanced Features</li>
+</ul>
+<hr>
+<p><a id="skill-9ace4518"></a></p>
+<h3 id="firebase-firebase-firestore-enterprise-native-mode"><a href="#firebase-firebase-firestore-enterprise-native-mode" class="headerlink" title="firebase&#x2F;firebase-firestore-enterprise-native-mode"></a>firebase&#x2F;firebase-firestore-enterprise-native-mode</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/firebase/skills/firebase-firestore-enterprise-native-mode">Skills by Firebase</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/firebase/agent-skills/blob/main/README.md">https://github.com&#x2F;firebase&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 设置和使用Firestore企业原生模式</p>
+<p><strong>适用时机:</strong> 在原生模式下设置新的Firestore企业数据库 编写安全规则以控制每个集合的读写访问权限 从Python后端服务查询Firestore 添加复合索引以加快过滤查询 为多租户应用程序结构化子集合</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Installation</li>
+<li>Option 1: Agent Skills CLI</li>
+<li>Option 2: Gemini CLI Extension</li>
+<li>Option 3: Claude Plugin</li>
+<li>Option 4: Codex Plugin</li>
+<li>Option 5: Kimi Plugin</li>
+<li>Option 6: Manual Set Up</li>
+<li>Option 7: Local Path via Agent Skills CLI</li>
+<li>Option 8: Local Development (Live Symlinking)</li>
+<li>🤝 Contributing</li>
+<li>📄 License</li>
+</ul>
+<hr>
+<p><a id="skill-04b060ec"></a></p>
+<h3 id="flutter-flutter-caching-data"><a href="#flutter-flutter-caching-data" class="headerlink" title="flutter&#x2F;flutter-caching-data"></a>flutter&#x2F;flutter-caching-data</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/flutter/skills/flutter-caching-data">Skills by Flutter</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/flutter/skills/blob/main/README.md">https://github.com&#x2F;flutter&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 实施离线优先缓存策略</p>
+<p><strong>适用时机:</strong> 为从 REST API 获取数据的 Flutter 应用添加离线支持 在可滚动的产品列表屏幕中缓存网络图片 在现有 Android 应用中预热 FlutterEngine，以避免屏幕闪烁设置设备恢复在线时本地排队写入的背景同步 使用 shared_preferences 在应用重启时存储用户偏好和会话状态</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Flutter Agent Plugins</li>
+<li>Installation</li>
+<li>Available Skills</li>
+<li>Contributing</li>
+<li>Code of Conduct</li>
+</ul>
+<hr>
+<p><a id="skill-f1ba6601"></a></p>
+<h3 id="flutter-flutter-embedding-native-views"><a href="#flutter-flutter-embedding-native-views" class="headerlink" title="flutter&#x2F;flutter-embedding-native-views"></a>flutter&#x2F;flutter-embedding-native-views</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/flutter/skills/flutter-embedding-native-views">Skills by Flutter</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/flutter/skills/blob/main/README.md">https://github.com&#x2F;flutter&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 将原生Android、iOS和macOS视图嵌入Flutter小部件中</p>
+<p><strong>适用时机:</strong> 在 Android 和 iOS 的 Flutter 屏幕中添加原生 Google 地图视图 渲染可由 Flutter 小部件叠加和裁剪的平台特定视频播放器 将 Flutter 模块嵌入现有的 React 或 Angular 网页应用程序中 显示带有 Flutter 导航控制的原生 iOS WKWebView 将多个独立的 Flutter 视图放置在单个页面上的多个独立 HTML 容器中</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Flutter Agent Plugins</li>
+<li>Installation</li>
+<li>Available Skills</li>
+<li>Contributing</li>
+<li>Code of Conduct</li>
+</ul>
+<hr>
+<p><a id="skill-f027f500"></a></p>
+<h3 id="google-gemini-gemini-api-dev"><a href="#google-gemini-gemini-api-dev" class="headerlink" title="google-gemini&#x2F;gemini-api-dev"></a>google-gemini&#x2F;gemini-api-dev</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/google-gemini/skills/gemini-api-dev">Skills by Google Gemini</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google-gemini/gemini-skills/blob/main/skills/gemini-api-dev/SKILL.md">https://github.com&#x2F;google-gemini&#x2F;gemini-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gemini-api-dev&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用Gemini API开发基于Gemini的应用程序的最佳实践</p>
+<p><strong>适用时机:</strong> 在编写调用用于文本生成、多轮聊天、多模态理解、图像生成、视频生成、语音生成（TTS）、语音设计、语音复制、流式响应、背景研究任务、函数调用、结构化输出或从旧的 generateContent API 迁移的代码时使用此技能。涵盖在 Python 和 TypeScript 中对 Gemini 模型和代理的 SDK 使用方法和最佳实践。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Gemini API Development Skill</li>
+<li>Critical Rules (Always Apply)</li>
+<li>Current Models (Use These)</li>
+<li>Current Agents</li>
+<li>Current SDKs</li>
+<li>Important Additional Notes</li>
+<li>Quick Start</li>
+<li>Python</li>
+<li>JavaScript&#x2F;TypeScript</li>
+<li>Response Helpers</li>
+<li>Stateful Conversation</li>
+<li>Deep Research Agent</li>
+<li>Managed Agents</li>
+<li>Antigravity Agent</li>
+<li>Custom Agents</li>
+<li>Streaming</li>
+</ul>
+<hr>
+<p><a id="skill-d5b1fa80"></a></p>
+<h3 id="google-gemini-gemini-interactions-api"><a href="#google-gemini-gemini-interactions-api" class="headerlink" title="google-gemini&#x2F;gemini-interactions-api"></a>google-gemini&#x2F;gemini-interactions-api</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/google-gemini/skills/gemini-interactions-api">Skills by Google Gemini</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google/skills/blob/main/skills/cloud/gemini-interactions-api/SKILL.md">https://github.com&#x2F;google&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;cloud&#x2F;gemini-interactions-api&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用Gemini Interactions API构建用于文本、聊天、流媒体和图像生成的应用</p>
+<p><strong>适用时机:</strong> 当用户想在Agent平台上使用具有状态的、由服务器管理的Interactions API进行多轮对话、后台执行、流式处理、结构化输出和函数调用时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Gemini Interactions API Skill</li>
+<li>Attribution</li>
+<li>1. Authentication</li>
+<li>2. Client Initialization</li>
+<li>Option A: Environment Variables (Recommended)</li>
+<li>Option B: Explicit Inline Parameters</li>
+<li>Option C: Express Mode (API Key)</li>
+<li>3. Core Interactions API Usage</li>
+<li>Quick Start (Single-Turn)</li>
+<li>Stateful Conversation (Multi-Turn)</li>
+<li>Real-Time Streaming</li>
+<li>Structured Output (Pydantic &#x2F; Polymorphic `response_format`)</li>
+<li>Function Calling (Agent Tool Use)</li>
+<li>Agents &amp; Long-Running Tasks</li>
+<li>4. Accessing the Interactions API via REST</li>
+<li>5. Data Model &amp; Step Types Reference</li>
+</ul>
+<hr>
+<p><a id="skill-2674a5b7"></a></p>
+<h3 id="google-gemini-gemini-live-api-dev"><a href="#google-gemini-gemini-live-api-dev" class="headerlink" title="google-gemini&#x2F;gemini-live-api-dev"></a>google-gemini&#x2F;gemini-live-api-dev</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/google-gemini/skills/gemini-live-api-dev">Skills by Google Gemini</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google-gemini/gemini-skills/blob/main/skills/gemini-live-api-dev/SKILL.md">https://github.com&#x2F;google-gemini&#x2F;gemini-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;gemini-live-api-dev&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用Gemini Live API构建实时双向流媒体应用程序</p>
+<p><strong>适用时机:</strong> 使用此技能在使用 Gemini Live API 构建实时双向流媒体应用时，或将旧版 Live 模型（2.0&#x2F;2.5&#x2F;3.1）迁移到 Gemini 3.8 Live 时。涵盖基于 WebSocket 的音频&#x2F;视频&#x2F;文本流媒体、语音活动检测（VAD）、背景推理（扩展思考）、异步函数调用、会话管理、短暂令牌、实时转录和实时翻译。涵盖的 SDK - google-genai（Python）、@google&#x2F;genai（JavaScript&#x2F;TypeScript）。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Gemini Live API Development Skill</li>
+<li>Overview</li>
+<li>Models</li>
+<li>Current Models (Use These)</li>
+<li>SDKs</li>
+<li>Partner Integrations</li>
+<li>Audio Formats</li>
+<li>Quick Start</li>
+<li>Authentication</li>
+<li>Connecting to the Live API</li>
+<li>Sending Text</li>
+<li>Sending Audio</li>
+<li>Sending Video</li>
+<li>Receiving Audio and Text</li>
+<li>Background Reasoning (Extended Thinking)</li>
+<li>Live Translation (Gemini Live Translate)</li>
+</ul>
+<hr>
+<p><a id="skill-2b1c6d9c"></a></p>
+<h3 id="google-gemini-vertex-ai-api-dev"><a href="#google-gemini-vertex-ai-api-dev" class="headerlink" title="google-gemini&#x2F;vertex-ai-api-dev"></a>google-gemini&#x2F;vertex-ai-api-dev</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/google-gemini/skills/vertex-ai-api-dev">Skills by Google Gemini</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/google-gemini/gemini-skills/blob/main/README.md">https://github.com&#x2F;google-gemini&#x2F;gemini-skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用Gen AI SDK在Google Cloud Vertex AI上开发基于Gemini的应用程序</p>
+<p><strong>适用时机:</strong> 从 Python 后端使用应用程序默认凭据调用 Gemini 模型 生成符合数据管道特定结构化的 JSON 输出 通过 Vertex AI 多模态端点处理上传的视频或音频文件 在不阻塞的情况下对大型数据集进行异步批次预测 使用 Live API 设置双向音频流媒体，用于实时语音应用</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Gemini API skills</li>
+<li>About</li>
+<li>Performance</li>
+<li>Skills in this repo</li>
+<li>Installation</li>
+<li>Using Vercel skills CLI</li>
+<li>Using Context7 skills CLI</li>
+<li>Antigravity</li>
+<li>Claude Code</li>
+<li>Cursor</li>
+<li>OpenAI Codex</li>
+<li>More info</li>
+<li>Disclaimer</li>
+</ul>
+<hr>
+<p><a id="skill-59d1a0b7"></a></p>
+<h3 id="hermes-labs-ai-little-canary"><a href="#hermes-labs-ai-little-canary" class="headerlink" title="hermes-labs-ai&#x2F;little-canary"></a>hermes-labs-ai&#x2F;little-canary</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/hermes-labs-ai/little-canary/blob/main/.agents/skills/little-canary/SKILL.md">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/hermes-labs-ai/little-canary/blob/main/.agents/skills/little-canary/SKILL.md">https://github.com&#x2F;hermes-labs-ai&#x2F;little-canary&#x2F;blob&#x2F;main&#x2F;.agents&#x2F;skills&#x2F;little-canary&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用牺牲的麻雀来筛选传入的文本</p>
+<p><strong>适用时机:</strong> 适用于在输入到主模型之前需要对未信任的来信进行筛选的情况——通过检测提示注入对牺牲性金丝雀模型行为影响进行检测，而非仅依赖模式匹配——并且需要实现封锁&#x2F;标记&#x2F;通过的路由决策以及明确的行为覆盖状态。此为来信预飞行传感器，并非保证。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>little-canary</li>
+<li>Use it for</li>
+<li>Do not use it for</li>
+<li>Quickstart</li>
+<li>Output shape</li>
+<li>Common gotchas</li>
+<li>More</li>
+</ul>
+<hr>
+<p><a id="skill-53bf50d2"></a></p>
+<h3 id="huggingface-hugging-face-evaluation"><a href="#huggingface-hugging-face-evaluation" class="headerlink" title="huggingface&#x2F;hugging-face-evaluation"></a>huggingface&#x2F;hugging-face-evaluation</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/huggingface/skills/hugging-face-evaluation">Skills by Hugging Face Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/huggingface/skills/blob/main/README.md">https://github.com&#x2F;huggingface&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用vLLM&#x2F;lighteval和评估表进行模型评估</p>
+<p><strong>适用时机:</strong> 从模型README中提取基准分数并将其格式化为模型索引YAML文件 将人工分析基准结果直接导入模型卡片 使用本地GPU在HuggingFace模型上运行MMLU或GSM8K评估 将lighteval任务提交至HF Jobs，用于无公共API端点的模型 对您不拥有的模型提交包含结构化评估元数据的合并请求</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Hugging Face Skills</li>
+<li>How do Skills work?</li>
+<li>Installation</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Gemini CLI</li>
+<li>Cursor</li>
+<li>Skills</li>
+<li>Available skills</li>
+<li>Using skills in your coding agent</li>
+<li>Contribute or customize a skill</li>
+<li>Marketplace</li>
+<li>Additional references</li>
+</ul>
+<hr>
+<p><a id="skill-0d3d0fcf"></a></p>
+<h3 id="huggingface-hugging-face-model-trainer"><a href="#huggingface-hugging-face-model-trainer" class="headerlink" title="huggingface&#x2F;hugging-face-model-trainer"></a>huggingface&#x2F;hugging-face-model-trainer</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/huggingface/skills/hugging-face-model-trainer">Skills by Hugging Face Team</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/huggingface/skills/blob/main/README.md">https://github.com&#x2F;huggingface&#x2F;skills&#x2F;blob&#x2F;main&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 使用TRL训练模型：SFT、DPO、GRPO、GGUF转换</p>
+<p><strong>适用时机:</strong> 在没有GPU的情况下，在自定义指令数据集上微调Qwen或Llama模型 在偏好数据上运行DPO训练以对模型的输出进行对齐 将刚刚训练好的模型转换为GGUF，以便与Ollama或LM Studio使用 在为GPU任务投入资金之前验证数据集的列格式 在承诺运行a10g-large之前估算训练成本和时间</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Hugging Face Skills</li>
+<li>How do Skills work?</li>
+<li>Installation</li>
+<li>Claude Code</li>
+<li>Codex</li>
+<li>Gemini CLI</li>
+<li>Cursor</li>
+<li>Skills</li>
+<li>Available skills</li>
+<li>Using skills in your coding agent</li>
+<li>Contribute or customize a skill</li>
+<li>Marketplace</li>
+<li>Additional references</li>
+</ul>
+<hr>
+<p><a id="skill-810cfccf"></a></p>
+<h3 id="microsoft-agent-framework-azure-ai-py"><a href="#microsoft-agent-framework-azure-ai-py" class="headerlink" title="microsoft&#x2F;agent-framework-azure-ai-py"></a>microsoft&#x2F;agent-framework-azure-ai-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/agent-framework-azure-ai-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/agent-framework-azure-ai-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;agent-framework-azure-ai-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> Azure AI Foundry的代理框架</p>
+<p><strong>适用时机:</strong> 用于使用 AzureAIAgentsProvider 创建持久化代理，使用托管工具（代码解释器、文件搜索、网页搜索），集成 MCP 服务器，管理对话线程，或实现流式响应。涵盖函数工具、结构化输出和多工具代理。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Agent Framework Azure Hosted Agents</li>
+<li>Architecture</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Core Workflow</li>
+<li>Basic Agent</li>
+<li>Agent with Function Tools</li>
+<li>Agent with Hosted Tools</li>
+<li>Streaming Responses</li>
+<li>Conversation Threads</li>
+<li>Structured Outputs</li>
+<li>Provider Methods</li>
+<li>Hosted Tools Quick Reference</li>
+<li>Complete Example</li>
+<li>Conventions</li>
+</ul>
+<hr>
+<p><a id="skill-ebc61b44"></a></p>
+<h3 id="microsoft-azure-ai-anomalydetector-java"><a href="#microsoft-azure-ai-anomalydetector-java" class="headerlink" title="microsoft&#x2F;azure-ai-anomalydetector-java"></a>microsoft&#x2F;azure-ai-anomalydetector-java</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-anomalydetector-java">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-ai-anomalydetector-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-ai-anomalydetector-java&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 异常检测应用</p>
+<p><strong>适用时机:</strong> 在实施单变量&#x2F;多变量异常检测、时间序列分析或人工智能驱动的监控时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Anomaly Detector SDK for Java</li>
+<li>Installation</li>
+<li>Client Creation</li>
+<li>Sync and Async Clients</li>
+<li>With DefaultAzureCredential</li>
+<li>Key Concepts</li>
+<li>Univariate Anomaly Detection</li>
+<li>Multivariate Anomaly Detection</li>
+<li>Core Patterns</li>
+<li>Univariate Batch Detection</li>
+<li>Univariate Last Point Detection (Streaming)</li>
+<li>Change Point Detection</li>
+<li>Multivariate Model Training</li>
+<li>Multivariate Batch Inference</li>
+<li>Multivariate Last Point Detection</li>
+<li>Model Management</li>
+</ul>
+<hr>
+<p><a id="skill-a89d7126"></a></p>
+<h3 id="microsoft-azure-ai-contentsafety-java"><a href="#microsoft-azure-ai-contentsafety-java" class="headerlink" title="microsoft&#x2F;azure-ai-contentsafety-java"></a>microsoft&#x2F;azure-ai-contentsafety-java</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-contentsafety-java">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-ai-contentsafety-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-ai-contentsafety-java&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 内容审核和安全</p>
+<p><strong>适用时机:</strong> 在实施文本&#x2F;图像分析、黑名单管理或针对仇恨、暴力、性内容和自残的有害内容进行检测时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Content Safety SDK for Java</li>
+<li>Installation</li>
+<li>Client Creation</li>
+<li>With API Key</li>
+<li>With DefaultAzureCredential</li>
+<li>Key Concepts</li>
+<li>Harm Categories</li>
+<li>Severity Levels</li>
+<li>Core Patterns</li>
+<li>Analyze Text</li>
+<li>Analyze Text with Options</li>
+<li>Analyze Text with Blocklist</li>
+<li>Analyze Image</li>
+<li>Analyze Image from URL</li>
+<li>Blocklist Management</li>
+<li>Create or Update Blocklist</li>
+</ul>
+<hr>
+<p><a id="skill-a329682f"></a></p>
+<h3 id="microsoft-azure-ai-contentsafety-py"><a href="#microsoft-azure-ai-contentsafety-py" class="headerlink" title="microsoft&#x2F;azure-ai-contentsafety-py"></a>microsoft&#x2F;azure-ai-contentsafety-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-contentsafety-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-contentsafety-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-contentsafety-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 有害内容检测</p>
+<p><strong>适用时机:</strong> 在用户在论坛上发布内容前扫描用户评论 在显示AI生成回复之前检查其是否包含有害内容 在文件共享平台上过滤上传的图片 使用自定义屏蔽列表屏蔽特定域名的辱骂或品牌术语 对支持聊天消息进行预先筛查，检测是否存在自残语言以触发升级</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Content Safety SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Legacy: API Key (existing keyed deployments)</li>
+<li>Analyze Text</li>
+<li>Analyze Image</li>
+<li>Image from URL</li>
+<li>Text Blocklist Management</li>
+<li>Create Blocklist</li>
+<li>Add Block Items</li>
+<li>Analyze with Blocklist</li>
+<li>Severity Levels</li>
+<li>Harm Categories</li>
+<li>Severity Scale</li>
+<li>Client Types</li>
+</ul>
+<hr>
+<p><a id="skill-34326548"></a></p>
+<h3 id="microsoft-azure-ai-contentsafety-ts"><a href="#microsoft-azure-ai-contentsafety-ts" class="headerlink" title="microsoft&#x2F;azure-ai-contentsafety-ts"></a>microsoft&#x2F;azure-ai-contentsafety-ts</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-contentsafety-ts">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-ai-contentsafety-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-ai-contentsafety-ts&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 文本和图像的内容安全</p>
+<p><strong>适用时机:</strong> 在审核用户生成的内容、检测仇恨言论、暴力、性内容或自残内容，或管理自定义屏蔽名单时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Content Safety REST SDK for TypeScript</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>API Key</li>
+<li>DefaultAzureCredential</li>
+<li>Analyze Text</li>
+<li>Analyze Image</li>
+<li>Base64 Content</li>
+<li>Blob URL</li>
+<li>Blocklist Management</li>
+<li>Create Blocklist</li>
+<li>Add Items to Blocklist</li>
+<li>Analyze with Blocklist</li>
+<li>List Blocklists</li>
+<li>Delete Blocklist</li>
+</ul>
+<hr>
+<p><a id="skill-9ff5f29d"></a></p>
+<h3 id="microsoft-azure-ai-contentunderstanding-py"><a href="#microsoft-azure-ai-contentunderstanding-py" class="headerlink" title="microsoft&#x2F;azure-ai-contentunderstanding-py"></a>microsoft&#x2F;azure-ai-contentunderstanding-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-contentunderstanding-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-contentunderstanding-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-contentunderstanding-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 多模态内容提取</p>
+<p><strong>适用时机:</strong> 将扫描的PDF转换为RAG流水线所需的Markdown格式 逐句记录会议并添加时间戳 提取上传文件中的发票字段（如供应商名称和明细） 从产品演示视频中提取关键帧和摘要 对一批截图进行图像内容提取</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Content Understanding SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Core Workflow</li>
+<li>Prebuilt Analyzers</li>
+<li>Analyze Document</li>
+<li>Access Document Content Details</li>
+<li>Analyze Image</li>
+<li>Analyze Video</li>
+<li>Analyze Audio</li>
+<li>Custom Analyzers</li>
+<li>Analyzer Management</li>
+<li>Async Client</li>
+<li>Content Types</li>
+<li>Model Imports</li>
+</ul>
+<hr>
+<p><a id="skill-1e76abbb"></a></p>
+<h3 id="microsoft-azure-ai-document-intelligence-dotnet"><a href="#microsoft-azure-ai-document-intelligence-dotnet" class="headerlink" title="microsoft&#x2F;azure-ai-document-intelligence-dotnet"></a>microsoft&#x2F;azure-ai-document-intelligence-dotnet</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-document-intelligence-dotnet">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-ai-document-intelligence-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-ai-document-intelligence-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 文档文本、表格和数据的提取</p>
+<p><strong>适用时机:</strong> 从上传的发票PDF文件中提取供应商名称、明细项和总计 从扫描的支出收据中读取商家名称和交易日期 在税务文件处理过程中从W-2表格中提取字段 训练自定义模型以解析专有合同模板 在转发前将传入的文件批次分类为预定义类型</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure.AI.DocumentIntelligence (.NET)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Microsoft Entra Token Credential</li>
+<li>API Key</li>
+<li>Client Types</li>
+<li>Prebuilt Models</li>
+<li>Core Workflows</li>
+<li>1. Analyze Invoice</li>
+<li>2. Extract Layout (Text, Tables, Structure)</li>
+<li>3. Analyze Receipt</li>
+<li>4. Build Custom Model</li>
+<li>5. Build Document Classifier</li>
+<li>6. Classify Document</li>
+<li>7. Manage Models</li>
+</ul>
+<hr>
+<p><a id="skill-98edad1e"></a></p>
+<h3 id="microsoft-azure-ai-document-intelligence-ts"><a href="#microsoft-azure-ai-document-intelligence-ts" class="headerlink" title="microsoft&#x2F;azure-ai-document-intelligence-ts"></a>microsoft&#x2F;azure-ai-document-intelligence-ts</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-document-intelligence-ts">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-ai-document-intelligence-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-ai-document-intelligence-ts&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 文档文本和表格提取</p>
+<p><strong>适用时机:</strong> 在处理发票、收据、身份证件、表格或构建自定义文档模型时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Document Intelligence REST SDK for TypeScript</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>DefaultAzureCredential</li>
+<li>API Key</li>
+<li>Analyze Document (URL)</li>
+<li>Analyze Document (Local File)</li>
+<li>Prebuilt Models</li>
+<li>Extract Invoice Fields</li>
+<li>Extract Receipt Fields</li>
+<li>List Document Models</li>
+<li>Build Custom Model</li>
+<li>Build Document Classifier</li>
+<li>Classify Document</li>
+<li>Get Service Info</li>
+</ul>
+<hr>
+<p><a id="skill-b03325d5"></a></p>
+<h3 id="microsoft-azure-ai-formrecognizer-java"><a href="#microsoft-azure-ai-formrecognizer-java" class="headerlink" title="microsoft&#x2F;azure-ai-formrecognizer-java"></a>microsoft&#x2F;azure-ai-formrecognizer-java</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-formrecognizer-java">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-ai-formrecognizer-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-ai-formrecognizer-java&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 文档分析和表格提取</p>
+<p><strong>适用时机:</strong> 解析发票PDF文件，将供应商名称、明细项和总计提取到数据库中。在薪资处理过程中提取扫描W2表格中的字段。在无需手动复制粘贴的情况下读取多页合同PDF文件的表格数据。训练自定义模型以识别公司特定的采购订单格式。在转发前对传入文档批次进行分类，归类为发票、收据或合同。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Document Intelligence SDK for Java</li>
+<li>Before Implementation</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>DefaultAzureCredential (Recommended)</li>
+<li>API Key</li>
+<li>Administration Client</li>
+<li>Async Client</li>
+<li>Prebuilt Models</li>
+<li>Core Patterns</li>
+<li>Analyze from File</li>
+<li>Analyze from URL</li>
+<li>Extract Layout</li>
+<li>Extract Document Fields</li>
+<li>Analyze with Options</li>
+</ul>
+<hr>
+<p><a id="skill-a4dfe4f5"></a></p>
+<h3 id="microsoft-azure-ai-ml-py"><a href="#microsoft-azure-ai-ml-py" class="headerlink" title="microsoft&#x2F;azure-ai-ml-py"></a>microsoft&#x2F;azure-ai-ml-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-ml-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-ml-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-ml-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> Azure ML 工作区和工作管理</p>
+<p><strong>适用时机:</strong> 在不离开 Python 的情况下向远程 GPU 集群提交训练任务 将训练好的模型注册到 Azure ML 模型注册表以进行部署 构建一个串联数据预处理和模型训练的多步骤流水线 根据任务队列大小对计算集群进行升级或降级 将存储在 Azure Blob 存储中的数据集作为命名数据资产进行版本化</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Machine Learning SDK v2 for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>From Config File</li>
+<li>Workspace Management</li>
+<li>Create Workspace</li>
+<li>List Workspaces</li>
+<li>Data Assets</li>
+<li>Register Data</li>
+<li>Register Folder</li>
+<li>Model Registry</li>
+<li>Register Model</li>
+<li>List Models</li>
+<li>Compute</li>
+<li>Create Compute Cluster</li>
+</ul>
+<hr>
+<p><a id="skill-9019feb6"></a></p>
+<h3 id="microsoft-azure-ai-openai-dotnet"><a href="#microsoft-azure-ai-openai-dotnet" class="headerlink" title="microsoft&#x2F;azure-ai-openai-dotnet"></a>microsoft&#x2F;azure-ai-openai-dotnet</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-openai-dotnet">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-ai-openai-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-ai-openai-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> GPT-4、嵌入、DALL-E和Whisper客户端</p>
+<p><strong>适用时机:</strong> 从 C# 后端向 GPT-4o 部署发送聊天完成结果 在 .NET 中为向量搜索索引生成文本嵌入 通过 Azure 管理端点使用 Whisper 转录音频文件 调用 ASP.NET 应用程序中的 DALL-E 3 生成图像 配置函数调用，以便 .NET 服务能够从模型响应中调用本地方法</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure.AI.OpenAI (.NET)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Client Hierarchy</li>
+<li>Authentication</li>
+<li>API Key Authentication</li>
+<li>Microsoft Entra Token Credential</li>
+<li>Using OpenAI SDK Directly with Azure</li>
+<li>Chat Completions</li>
+<li>Basic Chat</li>
+<li>Async Chat</li>
+<li>Streaming Chat</li>
+<li>Chat with Options</li>
+<li>Multi-turn Conversation</li>
+<li>Structured Outputs (JSON Schema)</li>
+<li>Reasoning Models (o1, o4-mini)</li>
+</ul>
+<hr>
+<p><a id="skill-a44227c2"></a></p>
+<h3 id="microsoft-azure-ai-projects-dotnet"><a href="#microsoft-azure-ai-projects-dotnet" class="headerlink" title="microsoft&#x2F;azure-ai-projects-dotnet"></a>microsoft&#x2F;azure-ai-projects-dotnet</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-projects-dotnet">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-ai-projects-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-ai-projects-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> AI铸造项目管理SDK</p>
+<p><strong>适用时机:</strong> 使用 Bing 搜索或 Azure AI Search 等自定义工具创建和运行持久化代理 通过命名连接将训练数据集上传到 Azure Blob 存储 在 AI 熔炉项目中按发布者列出并筛选模型部署 使用内置评估器对数据集进行相关性或基础性评估 在项目内将 Azure AI Search 索引管理为版本化的元数据</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure.AI.Projects (.NET)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Client Hierarchy</li>
+<li>Core Workflows</li>
+<li>1. Get Persistent Agents Client</li>
+<li>2. Versioned Agents with Tools (Preview)</li>
+<li>3. Connections</li>
+<li>4. Deployments</li>
+<li>5. Datasets</li>
+<li>6. Indexes</li>
+<li>7. Evaluations</li>
+<li>8. Get Azure OpenAI Chat Client</li>
+<li>Available Agent Tools</li>
+<li>Key Types Reference</li>
+</ul>
+<hr>
+<p><a id="skill-e76f0702"></a></p>
+<h3 id="microsoft-azure-ai-projects-java"><a href="#microsoft-azure-ai-projects-java" class="headerlink" title="microsoft&#x2F;azure-ai-projects-java"></a>microsoft&#x2F;azure-ai-projects-java</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-projects-java">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-ai-projects-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-ai-projects-java&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> AI铸造厂项目管理</p>
+<p><strong>适用时机:</strong> 在 Foundry 项目中列出所有可用的 Azure AI 连接 创建基于 Java 代码的 Azure AI Search 支撑的搜索索引 在运行评估之前将文档上传到数据集 在 Foundry 项目中查询可用的模型部署 程序化运行 AI 模型评估并获取结果</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Projects SDK for Java</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Client Hierarchy</li>
+<li>Core Operations</li>
+<li>List Connections</li>
+<li>List Indexes</li>
+<li>Create or Update Index</li>
+<li>Access OpenAI Evaluations</li>
+<li>Best Practices</li>
+<li>Error Handling</li>
+<li>Reference Links</li>
+</ul>
+<hr>
+<p><a id="skill-cf889fa7"></a></p>
+<h3 id="microsoft-azure-ai-projects-py"><a href="#microsoft-azure-ai-projects-py" class="headerlink" title="microsoft&#x2F;azure-ai-projects-py"></a>microsoft&#x2F;azure-ai-projects-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-projects-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-projects-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-projects-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> AI铸造厂项目客户和代理</p>
+<p><strong>适用时机:</strong> 适用于与Foundry项目客户合作时使用，使用PromptAgentDefinition创建版本化的代理，运行评估，管理连接&#x2F;部署&#x2F;数据集&#x2F;索引，或使用与OpenAI兼容的客户端。这是高级的Foundry SDK——对于低级代理操作，请使用azure-ai-agents-python技能。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Projects Python SDK (Foundry SDK)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Client Operations Overview</li>
+<li>Two Client Approaches</li>
+<li>1. AIProjectClient (Native Foundry)</li>
+<li>2. OpenAI-Compatible Client</li>
+<li>Agent Operations</li>
+<li>Create Agent (Basic)</li>
+<li>Create Agent with Tools</li>
+<li>Versioned Agents with PromptAgentDefinition</li>
+<li>Tools Overview</li>
+<li>Thread and Message Flow</li>
+<li>Connections</li>
+<li>Deployments</li>
+</ul>
+<hr>
+<p><a id="skill-084b0083"></a></p>
+<h3 id="microsoft-azure-ai-projects-ts"><a href="#microsoft-azure-ai-projects-ts" class="headerlink" title="microsoft&#x2F;azure-ai-projects-ts"></a>microsoft&#x2F;azure-ai-projects-ts</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-projects-ts">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-ai-projects-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-ai-projects-ts&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> AI铸造厂项目客户和代理</p>
+<p><strong>适用时机:</strong> 在与Foundry项目客户、代理、连接、部署、数据集、索引、评估或获取OpenAI客户端时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Projects SDK for TypeScript</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Operation Groups</li>
+<li>Getting OpenAI Client</li>
+<li>Agents</li>
+<li>Create Agent</li>
+<li>Agent with Tools</li>
+<li>Run Agent</li>
+<li>Connections</li>
+<li>Deployments</li>
+<li>Datasets</li>
+<li>Indexes</li>
+<li>Key Types</li>
+<li>Best Practices</li>
+</ul>
+<hr>
+<p><a id="skill-e971d8f8"></a></p>
+<h3 id="microsoft-azure-ai-textanalytics-py"><a href="#microsoft-azure-ai-textanalytics-py" class="headerlink" title="microsoft&#x2F;azure-ai-textanalytics-py"></a>microsoft&#x2F;azure-ai-textanalytics-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-textanalytics-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-textanalytics-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-textanalytics-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 自然语言处理：情感、实体、关键短语</p>
+<p><strong>适用时机:</strong> 扫描客户支持工单以检测情感倾向并标记负面工单 在存储前从上传的文件中删除SSN、电子邮件和电话号码 从临床记录中提取医疗状况和药物，并使用UMLS链接 检测收到的用户消息的语言以将其转发至合适的支持团队 从产品评论中提取关键短语以突出显示重复主题</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Text Analytics SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Legacy: API Key (existing keyed deployments)</li>
+<li>Sentiment Analysis</li>
+<li>Entity Recognition</li>
+<li>PII Detection</li>
+<li>Key Phrase Extraction</li>
+<li>Language Detection</li>
+<li>Healthcare Text Analytics</li>
+<li>Multiple Analysis (Batch)</li>
+<li>Async Client</li>
+<li>Client Types</li>
+<li>Available Operations</li>
+<li>Best Practices</li>
+</ul>
+<hr>
+<p><a id="skill-2bbd4d85"></a></p>
+<h3 id="microsoft-azure-ai-transcription-py"><a href="#microsoft-azure-ai-transcription-py" class="headerlink" title="microsoft&#x2F;azure-ai-transcription-py"></a>microsoft&#x2F;azure-ai-transcription-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-transcription-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-transcription-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-transcription-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 语音转文字转写</p>
+<p><strong>适用时机:</strong> 转录已录制的会议音频并添加演讲者标签 从Azure Blob存储中存储的视频文件生成字幕 将客户通话录音转换为可搜索文本 为实时音频流运行实时字幕 批量处理采访录音文件夹，夜间处理</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Transcription SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Transcription (Batch)</li>
+<li>Transcription (Real-time)</li>
+<li>Best Practices</li>
+<li>Reference Files</li>
+</ul>
+<hr>
+<p><a id="skill-32710203"></a></p>
+<h3 id="microsoft-azure-ai-translation-document-py"><a href="#microsoft-azure-ai-translation-document-py" class="headerlink" title="microsoft&#x2F;azure-ai-translation-document-py"></a>microsoft&#x2F;azure-ai-translation-document-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-translation-document-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-translation-document-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-translation-document-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 批量文档翻译</p>
+<p><strong>适用时机:</strong> 一次性批量将产品手册从英语翻译成五种语言 将法律PDF文件转换为西班牙语，同时保留其表格和标题结构 运行存储在Azure Blob存储中的客户支持工单的 nightly 翻译 在将技术文档翻译成法语时应用公司特定的术语表 将PowerPoint演示文稿为国际销售团队翻译，无需手动重排版</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Document Translation SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Legacy: API Key (existing keyed deployments)</li>
+<li>Basic Document Translation</li>
+<li>Multiple Target Languages</li>
+<li>Translate Single Document</li>
+<li>Check Translation Status</li>
+<li>List Document Statuses</li>
+<li>Cancel Translation</li>
+<li>Using Glossary</li>
+<li>Supported Document Formats</li>
+<li>Supported Languages</li>
+<li>Async Client</li>
+<li>Supported Formats</li>
+</ul>
+<hr>
+<p><a id="skill-596fc6cd"></a></p>
+<h3 id="microsoft-azure-ai-translation-text-py"><a href="#microsoft-azure-ai-translation-text-py" class="headerlink" title="microsoft&#x2F;azure-ai-translation-text-py"></a>microsoft&#x2F;azure-ai-translation-text-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-translation-text-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-translation-text-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-translation-text-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 实时文本翻译</p>
+<p><strong>适用时机:</strong> 在存储用户提交的表单内容之前将其翻译成目标语言 检测收到的支持工单语言以正确路由它们 将从拉丁字母输入转换为日文汉字的文本转换为日文汉字 查找语言学习应用的词典条目和词性标签 在保留标记结构的同时翻译HTML页面内容</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Text Translation SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Legacy: API Key (existing keyed deployments)</li>
+<li>Basic Translation</li>
+<li>Translate to Multiple Languages</li>
+<li>Specify Source Language</li>
+<li>Language Detection</li>
+<li>Transliteration</li>
+<li>Dictionary Lookup</li>
+<li>Dictionary Examples</li>
+<li>Get Supported Languages</li>
+<li>Break Sentence</li>
+<li>Translation Options</li>
+<li>Async Client</li>
+</ul>
+<hr>
+<p><a id="skill-532cd9b6"></a></p>
+<h3 id="microsoft-azure-ai-translation-ts"><a href="#microsoft-azure-ai-translation-ts" class="headerlink" title="microsoft&#x2F;azure-ai-translation-ts"></a>microsoft&#x2F;azure-ai-translation-ts</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-translation-ts">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-ai-translation-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-ai-translation-ts&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 文本和文档翻译</p>
+<p><strong>适用时机:</strong> 在实施文本翻译、转写、语言检测或批量文档翻译时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Translation SDKs for TypeScript</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Text Translation Client</li>
+<li>Authentication</li>
+<li>Translate Text</li>
+<li>Translate with Options</li>
+<li>Get Supported Languages</li>
+<li>Transliterate</li>
+<li>Detect Language</li>
+<li>Document Translation Client</li>
+<li>Single Document Translation</li>
+<li>Batch Document Translation</li>
+<li>Get Translation Status</li>
+<li>Get Supported Formats</li>
+<li>Key Types</li>
+</ul>
+<hr>
+<p><a id="skill-db8e677f"></a></p>
+<h3 id="microsoft-azure-ai-vision-imageanalysis-java"><a href="#microsoft-azure-ai-vision-imageanalysis-java" class="headerlink" title="microsoft&#x2F;azure-ai-vision-imageanalysis-java"></a>microsoft&#x2F;azure-ai-vision-imageanalysis-java</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-vision-imageanalysis-java">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-ai-vision-imageanalysis-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-ai-vision-imageanalysis-java&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 图像字幕、OCR和物体检测</p>
+<p><strong>适用时机:</strong> 在实施图像字幕、OCR文本提取、物体检测、标签或智能裁剪时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Vision Image Analysis SDK for Java</li>
+<li>Installation</li>
+<li>Client Creation</li>
+<li>With API Key</li>
+<li>Async Client</li>
+<li>With DefaultAzureCredential</li>
+<li>Visual Features</li>
+<li>Core Patterns</li>
+<li>Generate Caption</li>
+<li>Generate Caption from URL</li>
+<li>Extract Text (OCR)</li>
+<li>Detect Objects</li>
+<li>Get Tags</li>
+<li>Detect People</li>
+<li>Smart Cropping</li>
+<li>Dense Captions</li>
+</ul>
+<hr>
+<p><a id="skill-b3636f48"></a></p>
+<h3 id="microsoft-azure-ai-vision-imageanalysis-py"><a href="#microsoft-azure-ai-vision-imageanalysis-py" class="headerlink" title="microsoft&#x2F;azure-ai-vision-imageanalysis-py"></a>microsoft&#x2F;azure-ai-vision-imageanalysis-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-vision-imageanalysis-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-vision-imageanalysis-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-vision-imageanalysis-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 图像标题、标签、OCR、对象</p>
+<p><strong>适用时机:</strong> 自动生成上传产品图像的替代文字 从扫描收据或表格中提取印刷文本 检测安防摄像头画面中的人进行下游处理 获取特定宽高比的头像的建议裁剪坐标 根据检测到的物体和场景内容对野生动物照片进行标记</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Vision Image Analysis SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Legacy: API Key (existing keyed deployments)</li>
+<li>Analyze Image from URL</li>
+<li>Analyze Image from File</li>
+<li>Image Caption</li>
+<li>Dense Captions (Multiple Regions)</li>
+<li>Tags</li>
+<li>Object Detection</li>
+<li>OCR (Text Extraction)</li>
+<li>People Detection</li>
+<li>Smart Cropping</li>
+<li>Async Client</li>
+<li>Visual Features</li>
+</ul>
+<hr>
+<p><a id="skill-fbe5f536"></a></p>
+<h3 id="microsoft-azure-ai-voicelive-dotnet"><a href="#microsoft-azure-ai-voicelive-dotnet" class="headerlink" title="microsoft&#x2F;azure-ai-voicelive-dotnet"></a>microsoft&#x2F;azure-ai-voicelive-dotnet</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-voicelive-dotnet">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-ai-voicelive-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-ai-voicelive-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 实时双向语音AI</p>
+<p><strong>适用时机:</strong> 构建实时响应语音问题的语音助手 将双向音频添加到 .NET 客户支持聊天机器人 中 在实时会话中通过语音指令触发后端函数 在同一对话中切换文本和音频模式 将 Azure 神经网络语音连接到 .NET 应用中的 GPT-4o 实时模型</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure.AI.VoiceLive (.NET)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Microsoft Entra Token Credential</li>
+<li>API Key</li>
+<li>Client Hierarchy</li>
+<li>Core Workflow</li>
+<li>1. Start Session and Configure</li>
+<li>2. Process Events</li>
+<li>3. Send User Message</li>
+<li>4. Function Calling</li>
+<li>Voice Options</li>
+<li>Supported Models</li>
+<li>Key Types Reference</li>
+<li>Best Practices</li>
+</ul>
+<hr>
+<p><a id="skill-c6625fd4"></a></p>
+<h3 id="microsoft-azure-ai-voicelive-java"><a href="#microsoft-azure-ai-voicelive-java" class="headerlink" title="microsoft&#x2F;azure-ai-voicelive-java"></a>microsoft&#x2F;azure-ai-voicelive-java</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-voicelive-java">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-java/skills/azure-ai-voicelive-java/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-java&#x2F;skills&#x2F;azure-ai-voicelive-java&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 实时双向语音AI</p>
+<p><strong>适用时机:</strong> 将PCM16音频流式传输给AI助手，并实时播放语音回复 配置服务器端语音活动检测，在静音时结束轮流 可以在同一会话中切换Azure Neural语音和OpenAI语音 当AI检测到用户意图（如获取天气数据）时触发Java函数调用 在将音频发送给模型之前，在麦克风输入中添加降噪和消除回声功能</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI VoiceLive SDK for Java</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>API Key</li>
+<li>DefaultAzureCredential (Recommended)</li>
+<li>Key Concepts</li>
+<li>Audio Requirements</li>
+<li>Core Workflow</li>
+<li>1. Start Session</li>
+<li>2. Configure Session Options</li>
+<li>3. Send Audio Input</li>
+<li>4. Handle Events</li>
+<li>Voice Configuration</li>
+<li>OpenAI Voices</li>
+<li>Azure Voices</li>
+</ul>
+<hr>
+<p><a id="skill-5d497a1f"></a></p>
+<h3 id="microsoft-azure-ai-voicelive-py"><a href="#microsoft-azure-ai-voicelive-py" class="headerlink" title="microsoft&#x2F;azure-ai-voicelive-py"></a>microsoft&#x2F;azure-ai-voicelive-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-voicelive-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-ai-voicelive-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-ai-voicelive-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 实时双向语音AI</p>
+<p><strong>适用时机:</strong> 在创建需要与 Azure AI 进行实时双向音频通信的 Python 应用程序时使用此技能，包括语音助手、支持语音的聊天机器人、实时语音对语音翻译、语音驱动的头像，或任何基于 WebSocket 的音频流媒体（使用 AI 模型）。支持 Server VAD（语音活动检测）、回合制对话、函数调用、MCP 工具、头像集成和转录。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Voice Live SDK</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Legacy: API Key (existing keyed deployments)</li>
+<li>Quick Start</li>
+<li>Core Architecture</li>
+<li>Connection Resources</li>
+<li>Session Configuration</li>
+<li>Audio Streaming</li>
+<li>Send Audio (Base64 PCM16)</li>
+<li>Receive Audio</li>
+<li>Event Handling</li>
+<li>Common Patterns</li>
+<li>Manual Turn Mode (No VAD)</li>
+<li>Interrupt Handling</li>
+</ul>
+<hr>
+<p><a id="skill-2abfb42d"></a></p>
+<h3 id="microsoft-azure-ai-voicelive-ts"><a href="#microsoft-azure-ai-voicelive-ts" class="headerlink" title="microsoft&#x2F;azure-ai-voicelive-ts"></a>microsoft&#x2F;azure-ai-voicelive-ts</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-ai-voicelive-ts">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-ai-voicelive-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-ai-voicelive-ts&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 实时双向语音AI</p>
+<p><strong>适用时机:</strong> 构建一个实时响应语音问题的语音助手 在基于浏览器的客户支持聊天中添加实时语音交互 将电话音频通过GPT-4o模型路由以实现自动呼叫处理 将麦克风输入实时流传输至Azure AI并播放合成语音 连接函数调用，以便语音代理在对话中途获取实时数据</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>@azure&#x2F;ai-voicelive (JavaScript&#x2F;TypeScript)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Microsoft Entra Token Credential (Recommended)</li>
+<li>API Key</li>
+<li>Client Hierarchy</li>
+<li>Quick Start</li>
+<li>Session Configuration</li>
+<li>Event Handling (Azure SDK Pattern)</li>
+<li>Function Calling</li>
+<li>Voice Options</li>
+<li>Supported Models</li>
+<li>Turn Detection Options</li>
+<li>Audio Formats</li>
+<li>Key Types Reference</li>
+</ul>
+<hr>
+<p><a id="skill-49dbdc72"></a></p>
+<h3 id="microsoft-azure-containerregistry-py"><a href="#microsoft-azure-containerregistry-py" class="headerlink" title="microsoft&#x2F;azure-containerregistry-py"></a>microsoft&#x2F;azure-containerregistry-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-containerregistry-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-containerregistry-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-containerregistry-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 容器图像和注册表管理</p>
+<p><strong>适用时机:</strong> 在 ACR 实例中列出所有仓库及其声明文件数量 删除超过 30 天的未标记声明文件以降低存储成本 通过在特定标签上设置 can_delete&#x3D;False 来锁定生产镜像 从注册表下载块层以进行本地检查或迁移 按最后更新时间排序查询标签历史记录以审计最近的推送</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Container Registry SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Entra ID (Recommended)</li>
+<li>Anonymous Access (Public Registry)</li>
+<li>List Repositories</li>
+<li>Repository Operations</li>
+<li>Get Repository Properties</li>
+<li>Update Repository Properties</li>
+<li>Delete Repository</li>
+<li>List Tags</li>
+<li>Filter by Order</li>
+<li>Manifest Operations</li>
+<li>List Manifests</li>
+<li>Get Manifest Properties</li>
+</ul>
+<hr>
+<p><a id="skill-4651692a"></a></p>
+<h3 id="microsoft-azure-mgmt-arizeaiobservabilityeval-dotnet"><a href="#microsoft-azure-mgmt-arizeaiobservabilityeval-dotnet" class="headerlink" title="microsoft&#x2F;azure-mgmt-arizeaiobservabilityeval-dotnet"></a>microsoft&#x2F;azure-mgmt-arizeaiobservabilityeval-dotnet</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-mgmt-arizeaiobservabilityeval-dotnet">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-arizeaiobservabilityeval-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-mgmt-arizeaiobservabilityeval-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> Arize AI 可观察性管理</p>
+<p><strong>适用时机:</strong> 用于通过 Azure Marketplace 在 Azure 上管理 Arize AI 组织、创建&#x2F;更新&#x2F;删除 Arize 资源，或将 Arize ML 可观察性集成到 .NET 应用程序中。触发器：“Arize AI”、“ML 可观察性”、“ArizeAIObservabilityEval”、“Arize 组织”。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure.ResourceManager.ArizeAIObservabilityEval</li>
+<li>Installation</li>
+<li>Package Info</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Core Workflow</li>
+<li>Create an Arize AI Organization</li>
+<li>Get an Organization</li>
+<li>List Organizations</li>
+<li>Update an Organization</li>
+<li>Delete an Organization</li>
+<li>Key Types</li>
+<li>Enums</li>
+<li>Best Practices</li>
+<li>Error Handling</li>
+<li>Direct Resource Access</li>
+</ul>
+<hr>
+<p><a id="skill-0681eaa3"></a></p>
+<h3 id="microsoft-azure-mgmt-mongodbatlas-dotnet"><a href="#microsoft-azure-mgmt-mongodbatlas-dotnet" class="headerlink" title="microsoft&#x2F;azure-mgmt-mongodbatlas-dotnet"></a>microsoft&#x2F;azure-mgmt-mongodbatlas-dotnet</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-mgmt-mongodbatlas-dotnet">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-mongodbatlas-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-mgmt-mongodbatlas-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> MongoDB Atlas作为ARM资源</p>
+<p><strong>适用时机:</strong> 使用此 SDK 时，通过 Azure 市场平台集成创建、更新、列出或删除 MongoDB Atlas 组织。此 SDK 管理 Azure 端的组织资源，而不是直接管理 Atlas 集群&#x2F;数据库。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure.ResourceManager.MongoDBAtlas SDK</li>
+<li>Package Information</li>
+<li>Installation</li>
+<li>Important Scope Limitation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Core Types</li>
+<li>Workflows</li>
+<li>Get Organization Collection</li>
+<li>Create Organization</li>
+<li>Get Existing Organization</li>
+<li>List Organizations</li>
+<li>Update Tags</li>
+<li>Update Organization Properties</li>
+<li>Delete Organization</li>
+<li>Model Properties Reference</li>
+</ul>
+<hr>
+<p><a id="skill-7f8bee19"></a></p>
+<h3 id="microsoft-azure-resource-manager-redis-dotnet"><a href="#microsoft-azure-resource-manager-redis-dotnet" class="headerlink" title="microsoft&#x2F;azure-resource-manager-redis-dotnet"></a>microsoft&#x2F;azure-resource-manager-redis-dotnet</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-resource-manager-redis-dotnet">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-redis-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-resource-manager-redis-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 用于Redis提供服务的Azure缓存</p>
+<p><strong>适用时机:</strong> 使用特定SKU和TLS配置配置新的Redis缓存 按照计划轮换主或次级访问密钥 向缓存添加IP范围防火墙规则以限制缓存访问 配置高级级缓存的维护窗口 通过链接两个高级Redis实例设置地理复制</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure.ResourceManager.Redis (.NET)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Resource Hierarchy</li>
+<li>Core Workflows</li>
+<li>1. Create Redis Cache</li>
+<li>2. Get Redis Cache</li>
+<li>3. Update Redis Cache</li>
+<li>4. Delete Redis Cache</li>
+<li>5. Get Access Keys</li>
+<li>6. Regenerate Access Keys</li>
+<li>7. Manage Firewall Rules</li>
+<li>8. Configure Patch Schedule (Premium SKU)</li>
+<li>9. Import&#x2F;Export Data (Premium SKU)</li>
+<li>10. Force Reboot</li>
+</ul>
+<hr>
+<p><a id="skill-8fe77ced"></a></p>
+<h3 id="microsoft-azure-search-documents-dotnet"><a href="#microsoft-azure-search-documents-dotnet" class="headerlink" title="microsoft&#x2F;azure-search-documents-dotnet"></a>microsoft&#x2F;azure-search-documents-dotnet</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-search-documents-dotnet">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-dotnet/skills/azure-search-documents-dotnet/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-dotnet&#x2F;skills&#x2F;azure-search-documents-dotnet&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 全文、向量和混合搜索</p>
+<p><strong>适用时机:</strong> 在单个请求中组合关键词、向量和语义排序的混合式搜索查询 建立基于 Azure Search 索引的自动完成和建议用户界面 在 .NET 应用程序中上传和更新文档批次 使用 FieldBuilder 从 C# 模型类创建和管理搜索索引 从结构化数据中提取自然语言查询中的提取式答案和标题</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure.Search.Documents (.NET)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Client Selection</li>
+<li>Index Creation</li>
+<li>Using FieldBuilder (Recommended)</li>
+<li>Manual Field Definition</li>
+<li>Document Operations</li>
+<li>Search Patterns</li>
+<li>Basic Search</li>
+<li>Faceted Search</li>
+<li>Autocomplete and Suggestions</li>
+<li>Vector Search</li>
+<li>Semantic Search</li>
+<li>Hybrid Search (Vector + Keyword + Semantic)</li>
+</ul>
+<hr>
+<p><a id="skill-38835548"></a></p>
+<h3 id="microsoft-azure-search-documents-py"><a href="#microsoft-azure-search-documents-py" class="headerlink" title="microsoft&#x2F;azure-search-documents-py"></a>microsoft&#x2F;azure-search-documents-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-search-documents-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-search-documents-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-search-documents-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 全文、向量和混合搜索</p>
+<p><strong>适用时机:</strong> 使用组合关键词和向量相似度评分查询搜索索引 在产品目录上构建自动完成和预填建议 使用实体识别技能集对 Azure Blob 存储文档进行索引 对自然语言问题使用知识库进行语义排序 根据类别、评分或日期范围对搜索结果进行过滤和分切</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Search SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Legacy: API Key (existing keyed deployments)</li>
+<li>Client Types</li>
+<li>Create Index with Vector Field</li>
+<li>Upload Documents</li>
+<li>Keyword Search</li>
+<li>Vector Search</li>
+<li>Hybrid Search (Vector + Keyword)</li>
+<li>Semantic Ranking</li>
+<li>Filters</li>
+<li>Facets</li>
+<li>Autocomplete &amp; Suggest</li>
+<li>Indexer with Skillset</li>
+</ul>
+<hr>
+<p><a id="skill-8689c986"></a></p>
+<h3 id="microsoft-azure-search-documents-ts"><a href="#microsoft-azure-search-documents-ts" class="headerlink" title="microsoft&#x2F;azure-search-documents-ts"></a>microsoft&#x2F;azure-search-documents-ts</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-search-documents-ts">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-search-documents-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-search-documents-ts&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 带语义排序的向量&#x2F;混合搜索</p>
+<p><strong>适用时机:</strong> 在创建&#x2F;管理索引、实现向量&#x2F;混合搜索、语义排序或使用知识库构建代理式检索时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure AI Search SDK for TypeScript</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Core Workflow</li>
+<li>Create Index with Vector Field</li>
+<li>Index Documents</li>
+<li>Full-Text Search</li>
+<li>Vector Search</li>
+<li>Hybrid Search (Text + Vector)</li>
+<li>Semantic Search</li>
+<li>Filtering and Facets</li>
+<li>Autocomplete and Suggestions</li>
+<li>Batch Operations</li>
+<li>Key Types</li>
+<li>Best Practices</li>
+</ul>
+<hr>
+<p><a id="skill-7999d123"></a></p>
+<h3 id="microsoft-azure-storage-blob-ts"><a href="#microsoft-azure-storage-blob-ts" class="headerlink" title="microsoft&#x2F;azure-storage-blob-ts"></a>microsoft&#x2F;azure-storage-blob-ts</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-storage-blob-ts">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-storage-blob-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-storage-blob-ts&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> Blob上传、下载和管理</p>
+<p><strong>适用时机:</strong> 从 Node.js 后端向 Azure Blob 存储上传由用户生成的文件 生成用于安全浏览器端文件下载的短效 SAS URL 为跨服务结构化日志累积编写追加 Blob 为文件浏览器 UI 在容器前缀下列出并分页 Blob 在数据迁移或档案化工作流程中在容器之间复制 Blob</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>@azure&#x2F;storage-blob (TypeScript&#x2F;JavaScript)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Microsoft Entra Token Credential (Recommended)</li>
+<li>Connection String</li>
+<li>StorageSharedKeyCredential (Node.js only)</li>
+<li>SAS Token</li>
+<li>Client Hierarchy</li>
+<li>Container Operations</li>
+<li>Create Container</li>
+<li>List Containers</li>
+<li>Delete Container</li>
+<li>Blob Operations</li>
+<li>Upload Blob (Simple)</li>
+<li>Upload from File (Node.js only)</li>
+</ul>
+<hr>
+<p><a id="skill-f3954357"></a></p>
+<h3 id="microsoft-azure-storage-file-datalake-py"><a href="#microsoft-azure-storage-file-datalake-py" class="headerlink" title="microsoft&#x2F;azure-storage-file-datalake-py"></a>microsoft&#x2F;azure-storage-file-datalake-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-storage-file-datalake-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-storage-file-datalake-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-storage-file-datalake-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 层次化数据湖存储</p>
+<p><strong>适用时机:</strong> 将 Spark 或 Databricks 输出文件上传到有序的目录层次结构 设置共享分析文件夹的用户级 ACL 权限 在特定分区路径下递归列出所有文件 将日志块附加到文件中，但不覆盖现有数据 管道完成后将处理后的文件移动到存档目录</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Data Lake Storage Gen2 SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Client Hierarchy</li>
+<li>File System Operations</li>
+<li>Directory Operations</li>
+<li>File Operations</li>
+<li>Upload File</li>
+<li>Download File</li>
+<li>Delete File</li>
+<li>List Contents</li>
+<li>File&#x2F;Directory Properties</li>
+<li>Access Control (ACL)</li>
+<li>Async Client</li>
+<li>Best Practices</li>
+</ul>
+<hr>
+<p><a id="skill-c3ecd187"></a></p>
+<h3 id="microsoft-azure-storage-file-share-py"><a href="#microsoft-azure-storage-file-share-py" class="headerlink" title="microsoft&#x2F;azure-storage-file-share-py"></a>microsoft&#x2F;azure-storage-file-share-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-storage-file-share-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-storage-file-share-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-storage-file-share-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> SMB文件共享管理</p>
+<p><strong>适用时机:</strong> 使用SMB在多个Azure虚拟机上部署共享文件系统 将大文件分块上传和下载以避免内存压力 在执行破坏性批处理操作前创建共享快照 通过程序方式列出目录内容以构建文件浏览器UI 在同一个Azure存储账户内的路径之间复制文件</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Storage File Share SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Share Operations</li>
+<li>Create Share</li>
+<li>List Shares</li>
+<li>Get Share Client</li>
+<li>Delete Share</li>
+<li>Directory Operations</li>
+<li>Create Directory</li>
+<li>List Directories and Files</li>
+<li>Delete Directory</li>
+<li>File Operations</li>
+<li>Upload File</li>
+<li>Download File</li>
+</ul>
+<hr>
+<p><a id="skill-26bb0f3b"></a></p>
+<h3 id="microsoft-azure-storage-file-share-ts"><a href="#microsoft-azure-storage-file-share-ts" class="headerlink" title="microsoft&#x2F;azure-storage-file-share-ts"></a>microsoft&#x2F;azure-storage-file-share-ts</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-storage-file-share-ts">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-storage-file-share-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-storage-file-share-ts&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> SMB 文件共享操作</p>
+<p><strong>适用时机:</strong> 将 Node.js 服务中的日志文件上传到 Azure 文件共享 在挂载的 SMB 分享中列出和浏览目录内容 生成限时 SAS URL 以安全访问文件 在运行批处理文件转换之前获取共享快照 在同一个存储账户内的目录之间复制文件</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>@azure&#x2F;storage-file-share (TypeScript&#x2F;JavaScript)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Connection String (Simplest)</li>
+<li>StorageSharedKeyCredential (Node.js only)</li>
+<li>Microsoft Entra Token Credential</li>
+<li>SAS Token</li>
+<li>Client Hierarchy</li>
+<li>Share Operations</li>
+<li>Create Share</li>
+<li>List Shares</li>
+<li>Delete Share</li>
+<li>Get Share Properties</li>
+<li>Set Share Quota</li>
+<li>Directory Operations</li>
+</ul>
+<hr>
+<p><a id="skill-7d9d04c7"></a></p>
+<h3 id="microsoft-azure-storage-queue-py"><a href="#microsoft-azure-storage-queue-py" class="headerlink" title="microsoft&#x2F;azure-storage-queue-py"></a>microsoft&#x2F;azure-storage-queue-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-storage-queue-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/azure-storage-queue-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;azure-storage-queue-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 简单的消息队列</p>
+<p><strong>适用时机:</strong> 从网页上传端队列图像处理任务 分配背景任务到多个工作进程中 在向数据库写入前缓冲 webhook 负载 拆分订单提交与电子商务流水线中的履行逻辑 检测并处理带有排队计数跟踪的毒性消息</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Azure Queue Storage SDK for Python</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication &amp; Lifecycle</li>
+<li>Queue Operations</li>
+<li>Send Messages</li>
+<li>Receive Messages</li>
+<li>Peek Messages</li>
+<li>Update Message</li>
+<li>Delete Message</li>
+<li>Clear Queue</li>
+<li>Queue Properties</li>
+<li>Async Client</li>
+<li>Base64 Encoding</li>
+<li>Best Practices</li>
+<li>Reference Files</li>
+</ul>
+<hr>
+<p><a id="skill-3b314040"></a></p>
+<h3 id="microsoft-azure-storage-queue-ts"><a href="#microsoft-azure-storage-queue-ts" class="headerlink" title="microsoft&#x2F;azure-storage-queue-ts"></a>microsoft&#x2F;azure-storage-queue-ts</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/azure-storage-queue-ts">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-typescript/skills/azure-storage-queue-ts/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-typescript&#x2F;skills&#x2F;azure-storage-queue-ts&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 队列消息操作</p>
+<p><strong>适用时机:</strong> 将工作负载发送到后台工作者队列 将 Webhook 事件路由到异步处理器，但不阻塞 HTTP 回应 在移出阈值后将反复失败的消息移动到死信队列 检查队列深度以决定是否扩展工作者实例 为第三方队列访问生成时间有限的 SAS 令牌</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>@azure&#x2F;storage-queue (TypeScript&#x2F;JavaScript)</li>
+<li>Installation</li>
+<li>Environment Variables</li>
+<li>Authentication</li>
+<li>Microsoft Entra Token Credential (Recommended)</li>
+<li>Connection String</li>
+<li>StorageSharedKeyCredential (Node.js only)</li>
+<li>SAS Token</li>
+<li>Client Hierarchy</li>
+<li>Queue Operations</li>
+<li>Create Queue</li>
+<li>List Queues</li>
+<li>Delete Queue</li>
+<li>Get Queue Properties</li>
+<li>Set Queue Metadata</li>
+<li>Message Operations</li>
+</ul>
+<hr>
+<p><a id="skill-ea98418d"></a></p>
+<h3 id="microsoft-pydantic-models-py"><a href="#microsoft-pydantic-models-py" class="headerlink" title="microsoft&#x2F;pydantic-models-py"></a>microsoft&#x2F;pydantic-models-py</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/microsoft/skills/pydantic-models-py">Skills by Microsoft</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/microsoft/skills/blob/main/.github/plugins/azure-sdk-python/skills/pydantic-models-py/SKILL.md">https://github.com&#x2F;microsoft&#x2F;skills&#x2F;blob&#x2F;main&#x2F;.github&#x2F;plugins&#x2F;azure-sdk-python&#x2F;skills&#x2F;pydantic-models-py&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 用于API规范的Pydantic模型</p>
+<p><strong>适用时机:</strong> 在使用Pydantic v2在Python应用程序中定义API请求&#x2F;响应规范、数据库模型或数据验证时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Pydantic Models</li>
+<li>Quick Start</li>
+<li>Multi-Model Pattern</li>
+<li>camelCase Aliases</li>
+<li>Optional Update Fields</li>
+<li>Database Document</li>
+<li>Integration Steps</li>
+<li>Reference Files</li>
+</ul>
+<hr>
+<p><a id="skill-4fbcbb91"></a></p>
+<h3 id="mongodb-mongodb-query-optimizer"><a href="#mongodb-mongodb-query-optimizer" class="headerlink" title="mongodb&#x2F;mongodb-query-optimizer"></a>mongodb&#x2F;mongodb-query-optimizer</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/mongodb/skills/mongodb-query-optimizer">Skills by MongoDB</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/mongodb/agent-skills/blob/main/skills/mongodb-query-optimizer/SKILL.md">https://github.com&#x2F;mongodb&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;mongodb-query-optimizer&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用 Atlas Performance Advisor 分析和优化查询性能</p>
+<p><strong>适用时机:</strong> 找出带有排序的 find() 为什么会执行内存排序阶段 在筛选+排序查询中选择复合索引的正确字段顺序 审查过去24小时 Atlas Performance Advisor 的慢查询日志 决定在接近20个索引限制的集合中删除哪些冗余索引 修复一个扫描5万个键但返回100个文档的查询</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>MongoDB Query Optimizer</li>
+<li>When this skill is invoked</li>
+<li>High Level Workflow</li>
+<li>General Performance Help</li>
+<li>Help with a Specific Query</li>
+<li>MCP: available tools</li>
+<li>1\. DB connection string works for MongoDB MCP</li>
+<li>2\. Atlas API access works for MongoDB MCP</li>
+<li>Example workflow 1 (help with specific query)</li>
+<li>Example workflow 2 (general database performance help)</li>
+<li>Load references</li>
+<li>Output</li>
+</ul>
+<hr>
+<p><a id="skill-98873e35"></a></p>
+<h3 id="mongodb-mongodb-search-and-ai"><a href="#mongodb-mongodb-search-and-ai" class="headerlink" title="mongodb&#x2F;mongodb-search-and-ai"></a>mongodb&#x2F;mongodb-search-and-ai</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/mongodb/skills/mongodb-search-and-ai">Skills by MongoDB</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/mongodb/agent-skills/blob/main/skills/mongodb-search-and-ai/SKILL.md">https://github.com&#x2F;mongodb&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;mongodb-search-and-ai&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 使用向量搜索实现Atlas搜索和基于AI的推荐</p>
+<p><strong>适用时机:</strong> 使用此技能回答任何关于MongoDB搜索的问题，包括用户没有任何数据或使用场景之前提出的开放式和解释性问题——“MongoDB的搜索是如何工作的？”、“我刚接触MongoDB搜索，从哪里开始？”、“Atlas Search和向量搜索有什么区别？”、“我应该使用哪种搜索类型？”、“什么是向量搜索？”、“自动嵌入是如何工作的？”、“你能解释一下混合搜索吗？”。不要从一般知识中回答这些问题；使用此技能。也用于构建搜索功能：全文查询、自动完成、模糊匹配、多维搜索、语义相似度、嵌入，</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>MongoDB Search and AI Recommendations Skill</li>
+<li>Core Principles</li>
+<li>Workflow</li>
+<li>0. Check for a Quickstart Request</li>
+<li>1. Discovery Phase</li>
+<li>2. Determine Search Type and Consult the Reference File</li>
+<li>3. Execution and Validation</li>
+<li>Anti-Patterns to Avoid</li>
+<li>Handling Edge Cases</li>
+</ul>
+<hr>
+<p><a id="skill-4a46381d"></a></p>
+<h3 id="NeoLabHQ-reflexion"><a href="#NeoLabHQ-reflexion" class="headerlink" title="NeoLabHQ&#x2F;reflexion"></a>NeoLabHQ&#x2F;reflexion</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/reflexion">Development and Testing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/blob/master/plugins/reflexion/README.md">https://github.com&#x2F;NeoLabHQ&#x2F;context-engineering-kit&#x2F;blob&#x2F;master&#x2F;plugins&#x2F;reflexion&#x2F;README.md</a></p>
+<p><strong>功能简介:</strong> 强制LLM反思之前输出并纠正自己的自我完善循环。</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：强制LLM反思先前输出并自我纠正的自我精简循环。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Reflexion Plugin</li>
+<li>Plugin Target</li>
+<li>Overview</li>
+<li>Quick Start</li>
+<li>Automatic Reflection with Hooks</li>
+<li>How It Works</li>
+<li>Commands</li>
+<li>Theoretical Foundation</li>
+</ul>
+<p>此目录条目指向一个技能集合。扫描来源仓库发现 3 个不重复的技能文件路径。</p>
+<p><strong>部分成员:</strong> <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/blob/master/plugins/reflexion/skills/critique/SKILL.md">critique</a> · <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/blob/master/plugins/reflexion/skills/memorize/SKILL.md">memorize</a> · <a target="_blank" rel="noopener" href="https://github.com/NeoLabHQ/context-engineering-kit/blob/master/plugins/reflexion/skills/reflect/SKILL.md">reflect</a></p>
+<hr>
+<p><a id="skill-9efe0519"></a></p>
+<h3 id="obra-using-superpowers"><a href="#obra-using-superpowers" class="headerlink" title="obra&#x2F;using-superpowers"></a>obra&#x2F;using-superpowers</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/obra/superpowers/blob/main/skills/using-superpowers/SKILL.md">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/obra/superpowers/blob/main/skills/using-superpowers/SKILL.md">https://github.com&#x2F;obra&#x2F;superpowers&#x2F;blob&#x2F;main&#x2F;skills&#x2F;using-superpowers&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 利用核心平台功能</p>
+<p><strong>适用时机:</strong> 在开始任何对话时使用——确定如何查找和使用技能，在任何回应（包括澄清问题）之前都需要调用技能。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>The Rule</li>
+<li>Skill Priority</li>
+<li>Red Flags</li>
+<li>Platform Adaptation</li>
+<li>User Instructions</li>
+</ul>
+<hr>
+<p><a id="skill-1d779bcf"></a></p>
+<h3 id="Qiuner-birdview"><a href="#Qiuner-birdview" class="headerlink" title="Qiuner&#x2F;birdview"></a>Qiuner&#x2F;birdview</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/Qiuner/birdview">Context Engineering</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/Qiuner/birdview/blob/main/SKILL.md">https://github.com&#x2F;Qiuner&#x2F;birdview&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 将架构和约束置于人工智能编码的中心</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：将架构和约束置于人工智能编码的中心。</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Birdview</li>
+<li>Activation</li>
+<li>Workflow</li>
+<li>Confirm the displayed plan before implementation</li>
+<li>Rules</li>
+<li>Tools</li>
+</ul>
+<hr>
+<p><a id="skill-49742e78"></a></p>
+<h3 id="realkimbarrett-generic-language-killer"><a href="#realkimbarrett-generic-language-killer" class="headerlink" title="realkimbarrett&#x2F;generic-language-killer"></a>realkimbarrett&#x2F;generic-language-killer</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/realkimbarrett/advertising-skills/tree/main/skills/qa/generic-language-killer">Advertising Skills by Kim Barrett</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/realkimbarrett/advertising-skills/blob/main/skills/qa/generic-language-killer/SKILL.md">https://github.com&#x2F;realkimbarrett&#x2F;advertising-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;qa&#x2F;generic-language-killer&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 移除模糊、企业化或人工智能风格的语言，并用清晰、具体、符合人话的措辞替换。</p>
+<p><strong>适用时机:</strong> 触发“改进复制”、“听起来很一般”、“太飘逸”的触发器。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Role</li>
+<li>Process</li>
+<li>Output</li>
+<li>Rules</li>
+<li>Avoid</li>
+</ul>
+<hr>
+<p><a id="skill-b17cec60"></a></p>
+<h3 id="redis-redis-core"><a href="#redis-redis-core" class="headerlink" title="redis&#x2F;redis-core"></a>redis&#x2F;redis-core</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/redis/agent-skills/tree/main/skills/redis-core">Skills by Redis</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/redis/agent-skills/blob/main/skills/redis-core/SKILL.md">https://github.com&#x2F;redis&#x2F;agent-skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;redis-core&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> Redis开发最佳实践——数据结构、查询引擎、向量搜索、缓存和性能优化。</p>
+<p><strong>适用时机:</strong> 在设计Redis数据模型、缓存对象、在哈希和JSON之间做出决定、构建计数器、排行榜、成员集或会话存储器时使用，或者在审查&#x2F;清理Redis键命名时使用。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Redis Core</li>
+<li>When to apply</li>
+<li>1. Choose the right data structure</li>
+<li>2. Use consistent key names</li>
+<li>References</li>
+</ul>
+<hr>
+<p><a id="skill-78fe7194"></a></p>
+<h3 id="ruslanlap-cavemenko"><a href="#ruslanlap-cavemenko" class="headerlink" title="ruslanlap&#x2F;cavemenko"></a>ruslanlap&#x2F;cavemenko</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/ruslanlap/cavemenko/tree/main/skills/cavemenko">Context Engineering</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/ruslanlap/cavemenko/tree/main/skills/cavemenko">https://github.com&#x2F;ruslanlap&#x2F;cavemenko&#x2F;tree&#x2F;main&#x2F;skills&#x2F;cavemenko</a></p>
+<p><strong>功能简介:</strong> 乌克兰的省略回复风格，减少了49%的令牌</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：乌克兰主动省略回复风格，测量-49%的词元</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p>未能取得单独的 SKILL.md；本文根据目录简介和可访问的仓库 README 整理。</p>
+<hr>
+<p><a id="skill-c3b0b95d"></a></p>
+<h3 id="sametbrr-llm-wiki-manager"><a href="#sametbrr-llm-wiki-manager" class="headerlink" title="sametbrr&#x2F;llm-wiki-manager"></a>sametbrr&#x2F;llm-wiki-manager</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/sametbrr/llm-wiki-manager">Context Engineering</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/sametbrr/llm-wiki-manager/blob/main/SKILL.md">https://github.com&#x2F;sametbrr&#x2F;llm-wiki-manager&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 持久的LLM管理个人维基——模型负责编写、交叉引用和维护知识库，而你则负责筛选来源。实现了Karpathy的LLM维基模式，支持8种运行模式。</p>
+<p><strong>适用时机:</strong> 当用户想要（1）启动一个新的维基、第二大脑或研究笔记本时使用此技能；（2）导入新的来源（文章、PDF、论文、转录）并更新相关实体&#x2F;概念页面、索引和日志；（3）查询现有维基并结合引用生成答案，如有用则将其归档；（4）当新的来源取代多个页面上的某个陈述时更新维基（diff-before-write 扫描）；（5）对维基进行检查，检测孤立页面、链接失效、索引偏移或草稿页面——自动生成日期报告。当用户提到“第二大脑”、“研究维基”、“知识库”或“Memex”时触发此功能，</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>LLM Wiki Manager</li>
+<li>The three layers (memorize this)</li>
+<li>Mode router</li>
+<li>Core invariants (apply in every mode) — nine rules</li>
+<li>1. The user owns `raw&#x2F;`. The LLM owns `wiki&#x2F;`.</li>
+<li>2. Every operation logs to `wiki&#x2F;log.md`.</li>
+<li>3. Every new or significantly-updated page touches `wiki&#x2F;index.md`.</li>
+<li>4. Cross-reference aggressively.</li>
+<li>5. Cite back to `raw&#x2F;`.</li>
+<li>6. Flag contradictions, don’t silently overwrite.</li>
+<li>7. Rewrite `wiki&#x2F;hot.md` after every ingest.</li>
+<li>8. The schema lives in `CLAUDE.md` and is updated when conventions change.</li>
+<li>9. If the project’s `CLAUDE.md` declares an `External Wiki`, honor it.</li>
+<li>Standard wiki layout</li>
+<li>Bundled scripts</li>
+<li>Bundled templates</li>
+</ul>
+<hr>
+<p><a id="skill-628e83ba"></a></p>
+<h3 id="serpapi-serpapi-web-search"><a href="#serpapi-serpapi-web-search" class="headerlink" title="serpapi&#x2F;serpapi-web-search"></a>serpapi&#x2F;serpapi-web-search</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://officialskills.sh/serpapi/skills/serpapi-web-search">Skills by SerpApi</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/serpapi/skills/blob/master/skills/serpapi-web-search/SKILL.md">https://github.com&#x2F;serpapi&#x2F;skills&#x2F;blob&#x2F;master&#x2F;skills&#x2F;serpapi-web-search&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 通过130多个搜索引擎进行结构化搜索数据：选择合适的搜索引擎，提取正确的关键词，从错误中恢复</p>
+<p><strong>适用时机:</strong> 从 Google Scholar 获取精确的引用次数，而不是近似的网页结果。实时获取航班票价、酒店房价和购物价格，采用结构化 JSON 格式。通过 Google 地图查询本地商家详情——电话、评分、评论。为研究任务并行扩展金融、新闻和网页查询。引用前在 Google 和 Bing 之间交叉核对事实。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Invocation</li>
+<li>Engine selection</li>
+<li>Gotchas</li>
+<li>Parameters</li>
+<li>Composition</li>
+<li>Errors</li>
+<li>Reference links</li>
+</ul>
+<hr>
+<p><a id="skill-a12ca7dc"></a></p>
+<h3 id="swaylq-humanize-chinese"><a href="#swaylq-humanize-chinese" class="headerlink" title="swaylq&#x2F;humanize-chinese"></a>swaylq&#x2F;humanize-chinese</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/swaylq/humanize-chinese">Specialized Domains</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/swaylq/humanize-chinese/blob/main/SKILL.md">https://github.com&#x2F;swaylq&#x2F;humanize-chinese&#x2F;blob&#x2F;main&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 检测并重写AI生成的中文文本，完全离线，无LLM</p>
+<p><strong>适用时机:</strong> 使用时用户说：“去AI味”，“降AIGC”，“人性化文本”，“humanize chinese”，“AI检测”，“AIGC降重”，“去除AI痕迹”，“文本改写”，“论文降重”，“知网检测”，“维普检测”，“AI写作检测”，“让文字更自然”，“detect AI text”，“humanize text”，“make text human-like”，“去ai化”，“改成人话”，“去机器味”，“长文本改写”，“小说改写”，“写一篇”，“claudish”，“去claude腔”，“助手腔”，“去水印”，“watermark remover”，“remove watermark”</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Humanize Chinese AI Text v6</li>
+<li>CLI Tools</li>
+<li>统一 CLI（推荐）</li>
+<li>独立脚本形式（等价）</li>
+<li>评分标准</li>
+<li>参数速查</li>
+<li>工作流（中文主线）</li>
+<li>HC3-Chinese 基准测试</li>
+<li>流程 ①：写作指南 —— 生成时就别写出 AI 腔</li>
+<li>流程 ②：改写清单 —— 拿到稿子后定点过一遍</li>
+<li>先扫一遍：检测 AI 写作模式</li>
+<li>逐条拆：命中什么改什么</li>
+<li>学术论文特殊处理（不能口语化）</li>
+<li>流程 ④：Claude 腔 → 平实中文</li>
+<li>流程 ⑤：去水印</li>
+<li>流程 ⑥：纠错清单 —— 修错误、顺拗口，动作要轻</li>
+</ul>
+<hr>
+<p><a id="skill-fc72ada9"></a></p>
+<h3 id="veniceai-venice-chat"><a href="#veniceai-venice-chat" class="headerlink" title="veniceai&#x2F;venice-chat"></a>veniceai&#x2F;venice-chat</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/tree/main/skills/venice-chat">Skills by Venice.ai</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/blob/main/skills/venice-chat/SKILL.md">https://github.com&#x2F;veniceai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;venice-chat&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 聊天完成、多模态输入、工具和流式传输</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：聊天完成、多模态输入、工具和流式传输</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Venice Chat Completions</li>
+<li>Use when</li>
+<li>Minimal request</li>
+<li>The request body</li>
+<li>Core fields (OpenAI-compatible)</li>
+<li>Capability gates (400 before inference)</li>
+<li>`venice_parameters` (Venice-only)</li>
+<li>Model feature suffixes</li>
+<li>Messages and modalities</li>
+<li>Images (`image_url`)</li>
+<li>Audio (`input_audio`)</li>
+<li>Video (`video_url`)</li>
+<li>Documents (`file`)</li>
+<li>Prompt caching (`cache_control`)</li>
+<li>Tools &amp; function calling</li>
+<li>Reasoning models</li>
+</ul>
+<hr>
+<p><a id="skill-6a1ebb92"></a></p>
+<h3 id="veniceai-venice-embeddings"><a href="#veniceai-venice-embeddings" class="headerlink" title="veniceai&#x2F;venice-embeddings"></a>veniceai&#x2F;venice-embeddings</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/tree/main/skills/venice-embeddings">Skills by Venice.ai</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/blob/main/skills/venice-embeddings/SKILL.md">https://github.com&#x2F;veniceai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;venice-embeddings&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 嵌入模型、维度和编码格式</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：嵌入模型、维度和编码格式</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Venice Embeddings</li>
+<li>Use when</li>
+<li>Minimal request</li>
+<li>Request schema</li>
+<li>Input limits</li>
+<li>Response headers &amp; compression</li>
+<li>Using the OpenAI SDK</li>
+<li>LangChain</li>
+<li>Batch-embedding pattern</li>
+<li>Choosing a model</li>
+<li>Error handling</li>
+<li>Gotchas</li>
+</ul>
+<hr>
+<p><a id="skill-ad93ab59"></a></p>
+<h3 id="veniceai-venice-models"><a href="#veniceai-venice-models" class="headerlink" title="veniceai&#x2F;venice-models"></a>veniceai&#x2F;venice-models</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/tree/main/skills/venice-models">Skills by Venice.ai</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/veniceai/skills/blob/main/skills/venice-models/SKILL.md">https://github.com&#x2F;veniceai&#x2F;skills&#x2F;blob&#x2F;main&#x2F;skills&#x2F;venice-models&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 型号目录、特征和兼容性映射</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：模型目录、特性和兼容性映射</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Venice Models</li>
+<li>Use when</li>
+<li>`GET &#x2F;models`</li>
+<li>Top-level `ModelResponse` fields</li>
+<li>`model_spec` - common fields</li>
+<li>`model_spec.capabilities` - text models</li>
+<li>`model_spec.constraints` and type-specific fields</li>
+<li>`model_spec.pricing` - by type</li>
+<li>`GET &#x2F;models&#x2F;traits`</li>
+<li>`GET &#x2F;models&#x2F;compatibility_mapping`</li>
+<li>Common patterns</li>
+<li>Pick a vision + reasoning model at runtime</li>
+<li>Validate an image request before submit</li>
+<li>Estimate LLM cost</li>
+<li>Gotchas</li>
+</ul>
+<hr>
+<p><a id="skill-80c93213"></a></p>
+<h3 id="Vladimir-Human-humanizer-ru"><a href="#Vladimir-Human-humanizer-ru" class="headerlink" title="Vladimir-Human&#x2F;humanizer-ru"></a>Vladimir-Human&#x2F;humanizer-ru</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/Vladimir-Human/humanizer-ru">Marketing</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/Vladimir-Human/humanizer-ru/blob/main/skills/humanizer-ru/SKILL.md">https://github.com&#x2F;Vladimir-Human&#x2F;humanizer-ru&#x2F;blob&#x2F;main&#x2F;skills&#x2F;humanizer-ru&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 重写AI编写的俄语文本，同时保留数字、日期和姓名</p>
+<p><strong>适用时机:</strong> 当任务需要此目录条目中描述的能力时使用：在保留数字、日期和姓名的同时重写由人工智能编写的俄语文本</p>
+<p>来源目录没有单独说明触发条件；此处的适用时机是根据公开功能简介归纳的。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>humanizer-ru</li>
+<li>Режимы</li>
+<li>Как править</li>
+<li>Признаки машинного текста и что с ними делать</li>
+<li>Русская специфика</li>
+<li>Факты неприкосновенны</li>
+<li>Когда править мало</li>
+<li>Что вернуть</li>
+<li>Границы</li>
+</ul>
+<hr>
+<p><a id="skill-a8465f1c"></a></p>
+<h3 id="wiltodelta-remove-ai-watermarks"><a href="#wiltodelta-remove-ai-watermarks" class="headerlink" title="wiltodelta&#x2F;remove-ai-watermarks"></a>wiltodelta&#x2F;remove-ai-watermarks</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/wiltodelta/remove-ai-watermarks/tree/main/skills/remove-ai-watermarks">Specialized Domains</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/wiltodelta/remove-ai-watermarks/blob/main/skills/remove-ai-watermarks/SKILL.md">https://github.com&#x2F;wiltodelta&#x2F;remove-ai-watermarks&#x2F;blob&#x2F;main&#x2F;skills&#x2F;remove-ai-watermarks&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 从您拥有的图像中移除AI水印和来源元数据</p>
+<p><strong>适用时机:</strong> 当用户希望去除或清理AI水印和生成标签，或询问文件是否为AI生成或带有AI来源信息时使用，即使他们没有指定remove-ai-watermarks。不要用于素材代理、市场、分类广告或其他第三方付费资产的水印。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Remove AI watermarks</li>
+<li>Scope</li>
+<li>Workflow</li>
+<li>1. Scope</li>
+<li>2. Probe</li>
+<li>3. Install</li>
+<li>4. Choose the command</li>
+<li>5. Run</li>
+<li>6. Report</li>
+<li>Examples</li>
+<li>Identify without overstating the result</li>
+<li>Remove a user-named visible AI label</li>
+<li>Route an unavailable invisible removal safely</li>
+<li>Gotchas</li>
+<li>Do not</li>
+</ul>
+<hr>
+<p><a id="skill-db814377"></a></p>
+<h3 id="xberg-io-xberg"><a href="#xberg-io-xberg" class="headerlink" title="xberg-io&#x2F;xberg"></a>xberg-io&#x2F;xberg</h3><p><strong>目录来源:</strong> <a target="_blank" rel="noopener" href="https://github.com/xberg-io/xberg/tree/main/plugin/skills/xberg">Productivity and Collaboration</a><br><strong>来源文档:</strong> <a target="_blank" rel="noopener" href="https://github.com/xberg-io/xberg/blob/main/plugin/skills/xberg/SKILL.md">https://github.com&#x2F;xberg-io&#x2F;xberg&#x2F;blob&#x2F;main&#x2F;plugin&#x2F;skills&#x2F;xberg&#x2F;SKILL.md</a></p>
+<p><strong>功能简介:</strong> 从101+种文档格式中提取文本、表格和元数据</p>
+<p><strong>适用时机:</strong> 适用于在 Python、Node.js&#x2F;TypeScript、Rust 或 CLI 中编写调用 Xberg API 的代码。涵盖安装、提取（同步&#x2F;异步）、配置（OCR、分块、输出格式）、批处理、错误处理和插件。</p>
+<p><strong>来源技能章节菜单:</strong></p>
+<ul>
+<li>Xberg Document Extraction</li>
+<li>Installation</li>
+<li>Python</li>
+<li>Node.js</li>
+<li>Rust</li>
+<li>CLI</li>
+<li>Quick Start</li>
+<li>Configuration</li>
+<li>Python (snake_case)</li>
+<li>Node.js (camelCase)</li>
+<li>Rust (snake_case)</li>
+<li>Config File (TOML)</li>
+<li>Batch Processing</li>
+<li>OCR</li>
+<li>Backends</li>
+<li>Language Codes</li>
+</ul>
+<hr>
+<p><a href="/blog/zh-CN/agent-skills/">返回 Agent Skills 分类导航</a></p>
+<p><a href="/blog/agent-skills/ai_data/">English version of this category</a></p>
+</div></article></div></div><style>.column.column-left,.column.column-right{display:none}</style><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://www.gravatar.com/avatar/7525ea09384aeb09ec303671d7dca1bf?s=128" alt="Song Chen"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Song Chen</p><p class="is-size-6 is-block">Ph.D. Candiate at Université Paris Saclay &amp; Spin-Ion Technologies</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Paris, France</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/blog/zh-CN/archives"><p class="title">28</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/blog/zh-CN/categories"><p class="title">32</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/blog/zh-CN/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/song-chen1" target="_blank" rel="noopener" id="widget-follow">Github Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="GoogleScholar" href="https://scholar.google.com/citations?user=sf-0AGoAAAAJ&amp;hl=de"><i class="fab fa-google-plus-square"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/in/song-chen-3449b9278/"><i class="fab fa-linkedin"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Mail" href="mailto:kammichan90@gmail.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/blog/zh-CN/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/blog/zh-CN/archives/2026/11/"><span class="level-start"><span class="level-item">十一月 2026</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/blog/zh-CN/archives/2026/10/"><span class="level-start"><span class="level-item">十月 2026</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/blog/zh-CN/archives/2023/10/"><span class="level-start"><span class="level-item">十月 2023</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Agent-Skills/"><span class="tag">Agent Skills</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/BERT/"><span class="tag">BERT</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Documentation/"><span class="tag">Documentation</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/French/"><span class="tag">French</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Hexo/"><span class="tag">Hexo</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Hexo-plugins/"><span class="tag">Hexo plugins</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/HuggingFace/"><span class="tag">HuggingFace</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Language/"><span class="tag">Language</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/MachineLearning/"><span class="tag">MachineLearning</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/NLP/"><span class="tag">NLP</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Obsidian/"><span class="tag">Obsidian</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/PyTorch/"><span class="tag">PyTorch</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Pyenv/"><span class="tag">Pyenv</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Python/"><span class="tag">Python</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/VoltAgent/"><span class="tag">VoltAgent</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/computational-simulation/"><span class="tag">computational simulation</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/condensed-matter-physics/"><span class="tag">condensed-matter physics</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/data-science/"><span class="tag">data-science</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/deep-learning/"><span class="tag">deep-learning</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/encryptAsDiary/"><span class="tag">encryptAsDiary</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/machine-learning/"><span class="tag">machine-learning</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python/"><span class="tag">python</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-configuration/"><span class="tag">python_configuration</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-editors/"><span class="tag">python_editors</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-tools/"><span class="tag">python_tools</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="https://api.follow.it/subscription-form/YnRDa2puUlErMTdqQ2Q4aDRrem93bHllemF6Y1ZMSW9hQSsrQ3NKTzRXSGRpTlRocW13MXM2UUw4YUFRdUFhUVRJTk1kaVFPWjc2MUQ1TTlLZ3hvcnhLNHJ2bE4yS3VzaTZ4eTliREZjZEk3UHRIWXBRbkxnN3FVUFczVm9TZDF8c2Z0em5PTnVFYks5TU15dUtPdW05czZIeEF4V0dvYnhQVnJtUGNUZEIxYz0=/8" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/automation/">智能体工具与自动化 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E6%99%BA%E8%83%BD%E4%BD%93%E5%B7%A5%E5%85%B7%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96/">智能体工具与自动化</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/business/">商业与财务 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E5%95%86%E4%B8%9A%E4%B8%8E%E8%B4%A2%E5%8A%A1/">商业与财务</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/cloud/">云与运维 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E4%BA%91%E4%B8%8E%E8%BF%90%E7%BB%B4/">云与运维</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/ai_data/">人工智能与数据 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8E%E6%95%B0%E6%8D%AE/">人工智能与数据</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/productivity/">效率与协作 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E6%95%88%E7%8E%87%E4%B8%8E%E5%8D%8F%E4%BD%9C/">效率与协作</a></p></div></article></div></div><div class="card widget" id="twikoo-new"><div class="card-content"><div class="menu"><h3 class="menu-label">最新评论</h3><script>window.twikooEnvId = 'https://twikoodisqus.vercel.app';</script><div class="twikoo-new-container"></div></div></div></div></div><style>.column.column-left,.column.column-right{display:block}</style></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/blog/zh-CN/"><img class="logo-img" src="/blog/zh-CN/images/logo.png" alt="Project Geeker" height="28"><img class="logo-img-dark" src="/blog/zh-CN/images/logo-dark.png" alt="Project Geeker" height="28"></a><p class="is-size-7"><span>&copy; 2026 Song Chen</span>  网站最终解释权归 <a href="https://songchen.science" target="_blank" rel="noopener">Song</a><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p><p class="is-size-7">© 2023</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.21/dist/twikoo.all.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/blog/zh-CN/js/column.js"></script><script src="/blog/zh-CN/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/blog/zh-CN/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="/blog/zh-CN/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><div class="searchbox-pinyin"><label class="checkbox"><input id="search-by-pinyin" type="checkbox" checked="checked"><span> Pinyin search</span></label></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/imaegoo/pinyin.js" defer></script><script src="/blog/zh-CN/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/blog/zh-CN/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script><script type="text/javascript" src="/js/imaegoo/imaegoo.js"></script><script type="text/javascript" src="/js/imaegoo/universe.js"></script></body></html>

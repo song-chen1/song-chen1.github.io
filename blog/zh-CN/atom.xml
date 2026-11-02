@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/zh-CN/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/zh-CN/"/>
-  <updated>2026-10-29T02:00:05.488Z</updated>
+  <updated>2026-11-02T04:00:00.000Z</updated>
   <id>https://songchen.science/blog/zh-CN/</id>
   
   <author>
@@ -15,6 +15,388 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>智能体工具与自动化 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/automation/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/automation/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;智能体工具与自动化&quot;&gt;&lt;a href=&quot;#智能体工具与自动化&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
+    
+    <category term="智能体工具与自动化" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E6%99%BA%E8%83%BD%E4%BD%93%E5%B7%A5%E5%85%B7%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>商业与财务 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/business/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/business/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;商业与财务&quot;&gt;&lt;a href=&quot;#商业与财务&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
+    
+    <category term="商业与财务" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E5%95%86%E4%B8%9A%E4%B8%8E%E8%B4%A2%E5%8A%A1/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>云与运维 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/cloud/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/cloud/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;云与运维&quot;&gt;&lt;a href=&quot;#云与运维&quot; class=&quot;headerlink&quot; title=&quot;云与运维&quot;&gt;&lt;/a&gt;云与运维&lt;/h1&gt;&lt;p&gt;云与运维类技能聚焦部署、基础设施、可观测性、可靠性和云服务配置。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目录快照：2026 年</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
+    
+    <category term="云与运维" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E4%BA%91%E4%B8%8E%E8%BF%90%E7%BB%B4/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>人工智能与数据 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/ai_data/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/ai_data/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;人工智能与数据&quot;&gt;&lt;a href=&quot;#人工智能与数据&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
+    
+    <category term="人工智能与数据" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8E%E6%95%B0%E6%8D%AE/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>效率与协作 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/productivity/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/productivity/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;效率与协作&quot;&gt;&lt;a href=&quot;#效率与协作&quot; class=&quot;headerlink&quot; title=&quot;效率与协作&quot;&gt;&lt;/a&gt;效率与协作&lt;/h1&gt;&lt;p&gt;效率与协作类技能连接沟通、日程、文件、会议和团队服务等日常工作。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目录快照：2026</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
+    
+    <category term="效率与协作" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E6%95%88%E7%8E%87%E4%B8%8E%E5%8D%8F%E4%BD%9C/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>写作与文档 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/documents/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/documents/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;写作与文档&quot;&gt;&lt;a href=&quot;#写作与文档&quot; class=&quot;headerlink&quot; title=&quot;写作与文档&quot;&gt;&lt;/a&gt;写作与文档&lt;/h1&gt;&lt;p&gt;写作与文档类技能用于创建、修改、分析、翻译和排版文字或办公文档。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目录快照：2026</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
+    
+    <category term="写作与文档" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E5%86%99%E4%BD%9C%E4%B8%8E%E6%96%87%E6%A1%A3/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>设计与前端 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/design/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/design/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;设计与前端&quot;&gt;&lt;a href=&quot;#设计与前端&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
+    
+    <category term="设计与前端" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>产品与营销 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/product/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/product/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;产品与营销&quot;&gt;&lt;a href=&quot;#产品与营销&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
+    
+    <category term="产品与营销" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%90%A5%E9%94%80/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安全与隐私 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/security/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/security/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;安全与隐私&quot;&gt;&lt;a href=&quot;#安全与隐私&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
+    
+    <category term="安全与隐私" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E5%AE%89%E5%85%A8%E4%B8%8E%E9%9A%90%E7%A7%81/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件开发 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/software/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/software/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;软件开发&quot;&gt;&lt;a href=&quot;#软件开发&quot; class=&quot;headerlink&quot; title=&quot;软件开发&quot;&gt;&lt;/a&gt;软件开发&lt;/h1&gt;&lt;p&gt;软件开发类技能提供框架、编程语言、API、数据库和应用开发方面的指导。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目录快照：2026</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
+    
+    <category term="软件开发" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>专业领域 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/specialized/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/specialized/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;专业领域&quot;&gt;&lt;a href=&quot;#专业领域&quot; class=&quot;headerlink&quot; title=&quot;专业领域&quot;&gt;&lt;/a&gt;专业领域&lt;/h1&gt;&lt;p&gt;专业领域类技能将特定知识用于范围较窄的专业、行业或平台任务。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目录快照：2026 年 11</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
+    
+    <category term="专业领域" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E4%B8%93%E4%B8%9A%E9%A2%86%E5%9F%9F/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>研究与学习 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/research/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/research/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;研究与学习&quot;&gt;&lt;a href=&quot;#研究与学习&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
+    
+    <category term="研究与学习" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试与质量 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/testing/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/testing/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;测试与质量&quot;&gt;&lt;a href=&quot;#测试与质量&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
+    
+    <category term="测试与质量" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E6%B5%8B%E8%AF%95%E4%B8%8E%E8%B4%A8%E9%87%8F/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
+    
+  </entry>
   
   <entry>
     <title>Lecture 0: Introduction of Machine Learning_机器学习导论：从人工智能到学习地图的全景解析</title>
@@ -182,216 +564,6 @@
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/tags/Python/"/>
     
     <category term="Pyenv" scheme="https://songchen.science/blog/zh-CN/tags/Pyenv/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>推荐常用的Hexo插件 (转载)</title>
-    <link href="https://songchen.science/blog/zh-CN/posts/346eb830/"/>
-    <id>https://songchen.science/blog/zh-CN/posts/346eb830/</id>
-    <published>2023-10-17T13:18:33.000Z</published>
-    <updated>2023-10-26T20:21:39.101Z</updated>
-    
-    
-    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://github.com/TenviLi/awesome-hexo-plugins/tree/master&quot;&gt;
-&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;Awesome-hexo-plugins&lt;/a&gt;
-
-&lt;h1 id=&quot;Awesome-hexo-plugins&quot;&gt;&lt;a href=&quot;#Awesome-hexo-plugins&quot; class=&quot;headerlink&quot; title=&quot;Awesome-hexo-plugins &quot;&gt;&lt;/a&gt;Awesome-hexo-plugins &lt;a href=&quot;https://github.com/sindresorhus/awesome&quot;&gt;&lt;img src=&quot;https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg&quot; alt=&quot;Awesome&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;👓 推荐常用的 Hexo 插件&lt;/p&gt;
-&lt;p&gt;如果你有好的插件推荐，欢迎 pull requests 或 提出 Issues。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#%E6%96%87%E7%AB%A0&quot;&gt;文章&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#hexo-auto-category-%E6%A0%B9%E6%8D%AE%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB&quot;&gt;&lt;code&gt;hexo-auto-category&lt;/code&gt; 根据文件目录自动生成文章分类&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#hexo-renderer-markdown-it-%E4%BD%BF%E7%94%A8-markdown-it-%E4%BD%9C%E6%B8%B2%E6%9F%93%E5%99%A8&quot;&gt;&lt;code&gt;hexo-renderer-markdown-it&lt;/code&gt; 使用 markdown-it 作渲染器&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#hexo-related-popular-posts-%E7%94%9F%E6%88%90%E7%9B%B8%E5%85%B3%E7%83%AD%E9%97%A8%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8&quot;&gt;&lt;code&gt;hexo-related-popular-posts&lt;/code&gt; 生成相关热门文章列表&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#hexo-description-%E6%A0%B9%E6%8D%AE%E6%A0%87%E8%AE%B0%E4%BD%8D%E7%BD%AE%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E7%AB%A0%E7%AE%80%E4%BB%8B&quot;&gt;&lt;code&gt;hexo-description&lt;/code&gt; 根据标记位置自动生成文章简介&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/"/>
-    
-    <category term="Hexo" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/Hexo/"/>
-    
-    
-    <category term="Hexo" scheme="https://songchen.science/blog/zh-CN/tags/Hexo/"/>
-    
-    <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/tags/Documentation/"/>
-    
-    <category term="Hexo plugins" scheme="https://songchen.science/blog/zh-CN/tags/Hexo-plugins/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>用Python打造精美二维码，传递无限可能</title>
-    <link href="https://songchen.science/blog/zh-CN/posts/5dbadbbd/"/>
-    <id>https://songchen.science/blog/zh-CN/posts/5dbadbbd/</id>
-    <published>2023-10-13T08:13:17.000Z</published>
-    <updated>2023-11-19T22:01:19.860Z</updated>
-    
-    
-    <summary type="html">从餐厅电子菜单到航空公司登机牌，QR码拥有广泛的应用，深刻影响着您的日常生活，为用户提供更丰富的体验。难道不想让它们看起来更美观吗？通过本教程，您将学会如何使用Python为个人需求生成精美的QR码。在最基本的形式中，QR码以白底黑块和点的方式呈现，包含了可以被任何具有专用QR码扫描功能的智能手机或设备解码的信息。与传统的条形码不同，QR码将信息以二维的方式保存，可以容纳超过百倍的信息。</summary>
-    
-    
-    
-    <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
-    
-    <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
-    
-    
-    <category term="Python" scheme="https://songchen.science/blog/zh-CN/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Busuu_法语学习</title>
-    <link href="https://songchen.science/blog/zh-CN/posts/b2a36a01/"/>
-    <id>https://songchen.science/blog/zh-CN/posts/b2a36a01/</id>
-    <published>2023-10-12T15:21:10.000Z</published>
-    <updated>2023-11-24T20:51:57.535Z</updated>
-    
-    
-    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
-    
-    
-    
-    <category term="语言学习" scheme="https://songchen.science/blog/zh-CN/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="法语" scheme="https://songchen.science/blog/zh-CN/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/%E6%B3%95%E8%AF%AD/"/>
-    
-    
-    <category term="French" scheme="https://songchen.science/blog/zh-CN/tags/French/"/>
-    
-    <category term="Language" scheme="https://songchen.science/blog/zh-CN/tags/Language/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BCA Simulations</title>
-    <link href="https://songchen.science/blog/zh-CN/posts/c1550b35/"/>
-    <id>https://songchen.science/blog/zh-CN/posts/c1550b35/</id>
-    <published>2023-10-11T10:57:14.000Z</published>
-    <updated>2023-10-26T20:21:39.092Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Binary_collision_approximation&quot;&gt;Binary Appriximation Collison&lt;/a&gt; (BCA), serves as a pragmatic approach to enhance the efficiency of simulating how high-energy ions, typically with kinetic energies in the kilo-electronvolt (keV) range or beyond, interact with solid materials in terms of their penetration depth and defect generation. In this method, the ion’s trajectory is simplified by assuming that it traverses through the material via a series of discrete, independent interactions with individual sample atoms (nuclei). In the intervals between these collisions, the ion is presumed to move along a straight path, experiencing electronic stopping power but not dissipating any energy during its interactions with the nuclei. &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Condensed-matter physics" scheme="https://songchen.science/blog/zh-CN/categories/Condensed-matter-physics/"/>
-    
-    <category term="Computational Simulations" scheme="https://songchen.science/blog/zh-CN/categories/Condensed-matter-physics/Computational-Simulations/"/>
-    
-    
-    <category term="condensed-matter physics" scheme="https://songchen.science/blog/zh-CN/tags/condensed-matter-physics/"/>
-    
-    <category term="computational simulation" scheme="https://songchen.science/blog/zh-CN/tags/computational-simulation/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Finding An Effective Python Environment</title>
-    <link href="https://songchen.science/blog/zh-CN/posts/28115c/"/>
-    <id>https://songchen.science/blog/zh-CN/posts/28115c/</id>
-    <published>2023-10-10T16:55:14.000Z</published>
-    <updated>2023-10-26T20:21:39.086Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;Python-Version-Management-Tools&quot;&gt;&lt;a href=&quot;#Python-Version-Management-Tools&quot; class=&quot;headerlink&quot; title=&quot;Python Version Management Tools&quot;&gt;&lt;/a&gt;Python Version Management Tools&lt;/h2&gt;&lt;h3 id=&quot;pyenv&quot;&gt;&lt;a href=&quot;#pyenv&quot; class=&quot;headerlink&quot; title=&quot;pyenv&quot;&gt;&lt;/a&gt;pyenv&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pyenv/pyenv&quot;&gt;&lt;code&gt;pyenv&lt;/code&gt;&lt;/a&gt; is a polular and marture open-source tool used in the Python development ecosystem on MacOS. (It is &lt;a href=&quot;https://github.com/pyenv-win/pyenv-win#installation&quot;&gt;pyenv-win&lt;/a&gt; on windows). It allows developers to manage multiple Python installations on their system and easily switch between different Python versions. This is especially useful when you’re working on various Python projects that may have different version requirements.&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ pyenv verison&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* system&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  3.7.9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  3.8.13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ python --version&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	Python 3.10.0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ pyenv install 3.12.0 &lt;span class=&quot;comment&quot;&gt;# this command takes time&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ pyenv versions&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* system&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	3.7.9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	3.8.13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	3.12.0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
-    
-    <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
-    
-    <category term="Editors" scheme="https://songchen.science/blog/zh-CN/categories/Python/Editors/"/>
-    
-    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
-    
-    
-    <category term="python" scheme="https://songchen.science/blog/zh-CN/tags/python/"/>
-    
-    <category term="python_tools" scheme="https://songchen.science/blog/zh-CN/tags/python-tools/"/>
-    
-    <category term="python_editors" scheme="https://songchen.science/blog/zh-CN/tags/python-editors/"/>
-    
-    <category term="python_configuration" scheme="https://songchen.science/blog/zh-CN/tags/python-configuration/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Creating a Neural Network and Making Predictions with Python&#39;s AI</title>
-    <link href="https://songchen.science/blog/zh-CN/posts/b1a039fb/"/>
-    <id>https://songchen.science/blog/zh-CN/posts/b1a039fb/</id>
-    <published>2023-10-09T16:06:29.000Z</published>
-    <updated>2023-10-26T20:21:39.084Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;If you’re new to the field of artificial intelligence (AI), Python is an excellent language to begin with because it serves as the foundation for many AI tools and libraries. &lt;strong&gt;Deep learning&lt;/strong&gt;, a method for making predictions based on data, heavily depends on neural networks. This blog will show you through the process of constructing a &lt;a href=&quot;https://en.wikipedia.org/wiki/Neural_network&quot;&gt;neural network&lt;/a&gt; from the ground up.&lt;/p&gt;
-&lt;p&gt;In practical applications, rather than creating neural networks from scratch, you would typically utilize deep learning frameworks like &lt;a href=&quot;https://www.tensorflow.org/?hl=zh-cn&quot;&gt;TensorFlow&lt;/a&gt; or &lt;a href=&quot;https://pytorch.org/&quot;&gt;PyTorch&lt;/a&gt;. Nevertheless, understanding the inner workings of neural networks can be advantageous as it allows you to design more effective architectures for your deep learning models.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
-    
-    <category term="Data-science" scheme="https://songchen.science/blog/zh-CN/categories/Data-science/"/>
-    
-    <category term="Machine-learning" scheme="https://songchen.science/blog/zh-CN/categories/Machine-learning/"/>
-    
-    
-    <category term="python" scheme="https://songchen.science/blog/zh-CN/tags/python/"/>
-    
-    <category term="data-science" scheme="https://songchen.science/blog/zh-CN/tags/data-science/"/>
-    
-    <category term="machine-learning" scheme="https://songchen.science/blog/zh-CN/tags/machine-learning/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Basic Usage of Hexo</title>
-    <link href="https://songchen.science/blog/zh-CN/posts/e44932a0/"/>
-    <id>https://songchen.science/blog/zh-CN/posts/e44932a0/</id>
-    <published>2023-10-05T18:24:52.000Z</published>
-    <updated>2023-10-26T20:21:39.095Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;Writing&quot;&gt;&lt;a href=&quot;#Writing&quot; class=&quot;headerlink&quot; title=&quot;Writing&quot;&gt;&lt;/a&gt;Writing&lt;/h1&gt;&lt;p&gt;To create a new post or new page, run the following command:&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new [layout] &amp;lt;title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/"/>
-    
-    <category term="Webblog" scheme="https://songchen.science/blog/zh-CN/categories/Webblog/"/>
-    
-    <category term="Hexo" scheme="https://songchen.science/blog/zh-CN/categories/Documentation/Hexo/"/>
-    
-    
-    <category term="Hexo" scheme="https://songchen.science/blog/zh-CN/tags/Hexo/"/>
-    
-    <category term="Documentation" scheme="https://songchen.science/blog/zh-CN/tags/Documentation/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://songchen.science/blog/zh-CN/posts/4a17b156/"/>
-    <id>https://songchen.science/blog/zh-CN/posts/4a17b156/</id>
-    <published>2023-10-03T14:16:13.000Z</published>
-    <updated>2023-10-26T20:21:39.093Z</updated>
-    
-    
-    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
-    
-    
-    
-    
-    <category term="encryptAsDiary" scheme="https://songchen.science/blog/zh-CN/tags/encryptAsDiary/"/>
     
   </entry>
   
