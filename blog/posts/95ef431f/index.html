@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Stanford CS329Z: Engineering AI Agents (Course Guide) - Project Geeker</title><link rel="manifest" href="/blog/manifest.json"><meta name="application-name" content="Project Geeker"><meta name="msapplication-TileImage" content="/assets/icons/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Project Geeker"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="&amp;amp;nbsp;&amp;amp;nbsp;Stanford CS329Z   A guide to Stanford CS329Z: Engineering AI Agents, written in my own words from the course website as it stood on 6 November 2026. The slides, assignments and course tex"><meta property="og:type" content="article"><meta property="og:title" content="Stanford CS329Z: Engineering AI Agents (Course Guide)"><meta property="og:url" content="https://songchen.science/blog/posts/95ef431f/"><meta property="og:site_name" content="Project Geeker"><meta property="og:description" content="&amp;amp;nbsp;&amp;amp;nbsp;Stanford CS329Z   A guide to Stanford CS329Z: Engineering AI Agents, written in my own words from the course website as it stood on 6 November 2026. The slides, assignments and course tex"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://songchen.science/blog/img/og_image.png"><meta property="article:published_time" content="2026-11-06T10:26:46.000Z"><meta property="article:modified_time" content="2026-11-06T10:35:04.463Z"><meta property="article:author" content="Song Chen"><meta property="article:tag" content="machine-learning"><meta property="article:tag" content="AI-agents"><meta property="article:tag" content="LLM"><meta property="article:tag" content="Stanford"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://songchen.science/blog/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://songchen.science/blog/posts/95ef431f/"},"headline":"Stanford CS329Z: Engineering AI Agents (Course Guide)","image":["https://songchen.science/blog/img/og_image.png"],"datePublished":"2026-11-06T10:26:46.000Z","dateModified":"2026-11-06T10:35:04.463Z","author":{"@type":"Person","name":"Song Chen"},"publisher":{"@type":"Organization","name":"Project Geeker","logo":{"@type":"ImageObject","url":{"light":"/images/logo.png","dark":"/images/logo-dark.png"}}},"description":"&amp;nbsp;&amp;nbsp;Stanford CS329Z   A guide to Stanford CS329Z: Engineering AI Agents, written in my own words from the course website as it stood on 6 November 2026. The slides, assignments and course tex"}</script><link rel="canonical" href="https://songchen.science/blog/posts/95ef431f/"><link rel="alternate" href="/blog/atom.xml" title="Project Geeker" type="application/atom+xml"><link rel="icon" href="/blog/assets/icons/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="/blog/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.9420.ltd/js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-0NV49H4CZK" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-0NV49H4CZK');</script><!--!--><!--!--><!--!--><!--!--><!--!--><meta name="follow.it-verification-code" content="uc2EwCtSW92aTx5KkxEk"><!-- hexo injector head_end start --><script> let HEXO_MMEDIA_DATA = { js: [], css: [], aplayerData: [], metingData: [], artPlayerData: [], dplayerData: []}; </script><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head><body class="is-3-column"><script type="text/javascript" src="/js/imaegoo/night.js"></script><canvas id="universe"></canvas><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/blog/"><img class="logo-img" src="/blog/images/logo.png" alt="Project Geeker" height="28"><img class="logo-img-dark" src="/blog/images/logo-dark.png" alt="Project Geeker" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/blog/">Home</a><a class="navbar-item" href="/blog/archives">Archives</a><a class="navbar-item" href="/blog/categories">Categories</a><a class="navbar-item" href="/blog/tags">Tags</a><a class="navbar-item" href="/blog/guestbook/">BBS</a><a class="navbar-item" href="/blog/blogroll/">Blogroll</a><a class="navbar-item" href="/blog/about/me">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i><span>  Catalogue</span></a><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Gallery" href="/blog/gallery/"><i class="fas fa-images"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="GoogleDrive" href="https://goindex.chen-song90.workers.dev"><i class="fab fa-google-drive"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="iCloud" href="https://hitchhiker.azurewebsites.net"><i class="fas fa-cloud"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" href="https://songchen.science/blog/zh-CN/"> Chinese</a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2026-11-06T10:26:46.000Z" title="11/6/2026, 6:26:46 PM">2026-11-06</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-11-06T10:35:04.463Z" title="11/6/2026, 6:35:04 PM">2026-11-06</time></span><span class="level-item"><a class="link-muted" href="/blog/categories/Machine-learning/">Machine-learning</a><span> / </span><a class="link-muted" href="/blog/categories/Machine-learning/AI-Agents/">AI-Agents</a></span><span class="level-item">13 minutes read (About 1896 words)</span><span class="level-item leancloud_visitors" id="/blog/posts/95ef431f/" data-flag-title="Stanford CS329Z: Engineering AI Agents (Course Guide)"><i class="far fa-eye"></i>&nbsp;&nbsp;<span id="twikoo_visitors"><i class="fa fa-spinner fa-spin"></i></span>&nbsp;visits</span></div></div><h1 class="title is-3 is-size-4-mobile">Stanford CS329Z: Engineering AI Agents (Course Guide)</h1><div class="content"><a class="tag is-dark is-medium" target="_blank" rel="noopener" href="https://cs329z.stanford.edu/">
+<span class="icon"><i class="fa fa-book"></i></span>&nbsp;&nbsp;Stanford CS329Z</a>
+
+<blockquote>
+<p>A guide to <a target="_blank" rel="noopener" href="https://cs329z.stanford.edu/">Stanford CS329Z: Engineering AI Agents</a>, written in my own words from the course website as it stood on 6 November 2026. The slides, assignments and course text belong to the CS329Z teaching team; follow the links for the originals. The schedule is tentative and may change during the quarter.</p>
+</blockquote>
+<p>CS329Z is a 3-unit Stanford course for Autumn 2026, taught by <a target="_blank" rel="noopener" href="https://cs.stanford.edu/~diyiy/">Diyi Yang</a>, <a target="_blank" rel="noopener" href="https://michryan.com/">Michael Ryan</a> and <a target="_blank" rel="noopener" href="https://john-b-yang.github.io/">John Yang</a>. It is about building software around language models: from a single prompted call to pipelines, then to compound systems that combine models with retrievers, tools and optimizers, and finally to agents that choose their own next step.</p>
+<span id="more"></span>
+
+<p>Students first write retrieval, tool calling and the agent loop by hand, then see how frameworks such as DSPy and LangGraph package the same patterns. The second half of the schedule moves from how agents are built to the data they need, how to evaluate them and how to keep them safe. A team project that has to be evaluated properly is the largest part of the grade.</p>
+<h2 id="At-a-glance"><a href="#At-a-glance" class="headerlink" title="At a glance"></a>At a glance</h2><ul>
+<li><strong>When and where:</strong> Mondays and Wednesdays, 1:30–2:50 p.m. (Pacific), Skilling Auditorium, from 23 September to the demo day on 9 December 2026.</li>
+<li><strong>Prerequisites:</strong> one of CS224N, CS224U, CS224V or CS336, or equivalent background in NLP.</li>
+<li><strong>Grading basis:</strong> letter grade or Credit&#x2F;No Credit.</li>
+<li><strong>Teaching assistants:</strong> Owen Queen, Anusheh Chaudry, Shreyas Sharma and Houjun Liu.</li>
+<li><strong>Official pages:</strong> <a target="_blank" rel="noopener" href="https://cs329z.stanford.edu/">schedule and readings</a>, <a target="_blank" rel="noopener" href="https://cs329z.stanford.edu/logistics.html">logistics</a>, <a target="_blank" rel="noopener" href="https://cs329z.stanford.edu/project.html">project</a>.</li>
+</ul>
+<h2 id="Schedule"><a href="#Schedule" class="headerlink" title="Schedule"></a>Schedule</h2><p>The slides are public PDFs. “Not yet” means they had not been posted by 6 November.</p>
+<table>
+<thead>
+<tr>
+<th>Week</th>
+<th>Date</th>
+<th>Session</th>
+<th>Slides</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Wed 23 Sep</td>
+<td>Introduction: What Are Agentic Systems?</td>
+<td><a target="_blank" rel="noopener" href="https://web.stanford.edu/class/cs329z/slides/lecture01.pdf">PDF</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Mon 28 Sep</td>
+<td>LLMs for Builders</td>
+<td><a target="_blank" rel="noopener" href="https://web.stanford.edu/class/cs329z/slides/lecture02.pdf">PDF</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Wed 30 Sep</td>
+<td>Retrieval-Augmented Generation (RAG)</td>
+<td><a target="_blank" rel="noopener" href="https://web.stanford.edu/class/cs329z/slides/lecture03.pdf">PDF</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Mon 5 Oct</td>
+<td>Tool Use &amp; Function Calling</td>
+<td><a target="_blank" rel="noopener" href="https://web.stanford.edu/class/cs329z/slides/lecture04.pdf">PDF</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Wed 7 Oct</td>
+<td>Frameworks &amp; Orchestration (<a target="_blank" rel="noopener" href="https://github.com/cs329z/lecture5-frameworks">code</a>)</td>
+<td><a target="_blank" rel="noopener" href="https://web.stanford.edu/class/cs329z/slides/lecture05.pdf">PDF</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Mon 12 Oct</td>
+<td>Agent Design Patterns &amp; Scaffolds</td>
+<td><a target="_blank" rel="noopener" href="https://web.stanford.edu/class/cs329z/slides/lecture06.pdf">PDF</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Wed 14 Oct</td>
+<td>Agent Memory Architectures</td>
+<td><a target="_blank" rel="noopener" href="https://web.stanford.edu/class/cs329z/slides/lecture07.pdf">PDF</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Mon 19 Oct</td>
+<td>Multi-Agent Systems</td>
+<td><a target="_blank" rel="noopener" href="https://web.stanford.edu/class/cs329z/slides/lecture08.pdf">PDF</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Wed 21 Oct</td>
+<td>Optimization</td>
+<td><a target="_blank" rel="noopener" href="https://web.stanford.edu/class/cs329z/slides/lecture09.pdf">PDF</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Mon 26 Oct</td>
+<td>Guest lecture: Terminal-Bench (<a target="_blank" rel="noopener" href="https://ryanmarten.com/">Ryan Marten</a>, <a target="_blank" rel="noopener" href="https://www.alexgshaw.com/">Alex Shaw</a>)</td>
+<td><a target="_blank" rel="noopener" href="https://web.stanford.edu/class/cs329z/slides/lecture10.pdf">PDF</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Wed 28 Oct</td>
+<td>What Data Do Agents Need?</td>
+<td><a target="_blank" rel="noopener" href="https://web.stanford.edu/class/cs329z/slides/lecture11.pdf">PDF</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Mon 2 Nov</td>
+<td>Data Selection &amp; Quality</td>
+<td><a target="_blank" rel="noopener" href="https://web.stanford.edu/class/cs329z/slides/lecture12.pdf">PDF</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Wed 4 Nov</td>
+<td>Evaluation Fundamentals &amp; Benchmark Design</td>
+<td><a target="_blank" rel="noopener" href="https://web.stanford.edu/class/cs329z/slides/lecture13.pdf">PDF</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Mon 9 Nov</td>
+<td>Fireside chat with <a target="_blank" rel="noopener" href="https://www.andrewng.org/">Andrew Ng</a></td>
+<td>Not yet</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Wed 11 Nov</td>
+<td>LLM-as-Judge &amp; Evaluation Infrastructure</td>
+<td>Not yet</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Mon 16 Nov</td>
+<td>Guest lecture: SWE-bench (<a target="_blank" rel="noopener" href="https://www.carlosejimenez.com/">Carlos Jimenez</a>, <a target="_blank" rel="noopener" href="https://codecreator.github.io/">Alexander Wettig</a>)</td>
+<td>Not yet</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Wed 18 Nov</td>
+<td>Agent Safety &amp; Guardrails</td>
+<td>Not yet</td>
+</tr>
+<tr>
+<td>10</td>
+<td>23 and 25 Nov</td>
+<td>No class (Thanksgiving)</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Mon 30 Nov</td>
+<td>Coding &amp; Software Agents</td>
+<td>Not yet</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Wed 2 Dec</td>
+<td>Proactive Agents</td>
+<td>Not yet</td>
+</tr>
+<tr>
+<td>Finals</td>
+<td>Wed 9 Dec</td>
+<td>Final project demo day, 3:30–6:30 p.m.</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="What-each-unit-covers"><a href="#What-each-unit-covers" class="headerlink" title="What each unit covers"></a>What each unit covers</h2><p>The sessions are grouped into units. Each summary below is mine, followed by two or three of the assigned readings, all free to read. The course schedule lists the full set, including optional readings.</p>
+<p><strong>Foundations and landscape</strong> (23–28 Sep). What makes a system agentic rather than a fixed workflow, the parts of an agent (model, reasoning, memory, tools, environment), and the model internals that matter when you build on one: decoding, attention and context length, post-training, and context engineering.</p>
+<ul>
+<li>Zaharia et al., <a target="_blank" rel="noopener" href="https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/">The Shift from Models to Compound AI Systems</a>, BAIR Blog, 2024</li>
+<li>Kapoor et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2407.01502">AI Agents That Matter</a>, TMLR, 2025</li>
+<li>Rajasekaran et al., <a target="_blank" rel="noopener" href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents">Effective Context Engineering for AI Agents</a>, Anthropic, 2025</li>
+</ul>
+<p><strong>Building blocks</strong> (30 Sep–5 Oct). The two ways an agent reaches beyond what the model memorized: retrieval (indexing, sparse and dense retrievers, reranking) and tools called through function calling or the Model Context Protocol, plus how each is benchmarked and how it fails.</p>
+<ul>
+<li>Lewis et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2005.11401">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a>, NeurIPS, 2020</li>
+<li>Schick et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2302.04761">Toolformer: Language Models Can Teach Themselves to Use Tools</a>, NeurIPS, 2023</li>
+<li><a target="_blank" rel="noopener" href="https://modelcontextprotocol.io/specification/2025-06-18">Model Context Protocol specification</a>, revision 2025-06-18</li>
+</ul>
+<p><strong>Frameworks and agent design</strong> (7–12 Oct). What frameworks such as DSPy and LangGraph take over from hand-written code, a tour of open-source agent harnesses, and the standard patterns: fixed workflows versus agents, ReAct-style reasoning and acting, reflection, and ways to keep a long context under control.</p>
+<ul>
+<li>Khattab et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2310.03714">DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines</a>, ICLR, 2024</li>
+<li>Yao et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2210.03629">ReAct: Synergizing Reasoning and Acting in Language Models</a>, ICLR, 2023</li>
+<li>Schluntz and Zhang, <a target="_blank" rel="noopener" href="https://www.anthropic.com/engineering/building-effective-agents">Building Effective AI Agents</a>, Anthropic, 2024</li>
+</ul>
+<p><strong>Memory and multi-agent systems</strong> (14–19 Oct). What an agent should remember and where to keep it, when several agents beat one, how agents coordinate, and the usual reasons multi-agent systems break.</p>
+<ul>
+<li>Sumers et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2309.02427">Cognitive Architectures for Language Agents</a>, TMLR, 2024</li>
+<li>Packer et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2310.08560">MemGPT: Towards LLMs as Operating Systems</a>, arXiv, 2023</li>
+<li>Cemri et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2503.13657">Why Do Multi-Agent LLM Systems Fail?</a>, NeurIPS Datasets &amp; Benchmarks, 2025</li>
+</ul>
+<p><strong>Optimization</strong> (21 Oct). Improving a system by tuning its prompts and examples or by training the model’s weights, and how to choose between the two.</p>
+<ul>
+<li>Agrawal et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2507.19457">GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning</a>, ICLR, 2026</li>
+<li>Opsahl-Ong et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2406.11695">Optimizing Instructions and Demonstrations for Multi-Stage Language Model Programs</a>, EMNLP, 2024</li>
+</ul>
+<p><strong>Data for agentic systems</strong> (28 Oct–2 Nov). Where the data for optimizing and evaluating an agent comes from (logged traces, demonstrations, feedback, synthetic data), and how to pick the examples worth keeping.</p>
+<ul>
+<li>Shankar, <a target="_blank" rel="noopener" href="https://www.sh-reya.com/blog/ai-engineering-flywheel/">Data Flywheels for LLM Applications</a>, 2024</li>
+<li>Yang et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2504.21798">SWE-smith: Scaling Data for Software Engineering Agents</a>, NeurIPS Datasets &amp; Benchmarks, 2025</li>
+<li>Shankar et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2404.12272">Who Validates the Validators? Aligning LLM-Assisted Evaluation with Human Preferences</a>, UIST, 2024</li>
+</ul>
+<p><strong>Evaluation for agentic systems</strong> (4–11 Nov). Designing a benchmark, choosing between code-based graders, LLM judges and human raters, and measuring agents whose results change from run to run.</p>
+<ul>
+<li>Zhu et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2507.02825">Establishing Best Practices for Building Rigorous Agentic Benchmarks</a>, 2025</li>
+<li>Zheng et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2306.05685">Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena</a>, NeurIPS, 2023</li>
+<li>Grace et al., <a target="_blank" rel="noopener" href="https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents">Demystifying Evals for AI Agents</a>, Anthropic, 2026</li>
+</ul>
+<p><strong>Safety</strong> (18 Nov). Prompt injection, privacy risks that come with tool access, sandboxing and permissions, and where to keep a person in the loop.</p>
+<ul>
+<li>Shao et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2409.00138">PrivacyLens: Evaluating Privacy Norm Awareness of LMs in Action</a>, NeurIPS Datasets &amp; Benchmarks, 2024</li>
+<li>OpenAI, <a target="_blank" rel="noopener" href="https://openai.com/index/prompt-injections/">Understanding Prompt Injections: A Frontier Security Challenge</a>, 2025</li>
+</ul>
+<p><strong>Coding and proactive agents</strong> (30 Nov–2 Dec). How coding agents such as SWE-agent, OpenHands and Claude Code are put together, and agents that act before they are asked.</p>
+<ul>
+<li>Yang et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2405.15793">SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering</a>, NeurIPS, 2024</li>
+<li>Wang et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2407.16741">OpenHands: An Open Platform for AI Software Developers</a>, ICLR, 2025</li>
+<li>Shaikh et al., <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2505.10831">Creating General User Models from Computer Use</a>, UIST, 2025</li>
+</ul>
+<p><strong>Guest sessions.</strong> Two benchmark teams talk about their work: Terminal-Bench on 26 October (<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2601.11868">paper</a>, <a target="_blank" rel="noopener" href="https://www.tbench.ai/">site</a>) and SWE-bench on 16 November (<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2310.06770">paper</a>). Andrew Ng joins Diyi Yang for a fireside chat on 9 November.</p>
+<h2 id="Coursework-and-grading"><a href="#Coursework-and-grading" class="headerlink" title="Coursework and grading"></a>Coursework and grading</h2><p>There are two homeworks, each followed by a short closed-book quiz in which students explain their design choices:</p>
+<ul>
+<li><strong>HW1, Build an Agentic Harness</strong> (weeks 3–6, <a target="_blank" rel="noopener" href="https://github.com/cs329z/assignment1-harness">starter code</a>). Build a company’s internal assistant with no agent framework, only chat-completion calls and your own code. It starts as pipelines that search a corporate email archive and grows into a full harness with tools, a terminal, memory and human approval.</li>
+<li><strong>HW2, Evaluate an Agent</strong> (weeks 6–9, <a target="_blank" rel="noopener" href="https://github.com/cs329z/assignment2-evals">starter code</a>). Given a ready-made agent, build an evaluation suite for it: code-based graders, at least one LLM judge, benchmark tasks and an error analysis.</li>
+</ul>
+<p>Each student also records a 10–15 minute video on a recent agent paper of their choice, due 13 November (<a target="_blank" rel="noopener" href="https://web.stanford.edu/class/cs329z/assignments/paper_video.pdf">handout</a>). Peer review runs through the quarter in four rounds: paper videos, midpoint demos, HW2 evaluations and final demos, with two classmates’ work reviewed each time.</p>
+<p>The project is done in teams of one to three people (the staff recommend three), each with a mentor from the teaching team. Teams build and evaluate an agentic system of their choice that touches at least one of the course topics. The <a target="_blank" rel="noopener" href="https://cs329z.stanford.edu/project.html">project page</a> is clear that a system shown working once will not score well: a team has to say what tasks the agent should handle, where its test data comes from and how success is measured, then compare against baselines and analyse the failures. The milestones are:</p>
+<ol>
+<li>A 1–2 page proposal in week 3.</li>
+<li>A recorded midpoint demo and a 3–4 page midway report in week 7.</li>
+<li>An 8-page final report in ICLR format and a live demo on 9 December.</li>
+</ol>
+<p>The midpoint demo and the final report each come with a GitHub repository whose README lets someone else run the system, and every written milestone includes a statement of how AI tools were used.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Weight</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Project (proposal 5, midway report 5, midpoint demo 5, final report 15, final demo 10)</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>Homework (HW1 and HW2, 7.5 each)</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>Quizzes after each homework (7.5 each)</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>Paper video</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>Peer review (four rounds, 5 each)</td>
+<td>20%</td>
+</tr>
+</tbody></table>
+<p>On AI tools, the course expects students to use them. AI-written code is allowed in the homework and the project as long as the student can validate and explain all of it, which the staff check in oral exams. The project reports must be written by the students, though AI can help with brainstorming and feedback.</p>
+<h2 id="Following-along-from-outside-Stanford"><a href="#Following-along-from-outside-Stanford" class="headerlink" title="Following along from outside Stanford"></a>Following along from outside Stanford</h2><p>Most of the material is public: the slides posted so far, the <a target="_blank" rel="noopener" href="https://github.com/cs329z/lecture5-frameworks">lecture 5 demo code</a>, the starter code for both homeworks and almost all of the readings. The lecture recordings are on Canvas and discussion happens on Ed, both limited to people taking the course.</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>Stanford CS329Z: Engineering AI Agents (Course Guide)</p><p><a href="https://songchen.science/blog/posts/95ef431f/">https://songchen.science/blog/posts/95ef431f/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Song Chen</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2026-11-06</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2026-11-06</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/blog/tags/machine-learning/">machine-learning</a><a class="link-muted mr-2" rel="tag" href="/blog/tags/AI-agents/">AI-agents</a><a class="link-muted mr-2" rel="tag" href="/blog/tags/LLM/">LLM</a><a class="link-muted mr-2" rel="tag" href="/blog/tags/Stanford/">Stanford</a></div><div class="sharethis-inline-share-buttons"></div><script src="https://platform-api.sharethis.com/js/sharethis.js#property=652030ec7b301100121bcefa&amp;product=inline-share-buttons&amp;source=platform" defer></script></article></div><div class="card"><div class="card-content"><h3>Related Articles:</h3><span><ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="/blog/posts/cb2fd4b/" title="Machine Learning BCA Simulations" rel="bookmark">Machine Learning BCA Simulations</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="/blog/posts/b1a039fb/" title="Creating a Neural Network and Making Predictions with Python's AI" rel="bookmark">Creating a Neural Network and Making Predictions with Python's AI</a></h3></div></li></ul></span></div></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" href="https://afdian.net/a/chanson" target="_blank" rel="noopener" data-type="afdian"><span class="icon is-small"><i class="fas fa-charging-station"></i></span><span>Afdian.net</span></a><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>Alipay</span><span class="qrcode"><img src="/blog/assets/img/alipay.png" alt="Alipay"></span></a><a class="button donate" href="https://www.buymeacoffee.com/kammichan0" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>Buy me a coffee</span></a><a class="button donate" href="https://patreon.com/user?u=102892122" target="_blank" rel="noopener" data-type="patreon"><span class="icon is-small"><i class="fab fa-patreon"></i></span><span>Patreon</span></a><a class="button donate" data-type="paypal" onclick="document.getElementById(&#039;paypal-donate-form&#039;).submit()"><span class="icon is-small"><i class="fab fa-paypal"></i></span><span>Paypal</span></a><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" rel="noopener" id="paypal-donate-form"><input type="hidden" name="cmd" value="_donations"><input type="hidden" name="business" value="7SHJLQ8H659MU"><input type="hidden" name="currency_code" value="USD"></form><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>Wechat</span><span class="qrcode"><img src="/blog/assets/img/wepay.png" alt="Wechat"></span></a></div></div></div><div class="card"><nav class="post-navigation mt-4 level is-mobile card-content"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/blog/agent-skills/business/"><span class="level-item">Business &amp; Finance | Agent Skills</span><i class="level-item fas fa-chevron-right"></i></a></div></nav></div><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div class="content twikoo" id="twikoo"></div><script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.21/dist/twikoo.all.min.js"></script><script>twikoo.init({
+      envId: 'https://twikoodisqus.vercel.app',
+      onCommentLoaded: function () {
+        var commentContents = document.getElementsByClassName('tk-content');
+        for (var i = 0; i < commentContents.length; i++) {
+          var commentItem = commentContents[i];
+          var imgEls = commentItem.getElementsByTagName('img');
+          if (imgEls.length > 0) {
+            for (var j = 0; j < imgEls.length; j++) {
+              var imgEl = imgEls[j];
+              var aEl = document.createElement('a');
+              aEl.setAttribute('class', 'tk-lg-link');
+              aEl.setAttribute('href', imgEl.getAttribute('src'));
+              aEl.setAttribute('data-src', imgEl.getAttribute('src'));
+              aEl.appendChild(imgEl.cloneNode(false));
+              imgEl.parentNode.insertBefore(aEl, imgEl.nextSibling);
+              imgEl.remove();
+            }
+            if (typeof $.fn.lightGallery === 'function') {
+              $(commentItem).lightGallery({
+                selector: '.tk-lg-link'
+              });
+            }
+          }
+        }
+      }
+    });</script></div></div></div><style>.column.column-left,.column.column-right{display:none}</style><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://www.gravatar.com/avatar/7525ea09384aeb09ec303671d7dca1bf?s=128" alt="Song Chen"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Song Chen</p><p class="is-size-6 is-block">Ph.D. Candiate at Université Paris Saclay &amp; Spin-Ion Technologies</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Paris, France</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/blog/archives"><p class="title">47</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/blog/categories"><p class="title">43</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/blog/tags"><p class="title">43</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/song-chen1" target="_blank" rel="noopener" id="widget-follow">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="GoogleScholar" href="https://scholar.google.com/citations?user=sf-0AGoAAAAJ&amp;hl=de"><i class="fab fa-google-plus-square"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/in/song-chen-3449b9278/"><i class="fab fa-linkedin"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Mail" href="mailto:kammichan90@gmail.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/blog/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/blog/archives/2026/11/"><span class="level-start"><span class="level-item">November 2026</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li><li><a class="level is-mobile" href="/blog/archives/2026/10/"><span class="level-start"><span class="level-item">October 2026</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/blog/archives/2026/08/"><span class="level-start"><span class="level-item">August 2026</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blog/archives/2026/05/"><span class="level-start"><span class="level-item">May 2026</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blog/archives/2024/02/"><span class="level-start"><span class="level-item">February 2024</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blog/archives/2024/01/"><span class="level-start"><span class="level-item">January 2024</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/blog/archives/2023/12/"><span class="level-start"><span class="level-item">December 2023</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/blog/archives/2023/11/"><span class="level-start"><span class="level-item">November 2023</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/blog/archives/2023/10/"><span class="level-start"><span class="level-item">October 2023</span></span><span class="level-end"><span class="level-item tag">15</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/blog/tags/AGI/"><span class="tag">AGI</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/AI-agents/"><span class="tag">AI-agents</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Agent-Skills/"><span class="tag">Agent Skills</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Alfred/"><span class="tag">Alfred</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Automation/"><span class="tag">Automation</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Documentation/"><span class="tag">Documentation</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Hexo/"><span class="tag">Hexo</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/LLM/"><span class="tag">LLM</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Python-library/"><span class="tag">Python_library</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Skills-Agent-skills/"><span class="tag">Skills,Agent skills</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Software/"><span class="tag">Software</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/Stanford/"><span class="tag">Stanford</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/VoltAgent/"><span class="tag">VoltAgent</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/bibliography/"><span class="tag">bibliography</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/chart/"><span class="tag">chart</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/computational-simulation/"><span class="tag">computational simulation</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/condensed-matter-physics/"><span class="tag">condensed-matter physics</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/data-analysis/"><span class="tag">data analysis</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/data-science/"><span class="tag">data-science</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/deep-learning/"><span class="tag">deep-learning</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/encryptAsDiary/"><span class="tag">encryptAsDiary</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/fortran/"><span class="tag">fortran</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/functional-programming/"><span class="tag">functional programming</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/github/"><span class="tag">github</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/machine-learning/"><span class="tag">machine-learning</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/matplotlib/"><span class="tag">matplotlib</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/multiprocessing/"><span class="tag">multiprocessing</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/neural-networks/"><span class="tag">neural-networks</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/physics/"><span class="tag">physics</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/physics-experiment/"><span class="tag">physics experiment</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/plasma-physics/"><span class="tag">plasma physics</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/plugins/"><span class="tag">plugins</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/poetry/"><span class="tag">poetry</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/python/"><span class="tag">python</span><span class="tag">16</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/python-configuration/"><span class="tag">python_configuration</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/python-editors/"><span class="tag">python_editors</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/python-intermediate/"><span class="tag">python_intermediate</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/python-tools/"><span class="tag">python_tools</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/rust/"><span class="tag">rust</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/semiconductors/"><span class="tag">semiconductors</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/superintelligence/"><span class="tag">superintelligence</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/uv/"><span class="tag">uv</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/tags/zotero/"><span class="tag">zotero</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="https://api.follow.it/subscription-form/YnRDa2puUlErMTdqQ2Q4aDRrem93bHllemF6Y1ZMSW9hQSsrQ3NKTzRXSGRpTlRocW13MXM2UUw4YUFRdUFhUVRJTk1kaVFPWjc2MUQ1TTlLZ3hvcnhLNHJ2bE4yS3VzaTZ4eTliREZjZEk3UHRIWXBRbkxnN3FVUFczVm9TZDF8c2Z0em5PTnVFYks5TU15dUtPdW05czZIeEF4V0dvYnhQVnJtUGNUZEIxYz0=/8" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#At-a-glance"><span class="level-left"><span class="level-item">1</span><span class="level-item">At a glance</span></span></a></li><li><a class="level is-mobile" href="#Schedule"><span class="level-left"><span class="level-item">2</span><span class="level-item">Schedule</span></span></a></li><li><a class="level is-mobile" href="#What-each-unit-covers"><span class="level-left"><span class="level-item">3</span><span class="level-item">What each unit covers</span></span></a></li><li><a class="level is-mobile" href="#Coursework-and-grading"><span class="level-left"><span class="level-item">4</span><span class="level-item">Coursework and grading</span></span></a></li><li><a class="level is-mobile" href="#Following-along-from-outside-Stanford"><span class="level-left"><span class="level-item">5</span><span class="level-item">Following along from outside Stanford</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/blog/js/toc.js" defer></script></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-06T10:26:46.000Z">2026-11-06</time></p><p class="title"><a href="/blog/posts/95ef431f/">Stanford CS329Z: Engineering AI Agents (Course Guide)</a></p><p class="categories"><a href="/blog/categories/Machine-learning/">Machine-learning</a> / <a href="/blog/categories/Machine-learning/AI-Agents/">AI-Agents</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/agent-skills/business/">Business &amp; Finance | Agent Skills</a></p><p class="categories"><a href="/blog/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/categories/Agent-Skills/Business-Finance/">Business &amp; Finance</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/agent-skills/ai_data/">AI &amp; Data | Agent Skills</a></p><p class="categories"><a href="/blog/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/categories/Agent-Skills/AI-Data/">AI &amp; Data</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/agent-skills/documents/">Writing &amp; Documents | Agent Skills</a></p><p class="categories"><a href="/blog/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/categories/Agent-Skills/Writing-Documents/">Writing &amp; Documents</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/agent-skills/cloud/">Cloud &amp; Operations | Agent Skills</a></p><p class="categories"><a href="/blog/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/categories/Agent-Skills/Cloud-Operations/">Cloud &amp; Operations</a></p></div></article></div></div><div class="card widget" id="twikoo-new"><div class="card-content"><div class="menu"><h3 class="menu-label">Latest Comments</h3><script>window.twikooEnvId = 'https://twikoodisqus.vercel.app';</script><div class="twikoo-new-container"></div></div></div></div></div><style>.column.column-left,.column.column-right{display:block}</style></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/blog/"><img class="logo-img" src="/blog/images/logo.png" alt="Project Geeker" height="28"><img class="logo-img-dark" src="/blog/images/logo-dark.png" alt="Project Geeker" height="28"></a><p class="is-size-7"><span>&copy; 2026 Song Chen</span>  Right to final interpretation by <a href="https://songchen.science" target="_blank" rel="noopener">Song</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p><p class="is-size-7">Power with 💖</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.21/dist/twikoo.all.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/blog/js/column.js"></script><script src="/blog/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/blog/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-right",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mhchem.min.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><script src="/blog/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><div class="searchbox-pinyin"><label class="checkbox"><input id="search-by-pinyin" type="checkbox" checked="checked"><span> Pinyin search</span></label></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/imaegoo/pinyin.js" defer></script><script src="/blog/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/blog/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script><script type="text/javascript" src="/js/imaegoo/imaegoo.js"></script><script type="text/javascript" src="/js/imaegoo/universe.js"></script><!-- hexo injector body_end start --><script src="/assets/mmedia/mmedia-loader.js"></script><!-- hexo injector body_end end --></body></html>

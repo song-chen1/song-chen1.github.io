@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2026-11-02T04:00:00.000Z</updated>
+  <updated>2026-11-06T10:35:04.463Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,68 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Stanford CS329Z: Engineering AI Agents (Course Guide)</title>
+    <link href="https://songchen.science/blog/posts/95ef431f/"/>
+    <id>https://songchen.science/blog/posts/95ef431f/</id>
+    <published>2026-11-06T10:26:46.000Z</published>
+    <updated>2026-11-06T10:35:04.463Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://cs329z.stanford.edu/&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;Stanford CS329Z&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A guide to &lt;a href=&quot;https://cs329z.stanford.edu/&quot;&gt;Stanford CS329Z: Engineering AI Agents&lt;/a&gt;, written in my own words from the course website as it stood on 6 November 2026. The slides, assignments and course text belong to the CS329Z teaching team; follow the links for the originals. The schedule is tentative and may change during the quarter.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;CS329Z is a 3-unit Stanford course for Autumn 2026, taught by &lt;a href=&quot;https://cs.stanford.edu/~diyiy/&quot;&gt;Diyi Yang&lt;/a&gt;, &lt;a href=&quot;https://michryan.com/&quot;&gt;Michael Ryan&lt;/a&gt; and &lt;a href=&quot;https://john-b-yang.github.io/&quot;&gt;John Yang&lt;/a&gt;. It is about building software around language models: from a single prompted call to pipelines, then to compound systems that combine models with retrievers, tools and optimizers, and finally to agents that choose their own next step.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="AI-Agents" scheme="https://songchen.science/blog/categories/Machine-learning/AI-Agents/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="AI-agents" scheme="https://songchen.science/blog/tags/AI-agents/"/>
+    
+    <category term="LLM" scheme="https://songchen.science/blog/tags/LLM/"/>
+    
+    <category term="Stanford" scheme="https://songchen.science/blog/tags/Stanford/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Business &amp; Finance | Agent Skills</title>
+    <link href="https://songchen.science/blog/agent-skills/business/"/>
+    <id>https://songchen.science/blog/agent-skills/business/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Business-Finance&quot;&gt;&lt;a href=&quot;#Business-Finance&quot; class=&quot;headerlink&quot; title=&quot;Business &amp;amp; Finance&quot;&gt;&lt;/a&gt;Business &amp;amp;</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
+    
+    <category term="Business &amp; Finance" scheme="https://songchen.science/blog/categories/Agent-Skills/Business-Finance/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
+    
+  </entry>
   
   <entry>
     <title>AI &amp; Data | Agent Skills</title>
@@ -46,9 +108,9 @@
   </entry>
   
   <entry>
-    <title>Agent Tools &amp; Automation | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/automation/"/>
-    <id>https://songchen.science/blog/agent-skills/automation/</id>
+    <title>Writing &amp; Documents | Agent Skills</title>
+    <link href="https://songchen.science/blog/agent-skills/documents/"/>
+    <id>https://songchen.science/blog/agent-skills/documents/</id>
     <published>2026-11-02T04:00:00.000Z</published>
     <updated>2026-11-02T04:00:00.000Z</updated>
     
@@ -57,7 +119,7 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Agent-Tools-Automation&quot;&gt;&lt;a href=&quot;#Agent-Tools-Automation&quot; class=&quot;headerlink&quot; title=&quot;Agent Tools &amp;amp; Automation&quot;&gt;&lt;/a&gt;Agent Tools</summary>
+    <summary type="html">&lt;h1 id=&quot;Writing-Documents&quot;&gt;&lt;a href=&quot;#Writing-Documents&quot; class=&quot;headerlink&quot; title=&quot;Writing &amp;amp; Documents&quot;&gt;&lt;/a&gt;Writing &amp;amp;</summary>
         
       
     
@@ -65,36 +127,7 @@
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
     
-    <category term="Agent Tools &amp; Automation" scheme="https://songchen.science/blog/categories/Agent-Skills/Agent-Tools-Automation/"/>
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
-    
-    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Business &amp; Finance | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/business/"/>
-    <id>https://songchen.science/blog/agent-skills/business/</id>
-    <published>2026-11-02T04:00:00.000Z</published>
-    <updated>2026-11-02T04:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Business-Finance&quot;&gt;&lt;a href=&quot;#Business-Finance&quot; class=&quot;headerlink&quot; title=&quot;Business &amp;amp; Finance&quot;&gt;&lt;/a&gt;Business &amp;amp;</summary>
-        
-      
-    
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
-    
-    <category term="Business &amp; Finance" scheme="https://songchen.science/blog/categories/Agent-Skills/Business-Finance/"/>
+    <category term="Writing &amp; Documents" scheme="https://songchen.science/blog/categories/Agent-Skills/Writing-Documents/"/>
     
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
@@ -162,6 +195,64 @@
   </entry>
   
   <entry>
+    <title>Agent Tools &amp; Automation | Agent Skills</title>
+    <link href="https://songchen.science/blog/agent-skills/automation/"/>
+    <id>https://songchen.science/blog/agent-skills/automation/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Agent-Tools-Automation&quot;&gt;&lt;a href=&quot;#Agent-Tools-Automation&quot; class=&quot;headerlink&quot; title=&quot;Agent Tools &amp;amp; Automation&quot;&gt;&lt;/a&gt;Agent Tools</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
+    
+    <category term="Agent Tools &amp; Automation" scheme="https://songchen.science/blog/categories/Agent-Skills/Agent-Tools-Automation/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Security &amp; Privacy | Agent Skills</title>
+    <link href="https://songchen.science/blog/agent-skills/security/"/>
+    <id>https://songchen.science/blog/agent-skills/security/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Security-Privacy&quot;&gt;&lt;a href=&quot;#Security-Privacy&quot; class=&quot;headerlink&quot; title=&quot;Security &amp;amp; Privacy&quot;&gt;&lt;/a&gt;Security &amp;amp;</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
+    
+    <category term="Security &amp; Privacy" scheme="https://songchen.science/blog/categories/Agent-Skills/Security-Privacy/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Design &amp; Frontend | Agent Skills</title>
     <link href="https://songchen.science/blog/agent-skills/design/"/>
     <id>https://songchen.science/blog/agent-skills/design/</id>
@@ -191,9 +282,9 @@
   </entry>
   
   <entry>
-    <title>Writing &amp; Documents | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/documents/"/>
-    <id>https://songchen.science/blog/agent-skills/documents/</id>
+    <title>Specialized Domains | Agent Skills</title>
+    <link href="https://songchen.science/blog/agent-skills/specialized/"/>
+    <id>https://songchen.science/blog/agent-skills/specialized/</id>
     <published>2026-11-02T04:00:00.000Z</published>
     <updated>2026-11-02T04:00:00.000Z</updated>
     
@@ -202,7 +293,7 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Writing-Documents&quot;&gt;&lt;a href=&quot;#Writing-Documents&quot; class=&quot;headerlink&quot; title=&quot;Writing &amp;amp; Documents&quot;&gt;&lt;/a&gt;Writing &amp;amp;</summary>
+    <summary type="html">&lt;h1 id=&quot;Specialized-Domains&quot;&gt;&lt;a href=&quot;#Specialized-Domains&quot; class=&quot;headerlink&quot; title=&quot;Specialized Domains&quot;&gt;&lt;/a&gt;Specialized</summary>
         
       
     
@@ -210,36 +301,7 @@
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
     
-    <category term="Writing &amp; Documents" scheme="https://songchen.science/blog/categories/Agent-Skills/Writing-Documents/"/>
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
-    
-    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Research &amp; Learning | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/research/"/>
-    <id>https://songchen.science/blog/agent-skills/research/</id>
-    <published>2026-11-02T04:00:00.000Z</published>
-    <updated>2026-11-02T04:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Research-Learning&quot;&gt;&lt;a href=&quot;#Research-Learning&quot; class=&quot;headerlink&quot; title=&quot;Research &amp;amp; Learning&quot;&gt;&lt;/a&gt;Research &amp;amp;</summary>
-        
-      
-    
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
-    
-    <category term="Research &amp; Learning" scheme="https://songchen.science/blog/categories/Agent-Skills/Research-Learning/"/>
+    <category term="Specialized Domains" scheme="https://songchen.science/blog/categories/Agent-Skills/Specialized-Domains/"/>
     
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
@@ -278,9 +340,9 @@
   </entry>
   
   <entry>
-    <title>Specialized Domains | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/specialized/"/>
-    <id>https://songchen.science/blog/agent-skills/specialized/</id>
+    <title>Research &amp; Learning | Agent Skills</title>
+    <link href="https://songchen.science/blog/agent-skills/research/"/>
+    <id>https://songchen.science/blog/agent-skills/research/</id>
     <published>2026-11-02T04:00:00.000Z</published>
     <updated>2026-11-02T04:00:00.000Z</updated>
     
@@ -289,7 +351,7 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Specialized-Domains&quot;&gt;&lt;a href=&quot;#Specialized-Domains&quot; class=&quot;headerlink&quot; title=&quot;Specialized Domains&quot;&gt;&lt;/a&gt;Specialized</summary>
+    <summary type="html">&lt;h1 id=&quot;Research-Learning&quot;&gt;&lt;a href=&quot;#Research-Learning&quot; class=&quot;headerlink&quot; title=&quot;Research &amp;amp; Learning&quot;&gt;&lt;/a&gt;Research &amp;amp;</summary>
         
       
     
@@ -297,7 +359,7 @@
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
     
-    <category term="Specialized Domains" scheme="https://songchen.science/blog/categories/Agent-Skills/Specialized-Domains/"/>
+    <category term="Research &amp; Learning" scheme="https://songchen.science/blog/categories/Agent-Skills/Research-Learning/"/>
     
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
@@ -365,35 +427,6 @@
   </entry>
   
   <entry>
-    <title>Security &amp; Privacy | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/security/"/>
-    <id>https://songchen.science/blog/agent-skills/security/</id>
-    <published>2026-11-02T04:00:00.000Z</published>
-    <updated>2026-11-02T04:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Security-Privacy&quot;&gt;&lt;a href=&quot;#Security-Privacy&quot; class=&quot;headerlink&quot; title=&quot;Security &amp;amp; Privacy&quot;&gt;&lt;/a&gt;Security &amp;amp;</summary>
-        
-      
-    
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
-    
-    <category term="Security &amp; Privacy" scheme="https://songchen.science/blog/categories/Agent-Skills/Security-Privacy/"/>
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
-    
-    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
     <title>VoiceStudio (Repost)</title>
     <link href="https://songchen.science/blog/posts/607938b0/"/>
     <id>https://songchen.science/blog/posts/607938b0/</id>
@@ -444,9 +477,9 @@
     <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
     
     
-    <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
-    
     <category term="Documentation" scheme="https://songchen.science/blog/tags/Documentation/"/>
+    
+    <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
     
     <category term="uv" scheme="https://songchen.science/blog/tags/uv/"/>
     
@@ -537,25 +570,6 @@
     
     
     <category term="rust" scheme="https://songchen.science/blog/tags/rust/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Fortran -  Where we meet scientific and engineering applications</title>
-    <link href="https://songchen.science/blog/posts/4b4b0500/"/>
-    <id>https://songchen.science/blog/posts/4b4b0500/</id>
-    <published>2024-01-27T17:13:03.000Z</published>
-    <updated>2024-02-14T21:25:41.388Z</updated>
-    
-    
-    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
-    
-    
-    
-    <category term="Fortran" scheme="https://songchen.science/blog/categories/Fortran/"/>
-    
-    
-    <category term="fortran" scheme="https://songchen.science/blog/tags/fortran/"/>
     
   </entry>
   
