@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/zh-CN/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/zh-CN/"/>
-  <updated>2026-11-02T04:00:00.000Z</updated>
+  <updated>2026-11-11T08:57:32.841Z</updated>
   <id>https://songchen.science/blog/zh-CN/</id>
   
   <author>
@@ -15,6 +15,95 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Scientific Agent Skills：科研智能体技能库 (转载)</title>
+    <link href="https://songchen.science/blog/zh-CN/posts/431eed1c/"/>
+    <id>https://songchen.science/blog/zh-CN/posts/431eed1c/</id>
+    <published>2026-11-11T07:42:20.000Z</published>
+    <updated>2026-11-11T08:57:32.841Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://github.com/K-Dense-AI/scientific-agent-skills&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;GitHub · K-Dense-AI&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;转载并翻译自 GitHub 上的 &lt;a href=&quot;https://github.com/K-Dense-AI/scientific-agent-skills&quot;&gt;Scientific Agent Skills README&lt;/a&gt;，依据 2026 年 11 月 11 日的版本（2.72.0）。版权所有 (c) 2025 K-Dense Inc.，依据 &lt;a href=&quot;https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/LICENSE.md&quot;&gt;MIT 许可证&lt;/a&gt;使用，完整许可声明见文末。代码块、示例提示词和英文资料的标题保留原文。英文原文见英文博客的&lt;a href=&quot;https://songchen.science/blog/posts/63dd18e0/&quot;&gt;转载&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这是由 &lt;a href=&quot;https://k-dense.ai/&quot;&gt;K-Dense&lt;/a&gt; 创建的一套面向 AI 智能体的科学与研究技能，共 &lt;strong&gt;177 个&lt;/strong&gt;，覆盖生物学、化学、医学、物理学、工程、地球科学、数据分析和科学传播。每个技能针对某个特定的软件包、数据源或工作流提供指导，包括正确使用它所需的科学惯例和验证检查。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
+    
+    <category term="研究与学习" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
+    
+    <category term="AI-agents" scheme="https://songchen.science/blog/zh-CN/tags/AI-agents/"/>
+    
+    <category term="github" scheme="https://songchen.science/blog/zh-CN/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>人工智能与数据 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/ai_data/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/ai_data/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;人工智能与数据&quot;&gt;&lt;a href=&quot;#人工智能与数据&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
+    
+    <category term="人工智能与数据" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8E%E6%95%B0%E6%8D%AE/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>智能体工具与自动化 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/automation/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/automation/</id>
+    <published>2026-11-02T04:00:00.000Z</published>
+    <updated>2026-11-02T04:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;智能体工具与自动化&quot;&gt;&lt;a href=&quot;#智能体工具与自动化&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
+    
+    <category term="智能体工具与自动化" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E6%99%BA%E8%83%BD%E4%BD%93%E5%B7%A5%E5%85%B7%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+    
+    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
+    
+    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
+    
+  </entry>
   
   <entry>
     <title>商业与财务 | Agent Skills</title>
@@ -46,9 +135,9 @@
   </entry>
   
   <entry>
-    <title>设计与前端 | Agent Skills</title>
-    <link href="https://songchen.science/blog/zh-CN/agent-skills/design/"/>
-    <id>https://songchen.science/blog/zh-CN/agent-skills/design/</id>
+    <title>云与运维 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/cloud/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/cloud/</id>
     <published>2026-11-02T04:00:00.000Z</published>
     <updated>2026-11-02T04:00:00.000Z</updated>
     
@@ -57,7 +146,8 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;设计与前端&quot;&gt;&lt;a href=&quot;#设计与前端&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;云与运维&quot;&gt;&lt;a href=&quot;#云与运维&quot; class=&quot;headerlink&quot; title=&quot;云与运维&quot;&gt;&lt;/a&gt;云与运维&lt;/h1&gt;&lt;p&gt;云与运维类技能聚焦部署、基础设施、可观测性、可靠性和云服务配置。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目录快照：2026 年</summary>
         
       
     
@@ -65,7 +155,7 @@
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
     
-    <category term="设计与前端" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%89%8D%E7%AB%AF/"/>
+    <category term="云与运维" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E4%BA%91%E4%B8%8E%E8%BF%90%E7%BB%B4/"/>
     
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
@@ -105,9 +195,9 @@
   </entry>
   
   <entry>
-    <title>智能体工具与自动化 | Agent Skills</title>
-    <link href="https://songchen.science/blog/zh-CN/agent-skills/automation/"/>
-    <id>https://songchen.science/blog/zh-CN/agent-skills/automation/</id>
+    <title>研究与学习 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/research/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/research/</id>
     <published>2026-11-02T04:00:00.000Z</published>
     <updated>2026-11-02T04:00:00.000Z</updated>
     
@@ -116,7 +206,7 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;智能体工具与自动化&quot;&gt;&lt;a href=&quot;#智能体工具与自动化&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;研究与学习&quot;&gt;&lt;a href=&quot;#研究与学习&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -124,7 +214,7 @@
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
     
-    <category term="智能体工具与自动化" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E6%99%BA%E8%83%BD%E4%BD%93%E5%B7%A5%E5%85%B7%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <category term="研究与学习" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/"/>
     
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
@@ -134,9 +224,9 @@
   </entry>
   
   <entry>
-    <title>人工智能与数据 | Agent Skills</title>
-    <link href="https://songchen.science/blog/zh-CN/agent-skills/ai_data/"/>
-    <id>https://songchen.science/blog/zh-CN/agent-skills/ai_data/</id>
+    <title>设计与前端 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/design/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/design/</id>
     <published>2026-11-02T04:00:00.000Z</published>
     <updated>2026-11-02T04:00:00.000Z</updated>
     
@@ -145,7 +235,7 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;人工智能与数据&quot;&gt;&lt;a href=&quot;#人工智能与数据&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;设计与前端&quot;&gt;&lt;a href=&quot;#设计与前端&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -153,7 +243,7 @@
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
     
-    <category term="人工智能与数据" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8E%E6%95%B0%E6%8D%AE/"/>
+    <category term="设计与前端" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%89%8D%E7%AB%AF/"/>
     
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
@@ -222,9 +312,9 @@
   </entry>
   
   <entry>
-    <title>研究与学习 | Agent Skills</title>
-    <link href="https://songchen.science/blog/zh-CN/agent-skills/research/"/>
-    <id>https://songchen.science/blog/zh-CN/agent-skills/research/</id>
+    <title>安全与隐私 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/security/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/security/</id>
     <published>2026-11-02T04:00:00.000Z</published>
     <updated>2026-11-02T04:00:00.000Z</updated>
     
@@ -233,7 +323,7 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;研究与学习&quot;&gt;&lt;a href=&quot;#研究与学习&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;安全与隐私&quot;&gt;&lt;a href=&quot;#安全与隐私&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -241,37 +331,7 @@
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
     
-    <category term="研究与学习" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
-    
-    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件开发 | Agent Skills</title>
-    <link href="https://songchen.science/blog/zh-CN/agent-skills/software/"/>
-    <id>https://songchen.science/blog/zh-CN/agent-skills/software/</id>
-    <published>2026-11-02T04:00:00.000Z</published>
-    <updated>2026-11-02T04:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;软件开发&quot;&gt;&lt;a href=&quot;#软件开发&quot; class=&quot;headerlink&quot; title=&quot;软件开发&quot;&gt;&lt;/a&gt;软件开发&lt;/h1&gt;&lt;p&gt;软件开发类技能提供框架、编程语言、API、数据库和应用开发方面的指导。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;目录快照：2026</summary>
-        
-      
-    
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
-    
-    <category term="软件开发" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    <category term="安全与隐私" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E5%AE%89%E5%85%A8%E4%B8%8E%E9%9A%90%E7%A7%81/"/>
     
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
@@ -340,9 +400,9 @@
   </entry>
   
   <entry>
-    <title>安全与隐私 | Agent Skills</title>
-    <link href="https://songchen.science/blog/zh-CN/agent-skills/security/"/>
-    <id>https://songchen.science/blog/zh-CN/agent-skills/security/</id>
+    <title>软件开发 | Agent Skills</title>
+    <link href="https://songchen.science/blog/zh-CN/agent-skills/software/"/>
+    <id>https://songchen.science/blog/zh-CN/agent-skills/software/</id>
     <published>2026-11-02T04:00:00.000Z</published>
     <updated>2026-11-02T04:00:00.000Z</updated>
     
@@ -351,7 +411,8 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;安全与隐私&quot;&gt;&lt;a href=&quot;#安全与隐私&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;软件开发&quot;&gt;&lt;a href=&quot;#软件开发&quot; class=&quot;headerlink&quot; title=&quot;软件开发&quot;&gt;&lt;/a&gt;软件开发&lt;/h1&gt;&lt;p&gt;软件开发类技能提供框架、编程语言、API、数据库和应用开发方面的指导。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目录快照：2026</summary>
         
       
     
@@ -359,37 +420,7 @@
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
     
-    <category term="安全与隐私" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E5%AE%89%E5%85%A8%E4%B8%8E%E9%9A%90%E7%A7%81/"/>
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
-    
-    <category term="VoltAgent" scheme="https://songchen.science/blog/zh-CN/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>云与运维 | Agent Skills</title>
-    <link href="https://songchen.science/blog/zh-CN/agent-skills/cloud/"/>
-    <id>https://songchen.science/blog/zh-CN/agent-skills/cloud/</id>
-    <published>2026-11-02T04:00:00.000Z</published>
-    <updated>2026-11-02T04:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;云与运维&quot;&gt;&lt;a href=&quot;#云与运维&quot; class=&quot;headerlink&quot; title=&quot;云与运维&quot;&gt;&lt;/a&gt;云与运维&lt;/h1&gt;&lt;p&gt;云与运维类技能聚焦部署、基础设施、可观测性、可靠性和云服务配置。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;目录快照：2026 年</summary>
-        
-      
-    
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/"/>
-    
-    <category term="云与运维" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E4%BA%91%E4%B8%8E%E8%BF%90%E7%BB%B4/"/>
+    <category term="软件开发" scheme="https://songchen.science/blog/zh-CN/categories/Agent-Skills/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
     
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/zh-CN/tags/Agent-Skills/"/>
@@ -539,31 +570,6 @@
     
     
     <category term="Python" scheme="https://songchen.science/blog/zh-CN/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>多版本Python管理，轻松应对不同需求</title>
-    <link href="https://songchen.science/blog/zh-CN/posts/dea9e976/"/>
-    <id>https://songchen.science/blog/zh-CN/posts/dea9e976/</id>
-    <published>2023-10-18T13:25:44.000Z</published>
-    <updated>2023-10-26T20:21:39.102Z</updated>
-    
-    
-    <summary type="html">您是否曾想过为支持多个Python版本的项目贡献自己的力量，但却不确定如何轻松测试所有这些版本？您是否对Python的最新和最出色的版本感到好奇？也许您想尝试这些新功能，但又不希望担心损害您的开发环境。幸运的是，如果您使用pyenv，管理多个Python版本将不再令人困惑。本博客将为您提供一个精彩的概述，展示如何最大程度地提高您在项目上的工作效率，同时将头痛的时间减到最低，让您可以专注于使用正确的Python版本。</summary>
-    
-    
-    
-    <category term="Python" scheme="https://songchen.science/blog/zh-CN/categories/Python/"/>
-    
-    <category term="Tools" scheme="https://songchen.science/blog/zh-CN/categories/Python/Tools/"/>
-    
-    <category term="Configuration" scheme="https://songchen.science/blog/zh-CN/categories/Python/Configuration/"/>
-    
-    
-    <category term="Python" scheme="https://songchen.science/blog/zh-CN/tags/Python/"/>
-    
-    <category term="Pyenv" scheme="https://songchen.science/blog/zh-CN/tags/Pyenv/"/>
     
   </entry>
   

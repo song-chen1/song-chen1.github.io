@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Scientific Agent Skills：科研智能体技能库 (转载) - Project Geeker</title><link rel="manifest" href="/blog/zh-CN/manifest.json"><meta name="application-name" content="Project Geeker"><meta name="msapplication-TileImage" content="/assets/icons/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Project Geeker"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="&amp;amp;nbsp;&amp;amp;nbsp;GitHub · K-Dense-AI   转载并翻译自 GitHub 上的 Scientific Agent Skills README，依据 2026 年 11 月 11 日的版本（2.72.0）。版权所有 (c) 2025 K-Dense Inc.，依据 MIT 许可证使用，完整许可声明见文末。代码块、示例提示词和英文资料的标题保留原文。英文原文见英文博客的转载。"><meta property="og:type" content="article"><meta property="og:title" content="Scientific Agent Skills：科研智能体技能库 (转载)"><meta property="og:url" content="https://songchen.science/blog/zh-CN/posts/431eed1c/"><meta property="og:site_name" content="Project Geeker"><meta property="og:description" content="&amp;amp;nbsp;&amp;amp;nbsp;GitHub · K-Dense-AI   转载并翻译自 GitHub 上的 Scientific Agent Skills README，依据 2026 年 11 月 11 日的版本（2.72.0）。版权所有 (c) 2025 K-Dense Inc.，依据 MIT 许可证使用，完整许可声明见文末。代码块、示例提示词和英文资料的标题保留原文。英文原文见英文博客的转载。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://img.shields.io/badge/License-MIT-yellow.svg"><meta property="og:image" content="https://img.shields.io/badge/arXiv-2609.00065-b31b1b.svg"><meta property="og:image" content="https://img.shields.io/badge/Version-2.72.0-blue.svg"><meta property="og:image" content="https://img.shields.io/badge/Skills-177-brightgreen.svg"><meta property="og:image" content="https://img.shields.io/badge/Databases-100%2B-orange.svg"><meta property="og:image" content="https://img.shields.io/badge/Standard-Agent_Skills-blueviolet.svg"><meta property="og:image" content="https://img.shields.io/badge/Standard-Agent_Plugins-0A7A72.svg"><meta property="og:image" content="https://github.com/K-Dense-AI/scientific-agent-skills/actions/workflows/security-scan.yml/badge.svg"><meta property="og:image" content="https://github.com/K-Dense-AI/scientific-agent-skills/actions/workflows/skill-tests.yml/badge.svg"><meta property="og:image" content="https://img.shields.io/badge/Works_with-Cursor_%7C_Claude_Code_%7C_Codex_%7C_Google_Antigravity-blue.svg"><meta property="og:image" content="https://img.shields.io/badge/Follow_on_X-%40k__dense__ai-000000?logo=x"><meta property="og:image" content="https://img.shields.io/badge/LinkedIn-K--Dense_Inc.-0A66C2?logo=linkedin"><meta property="og:image" content="https://img.shields.io/badge/YouTube-K--Dense_Inc.-FF0000?logo=youtube"><meta property="og:image" content="https://img.shields.io/badge/Reddit-u%2F--k--dense---FF4500?logo=reddit&amp;logoColor=white"><meta property="article:published_time" content="2026-11-11T07:42:20.000Z"><meta property="article:modified_time" content="2026-11-11T08:57:32.841Z"><meta property="article:author" content="Song Chen"><meta property="article:tag" content="Agent Skills"><meta property="article:tag" content="AI-agents"><meta property="article:tag" content="github"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://img.shields.io/badge/License-MIT-yellow.svg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://songchen.science/blog/zh-CN/posts/431eed1c/"},"headline":"Scientific Agent Skills：科研智能体技能库 (转载)","image":[],"datePublished":"2026-11-11T07:42:20.000Z","dateModified":"2026-11-11T08:57:32.841Z","author":{"@type":"Person","name":"Song Chen"},"publisher":{"@type":"Organization","name":"Project Geeker","logo":{"@type":"ImageObject","url":{"light":"/images/logo.png","dark":"/images/logo-dark.png"}}},"description":"&amp;nbsp;&amp;nbsp;GitHub · K-Dense-AI   转载并翻译自 GitHub 上的 Scientific Agent Skills README，依据 2026 年 11 月 11 日的版本（2.72.0）。版权所有 (c) 2025 K-Dense Inc.，依据 MIT 许可证使用，完整许可声明见文末。代码块、示例提示词和英文资料的标题保留原文。英文原文见英文博客的转载。"}</script><link rel="canonical" href="https://songchen.science/blog/zh-CN/posts/431eed1c/"><link rel="alternate" href="/blog/zh-CN/atom.xml" title="Project Geeker" type="application/atom+xml"><link rel="icon" href="/blog/zh-CN/assets/icons/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="/blog/zh-CN/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><meta name="follow.it-verification-code" content="uc2EwCtSW92aTx5KkxEk"><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head><body class="is-3-column"><script type="text/javascript" src="/js/imaegoo/night.js"></script><canvas id="universe"></canvas><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/blog/zh-CN/"><img class="logo-img" src="/blog/zh-CN/images/logo.png" alt="Project Geeker" height="28"><img class="logo-img-dark" src="/blog/zh-CN/images/logo-dark.png" alt="Project Geeker" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/blog/zh-CN/">首页</a><a class="navbar-item" href="/blog/zh-CN/archives/">时间轴</a><a class="navbar-item" href="/blog/zh-CN/categories/">分类</a><a class="navbar-item" href="/blog/zh-CN/tags/">标签</a><a class="navbar-item" href="/blog/zh-CN/blogroll/">友情链接</a><a class="navbar-item" href="/blog/zh-CN/guestbook/">留言板</a><a class="navbar-item" href="/blog/zh-CN/about/me">关于</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i><span>  Catalogue</span></a><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="画廊" href="/blog/zh-CN/gallery/"><i class="fas fa-images"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="GoogleDrive" href="https://goindex.chen-song90.workers.dev"><i class="fab fa-google-drive"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="iCloud" href="https://hitchhiker.azurewebsites.net"><i class="fas fa-cloud"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" href="https://songchen.science/blog/"> English</a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2026-11-11T07:42:20.000Z" title="11/11/2026, 3:42:20 PM">2026-11-11</time>发表</span><span class="level-item"><time dateTime="2026-11-11T08:57:32.841Z" title="11/11/2026, 4:57:32 PM">2026-11-11</time>更新</span><span class="level-item"><a class="link-muted" href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a><span> / </span><a class="link-muted" href="/blog/zh-CN/categories/Agent-Skills/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习</a></span><span class="level-item">3 小时读完 (大约22584个字)</span><span class="level-item leancloud_visitors" id="/blog/zh-CN/posts/431eed1c/" data-flag-title="Scientific Agent Skills：科研智能体技能库 (转载)"><i class="far fa-eye"></i>&nbsp;&nbsp;<span id="twikoo_visitors"><i class="fa fa-spinner fa-spin"></i></span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">Scientific Agent Skills：科研智能体技能库 (转载)</h1><div class="content"><a class="tag is-dark is-medium" target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills">
+<span class="icon"><i class="fa fa-book"></i></span>&nbsp;&nbsp;GitHub · K-Dense-AI</a>
+
+<blockquote>
+<p>转载并翻译自 GitHub 上的 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills">Scientific Agent Skills README</a>，依据 2026 年 11 月 11 日的版本（2.72.0）。版权所有 (c) 2025 K-Dense Inc.，依据 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/LICENSE.md">MIT 许可证</a>使用，完整许可声明见文末。代码块、示例提示词和英文资料的标题保留原文。英文原文见英文博客的<a href="https://songchen.science/blog/posts/63dd18e0/">转载</a>。</p>
+</blockquote>
+<p>这是由 <a target="_blank" rel="noopener" href="https://k-dense.ai/">K-Dense</a> 创建的一套面向 AI 智能体的科学与研究技能，共 <strong>177 个</strong>，覆盖生物学、化学、医学、物理学、工程、地球科学、数据分析和科学传播。每个技能针对某个特定的软件包、数据源或工作流提供指导，包括正确使用它所需的科学惯例和验证检查。</p>
+<span id="more"></span>
+
+<p><a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a> <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2609.00065"><img src="https://img.shields.io/badge/arXiv-2609.00065-b31b1b.svg" alt="arXiv"></a> <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/pyproject.toml"><img src="https://img.shields.io/badge/Version-2.72.0-blue.svg" alt="Version"></a> <a href="#%F0%9F%93%A6-%E5%8C%85%E5%90%AB%E5%86%85%E5%AE%B9"><img src="https://img.shields.io/badge/Skills-177-brightgreen.svg" alt="Skills"></a> <a href="#%F0%9F%93%A6-%E5%8C%85%E5%90%AB%E5%86%85%E5%AE%B9"><img src="https://img.shields.io/badge/Databases-100%2B-orange.svg" alt="Databases"></a> <a target="_blank" rel="noopener" href="https://agentskills.io/"><img src="https://img.shields.io/badge/Standard-Agent_Skills-blueviolet.svg" alt="Agent Skills"></a> <a target="_blank" rel="noopener" href="https://agent-plugins.org/"><img src="https://img.shields.io/badge/Standard-Agent_Plugins-0A7A72.svg" alt="Agent Plugins"></a> <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/actions/workflows/security-scan.yml"><img src="https://github.com/K-Dense-AI/scientific-agent-skills/actions/workflows/security-scan.yml/badge.svg" alt="Security Scan"></a> <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/actions/workflows/skill-tests.yml"><img src="https://github.com/K-Dense-AI/scientific-agent-skills/actions/workflows/skill-tests.yml/badge.svg" alt="Skill Tests"></a> <a href="#%F0%9F%8E%AF-%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B"><img src="https://img.shields.io/badge/Works_with-Cursor_%7C_Claude_Code_%7C_Codex_%7C_Google_Antigravity-blue.svg" alt="Works with"></a> <a target="_blank" rel="noopener" href="https://x.com/k_dense_ai"><img src="https://img.shields.io/badge/Follow_on_X-%40k__dense__ai-000000?logo=x" alt="X"></a> <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/k-dense-inc"><img src="https://img.shields.io/badge/LinkedIn-K--Dense_Inc.-0A66C2?logo=linkedin" alt="LinkedIn"></a> <a target="_blank" rel="noopener" href="https://www.youtube.com/@K-Dense-Inc"><img src="https://img.shields.io/badge/YouTube-K--Dense_Inc.-FF0000?logo=youtube" alt="YouTube"></a> <a target="_blank" rel="noopener" href="https://www.reddit.com/user/-k-dense-/"><img src="https://img.shields.io/badge/Reddit-u%2F--k--dense---FF4500?logo=reddit&logoColor=white" alt="Reddit"></a></p>
+<blockquote>
+<p><strong>🔔 Claude Scientific Skills 现已更名为 Scientific Agent Skills。</strong> 技能内容不变，兼容范围更广：现在适用于任何支持开放 <a target="_blank" rel="noopener" href="https://agentskills.io/">Agent Skills</a> 标准的 AI 智能体，而不再仅限于 Claude。</p>
+</blockquote>
+<blockquote>
+<p><strong>新发布：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/k-dense-byok">K-Dense BYOK</a></strong> —— 一个免费、开源、在桌面端运行的 AI 合作科学家（co-scientist），由 Scientific Agent Skills 驱动。使用你自己的 API 密钥，可在 40 多个模型中选择，并获得完整的研究工作区：网页搜索、文件处理、100 多个科学数据库，以及本仓库全部 177 个技能。数据保留在你自己的电脑上；遇到繁重的计算任务时，也可以选择通过 <a target="_blank" rel="noopener" href="https://modal.com/">Modal</a> 扩展到云端算力。<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/k-dense-byok">从这里开始。</a></p>
+</blockquote>
+<blockquote>
+<p><strong>🎥 网络研讨会录像：<a target="_blank" rel="noopener" href="https://youtu.be/Du3BIE48DKc?si=9dPpETKSc2PeQbvU">Getting Started with K-Dense BYOK</a></strong> 手把手演示 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/k-dense-byok">K-Dense BYOK</a>，也就是我们免费、开源、在你自己的机器上本地运行的 AI 合作科学家，由 Scientific Agent Skills 驱动。内容包括如何安装、如何接入你自己的 API 密钥，以及如何用这些技能运行真实的研究工作流。无需任何技术背景。<strong><a target="_blank" rel="noopener" href="https://youtu.be/Du3BIE48DKc?si=9dPpETKSc2PeQbvU">观看录像 →</a></strong></p>
+</blockquote>
+<blockquote>
+<p><strong>获取最新动态：</strong> 在 <a target="_blank" rel="noopener" href="https://x.com/k_dense_ai">X</a>、<a target="_blank" rel="noopener" href="https://www.linkedin.com/company/k-dense-inc">LinkedIn</a>、<a target="_blank" rel="noopener" href="https://www.youtube.com/@K-Dense-Inc">YouTube</a> 和 <a target="_blank" rel="noopener" href="https://www.reddit.com/user/-k-dense-/">Reddit</a> 上关注 K-Dense，了解新技能、版本发布公告、操作演示、研究工作流演示，以及可以在你自己的 AI 智能体中使用的示例。</p>
+</blockquote>
+<blockquote>
+<p><strong>📄 论文：</strong> Scientific Agent Skills 的介绍见论文 <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2609.00065"><em>Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents</em></a>（arXiv:2609.00065）。如果你在研究中使用了这些技能，请<a href="#%F0%9F%93%96-%E5%BC%95%E7%94%A8">引用该论文</a>。</p>
+</blockquote>
+<p>这套技能遵循开放的 <a target="_blank" rel="noopener" href="https://agentskills.io/">Agent Skills</a> 标准，可用于 <strong>Cursor、Claude Code、Codex、Google Antigravity 以及其他兼容的宿主</strong>。它同时也是一个可移植的 <a target="_blank" rel="noopener" href="https://agent-plugins.org/">Agent Plugins</a> 包（<code>plugin.json</code> + <code>skills/</code>），支持该标准的客户端可以把整套技能当作一个插件加载。你可以浏览<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/docs/skill-guides/README.md">图文技能指南</a>、<a href="#%F0%9F%93%9A-%E5%8F%AF%E7%94%A8%E6%8A%80%E8%83%BD">技能分类</a>或<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/docs/skills.md">完整目录</a>，挑选与你工作相关的技能。</p>
+<blockquote>
+<p>⭐ <strong>帮助更多人发现 AI 科研工具：</strong> 如果 Scientific Agent Skills 为你节省了时间、教会了你的智能体某个工作流，或者让你的实验室效率更高，请<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills">为本仓库点 Star</a>。Star 是一个公开的信号，表明这些开放、可复用的研究技能值得维护：它帮助科学家、工程师和开源贡献者找到这个项目，显示哪些智能体技能标准正在被真正采用，也让我们有明确的理由继续为社区扩充这套技能。</p>
+</blockquote>
+<hr>
+<p>这些技能让你的 AI 智能体能够顺畅地使用多个科学领域中的专业科学库、数据库和工具。智能体本身就能使用任何 Python 包或 API，但这些明确定义的技能提供了经过整理的文档和示例，能让它在以下工作流中表现得更强、更可靠：</p>
+<ul>
+<li>🧬 生物信息学与基因组学：序列分析、单细胞 RNA-seq、混池 CRISPR 筛选、引物设计、扩增子微生物组、变异注释、系统发育学</li>
+<li>🧪 化学信息学与药物发现：分子性质预测、虚拟筛选、ADMET 分析、分子对接、先导化合物优化、经过校准的一维 NMR 处理</li>
+<li>🔬 蛋白质组学与质谱：LC-MS&#x2F;MS 数据处理、肽段鉴定、谱图匹配、蛋白质定量</li>
+<li>🏥 临床研究与证据工作流：临床试验、药物基因组学、变异证据审查、药代动力学&#x2F;药效学（PK&#x2F;PD）建模与给药方案评估、汇总层面的决策支持评估、绑定数据来源的报告草稿结构，以及对临床医生已作出的治疗决定进行格式整理</li>
+<li>🧠 医疗 AI 与生物信号研究：电子病历（EHR）与模型研究、生理信号分析、回顾性验证；不用于针对具体患者的诊断、治疗、报警或部署决策</li>
+<li>🐭 临床前研究与动物福利：实验动物研究中的多变量严重程度评分和人道终点预测，用于 3R 原则&#x2F;优化分析以及欧盟 2010&#x2F;63&#x2F;EU 指令的报告；它是严重程度评估的辅助工具，绝不是决策规则</li>
+<li>🖼️ 显微成像、医学影像与数字病理：定量荧光显微、注重隐私的 DICOM 处理、仅限研究用途的全切片图像分析、计算病理学，以及放射学数据工作流</li>
+<li>🧠 神经科学与电生理：BIDS 数据集、NWB 格式转换与时钟对齐、细胞外记录、生理信号</li>
+<li>🤖 机器学习与人工智能：深度学习、强化学习、时间序列分析、模型可解释性、贝叶斯方法</li>
+<li>🔮 材料科学与化学：晶体结构分析、CALPHAD 相平衡、代谢建模、计算化学</li>
+<li>🌌 物理学与天文学：天文数据分析、坐标变换、宇宙学计算、符号数学、物理计算</li>
+<li>⚙️ 工程与仿真：电池循环模型、化学动力学与点火延迟、流体动力学、实验室硬件 CAD 与定制零件加工、离散事件仿真、流程优化</li>
+<li>📊 数据分析与可视化：统计分析、网络分析、时间序列、出版级图表、大规模数据处理、探索性数据分析（EDA）</li>
+<li>🌊 化学海洋学：海水碳酸盐化学、海洋酸化、矿物饱和度、测量不确定度</li>
+<li>🌍 地理空间科学与遥感：卫星影像处理、GIS 分析、空间统计、地形分析、面向对地观测的机器学习</li>
+<li>🧪 实验室自动化：移液操作方案、实验设备控制、工作流自动化、LIMS 集成</li>
+<li>📚 科学传播：证据可追溯的写作、保密且经授权的同行评审、文献综合、文档处理、不含宏的 PPTX 海报、幻灯片、示意图和引文管理</li>
+<li>🔬 多组学与系统生物学：多模态数据整合、通路分析、碳-13 代谢通量推断、生化动力学模型</li>
+<li>🧬 蛋白质工程与设计：蛋白质语言模型、结构预测、冷冻电镜精修、序列设计、功能注释</li>
+<li>🧰 智能体平台与基础设施：基于 Pi 进行开发，涵盖 SDK、RPC、扩展、自定义提供商&#x2F;模型、软件包、TUI 组件和会话工具</li>
+<li>🎓 研究方法：以证据为边界的候选假设、科学头脑风暴、批判性思维、基金申请写作，以及对学术作品进行定性、低风险的评估</li>
+<li>⚖️ 法规与标准：为 ISO 管理体系标准和实验室标准起草证据准备材料，以及依据 ICH&#x2F;USP&#x2F;CLSI 框架进行分析方法的验证、确认与转移；这些材料供有资质的人员审核，绝不构成认证、认可或方法放行决定</li>
+</ul>
+<p><strong>把你的 AI 编程智能体变成桌面上的“AI 科学家”！</strong></p>
+<blockquote>
+<p>🎬 <strong>第一次接触 Scientific Agent Skills？</strong> 观看视频 <a target="_blank" rel="noopener" href="https://youtu.be/ZxbnDaD_FVg">Getting Started with Scientific Agent Skills</a>，快速了解如何上手。</p>
+</blockquote>
+<h3 id="🎥-更多教程"><a href="#🎥-更多教程" class="headerlink" title="🎥 更多教程"></a>🎥 更多教程</h3><p>用这些技能完成真实研究任务的录像演示，来自 <a target="_blank" rel="noopener" href="https://www.youtube.com/@K-Dense-Inc">K-Dense 的 YouTube 频道</a>：</p>
+<table>
+<thead>
+<tr>
+<th>视频</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://youtu.be/lVZbHiwzMEg">Skills 101: Build Your Own Scientific Agent Skill</a></td>
+<td>从零开始编写、测试并打包一个新技能</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://youtu.be/wKJp8y4ZyiM">Literature Review and Hypothesis Generation</a></td>
+<td>检索文献并生成有依据的假设</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://youtu.be/Yz2L5s_M_34">Draft and Budget an Experimental Protocol</a></td>
+<td>把计划中的实验写成带预算的书面实验方案</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://youtu.be/0MmU-Pmtg1o">Draft Responses to Reviewer Comments</a></td>
+<td>根据审稿意见撰写逐条回复</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://youtu.be/4WTCK9kSfdk">Can AI Reproduce a Nature Medicine Paper?</a></td>
+<td>尝试端到端复现一项已发表的分析</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="📦-包含内容"><a href="#📦-包含内容" class="headerlink" title="📦 包含内容"></a>📦 包含内容</h2><p>本仓库提供 <strong>177 个科学与研究技能</strong>，分为以下几类：</p>
+<ul>
+<li><strong>100 多个科学与金融数据库</strong>：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/database-lookup/SKILL.md">Database Lookup</a> 技能记录了 80 个可公开访问、注册后访问或需许可访问的数据库（PubChem、ChEMBL、UniProt、COSMIC、ClinicalTrials.gov、FRED、USPTO 等），包括接口选择、分页和数据来源记录。另有专门的技能覆盖 DepMap、Imaging Data Commons、PrimeKG、NCATS ARAX、U.S. Treasury Fiscal Data、Hugging Science、OneKGPd、Genomic Intelligence 和 AlphaGenome。BioServices、Biopython、gget 等可访问多个数据库的软件包进一步扩大了覆盖面</li>
+<li><strong>70 多个经过优化的 Python 软件包技能</strong>：为 RDKit、Scanpy、PyTorch Lightning、scikit-learn、PyTDC、PathML、pydicom、NeuroKit2、PufferLib、QuTiP、GeoPandas、pymatgen、BioPython、Qiskit、分子动力学（OpenMM&#x2F;MDAnalysis）等提供明确定义、区分版本的工作流。智能体仍然可以使用<em>任何</em> Python 包；这些技能只是为上述软件包提供更有力、更安全的指导</li>
+<li><strong>9 个科学平台集成技能</strong>：为 Benchling、DNAnexus、LatchBio、OMERO、Protocols.io、Open Notebook、Ginkgo Cloud Lab、LabArchives 和 Opentrons 明确定义的技能。同样，智能体并不局限于这些平台：任何能从 Python 访问的 API 或平台都可以使用，这些技能只是经过优化、预先写好文档的路径</li>
+<li><strong>30 多个分析与传播工具</strong>：文献综述、证据可追溯的科学写作、保密的同行评审、文档处理、Paperclip（全文论文、FDA&#x2F;PMDA&#x2F;EMA 申报文件和试验注册信息，引文可精确到行）、Paperzilla、Exa Search、不含宏的 PPTX 海报、幻灯片、示意图、信息图、Mermaid 图表等</li>
+<li><strong>10 多个研究与临床工具</strong>：以证据为边界的假设生成、基金申请写作、汇总层面的临床决策支持研究、临床医生已作出的治疗计划的格式整理、PK&#x2F;PD 建模与仿真（非房室分析、群体药代动力学、暴露-效应、生物等效性、首次人体给药剂量）、BIDS、ISO 标准就绪的证据准备（ISO 13485、ISO 14971、ISO&#x2F;IEC 17025、ISO 15189）、分析方法验证与转移（ICH Q2(R2)&#x2F;Q14、ICH M10、USP、CLSI EP）、情景分析，以及用 Autoskill 从工作流中起草技能</li>
+</ul>
+<p>每个技能都有一个 <code>SKILL.md</code>，写明其用途、工作流和版本元数据。根据工作流的不同，还可能包含代码示例、参考文档、可执行的辅助脚本或模板。带有 <code>scripts/</code> 的技能在 <code>tests/&lt;skill-name&gt;/</code> 下有对应的测试套件，并在 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/tests/skill-requirements.toml"><code>tests/skill-requirements.toml</code></a> 中有一条依赖项记录。</p>
+<h3 id="2-72-0-版本更新"><a href="#2-72-0-版本更新" class="headerlink" title="2.72.0 版本更新"></a>2.72.0 版本更新</h3><p>原先从 <a target="_blank" rel="noopener" href="https://github.com/anthropics/skills">anthropics&#x2F;skills</a> 引入、遵循 Anthropic 自有许可的 <code>docx</code>、<code>pdf</code>、<code>pptx</code> 和 <code>xlsx</code> 文档技能不再随本仓库提供。现在共有 <strong>177 个技能</strong>；如果你依赖这四个技能，请从 Anthropic 的仓库安装。<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/scientific-slides/SKILL.md">Scientific Slides</a> 现在用 PptxGenJS 或 python-pptx 生成 PowerPoint 演示文稿，并通过 LibreOffice 以及它自带的渲染和验证脚本检查结果。</p>
+<h3 id="2-71-0-版本更新"><a href="#2-71-0-版本更新" class="headerlink" title="2.71.0 版本更新"></a>2.71.0 版本更新</h3><p>这次更新刷新了全部 <strong>181 个技能</strong>，包括软件包和 API 指南、依赖要求、参考文档以及验证工作流。主要内容：</p>
+<ul>
+<li><strong>数据库检索：</strong> <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/database-lookup/SKILL.md">Database Lookup</a> 现在收录 80 个数据源，并写明访问要求、检索约定和来源核查。</li>
+<li><strong>软件包兼容性：</strong> 更新后的文档基线包括 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pathml/SKILL.md">PathML 3.0.8</a>、<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/geopandas/SKILL.md">GeoPandas 1.2.0</a>，以及<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/lab-hardware-cad/SKILL.md">用于实验室硬件 CAD 的 build123d 0.13.0</a>。<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pufferlib/SKILL.md">PufferLib</a> 区分了原生 5.0、PyPI 上的 3.0.0 和历史版本 4.0 三种工作流。</li>
+<li><strong>图像生成与智能体工具：</strong> <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/generate-image/SKILL.md">Generate Image</a> 使用 OpenRouter Image API，支持模型发现和请求验证。<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pi-agent/SKILL.md">Pi Agent</a> 记录了 Pi 0.99.2、原生 MCP 以及更新后的生态软件包。</li>
+<li><strong>RNA-seq 工作流的边界：</strong> <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/bulk-rnaseq/SKILL.md">Bulk RNA-seq</a> 负责准备测序读段和经过验证的计数矩阵，再交给 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pydeseq2/SKILL.md">PyDESeq2</a>；下游的富集分析由 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pathway-enrichment/SKILL.md">Pathway Enrichment</a> 负责。</li>
+</ul>
+<p>每个技能都记录了自己的兼容性要求和验证范围。重用较早的工作流之前，请先核对这些信息；本地测试、在线服务检查和示意性示例的覆盖范围各不相同。</p>
+<h3 id="近期新增的工作流"><a href="#近期新增的工作流" class="headerlink" title="近期新增的工作流"></a>近期新增的工作流</h3><table>
+<thead>
+<tr>
+<th>研究任务</th>
+<th>技能</th>
+<th>工作流重点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>设计和分析实验检测</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/primer-design/SKILL.md">Primer Design</a>, <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/flowkit/SKILL.md">FlowKit</a>, <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/mageck/SKILL.md">MAGeCK</a>, <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/cellprofiler/SKILL.md">CellProfiler</a></td>
+<td>PCR 特异性筛查、流式细胞术补偿与设门、混池 CRISPR 对比分析，以及显微图像分割的质量控制</td>
+</tr>
+<tr>
+<td>处理谱图并建立代谢模型</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/nmrglue/SKILL.md">nmrglue</a>, <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/13c-metabolic-flux/SKILL.md">13C Metabolic Flux</a>, <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/tellurium/SKILL.md">Tellurium</a></td>
+<td>经过校准的一维 NMR、带可辨识性检查的同位素示踪推断，以及可复现的生化模拟</td>
+</tr>
+<tr>
+<td>重建结构并保存神经数据</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/relion/SKILL.md">RELION</a>, <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/nwb-conversion/SKILL.md">NWB Conversion</a></td>
+<td>冷冻电镜半图验证，以及带时钟对齐的双光子成像与行为数据转换</td>
+</tr>
+<tr>
+<td>分析微生物组和海水化学</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/qiime2-amplicon/SKILL.md">QIIME 2 Amplicon</a>, <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/marine-carbonate-chemistry/SKILL.md">Marine Carbonate Chemistry</a></td>
+<td>带读段保留检查的双端 16S 处理、碳酸盐形态计算和测量不确定度</td>
+</tr>
+<tr>
+<td>模拟能源与材料系统</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pybamm/SKILL.md">PyBaMM</a>, <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/cantera/SKILL.md">Cantera</a>, <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pycalphad/SKILL.md">pycalphad</a></td>
+<td>电池循环、点火延迟和合金相平衡，并附带数值检查和输入来源记录</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="📋-目录"><a href="#📋-目录" class="headerlink" title="📋 目录"></a>📋 目录</h2><ul>
+<li><a href="#%F0%9F%93%A6-%E5%8C%85%E5%90%AB%E5%86%85%E5%AE%B9">包含内容</a></li>
+<li><a href="#2-72-0-%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0">2.72.0 版本更新</a></li>
+<li><a href="#%E8%BF%91%E6%9C%9F%E6%96%B0%E5%A2%9E%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81">近期新增的工作流</a></li>
+<li><a href="#%F0%9F%9A%80-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E5%AE%83">为什么要用它</a></li>
+<li><a href="#%F0%9F%8E%AF-%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B">快速上手</a></li>
+<li><a href="#%E2%9A%A0%EF%B8%8F-%E5%AE%89%E5%85%A8%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E">安全免责声明</a></li>
+<li><a href="#%E2%9D%A4%EF%B8%8F-%E6%94%AF%E6%8C%81%E5%BC%80%E6%BA%90%E7%A4%BE%E5%8C%BA">支持开源社区</a></li>
+<li><a href="#%E2%9A%99%EF%B8%8F-%E5%89%8D%E7%BD%AE%E6%9D%A1%E4%BB%B6">前置条件</a></li>
+<li><a href="#%F0%9F%92%A1-%E5%BF%AB%E9%80%9F%E7%A4%BA%E4%BE%8B">快速示例</a></li>
+<li><a href="#%F0%9F%94%AC-%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF">使用场景</a></li>
+<li><a href="#%F0%9F%93%9A-%E5%8F%AF%E7%94%A8%E6%8A%80%E8%83%BD">可用技能</a></li>
+<li><a href="#%F0%9F%93%9D-%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E7%B2%BE%E9%80%89">博客文章精选</a></li>
+<li><a href="#%F0%9F%A4%9D-%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE">参与贡献</a></li>
+<li><a href="#%F0%9F%94%A7-%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4">故障排除</a></li>
+<li><a href="#%E2%9D%93-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">常见问题</a></li>
+<li><a href="#%F0%9F%92%AC-%E8%8E%B7%E5%8F%96%E6%94%AF%E6%8C%81">获取支持</a></li>
+<li><a href="#%F0%9F%93%96-%E5%BC%95%E7%94%A8">引用</a></li>
+<li><a href="#%F0%9F%93%84-%E8%AE%B8%E5%8F%AF%E8%AF%81">许可证</a></li>
+</ul>
+<hr>
+<h2 id="🚀-为什么要用它"><a href="#🚀-为什么要用它" class="headerlink" title="🚀 为什么要用它"></a>🚀 为什么要用它</h2><h3 id="⚡-加快你的研究"><a href="#⚡-加快你的研究" class="headerlink" title="⚡ 加快你的研究"></a>⚡ <strong>加快你的研究</strong></h3><ul>
+<li><strong>节省数天的工作</strong>：省去查阅 API 文档和搭建集成的时间</li>
+<li><strong>经过审查的起点</strong>：经过测试的示例，带有明确的验证、来源记录和安全边界；请在目标环境中自行核实</li>
+<li><strong>多步骤工作流</strong>：一条提示词即可执行复杂的流程</li>
+</ul>
+<h3 id="🎯-覆盖全面"><a href="#🎯-覆盖全面" class="headerlink" title="🎯 覆盖全面"></a>🎯 <strong>覆盖全面</strong></h3><ul>
+<li><strong>177 个技能</strong>：广泛覆盖所有主要科学领域</li>
+<li><strong>100 多个数据库</strong>：Database Lookup 记录的 80 个数据库，加上专门的数据访问技能，以及 BioServices、Biopython、gget 等可访问多个数据库的软件包</li>
+<li><strong>70 多个经过优化的 Python 软件包技能</strong>：为 RDKit、Scanpy、PyTorch Lightning、scikit-learn、PyTDC、pydicom、PufferLib、QuTiP、GeoPandas、pymatgen、Qiskit、分子动力学（OpenMM&#x2F;MDAnalysis）、scVelo 和 TimesFM 等软件包提供最新且限定版本的指导（智能体可以使用任何 Python 包；这些只是预先写好文档的路径）</li>
+</ul>
+<h3 id="🔧-易于集成"><a href="#🔧-易于集成" class="headerlink" title="🔧 易于集成"></a>🔧 <strong>易于集成</strong></h3><ul>
+<li><strong>设置简单</strong>：把技能复制到你的技能目录即可开始工作</li>
+<li><strong>按配置发现</strong>：兼容的宿主可以从其配置的技能路径中找到并使用相关技能</li>
+<li><strong>文档完善</strong>：每个技能都包含示例、使用场景和最佳实践</li>
+</ul>
+<h3 id="🌟-持续维护与支持"><a href="#🌟-持续维护与支持" class="headerlink" title="🌟 持续维护与支持"></a>🌟 <strong>持续维护与支持</strong></h3><ul>
+<li><strong>定期更新</strong>：由 K-Dense 团队持续维护和扩充</li>
+<li><strong>CI 中的验证</strong>：相关的拉取请求会运行全仓库的结构检查，以及只依赖标准库的技能测试套件。科学依赖项在单独的环境中测试；完整的验证流程参见<a href="#%E6%B5%8B%E8%AF%95">测试</a></li>
+<li><strong>社区驱动</strong>：开源，社区贡献活跃</li>
+<li><strong>面向企业</strong>：可为高级需求提供商业支持</li>
+</ul>
+<hr>
+<h2 id="🎯-快速上手"><a href="#🎯-快速上手" class="headerlink" title="🎯 快速上手"></a>🎯 快速上手</h2><h3 id="方式一：npx（受支持的宿主）"><a href="#方式一：npx（受支持的宿主）" class="headerlink" title="方式一：npx（受支持的宿主）"></a>方式一：npx（受支持的宿主）</h3><p>只需一条命令即可安装 Scientific Agent Skills：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx skills add K-Dense-AI/scientific-agent-skills</span><br></pre></td></tr></table></figure>
+
+<p>这是一个基于标准的通用安装器，适用于受支持的 Agent Skills 宿主，包括当前版本的 <strong>Claude Code</strong>、<strong>Claude Cowork</strong>、<strong>Codex</strong>、<strong>Gemini CLI</strong>、<strong>Google Antigravity</strong> 和 <strong>Cursor</strong>。安装路径和可选元数据的处理方式，请以你所用宿主的最新文档为准。</p>
+<h3 id="方式二：GitHub-CLI（gh-skill）"><a href="#方式二：GitHub-CLI（gh-skill）" class="headerlink" title="方式二：GitHub CLI（gh skill）"></a>方式二：GitHub CLI（<code>gh skill</code>）</h3><p>如果你使用 <a target="_blank" rel="noopener" href="https://cli.github.com/">GitHub CLI</a>（v2.90.0 及以上），可以用 <a target="_blank" rel="noopener" href="https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/"><code>gh skill</code></a> 安装技能：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Browse and install interactively</span></span><br><span class="line">gh skill install K-Dense-AI/scientific-agent-skills</span><br><span class="line"></span><br><span class="line"><span class="comment"># Install a specific skill directly</span></span><br><span class="line">gh skill install K-Dense-AI/scientific-agent-skills scanpy</span><br><span class="line"></span><br><span class="line"><span class="comment"># Target a specific agent host</span></span><br><span class="line">gh skill install K-Dense-AI/scientific-agent-skills --agent cursor</span><br><span class="line">gh skill install K-Dense-AI/scientific-agent-skills --agent claude-code</span><br><span class="line">gh skill install K-Dense-AI/scientific-agent-skills --agent codex</span><br><span class="line">gh skill install K-Dense-AI/scientific-agent-skills --agent gemini</span><br></pre></td></tr></table></figure>
+
+<p><code>gh skill</code> 会自动安装到与你的智能体宿主对应的目录，并记录来源元数据，以保障供应链的完整性。</p>
+<h4 id="锁定版本"><a href="#锁定版本" class="headerlink" title="锁定版本"></a>锁定版本</h4><p>锁定到某个发布标签或提交 SHA，以便可复现地安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Pin to a release tag</span></span><br><span class="line">gh skill install K-Dense-AI/scientific-agent-skills --pin v2.71.0</span><br><span class="line"></span><br><span class="line"><span class="comment"># Pin to a commit SHA</span></span><br><span class="line">gh skill install K-Dense-AI/scientific-agent-skills --pin abc123def</span><br></pre></td></tr></table></figure>
+
+<h4 id="保持技能为最新"><a href="#保持技能为最新" class="headerlink" title="保持技能为最新"></a>保持技能为最新</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Check for updates interactively</span></span><br><span class="line">gh skill update</span><br><span class="line"></span><br><span class="line"><span class="comment"># Update all installed skills</span></span><br><span class="line">gh skill update --all</span><br></pre></td></tr></table></figure>
+
+<h3 id="方式三：Agent-Plugins（Cursor、Codex-及其他插件客户端）"><a href="#方式三：Agent-Plugins（Cursor、Codex-及其他插件客户端）" class="headerlink" title="方式三：Agent Plugins（Cursor、Codex 及其他插件客户端）"></a>方式三：Agent Plugins（Cursor、Codex 及其他插件客户端）</h3><p>本仓库是一个有效的 <a target="_blank" rel="noopener" href="https://agent-plugins.org/">Agent Plugins</a> 1.0.0 包：根目录下的 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/plugin.json"><code>plugin.json</code></a> 加上 <code>skills/</code> 下的 Agent Skills。支持该标准的客户端会发现 <code>skills/</code> 下每一个包含 <code>SKILL.md</code> 的直接子目录。</p>
+<p><strong>Cursor</strong>：把仓库软链接或复制到本地插件目录，然后重新加载：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p ~/.cursor/plugins/local</span><br><span class="line"><span class="built_in">ln</span> -s <span class="string">&quot;<span class="subst">$(pwd)</span>&quot;</span> ~/.cursor/plugins/local/scientific-agent-skills</span><br></pre></td></tr></table></figure>
+
+<p>重启 Cursor 或运行 <strong>Developer: Reload Window</strong>，然后确认插件及其技能出现在 <strong>Customize</strong> 下。参见 <a target="_blank" rel="noopener" href="https://cursor.com/docs/plugins">Cursor plugins</a>。</p>
+<p><strong>Codex</strong>：从本地检出的仓库安装（请在 Codex 文档中确认当前的命令行参数名）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">codex plugins install .</span><br></pre></td></tr></table></figure>
+
+<p>兼容的客户端（Cursor、Codex、GitHub Copilot、VS Code、Kiro，以及 <a target="_blank" rel="noopener" href="https://agent-plugins.org/compatible-clients">agent-plugins.org</a> 上列出的其他客户端）使用相同的包结构；具体的安装体验因客户端而异。</p>
+<h3 id="其他-Agent-Skills-宿主（OpenClaw、NemoClaw、Pi、Hermes-等）"><a href="#其他-Agent-Skills-宿主（OpenClaw、NemoClaw、Pi、Hermes-等）" class="headerlink" title="其他 Agent Skills 宿主（OpenClaw、NemoClaw、Pi、Hermes 等）"></a>其他 Agent Skills 宿主（OpenClaw、NemoClaw、Pi、Hermes 等）</h3><p>不同的智能体宿主在安装路径、发现设置以及对可选 frontmatter 字段的支持上各不相同。<code>npx skills add</code>（方式一）通常按照 <code>~/.agents/skills/</code> 的约定安装，项目级安装则位于 <code>.agents/skills/</code>；请对照你所用宿主的最新文档确认这两个路径。若要在配置为扫描上述位置之一的宿主上手动安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/K-Dense-AI/scientific-agent-skills.git ~/.agents/skills/scientific-agent-skills   <span class="comment"># user-level</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/K-Dense-AI/scientific-agent-skills.git .agents/skills/scientific-agent-skills      <span class="comment"># project-level</span></span><br></pre></td></tr></table></figure>
+
+<p>对于支持技能源（skill tap）的 Hermes 版本，把本仓库添加为一个 tap：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hermes skills tap add K-Dense-AI/scientific-agent-skills</span><br></pre></td></tr></table></figure>
+
+<p>每个 <code>SKILL.md</code> 都使用 YAML frontmatter，其中 <code>metadata.version</code> 的值需要加引号。向仓库贡献内容时必须使用块状（block-style）YAML；JSON 风格的流式映射无法通过参考验证器。可选的、特定于宿主的配置放在 <code>metadata</code> 下，宿主清单块保持为嵌套映射。完整规则见 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/AGENTS.md#frontmatter">AGENTS.md</a>。不同宿主对可选元数据和凭据提示的处理可能不同，因此请在目标宿主上核实其行为。只安装与你的主题相关的一部分技能，可以让可用的技能目录聚焦于你的工作。</p>
+<blockquote>
+<p><strong>NemoClaw 说明：</strong> NemoClaw 在 NVIDIA OpenShell 中运行智能体，出站网络默认全部拒绝。技能可以正常被发现和加载，但任何需要网络的技能（通过 <code>uv</code> 安装软件包，或调用 Exa、Parallel、Benchling、NCBI、Materials Project 等 API）都只有在操作员事先于 OpenShell TUI 中批准相关域名后才能工作。</p>
+</blockquote>
+<p><strong>就这么简单！</strong> 兼容的宿主可以从其配置的路径中发现这些技能，并在相关时使用它们。你也可以在提示词中提到技能名称来手动调用任何技能。</p>
+<hr>
+<h2 id="⚠️-安全免责声明"><a href="#⚠️-安全免责声明" class="headerlink" title="⚠️ 安全免责声明"></a>⚠️ 安全免责声明</h2><blockquote>
+<p><strong>技能可以执行代码，并影响你的编程智能体的行为。请审查你安装的内容。</strong></p>
+</blockquote>
+<p>Agent Skills 功能强大：它们可以指示你的 AI 智能体运行任意代码、安装软件包、发起网络请求，以及修改你系统上的文件。一个恶意的或写得很差的技能，有可能把你的编程智能体引向有害的行为。</p>
+<p>我们非常重视安全。所有贡献都要经过审查流程，我们还用基于大语言模型的安全扫描（通过 <a target="_blank" rel="noopener" href="https://github.com/cisco-ai-defense/skill-scanner">Cisco AI Defense Skill Scanner</a>）检查本仓库中的每一个技能。但是，作为一个小团队，面对越来越多的社区贡献，我们无法保证每个技能都针对所有可能的风险经过了详尽审查。</p>
+<p><strong>审查你安装的技能、决定信任哪些技能，最终是你自己的责任。</strong></p>
+<p>我们建议：</p>
+<ul>
+<li><p><strong>不要一次安装全部技能。</strong> 只安装你工作中真正需要的技能。当每个技能都由 K-Dense 创建和维护时，安装整套技能是合理的；但现在仓库包含了许多社区贡献，我们对它们的审查可能没有那么彻底。</p>
+</li>
+<li><p><strong>安装前阅读 <code>SKILL.md</code>。</strong> 每个技能的文档都说明了它做什么、使用哪些软件包、连接哪些外部服务。如果看起来可疑，就不要安装。</p>
+</li>
+<li><p><strong>查看贡献历史。</strong> 由 K-Dense（<code>K-Dense-AI</code>）编写的技能经过了我们的内部审查流程。社区贡献的技能我们已尽力审查，但资源有限。</p>
+</li>
+<li><p><strong>自己运行安全扫描器。</strong> 安装第三方技能之前，先在本地扫描：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">uv pip install cisco-ai-skill-scanner</span><br><span class="line">skill-scanner scan /path/to/skill --use-behavioral</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>报告任何可疑之处。</strong> 如果你发现某个技能看起来有恶意或行为异常，请立即<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/issues">提交 issue</a>，以便我们调查。</p>
+</li>
+</ul>
+<p>技能每周扫描一次，采用增量方式：未改动的技能沿用之前的扫描结果；至少每 30 天以及扫描器或模型变更时，会对全部技能重新扫描。结果发布在 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/docs/security-report.md">docs&#x2F;security-report.md</a>。我们的安全政策、适用范围、如何私下报告漏洞，以及如何对扫描结果提出异议，参见 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/SECURITY.md">SECURITY.md</a>。我们会在发现安全漏洞时尽力处理。</p>
+<hr>
+<h2 id="❤️-支持开源社区"><a href="#❤️-支持开源社区" class="headerlink" title="❤️ 支持开源社区"></a>❤️ 支持开源社区</h2><p>Scientific Agent Skills 建立在 <strong>50 多个出色的开源项目</strong>之上，这些项目由世界各地尽心尽力的开发者和研究社区维护。Biopython、Scanpy、RDKit、scikit-learn、PyTorch Lightning 等许多项目构成了这些技能的基础。</p>
+<p><strong>如果你觉得本仓库有价值，请考虑支持让它成为可能的那些项目：</strong></p>
+<ul>
+<li>⭐ 在 GitHub 上<strong>为它们的仓库点 Star</strong></li>
+<li>💰 通过 GitHub Sponsors 或 NumFOCUS <strong>赞助维护者</strong></li>
+<li>📝 在你的论文中<strong>引用这些项目</strong></li>
+<li>💻 <strong>贡献</strong>代码、文档或 bug 报告</li>
+</ul>
+<p>👉 <strong><a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/docs/open-source-sponsors.md">查看值得支持的项目完整列表</a></strong></p>
+<hr>
+<h2 id="⚙️-前置条件"><a href="#⚙️-前置条件" class="headerlink" title="⚙️ 前置条件"></a>⚙️ 前置条件</h2><ul>
+<li><strong>Python</strong>：仓库工具需要 3.13 及以上；各个技能的依赖可能支持更宽的 Python 版本范围</li>
+<li><strong>uv</strong>：Python 包管理器（安装技能依赖时必需）</li>
+<li><strong>客户端</strong>：任何支持 <a target="_blank" rel="noopener" href="https://agentskills.io/">Agent Skills</a> 标准的智能体（Cursor、Claude Code、Gemini CLI、Codex、Google Antigravity 等）</li>
+<li><strong>系统</strong>：macOS、Linux，或带 WSL2 的 Windows</li>
+<li><strong>依赖项</strong>：软件包、系统工具、凭据和网络访问，请按照每个技能的 <code>compatibility</code> 字段和安装说明处理。安装技能文件并不会安装它们的依赖</li>
+</ul>
+<p>每个科学工作流请使用单独的环境：有些技能需要不同的 Python 版本，或者固定了互不兼容的软件包版本。<code>uv sync</code> 安装的是仓库的开发和验证工具，而不是这套技能中的所有科学软件包。</p>
+<h3 id="安装-uv"><a href="#安装-uv" class="headerlink" title="安装 uv"></a>安装 uv</h3><p>这些技能使用 <code>uv</code> 作为包管理器来安装 Python 依赖。请按照你的操作系统对应的说明安装：</p>
+<p><strong>macOS 和 Linux：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -LsSf https://astral.sh/uv/install.sh | sh</span><br></pre></td></tr></table></figure>
+
+<p><strong>Windows：</strong></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powershell <span class="literal">-ExecutionPolicy</span> ByPass <span class="literal">-c</span> <span class="string">&quot;irm https://astral.sh/uv/install.ps1 | iex&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>另一种方式（通过 pip）：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install uv</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，运行以下命令确认可以使用：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uv --version</span><br></pre></td></tr></table></figure>
+
+<p>更多安装选项和细节，请访问 <a target="_blank" rel="noopener" href="https://docs.astral.sh/uv/">uv 官方文档</a>。</p>
+<hr>
+<h2 id="💡-快速示例"><a href="#💡-快速示例" class="headerlink" title="💡 快速示例"></a>💡 快速示例</h2><p>安装好技能后，你就可以让 AI 智能体执行复杂的多步骤科学工作流。下面是一些示例提示词（保留英文原文）：</p>
+<h3 id="🧪-药物发现流程"><a href="#🧪-药物发现流程" class="headerlink" title="🧪 药物发现流程"></a>🧪 药物发现流程</h3><p><strong>目标</strong>：为临床前肺癌研究筛选优先考虑的 EGFR 抑制剂候选物</p>
+<p><strong>提示词</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Use available skills you have access to whenever possible. Query ChEMBL for EGFR inhibitors (IC50 &lt; 50nM), analyze structure-activity relationships </span><br><span class="line">with RDKit, generate improved analogs with datamol, perform virtual screening with DiffDock </span><br><span class="line">against AlphaFold EGFR structure, search PubMed for resistance mechanisms, check COSMIC for </span><br><span class="line">mutations, and create visualizations and a comprehensive report.</span><br></pre></td></tr></table></figure>
+
+<p><strong>用到的技能</strong>：database-lookup, rdkit, datamol, diffdock, paper-lookup, scientific-visualization</p>
+<hr>
+<h3 id="🔬-单细胞-RNA-seq-分析"><a href="#🔬-单细胞-RNA-seq-分析" class="headerlink" title="🔬 单细胞 RNA-seq 分析"></a>🔬 单细胞 RNA-seq 分析</h3><p><strong>目标</strong>：全面分析 10X Genomics 数据，并整合公共数据</p>
+<p><strong>提示词</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Use available skills you have access to whenever possible. Load 10X dataset with Scanpy, perform QC and doublet removal, integrate with Cellxgene </span><br><span class="line">Census data, identify cell types using NCBI Gene markers, run differential expression with </span><br><span class="line">PyDESeq2, infer gene regulatory networks with Arboreto, enrich pathways via Reactome/KEGG, </span><br><span class="line">and identify therapeutic targets with Open Targets.</span><br></pre></td></tr></table></figure>
+
+<p><strong>用到的技能</strong>：scanpy, cellxgene-census, database-lookup, pydeseq2, arboreto</p>
+<hr>
+<h3 id="🧬-多组学生物标志物发现"><a href="#🧬-多组学生物标志物发现" class="headerlink" title="🧬 多组学生物标志物发现"></a>🧬 多组学生物标志物发现</h3><p><strong>目标</strong>：整合 RNA-seq、蛋白质组学和代谢组学数据来预测患者结局</p>
+<p><strong>提示词</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Use available skills you have access to whenever possible. Analyze RNA-seq with PyDESeq2, process mass spec with pyOpenMS, integrate metabolites from </span><br><span class="line">HMDB/Metabolomics Workbench, map proteins to pathways (UniProt/KEGG), find interactions via </span><br><span class="line">STRING, correlate omics layers with statsmodels, build predictive model with scikit-learn, </span><br><span class="line">and search ClinicalTrials.gov for relevant trials.</span><br></pre></td></tr></table></figure>
+
+<p><strong>用到的技能</strong>：pydeseq2, pyopenms, database-lookup, statsmodels, scikit-learn</p>
+<hr>
+<h3 id="🎯-虚拟筛选项目"><a href="#🎯-虚拟筛选项目" class="headerlink" title="🎯 虚拟筛选项目"></a>🎯 虚拟筛选项目</h3><p><strong>目标</strong>：发现作用于蛋白质-蛋白质相互作用的别构调节剂</p>
+<p><strong>提示词</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Use available skills you have access to whenever possible. Retrieve AlphaFold structures, identify interaction interface with BioPython, search ZINC </span><br><span class="line">for allosteric candidates (MW 300-500, logP 2-4), filter with RDKit, dock with DiffDock, </span><br><span class="line">rank with DeepChem, check PubChem suppliers, search USPTO patents, and optimize leads with </span><br><span class="line">MedChem/molfeat.</span><br></pre></td></tr></table></figure>
+
+<p><strong>用到的技能</strong>：database-lookup, biopython, rdkit, diffdock, deepchem, medchem, molfeat</p>
+<hr>
+<h3 id="🏥-研究用变异证据审查"><a href="#🏥-研究用变异证据审查" class="headerlink" title="🏥 研究用变异证据审查"></a>🏥 研究用变异证据审查</h3><p><strong>目标</strong>：注释一个合成的或已妥善去标识化的 VCF 文件，用于遗传性癌症研究和有资质人员的审查</p>
+<p><strong>提示词</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Use available skills you have access to whenever possible. Work only with authorized synthetic</span><br><span class="line">or de-identified data. Parse the VCF with pysam, annotate variants with Ensembl VEP, retrieve</span><br><span class="line">ClinVar/COSMIC/NCBI Gene/UniProt evidence, and verify literature sources. Build an evidence-</span><br><span class="line">traceable research summary with scientific-writing. If clinical-reports is used, create only a</span><br><span class="line">visibly marked draft structure from a verified source-fact manifest for qualified review; do not</span><br><span class="line">diagnose, assess individual risk, recommend treatment, or determine trial eligibility.</span><br></pre></td></tr></table></figure>
+
+<p><strong>用到的技能</strong>：pysam, database-lookup, paper-lookup, scientific-writing, clinical-reports</p>
+<hr>
+<h3 id="🌐-系统生物学网络分析"><a href="#🌐-系统生物学网络分析" class="headerlink" title="🌐 系统生物学网络分析"></a>🌐 系统生物学网络分析</h3><p><strong>目标</strong>：根据 RNA-seq 数据分析基因调控网络</p>
+<p><strong>提示词</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Use available skills you have access to whenever possible. Query NCBI Gene for annotations, retrieve sequences from UniProt, identify interactions via </span><br><span class="line">STRING, map to Reactome/KEGG pathways, analyze topology with Torch Geometric, reconstruct </span><br><span class="line">GRNs with Arboreto, assess druggability with Open Targets, model with PyMC, visualize </span><br><span class="line">networks, and search GEO for similar patterns.</span><br></pre></td></tr></table></figure>
+
+<p><strong>用到的技能</strong>：database-lookup, torch-geometric, arboreto, pymc, networkx, scientific-visualization</p>
+<blockquote>
+<p>📖 <strong>想看更多示例？</strong> 请查看 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/docs/examples.md">docs&#x2F;examples.md</a>，里面有覆盖所有科学领域的完整工作流示例和详细使用场景。</p>
+</blockquote>
+<hr>
+<h2 id="🔬-使用场景"><a href="#🔬-使用场景" class="headerlink" title="🔬 使用场景"></a>🔬 使用场景</h2><h3 id="🧪-药物发现与药物化学"><a href="#🧪-药物发现与药物化学" class="headerlink" title="🧪 药物发现与药物化学"></a>🧪 药物发现与药物化学</h3><ul>
+<li><strong>虚拟筛选</strong>：针对蛋白质靶点，从 PubChem&#x2F;ZINC 中筛选数百万种化合物</li>
+<li><strong>先导化合物优化</strong>：用 RDKit 分析构效关系，用 datamol 生成类似物</li>
+<li><strong>ADMET 预测</strong>：用 DeepChem 预测吸收、分布、代谢、排泄和毒性</li>
+<li><strong>分子对接</strong>：用 DiffDock 预测结合构象，并用面向亲和力的工具重新打分</li>
+<li><strong>生物活性挖掘</strong>：在 ChEMBL 中查询已知抑制剂并分析构效关系模式</li>
+</ul>
+<h3 id="🧬-生物信息学与基因组学"><a href="#🧬-生物信息学与基因组学" class="headerlink" title="🧬 生物信息学与基因组学"></a>🧬 生物信息学与基因组学</h3><ul>
+<li><strong>序列分析</strong>：用 BioPython 和 pysam 处理 DNA&#x2F;RNA&#x2F;蛋白质序列</li>
+<li><strong>单细胞分析</strong>：用 Scanpy 分析 10X Genomics 数据、识别细胞类型，用 Arboreto 推断基因调控网络</li>
+<li><strong>变异注释</strong>：用 Ensembl VEP 注释研究用 VCF 文件，并检索 ClinVar 证据，供有资质的人员解读</li>
+<li><strong>变异数据库管理</strong>：用 TileDB-VCF 构建可扩展的 VCF 数据库，支持增量添加样本、高效的群体规模查询，以及基因组变异数据的压缩存储</li>
+<li><strong>群体基因组学</strong>：用 OneKGPd 在 3,202 人的 GRCh38 千人基因组队列中查询变异、队列样本 ID 和亲缘关系</li>
+<li><strong>调控序列模型</strong>：运行托管的 Genomic Intelligence 启动子、剪接、增强子、染色质、表达和基因注释预测，用于研究，而不是临床或诊断决策</li>
+<li><strong>变异效应预测</strong>：查询任一 GRCh38 单核苷酸变异在 AlphaGenome Atlas 中的 AVI 分数、Phred 排名、特征归因和各组织轨道效应，或用 AlphaGenome 模型给变异打分并做计算机模拟突变，用于研究上的优先级排序，而不是诊断</li>
+<li><strong>病原体监测</strong>：通过 GenSpectrum LAPIS API 追踪当前正在流行的病毒谱系及其增长速度（SARS-CoV-2、包括 H5N1 在内的流感、RSV、猴痘、麻疹、登革热），报告延迟是实测的而不是假设的</li>
+<li><strong>基因发现</strong>：在 NCBI Gene、UniProt 和 Ensembl 中查询全面的基因信息</li>
+<li><strong>网络分析</strong>：通过 STRING 识别蛋白质-蛋白质相互作用，并映射到通路（KEGG、Reactome）</li>
+</ul>
+<h3 id="🏥-临床研究与证据工作流"><a href="#🏥-临床研究与证据工作流" class="headerlink" title="🏥 临床研究与证据工作流"></a>🏥 临床研究与证据工作流</h3><ul>
+<li><strong>临床试验</strong>：分析汇总层面的试验格局和方案入排标准，但不判断个人是否符合入组条件</li>
+<li><strong>变异证据审查</strong>：用 ClinVar、COSMIC 和 ClinPGx 注释经授权的研究数据；解读责任仍由有资质的专业人员承担</li>
+<li><strong>药物安全研究</strong>：在 FDA 数据库中查询汇总层面的不良事件、相互作用和召回证据</li>
+<li><strong>临床药理学</strong>：从浓度-时间数据推导暴露指标，拟合房室模型和群体药代动力学模型，建立暴露与效应的关系，并评估给药方案、生物等效性和首次人体给药剂量</li>
+<li><strong>全文证据检索</strong>：用 Paperclip 端到端地搜索和阅读论文、监管申报文件和试验记录，返回精确到行号而不是摘要的引文</li>
+<li><strong>决策支持评估</strong>：准备合成数据或汇总数据层面的评估、证据概况、隐私和治理材料，而不是实时的临床决策</li>
+<li><strong>临床医生撰写的文档</strong>：整理经核实、绑定数据来源的报告草稿，并对已获授权的执业专业人员已作出的治疗决定进行格式整理</li>
+</ul>
+<h3 id="🔬-多组学与系统生物学"><a href="#🔬-多组学与系统生物学" class="headerlink" title="🔬 多组学与系统生物学"></a>🔬 多组学与系统生物学</h3><ul>
+<li><strong>多组学整合</strong>：整合 RNA-seq、蛋白质组学和代谢组学数据</li>
+<li><strong>通路分析</strong>：在 KEGG&#x2F;Reactome 通路中对差异表达基因做富集分析</li>
+<li><strong>网络生物学</strong>：重建基因调控网络，识别枢纽基因</li>
+<li><strong>生物标志物发现</strong>：整合多组学层次来预测患者结局</li>
+</ul>
+<h3 id="📊-数据分析与可视化"><a href="#📊-数据分析与可视化" class="headerlink" title="📊 数据分析与可视化"></a>📊 数据分析与可视化</h3><ul>
+<li><strong>统计分析</strong>：进行假设检验、功效分析和实验设计</li>
+<li><strong>出版级图表</strong>：用 matplotlib 和 seaborn 绘制出版质量的可视化图表</li>
+<li><strong>网络可视化</strong>：用 NetworkX 可视化生物网络</li>
+<li><strong>报告生成</strong>：用 Scientific Writing 和文档工具生成证据可追溯的研究报告；Clinical Reports 的输出始终是明确标注的草稿，只基于经核实的合成、去标识化或汇总的数据事实生成</li>
+</ul>
+<h3 id="🧪-实验室自动化"><a href="#🧪-实验室自动化" class="headerlink" title="🧪 实验室自动化"></a>🧪 实验室自动化</h3><ul>
+<li><strong>方案设计</strong>：在经过培训的操作员审核之前，编写并模拟 Opentrons 或 PyLabRobot 实验方案</li>
+<li><strong>LIMS&#x2F;ELN 集成</strong>：准备有明确范围的 Benchling 和 LabArchives 操作，远程写入需要明确授权</li>
+<li><strong>工作流自动化</strong>：离线验证和模拟多步骤的实验室工作流；实际执行仍受设备特定的操作员安全关卡约束</li>
+<li><strong>定制实验室硬件加工</strong>：先对 STEP 文件做预检，再在 Fictiv 上获取 CNC 加工或 3D 打印零件的报价，并把可制造性（DFM）反馈和交期选项转达给你；在你明确批准确切总价之前不会下任何订单</li>
+</ul>
+<hr>
+<h2 id="📚-可用技能"><a href="#📚-可用技能" class="headerlink" title="📚 可用技能"></a>📚 可用技能</h2><p>本仓库包含分布在多个领域的 <strong>177 个科学与研究技能</strong>。每个技能都为相应的科学库、数据库或工具提供完整的文档、代码示例和最佳实践。</p>
+<h3 id="技能分类"><a href="#技能分类" class="headerlink" title="技能分类"></a>技能分类</h3><blockquote>
+<p><strong>注意：</strong> 下面列出的 Python 软件包技能和平台集成技能都是<em>明确定义</em>的技能：经过整理，附带文档、示例和最佳实践，以获得更强、更可靠的表现。它们并不是上限：即使没有专门的技能，智能体也可以安装和使用<em>任何</em> Python 包，或调用<em>任何</em> API。列出的技能只是让常见工作流更快、更可靠。</p>
+</blockquote>
+<p>各分类之间有重叠：一个技能可能出现在多个领域中，因此各分类的技能数相加并不等于 177 个独立技能。</p>
+<p>下面的软件包版本是这些技能所记录的基线版本。完整的依赖栈、运行时要求和验证范围，请查看各个链接中的 <code>SKILL.md</code>。</p>
+<h4 id="🧬-生物信息学与基因组学（32-个技能）"><a href="#🧬-生物信息学与基因组学（32-个技能）" class="headerlink" title="🧬 生物信息学与基因组学（32 个技能）"></a>🧬 <strong>生物信息学与基因组学</strong>（32 个技能）</h4><ul>
+<li>RNA-seq 预处理：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/bulk-rnaseq/SKILL.md">Bulk RNA-seq</a>（FASTQ 和定量工作流、样本与参考序列的质量控制，以及交给 PyDESeq2 的、经过验证的基因水平计数）</li>
+<li>序列分析：BioPython、pysam、scikit-bio、BioServices</li>
+<li>PCR 检测设计：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/primer-design/SKILL.md">Primer Design</a>（Primer3 候选引物、热力学、变异屏蔽、引物尾部序列，以及有范围限制的本地或 BLAST 辅助特异性筛查）</li>
+<li>单细胞分析：Scanpy、AnnData、scvi-tools、scVelo（RNA 速率）、Arboreto、Cellxgene Census</li>
+<li>基因组工具：gget、当前的 geniml&#x2F;Gtars 区间工作流、deepTools、Polars-Bio、Zarr、TileDB-VCF</li>
+<li>流式细胞术：FlowIO（FCS 文件读写）、<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/flowkit/SKILL.md">FlowKit</a>（补偿、数据变换、分层设门和 FlowJo 工作区分析）</li>
+<li>坐标规范：Genomic Coordinates（在 BED&#x2F;GFF&#x2F;GTF&#x2F;VCF&#x2F;SAM&#x2F;WIG 的不同约定之间转换区间，规范化变异的表示，并在问题破坏分析之前发现 0 起始与 1 起始坐标、基因组组装版本和 contig 命名的不一致）</li>
+<li>群体与序列智能：OneKGPd（千人基因组队列的个体水平查询）和 Genomic Intelligence（托管的调控与基因表达预测；仅限研究）</li>
+<li>变异效应预测：AlphaGenome（DeepMind 的 AlphaGenome Atlas 为每个 GRCh38 单核苷酸变异预先计算了效应：带 Phred 排名的 AVI 分数和 18 个 SHAP 特征归因，以及 9,440 条 RNA-seq、DNase、ATAC、ChIP、CAGE、剪接和接触图轨道上的原始分数与分位数分数；另外支持按需模型打分、计算机模拟突变，以及人和小鼠的参考与替代等位基因轨道预测；仅限研究，不用于临床）</li>
+<li>差异表达：PyDESeq2</li>
+<li>混池 CRISPR 筛选：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/mageck/SKILL.md">MAGeCK</a>（guide 计数、重复样本质量控制、明确的对比设置和基因命中排名）</li>
+<li>扩增子微生物组：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/qiime2-amplicon/SKILL.md">QIIME 2 Amplicon</a>（双端 16S 导入、引物修剪、去噪、分类注释和读段保留检查）</li>
+<li>功能富集：Pathway Enrichment（通过 gseapy + g:Profiler 进行 ORA、GSEA&#x2F;预排序 GSEA 和 ssGSEA；支持 GO、KEGG、Reactome、WikiPathways、MSigDB）</li>
+<li>系统发育学：ETE Toolkit、Phylogenetics（MAFFT、IQ-TREE 2、FastTree）</li>
+<li>微生物组基础模型：Waypoint（Outpost Bio 开放的 Waypoint-6m&#x2F;45m&#x2F;170m 检查点、包含 53.9 万个样本的 Atlas MGnify 预训练语料库，以及包含八项任务的 Compass 基准；支持在分类丰度谱上做嵌入、微调、基准测试和预训练，并可从 MetaPhlAn&#x2F;Kraken2&#x2F;QIIME 2 格式转换）</li>
+</ul>
+<h4 id="🧪-化学信息学与药物发现（11-个技能）"><a href="#🧪-化学信息学与药物发现（11-个技能）" class="headerlink" title="🧪 化学信息学与药物发现（11 个技能）"></a>🧪 <strong>化学信息学与药物发现</strong>（11 个技能）</h4><ul>
+<li>分子操作：RDKit、Datamol、Molfeat</li>
+<li>NMR 处理：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/nmrglue/SKILL.md">nmrglue</a>（经过校准的一维 FID、相位与基线校正、候选峰和带符号的积分）</li>
+<li>深度学习：DeepChem、TorchDrug</li>
+<li>对接与筛选：DiffDock</li>
+<li>分子动力学：OpenMM + MDAnalysis（分子动力学模拟与轨迹分析）</li>
+<li>云端量子化学：Rowan（pKa、对接、共折叠）</li>
+<li>类药性：MedChem</li>
+<li>基准：PyTDC 1.1.15，运行在其经过验证的 CPython 3.11 兼容环境上</li>
+</ul>
+<h4 id="🔬-蛋白质组学与质谱（2-个技能）"><a href="#🔬-蛋白质组学与质谱（2-个技能）" class="headerlink" title="🔬 蛋白质组学与质谱（2 个技能）"></a>🔬 <strong>蛋白质组学与质谱</strong>（2 个技能）</h4><ul>
+<li>谱图处理：matchms、pyOpenMS</li>
+</ul>
+<h4 id="🏥-临床研究与证据工作流（8-个技能）"><a href="#🏥-临床研究与证据工作流（8-个技能）" class="headerlink" title="🏥 临床研究与证据工作流（8 个技能）"></a>🏥 <strong>临床研究与证据工作流</strong>（8 个技能）</h4><ul>
+<li>临床数据库：通过 Database Lookup 访问（ClinicalTrials.gov、ClinVar、ClinPGx、COSMIC、FDA、cBioPortal、Monarch 等）</li>
+<li>临床药理学：PK&#x2F;PD Modeling（非房室分析、房室模型与群体药代动力学、暴露-效应与 Emax 模型、TMDD、PBPK 入门、包括 RSABE&#x2F;ABEL 在内的生物等效性、异速放大与首次人体给药剂量、依据 ICH M12 的药物相互作用预测、浓度-QTc 分析，以及贝叶斯治疗药物监测；只使用标准库和 numpy&#x2F;scipy，不调用任何专有的参数估计软件）</li>
+<li>癌症基因组学：DepMap（癌症依赖性分数、药物敏感性）</li>
+<li>癌症影像：Imaging Data Commons（通过 idc-index 访问 NCI 的放射学和病理学数据集）</li>
+<li>医疗 AI 研究：PyHealth</li>
+<li>决策支持研究：仅限本地、汇总或合成数据层面的临床决策支持评估与治理材料</li>
+<li>临床文档：用 Clinical Reports 生成绑定数据来源的草稿，用 Treatment Plans 对已核实的、由临床医生作出的决定进行格式整理；这两个技能都不做诊断，也不推荐治疗</li>
+</ul>
+<h4 id="🐭-临床前研究与动物福利（1-个技能）"><a href="#🐭-临床前研究与动物福利（1-个技能）" class="headerlink" title="🐭 临床前研究与动物福利（1 个技能）"></a>🐭 <strong>临床前研究与动物福利</strong>（1 个技能）</h4><ul>
+<li>严重程度评估：RELSA Severity Assessment（根据体重、体温、临床与筑巢评分、生物标志物、活动量、心率、挖洞和跑轮行为计算多变量 RELSA 分数；用 ARIMA 预测人道终点并给出 95% 预测区间；用核密度估计划出关注区和危险区，用于 3R 原则&#x2F;优化以及欧盟 2010&#x2F;63&#x2F;EU 指令的严重程度报告）；它是严重程度评估的辅助工具，绝不是决策规则</li>
+</ul>
+<h4 id="🖼️-显微成像、医学影像与数字病理（5-个技能）"><a href="#🖼️-显微成像、医学影像与数字病理（5-个技能）" class="headerlink" title="🖼️ 显微成像、医学影像与数字病理（5 个技能）"></a>🖼️ <strong>显微成像、医学影像与数字病理</strong>（5 个技能）</h4><ul>
+<li>DICOM 处理：pydicom 3.0.2，先做隐私优先的本地预检，不声称具有诊断用途或符合去标识化合规要求</li>
+<li>全切片成像：histolab 和仅限研究用途的 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pathml/SKILL.md">PathML 3.0.8</a></li>
+<li>定量显微：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/cellprofiler/SKILL.md">CellProfiler</a>（可复用的细胞核测量流程、通道清单、分割叠加图和测量检查）</li>
+<li>虚拟空间转录组：采用非商业许可的 DeepSpot-M，从 224x224 的 H&amp;E 图块预测全转录组的空间基因表达</li>
+</ul>
+<h4 id="🧠-神经科学与电生理（4-个技能）"><a href="#🧠-神经科学与电生理（4-个技能）" class="headerlink" title="🧠 神经科学与电生理（4 个技能）"></a>🧠 <strong>神经科学与电生理</strong>（4 个技能）</h4><ul>
+<li>数据标准：BIDS（用于神经科学和生物医学数据集的脑成像数据结构；与 DataLad 配合检索数据：OpenNeuro（github.com&#x2F;OpenNeuroDatasets）和 DANDI（github.com&#x2F;dandisets）都以 DataLad 数据集的形式发布数据；也可在记录来源的情况下运行 BIDS-App，BEP028 是在衍生数据中记录来源的扩展提案）</li>
+<li>神经记录：Neuropixels-Analysis（细胞外放电、硅探针、spike sorting）</li>
+<li>数据转换：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/nwb-conversion/SKILL.md">NWB Conversion</a>（双光子 TIFF 和行为位置数据、时钟对齐、往返转换无损，以及 NWB 验证）</li>
+<li>生理信号：NeuroKit2 0.2.13，用于可复现的研究工作流，而不是诊断、监测决策或医疗器械验证</li>
+</ul>
+<h4 id="🤖-机器学习与人工智能（14-个核心技能）"><a href="#🤖-机器学习与人工智能（14-个核心技能）" class="headerlink" title="🤖 机器学习与人工智能（14 个核心技能）"></a>🤖 <strong>机器学习与人工智能</strong>（14 个核心技能）</h4><ul>
+<li>深度学习：PyTorch Lightning、Transformers、Stable Baselines3，以及 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pufferlib/SKILL.md">PufferLib</a> 针对原生 5.0、已发布的 3.0.0 和固定的历史版本 4.0 的工作流</li>
+<li>经典机器学习：scikit-learn、scikit-survival 0.28 和 SHAP</li>
+<li>时间序列：aeon、TimesFM（Google 用于单变量预测的零样本基础模型）</li>
+<li>贝叶斯方法：PyMC</li>
+<li>优化：PyMOO</li>
+<li>图机器学习：Torch Geometric</li>
+<li>降维：UMAP-learn</li>
+<li>统计建模：statsmodels</li>
+</ul>
+<h4 id="🔮-材料科学、化学与物理（8-个技能）"><a href="#🔮-材料科学、化学与物理（8-个技能）" class="headerlink" title="🔮 材料科学、化学与物理（8 个技能）"></a>🔮 <strong>材料科学、化学与物理</strong>（8 个技能）</h4><ul>
+<li>材料：当前拆分为封装层与核心层的 pymatgen，以及有明确范围限制的 Materials Project 查询</li>
+<li>合金热力学：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pycalphad/SKILL.md">pycalphad</a>（基于 TDB 的相平衡、相分数、成分检查和数据库来源记录）</li>
+<li>代谢建模：COBRApy</li>
+<li>天文学：Astropy</li>
+<li>量子计算：Cirq、PennyLane、Qiskit、<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/qutip/SKILL.md">QuTiP 5.3.1</a></li>
+</ul>
+<h4 id="⚙️-工程与仿真（9-个技能）"><a href="#⚙️-工程与仿真（9-个技能）" class="headerlink" title="⚙️ 工程与仿真（9 个技能）"></a>⚙️ <strong>工程与仿真</strong>（9 个技能）</h4><ul>
+<li>实验室硬件 CAD：参数化的 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/lab-hardware-cad/SKILL.md">build123d 0.13.0 工作流</a>，用于微流控芯片及其模具、光机械支架、微孔板和比色皿适配器以及行为实验装置，附带接口检查和多视角渲染</li>
+<li>定制零件加工：Fictiv（通过浏览器完成 CNC、3D 打印、钣金、聚氨酯浇注和注塑的报价、可制造性审查、交期与地区选项以及结账；带有 CAD 预检，并在任何下单、报价请求或分享之前设置明确的批准关卡）</li>
+<li>数值计算：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/matlab/SKILL.md">MATLAB 和 GNU Octave</a> 的规划与审查工作流，对应 R2026b 文档、明确的 R2026a Python 集成基线和 GNU Octave 11.3.0</li>
+<li>计算流体力学：有范围限制的 FluidSim 0.9 模拟，附带数值有效性和高性能计算（HPC）检查</li>
+<li>实验流场测量：OpenPIV（从 PIV 图像对计算速度场、判读窗口互相关、伪矢量验证，以及涡量、应变率和湍流统计）</li>
+<li>离散事件仿真：SimPy 4.1.2，附带重复运行、预热期和输出分析的指导</li>
+<li>化学动力学：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/cantera/SKILL.md">Cantera</a>（均相点火延迟、反应机理快照、数值细化和守恒检查）</li>
+<li>电池实验：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pybamm/SKILL.md">PyBaMM</a>（充放电制度、参数来源、数值检查以及与实测曲线的对比）</li>
+<li>符号数学：SymPy</li>
+</ul>
+<h4 id="🌊-化学海洋学（1-个技能）"><a href="#🌊-化学海洋学（1-个技能）" class="headerlink" title="🌊 化学海洋学（1 个技能）"></a>🌊 <strong>化学海洋学</strong>（1 个技能）</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/marine-carbonate-chemistry/SKILL.md">Marine Carbonate Chemistry</a>：用 PyCO2SYS 处理成对的海水测量数据，包括碳酸盐形态计算、pH 标度处理、实验室条件到原位条件的校正、文石&#x2F;方解石饱和度以及不确定度传递</li>
+</ul>
+<h4 id="📊-数据分析与可视化（18-个技能）"><a href="#📊-数据分析与可视化（18-个技能）" class="headerlink" title="📊 数据分析与可视化（18 个技能）"></a>📊 <strong>数据分析与可视化</strong>（18 个技能）</h4><ul>
+<li>可视化：Matplotlib、Seaborn、Scientific Visualization</li>
+<li>地理空间分析：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/geopandas/SKILL.md">GeoPandas 1.2.0</a> 和 GeoMaster（遥感、GIS、卫星影像和空间机器学习）</li>
+<li>数据处理：Dask、Polars、Vaex</li>
+<li>网络分析：NetworkX</li>
+<li>文档处理：LiteParse（本地解析 PDF 和其他文档，带边界框和 OCR）和 MarkItDown</li>
+<li>信息图：Infographics（借助 AI 制作专业的信息图）</li>
+<li>图表：Markdown &amp; Mermaid Writing（以基于文本的图表作为默认的文档标准）</li>
+<li>探索性数据分析：针对明确支持的格式进行有范围限制的本地 EDA，遇到未知格式时直接拒绝处理</li>
+<li>统计分析：Statistical Analysis 工作流</li>
+<li>单位与测量不确定度：Uncertainty &amp; Units（用 pint 做量纲检查、GUM 不确定度预算、A 类&#x2F;B 类评定、包含因子与扩展不确定度、蒙特卡洛传递、CODATA 常数）</li>
+<li>实验设计：Experimental Design（随机化、区组、全因子&#x2F;部分因子 DOE、交叉设计、整群设计、序贯设计；使用 pyDOE3）</li>
+<li>统计功效：Statistical Power（t 检验、方差分析、比例、相关和回归的样本量与功效计算；既有闭式解，也有针对广义线性模型、混合模型和整群设计的模拟方法）</li>
+</ul>
+<h4 id="🧪-实验室自动化（6-个技能）"><a href="#🧪-实验室自动化（6-个技能）" class="headerlink" title="🧪 实验室自动化（6 个技能）"></a>🧪 <strong>实验室自动化</strong>（6 个技能）</h4><ul>
+<li>移液操作：离线优先的 PyLabRobot 规划&#x2F;模拟和 Opentrons 方案编写，实际执行需要通过明确的操作员安全关卡</li>
+<li>云实验室：Ginkgo Cloud Lab（在无细胞体系&#x2F;大肠杆菌&#x2F;毕赤酵母中进行蛋白表达与纯化、IVT RNA 合成、热迁移和 Echo-MS 检测、SPR 接入，以及通过自主 RAC 基础设施完成荧光像素画）</li>
+<li>方案管理：在已记录的 v3&#x2F;v4 接口上进行有范围限制的 protocols.io 读取，以及不实际执行的写入计划</li>
+<li>LIMS&#x2F;ELN 集成：Benchling，以及另外独立的 LabArchives 旧版 ELN 和 Inventory v1 API</li>
+</ul>
+<h4 id="🔬-多组学与系统生物学（5-个技能）"><a href="#🔬-多组学与系统生物学（5-个技能）" class="headerlink" title="🔬 多组学与系统生物学（5 个技能）"></a>🔬 <strong>多组学与系统生物学</strong>（5 个技能）</h4><ul>
+<li>通路分析：通过 Database Lookup（KEGG、Reactome、STRING）和 PrimeKG</li>
+<li>数据管理：LaminDB</li>
+<li>生化动力学：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/tellurium/SKILL.md">Tellurium</a>（动力学模型、时间进程模拟、扰动分析和可复现的模型交换）</li>
+<li>碳-13 代谢通量推断：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/13c-metabolic-flux/SKILL.md">13C Metabolic Flux</a>（经过验证的原子映射、稳态同位素模拟、带约束的拟合和通量可辨识性分析）</li>
+</ul>
+<h4 id="🧬-蛋白质工程与设计（5-个技能）"><a href="#🧬-蛋白质工程与设计（5-个技能）" class="headerlink" title="🧬 蛋白质工程与设计（5 个技能）"></a>🧬 <strong>蛋白质工程与设计</strong>（5 个技能）</h4><ul>
+<li>蛋白质语言模型：ESM</li>
+<li>实验结构重建：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/relion/SKILL.md">RELION</a>（基于已提取颗粒的精修、光学参数与 STAR 文件验证，以及半图&#x2F;FSC 检查）</li>
+<li>糖工程：Glycoengineering（N&#x2F;O-糖基化预测、治疗性抗体优化）</li>
+<li>云实验室平台：Adaptyv（自动化的蛋白质测试与验证）</li>
+<li>云端结构与设计平台：Tamarind（通过 REST API 或 MCP，以托管 GPU 使用 AlphaFold、Boltz、Chai、ESMFold、RFdiffusion、ProteinMPNN、BoltzGen、抗体&#x2F;纳米抗体设计、DiffDock&#x2F;Vina 对接、结合亲和力预测和多序列比对生成）</li>
+</ul>
+<h4 id="📚-科学传播（23-个技能）"><a href="#📚-科学传播（23-个技能）" class="headerlink" title="📚 科学传播（23 个技能）"></a>📚 <strong>科学传播</strong>（23 个技能）</h4><ul>
+<li>文献：Paper Lookup（PubMed、PMC、bioRxiv、medRxiv、arXiv、OpenAlex、Crossref、Semantic Scholar、CORE、Unpaywall）、Literature Review、Paperzilla</li>
+<li>全文语料访问：Paperclip（一个只读的虚拟文件系统，覆盖约 1100 万篇全文论文、21.7 万多份 FDA&#x2F;PMDA&#x2F;EMA 监管文件、临床试验注册信息，以及 UniProt&#x2F;PDB&#x2F;ChEMBL 条目；支持按来源限定的语义搜索、全语料 grep、SQL 元数据查询、跨多篇论文的 map&#x2F;reduce 阅读、图像的视觉分析，以及精确到行的引文）</li>
+<li>高级论文搜索：BGPT Paper Search（从全文而不只是摘要中，为每篇论文提取 25 个以上的结构化字段：方法、结果、样本量、质量评分）</li>
+<li>网络情报：Parallel Web（网页搜索、URL&#x2F;PDF 内容提取、深度研究、结构化信息补全、实体发现和定期监测）、Exa Search 和 Research Lookup</li>
+<li>研究笔记本：Open Notebook（可自行托管的 NotebookLM 替代品，支持 PDF、视频、音频和网页；支持 16 个以上的 AI 提供商；可以生成多人对话的播客）</li>
+<li>写作：证据可追溯的 Scientific Writing，以及本地、保密、经授权的 Peer Review</li>
+<li>文档处理：LiteParse 和 MarkItDown</li>
+<li>出版与论文工作流：Venue Templates</li>
+<li>演示文稿：Scientific Slides、LaTeX Posters，以及根据作者批准的本地清单生成、不含宏的 PPTX Posters</li>
+<li>图表：Scientific Schematics、Markdown &amp; Mermaid Writing</li>
+<li>信息图：Infographics（10 种类型、8 种风格、色盲友好的配色）</li>
+<li>引文：Citation Management、pyzotero</li>
+<li>插图：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/generate-image/SKILL.md">Generate Image</a>（通过 OpenRouter Image API 进行图像生成、编辑和合成，支持模型发现、能力检查和试运行）</li>
+</ul>
+<h4 id="🔬-科学数据库与数据访问（13-个技能，共覆盖-100-多个数据库）"><a href="#🔬-科学数据库与数据访问（13-个技能，共覆盖-100-多个数据库）" class="headerlink" title="🔬 科学数据库与数据访问（13 个技能，共覆盖 100 多个数据库）"></a>🔬 <strong>科学数据库与数据访问</strong>（13 个技能，共覆盖 100 多个数据库）</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/database-lookup/SKILL.md">Database Lookup</a> 记录了科学和金融领域中 80 个可公开访问、注册后访问或需许可访问的数据库，并给出检索约定、分页与计数核对，以及接口来源记录。专门的技能覆盖特定的数据平台。BioServices、Biopython、gget 等可访问多个数据库的软件包进一步扩大了覆盖面。</p>
+</blockquote>
+<ul>
+<li>统一访问：Database Lookup（80 个数据库，涵盖化学、基因组学、临床、通路、专利、经济等领域，包括 PubChem、ChEMBL、UniProt、PDB、AlphaFold、KEGG、Reactome、STRING、ClinVar、COSMIC、ClinicalTrials.gov、FDA、FRED、USPTO、SEC EDGAR 以及其他数十个，并提供可审计的过滤条件和来源记录）</li>
+<li>癌症基因组学：DepMap（癌细胞系依赖性、药物敏感性、基因效应谱）</li>
+<li>公开的胚系变异证据：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/folklore-variant-evidence/SKILL.md">Folklore Variant Evidence</a>（针对一个受支持的 GRCh38 变异，给出 ClinGen 的基因-疾病有效性判定和带来源链接的证据，明确处理不确定之处，并附上相关文献，供有资质的专业人员审查）</li>
+<li>癌症影像：Imaging Data Commons（通过 idc-index 访问 NCI 的放射学和病理学数据集）</li>
+<li>知识图谱：PrimeKG（精准医学知识图谱，包含基因、药物、疾病和表型）</li>
+<li>生物医学知识图谱搜索：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/ncats-arax">NCATS ARAX</a>（有范围限制、受 Biolink 约束的一跳查询，以及固定端点的两跳查询，在明确选定的最多五个 NCATS Translator 提供方的知识图谱上运行，并保留来源记录）</li>
+<li>财政数据：U.S. Treasury Fiscal Data（国债、财政部报表、国债拍卖、汇率）</li>
+<li>科学机器学习资源目录：Hugging Science（整理了 17 个科学领域中的数据集、模型、博客文章和交互式 Spaces 的索引，包括天文学、生物学、化学、气候、基因组学、材料科学、医学、物理学和科学推理等，并给出 <code>datasets</code>、<code>transformers</code> 和 <code>gradio_client</code> 的使用方式）</li>
+<li>个体水平的群体基因组学：OneKGPd（3,202 人的高覆盖度千人基因组队列查询）</li>
+<li>托管的调控基因组学：Genomic Intelligence（供研究使用的启动子、剪接、增强子、染色质、表达和基因注释预测）</li>
+<li>预先计算的变异效应：AlphaGenome（为每个 GRCh38 单核苷酸变异查询 Atlas 中的 AVI、Phred、SHAP 特征归因和各轨道分数；针对插入缺失、小鼠和自定义打分器按需运行 AlphaGenome 模型打分；提供指向 Atlas 网站的深层链接）</li>
+<li>本体标识符：Ontology Term Resolution（把自由文本形式的组织、细胞类型、疾病、表型、检测方法、化学物质、物种和发育阶段标签解析为术语 ID，并对照 EBI OLS4 验证 CURIE，用于 GEO&#x2F;ENA&#x2F;BioSamples&#x2F;CELLxGENE&#x2F;HCA&#x2F;ISA-Tab 元数据）</li>
+<li>实时病原体监测：Pathogen Variant Surveillance（哪些病毒谱系正在流行、增长速度有多快、携带哪些突变；通过 GenSpectrum LAPIS API 覆盖 SARS-CoV-2、包括 H5N1 在内的流感、RSV、猴痘、麻疹、登革热等，谱系名称对照实时的 pango-designation 命名体系解析，报告延迟是实测的而不是假设的）</li>
+</ul>
+<h4 id="🔧-基础设施与平台（12-个技能）"><a href="#🔧-基础设施与平台（12-个技能）" class="headerlink" title="🔧 基础设施与平台（12 个技能）"></a>🔧 <strong>基础设施与平台</strong>（12 个技能）</h4><ul>
+<li>云计算：Modal</li>
+<li>数据分发与来源记录：DataLad（通过 git-annex 克隆和获取 OpenNeuro、DANDI 和 registry.datalad.org 上的数据集，用 datalad run&#x2F;rerun 和 containers-run 记录可重新执行的来源信息，并发布到兄弟仓库）</li>
+<li>GPU 加速：Optimize for GPU（CuPy、Numba CUDA、Warp、cuDF、cuML、cuGraph、KvikIO、cuCIM、cuxfilter、cuVS、cuSpatial、RAFT）</li>
+<li>基因组学平台：DNAnexus、LatchBio</li>
+<li>工作流引擎：Nextflow（构建、运行和调试 Nextflow 与 nf-core 流程：DSL2 模块、执行器与容器、在 HPC 和云上扩展）和 pacsomatic（nf-core&#x2F;pacsomatic 肿瘤-正常配对体细胞变异检测流程的操作工具包）</li>
+<li>显微成像：OMERO</li>
+<li>自动化：Opentrons</li>
+<li>资源检测：Get Available Resources，在用户要求时或在明显对资源敏感的本地任务之前运行；输出经过脱敏，且不做压力测试</li>
+<li>工作流挖掘：Autoskill（基于 screenpipe 在本地检测重复出现的工作流并起草技能）</li>
+<li>智能体平台开发：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pi-agent/SKILL.md">Pi Agent</a>（Pi 0.99.2 终端运行框架、SDK、RPC&#x2F;JSONL、原生 MCP、扩展、提供商&#x2F;模型、软件包、TUI 组件和会话工具）</li>
+</ul>
+<h4 id="🎓-研究方法与规划（13-个技能）"><a href="#🎓-研究方法与规划（13-个技能）" class="headerlink" title="🎓 研究方法与规划（13 个技能）"></a>🎓 <strong>研究方法与规划</strong>（13 个技能）</h4><ul>
+<li>构思：有证据意识的 Scientific Brainstorming，以及不打分、并始终把假设标注为候选的 Hypothesis Generation</li>
+<li>文本数据集假设软件：HypoGeniC&#x2F;HypoRefine 生成候选的文本模式和任务预测统计，而不是经过验证的科学假设</li>
+<li>自主优化：Arbor（Hypothesis Tree Refinement：针对开发集评估器反复改进代码、模型、智能体运行框架或数据等产物，同时用预留的测试关卡防止过拟合）</li>
+<li>批判性分析：Scientific Critical Thinking，以及对学术作品进行定性、低风险的 Scholar Evaluation；绝不对人进行排名，也不用于支持重大决策</li>
+<li>情景分析：What-If Oracle（探索 4 到 6 个分支的可能性、制定应急计划、对决策进行压力测试）</li>
+<li>多视角审议：Consciousness Council（多元的专家观点、唱反调式的分析）</li>
+<li>认知画像：DHDNA Profiler（从任何文本中提取思维模式和认知特征）</li>
+<li>经费：Research Grants</li>
+<li>发现：Research Lookup、Paper Lookup（10 个学术数据库）</li>
+<li>市场分析：证据可追溯的 Market Research Reports，以明确的假设估算市场规模，并对预测做敏感性分析</li>
+</ul>
+<h4 id="⚖️-法规与标准（2-个技能）"><a href="#⚖️-法规与标准（2-个技能）" class="headerlink" title="⚖️ 法规与标准（2 个技能）"></a>⚖️ <strong>法规与标准</strong>（2 个技能）</h4><ul>
+<li>标准就绪：为 ISO 13485（医疗器械质量管理体系）、ISO 14971（医疗器械风险管理）、ISO&#x2F;IEC 17025（检测和校准实验室）和 ISO 15189（医学实验室）起草证据准备材料，各标准对应的过程域通过 <code>--standard</code> 配置选择</li>
+<li>分析方法验证：在适用的框架下规划、评估并记录分析方法（HPLC、LC-MS&#x2F;MS、GC、CE、ICP-MS、溶出度、qNMR、qPCR、NIR、配体结合检测和细胞检测）的验证、确认与转移；ICH Q2(R2)&#x2F;Q14 和 ICH M10 依据其开放许可的原文编写，USP <code>&lt;1220&gt;</code>&#x2F;<code>&lt;1225&gt;</code>&#x2F;<code>&lt;1226&gt;</code>、CLSI EP 系列和 ISO&#x2F;IEC 17025 只按编号和范围引用；统计只用标准库，不访问网络</li>
+<li>区分不同的保证路径：明确区分 ISO 认证、实验室认可、FDA QMSR 检查、CLIA 认证、MDSAP 以及欧盟 MDR&#x2F;IVDR 各自的证据边界；实验室获得的是认可而不是认证，而且 ISO 15189 认可并不能满足 CLIA 的要求</li>
+<li>绝不构成合规、审核、评估、认证、认可或方法放行的决定；需要有资质的法规事务与质量保证（RA&#x2F;QA）、法律、实验室主任、评审员和认证机构人员审核</li>
+</ul>
+<blockquote>
+<p>📖 <strong>想了解全部技能的完整细节</strong>，请查看 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/docs/skills.md">docs&#x2F;skills.md</a></p>
+</blockquote>
+<blockquote>
+<p>💡 <strong>想找实用的示例？</strong> 请查看 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/docs/examples.md">docs&#x2F;examples.md</a>，里面有覆盖所有科学领域的完整工作流示例。</p>
+</blockquote>
+<hr>
+<h2 id="📝-博客文章精选"><a href="#📝-博客文章精选" class="headerlink" title="📝 博客文章精选"></a>📝 博客文章精选</h2><p>来自 <a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog">K-Dense 博客</a>的深度文章、基准测试和指南，与使用本仓库中的技能直接相关。</p>
+<h3 id="从这里开始"><a href="#从这里开始" class="headerlink" title="从这里开始"></a>从这里开始</h3><ul>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/agent-skills-final-piece-for-ai-powered-research">Agent Skills: The Final Piece for AI-Powered Scientific Research</a></strong>：什么是 Agent Skills，为什么经过整理的领域指导胜过单纯的模型能力，以及对本仓库的介绍。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/k-dense-web-vs-scientific-agent-skills">K-Dense Web vs Scientific Agent Skills: Why We Built Both (And Which One You Should Use)</a></strong>：什么时候开源技能是合适的工具，什么时候带托管算力的平台更合理。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/ai-co-scientists-answered-20-questions">AI Co-Scientists, Answered: 20 Questions from a Live Session with a University Research Center</a></strong>：一家正在评估 AI 合作科学家的研究中心提出的实际问题：哪些部分保持开源并采用 MIT 许可，本地和桌面部署如何运作，数据如何处理，以及如何在托管平台和运行这些技能的 BYOK 方案之间选择。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/multica-scientific-research">How to Use Multica for Scientific Research</a></strong>：一个自行托管的 Multica 工作区，加上这些技能中精选的一部分：临床试验和变异分析、文献综述、每周自动运行的任务，以及由第二个模型进行的审核；每个技能都从 <code>skills/&lt;name&gt;/</code> 导入。</li>
+</ul>
+<h3 id="技能基准测试与深度解析"><a href="#技能基准测试与深度解析" class="headerlink" title="技能基准测试与深度解析"></a>技能基准测试与深度解析</h3><ul>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/introducing-waypoint-agent-skill">The Silent 97%: Introducing the waypoint-bio Agent Skill</a></strong>：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/waypoint-bio">waypoint-bio</a> 如何防止数据悄无声息地丢失：一个未经转换的 MetaPhlAn 表只保留了 3% 的丰度质量，却仍然返回一个有效的嵌入；在配对比较中，配备该技能的智能体以 16 比 0 获胜。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/lab-hardware-cad-skill">The Millimetre Problem: Introducing the lab-hardware-cad Agent Skill</a></strong>：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/lab-hardware-cad">lab-hardware-cad</a> 在 98 次按几何精度评分的运行中：使用技能的一组在 49 次中的 49 次都生成了参数化、可重新生成的模型（基线组为 49 次中的 0 次），并且指出了缺失的 Y 迷宫标准，而不是自己编造一个。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/database-lookup-one-skill-78-databases">One Skill, 78 Databases: Why We Didn’t Build 78 Skills</a></strong>：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/database-lookup">database-lookup</a> 背后的设计思路：合并成一个技能后，常驻上下文的开销降低了 13.9 倍，而在五个模型上的路由准确率保持不变。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/benchmarking-pyopenms-skill-mass-spectrometry">Can an AI Agent Run Your Mass Spec Pipeline? Benchmarking the PyOpenMS Skill</a></strong>：一项针对 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pyopenms">pyopenms</a> 的 250 次运行研究：使用技能时任务成功率为 100%，不使用时为 96%；pyOpenMS API 错误减少 92%，成本降低 10%。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/benchmarking-rowan-skill-chemistry">Beyond RDKit: Benchmarking the Rowan Agent Skill Against Experiment</a></strong>：把 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/rowan">rowan</a> 与 RDKit 和实验数据比较：pKa 平均绝对误差 0.23（R² 0.986），logD₇.₄ 平均绝对误差 1.15，对接构象恢复的 RMSD 为 0.19 Å，计算成本约 <span class="tex2jax_ignore">$</span>0.52。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/optimize-for-gpu-skill">GPU-Accelerate Your Science: 58x Average Speedup with a Single Skill</a></strong>：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/optimize-for-gpu">optimize-for-gpu</a> 在 12 个库中重写受 CPU 限制的 Python 代码，加速比从 1.7 倍到 492 倍不等。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/towards-smarter-scientific-search-exa-scientific-agent-skills">Towards Smarter Scientific Search: Exa Joins the Scientific Agent Skills Library</a></strong>：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/exa-search">exa-search</a> 带来了什么：为学术发现调优的神经语义搜索和 URL 内容提取，而不是关键词匹配。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/benchmarking-nano-banana-2-lite-scientific-image-model">Benchmarking Nano Banana 2 Lite for Scientific Image Generation</a></strong>：对科学图表生成模型进行的 240 张图像比较，在为 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/generate-image">generate-image</a> 选择后端时很有用：Nano Banana 2 Lite 的延迟中位数为 3.8 秒，GPT Image 2 为 49 秒，但质量上有所取舍。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/benchmarking-nvidia-bionemo-nim-skill">Benchmarking NVIDIA BioNeMo Agent Toolkit Skills for NIM microservices</a></strong>：这是 NVIDIA 另外的一套技能，并不属于本仓库，但结论具有普遍性：技能最有帮助的地方在于把请求路由到不那么显而易见的接口，以及提高弱模型的可靠性；它们并不能提高底层科学模型的准确率。</li>
+</ul>
+<h3 id="为什么工作流层很重要"><a href="#为什么工作流层很重要" class="headerlink" title="为什么工作流层很重要"></a>为什么工作流层很重要</h3><ul>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/the-model-is-no-longer-the-bottleneck">The Model Is No Longer the Bottleneck</a></strong>：说明了像本仓库这样的项目为什么存在：前沿模型在原始能力上已经能与专业科学软件相当（NMR 氢化学位移预测误差为 ±0.079 ppm），因此限制因素已经转移到模型周围的工作流上：数据访问、代码执行、验证以及可审计的输出。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/ai-co-scientist-verification-bottleneck">The AI Co-Scientist Is Here. The Bottleneck Is Verification.</a></strong>：一份评估研究智能体的 10 点清单，核心是公开来源、代码、数据来源和中间过程，而不是只给出一个漂亮的最终答案；<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/database-lookup">database-lookup</a> 和 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/scientific-writing">scientific-writing</a> 等技能中关于来源记录和检索约定的要求，也出于同样的考虑。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/reproduction-not-generation-ai-for-science">Reproduction, Not Generation, Is AI’s Killer App for Science</a></strong>：为什么重新运行已发表的分析是智能体最有价值的用途：在一个包含 221 项研究的基准中，78% 的论文和 93% 的单项分析任务得到了复现，因为复现结果可以与已知数字核对，而生成的结论无法核对。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/introducing-k-bench-01-internal-benchmark">Introducing K-Bench 01: Nine Frontier Models, 178 Real Scientific Tasks, and a Lot of Confident Wrong Answers</a></strong>：九个前沿模型在 178 个真实用户任务上的表现，其中 40% 的运行存在过度声称。当智能体报告成功时，这有助于判断应该检查什么；也为上面临床、法规和研究方法类技能中写明的验证边界提供了背景。</li>
+</ul>
+<h3 id="安全与安全部署"><a href="#安全与安全部署" class="headerlink" title="安全与安全部署"></a>安全与安全部署</h3><ul>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/skill-security-before-you-install">Security in the Science Agent Era: What Every Lab Needs to Know Before Installing Skills</a></strong>：本仓库<a href="#%E2%9A%A0%EF%B8%8F-%E5%AE%89%E5%85%A8%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E">安全免责声明</a>背后的实用审查清单：阅读完整的 <code>SKILL.md</code> 和 <code>scripts/</code>，安装前先扫描，并锁定版本而不是跟踪某个分支。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/sandboxed-ai-scientist-openshell-skills">The Sandboxed AI Scientist: Pairing NVIDIA OpenShell with Scientific Agent Skills</a></strong>：在受策略管控的沙箱中运行这些技能；另请参阅<a href="#%F0%9F%8E%AF-%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B">快速上手</a>中的 NemoClaw 说明。</li>
+</ul>
+<h3 id="互补的开源项目"><a href="#互补的开源项目" class="headerlink" title="互补的开源项目"></a>互补的开源项目</h3><ul>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/introducing-science-superpowers">Introducing Science Superpowers: Scientific Discipline for Your Research Agent</a></strong>：假设预注册、可复现的工作流，以及先验证再下结论，这些机制包裹在技能之外，用来防止 p-hacking 和 HARKing。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/introducing-scientific-agents">Your AI Assistant Reasons Like a Generalist. Science Needs a Specialist.</a></strong>：503 个开源的 <code>AGENTS.md</code> 画像，提供“如何思考”这一层，与这些技能中“做什么”的操作步骤相互配合。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/introducing-mimeo-and-mimeographs">Introducing mimeo and 80+ Mimeographs</a></strong>：通过提炼某位从业者的推理方式，生成你自己的 <code>SKILL.md</code> &#x2F; <code>AGENTS.md</code> 专家画像。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/agentic-data-scientist-open-source">Agentic Data Scientist: An Open Source AI That Actually Does the Analysis</a></strong>：一个多智能体的规划、执行和验证框架，加载这些技能来完成端到端的数据科学工作流。</li>
+<li><strong><a target="_blank" rel="noopener" href="https://www.k-dense.ai/blog/karpathy-agentic-ml-engineer">Karpathy: An Open Source Agentic Machine Learning Engineer</a></strong>：一个自主的机器学习训练智能体，设计上就会调用 Scientific Agent Skills，覆盖从预处理到超参数搜索的全过程。</li>
+</ul>
+<hr>
+<h2 id="🤝-参与贡献"><a href="#🤝-参与贡献" class="headerlink" title="🤝 参与贡献"></a>🤝 参与贡献</h2><p>我们欢迎大家贡献内容，扩充和改进这个科学技能仓库！</p>
+<p>创建或修改技能之前，请先阅读 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/AGENTS.md">AGENTS.md</a>；详细的工作流和拉取请求流程见 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>。贡献应当聚焦于某个科学软件包、数据库、平台或研究工作流；宽泛的编程、基础设施和路由类技能不在本仓库的范围之内。</p>
+<h3 id="贡献方式"><a href="#贡献方式" class="headerlink" title="贡献方式"></a>贡献方式</h3><p>✨ <strong>添加新技能</strong></p>
+<ul>
+<li>为更多科学软件包或数据库创建技能</li>
+<li>为科学平台和工具添加集成</li>
+</ul>
+<p>📚 <strong>改进现有技能</strong></p>
+<ul>
+<li>用更多示例和使用场景完善文档</li>
+<li>添加新的工作流和参考资料</li>
+<li>改进代码示例和脚本</li>
+<li>修复错误或更新过时的信息</li>
+</ul>
+<p>🐛 <strong>报告问题</strong></p>
+<ul>
+<li>提交带有详细复现步骤的 bug 报告</li>
+<li>提出改进建议或新功能</li>
+</ul>
+<h3 id="如何贡献"><a href="#如何贡献" class="headerlink" title="如何贡献"></a>如何贡献</h3><ol>
+<li><strong>Fork</strong> 本仓库</li>
+<li><strong>创建</strong>一个功能分支（<code>git checkout -b feature/amazing-skill</code>）</li>
+<li><strong>遵循</strong> <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> 和现有的目录结构</li>
+<li><strong>确保</strong>所有新技能都包含有效的 <code>SKILL.md</code> 文件，带有必需的 frontmatter 和 <code>metadata.version</code></li>
+<li><strong>测试</strong>：充分测试你的示例和工作流；如果你的技能附带 <code>scripts/</code>，请在 <code>tests/&lt;skill-name&gt;/</code> 下添加测试套件</li>
+<li><strong>提交</strong>你的更改（<code>git commit -m &#39;Add amazing skill&#39;</code>）</li>
+<li><strong>推送</strong>到你的分支（<code>git push origin feature/amazing-skill</code>）</li>
+<li><strong>发起</strong>拉取请求，并清楚说明你做了哪些更改</li>
+</ol>
+<h3 id="贡献准则"><a href="#贡献准则" class="headerlink" title="贡献准则"></a>贡献准则</h3><p>✅ <strong>遵循 <a target="_blank" rel="noopener" href="https://agentskills.io/specification">Agent Skills 规范</a></strong>：每个技能都必须符合官方规范（有效的 <code>SKILL.md</code> frontmatter、命名约定、目录结构）<br>✅ 在每个 <code>SKILL.md</code> 中包含一个加了引号的 <code>metadata.version</code> 值<br>✅ 更新现有技能时递增 <code>metadata.version</code><br>✅ 与现有技能的文档格式保持一致<br>✅ 确保所有代码示例都经过测试且能正常运行<br>✅ 在示例和工作流中遵循科学上的最佳实践<br>✅ 添加新功能时更新相关文档<br>✅ 在代码中提供清晰的注释和文档字符串<br>✅ 附上官方文档的参考链接</p>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>每个附带 <code>scripts/</code> 的技能都必须在 <code>tests/&lt;skill-name&gt;/</code> 下有一个测试套件，并在 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/tests/skill-requirements.toml"><code>tests/skill-requirements.toml</code></a> 中有一条记录。<code>tests/_meta</code> 守卫会检查这一覆盖情况以及共同的结构约定：frontmatter、文档长度、本地链接、脚本语法、字节码和硬编码的本地路径。它还会根据随附的 Agent Plugins 模式验证 <code>plugin.json</code>，并检查其版本与 <code>pyproject.toml</code> 一致。命令行 <code>--help</code> 检查和示例的执行检查属于各个技能自己的测试套件。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Install repository development and validation tools</span></span><br><span class="line">uv <span class="built_in">sync</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Structural contract and coverage guard — seconds, no scientific packages needed</span></span><br><span class="line">uv run python -m pytest tests/_meta -q</span><br><span class="line"></span><br><span class="line"><span class="comment"># Validate one skill&#x27;s Agent Skills frontmatter</span></span><br><span class="line">uv run skills-ref validate skills/&lt;skill-name&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># One skill&#x27;s suite in the current environment</span></span><br><span class="line">uv run --with pytest python -m pytest tests/&lt;skill-name&gt; -q</span><br><span class="line"></span><br><span class="line"><span class="comment"># One skill with its declared packages and Python version</span></span><br><span class="line">uv run python tests/run_all.py --isolated &lt;skill-name&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Every suite, each in its own throwaway environment</span></span><br><span class="line">uv run python tests/run_all.py --isolated</span><br></pre></td></tr></table></figure>
+
+<p>每个 pytest 进程只运行一个技能的测试：不同的技能会复用 <code>_common</code> 之类的模块名，一次收集多个测试套件可能会导入错误的模块。<code>tests/run_all.py</code> 负责进程隔离；<code>--isolated</code> 还会为每个技能提供其声明的依赖环境。在当前环境中运行某个测试套件时，如果缺少所需的软件包，部分检查可能会被跳过。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/actions/workflows/skill-tests.yml">Skill Tests</a> 工作流会针对相关的拉取请求和推送到 <code>main</code> 的提交，运行结构约定检查和只依赖标准库的测试套件，也可以手动触发。完整的科学依赖测试不在 CI 中运行；请在发布之前或修改共同约定时运行它。有些技能需要外部运行时或系统工具；安装上的缺口记录在 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/tests/skill-requirements.toml"><code>tests/skill-requirements.toml</code></a> 中。</p>
+<h3 id="安全扫描"><a href="#安全扫描" class="headerlink" title="安全扫描"></a>安全扫描</h3><p>本仓库中的所有技能都使用 <a target="_blank" rel="noopener" href="https://github.com/cisco-ai-defense/skill-scanner">Cisco AI Defense Skill Scanner</a> 进行安全扫描，这是一个开源工具，可以检测 Agent Skills 中的提示词注入、数据外泄和恶意代码模式。</p>
+<p>如果你要贡献一个新技能，我们建议在提交拉取请求之前先在本地运行扫描器：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">uv pip install cisco-ai-skill-scanner</span><br><span class="line">skill-scanner scan /path/to/your/skill --use-behavioral</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>注意：</strong> 扫描结果干净可以减少审查中的干扰，但并不能保证技能完全没有风险。贡献的技能在合并之前还会经过人工审查。</p>
+</blockquote>
+<h3 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h3><p>贡献者会在我们的社区中得到认可，并可能出现在：</p>
+<ul>
+<li>仓库的贡献者列表</li>
+<li>发布说明中的特别鸣谢</li>
+<li>K-Dense 社区的亮点介绍</li>
+</ul>
+<p>你的贡献让科学计算更容易上手，也让研究人员能更有效地利用 AI 工具！</p>
+<h3 id="支持开源"><a href="#支持开源" class="headerlink" title="支持开源"></a>支持开源</h3><p>本项目建立在 50 多个出色的开源项目之上。如果你觉得这些技能有价值，请考虑<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/docs/open-source-sponsors.md">支持我们所依赖的项目</a>。</p>
+<hr>
+<h2 id="🔧-故障排除"><a href="#🔧-故障排除" class="headerlink" title="🔧 故障排除"></a>🔧 故障排除</h2><h3 id="常见故障"><a href="#常见故障" class="headerlink" title="常见故障"></a>常见故障</h3><p><strong>问题：技能没有加载</strong></p>
+<ul>
+<li>确认技能文件夹位于正确的目录（参见<a href="#%F0%9F%8E%AF-%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B">快速上手</a>）</li>
+<li>每个技能文件夹中都必须有一个 <code>SKILL.md</code> 文件</li>
+<li>复制技能后重启你的智能体或 IDE</li>
+<li>在 Cursor 中，到 Settings → Rules 确认技能已被发现</li>
+</ul>
+<p><strong>问题：缺少 Python 依赖</strong></p>
+<ul>
+<li>解决办法：查看相应的 <code>SKILL.md</code> 文件，了解所需的软件包</li>
+<li>安装依赖：<code>uv pip install package-name</code></li>
+</ul>
+<p><strong>问题：API 速率限制</strong></p>
+<ul>
+<li>解决办法：很多数据库都有速率限制，请查阅相应数据库的文档</li>
+<li>考虑使用缓存或批量请求</li>
+</ul>
+<p><strong>问题：身份验证错误</strong></p>
+<ul>
+<li>解决办法：有些服务需要 API 密钥，请查看 <code>SKILL.md</code> 中的身份验证设置</li>
+<li>核实你的凭据和权限</li>
+</ul>
+<p><strong>问题：示例已过时</strong></p>
+<ul>
+<li>解决办法：通过 GitHub Issues 报告该问题</li>
+<li>查阅软件包的官方文档，了解更新后的语法</li>
+</ul>
+<p><strong>问题：<code>gh skill install</code> 或文档中指向 <code>scientific-skills/</code> 的链接失效（v2.43.0 及以后）</strong></p>
+<ul>
+<li>从 v2.43.0 起，技能位于 <code>skills/</code>（而不是 <code>scientific-skills/</code>）下，以符合 GitHub CLI 所期望的 Agent Skills 目录结构</li>
+<li>把手动复制的路径、书签和引用中的 <code>scientific-skills/&lt;name&gt;</code> 更新为 <code>skills/&lt;name&gt;</code></li>
+<li>拉取最新版本后，重新运行 <code>gh skill install K-Dense-AI/scientific-agent-skills</code></li>
+</ul>
+<hr>
+<h2 id="❓-常见问题"><a href="#❓-常见问题" class="headerlink" title="❓ 常见问题"></a>❓ 常见问题</h2><h3 id="一般问题"><a href="#一般问题" class="headerlink" title="一般问题"></a>一般问题</h3><p><strong>问：可以免费使用吗？</strong><br>答：可以！本仓库采用 MIT 许可证。不过，每个技能都在其 <code>SKILL.md</code> 文件的 <code>license</code> 元数据字段中写明了自己的许可证，请务必查看并遵守这些条款。</p>
+<p><strong>问：为什么把所有技能放在一起，而不是拆成单独的软件包？</strong><br>答：我们相信，AI 时代的好科学本质上是跨学科的。把所有技能打包在一起，你（和你的智能体）就能轻松地跨越不同领域，例如在一个工作流中结合基因组学、化学信息学、临床数据和机器学习，而不必操心要安装哪些技能、如何把它们连接起来。</p>
+<p><strong>问：可以用于商业项目吗？</strong><br>答：仓库本身采用 MIT 许可证，允许商业使用。但是，各个技能可能采用不同的许可证，请查看每个技能 <code>SKILL.md</code> 文件中的 <code>license</code> 字段，确保符合你的预期用途。</p>
+<p><strong>问：所有技能的许可证都一样吗？</strong><br>答：不一样。每个技能都在其 <code>SKILL.md</code> 文件的 <code>license</code> 元数据字段中写明了自己的许可证，这些许可证可能与仓库的 MIT 许可证不同。用户有责任查看并遵守自己所用每个技能的许可条款。</p>
+<p><strong>问：多久更新一次？</strong><br>答：我们会定期更新技能，以跟上软件包和 API 的最新版本。重大更新会在发布说明中公布。</p>
+<p><strong>问：可以和其他 AI 模型一起使用吗？</strong><br>答：核心的 <code>SKILL.md</code> 格式遵循开放的 <a target="_blank" rel="noopener" href="https://agentskills.io/">Agent Skills</a> 标准。安装路径、发现机制和对可选元数据的支持因宿主和版本而异，请查阅目标宿主的最新文档确认。</p>
+<h3 id="安装与设置"><a href="#安装与设置" class="headerlink" title="安装与设置"></a>安装与设置</h3><p><strong>问：我需要安装所有的 Python 软件包吗？</strong><br>答：不需要。按照各个 <code>SKILL.md</code>，只安装你所用工作流的依赖。Python 版本或软件包要求互不兼容的工作流，请放在不同的环境中。</p>
+<p><strong>问：如果某个技能不能用怎么办？</strong><br>答：先查看<a href="#%F0%9F%94%A7-%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4">故障排除</a>一节。如果问题仍然存在，请在 GitHub 上提交 issue，并附上详细的复现步骤。</p>
+<p><strong>问：这些技能可以离线使用吗？</strong><br>答：只要依赖、参考数据和模型文件都已就位，本地分析就可以离线进行。数据库查询、托管模型和云平台需要网络访问；请查看具体技能的要求。</p>
+<h3 id="关于贡献"><a href="#关于贡献" class="headerlink" title="关于贡献"></a>关于贡献</h3><p><strong>问：我可以贡献自己的技能吗？</strong><br>答：当然可以！我们欢迎大家贡献。准则和最佳实践见<a href="#%F0%9F%A4%9D-%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE">参与贡献</a>一节。</p>
+<p><strong>问：如何报告 bug 或提出功能建议？</strong><br>答：在 GitHub 上提交 issue，并清楚地描述问题。如果是 bug，请附上复现步骤，以及预期行为和实际行为。</p>
+<hr>
+<h2 id="💬-获取支持"><a href="#💬-获取支持" class="headerlink" title="💬 获取支持"></a>💬 获取支持</h2><p>需要帮助？可以通过以下方式获得支持：</p>
+<ul>
+<li>📖 <strong>文档</strong>：查看相关的 <code>SKILL.md</code> 和 <code>references/</code> 文件夹</li>
+<li>🐛 <strong>Bug 报告</strong>：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/issues">提交 issue</a></li>
+<li>💡 <strong>功能请求</strong>：<a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/issues/new">提交功能请求</a></li>
+<li>📣 <strong>更新与演示</strong>：关注 <a target="_blank" rel="noopener" href="https://x.com/k_dense_ai">X</a>、<a target="_blank" rel="noopener" href="https://www.linkedin.com/company/k-dense-inc">LinkedIn</a>、<a target="_blank" rel="noopener" href="https://www.youtube.com/@K-Dense-Inc">YouTube</a> 和 <a target="_blank" rel="noopener" href="https://www.reddit.com/user/-k-dense-/">Reddit</a>，了解新技能、教程和 Scientific Agent Skills 的版本发布</li>
+<li>💼 <strong>企业支持</strong>：联系 <a target="_blank" rel="noopener" href="https://k-dense.ai/">K-Dense</a> 获取商业支持</li>
+</ul>
+<hr>
+<h2 id="📖-引用"><a href="#📖-引用" class="headerlink" title="📖 引用"></a>📖 引用</h2><p>如果你在研究或项目中使用了 Scientific Agent Skills，请引用我们的论文：</p>
+<blockquote>
+<p>Timothy Kassis, Vinayak Agarwal, Yuhuan He, Darshil Patel, and Aubrey M. Brueckner. <strong>Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents.</strong> arXiv:2609.00065, 2026. <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2609.00065">https://arxiv.org/abs/2609.00065</a></p>
+</blockquote>
+<p>在相关时，也请引用对你的工作有实质帮助的具体技能。</p>
+<p>GitHub 上的 <strong>Cite this repository</strong> 按钮基于 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/CITATION.cff"><code>CITATION.cff</code></a>，可以生成相同的论文引用，格式为 APA 或 BibTeX。</p>
+<p>引用论文可以帮助其他人找到本仓库，了解你的工作流所用的更大的技能生态，并认可 Scientific Agent Skills 背后的维护工作。引用具体技能，则能更准确地致谢你的智能体所用到的那个软件包、数据库或工作流指导。</p>
+<p>推荐的做法：</p>
+<ul>
+<li>始终使用下列格式之一引用 <strong>Scientific Agent Skills 论文</strong>。</li>
+<li>同时引用对你的分析、代码、图表、报告或研究工作流有直接贡献的每一个技能。</li>
+<li>如果某个技能封装或记录了外部的软件包、数据库或平台，并且你所在领域的惯例有此要求，也请引用相应的上游项目。</li>
+</ul>
+<h3 id="论文引用"><a href="#论文引用" class="headerlink" title="论文引用"></a>论文引用</h3><h4 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@misc&#123;kassis2026scientificagentskills,</span><br><span class="line">  title         = &#123;Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents&#125;,</span><br><span class="line">  author        = &#123;Kassis, Timothy and Agarwal, Vinayak and He, Yuhuan and Patel, Darshil and Brueckner, Aubrey M.&#125;,</span><br><span class="line">  year          = &#123;2026&#125;,</span><br><span class="line">  eprint        = &#123;2609.00065&#125;,</span><br><span class="line">  archivePrefix = &#123;arXiv&#125;,</span><br><span class="line">  primaryClass  = &#123;cs.CL&#125;,</span><br><span class="line">  url           = &#123;https://arxiv.org/abs/2609.00065&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="APA"><a href="#APA" class="headerlink" title="APA"></a>APA</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Kassis, T., Agarwal, V., He, Y., Patel, D., &amp; Brueckner, A. M. (2026). Scientific Agent Skills: A library of procedural knowledge for research agents. arXiv. https://arxiv.org/abs/2609.00065</span><br></pre></td></tr></table></figure>
+
+<h4 id="MLA"><a href="#MLA" class="headerlink" title="MLA"></a>MLA</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Kassis, Timothy, et al. &quot;Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents.&quot; arXiv, 2026, arxiv.org/abs/2609.00065.</span><br></pre></td></tr></table></figure>
+
+<h4 id="纯文本"><a href="#纯文本" class="headerlink" title="纯文本"></a>纯文本</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Kassis, T., Agarwal, V., He, Y., Patel, D., &amp; Brueckner, A. M. (2026). Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents. arXiv:2609.00065. https://arxiv.org/abs/2609.00065</span><br></pre></td></tr></table></figure>
+
+<h3 id="软件引用"><a href="#软件引用" class="headerlink" title="软件引用"></a>软件引用</h3><p>如果你还需要引用仓库本身的某个特定版本（例如，为了固定某项分析所使用的确切技能集），请在论文引用之外再添加一条软件引用，并记录你所用的发布标签或提交：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@software&#123;scientific_agent_skills_2026,</span><br><span class="line">  author = &#123;&#123;K-Dense Inc.&#125;&#125;,</span><br><span class="line">  title = &#123;Scientific Agent Skills: A Comprehensive Collection of Scientific Tools for AI Agents&#125;,</span><br><span class="line">  year = &#123;2026&#125;,</span><br><span class="line">  url = &#123;https://github.com/K-Dense-AI/scientific-agent-skills&#125;,</span><br><span class="line">  note = &#123;177 skills covering databases, packages, integrations, and analysis tools&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="单个技能的引用"><a href="#单个技能的引用" class="headerlink" title="单个技能的引用"></a>单个技能的引用</h3><p>引用某个具体技能时，请写明技能名称、该技能 <code>SKILL.md</code> 中 <code>metadata.version</code> 的版本号，以及该技能的直接链接。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@software&#123;scientific_agent_skills_astropy_2026,</span><br><span class="line">  author = &#123;&#123;K-Dense Inc.&#125;&#125;,</span><br><span class="line">  title = &#123;Astropy Skill for Scientific Agent Skills&#125;,</span><br><span class="line">  year = &#123;2026&#125;,</span><br><span class="line">  url = &#123;https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/astropy&#125;,</span><br><span class="line">  note = &#123;Version 1.5, part of Scientific Agent Skills&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>纯文本格式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Astropy skill for Scientific Agent Skills, version 1.5.</span><br><span class="line">K-Dense Inc. (2026).</span><br><span class="line">https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/astropy</span><br></pre></td></tr></table></figure>
+
+<p>如果这些技能对你的论文、报告或项目有帮助，我们非常感谢你在其中致谢。</p>
+<hr>
+<h2 id="📄-许可证"><a href="#📄-许可证" class="headerlink" title="📄 许可证"></a>📄 许可证</h2><p>本项目采用 <strong>MIT 许可证</strong>。</p>
+<p><strong>版权所有 © 2026 K-Dense Inc.</strong>（<a target="_blank" rel="noopener" href="https://k-dense.ai/">k-dense.ai</a>）</p>
+<h3 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h3><ul>
+<li>✅ <strong>可用于任何用途</strong>（商业和非商业）</li>
+<li>✅ <strong>开源</strong>：可以自由修改、分发和使用</li>
+<li>✅ <strong>宽松</strong>：对再利用的限制极少</li>
+<li>⚠️ <strong>不提供担保</strong>：按“原样”提供，不附带任何形式的担保</li>
+</ul>
+<p>完整条款见 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/LICENSE.md">LICENSE.md</a>。</p>
+<h3 id="各个技能的许可证"><a href="#各个技能的许可证" class="headerlink" title="各个技能的许可证"></a>各个技能的许可证</h3><blockquote>
+<p>⚠️ <strong>重要</strong>：每个技能都在其 <code>SKILL.md</code> 文件的 <code>license</code> 元数据字段中写明了自己的许可证。这些许可证可能与仓库的 MIT 许可证不同，并可能包含额外的条款或限制。<strong>用户有责任查看并遵守自己所用每个技能的许可条款。</strong></p>
+</blockquote>
+<h3 id="MIT-许可声明"><a href="#MIT-许可声明" class="headerlink" title="MIT 许可声明"></a>MIT 许可声明</h3><p>以下是 <a target="_blank" rel="noopener" href="https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/LICENSE.md">LICENSE.md</a> 截至 2026 年 11 月 11 日的英文原文，本转载与翻译依据此许可。许可条款以英文原文为准：</p>
+<blockquote>
+<p>MIT License</p>
+<p>Copyright (c) 2025 K-Dense Inc.</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and&#x2F;or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</blockquote>
+</div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/blog/zh-CN/tags/Agent-Skills/">Agent Skills</a><a class="link-muted mr-2" rel="tag" href="/blog/zh-CN/tags/AI-agents/">AI-agents</a><a class="link-muted mr-2" rel="tag" href="/blog/zh-CN/tags/github/">github</a></div><div class="sharethis-inline-share-buttons"></div><script src="https://platform-api.sharethis.com/js/sharethis.js#property=652030ec7b301100121bcefa&amp;product=inline-share-buttons&amp;source=platform" defer></script></article></div><div class="card"><div class="card-content"><h3>相关文章:</h3><span><ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="/blog/zh-CN/agent-skills/ai_data/" title="人工智能与数据 | Agent Skills" rel="bookmark">人工智能与数据 | Agent Skills</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="/blog/zh-CN/agent-skills/automation/" title="智能体工具与自动化 | Agent Skills" rel="bookmark">智能体工具与自动化 | Agent Skills</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="/blog/zh-CN/agent-skills/business/" title="商业与财务 | Agent Skills" rel="bookmark">商业与财务 | Agent Skills</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="/blog/zh-CN/agent-skills/cloud/" title="云与运维 | Agent Skills" rel="bookmark">云与运维 | Agent Skills</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="/blog/zh-CN/agent-skills/documents/" title="写作与文档 | Agent Skills" rel="bookmark">写作与文档 | Agent Skills</a></h3></div></li></ul></span></div></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" href="https://afdian.net/a/chanson" target="_blank" rel="noopener" data-type="afdian"><span class="icon is-small"><i class="fas fa-charging-station"></i></span><span>爱发电</span></a><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="/blog/zh-CN/assets/img/alipay.png" alt="支付宝"></span></a><a class="button donate" href="https://www.buymeacoffee.com/kammichan0" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>送我杯咖啡</span></a><a class="button donate" href="https://patreon.com/user?u=102892122" target="_blank" rel="noopener" data-type="patreon"><span class="icon is-small"><i class="fab fa-patreon"></i></span><span>Patreon</span></a><a class="button donate" data-type="paypal" onclick="document.getElementById(&#039;paypal-donate-form&#039;).submit()"><span class="icon is-small"><i class="fab fa-paypal"></i></span><span>Paypal</span></a><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" rel="noopener" id="paypal-donate-form"><input type="hidden" name="cmd" value="_donations"><input type="hidden" name="business" value="7SHJLQ8H659MU"><input type="hidden" name="currency_code" value="USD"></form><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="/blog/zh-CN/assets/img/wepay.png" alt="微信"></span></a></div></div></div><div class="card"><nav class="post-navigation mt-4 level is-mobile card-content"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/blog/zh-CN/agent-skills/ai_data/"><span class="level-item">人工智能与数据 | Agent Skills</span><i class="level-item fas fa-chevron-right"></i></a></div></nav></div><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content twikoo" id="twikoo"></div><script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.21/dist/twikoo.all.min.js"></script><script>twikoo.init({
+      envId: 'https://twikoodisqus.vercel.app',
+      onCommentLoaded: function () {
+        var commentContents = document.getElementsByClassName('tk-content');
+        for (var i = 0; i < commentContents.length; i++) {
+          var commentItem = commentContents[i];
+          var imgEls = commentItem.getElementsByTagName('img');
+          if (imgEls.length > 0) {
+            for (var j = 0; j < imgEls.length; j++) {
+              var imgEl = imgEls[j];
+              var aEl = document.createElement('a');
+              aEl.setAttribute('class', 'tk-lg-link');
+              aEl.setAttribute('href', imgEl.getAttribute('src'));
+              aEl.setAttribute('data-src', imgEl.getAttribute('src'));
+              aEl.appendChild(imgEl.cloneNode(false));
+              imgEl.parentNode.insertBefore(aEl, imgEl.nextSibling);
+              imgEl.remove();
+            }
+            if (typeof $.fn.lightGallery === 'function') {
+              $(commentItem).lightGallery({
+                selector: '.tk-lg-link'
+              });
+            }
+          }
+        }
+      }
+    });</script></div></div></div><style>.column.column-left,.column.column-right{display:none}</style><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://www.gravatar.com/avatar/7525ea09384aeb09ec303671d7dca1bf?s=128" alt="Song Chen"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Song Chen</p><p class="is-size-6 is-block">Ph.D. Candiate at Université Paris Saclay &amp; Spin-Ion Technologies</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Paris, France</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/blog/zh-CN/archives"><p class="title">29</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/blog/zh-CN/categories"><p class="title">32</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/blog/zh-CN/tags"><p class="title">27</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/song-chen1" target="_blank" rel="noopener" id="widget-follow">Github Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="GoogleScholar" href="https://scholar.google.com/citations?user=sf-0AGoAAAAJ&amp;hl=de"><i class="fab fa-google-plus-square"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/in/song-chen-3449b9278/"><i class="fab fa-linkedin"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Mail" href="mailto:kammichan90@gmail.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/blog/zh-CN/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/blog/zh-CN/archives/2026/11/"><span class="level-start"><span class="level-item">十一月 2026</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li><li><a class="level is-mobile" href="/blog/zh-CN/archives/2026/10/"><span class="level-start"><span class="level-item">十月 2026</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/blog/zh-CN/archives/2023/10/"><span class="level-start"><span class="level-item">十月 2023</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/AI-agents/"><span class="tag">AI-agents</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Agent-Skills/"><span class="tag">Agent Skills</span><span class="tag">14</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/BERT/"><span class="tag">BERT</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Documentation/"><span class="tag">Documentation</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/French/"><span class="tag">French</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Hexo/"><span class="tag">Hexo</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Hexo-plugins/"><span class="tag">Hexo plugins</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/HuggingFace/"><span class="tag">HuggingFace</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Language/"><span class="tag">Language</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/MachineLearning/"><span class="tag">MachineLearning</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/NLP/"><span class="tag">NLP</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Obsidian/"><span class="tag">Obsidian</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/PyTorch/"><span class="tag">PyTorch</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Pyenv/"><span class="tag">Pyenv</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/Python/"><span class="tag">Python</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/VoltAgent/"><span class="tag">VoltAgent</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/computational-simulation/"><span class="tag">computational simulation</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/condensed-matter-physics/"><span class="tag">condensed-matter physics</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/data-science/"><span class="tag">data-science</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/deep-learning/"><span class="tag">deep-learning</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/encryptAsDiary/"><span class="tag">encryptAsDiary</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/github/"><span class="tag">github</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/machine-learning/"><span class="tag">machine-learning</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python/"><span class="tag">python</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-configuration/"><span class="tag">python_configuration</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-editors/"><span class="tag">python_editors</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog/zh-CN/tags/python-tools/"><span class="tag">python_tools</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="https://api.follow.it/subscription-form/YnRDa2puUlErMTdqQ2Q4aDRrem93bHllemF6Y1ZMSW9hQSsrQ3NKTzRXSGRpTlRocW13MXM2UUw4YUFRdUFhUVRJTk1kaVFPWjc2MUQ1TTlLZ3hvcnhLNHJ2bE4yS3VzaTZ4eTliREZjZEk3UHRIWXBRbkxnN3FVUFczVm9TZDF8c2Z0em5PTnVFYks5TU15dUtPdW05czZIeEF4V0dvYnhQVnJtUGNUZEIxYz0=/8" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><ul class="menu-list"><li><a class="level is-mobile" href="#🎥-更多教程"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">🎥 更多教程</span></span></a></li></ul><li><a class="level is-mobile" href="#📦-包含内容"><span class="level-left"><span class="level-item">2</span><span class="level-item">📦 包含内容</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#2-72-0-版本更新"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">2.72.0 版本更新</span></span></a></li><li><a class="level is-mobile" href="#2-71-0-版本更新"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">2.71.0 版本更新</span></span></a></li><li><a class="level is-mobile" href="#近期新增的工作流"><span class="level-left"><span class="level-item">2.3</span><span class="level-item">近期新增的工作流</span></span></a></li></ul></li><li><a class="level is-mobile" href="#📋-目录"><span class="level-left"><span class="level-item">3</span><span class="level-item">📋 目录</span></span></a></li><li><a class="level is-mobile" href="#🚀-为什么要用它"><span class="level-left"><span class="level-item">4</span><span class="level-item">🚀 为什么要用它</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#⚡-加快你的研究"><span class="level-left"><span class="level-item">4.1</span><span class="level-item">⚡ 加快你的研究</span></span></a></li><li><a class="level is-mobile" href="#🎯-覆盖全面"><span class="level-left"><span class="level-item">4.2</span><span class="level-item">🎯 覆盖全面</span></span></a></li><li><a class="level is-mobile" href="#🔧-易于集成"><span class="level-left"><span class="level-item">4.3</span><span class="level-item">🔧 易于集成</span></span></a></li><li><a class="level is-mobile" href="#🌟-持续维护与支持"><span class="level-left"><span class="level-item">4.4</span><span class="level-item">🌟 持续维护与支持</span></span></a></li></ul></li><li><a class="level is-mobile" href="#🎯-快速上手"><span class="level-left"><span class="level-item">5</span><span class="level-item">🎯 快速上手</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#方式一：npx（受支持的宿主）"><span class="level-left"><span class="level-item">5.1</span><span class="level-item">方式一：npx（受支持的宿主）</span></span></a></li><li><a class="level is-mobile" href="#方式二：GitHub-CLI（gh-skill）"><span class="level-left"><span class="level-item">5.2</span><span class="level-item">方式二：GitHub CLI（gh skill）</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#锁定版本"><span class="level-left"><span class="level-item">5.2.1</span><span class="level-item">锁定版本</span></span></a></li><li><a class="level is-mobile" href="#保持技能为最新"><span class="level-left"><span class="level-item">5.2.2</span><span class="level-item">保持技能为最新</span></span></a></li></ul></li><li><a class="level is-mobile" href="#方式三：Agent-Plugins（Cursor、Codex-及其他插件客户端）"><span class="level-left"><span class="level-item">5.3</span><span class="level-item">方式三：Agent Plugins（Cursor、Codex 及其他插件客户端）</span></span></a></li><li><a class="level is-mobile" href="#其他-Agent-Skills-宿主（OpenClaw、NemoClaw、Pi、Hermes-等）"><span class="level-left"><span class="level-item">5.4</span><span class="level-item">其他 Agent Skills 宿主（OpenClaw、NemoClaw、Pi、Hermes 等）</span></span></a></li></ul></li><li><a class="level is-mobile" href="#⚠️-安全免责声明"><span class="level-left"><span class="level-item">6</span><span class="level-item">⚠️ 安全免责声明</span></span></a></li><li><a class="level is-mobile" href="#❤️-支持开源社区"><span class="level-left"><span class="level-item">7</span><span class="level-item">❤️ 支持开源社区</span></span></a></li><li><a class="level is-mobile" href="#⚙️-前置条件"><span class="level-left"><span class="level-item">8</span><span class="level-item">⚙️ 前置条件</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#安装-uv"><span class="level-left"><span class="level-item">8.1</span><span class="level-item">安装 uv</span></span></a></li></ul></li><li><a class="level is-mobile" href="#💡-快速示例"><span class="level-left"><span class="level-item">9</span><span class="level-item">💡 快速示例</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#🧪-药物发现流程"><span class="level-left"><span class="level-item">9.1</span><span class="level-item">🧪 药物发现流程</span></span></a></li><li><a class="level is-mobile" href="#🔬-单细胞-RNA-seq-分析"><span class="level-left"><span class="level-item">9.2</span><span class="level-item">🔬 单细胞 RNA-seq 分析</span></span></a></li><li><a class="level is-mobile" href="#🧬-多组学生物标志物发现"><span class="level-left"><span class="level-item">9.3</span><span class="level-item">🧬 多组学生物标志物发现</span></span></a></li><li><a class="level is-mobile" href="#🎯-虚拟筛选项目"><span class="level-left"><span class="level-item">9.4</span><span class="level-item">🎯 虚拟筛选项目</span></span></a></li><li><a class="level is-mobile" href="#🏥-研究用变异证据审查"><span class="level-left"><span class="level-item">9.5</span><span class="level-item">🏥 研究用变异证据审查</span></span></a></li><li><a class="level is-mobile" href="#🌐-系统生物学网络分析"><span class="level-left"><span class="level-item">9.6</span><span class="level-item">🌐 系统生物学网络分析</span></span></a></li></ul></li><li><a class="level is-mobile" href="#🔬-使用场景"><span class="level-left"><span class="level-item">10</span><span class="level-item">🔬 使用场景</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#🧪-药物发现与药物化学"><span class="level-left"><span class="level-item">10.1</span><span class="level-item">🧪 药物发现与药物化学</span></span></a></li><li><a class="level is-mobile" href="#🧬-生物信息学与基因组学"><span class="level-left"><span class="level-item">10.2</span><span class="level-item">🧬 生物信息学与基因组学</span></span></a></li><li><a class="level is-mobile" href="#🏥-临床研究与证据工作流"><span class="level-left"><span class="level-item">10.3</span><span class="level-item">🏥 临床研究与证据工作流</span></span></a></li><li><a class="level is-mobile" href="#🔬-多组学与系统生物学"><span class="level-left"><span class="level-item">10.4</span><span class="level-item">🔬 多组学与系统生物学</span></span></a></li><li><a class="level is-mobile" href="#📊-数据分析与可视化"><span class="level-left"><span class="level-item">10.5</span><span class="level-item">📊 数据分析与可视化</span></span></a></li><li><a class="level is-mobile" href="#🧪-实验室自动化"><span class="level-left"><span class="level-item">10.6</span><span class="level-item">🧪 实验室自动化</span></span></a></li></ul></li><li><a class="level is-mobile" href="#📚-可用技能"><span class="level-left"><span class="level-item">11</span><span class="level-item">📚 可用技能</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#技能分类"><span class="level-left"><span class="level-item">11.1</span><span class="level-item">技能分类</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#🧬-生物信息学与基因组学（32-个技能）"><span class="level-left"><span class="level-item">11.1.1</span><span class="level-item">🧬 生物信息学与基因组学（32 个技能）</span></span></a></li><li><a class="level is-mobile" href="#🧪-化学信息学与药物发现（11-个技能）"><span class="level-left"><span class="level-item">11.1.2</span><span class="level-item">🧪 化学信息学与药物发现（11 个技能）</span></span></a></li><li><a class="level is-mobile" href="#🔬-蛋白质组学与质谱（2-个技能）"><span class="level-left"><span class="level-item">11.1.3</span><span class="level-item">🔬 蛋白质组学与质谱（2 个技能）</span></span></a></li><li><a class="level is-mobile" href="#🏥-临床研究与证据工作流（8-个技能）"><span class="level-left"><span class="level-item">11.1.4</span><span class="level-item">🏥 临床研究与证据工作流（8 个技能）</span></span></a></li><li><a class="level is-mobile" href="#🐭-临床前研究与动物福利（1-个技能）"><span class="level-left"><span class="level-item">11.1.5</span><span class="level-item">🐭 临床前研究与动物福利（1 个技能）</span></span></a></li><li><a class="level is-mobile" href="#🖼️-显微成像、医学影像与数字病理（5-个技能）"><span class="level-left"><span class="level-item">11.1.6</span><span class="level-item">🖼️ 显微成像、医学影像与数字病理（5 个技能）</span></span></a></li><li><a class="level is-mobile" href="#🧠-神经科学与电生理（4-个技能）"><span class="level-left"><span class="level-item">11.1.7</span><span class="level-item">🧠 神经科学与电生理（4 个技能）</span></span></a></li><li><a class="level is-mobile" href="#🤖-机器学习与人工智能（14-个核心技能）"><span class="level-left"><span class="level-item">11.1.8</span><span class="level-item">🤖 机器学习与人工智能（14 个核心技能）</span></span></a></li><li><a class="level is-mobile" href="#🔮-材料科学、化学与物理（8-个技能）"><span class="level-left"><span class="level-item">11.1.9</span><span class="level-item">🔮 材料科学、化学与物理（8 个技能）</span></span></a></li><li><a class="level is-mobile" href="#⚙️-工程与仿真（9-个技能）"><span class="level-left"><span class="level-item">11.1.10</span><span class="level-item">⚙️ 工程与仿真（9 个技能）</span></span></a></li><li><a class="level is-mobile" href="#🌊-化学海洋学（1-个技能）"><span class="level-left"><span class="level-item">11.1.11</span><span class="level-item">🌊 化学海洋学（1 个技能）</span></span></a></li><li><a class="level is-mobile" href="#📊-数据分析与可视化（18-个技能）"><span class="level-left"><span class="level-item">11.1.12</span><span class="level-item">📊 数据分析与可视化（18 个技能）</span></span></a></li><li><a class="level is-mobile" href="#🧪-实验室自动化（6-个技能）"><span class="level-left"><span class="level-item">11.1.13</span><span class="level-item">🧪 实验室自动化（6 个技能）</span></span></a></li><li><a class="level is-mobile" href="#🔬-多组学与系统生物学（5-个技能）"><span class="level-left"><span class="level-item">11.1.14</span><span class="level-item">🔬 多组学与系统生物学（5 个技能）</span></span></a></li><li><a class="level is-mobile" href="#🧬-蛋白质工程与设计（5-个技能）"><span class="level-left"><span class="level-item">11.1.15</span><span class="level-item">🧬 蛋白质工程与设计（5 个技能）</span></span></a></li><li><a class="level is-mobile" href="#📚-科学传播（23-个技能）"><span class="level-left"><span class="level-item">11.1.16</span><span class="level-item">📚 科学传播（23 个技能）</span></span></a></li><li><a class="level is-mobile" href="#🔬-科学数据库与数据访问（13-个技能，共覆盖-100-多个数据库）"><span class="level-left"><span class="level-item">11.1.17</span><span class="level-item">🔬 科学数据库与数据访问（13 个技能，共覆盖 100 多个数据库）</span></span></a></li><li><a class="level is-mobile" href="#🔧-基础设施与平台（12-个技能）"><span class="level-left"><span class="level-item">11.1.18</span><span class="level-item">🔧 基础设施与平台（12 个技能）</span></span></a></li><li><a class="level is-mobile" href="#🎓-研究方法与规划（13-个技能）"><span class="level-left"><span class="level-item">11.1.19</span><span class="level-item">🎓 研究方法与规划（13 个技能）</span></span></a></li><li><a class="level is-mobile" href="#⚖️-法规与标准（2-个技能）"><span class="level-left"><span class="level-item">11.1.20</span><span class="level-item">⚖️ 法规与标准（2 个技能）</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="#📝-博客文章精选"><span class="level-left"><span class="level-item">12</span><span class="level-item">📝 博客文章精选</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#从这里开始"><span class="level-left"><span class="level-item">12.1</span><span class="level-item">从这里开始</span></span></a></li><li><a class="level is-mobile" href="#技能基准测试与深度解析"><span class="level-left"><span class="level-item">12.2</span><span class="level-item">技能基准测试与深度解析</span></span></a></li><li><a class="level is-mobile" href="#为什么工作流层很重要"><span class="level-left"><span class="level-item">12.3</span><span class="level-item">为什么工作流层很重要</span></span></a></li><li><a class="level is-mobile" href="#安全与安全部署"><span class="level-left"><span class="level-item">12.4</span><span class="level-item">安全与安全部署</span></span></a></li><li><a class="level is-mobile" href="#互补的开源项目"><span class="level-left"><span class="level-item">12.5</span><span class="level-item">互补的开源项目</span></span></a></li></ul></li><li><a class="level is-mobile" href="#🤝-参与贡献"><span class="level-left"><span class="level-item">13</span><span class="level-item">🤝 参与贡献</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#贡献方式"><span class="level-left"><span class="level-item">13.1</span><span class="level-item">贡献方式</span></span></a></li><li><a class="level is-mobile" href="#如何贡献"><span class="level-left"><span class="level-item">13.2</span><span class="level-item">如何贡献</span></span></a></li><li><a class="level is-mobile" href="#贡献准则"><span class="level-left"><span class="level-item">13.3</span><span class="level-item">贡献准则</span></span></a></li><li><a class="level is-mobile" href="#测试"><span class="level-left"><span class="level-item">13.4</span><span class="level-item">测试</span></span></a></li><li><a class="level is-mobile" href="#安全扫描"><span class="level-left"><span class="level-item">13.5</span><span class="level-item">安全扫描</span></span></a></li><li><a class="level is-mobile" href="#致谢"><span class="level-left"><span class="level-item">13.6</span><span class="level-item">致谢</span></span></a></li><li><a class="level is-mobile" href="#支持开源"><span class="level-left"><span class="level-item">13.7</span><span class="level-item">支持开源</span></span></a></li></ul></li><li><a class="level is-mobile" href="#🔧-故障排除"><span class="level-left"><span class="level-item">14</span><span class="level-item">🔧 故障排除</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#常见故障"><span class="level-left"><span class="level-item">14.1</span><span class="level-item">常见故障</span></span></a></li></ul></li><li><a class="level is-mobile" href="#❓-常见问题"><span class="level-left"><span class="level-item">15</span><span class="level-item">❓ 常见问题</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#一般问题"><span class="level-left"><span class="level-item">15.1</span><span class="level-item">一般问题</span></span></a></li><li><a class="level is-mobile" href="#安装与设置"><span class="level-left"><span class="level-item">15.2</span><span class="level-item">安装与设置</span></span></a></li><li><a class="level is-mobile" href="#关于贡献"><span class="level-left"><span class="level-item">15.3</span><span class="level-item">关于贡献</span></span></a></li></ul></li><li><a class="level is-mobile" href="#💬-获取支持"><span class="level-left"><span class="level-item">16</span><span class="level-item">💬 获取支持</span></span></a></li><li><a class="level is-mobile" href="#📖-引用"><span class="level-left"><span class="level-item">17</span><span class="level-item">📖 引用</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#论文引用"><span class="level-left"><span class="level-item">17.1</span><span class="level-item">论文引用</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#BibTeX"><span class="level-left"><span class="level-item">17.1.1</span><span class="level-item">BibTeX</span></span></a></li><li><a class="level is-mobile" href="#APA"><span class="level-left"><span class="level-item">17.1.2</span><span class="level-item">APA</span></span></a></li><li><a class="level is-mobile" href="#MLA"><span class="level-left"><span class="level-item">17.1.3</span><span class="level-item">MLA</span></span></a></li><li><a class="level is-mobile" href="#纯文本"><span class="level-left"><span class="level-item">17.1.4</span><span class="level-item">纯文本</span></span></a></li></ul></li><li><a class="level is-mobile" href="#软件引用"><span class="level-left"><span class="level-item">17.2</span><span class="level-item">软件引用</span></span></a></li><li><a class="level is-mobile" href="#单个技能的引用"><span class="level-left"><span class="level-item">17.3</span><span class="level-item">单个技能的引用</span></span></a></li></ul></li><li><a class="level is-mobile" href="#📄-许可证"><span class="level-left"><span class="level-item">18</span><span class="level-item">📄 许可证</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#要点"><span class="level-left"><span class="level-item">18.1</span><span class="level-item">要点</span></span></a></li><li><a class="level is-mobile" href="#各个技能的许可证"><span class="level-left"><span class="level-item">18.2</span><span class="level-item">各个技能的许可证</span></span></a></li><li><a class="level is-mobile" href="#MIT-许可声明"><span class="level-left"><span class="level-item">18.3</span><span class="level-item">MIT 许可声明</span></span></a></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/blog/zh-CN/js/toc.js" defer></script></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-11T07:42:20.000Z">2026-11-11</time></p><p class="title"><a href="/blog/zh-CN/posts/431eed1c/">Scientific Agent Skills：科研智能体技能库 (转载)</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/ai_data/">人工智能与数据 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8E%E6%95%B0%E6%8D%AE/">人工智能与数据</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/automation/">智能体工具与自动化 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E6%99%BA%E8%83%BD%E4%BD%93%E5%B7%A5%E5%85%B7%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96/">智能体工具与自动化</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/business/">商业与财务 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E5%95%86%E4%B8%9A%E4%B8%8E%E8%B4%A2%E5%8A%A1/">商业与财务</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-11-02T04:00:00.000Z">2026-11-02</time></p><p class="title"><a href="/blog/zh-CN/agent-skills/cloud/">云与运维 | Agent Skills</a></p><p class="categories"><a href="/blog/zh-CN/categories/Agent-Skills/">Agent Skills</a> / <a href="/blog/zh-CN/categories/Agent-Skills/%E4%BA%91%E4%B8%8E%E8%BF%90%E7%BB%B4/">云与运维</a></p></div></article></div></div><div class="card widget" id="twikoo-new"><div class="card-content"><div class="menu"><h3 class="menu-label">最新评论</h3><script>window.twikooEnvId = 'https://twikoodisqus.vercel.app';</script><div class="twikoo-new-container"></div></div></div></div></div><style>.column.column-left,.column.column-right{display:block}</style></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/blog/zh-CN/"><img class="logo-img" src="/blog/zh-CN/images/logo.png" alt="Project Geeker" height="28"><img class="logo-img-dark" src="/blog/zh-CN/images/logo-dark.png" alt="Project Geeker" height="28"></a><p class="is-size-7"><span>&copy; 2026 Song Chen</span>  网站最终解释权归 <a href="https://songchen.science" target="_blank" rel="noopener">Song</a><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p><p class="is-size-7">© 2023</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/song-chen1"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.21/dist/twikoo.all.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/blog/zh-CN/js/column.js"></script><script src="/blog/zh-CN/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/blog/zh-CN/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="/blog/zh-CN/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><div class="searchbox-pinyin"><label class="checkbox"><input id="search-by-pinyin" type="checkbox" checked="checked"><span> Pinyin search</span></label></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/imaegoo/pinyin.js" defer></script><script src="/blog/zh-CN/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/blog/zh-CN/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script><script type="text/javascript" src="/js/imaegoo/imaegoo.js"></script><script type="text/javascript" src="/js/imaegoo/universe.js"></script></body></html>
