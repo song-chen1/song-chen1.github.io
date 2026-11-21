@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='504.0759pt' height='320.20531pt' viewBox='-72.000004 -72.000003 336.0506 213.470207'>
+<style type='text/css'>
+<![CDATA[@font-face{font-family:rm-lmr7;src:url(data:application/x-font-woff;base64,d09GRgABAAAAAARoAA0AAAAABbQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABoAAAAcodKZk09TLzIAAAFMAAAAQAAAAFZVfl7uY21hcAAAAYwAAABFAAABQgQPA+BjdnQgAAAB1AAAAAQAAAAEACECeWdhc3AAAAHYAAAACAAAAAj//wADZ2x5ZgAAAeAAAAEoAAABLPo3pAxoZWFkAAADCAAAADAAAAA2L1P+eGhoZWEAAAM4AAAAHgAAACQE7gI+aG10eAAAA1gAAAASAAAAEgbqAI5sb2NhAAADbAAAAAwAAAAMAHwA6m1heHAAAAN4AAAAHwAAACAASQBebmFtZQAAA5gAAAC1AAABHfveC7Vwb3N0AAAEUAAAABgAAAAsABwAGHjaY2BgYGQAgsvb7s0A0c9579bCaABWSwedAAB42mNgZLJknMDAysDA1Mm0m4GBoRtCM95nMGRkAooysHIywAAjAxIISHNNAVKGDEbMkv+NGKKYZiHUAACsjgkZeNpjYGBgZoBgGQZGBhCwAfIYwXwWBgUgzQKEIL7R//9A0vD///+XoCoZGNkYYEwGRiYgwcSAChgZMAEzC8NwAgB50QbzAAAAACECeQAAAAH//wACeNpjYGJQZGBg1GSaxcDMwM6gt5GRQd9mEzsLw1ujjWysd2w2MTMBmQwbmUHCrCDhTexsjH9sNjGCxI0FFQXVjQWVFRk5nh87xjTrb5oiUwQDAxNDLtDMm0wzGMQZJBgYFE2VlfQYTQVN1JTZlEWNzAVF+Bi1GUXNxRlvqhlqc3CKOjZHmXNoG6pt2qzCzS/CpCXC4aAi849JhJ9bhYWFAWSePdC8n0DztBl0GBhUldnY2bQZzcztGE2BZiqxiYrIMRobmZma6DEq2wFZYqJAG/gZ+RhFFc0Zfypx83NE78iPdPVqT44qkxDhFFFkl5EQDdZyD1STl/zIzsw4R26bPw9bkpt5okNEdraHuDSbjCSPqIiBbpyjRoiGzDt2LrFtQGcAAJYZObh42mNgZGBgAGJLw8d34/ltvjJwMz8HijA8571bC6cVgUp+Ms0CcjkYmECiAEkpCx542mNgZGBgmsXAwBDFZAkkGRh/MjAyoAIWADUUAjIAAAI5ACEAAAAAAjkAAAI5AG0APwAAAAAAKgAqACoAUgCWeNpjYGRgYGBl0GVgYgABEMnIABJzYNADCQAACDkAqAB42lWNTQ6CMBCFP+RH1ER3rpu4LoEuNOEAHAFPgIYEaFLYeQwP4BG8ogM2JraZztfp63tAyo2Aea2I2HoOOXH1HLPj6TlhzVteg2gj+nRRzhxScfAcc+ThOWHPi44exwW63slZYRmYlu6406AwZOTSSykncv379J0ZmRSytVAudRYbO0yVdfdGmSxXpXK9nv2FjC4KbXIjolrcHSPtkqnEYc6hbtzY2kEVmVz+8/A+fABUBSaAAAAAeNpjYGJABowM6IAVLMrEIMIgCgABOAA1) format('woff');}
+@font-face{font-family:lmmi10;src:url(data:application/x-font-woff;base64,d09GRgABAAAAAARUAA0AAAAABaQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABoAAAAcodKZk09TLzIAAAFMAAAAQgAAAFZWWV7QY21hcAAAAZAAAABBAAABQgMPBBFjdnQgAAAB1AAAAAQAAAAEACECeWdhc3AAAAHYAAAACAAAAAj//wADZ2x5ZgAAAeAAAAEJAAABIIKbTpxoZWFkAAAC7AAAADEAAAA2L4P902hoZWEAAAMgAAAAIAAAACQFRgDkaG10eAAAA0AAAAAQAAAAEAW+AFZsb2NhAAADUAAAAAoAAAAKALoAVG1heHAAAANcAAAAHwAAACAASAB5bmFtZQAAA3wAAADAAAABIJyy3Epwb3N0AAAEPAAAABYAAAAqAFAAA3jaY2BgYGQAgsvb7s0A0c9579bCaABWSwedAAB42mNgZHzFOIGBlYGBqYtpDwMDQw+EZnzAYMjIBBRlYOVkgAFGBiQQkOaaAqTSGNKY3v1nY4hiOshwFqYGAAPcC9QAAHjaY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChCB+2v//EPL/XKhKBkY2BhiTgZEJSDAxoAJGBioBZobBCgCvegcjAAAAACECeQAAAAH//wACeNodzEtOg1AUxvFzLoXbSyvyKFUD1N57g2008cEtYCzWpImPxKGJMU6cuQNnXUl3ATtw1E24ACfuwBcwO/n98x0gwAHwkKxBAwrHJcJJUdEOfCWloX8UlUbqE0qtYb3hihr4XVTYuHK4M1GO5Mg+Nxuy/nnl5AmAQPqnyJS8ww3c1t9nB1IY1KBSWOgPhnPULE2KyQLTttSkkixfkNxTSYNHuMA8yzOV7LSDuqZkmgp5N2C7132z27eX96znB17kjfaG276Y8fjCtcItLB7rHDzopuFQe3/kRW0mq3GslnyFjHU7v2+nZ1ehS6RjezwYx0UcvswZXiIze9F59GwJVxNtA4B/H/Qu5wAAAHjaY2BkYGAA4ucFn6Pi+W2+MnAzvwCKMDznvVsLpxX/GzNpMB0EcjkYmECiAGptDCIAAAB42mNgZGBgOvjfmCGK8RUDw/9DTBoMQBEUwAIAhQoFLAHqACEAAAAAAeoAAAHqADUAAAAqACoAKgCQAAB42mNgZGBgYGHwYGBiAAEQycgAEnNg0AMJAAAKwQDCAHjaTY1LigIxFEWP7R+l6VHjMDivopKBA8fiAhw4bHAQi4L6QNQFuAwX4ArcoDcapPNI3nkvl3uBCUd6xPPFmJ/EfZb8JR4y45Z4pHrotzeYSv/9Ukbus2GReMgv18Qj5tzZ4Sm5UHMgwM6Xl/og2NLRcn71IIXH4Mgp1Ne6NY2qwn42jkyT1eu0c6xk0rXnbRdKb1xemLWpm6ayEVxmbeYKJ81e1oGTrGKgkUEMYe/DqepaY3MN/8N4m/AEcYwnV3jaY2BiQAaMDOiABSzKxOAJAAEPAFQAAA==) format('woff');}
+@font-face{font-family:ec-lmr10;src:url(data:application/x-font-woff;base64,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) format('woff');}
+text.f0 {font-family:lmmi10;font-size:9.96264px}
+text.f1 {font-family:rm-lmr7;font-size:6.973848px}
+text.f2 {font-family:ec-lmr10;font-size:9.96264px}
+]]>
+</style>
+<g id='page1'>
+<g stroke-miterlimit='10' transform='matrix(.996264 0 0 -.996264 61.137631 -47.668913)' fill='#000' stroke='#000' stroke-width='0.4'>
+<g fill='#fff'>
+<path d='M -133.6369 -189.84839 M -133.6369 -189.84839 L -133.6369 24.42233 L 203.67389 24.42233 L 203.67389 -189.84839 Z M 203.67389 24.42233' stroke='none'/>
+</g>
+<path d='M 0.0 0.0 M 0.0 0.0 L 199.1684 0.0 M 0.0 19.90685 L 199.1684 19.90685 M 0.0 0.0 L 0.0 19.91684 M 19.91684 0.0 L 19.91684 19.91684 M 39.83368 0.0 L 39.83368 19.91684 M 59.75052 0.0 L 59.75052 19.91684 M 79.66736 0.0 L 79.66736 19.91684 M 99.5842 0.0 L 99.5842 19.91684 M 119.50104 0.0 L 119.50104 19.91684 M 139.41788 0.0 L 139.41788 19.91684 M 159.33472 0.0 L 159.33472 19.91684 M 179.25156 0.0 L 179.25156 19.91684 M 199.1584 0.0 L 199.1584 19.91684 M 199.1684 19.91684' fill='none'/>
+<g transform='translate(7.45842 6.8098)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(27.37526 6.8098)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(47.2921 6.8098)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>1</text>
+</g>
+<g transform='translate(67.20894 6.8098)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>1</text>
+</g>
+<g transform='translate(87.12578 6.8098)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>1</text>
+</g>
+<g transform='translate(107.04262 6.8098)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(126.95946 6.8098)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>1</text>
+</g>
+<g transform='translate(146.8763 6.8098)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(166.79314 6.8098)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(186.70998 6.8098)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(-32.6992 7.48627)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>Image:</text>
+</g>
+<path d='M 0.0 -39.83368 M 0.0 -39.83368 L 39.83368 -39.83368 M 0.0 -19.92683 L 39.83368 -19.92683 M 0.0 -39.83368 L 0.0 -19.91684 M 19.91684 -39.83368 L 19.91684 -19.91684 M 39.82368 -39.83368 L 39.82368 -19.91684 M 39.83368 -19.91684' fill='none'/>
+<g transform='translate(-15.69258 -32.37526)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f0' x='61.137631' y='-47.668913'>f</text>
+<text class='f1' x='66.015199' y='-46.174532'>1</text>
+<text class='f2' x='70.484432' y='-47.668913'>:</text>
+</g>
+<g transform='translate(5.79176 -33.02388)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>-1</text>
+</g>
+<g transform='translate(23.48627 -32.60889)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>+1</text>
+</g>
+<path d='M 9.95842 0.0 L 9.95842 -19.45685' fill='none'/>
+<g transform='matrix(0 -1 1 0 9.95842 -19.45685)' stroke-width='0.31999' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.19998 1.59998 C -1.09998 0.99998 0.0 0.09999 0.29999 0.0 C 0.0 -0.09999 -1.09998 -0.99998 -1.19998 -1.59998  ' fill='none'/>
+ </g>
+<path d='M 29.87526 0.0 L 29.87526 -19.45685' fill='none'/>
+<g transform='matrix(0 -1 1 0 29.87526 -19.45685)' stroke-width='0.31999' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.19998 1.59998 C -1.09998 0.99998 0.0 0.09999 0.29999 0.0 C 0.0 -0.09999 -1.09998 -0.99998 -1.19998 -1.59998  ' fill='none'/>
+ </g>
+<path d='M 9.95842 0.0 M 9.95842 -39.83368 L 29.55 -59.42526' fill='none'/>
+<g transform='matrix(.7071 -.7071 .7071 .7071 29.55 -59.42526)' stroke-width='0.31999' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.19998 1.59998 C -1.09998 0.99998 0.0 0.09999 0.29999 0.0 C 0.0 -0.09999 -1.09998 -0.99998 -1.19998 -1.59998  ' fill='none'/>
+ </g>
+<path d='M 29.87526 0.0 M 29.87526 -39.83368 L 29.87526 -59.29053' fill='none'/>
+<g transform='matrix(0 -1 1 0 29.87526 -59.29053)' stroke-width='0.31999' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.19998 1.59998 C -1.09998 0.99998 0.0 0.09999 0.29999 0.0 C 0.0 -0.09999 -1.09998 -0.99998 -1.19998 -1.59998  ' fill='none'/>
+ </g>
+<path d='M 0.0 -79.6678 M 0.0 -79.6678 L 199.1684 -79.6678 M 0.0 -59.76096 L 199.1684 -59.76096 M 0.0 -79.6678 L 0.0 -59.75096 M 19.91684 -79.6678 L 19.91684 -59.75096 M 39.83368 -79.6678 L 39.83368 -59.75096 M 59.75052 -79.6678 L 59.75052 -59.75096 M 79.66736 -79.6678 L 79.66736 -59.75096 M 99.5842 -79.6678 L 99.5842 -59.75096 M 119.50104 -79.6678 L 119.50104 -59.75096 M 139.41788 -79.6678 L 139.41788 -59.75096 M 159.33472 -79.6678 L 159.33472 -59.75096 M 179.25156 -79.6678 L 179.25156 -59.75096 M 199.1584 -79.6678 L 199.1584 -59.75096 M 199.1684 -59.75096' fill='none'/>
+<g transform='translate(7.45842 -72.858)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(27.37526 -72.858)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(47.2921 -72.858)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>1</text>
+</g>
+<g transform='translate(67.20894 -72.858)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(87.12578 -72.858)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(105.37596 -72.858)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>-1</text>
+</g>
+<g transform='translate(126.95946 -72.858)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>1</text>
+</g>
+<g transform='translate(145.20964 -72.858)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>-1</text>
+</g>
+<g transform='translate(166.79314 -72.858)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(186.70998 -72.858)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(-125.99843 -72.20938)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>After<tspan x='87.178986'>con</tspan>
+<tspan x='101.846198'>v</tspan>
+<tspan x='106.827727'>olution</tspan>
+<tspan x='140.589962'>(with</tspan>
+</text>
+<text class='f0' x='167.156937' y='-47.668913'>f</text>
+<text class='f1' x='172.034505' y='-46.174532'>1</text>
+<text class='f2' x='176.503738' y='-47.668913'>):</text>
+</g>
+<g stroke-width='1.2'>
+<path d='M 39.83368 -79.6678 M 39.83368 -79.6678 L 59.75052 -79.6678 M 39.83368 -59.76096 L 59.75052 -59.76096 M 39.83368 -79.6678 L 39.83368 -59.75096 M 59.74052 -79.6678 L 59.74052 -59.75096 M 59.75052 -59.75096' fill='none'/>
+</g>
+<g stroke-width='1.2'>
+<path d='M 119.50104 -79.6678 M 119.50104 -79.6678 L 139.41788 -79.6678 M 119.50104 -59.76096 L 139.41788 -59.76096 M 119.50104 -79.6678 L 119.50104 -59.75096 M 139.40788 -79.6678 L 139.40788 -59.75096 M 139.41788 -59.75096' fill='none'/>
+</g>
+<path d='M 0.0 -184.9429 M 0.0 -184.9429 L 199.1684 -184.9429 M 0.0 -165.03606 L 199.1684 -165.03606 M 0.0 -184.9429 L 0.0 -165.02606 M 19.91684 -184.9429 L 19.91684 -165.02606 M 39.83368 -184.9429 L 39.83368 -165.02606 M 59.75052 -184.9429 L 59.75052 -165.02606 M 79.66736 -184.9429 L 79.66736 -165.02606 M 99.5842 -184.9429 L 99.5842 -165.02606 M 119.50104 -184.9429 L 119.50104 -165.02606 M 139.41788 -184.9429 L 139.41788 -165.02606 M 159.33472 -184.9429 L 159.33472 -165.02606 M 179.25156 -184.9429 L 179.25156 -165.02606 M 199.1584 -184.9429 L 199.1584 -165.02606 M 199.1684 -165.02606' fill='none'/>
+<g transform='translate(7.45842 -178.1331)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(25.7086 -178.1331)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>-1</text>
+</g>
+<g transform='translate(47.2921 -178.1331)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(65.54228 -178.1331)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>-1</text>
+</g>
+<g transform='translate(87.12578 -178.1331)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(105.37596 -178.1331)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>-2</text>
+</g>
+<g transform='translate(126.95946 -178.1331)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>1</text>
+</g>
+<g transform='translate(145.20964 -178.1331)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>-1</text>
+</g>
+<g transform='translate(166.79314 -178.1331)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(186.70998 -178.1331)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>0</text>
+</g>
+<g transform='translate(-125.99843 -177.48448)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>After<tspan x='87.178986'>con</tspan>
+<tspan x='101.846198'>v</tspan>
+<tspan x='106.827727'>olution</tspan>
+<tspan x='140.589962'>(with</tspan>
+</text>
+<text class='f0' x='167.156937' y='-47.668913'>f</text>
+<text class='f1' x='172.034505' y='-46.174532'>2</text>
+<text class='f2' x='176.503738' y='-47.668913'>):</text>
+</g>
+<path d='M 0.0 -145.10922 M 0.0 -145.10922 L 59.75052 -145.10922 M 0.0 -125.20238 L 59.75052 -125.20238 M 0.0 -145.10922 L 0.0 -125.19238 M 19.91684 -145.10922 L 19.91684 -125.19238 M 39.83368 -145.10922 L 39.83368 -125.19238 M 59.74052 -145.10922 L 59.74052 -125.19238 M 59.75052 -125.19238' fill='none'/>
+<g transform='translate(-12.91481 -137.6508)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f0' x='61.137631' y='-47.668913'>f</text>
+<text class='f1' x='66.015199' y='-46.174532'>2</text>
+</g>
+<g stroke-width='1.2'>
+<path d='M 119.50104 -184.9429 M 119.50104 -184.9429 L 139.41788 -184.9429 M 119.50104 -165.03606 L 139.41788 -165.03606 M 119.50104 -184.9429 L 119.50104 -165.02606 M 139.40788 -184.9429 L 139.40788 -165.02606 M 139.41788 -165.02606' fill='none'/>
+</g>
+<g transform='translate(5.79176 -138.29942)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>-1</text>
+</g>
+<g transform='translate(23.48627 -137.88443)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>+1</text>
+</g>
+<g transform='translate(45.62544 -138.29942)matrix(1.00375 0 0 -1.00375 -61.366897 -47.847671)' stroke='none' fill='#000'>
+<text class='f2' x='61.137631' y='-47.668913'>-1</text>
+</g>
+<path d='M 9.95842 -105.27554 M 9.95842 -115.23396 L 9.95842 -124.73239' fill='none'/>
+<g transform='matrix(0 -1 1 0 9.95842 -124.73239)' stroke-width='0.31999' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.19998 1.59998 C -1.09998 0.99998 0.0 0.09999 0.29999 0.0 C 0.0 -0.09999 -1.09998 -0.99998 -1.19998 -1.59998  ' fill='none'/>
+ </g>
+<path d='M 29.87526 -105.27554 M 29.87526 -115.23396 L 29.87526 -124.73239' fill='none'/>
+<g transform='matrix(0 -1 1 0 29.87526 -124.73239)' stroke-width='0.31999' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.19998 1.59998 C -1.09998 0.99998 0.0 0.09999 0.29999 0.0 C 0.0 -0.09999 -1.09998 -0.99998 -1.19998 -1.59998  ' fill='none'/>
+ </g>
+<path d='M 49.7921 -105.27554 M 49.7921 -115.23396 L 49.7921 -124.73239' fill='none'/>
+<g transform='matrix(0 -1 1 0 49.7921 -124.73239)' stroke-width='0.31999' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.19998 1.59998 C -1.09998 0.99998 0.0 0.09999 0.29999 0.0 C 0.0 -0.09999 -1.09998 -0.99998 -1.19998 -1.59998  ' fill='none'/>
+ </g>
+<path d='M 9.95842 -105.27554 M 9.95842 -145.10922 L 29.55 -164.7008' fill='none'/>
+<g transform='matrix(.7071 -.7071 .7071 .7071 29.55 -164.7008)' stroke-width='0.31999' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.19998 1.59998 C -1.09998 0.99998 0.0 0.09999 0.29999 0.0 C 0.0 -0.09999 -1.09998 -0.99998 -1.19998 -1.59998  ' fill='none'/>
+ </g>
+<path d='M 29.87526 -105.27554 M 29.87526 -145.10922 L 29.87526 -164.56607' fill='none'/>
+<g transform='matrix(0 -1 1 0 29.87526 -164.56607)' stroke-width='0.31999' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.19998 1.59998 C -1.09998 0.99998 0.0 0.09999 0.29999 0.0 C 0.0 -0.09999 -1.09998 -0.99998 -1.19998 -1.59998  ' fill='none'/>
+ </g>
+<path d='M 49.7921 -105.27554 M 49.7921 -145.10922 L 30.20052 -164.7008' fill='none'/>
+<g transform='matrix(-.7071 -.7071 .7071 -.7071 30.20052 -164.7008)' stroke-width='0.31999' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.19998 1.59998 C -1.09998 0.99998 0.0 0.09999 0.29999 0.0 C 0.0 -0.09999 -1.09998 -0.99998 -1.19998 -1.59998  ' fill='none'/>
+ </g>
+<g stroke-width='0.4'>
+</g>
+</g>
+</g>
+</svg>

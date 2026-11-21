@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='287.086431pt' height='83.862217pt' viewBox='-72.000004 -72.000006 191.390954 55.908144'>
+<style type='text/css'>
+<![CDATA[@font-face{font-family:ec-lmr10;src:url(data:application/x-font-woff;base64,d09GRgABAAAAAAQcAA0AAAAABWQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABoAAAAcodKZQ09TLzIAAAFMAAAAQgAAAFZVlV6pY21hcAAAAZAAAABBAAABQgAPBttjdnQgAAAB1AAAAAQAAAAEACECeWdhc3AAAAHYAAAACAAAAAj//wADZ2x5ZgAAAeAAAADYAAAA2ABhprtoZWFkAAACuAAAADIAAAA2Lyf+EmhoZWEAAALsAAAAHgAAACQEwgHjaG10eAAAAwwAAAAQAAAAEAXcAEhsb2NhAAADHAAAAAoAAAAKAJYAVG1heHAAAAMoAAAAHgAAACAASgBcbmFtZQAAA0gAAAC6AAABJnorly9wb3N0AAAEBAAAABYAAAAqABoAA3jaY2BgYGQAgsvb7s0A0c9574bCaABUuwdNAAB42mNgZPzCOIGBlYGBqZNpNwMDQzeEZrzPYMjIBBRlYOVkgAFGBiQQkOaaAqQMGAyYpf+bMEQxzWIQg6kBAOmmCeoAAHjaY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChCC+wf//EPL/ZahKBkY2BhiTgZEJSDAxoAJGBgzAzDC8AAB0agbtAAAAACECeQAAAAH//wACAAIAIQAAASkCmgADAAcALrEBAC88sgcEAO0ysQYF3DyyAwIA7TIAsQMALzyyBQQA7TKyBwYB/DyyAQIA7TIzESERJzMRIyEBCOfGxgKa/WYhAlgAAAQAJ//qAcwCmgASABMAKQAqAAABNCcuAiMiBwYVFBceATMyNzY1JxQHDgEjIiYnJjU0Nz4DMzIWFxYVAcwoFUU2Gno0JS0dWy14NiVTCwpDKCVDDAsIBx8oHA0jRg0KAUCVVSw2DndQk55TNy50UJIMj0BBPDhBPJeCNio4Fgg0QTiLeNpjYGRgYABiq3XHL8Tz23xl4GZ+DhRheM57NxROK/5/xXiGaRaQy8HABBIFAGx+DN8AAHjaY2BkYGCa9f8VQxTjFwYgYDzDwMiAClgAfEoEqAAAAfQAIQAAAAAB9AAAAfQAJwAAACoAKgAqAGwAAHjaY2BkYGBgYdAGYhBgAmJGBpCYA4MeSAAACBoApwAAeNpdjb0NwjAQhb8AQfwViILaBa0j2wVFBkBMQEWHTIREYslhAcZgAGZgPS7BSAhbp/t89/weMOFMRncG5CwSD9lwTJwz55F4LPqXbLPRVPSzXtnxkD2rxDlr7onHLHlypSZiMXCto5W2I9Bw63ukwqNwFKJQlFKeE/rn32fqZGblaiEjtRWj0Nx2IVZeucKoUvmT7iMEnbZWO+NEdRDDSMulj1Vi0UVx8LG9hEbZQh7/kXyteAN6uSdNAAB42mNgYkAGjAzogAUsysQgDAAA2QAeAAA=) format('woff');}
+@font-face{font-family:lmmi10;src:url(data:application/x-font-woff;base64,d09GRgABAAAAAARkAA0AAAAABbQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABoAAAAcodKZQ09TLzIAAAFMAAAAQgAAAFZVqV8NY21hcAAAAZAAAABBAAABQgAPByNjdnQgAAAB1AAAAAQAAAAEACECeWdhc3AAAAHYAAAACAAAAAj//wADZ2x5ZgAAAeAAAAEZAAABML/54mRoZWFkAAAC/AAAADEAAAA2L2b+HmhoZWEAAAMwAAAAHgAAACQFBQI2aG10eAAAA1AAAAAQAAAAEAa0AD5sb2NhAAADYAAAAAoAAAAKAMIAVG1heHAAAANsAAAAHwAAACAASACBbmFtZQAAA4wAAADAAAABIJyy3Epwb3N0AAAETAAAABYAAAAqAGIAA3jaY2BgYGQAgsvb7s0A0c9574bCaABUuwdNAAB42mNgZLJhnMDAysDA1MW0h4GBoQdCMz5gMGRkAooysHIywAAjAxIISHNNAVIVDBVM7/6zMUQxzWLghqkBAMYICmIAAHjaY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChCB+xf//EPJ/N1QlAyMbA4zJwMgEJJgYUAEjA80AM8PgAADDKgc1AAAAACECeQAAAAH//wACeNodiktOg1AYhf//QkGBYqhcMLnldWlpbaI1vGojQZuY6KC2067AJbgHR867Cxi6gU5cggtwYuLEmUahg5Nz8n0HCAQAOCFbEECG8wphWtSyCJ9xJXXei1ogzYRKaHGnxbUs4U9RY8sTIzBGiREGePix25Ht72NANgAEnL9vcoSvsII1wDANuaxjyKMsvcY8iW0dqWnFeZZGjWmiE2rHsxKT2G3M/jsqca+l5pnEJZm52FaGX5oiWKuA9Q3O7h1K2XEUXvHF2FkPFpGlqcR+4Jpl5lriO9Rktm7786E9ZpqgXE4GN5H1oqh3RdQ3b5+fuqLf06nHQm+5PM0v1NYc+Iy/Tedd0TV7Bj/xOfUM2TtrNQD8A4QPM9wAAAB42mNgZGBgAOKi9YeS4vltvjJwM78AijA8570bCqdl/39l4meaBeRyMDCBRAFaXgvxAAAAeNpjYGRgYJr1/ytDFJMNAxAw8TMwMqACFgBduANAAAACPAAhAAAAAAI8AAACPAAdAAAAKgAqACoAmAAAeNpjYGRgYGBhCGBgYgABEMnIABJzYNADCQAAC4kAygB42k2NS4oCMRRFj+0fpelR4zA4r6KSgQPH4gIcOGxwEIuC+kDUBbgMF+AK3KA3GqTzSN55L5d7gQlHesTzxZifxH2W/CUeMuOWeKR66Lc3mEr//VJG7rNhkXjIL9fEI+bc2eEpuVBzIMDOl5f6INjS0XJ+9SCFx+DIKdTXujWNqsJ+No5Mk9XrtHOsZNK1520XSm9cXpi1qZumshFcZm3mCifNXtaBk6xioJFBDGHvw6nqWmNzDf/DeJvwBHGMJ1d42mNgYkAGjAzogAUsysQQDQABIQBmAAA=) format('woff');}
+text.f0 {font-family:lmmi10;font-size:9.96264px}
+text.f1 {font-family:ec-lmr10;font-size:9.96264px}
+]]>
+</style>
+<g id='page1'>
+<g stroke-miterlimit='10' transform='matrix(.996264 0 0 -.996264 17.52799 -50.503316)' fill='#000' stroke='#000' stroke-width='0.4'>
+<g fill='#fff'>
+<path d='M -89.86372 -34.5405 M -89.86372 -34.5405 L -89.86372 21.5773 L 102.24495 21.5773 L 102.24495 -34.5405 Z M 102.24495 21.5773' stroke='none'/>
+</g>
+<g fill='#808080' stroke='#808080'>
+<path d='M -84.89824 0.0 L 84.89824 0.0' fill='none'/>
+<g transform='matrix(-1 0 0 -1 -84.89824 0)' stroke-width='0.31999' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.19998 1.59998 C -1.09998 0.99998 0.0 0.09999 0.29999 0.0 C 0.0 -0.09999 -1.09998 -0.99998 -1.19998 -1.59998  ' fill='none'/>
+ </g>
+<g transform='translate(84.89824)' stroke-width='0.31999' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.19998 1.59998 C -1.09998 0.99998 0.0 0.09999 0.29999 0.0 C 0.0 -0.09999 -1.09998 -0.99998 -1.19998 -1.59998  ' fill='none'/>
+ </g>
+<g fill='#000' stroke='#000'>
+<g fill='#000' stroke='#000'>
+</g>
+<g transform='translate(88.8912 -2.15277)matrix(1.00375 0 0 -1.00375 -17.59372 -50.692703)' stroke='none' fill='#000'>
+<text class='f0' x='17.52799' y='-50.503316'>x</text>
+</g>
+</g>
+</g>
+<g fill='#808080' stroke='#808080'>
+<path d='M 0.0 17.07181 L 0.0 -17.07181' fill='none'/>
+<g fill='#000' stroke='#000'>
+<g fill='#000' stroke='#000'>
+</g>
+<g transform='translate(-2.5 -26.90202)matrix(1.00375 0 0 -1.00375 -17.59372 -50.692703)' stroke='none' fill='#000'>
+<text class='f1' x='17.52799' y='-50.503316'>0</text>
+</g>
+</g>
+</g>
+<g stroke-width='1.6'>
+<path d='M -48.36957 0.0 L -36.98865 0.0' fill='none'/>
+</g>
+<g stroke-width='1.6'>
+<path d='M -42.67911 -5.69046 L -42.67911 5.69046' fill='none'/>
+</g>
+<g stroke-width='1.6'>
+<path d='M -19.91682 0.0 L -8.5359 0.0' fill='none'/>
+</g>
+<g stroke-width='1.6'>
+<path d='M 8.5359 0.0 L 19.91682 0.0' fill='none'/>
+</g>
+<g stroke-width='1.6'>
+<path d='M 36.98865 0.0 L 48.36957 0.0' fill='none'/>
+</g>
+<g stroke-width='1.6'>
+<path d='M 42.67911 -5.69046 L 42.67911 5.69046' fill='none'/>
+</g>
+<g stroke-width='0.4'>
+</g>
+</g>
+</g>
+</svg>

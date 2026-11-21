@@ -6,7 +6,7 @@
   <link href="https://songchen.science/blog/atom.xml" rel="self"/>
   
   <link href="https://songchen.science/blog/"/>
-  <updated>2026-11-11T08:50:08.333Z</updated>
+  <updated>2026-11-21T15:42:20.622Z</updated>
   <id>https://songchen.science/blog/</id>
   
   <author>
@@ -15,6 +15,457 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MIT 6.390 Intro to Machine Learning: 1 Introduction (Repost)</title>
+    <link href="https://songchen.science/blog/posts/a285b24c/"/>
+    <id>https://songchen.science/blog/posts/a285b24c/</id>
+    <published>2026-11-20T10:32:31.000Z</published>
+    <updated>2026-11-21T15:42:20.622Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://introml.mit.edu/notes/&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;6.390 - Intro to Machine Learning&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from &lt;a href=&quot;https://introml.mit.edu/notes/&quot;&gt;Chapter 1: Introduction&lt;/a&gt; of the &lt;a href=&quot;https://introml.mit.edu/notes/&quot;&gt;MIT 6.390 Intro to Machine Learning course notes&lt;/a&gt;, © Massachusetts Institute of Technology and the 6.390 (formerly 6.036) course staff, licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;. Changes made on 2026-11-20: converted from the course website to Markdown; side notes and boxed notes shown as quotes; links to other chapters point to the original site; the course logos left out. This post is shared under the same license.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The main focus of machine learning (ML) is &lt;em&gt;making decisions or predictions based on data&lt;/em&gt;. There are a number of other fields with significant overlap in technique, but difference in focus: in economics and psychology, the goal is to discover underlying causal processes and in statistics it is to find a model that fits a data set well. In those fields, the end product is a model. In machine learning, we often fit models, but as a means to the end of making good predictions or decisions.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MIT 6.390 Intro to Machine Learning: 2 Regression (Repost)</title>
+    <link href="https://songchen.science/blog/posts/f623e555/"/>
+    <id>https://songchen.science/blog/posts/f623e555/</id>
+    <published>2026-11-20T10:32:28.000Z</published>
+    <updated>2026-11-21T15:42:20.649Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://introml.mit.edu/notes/regression.html&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;6.390 - Intro to Machine Learning&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from &lt;a href=&quot;https://introml.mit.edu/notes/regression.html&quot;&gt;Chapter 2: Regression&lt;/a&gt; of the &lt;a href=&quot;https://introml.mit.edu/notes/&quot;&gt;MIT 6.390 Intro to Machine Learning course notes&lt;/a&gt;, © Massachusetts Institute of Technology and the 6.390 (formerly 6.036) course staff, licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;. Changes made on 2026-11-20: converted from the course website to Markdown; side notes and boxed notes shown as quotes; links to other chapters point to the original site. This post is shared under the same license.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;Regression&lt;/em&gt; is an important machine-learning problem that provides a good starting point for diving deeply into the field.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MIT 6.390 Intro to Machine Learning: 3 Gradient Descent (Repost)</title>
+    <link href="https://songchen.science/blog/posts/9e01c7ab/"/>
+    <id>https://songchen.science/blog/posts/9e01c7ab/</id>
+    <published>2026-11-20T10:32:24.000Z</published>
+    <updated>2026-11-21T15:42:20.658Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://introml.mit.edu/notes/gradient_descent.html&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;6.390 - Intro to Machine Learning&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from &lt;a href=&quot;https://introml.mit.edu/notes/gradient_descent.html&quot;&gt;Chapter 3: Gradient Descent&lt;/a&gt; of the &lt;a href=&quot;https://introml.mit.edu/notes/&quot;&gt;MIT 6.390 Intro to Machine Learning course notes&lt;/a&gt;, © Massachusetts Institute of Technology and the 6.390 (formerly 6.036) course staff, licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;. Changes made on 2026-11-20: converted from the course website to Markdown; side notes and boxed notes shown as quotes; links to other chapters point to the original site. This post is shared under the same license.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In the previous chapter, we showed how to describe an interesting objective function for machine learning, but we need a way to find the optimal &#92;(&#92;Theta^* &amp;#x3D; {&#92;rm arg}&#92;min_{&#92;Theta} J(&#92;Theta)&#92;), particularly when the objective function is not amenable to analytical optimization. For example, this can happen when &#92;(J(&#92;Theta)&#92;) involves a more complex loss function or more general forms of regularization. It can also be the case when there are simply too many parameters to learn for it to be computationally feasible.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MIT 6.390 Intro to Machine Learning: 4 Classification (Repost)</title>
+    <link href="https://songchen.science/blog/posts/96b525e4/"/>
+    <id>https://songchen.science/blog/posts/96b525e4/</id>
+    <published>2026-11-20T10:32:21.000Z</published>
+    <updated>2026-11-21T15:42:20.663Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://introml.mit.edu/notes/classification.html&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;6.390 - Intro to Machine Learning&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from &lt;a href=&quot;https://introml.mit.edu/notes/classification.html&quot;&gt;Chapter 4: Classification&lt;/a&gt; of the &lt;a href=&quot;https://introml.mit.edu/notes/&quot;&gt;MIT 6.390 Intro to Machine Learning course notes&lt;/a&gt;, © Massachusetts Institute of Technology and the 6.390 (formerly 6.036) course staff, licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;. Changes made on 2026-11-20: converted from the course website to Markdown; side notes and boxed notes shown as quotes; links to other chapters point to the original site; the interactive demo linked instead of embedded. This post is shared under the same license.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;4-1-Problem-formulation&quot;&gt;&lt;a href=&quot;#4-1-Problem-formulation&quot; class=&quot;headerlink&quot; title=&quot;4.1 Problem formulation&quot;&gt;&lt;/a&gt;4.1 Problem formulation&lt;/h2&gt;&lt;p&gt;Classification is a machine learning problem seeking to map from inputs &#92;(&#92;mathbb{R}^d&#92;) to outputs in an unordered set.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MIT 6.390 Intro to Machine Learning: 5 Feature Representation (Repost)</title>
+    <link href="https://songchen.science/blog/posts/ce625cee/"/>
+    <id>https://songchen.science/blog/posts/ce625cee/</id>
+    <published>2026-11-20T10:32:18.000Z</published>
+    <updated>2026-11-21T15:42:20.674Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://introml.mit.edu/notes/feature_representation.html&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;6.390 - Intro to Machine Learning&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from &lt;a href=&quot;https://introml.mit.edu/notes/feature_representation.html&quot;&gt;Chapter 5: Feature Representation&lt;/a&gt; of the &lt;a href=&quot;https://introml.mit.edu/notes/&quot;&gt;MIT 6.390 Intro to Machine Learning course notes&lt;/a&gt;, © Massachusetts Institute of Technology and the 6.390 (formerly 6.036) course staff, licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;. Changes made on 2026-11-20: converted from the course website to Markdown; side notes and boxed notes shown as quotes; links to other chapters point to the original site. This post is shared under the same license.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Linear regression and classification are powerful tools, but in the real world, data often exhibit &lt;em&gt;non-linear&lt;/em&gt; behavior that cannot immediately be captured by the linear models which we have built so far. For example, suppose the true behavior of a system (with &#92;(d&amp;#x3D;2&#92;)) looks like this wavelet:&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MIT 6.390 Intro to Machine Learning: 6 Neural Networks (Repost)</title>
+    <link href="https://songchen.science/blog/posts/44a07c07/"/>
+    <id>https://songchen.science/blog/posts/44a07c07/</id>
+    <published>2026-11-20T10:32:15.000Z</published>
+    <updated>2026-11-21T15:42:20.680Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://introml.mit.edu/notes/neural_networks.html&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;6.390 - Intro to Machine Learning&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from &lt;a href=&quot;https://introml.mit.edu/notes/neural_networks.html&quot;&gt;Chapter 6: Neural Networks&lt;/a&gt; of the &lt;a href=&quot;https://introml.mit.edu/notes/&quot;&gt;MIT 6.390 Intro to Machine Learning course notes&lt;/a&gt;, © Massachusetts Institute of Technology and the 6.390 (formerly 6.036) course staff, licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;. Changes made on 2026-11-20: converted from the course website to Markdown; side notes and boxed notes shown as quotes; links to other chapters point to the original site. This post is shared under the same license.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You’ve probably been hearing a lot about “neural networks.” Now that we have several useful machine-learning concepts (hypothesis classes, classification, regression, gradient descent, regularization, etc.), we are well equipped to understand neural networks in detail.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="deep-learning" scheme="https://songchen.science/blog/tags/deep-learning/"/>
+    
+    <category term="neural-networks" scheme="https://songchen.science/blog/tags/neural-networks/"/>
+    
+    <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MIT 6.390 Intro to Machine Learning: 7 Convolutional Neural Networks (Repost)</title>
+    <link href="https://songchen.science/blog/posts/7d3172cb/"/>
+    <id>https://songchen.science/blog/posts/7d3172cb/</id>
+    <published>2026-11-20T10:32:07.000Z</published>
+    <updated>2026-11-21T15:42:20.686Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://introml.mit.edu/notes/convolutional_neural_networks.html&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;6.390 - Intro to Machine Learning&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from &lt;a href=&quot;https://introml.mit.edu/notes/convolutional_neural_networks.html&quot;&gt;Chapter 7: Convolutional Neural Networks&lt;/a&gt; of the &lt;a href=&quot;https://introml.mit.edu/notes/&quot;&gt;MIT 6.390 Intro to Machine Learning course notes&lt;/a&gt;, © Massachusetts Institute of Technology and the 6.390 (formerly 6.036) course staff, licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;. Changes made on 2026-11-20: converted from the course website to Markdown; side notes and boxed notes shown as quotes; links to other chapters point to the original site; a figure from MathWorks left out, since the course license doesn’t cover it. This post is shared under the same license.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So far, we have studied what are called &lt;em&gt;fully connected&lt;/em&gt; neural networks, in which all of the units in one layer are connected to all of the units in the next layer. This is a good arrangement when we don’t know anything about the kind of mapping from inputs to outputs that we will be asking the network to approximate. However, if we &lt;em&gt;do&lt;/em&gt; know something about our problem, it is better to build that knowledge into the structure of the neural network. Doing so can save computation time and significantly reduce the amount of training data required to arrive at a solution that generalizes robustly.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="deep-learning" scheme="https://songchen.science/blog/tags/deep-learning/"/>
+    
+    <category term="neural-networks" scheme="https://songchen.science/blog/tags/neural-networks/"/>
+    
+    <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MIT 6.390 Intro to Machine Learning: 8 Representation Learning (Repost)</title>
+    <link href="https://songchen.science/blog/posts/62a98b01/"/>
+    <id>https://songchen.science/blog/posts/62a98b01/</id>
+    <published>2026-11-20T10:32:00.000Z</published>
+    <updated>2026-11-21T15:42:20.692Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://introml.mit.edu/notes/representation.html&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;6.390 - Intro to Machine Learning&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from &lt;a href=&quot;https://introml.mit.edu/notes/representation.html&quot;&gt;Chapter 8: Representation Learning&lt;/a&gt; of the &lt;a href=&quot;https://introml.mit.edu/notes/&quot;&gt;MIT 6.390 Intro to Machine Learning course notes&lt;/a&gt;, © Massachusetts Institute of Technology and the 6.390 (formerly 6.036) course staff, licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;. Changes made on 2026-11-20: converted from the course website to Markdown; side notes and boxed notes shown as quotes; links to other chapters point to the original site. This post is shared under the same license.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In previous chapters, we have largely focused on supervised learning, using training samples that have both features&amp;#x2F;inputs and corresponding labels&amp;#x2F;outputs, to learn models that predict labels for new data. A recurring theme, however, has been the importance of &lt;em&gt;how data is represented&lt;/em&gt;. In &lt;a href=&quot;https://introml.mit.edu/notes/feature_representation.html&quot;&gt;Chapter 5&lt;/a&gt;, we saw that choosing the right feature transformation can make the difference between a model that works and one that doesn’t. In &lt;a href=&quot;https://introml.mit.edu/notes/convolutional_neural_networks.html&quot;&gt;Chapter 7&lt;/a&gt;, we saw that convolutional neural networks learn hierarchical features automatically from data. This chapter steps back to ask a broader question: can we learn good representations of data &lt;em&gt;directly&lt;/em&gt;, and why would we want to?&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="deep-learning" scheme="https://songchen.science/blog/tags/deep-learning/"/>
+    
+    <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MIT 6.390 Intro to Machine Learning: 9 Transformers (Repost)</title>
+    <link href="https://songchen.science/blog/posts/31f8e192/"/>
+    <id>https://songchen.science/blog/posts/31f8e192/</id>
+    <published>2026-11-20T10:31:55.000Z</published>
+    <updated>2026-11-21T15:42:20.697Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://introml.mit.edu/notes/transformers.html&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;6.390 - Intro to Machine Learning&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from &lt;a href=&quot;https://introml.mit.edu/notes/transformers.html&quot;&gt;Chapter 9: Transformers&lt;/a&gt; of the &lt;a href=&quot;https://introml.mit.edu/notes/&quot;&gt;MIT 6.390 Intro to Machine Learning course notes&lt;/a&gt;, © Massachusetts Institute of Technology and the 6.390 (formerly 6.036) course staff, licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;. Changes made on 2026-11-20: converted from the course website to Markdown; side notes and boxed notes shown as quotes; links to other chapters point to the original site. This post is shared under the same license.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Transformers are a very recent family of architectures that were originally introduced in the field of natural language processing (NLP) in 2017, as an approach to process and understand human language. Since then, they have revolutionized not only NLP but also other domains such as image processing and multi-modal generative AI. Their scalability and parallelizability have made them the backbone of large-scale foundation models, such as GPT, BERT, and Vision Transformers (ViT), powering many state-of-the-art applications.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="deep-learning" scheme="https://songchen.science/blog/tags/deep-learning/"/>
+    
+    <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MIT 6.390 Intro to Machine Learning: 10 Non-parametric Models (Repost)</title>
+    <link href="https://songchen.science/blog/posts/8844b35/"/>
+    <id>https://songchen.science/blog/posts/8844b35/</id>
+    <published>2026-11-20T10:31:50.000Z</published>
+    <updated>2026-11-21T15:42:20.628Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://introml.mit.edu/notes/non_parametric.html&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;6.390 - Intro to Machine Learning&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from &lt;a href=&quot;https://introml.mit.edu/notes/non_parametric.html&quot;&gt;Chapter 10: Non-parametric Models&lt;/a&gt; of the &lt;a href=&quot;https://introml.mit.edu/notes/&quot;&gt;MIT 6.390 Intro to Machine Learning course notes&lt;/a&gt;, © Massachusetts Institute of Technology and the 6.390 (formerly 6.036) course staff, licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;. Changes made on 2026-11-20: converted from the course website to Markdown; side notes and boxed notes shown as quotes; links to other chapters point to the original site; a figure reproduced from Breiman et al. (1984) left out, since the course license doesn’t cover it. This post is shared under the same license.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Neural networks have adaptable complexity in the sense that we can try different architectures and use cross-validation to pick one that works well on our data. In this chapter we turn to models that adapt their complexity &lt;em&gt;automatically&lt;/em&gt; to the training data: the name &lt;em&gt;non-parametric&lt;/em&gt; is misleading: these methods do have parameters, but the size of the parameterization can grow as we acquire more data, rather than being fixed in advance.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MIT 6.390 Intro to Machine Learning: 11 Markov Decision Processes (Repost)</title>
+    <link href="https://songchen.science/blog/posts/874eaf6e/"/>
+    <id>https://songchen.science/blog/posts/874eaf6e/</id>
+    <published>2026-11-20T10:31:47.000Z</published>
+    <updated>2026-11-21T15:42:20.634Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://introml.mit.edu/notes/mdp.html&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;6.390 - Intro to Machine Learning&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from &lt;a href=&quot;https://introml.mit.edu/notes/mdp.html&quot;&gt;Chapter 11: Markov Decision Processes&lt;/a&gt; of the &lt;a href=&quot;https://introml.mit.edu/notes/&quot;&gt;MIT 6.390 Intro to Machine Learning course notes&lt;/a&gt;, © Massachusetts Institute of Technology and the 6.390 (formerly 6.036) course staff, licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;. Changes made on 2026-11-20: converted from the course website to Markdown; side notes and boxed notes shown as quotes; links to other chapters point to the original site. This post is shared under the same license.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Consider a robot learning to navigate through a maze, a game-playing AI developing strategies through self-play, or a self-driving car making driving decisions in real-time. These problems share a common challenge: the agent must make a sequence of decisions where each choice affects future possibilities and rewards. Unlike static prediction tasks where we learn a one-time mapping from inputs to outputs, these problems require reasoning about the consequences of actions over time.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MIT 6.390 Intro to Machine Learning: 12 Reinforcement Learning (Repost)</title>
+    <link href="https://songchen.science/blog/posts/72f9527d/"/>
+    <id>https://songchen.science/blog/posts/72f9527d/</id>
+    <published>2026-11-20T10:31:40.000Z</published>
+    <updated>2026-11-21T15:42:20.642Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://introml.mit.edu/notes/reinforcement_learning.html&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;6.390 - Intro to Machine Learning&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from &lt;a href=&quot;https://introml.mit.edu/notes/reinforcement_learning.html&quot;&gt;Chapter 12: Reinforcement Learning&lt;/a&gt; of the &lt;a href=&quot;https://introml.mit.edu/notes/&quot;&gt;MIT 6.390 Intro to Machine Learning course notes&lt;/a&gt;, © Massachusetts Institute of Technology and the 6.390 (formerly 6.036) course staff, licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;. Changes made on 2026-11-20: converted from the course website to Markdown; side notes and boxed notes shown as quotes; links to other chapters point to the original site. This post is shared under the same license.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;Reinforcement learning&lt;/em&gt; (RL) is a type of machine learning where an agent learns to make decisions by interacting with an environment. Unlike other learning paradigms, RL has several distinctive characteristics:&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MIT 6.390 Intro to Machine Learning: Appendix A Matrix Calculus (Repost)</title>
+    <link href="https://songchen.science/blog/posts/f6ba923b/"/>
+    <id>https://songchen.science/blog/posts/f6ba923b/</id>
+    <published>2026-11-20T10:31:34.000Z</published>
+    <updated>2026-11-21T15:42:20.703Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://introml.mit.edu/notes/matrix_calculus.html&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;6.390 - Intro to Machine Learning&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from &lt;a href=&quot;https://introml.mit.edu/notes/matrix_calculus.html&quot;&gt;Appendix A: Matrix Calculus&lt;/a&gt; of the &lt;a href=&quot;https://introml.mit.edu/notes/&quot;&gt;MIT 6.390 Intro to Machine Learning course notes&lt;/a&gt;, © Massachusetts Institute of Technology and the 6.390 (formerly 6.036) course staff, licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;. Changes made on 2026-11-20: converted from the course website to Markdown; side notes and boxed notes shown as quotes; links to other chapters point to the original site. This post is shared under the same license.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;A-1-Single-variable-Calculus&quot;&gt;&lt;a href=&quot;#A-1-Single-variable-Calculus&quot; class=&quot;headerlink&quot; title=&quot;A.1 Single-variable Calculus&quot;&gt;&lt;/a&gt;A.1 Single-variable Calculus&lt;/h2&gt;&lt;p&gt;We all know how to calculate a derivative in single-variable calculus. If we have an input variable &#92;(x &#92;in &#92;mathbb{R}&#92;) and a function &#92;(f(x): &#92;mathbb{R} &#92;rightarrow &#92;mathbb{R}&#92;), then:&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MIT 6.390 Intro to Machine Learning: Appendix B Optimizing Neural Networks (Repost)</title>
+    <link href="https://songchen.science/blog/posts/c55162e6/"/>
+    <id>https://songchen.science/blog/posts/c55162e6/</id>
+    <published>2026-11-20T10:31:31.000Z</published>
+    <updated>2026-11-21T15:42:20.708Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://introml.mit.edu/notes/neural_network_appendix.html&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;6.390 - Intro to Machine Learning&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from &lt;a href=&quot;https://introml.mit.edu/notes/neural_network_appendix.html&quot;&gt;Appendix B: Optimizing Neural Networks&lt;/a&gt; of the &lt;a href=&quot;https://introml.mit.edu/notes/&quot;&gt;MIT 6.390 Intro to Machine Learning course notes&lt;/a&gt;, © Massachusetts Institute of Technology and the 6.390 (formerly 6.036) course staff, licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;. Changes made on 2026-11-20: converted from the course website to Markdown; side notes and boxed notes shown as quotes; links to other chapters point to the original site. This post is shared under the same license.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;B-1-Momentum-and-adaptive-learning-rates&quot;&gt;&lt;a href=&quot;#B-1-Momentum-and-adaptive-learning-rates&quot; class=&quot;headerlink&quot; title=&quot;B.1 Momentum and adaptive learning rates&quot;&gt;&lt;/a&gt;B.1 Momentum and adaptive learning rates&lt;/h2&gt;&lt;h3 id=&quot;B-1-1-Running-averages&quot;&gt;&lt;a href=&quot;#B-1-1-Running-averages&quot; class=&quot;headerlink&quot; title=&quot;B.1.1 Running averages&quot;&gt;&lt;/a&gt;B.1.1 Running averages&lt;/h3&gt;&lt;p&gt;We’ll start by looking at the notion of a &lt;em&gt;running average&lt;/em&gt;. It’s a computational strategy for estimating a possibly weighted average of a sequence of data. Let our data sequence be &#92;(c_1, c_2, &#92;ldots&#92;); then we define a sequence of running average values, &#92;(C_0, C_1, C_2, &#92;ldots&#92;) using the equations&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="deep-learning" scheme="https://songchen.science/blog/tags/deep-learning/"/>
+    
+    <category term="neural-networks" scheme="https://songchen.science/blog/tags/neural-networks/"/>
+    
+    <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MIT 6.390 Intro to Machine Learning: Appendix C Supervised learning in a nutshell (Repost)</title>
+    <link href="https://songchen.science/blog/posts/578db0ef/"/>
+    <id>https://songchen.science/blog/posts/578db0ef/</id>
+    <published>2026-11-20T10:31:21.000Z</published>
+    <updated>2026-11-21T15:42:20.713Z</updated>
+    
+    
+    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://introml.mit.edu/notes/nutshell.html&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;6.390 - Intro to Machine Learning&lt;/a&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reposted from &lt;a href=&quot;https://introml.mit.edu/notes/nutshell.html&quot;&gt;Appendix C: Supervised Learning in a Nutshell&lt;/a&gt; of the &lt;a href=&quot;https://introml.mit.edu/notes/&quot;&gt;MIT 6.390 Intro to Machine Learning course notes&lt;/a&gt;, © Massachusetts Institute of Technology and the 6.390 (formerly 6.036) course staff, licensed under &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;. Changes made on 2026-11-20: converted from the course website to Markdown; side notes and boxed notes shown as quotes; links to other chapters point to the original site. This post is shared under the same license.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In which we try to describe the outlines of the “lifecycle” of supervised learning, including hyperparameter tuning and evaluation of the final product.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Machine-learning" scheme="https://songchen.science/blog/categories/Machine-learning/"/>
+    
+    <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
+    
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
+    
+    <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
+    
+  </entry>
   
   <entry>
     <title>Scientific Agent Skills (Repost)</title>
@@ -81,9 +532,9 @@
   </entry>
   
   <entry>
-    <title>Business &amp; Finance | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/business/"/>
-    <id>https://songchen.science/blog/agent-skills/business/</id>
+    <title>AI &amp; Data | Agent Skills</title>
+    <link href="https://songchen.science/blog/agent-skills/ai_data/"/>
+    <id>https://songchen.science/blog/agent-skills/ai_data/</id>
     <published>2026-11-02T04:00:00.000Z</published>
     <updated>2026-11-02T04:00:00.000Z</updated>
     
@@ -92,7 +543,7 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Business-Finance&quot;&gt;&lt;a href=&quot;#Business-Finance&quot; class=&quot;headerlink&quot; title=&quot;Business &amp;amp; Finance&quot;&gt;&lt;/a&gt;Business &amp;amp;</summary>
+    <summary type="html">&lt;h1 id=&quot;AI-Data&quot;&gt;&lt;a href=&quot;#AI-Data&quot; class=&quot;headerlink&quot; title=&quot;AI &amp;amp; Data&quot;&gt;&lt;/a&gt;AI &amp;amp; Data&lt;/h1&gt;&lt;p&gt;AI and data skills cover model and</summary>
         
       
     
@@ -100,7 +551,7 @@
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
     
-    <category term="Business &amp; Finance" scheme="https://songchen.science/blog/categories/Agent-Skills/Business-Finance/"/>
+    <category term="AI &amp; Data" scheme="https://songchen.science/blog/categories/Agent-Skills/AI-Data/"/>
     
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
@@ -164,422 +615,6 @@
     <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
     
     <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AI &amp; Data | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/ai_data/"/>
-    <id>https://songchen.science/blog/agent-skills/ai_data/</id>
-    <published>2026-11-02T04:00:00.000Z</published>
-    <updated>2026-11-02T04:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;AI-Data&quot;&gt;&lt;a href=&quot;#AI-Data&quot; class=&quot;headerlink&quot; title=&quot;AI &amp;amp; Data&quot;&gt;&lt;/a&gt;AI &amp;amp; Data&lt;/h1&gt;&lt;p&gt;AI and data skills cover model and</summary>
-        
-      
-    
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
-    
-    <category term="AI &amp; Data" scheme="https://songchen.science/blog/categories/Agent-Skills/AI-Data/"/>
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
-    
-    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Design &amp; Frontend | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/design/"/>
-    <id>https://songchen.science/blog/agent-skills/design/</id>
-    <published>2026-11-02T04:00:00.000Z</published>
-    <updated>2026-11-02T04:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Design-Frontend&quot;&gt;&lt;a href=&quot;#Design-Frontend&quot; class=&quot;headerlink&quot; title=&quot;Design &amp;amp; Frontend&quot;&gt;&lt;/a&gt;Design &amp;amp;</summary>
-        
-      
-    
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
-    
-    <category term="Design &amp; Frontend" scheme="https://songchen.science/blog/categories/Agent-Skills/Design-Frontend/"/>
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
-    
-    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Writing &amp; Documents | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/documents/"/>
-    <id>https://songchen.science/blog/agent-skills/documents/</id>
-    <published>2026-11-02T04:00:00.000Z</published>
-    <updated>2026-11-02T04:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Writing-Documents&quot;&gt;&lt;a href=&quot;#Writing-Documents&quot; class=&quot;headerlink&quot; title=&quot;Writing &amp;amp; Documents&quot;&gt;&lt;/a&gt;Writing &amp;amp;</summary>
-        
-      
-    
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
-    
-    <category term="Writing &amp; Documents" scheme="https://songchen.science/blog/categories/Agent-Skills/Writing-Documents/"/>
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
-    
-    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Productivity &amp; Collaboration | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/productivity/"/>
-    <id>https://songchen.science/blog/agent-skills/productivity/</id>
-    <published>2026-11-02T04:00:00.000Z</published>
-    <updated>2026-11-02T04:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Productivity-Collaboration&quot;&gt;&lt;a href=&quot;#Productivity-Collaboration&quot; class=&quot;headerlink&quot; title=&quot;Productivity &amp;amp;</summary>
-        
-      
-    
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
-    
-    <category term="Productivity &amp; Collaboration" scheme="https://songchen.science/blog/categories/Agent-Skills/Productivity-Collaboration/"/>
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
-    
-    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Product &amp; Marketing | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/product/"/>
-    <id>https://songchen.science/blog/agent-skills/product/</id>
-    <published>2026-11-02T04:00:00.000Z</published>
-    <updated>2026-11-02T04:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Product-Marketing&quot;&gt;&lt;a href=&quot;#Product-Marketing&quot; class=&quot;headerlink&quot; title=&quot;Product &amp;amp; Marketing&quot;&gt;&lt;/a&gt;Product &amp;amp;</summary>
-        
-      
-    
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
-    
-    <category term="Product &amp; Marketing" scheme="https://songchen.science/blog/categories/Agent-Skills/Product-Marketing/"/>
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
-    
-    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Research &amp; Learning | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/research/"/>
-    <id>https://songchen.science/blog/agent-skills/research/</id>
-    <published>2026-11-02T04:00:00.000Z</published>
-    <updated>2026-11-02T04:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Research-Learning&quot;&gt;&lt;a href=&quot;#Research-Learning&quot; class=&quot;headerlink&quot; title=&quot;Research &amp;amp; Learning&quot;&gt;&lt;/a&gt;Research &amp;amp;</summary>
-        
-      
-    
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
-    
-    <category term="Research &amp; Learning" scheme="https://songchen.science/blog/categories/Agent-Skills/Research-Learning/"/>
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
-    
-    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Software Development | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/software/"/>
-    <id>https://songchen.science/blog/agent-skills/software/</id>
-    <published>2026-11-02T04:00:00.000Z</published>
-    <updated>2026-11-02T04:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Software-Development&quot;&gt;&lt;a href=&quot;#Software-Development&quot; class=&quot;headerlink&quot; title=&quot;Software Development&quot;&gt;&lt;/a&gt;Software</summary>
-        
-      
-    
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
-    
-    <category term="Software Development" scheme="https://songchen.science/blog/categories/Agent-Skills/Software-Development/"/>
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
-    
-    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Specialized Domains | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/specialized/"/>
-    <id>https://songchen.science/blog/agent-skills/specialized/</id>
-    <published>2026-11-02T04:00:00.000Z</published>
-    <updated>2026-11-02T04:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Specialized-Domains&quot;&gt;&lt;a href=&quot;#Specialized-Domains&quot; class=&quot;headerlink&quot; title=&quot;Specialized Domains&quot;&gt;&lt;/a&gt;Specialized</summary>
-        
-      
-    
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
-    
-    <category term="Specialized Domains" scheme="https://songchen.science/blog/categories/Agent-Skills/Specialized-Domains/"/>
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
-    
-    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Testing &amp; Quality | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/testing/"/>
-    <id>https://songchen.science/blog/agent-skills/testing/</id>
-    <published>2026-11-02T04:00:00.000Z</published>
-    <updated>2026-11-02T04:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Testing-Quality&quot;&gt;&lt;a href=&quot;#Testing-Quality&quot; class=&quot;headerlink&quot; title=&quot;Testing &amp;amp; Quality&quot;&gt;&lt;/a&gt;Testing &amp;amp;</summary>
-        
-      
-    
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
-    
-    <category term="Testing &amp; Quality" scheme="https://songchen.science/blog/categories/Agent-Skills/Testing-Quality/"/>
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
-    
-    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Security &amp; Privacy | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/security/"/>
-    <id>https://songchen.science/blog/agent-skills/security/</id>
-    <published>2026-11-02T04:00:00.000Z</published>
-    <updated>2026-11-02T04:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Security-Privacy&quot;&gt;&lt;a href=&quot;#Security-Privacy&quot; class=&quot;headerlink&quot; title=&quot;Security &amp;amp; Privacy&quot;&gt;&lt;/a&gt;Security &amp;amp;</summary>
-        
-      
-    
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
-    
-    <category term="Security &amp; Privacy" scheme="https://songchen.science/blog/categories/Agent-Skills/Security-Privacy/"/>
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
-    
-    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VoiceStudio (Repost)</title>
-    <link href="https://songchen.science/blog/posts/607938b0/"/>
-    <id>https://songchen.science/blog/posts/607938b0/</id>
-    <published>2026-10-28T11:11:09.000Z</published>
-    <updated>2026-10-29T01:46:17.411Z</updated>
-    
-    
-    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://github.com/debpalash/VoiceStudio&quot;&gt;
-&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;GitHub · debpalash&lt;/a&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Reposted from the &lt;a href=&quot;https://github.com/debpalash/VoiceStudio&quot;&gt;VoiceStudio README&lt;/a&gt; on GitHub. Copyright 2024-present Palash Debnath and VoiceStudio contributors, licensed under the &lt;a href=&quot;https://github.com/debpalash/VoiceStudio/blob/main/LICENSE&quot;&gt;GNU AGPL-3.0&lt;/a&gt;. Converted to this post on 2026-10-28: the view-counter image was removed and the image layout was adapted. This post is also under the AGPL-3.0.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p style=&quot;text-align: center&quot;&gt;&lt;img class=&quot;not-gallery-item&quot; src=&quot;/blog/posts/607938b0/image-1.png&quot; alt=&quot;VoiceStudio&quot; width=&quot;88&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://trendshift.io/repositories/28176?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-28176&quot;&gt;&lt;img src=&quot;https://trendshift.io/api/badge/repositories/28176&quot; alt=&quot;Trendshift badge showing where VoiceStudio ranks among trending repositories&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;The local voice studio: clone, design, dub, dictate, transcribe and narrate in 646 languages.&lt;/strong&gt;&lt;br&gt;Runs on your own computer and phone. No accounts, no API keys, and nothing leaves your device unless you say yes.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Software" scheme="https://songchen.science/blog/categories/Software/"/>
-    
-    
-    <category term="github" scheme="https://songchen.science/blog/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>uv Documentation (Repost)</title>
-    <link href="https://songchen.science/blog/posts/db10ad99/"/>
-    <id>https://songchen.science/blog/posts/db10ad99/</id>
-    <published>2026-10-24T17:58:59.000Z</published>
-    <updated>2026-10-25T04:22:38.873Z</updated>
-    
-    
-    <summary type="html">&lt;a class=&quot;tag is-dark is-medium&quot; href=&quot;https://docs.astral.sh/uv/&quot;&gt;
-&lt;span class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;docs.astral.sh · Astral&lt;/a&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Reposted from &lt;a href=&quot;https://docs.astral.sh/uv/&quot;&gt;the uv documentation&lt;/a&gt; by &lt;a href=&quot;https://astral.sh/&quot;&gt;Astral&lt;/a&gt;, last updated 2026-03-13. Copyright (c) 2025 Astral Software Inc., used under the &lt;a href=&quot;https://github.com/astral-sh/uv/blob/main/LICENSE-MIT&quot;&gt;MIT License&lt;/a&gt;; the full notice is at the end of this post.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;An extremely fast Python package and project manager, written in Rust.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Python" scheme="https://songchen.science/blog/categories/Python/"/>
-    
-    <category term="Tools" scheme="https://songchen.science/blog/categories/Python/Tools/"/>
-    
-    
-    <category term="Documentation" scheme="https://songchen.science/blog/tags/Documentation/"/>
-    
-    <category term="python" scheme="https://songchen.science/blog/tags/python/"/>
-    
-    <category term="uv" scheme="https://songchen.science/blog/tags/uv/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to Publish a Blog Post from Scratch: A Step-by-Step Guide</title>
-    <link href="https://songchen.science/blog/posts/711b0316/"/>
-    <id>https://songchen.science/blog/posts/711b0316/</id>
-    <published>2026-10-23T03:30:09.000Z</published>
-    <updated>2026-10-24T13:24:35.853Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;This blog runs on &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt; 8 with the Icarus theme, as two sites: an English one and a Chinese one. This guide walks through every step from a blank page to a live post, with the exact commands for this setup.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Documentation" scheme="https://songchen.science/blog/categories/Documentation/"/>
-    
-    <category term="Hexo" scheme="https://songchen.science/blog/categories/Documentation/Hexo/"/>
-    
-    
-    <category term="Documentation" scheme="https://songchen.science/blog/tags/Documentation/"/>
-    
-    <category term="Hexo" scheme="https://songchen.science/blog/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Superpower</title>
-    <link href="https://songchen.science/blog/posts/55017b02/"/>
-    <id>https://songchen.science/blog/posts/55017b02/</id>
-    <published>2026-08-04T14:36:37.000Z</published>
-    <updated>2026-08-04T14:45:09.851Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Superpowers&quot;&gt;&lt;a href=&quot;#Superpowers&quot; class=&quot;headerlink&quot; title=&quot;Superpowers&quot;&gt;&lt;/a&gt;Superpowers&lt;/h1&gt;&lt;p&gt;Superpowers is a complete</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Skills Repository</title>
-    <link href="https://songchen.science/blog/posts/90b43f1f/"/>
-    <id>https://songchen.science/blog/posts/90b43f1f/</id>
-    <published>2026-05-16T11:44:47.000Z</published>
-    <updated>2026-11-02T11:22:52.302Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;The current &lt;a href=&quot;/blog/agent-skills/&quot;&gt;Agent Skills catalog&lt;/a&gt; groups the VoltAgent collection into 13 categories, with one article</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Skills,Agent skills" scheme="https://songchen.science/blog/tags/Skills-Agent-skills/"/>
     
   </entry>
   

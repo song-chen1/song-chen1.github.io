@@ -1,0 +1,785 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='652.446725pt' height='311.588159pt' viewBox='-72.000004 -72.000004 434.964483 207.72544'>
+<style type='text/css'>
+<![CDATA[@font-face{font-family:rm-lmr7;src:url(data:application/x-font-woff;base64,d09GRgABAAAAAARoAA0AAAAABbQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABoAAAAcodKZoU9TLzIAAAFMAAAAQAAAAFZVfl7uY21hcAAAAYwAAABFAAABQgQPA+BjdnQgAAAB1AAAAAQAAAAEACECeWdhc3AAAAHYAAAACAAAAAj//wADZ2x5ZgAAAeAAAAEoAAABLPo3pAxoZWFkAAADCAAAADAAAAA2L1P+hmhoZWEAAAM4AAAAHgAAACQE7gI+aG10eAAAA1gAAAASAAAAEgbqAI5sb2NhAAADbAAAAAwAAAAMAHwA6m1heHAAAAN4AAAAHwAAACAASQBebmFtZQAAA5gAAAC1AAABHfveC7Vwb3N0AAAEUAAAABgAAAAsABwAGHjaY2BgYGQAgsvb7s0A0c9577bAaABWkQerAAB42mNgZLJknMDAysDA1Mm0m4GBoRtCM95nMGRkAooysHIywAAjAxIISHNNAVKGDEbMkv+NGKKYZiHUAACsjgkZeNpjYGBgZoBgGQZGBhCwAfIYwXwWBgUgzQKEIL7R//9A0vD///+XoCoZGNkYYEwGRiYgwcSAChgZMAEzC8NwAgB50QbzAAAAACECeQAAAAH//wACeNpjYGJQZGBg1GSaxcDMwM6gt5GRQd9mEzsLw1ujjWysd2w2MTMBmQwbmUHCrCDhTexsjH9sNjGCxI0FFQXVjQWVFRk5nh87xjTrb5oiUwQDAxNDLtDMm0wzGMQZJBgYFE2VlfQYTQVN1JTZlEWNzAVF+Bi1GUXNxRlvqhlqc3CKOjZHmXNoG6pt2qzCzS/CpCXC4aAi849JhJ9bhYWFAWSePdC8n0DztBl0GBhUldnY2bQZzcztGE2BZiqxiYrIMRobmZma6DEq2wFZYqJAG/gZ+RhFFc0Zfypx83NE78iPdPVqT44qkxDhFFFkl5EQDdZyD1STl/zIzsw4R26bPw9bkpt5okNEdraHuDSbjCSPqIiBbpyjRoiGzDt2LrFtQGcAAJYZObh42mNgZGBgAGJLw8dL4/ltvjJwMz8HijA8573bAqcVgUp+Ms0CcjkYmECiAEEDCvR42mNgZGBgmsXAwBDFZAkkGRh/MjAyoAIWADUUAjIAAAI5ACEAAAAAAjkAAAI5AG0APwAAAAAAKgAqACoAUgCWeNpjYGRgYGBl0GVgYgABEMnIABJzYNADCQAACDkAqAB42lWNTQ6CMBCFP+RH1ER3rpu4LoEuNOEAHAFPgIYEaFLYeQwP4BG8ogM2JraZztfp63tAyo2Aea2I2HoOOXH1HLPj6TlhzVteg2gj+nRRzhxScfAcc+ThOWHPi44exwW63slZYRmYlu6406AwZOTSSykncv379J0ZmRSytVAudRYbO0yVdfdGmSxXpXK9nv2FjC4KbXIjolrcHSPtkqnEYc6hbtzY2kEVmVz+8/A+fABUBSaAAAAAeNpjYGJABowM6IAVLMrEIMIgCgABOAA1) format('woff');}
+@font-face{font-family:lmmi10;src:url(data:application/x-font-woff;base64,d09GRgABAAAAAARUAA0AAAAABaQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABoAAAAcodKZoU9TLzIAAAFMAAAAQgAAAFZWWV7QY21hcAAAAZAAAABBAAABQgMPBBFjdnQgAAAB1AAAAAQAAAAEACECeWdhc3AAAAHYAAAACAAAAAj//wADZ2x5ZgAAAeAAAAEJAAABIIKbTpxoZWFkAAAC7AAAADEAAAA2L4P94WhoZWEAAAMgAAAAIAAAACQFRgDkaG10eAAAA0AAAAAQAAAAEAW+AFZsb2NhAAADUAAAAAoAAAAKALoAVG1heHAAAANcAAAAHwAAACAASAB5bmFtZQAAA3wAAADAAAABIJyy3Epwb3N0AAAEPAAAABYAAAAqAFAAA3jaY2BgYGQAgsvb7s0A0c9577bAaABWkQerAAB42mNgZHzFOIGBlYGBqYtpDwMDQw+EZnzAYMjIBBRlYOVkgAFGBiQQkOaaAqTSGNKY3v1nY4hiOshwFqYGAAPcC9QAAHjaY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChCB+2v//EPL/XKhKBkY2BhiTgZEJSDAxoAJGBioBZobBCgCvegcjAAAAACECeQAAAAH//wACeNodzEtOg1AUxvFzLoXbSyvyKFUD1N57g2008cEtYCzWpImPxKGJMU6cuQNnXUl3ATtw1E24ACfuwBcwO/n98x0gwAHwkKxBAwrHJcJJUdEOfCWloX8UlUbqE0qtYb3hihr4XVTYuHK4M1GO5Mg+Nxuy/nnl5AmAQPqnyJS8ww3c1t9nB1IY1KBSWOgPhnPULE2KyQLTttSkkixfkNxTSYNHuMA8yzOV7LSDuqZkmgp5N2C7132z27eX96znB17kjfaG276Y8fjCtcItLB7rHDzopuFQe3/kRW0mq3GslnyFjHU7v2+nZ1ehS6RjezwYx0UcvswZXiIze9F59GwJVxNtA4B/H/Qu5wAAAHjaY2BkYGAA4ucFn5Xi+W2+MnAzvwCKMDznvdsCpxX/GzNpMB0EcjkYmECiAGJHC/gAAAB42mNgZGBgOvjfmCGK8RUDw/9DTBoMQBEUwAIAhQoFLAHqACEAAAAAAeoAAAHqADUAAAAqACoAKgCQAAB42mNgZGBgYGHwYGBiAAEQycgAEnNg0AMJAAAKwQDCAHjaTY1LigIxFEWP7R+l6VHjMDivopKBA8fiAhw4bHAQi4L6QNQFuAwX4ArcoDcapPNI3nkvl3uBCUd6xPPFmJ/EfZb8JR4y45Z4pHrotzeYSv/9Ukbus2GReMgv18Qj5tzZ4Sm5UHMgwM6Xl/og2NLRcn71IIXH4Mgp1Ne6NY2qwn42jkyT1eu0c6xk0rXnbRdKb1xemLWpm6ayEVxmbeYKJ81e1oGTrGKgkUEMYe/DqepaY3MN/8N4m/AEcYwnV3jaY2BiQAaMDOiABSzKxOAJAAEPAFQAAA==) format('woff');}
+@font-face{font-family:ec-lmr10;src:url(data:application/x-font-woff;base64,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) format('woff');}
+text.f0 {font-family:lmmi10;font-size:9.96264px}
+text.f1 {font-family:rm-lmr7;font-size:6.973848px}
+text.f2 {font-family:ec-lmr10;font-size:9.96264px}
+]]>
+</style>
+<g id='page1'>
+<g stroke-miterlimit='10' transform='matrix(.996264 0 0 -.996264 -67.112844 60.208727)' fill='#000' stroke='#000' stroke-width='0.4'>
+<g fill='#fff'>
+<path d='M -4.90549 -75.7999 M -4.90549 -75.7999 L -4.90549 132.70451 L 431.69011 132.70451 L 431.69011 -75.7999 Z M 431.69011 132.70451' stroke='none'/>
+</g>
+<g fill='#000' stroke='#000' stroke-width='0.8'>
+<path d='M 0.0 0.0 M 0.0 0.0 L 68.28554 0.0 M 0.0 11.38092 L 68.28554 11.38092 M 0.0 22.76184 L 68.28554 22.76184 M 0.0 34.14276 L 68.28554 34.14276 M 0.0 45.52368 L 68.28554 45.52368 M 0.0 56.90462 L 68.28554 56.90462 M 0.0 68.28154 L 68.28554 68.28154 M 0.0 0.0 L 0.0 68.28554 M 11.38092 0.0 L 11.38092 68.28554 M 22.76184 0.0 L 22.76184 68.28554 M 34.14276 0.0 L 34.14276 68.28554 M 45.52368 0.0 L 45.52368 68.28554 M 56.90462 0.0 L 56.90462 68.28554 M 68.28154 0.0 L 68.28154 68.28554 M 68.28554 68.28554' fill='none'/>
+</g>
+<g fill='#000' stroke='#000' stroke-width='1.2'>
+<path d='M 0.0 0.0 M 0.0 0.0 L 0.0 68.28554 L 68.28554 68.28554 L 68.28554 0.0 Z M 68.28554 68.28554' fill='none'/>
+</g>
+<g fill='#000' stroke='#000'>
+<path d='M 0.0 34.14276 M 0.0 34.14276 L 0.0 45.52368 L 11.38092 45.52368 L 11.38092 34.14276 Z M 11.38092 45.52368' stroke='none'/>
+</g>
+<g fill='#fff' stroke='#fff'>
+<g fill='#fff' stroke='#fff'>
+</g>
+<g transform='translate(3.19044 36.6846)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#fff'>
+<text class='f2' x='-67.112844' y='60.208727' fill='#fff'>1</text>
+</g>
+</g>
+<g fill='#000' stroke='#000'>
+<path d='M 11.38092 34.14276 M 11.38092 34.14276 L 11.38092 45.52368 L 22.76184 45.52368 L 22.76184 34.14276 Z M 22.76184 45.52368' stroke='none'/>
+</g>
+<g fill='#fff' stroke='#fff'>
+<g fill='#fff' stroke='#fff'>
+</g>
+<g transform='translate(14.57138 36.6846)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#fff'>
+<text class='f2' x='-67.112844' y='60.208727' fill='#fff'>1</text>
+</g>
+</g>
+<g fill='#000' stroke='#000'>
+<path d='M 22.76184 34.14276 M 22.76184 34.14276 L 22.76184 45.52368 L 34.14276 45.52368 L 34.14276 34.14276 Z M 34.14276 45.52368' stroke='none'/>
+</g>
+<g fill='#fff' stroke='#fff'>
+<g fill='#fff' stroke='#fff'>
+</g>
+<g transform='translate(25.9523 36.6846)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#fff'>
+<text class='f2' x='-67.112844' y='60.208727' fill='#fff'>1</text>
+</g>
+</g>
+<g fill='#000' stroke='#000'>
+<path d='M 34.14276 11.38092 M 34.14276 11.38092 L 34.14276 22.76184 L 45.52368 22.76184 L 45.52368 11.38092 Z M 45.52368 22.76184' stroke='none'/>
+</g>
+<g fill='#fff' stroke='#fff'>
+<g fill='#fff' stroke='#fff'>
+</g>
+<g transform='translate(37.33322 13.92276)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#fff'>
+<text class='f2' x='-67.112844' y='60.208727' fill='#fff'>1</text>
+</g>
+</g>
+<g fill='#000' stroke='#000'>
+<path d='M 34.14276 22.76184 M 34.14276 22.76184 L 34.14276 34.14276 L 45.52368 34.14276 L 45.52368 22.76184 Z M 45.52368 34.14276' stroke='none'/>
+</g>
+<g fill='#fff' stroke='#fff'>
+<g fill='#fff' stroke='#fff'>
+</g>
+<g transform='translate(37.33322 25.30368)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#fff'>
+<text class='f2' x='-67.112844' y='60.208727' fill='#fff'>1</text>
+</g>
+</g>
+<g fill='#000' stroke='#000'>
+<path d='M 34.14276 34.14276 M 34.14276 34.14276 L 34.14276 45.52368 L 45.52368 45.52368 L 45.52368 34.14276 Z M 45.52368 45.52368' stroke='none'/>
+</g>
+<g fill='#fff' stroke='#fff'>
+<g fill='#fff' stroke='#fff'>
+</g>
+<g transform='translate(37.33322 36.6846)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#fff'>
+<text class='f2' x='-67.112844' y='60.208727' fill='#fff'>1</text>
+</g>
+</g>
+<g fill='#000' stroke='#000'>
+<path d='M 34.14276 45.52368 M 34.14276 45.52368 L 34.14276 56.90462 L 45.52368 56.90462 L 45.52368 45.52368 Z M 45.52368 56.90462' stroke='none'/>
+</g>
+<g fill='#fff' stroke='#fff'>
+<g fill='#fff' stroke='#fff'>
+</g>
+<g transform='translate(37.33322 48.06552)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#fff'>
+<text class='f2' x='-67.112844' y='60.208727' fill='#fff'>1</text>
+</g>
+</g>
+<g fill='#000' stroke='#000'>
+<path d='M 34.14276 56.90462 M 34.14276 56.90462 L 34.14276 68.28554 L 45.52368 68.28554 L 45.52368 56.90462 Z M 45.52368 68.28554' stroke='none'/>
+</g>
+<g fill='#fff' stroke='#fff'>
+<g fill='#fff' stroke='#fff'>
+</g>
+<g transform='translate(37.33322 59.44646)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#fff'>
+<text class='f2' x='-67.112844' y='60.208727' fill='#fff'>1</text>
+</g>
+</g>
+<g fill='#000' stroke='#000'>
+<path d='M 45.52368 34.14276 M 45.52368 34.14276 L 45.52368 45.52368 L 56.90462 45.52368 L 56.90462 34.14276 Z M 56.90462 45.52368' stroke='none'/>
+</g>
+<g fill='#fff' stroke='#fff'>
+<g fill='#fff' stroke='#fff'>
+</g>
+<g transform='translate(48.71414 36.6846)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#fff'>
+<text class='f2' x='-67.112844' y='60.208727' fill='#fff'>1</text>
+</g>
+</g>
+<g fill='#000' stroke='#000'>
+<path d='M 56.90462 34.14276 M 56.90462 34.14276 L 56.90462 45.52368 L 68.28554 45.52368 L 68.28554 34.14276 Z M 68.28554 45.52368' stroke='none'/>
+</g>
+<g fill='#fff' stroke='#fff'>
+<g fill='#fff' stroke='#fff'>
+</g>
+<g transform='translate(60.09508 36.6846)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#fff'>
+<text class='f2' x='-67.112844' y='60.208727' fill='#fff'>1</text>
+</g>
+</g>
+<g transform='translate(3.19044 2.54182)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(3.19044 13.92276)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(3.19044 25.30368)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(3.19044 48.06552)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(3.19044 59.44646)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(14.57138 2.54182)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(14.57138 13.92276)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(14.57138 25.30368)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(14.57138 48.06552)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(14.57138 59.44646)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(25.9523 2.54182)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(25.9523 13.92276)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(25.9523 25.30368)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(25.9523 48.06552)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(25.9523 59.44646)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(48.71414 2.54182)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(48.71414 13.92276)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(48.71414 25.30368)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(48.71414 48.06552)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(48.71414 59.44646)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(60.09508 2.54182)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(60.09508 13.92276)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(60.09508 25.30368)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(60.09508 48.06552)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(60.09508 59.44646)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(37.33322 2.54182)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g stroke-width='0.8'>
+<path d='M 73.976 51.21414 L 96.3856 90.43097' fill='none'/>
+<g transform='matrix(.49611 .8682 -.8682 .49611 96.3856 90.43095)' stroke-width='0.64' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.55997 2.07996 C -1.42996 1.29997 0.0 0.12999 0.38998 0.0 C 0.0 -0.12999 -1.42996 -1.29997 -1.55997 -2.07996  ' fill='none'/>
+ </g>
+</g>
+<g stroke-width='0.8'>
+<path d='M 73.976 17.07138 L 96.3856 -22.14543' fill='none'/>
+<g transform='matrix(.49611 -.8682 .8682 .49611 96.3856 -22.14542)' stroke-width='0.64' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.55997 2.07996 C -1.42996 1.29997 0.0 0.12999 0.38998 0.0 C 0.0 -0.12999 -1.42996 -1.29997 -1.55997 -2.07996  ' fill='none'/>
+ </g>
+</g>
+<g fill='#000' stroke='#000' stroke-width='0.8'>
+<path d='M 102.4283 73.976 M 102.4283 73.976 L 136.57106 73.976 M 102.4283 85.35692 L 136.57106 85.35692 M 102.4283 96.73784 L 136.57106 96.73784 M 102.4283 108.11476 L 136.57106 108.11476 M 102.4283 73.976 L 102.4283 108.11876 M 113.80922 73.976 L 113.80922 108.11876 M 125.19014 73.976 L 125.19014 108.11876 M 136.56706 73.976 L 136.56706 108.11876 M 136.57106 108.11876' fill='none'/>
+</g>
+<g fill='#000' stroke='#000' stroke-width='1.2'>
+<path d='M 102.4283 73.976 M 102.4283 73.976 L 102.4283 108.11876 L 136.57106 108.11876 L 136.57106 73.976 Z M 136.57106 108.11876' fill='none'/>
+</g>
+<g fill='#000' stroke='#000'>
+<path d='M 102.4283 85.35692 M 102.4283 85.35692 L 102.4283 96.73784 L 113.80922 96.73784 L 113.80922 85.35692 Z M 113.80922 96.73784' stroke='none'/>
+</g>
+<g fill='#fff' stroke='#fff'>
+<g fill='#fff' stroke='#fff'>
+</g>
+<g transform='translate(105.61874 87.89876)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#fff'>
+<text class='f2' x='-67.112844' y='60.208727' fill='#fff'>1</text>
+</g>
+</g>
+<g fill='#000' stroke='#000'>
+<path d='M 113.80922 85.35692 M 113.80922 85.35692 L 113.80922 96.73784 L 125.19014 96.73784 L 125.19014 85.35692 Z M 125.19014 96.73784' stroke='none'/>
+</g>
+<g fill='#fff' stroke='#fff'>
+<g fill='#fff' stroke='#fff'>
+</g>
+<g transform='translate(116.99968 87.89876)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#fff'>
+<text class='f2' x='-67.112844' y='60.208727' fill='#fff'>1</text>
+</g>
+</g>
+<g fill='#000' stroke='#000'>
+<path d='M 125.19014 85.35692 M 125.19014 85.35692 L 125.19014 96.73784 L 136.57106 96.73784 L 136.57106 85.35692 Z M 136.57106 96.73784' stroke='none'/>
+</g>
+<g fill='#fff' stroke='#fff'>
+<g fill='#fff' stroke='#fff'>
+</g>
+<g transform='translate(128.3806 87.89876)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#fff'>
+<text class='f2' x='-67.112844' y='60.208727' fill='#fff'>1</text>
+</g>
+</g>
+<g transform='translate(105.61874 76.51782)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(105.61874 99.27968)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(116.99968 76.51782)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(116.99968 99.27968)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(128.3806 76.51782)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(128.3806 99.27968)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(87.43364 117.56604)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f0' x='-67.112844' y='60.208727'>f</text>
+<text class='f1' x='-62.235276' y='61.703107'>2</text>
+<text class='f2' x='-54.445168' y='60.208727'>(horizon<tspan x='-18.717996'>tal)</tspan>
+</text>
+</g>
+<g fill='#000' stroke='#000' stroke-width='0.8'>
+<path d='M 102.4283 -51.21414 M 102.4283 -51.21414 L 136.57106 -51.21414 M 102.4283 -39.83322 L 136.57106 -39.83322 M 102.4283 -28.4523 L 136.57106 -28.4523 M 102.4283 -17.07538 L 136.57106 -17.07538 M 102.4283 -51.21414 L 102.4283 -17.07138 M 113.80922 -51.21414 L 113.80922 -17.07138 M 125.19014 -51.21414 L 125.19014 -17.07138 M 136.56706 -51.21414 L 136.56706 -17.07138 M 136.57106 -17.07138' fill='none'/>
+</g>
+<g fill='#000' stroke='#000' stroke-width='1.2'>
+<path d='M 102.4283 -51.21414 M 102.4283 -51.21414 L 102.4283 -17.07138 L 136.57106 -17.07138 L 136.57106 -51.21414 Z M 136.57106 -17.07138' fill='none'/>
+</g>
+<g fill='#000' stroke='#000'>
+<path d='M 113.80922 -51.21414 M 113.80922 -51.21414 L 113.80922 -39.83322 L 125.19014 -39.83322 L 125.19014 -51.21414 Z M 125.19014 -39.83322' stroke='none'/>
+</g>
+<g fill='#fff' stroke='#fff'>
+<g fill='#fff' stroke='#fff'>
+</g>
+<g transform='translate(116.99968 -48.67232)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#fff'>
+<text class='f2' x='-67.112844' y='60.208727' fill='#fff'>1</text>
+</g>
+</g>
+<g fill='#000' stroke='#000'>
+<path d='M 113.80922 -39.83322 M 113.80922 -39.83322 L 113.80922 -28.4523 L 125.19014 -28.4523 L 125.19014 -39.83322 Z M 125.19014 -28.4523' stroke='none'/>
+</g>
+<g fill='#fff' stroke='#fff'>
+<g fill='#fff' stroke='#fff'>
+</g>
+<g transform='translate(116.99968 -37.29138)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#fff'>
+<text class='f2' x='-67.112844' y='60.208727' fill='#fff'>1</text>
+</g>
+</g>
+<g fill='#000' stroke='#000'>
+<path d='M 113.80922 -28.4523 M 113.80922 -28.4523 L 113.80922 -17.07138 L 125.19014 -17.07138 L 125.19014 -28.4523 Z M 125.19014 -17.07138' stroke='none'/>
+</g>
+<g fill='#fff' stroke='#fff'>
+<g fill='#fff' stroke='#fff'>
+</g>
+<g transform='translate(116.99968 -25.91046)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#fff'>
+<text class='f2' x='-67.112844' y='60.208727' fill='#fff'>1</text>
+</g>
+</g>
+<g transform='translate(105.61874 -48.67232)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(105.61874 -37.29138)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(105.61874 -25.91046)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(128.3806 -48.67232)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(128.3806 -37.29138)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(128.3806 -25.91046)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(93.12788 -65.66142)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f0' x='-67.112844' y='60.208727'>f</text>
+<text class='f1' x='-62.235276' y='61.703107'>1</text>
+<text class='f2' x='-54.445168' y='60.208727'>(v<tspan x='-45.589161'>ertical)</tspan>
+</text>
+</g>
+<g stroke-width='0.8'>
+<path d='M 142.26154 91.04738 L 164.31337 91.04738' fill='none'/>
+<g transform='translate(164.31337 91.04738)' stroke-width='0.64' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.55997 2.07996 C -1.42996 1.29997 0.0 0.12999 0.38998 0.0 C 0.0 -0.12999 -1.42996 -1.29997 -1.55997 -2.07996  ' fill='none'/>
+ </g>
+</g>
+<g stroke-width='0.8'>
+<path d='M 142.26154 -34.14276 L 164.31337 -34.14276' fill='none'/>
+<g transform='translate(164.31337 -34.14276)' stroke-width='0.64' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.55997 2.07996 C -1.42996 1.29997 0.0 0.12999 0.38998 0.0 C 0.0 -0.12999 -1.42996 -1.29997 -1.55997 -2.07996  ' fill='none'/>
+ </g>
+</g>
+<g fill='#000' stroke='#000' stroke-width='0.8'>
+<path d='M 170.71385 56.90462 M 170.71385 56.90462 L 238.99939 56.90462 M 170.71385 68.28554 L 238.99939 68.28554 M 170.71385 79.66646 L 238.99939 79.66646 M 170.71385 91.04738 L 238.99939 91.04738 M 170.71385 102.4283 L 238.99939 102.4283 M 170.71385 113.80923 L 238.99939 113.80923 M 170.71385 125.18616 L 238.99939 125.18616 M 170.71385 56.90462 L 170.71385 125.19016 M 182.09477 56.90462 L 182.09477 125.19016 M 193.4757 56.90462 L 193.4757 125.19016 M 204.85661 56.90462 L 204.85661 125.19016 M 216.23753 56.90462 L 216.23753 125.19016 M 227.61847 56.90462 L 227.61847 125.19016 M 238.99539 56.90462 L 238.99539 125.19016 M 238.99939 125.19016' fill='none'/>
+</g>
+<g fill='#000' stroke='#000' stroke-width='1.2'>
+<path d='M 170.71385 56.90462 M 170.71385 56.90462 L 170.71385 125.19016 L 238.99939 125.19016 L 238.99939 56.90462 Z M 238.99939 125.19016' fill='none'/>
+</g>
+<g transform='translate(173.9043 59.44644)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(185.28523 59.44644)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(196.66615 59.44644)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(208.04707 59.44644)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(219.428 59.44644)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(230.80893 59.44644)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(173.9043 70.82738)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(185.28523 70.82738)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(196.66615 70.82738)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(208.04707 70.82738)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(219.428 70.82738)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(230.80893 70.82738)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(173.9043 82.2083)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(185.28523 82.2083)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(196.66615 82.2083)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(208.04707 82.2083)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(219.428 82.2083)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(230.80893 82.2083)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(173.9043 93.58922)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>2</text>
+</g>
+<g transform='translate(185.28523 93.58922)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>3</text>
+</g>
+<g transform='translate(196.66615 93.58922)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>3</text>
+</g>
+<g transform='translate(208.04707 93.58922)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>3</text>
+</g>
+<g transform='translate(219.428 93.58922)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>3</text>
+</g>
+<g transform='translate(230.80893 93.58922)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>2</text>
+</g>
+<g transform='translate(173.9043 104.97014)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(185.28523 104.97014)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(196.66615 104.97014)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(208.04707 104.97014)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(219.428 104.97014)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(230.80893 104.97014)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(173.9043 116.35107)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(185.28523 116.35107)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(196.66615 116.35107)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(208.04707 116.35107)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(219.428 116.35107)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(230.80893 116.35107)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g fill='#000' stroke='#000' stroke-width='0.8'>
+<path d='M 170.71385 -68.28554 M 170.71385 -68.28554 L 238.99939 -68.28554 M 170.71385 -56.90462 L 238.99939 -56.90462 M 170.71385 -45.5237 L 238.99939 -45.5237 M 170.71385 -34.14278 L 238.99939 -34.14278 M 170.71385 -22.76186 L 238.99939 -22.76186 M 170.71385 -11.38092 L 238.99939 -11.38092 M 170.71385 -0.004 L 238.99939 -0.004 M 170.71385 -68.28554 L 170.71385 0.0 M 182.09477 -68.28554 L 182.09477 0.0 M 193.4757 -68.28554 L 193.4757 0.0 M 204.85661 -68.28554 L 204.85661 0.0 M 216.23753 -68.28554 L 216.23753 0.0 M 227.61847 -68.28554 L 227.61847 0.0 M 238.99539 -68.28554 L 238.99539 0.0 M 238.99939 0.0' fill='none'/>
+</g>
+<g fill='#000' stroke='#000' stroke-width='1.2'>
+<path d='M 170.71385 -68.28554 M 170.71385 -68.28554 L 170.71385 0.0 L 238.99939 0.0 L 238.99939 -68.28554 Z M 238.99939 0.0' fill='none'/>
+</g>
+<g transform='translate(173.9043 -65.74371)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(185.28523 -65.74371)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(196.66615 -65.74371)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(208.04707 -65.74371)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(219.428 -65.74371)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(230.80893 -65.74371)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(173.9043 -54.36278)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(185.28523 -54.36278)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(196.66615 -54.36278)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(208.04707 -54.36278)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>2</text>
+</g>
+<g transform='translate(219.428 -54.36278)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(230.80893 -54.36278)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(173.9043 -42.98186)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(185.28523 -42.98186)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(196.66615 -42.98186)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(208.04707 -42.98186)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>3</text>
+</g>
+<g transform='translate(219.428 -42.98186)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(230.80893 -42.98186)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(173.9043 -31.60094)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(185.28523 -31.60094)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(196.66615 -31.60094)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(208.04707 -31.60094)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>3</text>
+</g>
+<g transform='translate(219.428 -31.60094)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(230.80893 -31.60094)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(173.9043 -20.22002)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(185.28523 -20.22002)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(196.66615 -20.22002)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(208.04707 -20.22002)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>3</text>
+</g>
+<g transform='translate(219.428 -20.22002)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(230.80893 -20.22002)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(173.9043 -8.83908)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(185.28523 -8.83908)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(196.66615 -8.83908)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(208.04707 -8.83908)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>2</text>
+</g>
+<g transform='translate(219.428 -8.83908)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(230.80893 -8.83908)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g stroke-width='0.8'>
+<path d='M 244.68985 91.04738 L 278.40663 46.09166' fill='none'/>
+<g transform='matrix(.59999 -.79997 .79997 .59999 278.40663 46.09166)' stroke-width='0.64' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.55997 2.07996 C -1.42996 1.29997 0.0 0.12999 0.38998 0.0 C 0.0 -0.12999 -1.42996 -1.29997 -1.55997 -2.07996  ' fill='none'/>
+ </g>
+</g>
+<g stroke-width='0.8'>
+<path d='M 244.68985 -34.14276 L 278.46733 22.15305' fill='none'/>
+<g transform='matrix(.5145 .85747 -.85747 .5145 278.46733 22.15305)' stroke-width='0.64' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.55997 2.07996 C -1.42996 1.29997 0.0 0.12999 0.38998 0.0 C 0.0 -0.12999 -1.42996 -1.29997 -1.55997 -2.07996  ' fill='none'/>
+ </g>
+</g>
+<g fill='#fff' stroke='#fff'>
+<path d='M 290.21353 22.76183 M 290.21353 22.76183 L 290.21353 56.90459 L 324.3563 56.90459 L 324.3563 22.76183 Z M 324.3563 56.90459' stroke='none'/>
+</g>
+<g fill='#000' stroke='#000' stroke-width='0.8'>
+<path d='M 290.21353 22.76183 M 290.21353 22.76183 L 324.3563 22.76183 M 290.21353 34.14275 L 324.3563 34.14275 M 290.21353 45.52367 L 324.3563 45.52367 M 290.21353 56.90059 L 324.3563 56.90059 M 290.21353 22.76183 L 290.21353 56.90459 M 301.59445 22.76183 L 301.59445 56.90459 M 312.97537 22.76183 L 312.97537 56.90459 M 324.3523 22.76183 L 324.3523 56.90459 M 324.3563 56.90459' fill='none'/>
+</g>
+<g fill='#000' stroke='#000' stroke-width='1.2'>
+<path d='M 290.21353 22.76183 M 290.21353 22.76183 L 290.21353 56.90459 L 324.3563 56.90459 L 324.3563 22.76183 Z M 324.3563 56.90459' fill='none'/>
+</g>
+<g transform='translate(293.40398 25.30365)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(304.78491 25.30365)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(316.16583 25.30365)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(293.40398 36.68459)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(304.78491 36.68459)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(316.16583 36.68459)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(293.40398 48.0655)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(304.78491 48.0655)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(316.16583 48.0655)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g fill='#fff' stroke='#fff'>
+<path d='M 284.52309 17.07138 M 284.52309 17.07138 L 284.52309 51.21414 L 318.66585 51.21414 L 318.66585 17.07138 Z M 318.66585 51.21414' stroke='none'/>
+</g>
+<g fill='#000' stroke='#000' stroke-width='0.8'>
+<path d='M 284.52309 17.07138 M 284.52309 17.07138 L 318.66585 17.07138 M 284.52309 28.4523 L 318.66585 28.4523 M 284.52309 39.83322 L 318.66585 39.83322 M 284.52309 51.21014 L 318.66585 51.21014 M 284.52309 17.07138 L 284.52309 51.21414 M 295.904 17.07138 L 295.904 51.21414 M 307.28493 17.07138 L 307.28493 51.21414 M 318.66185 17.07138 L 318.66185 51.21414 M 318.66585 51.21414' fill='none'/>
+</g>
+<g fill='#000' stroke='#000' stroke-width='1.2'>
+<path d='M 284.52309 17.07138 M 284.52309 17.07138 L 284.52309 51.21414 L 318.66585 51.21414 L 318.66585 17.07138 Z M 318.66585 51.21414' fill='none'/>
+</g>
+<g transform='translate(287.71353 19.6132)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(299.09447 19.6132)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(310.47539 19.6132)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(287.71353 30.99414)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(299.09447 30.99414)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(310.47539 30.99414)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(287.71353 42.37506)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(299.09447 42.37506)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(310.47539 42.37506)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(279.10623 63.85188)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>tensor<tspan x='-37.141724'>ﬁlter</tspan>
+</text>
+</g>
+<g stroke-width='0.8'>
+<path d='M 330.04678 34.14276 L 352.09862 34.14276' fill='none'/>
+<g transform='translate(352.09862 34.14276)' stroke-width='0.64' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linecap='round' stroke-linejoin='round'>
+ <path d=' M -1.55997 2.07996 C -1.42996 1.29997 0.0 0.12999 0.38998 0.0 C 0.0 -0.12999 -1.42996 -1.29997 -1.55997 -2.07996  ' fill='none'/>
+ </g>
+</g>
+<g fill='#000' stroke='#000' stroke-width='0.8'>
+<path d='M 358.49908 0.0 M 358.49908 0.0 L 426.78462 0.0 M 358.49908 11.38092 L 426.78462 11.38092 M 358.49908 22.76184 L 426.78462 22.76184 M 358.49908 34.14276 L 426.78462 34.14276 M 358.49908 45.52368 L 426.78462 45.52368 M 358.49908 56.90462 L 426.78462 56.90462 M 358.49908 68.28154 L 426.78462 68.28154 M 358.49908 0.0 L 358.49908 68.28554 M 369.88 0.0 L 369.88 68.28554 M 381.26093 0.0 L 381.26093 68.28554 M 392.64185 0.0 L 392.64185 68.28554 M 404.02277 0.0 L 404.02277 68.28554 M 415.4037 0.0 L 415.4037 68.28554 M 426.78062 0.0 L 426.78062 68.28554 M 426.78462 68.28554' fill='none'/>
+</g>
+<g fill='#000' stroke='#000' stroke-width='1.2'>
+<path d='M 358.49908 0.0 M 358.49908 0.0 L 358.49908 68.28554 L 426.78462 68.28554 L 426.78462 0.0 Z M 426.78462 68.28554' fill='none'/>
+</g>
+<g transform='translate(361.68953 2.54182)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(373.07047 2.54182)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(384.45139 2.54182)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(395.8323 2.54182)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(407.21323 2.54182)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(418.59416 2.54182)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(361.68953 13.92276)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(373.07047 13.92276)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(384.45139 13.92276)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(395.8323 13.92276)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>3</text>
+</g>
+<g transform='translate(407.21323 13.92276)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(418.59416 13.92276)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(361.68953 25.30368)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(373.07047 25.30368)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(384.45139 25.30368)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>2</text>
+</g>
+<g transform='translate(395.8323 25.30368)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>4</text>
+</g>
+<g transform='translate(407.21323 25.30368)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>2</text>
+</g>
+<g transform='translate(418.59416 25.30368)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(361.68953 36.6846)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>3</text>
+</g>
+<g transform='translate(373.07047 36.6846)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>4</text>
+</g>
+<g transform='translate(384.45139 36.6846)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>4</text>
+</g>
+<g transform='translate(395.8323 36.6846)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>6</text>
+</g>
+<g transform='translate(407.21323 36.6846)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>4</text>
+</g>
+<g transform='translate(418.59416 36.6846)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>3</text>
+</g>
+<g transform='translate(361.68953 48.06552)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(373.07047 48.06552)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(384.45139 48.06552)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>2</text>
+</g>
+<g transform='translate(395.8323 48.06552)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>4</text>
+</g>
+<g transform='translate(407.21323 48.06552)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>2</text>
+</g>
+<g transform='translate(418.59416 48.06552)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(361.68953 59.44646)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(373.07047 59.44646)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g transform='translate(384.45139 59.44646)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(395.8323 59.44646)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>3</text>
+</g>
+<g transform='translate(407.21323 59.44646)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>1</text>
+</g>
+<g transform='translate(418.59416 59.44646)matrix(1.00375 0 0 -1.00375 67.364517 60.43451)' stroke='none' fill='#000'>
+<text class='f2' x='-67.112844' y='60.208727'>0</text>
+</g>
+<g stroke-width='0.4'>
+</g>
+</g>
+</g>
+</svg>
