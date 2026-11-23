@@ -499,6 +499,27 @@
   </entry>
   
   <entry>
+    <title>The Shift from Models to Compound AI Systems</title>
+    <link href="https://songchen.science/blog/posts/f5144b0b/"/>
+    <id>https://songchen.science/blog/posts/f5144b0b/</id>
+    <published>2026-11-10T16:00:00.000Z</published>
+    <updated>2026-11-23T02:00:13.624Z</updated>
+    
+    
+    <summary type="html">AI caught everyone’s attention in 2023 with Large Language Models (LLMs) that can be instructed to perform general tasks, such as translation or coding, just by prompting. This naturally led to an intense focus on models as the primary ingredient in AI application development, with everyone wondering what capabilities new LLMs will bring. As more developers begin to build using LLMs, however, we believe that this focus is rapidly changing: state-of-the-art AI results are increasingly obtained by compound systems with multiple components, not just monolithic models.</summary>
+    
+    
+    
+    <category term="AI Compound Systems" scheme="https://songchen.science/blog/categories/AI-Compound-Systems/"/>
+    
+    
+    <category term="literature" scheme="https://songchen.science/blog/tags/literature/"/>
+    
+    <category term="spintronics" scheme="https://songchen.science/blog/tags/spintronics/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Stanford CS329Z: Engineering AI Agents (Course Guide)</title>
     <link href="https://songchen.science/blog/posts/95ef431f/"/>
     <id>https://songchen.science/blog/posts/95ef431f/</id>
@@ -561,9 +582,9 @@
   </entry>
   
   <entry>
-    <title>Agent Tools &amp; Automation | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/automation/"/>
-    <id>https://songchen.science/blog/agent-skills/automation/</id>
+    <title>Business &amp; Finance | Agent Skills</title>
+    <link href="https://songchen.science/blog/agent-skills/business/"/>
+    <id>https://songchen.science/blog/agent-skills/business/</id>
     <published>2026-11-02T04:00:00.000Z</published>
     <updated>2026-11-02T04:00:00.000Z</updated>
     
@@ -572,7 +593,7 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Agent-Tools-Automation&quot;&gt;&lt;a href=&quot;#Agent-Tools-Automation&quot; class=&quot;headerlink&quot; title=&quot;Agent Tools &amp;amp; Automation&quot;&gt;&lt;/a&gt;Agent Tools</summary>
+    <summary type="html">&lt;h1 id=&quot;Business-Finance&quot;&gt;&lt;a href=&quot;#Business-Finance&quot; class=&quot;headerlink&quot; title=&quot;Business &amp;amp; Finance&quot;&gt;&lt;/a&gt;Business &amp;amp;</summary>
         
       
     
@@ -580,36 +601,7 @@
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
     
-    <category term="Agent Tools &amp; Automation" scheme="https://songchen.science/blog/categories/Agent-Skills/Agent-Tools-Automation/"/>
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
-    
-    <category term="VoltAgent" scheme="https://songchen.science/blog/tags/VoltAgent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud &amp; Operations | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/cloud/"/>
-    <id>https://songchen.science/blog/agent-skills/cloud/</id>
-    <published>2026-11-02T04:00:00.000Z</published>
-    <updated>2026-11-02T04:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Cloud-Operations&quot;&gt;&lt;a href=&quot;#Cloud-Operations&quot; class=&quot;headerlink&quot; title=&quot;Cloud &amp;amp; Operations&quot;&gt;&lt;/a&gt;Cloud &amp;amp;</summary>
-        
-      
-    
-    
-    
-    <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
-    
-    <category term="Cloud &amp; Operations" scheme="https://songchen.science/blog/categories/Agent-Skills/Cloud-Operations/"/>
+    <category term="Business &amp; Finance" scheme="https://songchen.science/blog/categories/Agent-Skills/Business-Finance/"/>
     
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
