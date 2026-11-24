@@ -184,11 +184,11 @@
     <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
     
     
-    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
-    
     <category term="deep-learning" scheme="https://songchen.science/blog/tags/deep-learning/"/>
     
     <category term="neural-networks" scheme="https://songchen.science/blog/tags/neural-networks/"/>
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
     
     <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
     
@@ -217,11 +217,11 @@
     <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
     
     
-    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
-    
     <category term="deep-learning" scheme="https://songchen.science/blog/tags/deep-learning/"/>
     
     <category term="neural-networks" scheme="https://songchen.science/blog/tags/neural-networks/"/>
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
     
     <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
     
@@ -250,9 +250,9 @@
     <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
     
     
-    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
-    
     <category term="deep-learning" scheme="https://songchen.science/blog/tags/deep-learning/"/>
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
     
     <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
     
@@ -281,9 +281,9 @@
     <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
     
     
-    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
-    
     <category term="deep-learning" scheme="https://songchen.science/blog/tags/deep-learning/"/>
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
     
     <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
     
@@ -428,11 +428,11 @@
     <category term="MIT-6.390" scheme="https://songchen.science/blog/categories/Machine-learning/MIT-6-390/"/>
     
     
-    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
-    
     <category term="deep-learning" scheme="https://songchen.science/blog/tags/deep-learning/"/>
     
     <category term="neural-networks" scheme="https://songchen.science/blog/tags/neural-networks/"/>
+    
+    <category term="machine-learning" scheme="https://songchen.science/blog/tags/machine-learning/"/>
     
     <category term="MIT" scheme="https://songchen.science/blog/tags/MIT/"/>
     
@@ -553,9 +553,9 @@
   </entry>
   
   <entry>
-    <title>AI &amp; Data | Agent Skills</title>
-    <link href="https://songchen.science/blog/agent-skills/ai_data/"/>
-    <id>https://songchen.science/blog/agent-skills/ai_data/</id>
+    <title>Agent Tools &amp; Automation | Agent Skills</title>
+    <link href="https://songchen.science/blog/agent-skills/automation/"/>
+    <id>https://songchen.science/blog/agent-skills/automation/</id>
     <published>2026-11-02T04:00:00.000Z</published>
     <updated>2026-11-02T04:00:00.000Z</updated>
     
@@ -564,7 +564,7 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;AI-Data&quot;&gt;&lt;a href=&quot;#AI-Data&quot; class=&quot;headerlink&quot; title=&quot;AI &amp;amp; Data&quot;&gt;&lt;/a&gt;AI &amp;amp; Data&lt;/h1&gt;&lt;p&gt;AI and data skills cover model and</summary>
+    <summary type="html">&lt;h1 id=&quot;Agent-Tools-Automation&quot;&gt;&lt;a href=&quot;#Agent-Tools-Automation&quot; class=&quot;headerlink&quot; title=&quot;Agent Tools &amp;amp; Automation&quot;&gt;&lt;/a&gt;Agent Tools</summary>
         
       
     
@@ -572,7 +572,7 @@
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/categories/Agent-Skills/"/>
     
-    <category term="AI &amp; Data" scheme="https://songchen.science/blog/categories/Agent-Skills/AI-Data/"/>
+    <category term="Agent Tools &amp; Automation" scheme="https://songchen.science/blog/categories/Agent-Skills/Agent-Tools-Automation/"/>
     
     
     <category term="Agent Skills" scheme="https://songchen.science/blog/tags/Agent-Skills/"/>
